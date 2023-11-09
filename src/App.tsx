@@ -1,15 +1,46 @@
 import '@amsterdam/design-system-tokens/dist/root.css'
 import '@amsterdam/design-system-assets/font/index.css'
 import '@amsterdam/design-system-css/dist/index.css'
-import { Screen } from '@amsterdam/design-system-react'
+import { JSX, useState } from 'react'
+import { Grid, PageMenu, Screen } from '@amsterdam/design-system-react'
+import { Home } from './components/home/Home'
+import { News } from './components/news/News.tsx'
+import { Overview } from './components/overview/Overview.tsx'
 import { SiteHeader } from './components/shared/SiteHeader'
 import { SiteFooter } from './components/shared/SiteFooter'
-import { Home } from './components/home/Home'
 
-export const App = () => (
-  <Screen>
-    <SiteHeader />
-    <Home />
-    <SiteFooter />
-  </Screen>
-)
+type Page = 'home' | 'overview' | 'news'
+
+const pages: Record<Page, () => JSX.Element> = {
+  home: Home,
+  news: News,
+  overview: Overview,
+}
+
+export const App = () => {
+  const [page, setPage] = useState<Page>('home')
+  const PageComponent = pages[page]
+
+  return (
+    <Screen>
+      <SiteHeader />
+      {PageComponent()}
+      <SiteFooter />
+      <Grid style={{ paddingBlock: 'calc(var(--amsterdam-grid-gap) / 2 )' }}>
+        <Grid.Cell fullWidth>
+          <PageMenu>
+            <PageMenu.Link href="#" onClick={() => setPage('home')}>
+              Home
+            </PageMenu.Link>
+            <PageMenu.Link href="#" onClick={() => setPage('overview')}>
+              Overzicht
+            </PageMenu.Link>
+            <PageMenu.Link href="#" onClick={() => setPage('news')}>
+              Nieuws
+            </PageMenu.Link>
+          </PageMenu>
+        </Grid.Cell>
+      </Grid>
+    </Screen>
+  )
+}
