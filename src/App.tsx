@@ -5,16 +5,16 @@ import { JSX, useState } from 'react'
 import { Grid, PageMenu, Screen } from '@amsterdam/design-system-react'
 import { Home } from './components/home/Home'
 import { News } from './components/news/News.tsx'
-import { Overview } from './components/overview/Overview.tsx'
+import { Search } from './components/search/Search.tsx'
 import { SiteHeader } from './components/shared/SiteHeader'
 import { SiteFooter } from './components/shared/SiteFooter'
 
-type Page = 'home' | 'overview' | 'news'
+type Page = 'home' | 'search' | 'news'
 
 const pages: Record<Page, () => JSX.Element> = {
   home: Home,
   news: News,
-  overview: Overview,
+  search: Search,
 }
 
 export const App = () => {
@@ -32,8 +32,8 @@ export const App = () => {
             <PageMenu.Link href="#" onClick={() => setPage('home')}>
               Home
             </PageMenu.Link>
-            <PageMenu.Link href="#" onClick={() => setPage('overview')}>
-              Overzicht
+            <PageMenu.Link href="#" onClick={() => setPage('search')}>
+              Zoeken
             </PageMenu.Link>
             <PageMenu.Link href="#" onClick={() => setPage('news')}>
               Nieuws
