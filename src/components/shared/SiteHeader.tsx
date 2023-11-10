@@ -2,7 +2,7 @@ import { Grid, PageMenu } from '@amsterdam/design-system-react'
 import { LoginIcon, MenuIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
 
 export const SiteHeader = () => (
-  <Grid style={{ paddingBlock: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
+  <Grid paddingBottom="small">
     <Grid.Cell fullWidth>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 'calc(var(--amsterdam-grid-gap ) * 4)' }}>
         <a href="#">

@@ -26,7 +26,7 @@ export const App = () => {
       <SiteHeader />
       {PageComponent()}
       <SiteFooter />
-      <Grid style={{ paddingBlock: 'calc(var(--amsterdam-grid-gap) / 2 )' }}>
+      <Grid paddingVertical="small">
         <Grid.Cell fullWidth>
           <PageMenu>
             <PageMenu.Link href="#" onClick={() => setPage('home')}>
