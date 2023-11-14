@@ -32,7 +32,7 @@ export const CurrentAffairs = () => (
         </Card>
       </div>
     </Grid.Cell>
-    <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }}>
+    <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
       <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
         <Heading>Nieuws</Heading>
         <Card>
