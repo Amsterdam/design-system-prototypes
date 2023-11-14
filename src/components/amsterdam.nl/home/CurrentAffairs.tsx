@@ -1,8 +1,8 @@
 import { AspectRatio, Card, Grid, Heading, Image, Paragraph } from '@amsterdam/design-system-react'
-import stormschadeImage from '../../assets/images/stormschade.jpg'
-import vervoerImage from '../../assets/images/vervoer.jpg'
-import woonwijkImage from '../../assets/images/woonwijk.jpg'
-import zonnepanelenImage from '../../assets/images/zonnepanelen.jpg'
+import stormschadeImage from '../../../assets/images/stormschade.jpg'
+import vervoerImage from '../../../assets/images/vervoer.jpg'
+import woonwijkImage from '../../../assets/images/woonwijk.jpg'
+import zonnepanelenImage from '../../../assets/images/zonnepanelen.jpg'
 
 export const CurrentAffairs = () => (
   <Grid spaceVertical="medium">

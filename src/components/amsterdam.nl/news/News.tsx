@@ -1,5 +1,5 @@
 import { AspectRatio, Breadcrumb, Grid, Heading, Image, Paragraph } from '@amsterdam/design-system-react'
-import fatbikesImage from '../../assets/images/fatbikes.jpg'
+import fatbikesImage from '../../../assets/images/fatbikes.jpg'
 
 export const News = () => (
   <article>
