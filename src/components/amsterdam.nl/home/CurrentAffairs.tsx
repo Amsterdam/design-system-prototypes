@@ -36,7 +36,7 @@ export const CurrentAffairs = () => (
       <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
         <Heading>Nieuws</Heading>
         <Card>
-          <AspectRatio ratio="extra-wide">
+          <AspectRatio ratio="x-wide">
             <Image alt="" src={stormschadeImage} />
           </AspectRatio>
           <Card.HeadingGroup tagline="Nieuws">
@@ -54,7 +54,7 @@ export const CurrentAffairs = () => (
     </Grid.Cell>
     <Grid.Cell span={4}>
       <Card>
-        <AspectRatio ratio="extra-wide">
+        <AspectRatio ratio="x-wide">
           <Image alt="" src={woonwijkImage} />
         </AspectRatio>
         <Card.HeadingGroup tagline="Nieuws">
@@ -66,7 +66,7 @@ export const CurrentAffairs = () => (
     </Grid.Cell>
     <Grid.Cell span={4}>
       <Card>
-        <AspectRatio ratio="extra-wide">
+        <AspectRatio ratio="x-wide">
           <Image alt="" src={vervoerImage} />
         </AspectRatio>
         <Card.HeadingGroup tagline="Nieuws">
@@ -78,7 +78,7 @@ export const CurrentAffairs = () => (
     </Grid.Cell>
     <Grid.Cell span={4}>
       <Card>
-        <AspectRatio ratio="extra-wide">
+        <AspectRatio ratio="x-wide">
           <Image alt="" src={zonnepanelenImage} />
         </AspectRatio>
         <Card.HeadingGroup tagline="Nieuws">

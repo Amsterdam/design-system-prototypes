@@ -13,7 +13,7 @@ export const News = () => (
         <Paragraph size="small">8 november 2023</Paragraph>
       </Grid.Cell>
     </Grid>
-    <AspectRatio ratio="extra-wide">
+    <AspectRatio ratio="x-wide">
       <Image alt="" src={fatbikesImage} />
     </AspectRatio>
     <Grid spaceBottom="medium">
