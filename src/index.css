@@ -6,7 +6,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+.amsterdam-body {
+  background-color: #ffffff;
   margin: 0;
   min-height: 100vh;
 }
