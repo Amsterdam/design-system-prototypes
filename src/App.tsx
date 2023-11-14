@@ -26,7 +26,7 @@ export const App = () => {
       <SiteHeader />
       {PageComponent()}
       <SiteFooter />
-      <Grid paddingVertical="small">
+      <Grid spaceVertical="small">
         <Grid.Cell fullWidth>
           <PageMenu>
             <PageMenu.Link href="#" onClick={() => setPage('home')}>

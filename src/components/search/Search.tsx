@@ -1,7 +1,7 @@
 import { Breadcrumb, Card, Checkbox, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 
 export const Search = () => (
-  <Grid paddingBottom="medium">
+  <Grid spaceBottom="medium">
     <Grid.Cell span={3}>
       <div style={{ display: 'grid', gap: 'var(--amsterdam-grid-gap)' }}>
         <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 4)' }}>

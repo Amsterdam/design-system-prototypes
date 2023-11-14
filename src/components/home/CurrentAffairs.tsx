@@ -5,7 +5,7 @@ import woonwijkImage from '../../assets/images/woonwijk.jpg'
 import zonnepanelenImage from '../../assets/images/zonnepanelen.jpg'
 
 export const CurrentAffairs = () => (
-  <Grid paddingVertical="medium">
+  <Grid spaceVertical="medium">
     <Grid.Cell span={3}>
       <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
         <Heading>Kalender</Heading>
