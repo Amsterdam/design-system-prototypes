@@ -1,0 +1,30 @@
+html {
+  font-size: 75%;
+}
+
+.amopis-app-grid {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+}
+
+.amopis-main-background {
+  background-color: #e8f2ff;
+}
+
+.amopis-white-background {
+  background-color: var(--amsterdam-color-primary-white)
+}
+
+.amopis-user-badge {
+  background-color: var(--amsterdam-color-primary-blue);
+  border-radius: 50%;
+  padding: .25rem .375rem;
+}
+
+.amopis-sidebar {
+  background-color: var(--amsterdam-color-primary-blue);
+  display: flex;
+  flex-direction: column;
+  padding-block-start: calc(40px + var(--amsterdam-grid-density-low-gap));
+  align-items: center;
+}
