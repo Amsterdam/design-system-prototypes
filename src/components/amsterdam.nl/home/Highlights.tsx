@@ -2,7 +2,7 @@ import { Grid, Heading, Highlight, Link, Paragraph } from '@amsterdam/design-sys
 
 export const Highlights = () => (
   <Highlight color="purple">
-    <Grid spaceVertical="medium">
+    <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
         <Heading inverseColor style={{ marginBlockEnd: '1.5rem' }} size="level-2">
           Ontheffing of vergunning

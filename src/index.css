@@ -33,9 +33,9 @@
 }
 
 .amsterdam-gap-md {
-  gap: calc(var(--amsterdam-grid-gap) / 2)
+  gap: calc(var(--amsterdam-grid-density-low-gap) / 2)
 }
 
 .amsterdam-gap-lg {
-  gap: var(--amsterdam-grid-gap)
+  gap: var(--amsterdam-grid-density-low-gap)
 }

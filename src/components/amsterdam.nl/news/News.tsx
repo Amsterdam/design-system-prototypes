@@ -3,7 +3,7 @@ import fatbikesImage from '../../../assets/images/fatbikes.jpg'
 
 export const News = () => (
   <article>
-    <Grid spaceBottom="medium">
+    <Grid paddingBottom="medium">
       <Grid.Cell fullWidth>
         <Breadcrumb>
           <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
@@ -16,7 +16,7 @@ export const News = () => (
     <AspectRatio ratio="x-wide">
       <Image alt="" src={fatbikesImage} />
     </AspectRatio>
-    <Grid spaceBottom="medium">
+    <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <div style={{ display: 'grid', gap: 'var(--amsterdam-grid-gap)' }}>
           <Paragraph size="large">

@@ -35,7 +35,7 @@ export const App = () => {
             <div className="amopis-main-background">
               <Project />
             </div>
-            <Grid density="high" spaceVertical="small">
+            <Grid density="high" paddingVertical="small">
               <Grid.Cell fullWidth>
                 <PageMenu>
                   <PageMenu.Link href="#" onClick={() => setPage('home')}>
@@ -58,7 +58,7 @@ export const App = () => {
       <SiteHeader />
       {PageComponent()}
       <SiteFooter />
-      <Grid spaceVertical="small">
+      <Grid paddingVertical="small">
         <Grid.Cell fullWidth>
           <PageMenu>
             <PageMenu.Link href="#" onClick={() => setPage('home')}>

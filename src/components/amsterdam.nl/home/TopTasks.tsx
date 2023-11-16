@@ -1,7 +1,7 @@
 import { Card, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 
 export const TopTasks = () => (
-  <Grid spaceVertical="medium">
+  <Grid paddingVertical="medium">
     <Grid.Cell fullWidth>
       <Heading>Meest bezocht</Heading>
     </Grid.Cell>
