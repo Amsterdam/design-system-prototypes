@@ -28,3 +28,13 @@
   padding-block-start: calc(40px + var(--amsterdam-grid-density-low-gap));
   align-items: center;
 }
+
+@media (max-width: 1087px) {
+  .amopis-sidebar {
+    display: none;
+  }
+
+  .amopis-app-grid {
+    grid-template-columns: 1fr;
+  }
+}
