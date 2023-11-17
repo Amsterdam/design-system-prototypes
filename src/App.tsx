@@ -27,7 +27,7 @@ export const App = () => {
 
   if (page === 'project') {
     return (
-      <Screen>
+      <Screen className="amsterdam-screen--amopis">
         <div className="amopis-app-grid">
           <Sidebar />
           <div>

@@ -2,6 +2,10 @@ html {
   font-size: 75%;
 }
 
+.amsterdam-screen.amsterdam-screen--amopis {
+  max-width: initial;
+}
+
 .amopis-app-grid {
   display: grid;
   grid-template-columns: 112px 1fr;
