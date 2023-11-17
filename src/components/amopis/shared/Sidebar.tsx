@@ -1,4 +1,4 @@
-import { Paragraph } from '../../../../../design-system/packages/react'
+import { Paragraph } from '@amsterdam/design-system-react'
 import {
   DocumentTextIcon,
   ExternalLinkIcon,
