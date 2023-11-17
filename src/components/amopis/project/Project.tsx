@@ -32,7 +32,7 @@ export const Project = () => (
         </Link>
       </div>
     </Grid.Cell>
-    <Grid.Cell start={1} span={{ narrow: 4, medium: 1, wide: 2 }}>
+    <Grid.Cell start={1} span={{ narrow: 4, medium: 2, wide: 2 }}>
       <div className="amopis-white-background">
         <UnorderedList markers={false}>
           <UnorderedList.Item>
@@ -73,7 +73,7 @@ export const Project = () => (
         </UnorderedList>
       </div>
     </Grid.Cell>
-    <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }}>
+    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
         <div className="amsterdam-column amsterdam-gap-md">
           <div className="amsterdam-row" style={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
@@ -130,7 +130,7 @@ export const Project = () => (
         </div>
       </div>
     </Grid.Cell>
-    <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
+    <Grid.Cell span={{ narrow: 4, medium: 3, wide: 3 }} start={{ narrow: 1, medium: 3, wide: 10 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
         <div className="amsterdam-column amsterdam-gap-md">
           <div>
