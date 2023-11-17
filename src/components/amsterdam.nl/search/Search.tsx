@@ -53,7 +53,7 @@ export const Search = () => (
         <Card>
           <Card.HeadingGroup tagline="Nieuws">
             <Heading level={2} size="level-3">
-              <Card.Link href="/">Nieuwe manieren om afval op te halen</Card.Link>
+              <Card.Link href="#">Nieuwe manieren om afval op te halen</Card.Link>
             </Heading>
           </Card.HeadingGroup>
           <Paragraph>
@@ -65,7 +65,7 @@ export const Search = () => (
         <Card>
           <Card.HeadingGroup tagline="Nieuws">
             <Heading level={2} size="level-3">
-              <Card.Link href="/">Verlenging proef ophalen afval per boot</Card.Link>
+              <Card.Link href="#">Verlenging proef ophalen afval per boot</Card.Link>
             </Heading>
           </Card.HeadingGroup>
           <Paragraph>

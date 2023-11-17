@@ -11,21 +11,21 @@ export const CurrentAffairs = () => (
         <Heading>Kalender</Heading>
         <Card>
           <Heading level={2} size="level-4">
-            <Card.Link href="/">29 juni 2023</Card.Link>
+            <Card.Link href="#">29 juni 2023</Card.Link>
           </Heading>
           <Paragraph>Presentatie nieuwe Stopera-gebouw</Paragraph>
           <Paragraph size="small">Tijd: 18.00 – 21.00 uur</Paragraph>
         </Card>
         <Card>
           <Heading level={2} size="level-4">
-            <Card.Link href="/">22 juni 2023</Card.Link>
+            <Card.Link href="#">22 juni 2023</Card.Link>
           </Heading>
           <Paragraph>Praat mee over het toekomstige slavernijmuseum</Paragraph>
           <Paragraph size="small">Tijd: 13.00 – 16.00 uur</Paragraph>
         </Card>
         <Card>
           <Heading level={2} size="level-4">
-            <Card.Link href="/">15 juni 2023</Card.Link>
+            <Card.Link href="#">15 juni 2023</Card.Link>
           </Heading>
           <Paragraph>Opening tentoonstelling schilderijen Van Rijn</Paragraph>
           <Paragraph size="small">Tijd: 10.00 – 11.30 uur</Paragraph>
@@ -41,7 +41,7 @@ export const CurrentAffairs = () => (
           </AspectRatio>
           <Card.HeadingGroup tagline="Nieuws">
             <Heading level={2} size="level-3">
-              <Card.Link href="/">Waar u stormschade kunt melden</Card.Link>
+              <Card.Link href="#">Waar u stormschade kunt melden</Card.Link>
             </Heading>
           </Card.HeadingGroup>
           <Paragraph>
@@ -59,7 +59,7 @@ export const CurrentAffairs = () => (
         </AspectRatio>
         <Card.HeadingGroup tagline="Nieuws">
           <Heading level={2} size="level-3">
-            <Card.Link href="/">Nederlands eerste houten woonwijk komt in Zuidoost</Card.Link>
+            <Card.Link href="#">Nederlands eerste houten woonwijk komt in Zuidoost</Card.Link>
           </Heading>
         </Card.HeadingGroup>
       </Card>
@@ -71,7 +71,7 @@ export const CurrentAffairs = () => (
         </AspectRatio>
         <Card.HeadingGroup tagline="Nieuws">
           <Heading level={2} size="level-3">
-            <Card.Link href="/">Gratis openbaar vervoer voor kinderen</Card.Link>
+            <Card.Link href="#">Gratis openbaar vervoer voor kinderen</Card.Link>
           </Heading>
         </Card.HeadingGroup>
       </Card>
@@ -83,7 +83,7 @@ export const CurrentAffairs = () => (
         </AspectRatio>
         <Card.HeadingGroup tagline="Nieuws">
           <Heading level={2} size="level-3">
-            <Card.Link href="/">Zonnepanelen op uw dak? Zo houdt u uw huis veilig</Card.Link>
+            <Card.Link href="#">Zonnepanelen op uw dak? Zo houdt u uw huis veilig</Card.Link>
           </Heading>
         </Card.HeadingGroup>
       </Card>
