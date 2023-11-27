@@ -7,7 +7,7 @@ export const Highlights = () => (
         <Heading inverseColor style={{ marginBlockEnd: '1.5rem' }} size="level-2">
           Ontheffing of vergunning
         </Heading>
-        <Paragraph inverseColor style={{ marginBlockEnd: '1.5rem' }}>
+        <Paragraph inverseColor size="small" style={{ marginBlockEnd: '1.5rem' }}>
           Check welke ontheffing of vergunning u nodig heeft. Bijvoorbeeld een RVV, TVM, objectvergunning,{' '}
           nachtwerkontheffing, e-RVV, e-TVM of filmmelding. Dat regult u allemaal met 1 formulier.
         </Paragraph>
@@ -19,7 +19,7 @@ export const Highlights = () => (
         <Heading inverseColor style={{ marginBlockEnd: '1.5rem' }} size="level-2">
           Werkzaamheden
         </Heading>
-        <Paragraph inverseColor lang="la" style={{ marginBlockEnd: '1.5rem' }}>
+        <Paragraph inverseColor lang="la" size="small" style={{ marginBlockEnd: '1.5rem' }}>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae cumque deleniti exercitationem
           facere fugiat laudantium libero magnam mollitia nisi, omnis pariatur preferendis.
         </Paragraph>

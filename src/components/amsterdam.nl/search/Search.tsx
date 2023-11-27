@@ -5,19 +5,25 @@ export const Search = () => (
     <Grid.Cell span={3}>
       <div style={{ display: 'grid', gap: 'var(--amsterdam-grid-gap)' }}>
         <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 4)' }}>
-          <Heading level={3}>Contenttype</Heading>
+          <Heading level={2} size="level-4">
+            Contenttype
+          </Heading>
           <Checkbox>Nieuws (10)</Checkbox>
           <Checkbox>Regeling (10)</Checkbox>
           <Checkbox>Werkzaamheden (5)</Checkbox>
         </div>
         <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 4)' }}>
-          <Heading level={3}>Groep</Heading>
+          <Heading level={2} size="level-4">
+            Groep
+          </Heading>
           <Checkbox>Bewoners (10)</Checkbox>
           <Checkbox>Bedrijven (10)</Checkbox>
           <Checkbox>Bezoekers (5)</Checkbox>
         </div>
         <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 4)' }}>
-          <Heading level={3}>Soort afval</Heading>
+          <Heading level={2} size="level-4">
+            Soort afval
+          </Heading>
           <Checkbox>Grofvuil (6)</Checkbox>
           <Checkbox>Tuinafval (4)</Checkbox>
           <Checkbox>Groente-, fruit-, etensresten en tuinafval (gfe/t) (3)</Checkbox>
