@@ -3,7 +3,7 @@ import { Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 export const SiteHeader = () => (
   <Grid density="high" paddingVertical="small">
     <Grid.Cell span={{ narrow: 1, medium: 2, wide: 2 }}>
-      <a href="#">
+      <a href="/">
         <img
           alt=""
           className="amsterdam-image"
