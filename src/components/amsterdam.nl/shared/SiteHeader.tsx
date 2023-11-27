@@ -12,15 +12,19 @@ export const SiteHeader = () => (
             alt=""
           />
         </a>
-        <PageMenu>
-          <PageMenu.Link href="#" lang="en">
+        <PageMenu className="amsterdam-header__page-menu">
+          <PageMenu.Link className="amsterdam-show-from-wide" href="#" lang="en">
             English
           </PageMenu.Link>
-          <PageMenu.Link href="#">Contact</PageMenu.Link>
-          <PageMenu.Link href="#" icon={LoginIcon}>
+          <PageMenu.Link className="amsterdam-show-from-wide" href="#">
+            Contact
+          </PageMenu.Link>
+          <PageMenu.Link className="amsterdam-show-from-wide" href="#" icon={LoginIcon}>
             Mijn Amsterdam
           </PageMenu.Link>
-          <PageMenu.Link icon={SearchIcon}>Zoeken</PageMenu.Link>
+          <PageMenu.Link className="amsterdam-show-from-wide" icon={SearchIcon}>
+            Zoeken
+          </PageMenu.Link>
           <PageMenu.Button icon={MenuIcon}>Menu</PageMenu.Button>
         </PageMenu>
       </div>
