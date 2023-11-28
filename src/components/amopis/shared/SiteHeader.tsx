@@ -1,15 +1,10 @@
-import { Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Grid, Heading, Logo, Paragraph } from '@amsterdam/design-system-react'
 
 export const SiteHeader = () => (
   <Grid density="high" paddingVertical="small">
     <Grid.Cell span={{ narrow: 1, medium: 2, wide: 2 }}>
       <a href="/">
-        <img
-          alt=""
-          className="amsterdam-image"
-          style={{ height: 40 }}
-          src="https://geocraft.nl/wp-content/uploads/2018/10/logo-gemeente-amsterdam-700x219.png"
-        />
+        <Logo />
       </a>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 1, medium: 2, wide: 2 }} style={{ alignSelf: 'center' }}>
