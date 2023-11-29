@@ -12,7 +12,7 @@ import {
 import { ChattingIcon, EditDocumentIcon, EmailIcon } from '@amsterdam/design-system-react-icons'
 
 export const Project = () => (
-  <Grid density="high" paddingVertical="small">
+  <Grid compact paddingVertical="small">
     <Grid.Cell fullWidth>
       <Breadcrumb>
         <Breadcrumb.Item href="#">Dashboard</Breadcrumb.Item>
@@ -75,7 +75,7 @@ export const Project = () => (
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
-        <div className="amsterdam-column amsterdam-gap-md">
+        <div className="amsterdam-column amsterdam-gap-sm">
           <div className="amsterdam-row" style={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
             <Heading level={3}>Kerngegevens</Heading>
             <Link icon={EditDocumentIcon} variant="inList">
@@ -132,7 +132,7 @@ export const Project = () => (
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 3, wide: 3 }} start={{ narrow: 1, medium: 3, wide: 10 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
-        <div className="amsterdam-column amsterdam-gap-md">
+        <div className="amsterdam-column amsterdam-gap-sm">
           <div>
             <AspectRatio ratio="x-wide">
               <Image alt="" src="https://picsum.photos/900/720?random=1" />

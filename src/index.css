@@ -1,3 +1,5 @@
+/* General */
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -12,7 +14,7 @@
   min-height: 100vh;
 }
 
-/* Layout */
+/* Stacks and alignment */
 
 .amsterdam-column {
   display: flex;
@@ -32,13 +34,35 @@
   justify-content: space-between;
 }
 
+/* Gaps */
+
+.amsterdam-gap-sm {
+  gap: calc(var(--amsterdam-grid-spacious-gap) / 2);
+}
+
 .amsterdam-gap-md {
-  gap: calc(var(--amsterdam-grid-density-low-gap) / 2);
+  gap: var(--amsterdam-grid-spacious-gap);
 }
 
 .amsterdam-gap-lg {
-  gap: var(--amsterdam-grid-density-low-gap);
+  gap: calc(var(--amsterdam-grid-spacious-gap) * 2);
 }
+
+.amsterdam-theme--compact {
+  .amsterdam-gap-sm {
+    gap: calc(var(--amsterdam-grid-spacious-gap) / 2);
+  }
+
+  .amsterdam-gap-md {
+    gap: var(--amsterdam-grid-spacious-gap);
+  }
+
+  .amsterdam-gap-lg {
+    gap: calc(var(--amsterdam-grid-spacious-gap) * 2);
+  }
+}
+
+/* Fake page menu behaviour */
 
 .amsterdam-header__page-menu {
   justify-content: flex-end;

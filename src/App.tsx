@@ -27,7 +27,7 @@ export const App = () => {
 
   if (page === 'project') {
     return (
-      <Screen className="amsterdam-screen--amopis">
+      <Screen className="amsterdam-screen--amopis amsterdam-theme--compact">
         <div className="amopis-app-grid">
           <Sidebar />
           <div>
@@ -35,7 +35,7 @@ export const App = () => {
             <div className="amopis-main-background">
               <Project />
             </div>
-            <Grid density="high" paddingVertical="small">
+            <Grid compact paddingVertical="small">
               <Grid.Cell fullWidth>
                 <PageMenu>
                   <PageMenu.Link href="#" onClick={() => setPage('home')}>
