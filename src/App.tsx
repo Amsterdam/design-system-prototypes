@@ -4,22 +4,24 @@ import '@amsterdam/design-system-css/dist/index.css'
 import { JSX, useState } from 'react'
 import { Grid, PageMenu, Screen } from '@amsterdam/design-system-react'
 import { Project } from './components/amopis/project/Project'
-import { Sidebar } from './components/amopis/shared/Sidebar.tsx'
+import { Sidebar } from './components/amopis/shared/Sidebar'
 import { SiteHeader as AmopisSiteHeader } from './components/amopis/shared/SiteHeader'
+import { CivilAffairs } from './components/amsterdam.nl/civil-affairs/CivilAffairs'
 import { Home } from './components/amsterdam.nl/home/Home'
 import { News } from './components/amsterdam.nl/news/News'
 import { Search } from './components/amsterdam.nl/search/Search'
 import { SiteHeader } from './components/amsterdam.nl/shared/SiteHeader'
 import { SiteFooter } from './components/amsterdam.nl/shared/SiteFooter'
 
-type Page = 'home' | 'news' | 'project' | 'search'
-
-const pages: Record<Page, () => JSX.Element> = {
-  project: Project,
+const pages: Record<string, () => JSX.Element> = {
+  civilAffairs: CivilAffairs,
   home: Home,
   news: News,
+  project: Project,
   search: Search,
 }
+
+type Page = keyof typeof pages
 
 export const App = () => {
   const [page, setPage] = useState<Page>('home')
@@ -69,6 +71,9 @@ export const App = () => {
             </PageMenu.Link>
             <PageMenu.Link href="#" onClick={() => setPage('news')}>
               Nieuws
+            </PageMenu.Link>
+            <PageMenu.Link href="#" onClick={() => setPage('civilAffairs')}>
+              Burgerzaken
             </PageMenu.Link>
             <PageMenu.Link href="#" onClick={() => setPage('project')}>
               Amopis
