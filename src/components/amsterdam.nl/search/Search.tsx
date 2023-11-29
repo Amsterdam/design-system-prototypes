@@ -2,7 +2,7 @@ import { Breadcrumb, Card, Checkbox, Grid, Heading, Paragraph } from '@amsterdam
 
 export const Search = () => (
   <Grid paddingBottom="medium">
-    <Grid.Cell span={3}>
+    <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
       <div style={{ display: 'grid', gap: 'var(--amsterdam-grid-gap)' }}>
         <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 4)' }}>
           <Heading level={2} size="level-4">
@@ -37,7 +37,7 @@ export const Search = () => (
         </div>
       </div>
     </Grid.Cell>
-    <Grid.Cell span={8} start={5}>
+    <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
       <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
         <Breadcrumb>
           <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
