@@ -6,6 +6,7 @@ import { Grid, PageMenu, Screen } from '@amsterdam/design-system-react'
 import { Project } from './components/amopis/project/Project'
 import { Sidebar } from './components/amopis/shared/Sidebar'
 import { SiteHeader as AmopisSiteHeader } from './components/amopis/shared/SiteHeader'
+import { ArtAndCulture } from './components/amsterdam.nl/art-and-culture/ArtAndCulture'
 import { CivilAffairs } from './components/amsterdam.nl/civil-affairs/CivilAffairs'
 import { Home } from './components/amsterdam.nl/home/Home'
 import { News } from './components/amsterdam.nl/news/News'
@@ -14,6 +15,7 @@ import { SiteHeader } from './components/amsterdam.nl/shared/SiteHeader'
 import { SiteFooter } from './components/amsterdam.nl/shared/SiteFooter'
 
 const pages: Record<string, () => JSX.Element> = {
+  artAndCulture: ArtAndCulture,
   civilAffairs: CivilAffairs,
   home: Home,
   news: News,
@@ -74,6 +76,9 @@ export const App = () => {
             </PageMenu.Link>
             <PageMenu.Link href="#" onClick={() => setPage('civilAffairs')}>
               Burgerzaken
+            </PageMenu.Link>
+            <PageMenu.Link href="#" onClick={() => setPage('artAndCulture')}>
+              Kunst en Cultuur
             </PageMenu.Link>
             <PageMenu.Link href="#" onClick={() => setPage('project')}>
               Amopis
