@@ -1,5 +1,6 @@
 import { Grid, Logo, PageMenu } from '@amsterdam/design-system-react'
 import { LoginIcon, MenuIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
+import PageMenuLink from '../../links/PageMenuLink.tsx'
 
 export const SiteHeader = () => (
   <Grid paddingVertical="small">
@@ -18,9 +19,9 @@ export const SiteHeader = () => (
           <PageMenu.Link className="amsterdam-show-from-wide" href="#" icon={LoginIcon}>
             Mijn Amsterdam
           </PageMenu.Link>
-          <PageMenu.Link className="amsterdam-show-from-wide" icon={SearchIcon}>
+          <PageMenuLink to="/zoeken" className="amsterdam-show-from-wide" icon={SearchIcon}>
             Zoeken
-          </PageMenu.Link>
+          </PageMenuLink>
           <PageMenu.Button icon={MenuIcon}>Menu</PageMenu.Button>
         </PageMenu>
       </div>

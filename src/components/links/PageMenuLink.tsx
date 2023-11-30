@@ -8,8 +8,9 @@ import {
 } from 'react'
 import { useHref, useLinkClickHandler } from 'react-router-dom'
 import { PageMenu } from '@amsterdam/design-system-react'
+import type { PageMenuLinkProps } from '@amsterdam/design-system-react'
 
-export interface LinkProps extends PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>> {
+export interface LinkProps extends PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>>, PageMenuLinkProps {
   to: string
   target?: HTMLAttributeAnchorTarget
   replace?: boolean
