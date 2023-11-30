@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         element: <News />,
       },
       {
-        path: '/design-system-prototypes/zoek',
+        path: '/design-system-prototypes/zoeken',
         element: <Search />,
       },
       {

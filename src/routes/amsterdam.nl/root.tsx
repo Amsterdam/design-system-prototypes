@@ -14,7 +14,7 @@ export default function Root() {
         <Grid.Cell fullWidth>
           <PageMenu>
             <PageMenuLink to="/design-system-prototypes/">Home</PageMenuLink>
-            <PageMenuLink to="/design-system-prototypes/zoek">Zoeken</PageMenuLink>
+            <PageMenuLink to="/design-system-prototypes/zoeken">Zoeken</PageMenuLink>
             <PageMenuLink to="/design-system-prototypes/nieuws">Nieuws</PageMenuLink>
             <PageMenuLink to="/design-system-prototypes/burgerzaken">Burgerzaken</PageMenuLink>
             <PageMenuLink to="/design-system-prototypes/kunst-en-cultuur">Kunst en cultuur</PageMenuLink>
