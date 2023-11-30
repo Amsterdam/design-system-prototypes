@@ -16,7 +16,12 @@ export const SiteHeader = () => (
           <PageMenu.Link className="amsterdam-show-from-wide" href="#">
             Contact
           </PageMenu.Link>
-          <PageMenu.Link className="amsterdam-show-from-wide" href="#" icon={LoginIcon}>
+          <PageMenu.Link
+            className="amsterdam-show-from-wide"
+            href="https://mijn.amsterdam.nl/"
+            icon={LoginIcon}
+            rel="external"
+          >
             Mijn Amsterdam
           </PageMenu.Link>
           <PageMenuLink to="/zoeken" className="amsterdam-show-from-wide" icon={SearchIcon}>
