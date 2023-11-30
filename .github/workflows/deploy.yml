@@ -23,7 +23,9 @@ jobs:
         uses: bahmutov/npm-install@v1
 
       - name: Build project
-        run: npm run build
+        # copy the index file to 404.html, to allow client side
+        # routing on GH pages
+        run: npm run build && cp ./dist/index.html ./dist/404.html
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
