@@ -16,9 +16,9 @@ export const News = () => (
     <AspectRatio ratio="x-wide">
       <Image alt="" src={fatbikesImage} />
     </AspectRatio>
-    <Grid paddingBottom="medium">
+    <Grid paddingBottom="large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-        <div style={{ display: 'grid', gap: 'var(--amsterdam-grid-gap)' }}>
+        <div style={{ display: 'grid' }} className="amsterdam-gap-md">
           <Paragraph size="large">
             Door de opkomst van de elektrische fiets is het fietsverkeer chaotischer geworden. Onder kinderen en tieners
             is de fatbike op het moment erg populair. Fatbikes zijn vaak opgevoerd en te vergelijken met brommers.

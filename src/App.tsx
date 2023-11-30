@@ -39,7 +39,7 @@ export const App = () => {
             <div className="amopis-main-background">
               <Project />
             </div>
-            <Grid compact paddingVertical="small">
+            <Grid density="high" paddingVertical="small">
               <Grid.Cell fullWidth>
                 <PageMenu>
                   <PageMenu.Link href="#" onClick={() => setPage('home')}>
