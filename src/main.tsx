@@ -15,9 +15,11 @@ import '@amsterdam/design-system-assets/font/index.css'
 import '@amsterdam/design-system-css/dist/index.css'
 import './index.css'
 
+const baseUrl = import.meta.env.BASE_URL
+
 const router = createBrowserRouter([
   {
-    path: '/design-system-prototypes/',
+    path: baseUrl,
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -26,25 +28,25 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: '/design-system-prototypes/nieuws',
+        path: `${baseUrl}nieuws`,
         element: <News />,
       },
       {
-        path: '/design-system-prototypes/zoeken',
+        path: `${baseUrl}zoeken`,
         element: <Search />,
       },
       {
-        path: '/design-system-prototypes/burgerzaken',
+        path: `${baseUrl}burgerzaken`,
         element: <CivilAffairs />,
       },
       {
-        path: '/design-system-prototypes/kunst-en-cultuur',
+        path: `${baseUrl}kunst-en-cultuur`,
         element: <ArtAndCulture />,
       },
     ],
   },
   {
-    path: '/design-system-prototypes/amopis',
+    path: `${baseUrl}amopis`,
     element: <Amopis />,
     errorElement: <ErrorPage />,
   },
