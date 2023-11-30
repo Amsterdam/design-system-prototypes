@@ -17,7 +17,7 @@ import './index.css'
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: '/design-system-prototypes/',
     element: <Root />,
     errorElement: <ErrorPage />,
     children: [
@@ -26,25 +26,25 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: 'nieuws',
+        path: '/design-system-prototypes/nieuws',
         element: <News />,
       },
       {
-        path: 'zoek',
+        path: '/design-system-prototypes/zoek',
         element: <Search />,
       },
       {
-        path: 'burgerzaken',
+        path: '/design-system-prototypes/burgerzaken',
         element: <CivilAffairs />,
       },
       {
-        path: 'kunst-en-cultuur',
+        path: '/design-system-prototypes/kunst-en-cultuur',
         element: <ArtAndCulture />,
       },
     ],
   },
   {
-    path: '/amopis',
+    path: '/design-system-prototypes/amopis',
     element: <Amopis />,
     errorElement: <ErrorPage />,
   },

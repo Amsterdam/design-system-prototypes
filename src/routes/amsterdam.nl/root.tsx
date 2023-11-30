@@ -13,12 +13,12 @@ export default function Root() {
       <Grid paddingVertical="small">
         <Grid.Cell fullWidth>
           <PageMenu>
-            <PageMenuLink to="/">Home</PageMenuLink>
-            <PageMenuLink to="/zoek">Zoeken</PageMenuLink>
-            <PageMenuLink to="/nieuws">Nieuws</PageMenuLink>
-            <PageMenuLink to="/burgerzaken">Burgerzaken</PageMenuLink>
-            <PageMenuLink to="/kunst-en-cultuur">Kunst en cultuur</PageMenuLink>
-            <PageMenuLink to="/amopis">Amopis</PageMenuLink>
+            <PageMenuLink to="/design-system-prototypes/">Home</PageMenuLink>
+            <PageMenuLink to="/design-system-prototypes/zoek">Zoeken</PageMenuLink>
+            <PageMenuLink to="/design-system-prototypes/nieuws">Nieuws</PageMenuLink>
+            <PageMenuLink to="/design-system-prototypes/burgerzaken">Burgerzaken</PageMenuLink>
+            <PageMenuLink to="/design-system-prototypes/kunst-en-cultuur">Kunst en cultuur</PageMenuLink>
+            <PageMenuLink to="/design-system-prototypes/amopis">Amopis</PageMenuLink>
           </PageMenu>
         </Grid.Cell>
       </Grid>
