@@ -13,7 +13,7 @@ export default function Amopis() {
           <div className="amopis-main-background">
             <Project />
           </div>
-          <Grid density="high" paddingVertical="small">
+          <Grid compact paddingVertical="small">
             <Grid.Cell fullWidth>
               <PageMenu>
                 <PageMenu.Link href="#">Home</PageMenu.Link>
