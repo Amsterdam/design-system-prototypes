@@ -22,13 +22,16 @@ export const ArtAndCulture = () => (
       </Grid.Cell>
     </Grid>
     <Grid paddingBottom="large">
-      <Grid.Cell span={{ narrow: 4, medium: 3, wide: 4 }}>
-        <div className="amsterdam-mb-md">
-          <Paragraph size="large">
-            Of u nu bewoner, bezoeker, kunstenaar of creatieveling bent: kunst en cultuur zijn overal om u heen in
-            Amsterdam. Dat is genieten, maar brengt ook verantwoordelijkheid met zich mee.
-          </Paragraph>
-        </div>
+      <Grid.Cell span={{ narrow: 4, medium: 8, wide: 4 }}>
+        <Paragraph size="large">
+          Of u nu bewoner, bezoeker, kunstenaar of creatieveling bent: kunst en cultuur zijn overal om u heen in
+          Amsterdam. Dat is genieten, maar brengt ook verantwoordelijkheid met zich mee.
+        </Paragraph>
+      </Grid.Cell>
+      <Grid.Cell span={{ narrow: 4, medium: 8, wide: 8 }}>
+        <Image alt="" src={artAndCultureImage} />
+      </Grid.Cell>
+      <Grid.Cell span={4}>
         <div className="amsterdam-mb-sm">
           <Heading level={3}>Vaak gezocht</Heading>
         </div>
@@ -55,17 +58,7 @@ export const ArtAndCulture = () => (
           </UnorderedList.Item>
         </UnorderedList>
       </Grid.Cell>
-      <Grid.Cell span={{ narrow: 4, medium: 4, wide: 8 }}>
-        <Image alt="" src={artAndCultureImage} />
-      </Grid.Cell>
-      <Grid.Cell
-        span={4}
-        start={{
-          narrow: 1,
-          medium: 1,
-          wide: 5,
-        }}
-      >
+      <Grid.Cell span={4}>
         <div className="amsterdam-mb-sm">
           <Heading level={2}>Wie Amsterdam zegt, zegt kunst en cultuur</Heading>
         </div>
@@ -167,7 +160,7 @@ export const ArtAndCulture = () => (
                 </Link>
               </UnorderedList.Item>
               <UnorderedList.Item>
-                <Link href="#" variant="inList">
+                <Link href="#" icon={DownloadIcon} variant="inList">
                   Verordeningen Cultuurprijs Weesp (PDF, 275 kB)
                 </Link>
               </UnorderedList.Item>
