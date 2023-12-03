@@ -19,6 +19,8 @@ export default function Root() {
             <PageMenuLink to={`${baseUrl}nieuws`}>Nieuws</PageMenuLink>
             <PageMenuLink to={`${baseUrl}burgerzaken`}>Burgerzaken</PageMenuLink>
             <PageMenuLink to={`${baseUrl}kunst-en-cultuur`}>Kunst en cultuur</PageMenuLink>
+            <PageMenuLink to={`${baseUrl}projecten`}>Projecten</PageMenuLink>
+            <PageMenuLink to={`${baseUrl}project`}>Project</PageMenuLink>
             <PageMenuLink to={`${baseUrl}amopis`}>Amopis</PageMenuLink>
           </PageMenu>
         </Grid.Cell>

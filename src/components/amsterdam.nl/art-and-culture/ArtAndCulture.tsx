@@ -9,7 +9,7 @@ import {
   UnorderedList,
 } from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
-import artAndCultureImage from '../../../assets/images/art-and-culture.png'
+import artAndCultureImage from '../../../assets/images/art-and-culture.jpg'
 
 const baseUrl = import.meta.env.BASE_URL
 

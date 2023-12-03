@@ -1,13 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Root from './routes/amsterdam.nl/root'
-import Home from './routes/amsterdam.nl/home'
-import Search from './routes/amsterdam.nl/search'
-import News from './routes/amsterdam.nl/news'
-import CivilAffairs from './routes/amsterdam.nl/civilAffairs'
-import ArtAndCulture from './routes/amsterdam.nl/artAndCulture'
 import Amopis from './routes/amopis/amopis'
+import ArtAndCulture from './routes/amsterdam.nl/artAndCulture'
+import CivilAffairs from './routes/amsterdam.nl/civilAffairs'
+import ConstructionWorkProject from './routes/amsterdam.nl/constructionWorkProject.tsx'
+import ConstructionWorkProjects from './routes/amsterdam.nl/constructionWorkProjects.tsx'
+import Home from './routes/amsterdam.nl/home'
+import News from './routes/amsterdam.nl/news'
+import Root from './routes/amsterdam.nl/root'
+import Search from './routes/amsterdam.nl/search'
 import ErrorPage from './errorPage'
 
 import '@amsterdam/design-system-tokens/dist/root.css'
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
       {
         path: `${baseUrl}kunst-en-cultuur`,
         element: <ArtAndCulture />,
+      },
+      {
+        path: `${baseUrl}projecten`,
+        element: <ConstructionWorkProjects />,
+      },
+      {
+        path: `${baseUrl}project`,
+        element: <ConstructionWorkProject />,
       },
     ],
   },

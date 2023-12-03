@@ -50,7 +50,7 @@ export const Search = () => (
         <input
           type="text"
           style={{
-            width: '100%',
+            maxWidth: '100%',
             padding: '1em',
             borderWidth: '0 0 2px',
             borderStyle: 'solid',
