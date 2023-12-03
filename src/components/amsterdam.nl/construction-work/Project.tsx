@@ -1,6 +1,7 @@
 import {
   AspectRatio,
   Breadcrumb,
+  Card,
   Grid,
   Heading,
   Highlight,
@@ -16,7 +17,7 @@ const baseUrl = import.meta.env.BASE_URL
 export const Project = () => (
   <>
     <Grid gapVertical="small" paddingBottom="medium">
-      <Grid.Cell span={{ narrow: 4, medium: 6, wide: 6 }}>
+      <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
         <Breadcrumb>
           <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
           <Breadcrumb.Item href={`${baseUrl}projecten`}>Bouwprojecten en verkeersprojecten</Breadcrumb.Item>
@@ -35,14 +36,33 @@ export const Project = () => (
         </Paragraph>
       </Grid.Cell>
     </Grid>
-    <Grid paddingBottom="large">
+    <Grid gapVertical="small" paddingBottom="medium">
       <Grid.Cell fullWidth>
-        <div style={{ display: 'grid' }} className="amsterdam-gap-sm">
-          <Heading level={2} size="level-4" className="amsterdam-mb-md">
-            Overzicht projecten
-          </Heading>
-        </div>
+        <Heading level={2} size="level-3">
+          Overzicht projecten
+        </Heading>
       </Grid.Cell>
+      {[
+        'Appelweg: tijdelijke starterswoningen',
+        'Banne Noord: onderhoud en vernieuwing',
+        'Banne Zuid: vernieuwing en verbetering',
+        'Buiksloterham: duurzame herontwikkeling tot werk- en woongebied',
+        'Buikslotermeerplein: stap voor stap levendiger en groener',
+        'De Bongerd: woonwijk in ontwikkeling',
+        'Centrumgebied Amsterdam Noord: nieuw stedelijk centrum',
+        'De Kleine Wereld: opknappen van de buurt',
+      ].map((title, index) => (
+        <Grid.Cell key={index} span={{ narrow: 4, medium: 4, wide: 3 }}>
+          <Card>
+            <Heading level={3} size="level-4">
+              <Card.Link href="#">{title}</Card.Link>
+            </Heading>
+            <Paragraph size="small">
+              Het woonproject Appelweg biedt straks 63 tijdelijke woningen voor Amsterdamse starters op de woningmarkt.
+            </Paragraph>
+          </Card>
+        </Grid.Cell>
+      ))}
     </Grid>
     <Highlight color="purple">
       <Grid paddingVertical="medium">

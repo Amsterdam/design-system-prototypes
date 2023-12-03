@@ -17,7 +17,7 @@ const baseUrl = import.meta.env.BASE_URL
 export const Projects = () => (
   <>
     <Grid gapVertical="small" paddingBottom="medium">
-      <Grid.Cell span={{ narrow: 4, medium: 6, wide: 6 }}>
+      <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
         <Breadcrumb>
           <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
@@ -40,7 +40,7 @@ export const Projects = () => (
           <UnorderedList markers={false}>
             {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district, index) => (
               <UnorderedList.Item key={index}>
-                <Link href="#" variant="inList">
+                <Link href={`${baseUrl}project`} variant="inList">
                   {district}
                 </Link>
               </UnorderedList.Item>
