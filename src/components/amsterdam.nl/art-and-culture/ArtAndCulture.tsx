@@ -11,12 +11,14 @@ import {
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 import artAndCultureImage from '../../../assets/images/art-and-culture.png'
 
+const baseUrl = import.meta.env.BASE_URL
+
 export const ArtAndCulture = () => (
   <>
     <Grid paddingBottom="medium">
       <Grid.Cell fullWidth>
         <Breadcrumb>
-          <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
         <PageHeading>Kunst en Cultuur</PageHeading>
       </Grid.Cell>

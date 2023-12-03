@@ -1,5 +1,7 @@
 import { Breadcrumb, Card, Checkbox, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 
+const baseUrl = import.meta.env.BASE_URL
+
 export const Search = () => (
   <Grid paddingBottom="medium">
     <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
@@ -40,7 +42,7 @@ export const Search = () => (
     <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
       <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
         <Breadcrumb>
-          <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
           <Breadcrumb.Item href="#">Zoekresultaten</Breadcrumb.Item>
         </Breadcrumb>
         <Paragraph size="small">25 resultaten</Paragraph>

@@ -1,12 +1,14 @@
 import { AspectRatio, Breadcrumb, Grid, Heading, Image, Paragraph } from '@amsterdam/design-system-react'
 import fatbikesImage from '../../../assets/images/fatbikes.jpg'
 
+const baseUrl = import.meta.env.BASE_URL
+
 export const News = () => (
   <article>
     <Grid paddingBottom="medium">
       <Grid.Cell fullWidth>
         <Breadcrumb>
-          <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
           <Breadcrumb.Item href="#">Nieuws</Breadcrumb.Item>
         </Breadcrumb>
         <Heading>Maatregelen tegen overlast fatbikes</Heading>

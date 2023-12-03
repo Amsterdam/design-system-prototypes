@@ -1,5 +1,7 @@
 import { Breadcrumb, Grid, Heading, Link, PageHeading, UnorderedList } from '@amsterdam/design-system-react'
 
+const baseUrl = import.meta.env.BASE_URL
+
 const linkSections = [
   [
     {
@@ -82,7 +84,7 @@ export const CivilAffairs = () => (
     <Grid paddingBottom="medium">
       <Grid.Cell fullWidth>
         <Breadcrumb>
-          <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
+          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
         <PageHeading>Burgerzaken</PageHeading>
       </Grid.Cell>
