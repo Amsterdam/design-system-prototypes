@@ -18,7 +18,7 @@ export const Project = () => (
         <Breadcrumb.Item href="#">Dashboard</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Projecten</Breadcrumb.Item>
       </Breadcrumb>
-      <Heading>Kerngegevens</Heading>
+      <Heading className="amsterdam-mb-sm">Kerngegevens</Heading>
       <Heading level={2}>Brug 423 opwaardering (Berlagebrug) – ams20192715</Heading>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
@@ -83,7 +83,7 @@ export const Project = () => (
             </Link>
           </div>
           <Heading level={3}>Opdrachtgevers</Heading>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px', gap: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px' }} className="amsterdam-gap-sm">
             <Paragraph>Ambtelijk opdrachtgever</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Marise Ent</Paragraph>
             <EmailIcon width={24} fill="#004469" />
@@ -92,7 +92,7 @@ export const Project = () => (
             <EmailIcon width={24} fill="#004469" />
           </div>
           <Heading level={3}>Opdrachtnemers</Heading>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px', gap: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px' }} className="amsterdam-gap-sm">
             <Paragraph>Accounthouder</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Paul Brouwer</Paragraph>
             <EmailIcon width={24} fill="#004469" />
@@ -110,7 +110,7 @@ export const Project = () => (
             <EmailIcon width={24} fill="#004469" />
           </div>
           <Heading level={3}>Basisgegevens</Heading>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px', gap: '1rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px' }} className="amsterdam-gap-sm">
             <Paragraph>Gebied</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Gemeente Amsterdam</Paragraph>
             <span />

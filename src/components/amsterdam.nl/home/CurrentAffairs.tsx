@@ -5,10 +5,10 @@ import woonwijkImage from '../../../assets/images/woonwijk.jpg'
 import zonnepanelenImage from '../../../assets/images/zonnepanelen.jpg'
 
 export const CurrentAffairs = () => (
-  <Grid gapVertical="large" paddingVertical="medium">
+  <Grid paddingVertical="medium">
     <Grid.Cell span={3}>
-      <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
-        <Heading>Kalender</Heading>
+      <Heading className="amsterdam-mb-sm">Kalender</Heading>
+      <div style={{ display: 'grid' }} className="amsterdam-gap-md">
         <Card>
           <Heading level={2} size="level-4">
             <Card.Link href="#">29 juni 2023</Card.Link>
@@ -33,24 +33,21 @@ export const CurrentAffairs = () => (
       </div>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
-      <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
-        <Heading>Nieuws</Heading>
-        <Card>
-          <AspectRatio ratio="x-wide">
-            <Image alt="" src={stormschadeImage} />
-          </AspectRatio>
-          <Card.HeadingGroup tagline="Nieuws">
-            <Heading level={2} size="level-4">
-              <Card.Link href="#">Waar u stormschade kunt melden</Card.Link>
-            </Heading>
-          </Card.HeadingGroup>
-          <Paragraph size="small">
-            Storm Poly raasde woensdag 5 juli over de stad. Het zal in sommige gevallen nog enkele dagen duren voordat
-            alle schade is opgeruimd. U kunt een melding doen van afgebroken takken, andere stormschade of
-            wateroverlast.
-          </Paragraph>
-        </Card>
-      </div>
+      <Heading className="amsterdam-mb-sm">Nieuws</Heading>
+      <Card>
+        <AspectRatio ratio="x-wide">
+          <Image alt="" src={stormschadeImage} />
+        </AspectRatio>
+        <Card.HeadingGroup tagline="Nieuws">
+          <Heading level={2} size="level-4">
+            <Card.Link href="#">Waar u stormschade kunt melden</Card.Link>
+          </Heading>
+        </Card.HeadingGroup>
+        <Paragraph size="small">
+          Storm Poly raasde woensdag 5 juli over de stad. Het zal in sommige gevallen nog enkele dagen duren voordat
+          alle schade is opgeruimd. U kunt een melding doen van afgebroken takken, andere stormschade of wateroverlast.
+        </Paragraph>
+      </Card>
     </Grid.Cell>
     <Grid.Cell span={4}>
       <Card>

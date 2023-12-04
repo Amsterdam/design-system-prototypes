@@ -81,20 +81,22 @@ const linkSections = [
 
 export const CivilAffairs = () => (
   <>
-    <Grid paddingBottom="medium">
+    <Grid>
       <Grid.Cell fullWidth>
         <Breadcrumb>
           <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
-        <PageHeading>Burgerzaken</PageHeading>
       </Grid.Cell>
     </Grid>
-    <Grid paddingBottom="large">
+    <Grid paddingBottom="medium">
+      <Grid.Cell fullWidth>
+        <PageHeading>Burgerzaken</PageHeading>
+      </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
         <div className="amsterdam-column amsterdam-gap-md">
           {linkSections[0].map(({ title, links }) => (
             <section key={title}>
-              <Heading level={2} size="level-3">
+              <Heading level={2} size="level-3" className="amsterdam-mb-xs">
                 {title}
               </Heading>
               <UnorderedList markers={false}>
@@ -114,7 +116,7 @@ export const CivilAffairs = () => (
         <div className="amsterdam-column amsterdam-gap-md">
           {linkSections[1].map(({ title, links }) => (
             <section key={title}>
-              <Heading level={2} size="level-3">
+              <Heading level={2} size="level-3" className="amsterdam-mb-xs">
                 {title}
               </Heading>
               <UnorderedList markers={false}>

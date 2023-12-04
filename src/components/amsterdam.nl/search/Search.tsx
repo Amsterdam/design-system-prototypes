@@ -40,24 +40,16 @@ export const Search = () => (
       </div>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
-      <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
-        <Breadcrumb>
-          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="#">Zoekresultaten</Breadcrumb.Item>
-        </Breadcrumb>
+      <Breadcrumb>
+        <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
+        <Breadcrumb.Item href="#">Zoekresultaten</Breadcrumb.Item>
+      </Breadcrumb>
+      <div className="amsterdam-mb-md">
+        <Heading className="amsterdam-mb-xs">Zoeken</Heading>
+        <input className="amsterdam-input amsterdam-mb-xs" type="text" value="afval" />
         <Paragraph size="small">25 resultaten</Paragraph>
-        <Heading>Zoeken</Heading>
-        <input
-          type="text"
-          style={{
-            maxWidth: '100%',
-            padding: '1em',
-            borderWidth: '0 0 2px',
-            borderStyle: 'solid',
-            fontFamily: 'var(--amsterdam-paragraph-font-family)',
-            fontSize: 'var(--amsterdam-paragraph-wide-font-size)',
-          }}
-        />
+      </div>
+      <div style={{ display: 'grid' }} className="amsterdam-gap-md">
         <Card>
           <Card.HeadingGroup tagline="Nieuws">
             <Heading level={2} size="level-3">

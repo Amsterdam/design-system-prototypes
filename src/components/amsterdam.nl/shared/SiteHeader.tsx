@@ -5,7 +5,7 @@ import PageMenuLink from '../../links/PageMenuLink.tsx'
 const baseUrl = import.meta.env.BASE_URL
 
 export const SiteHeader = () => (
-  <Grid paddingVertical="small">
+  <Grid className="amsterdam-header__grid">
     <Grid.Cell fullWidth>
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 'calc(var(--amsterdam-grid-gap ) * 4)' }}>
         <a href={baseUrl}>

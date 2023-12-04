@@ -1,4 +1,8 @@
-import { Image } from '@amsterdam/design-system-react'
+import { AspectRatio, Image } from '@amsterdam/design-system-react'
 import vindenImage from '../../../assets/images/vinden.jpg'
 
-export const Search = () => <Image src={vindenImage} alt="" />
+export const Search = () => (
+  <AspectRatio ratio="2x-wide">
+    <Image src={vindenImage} alt="" />
+  </AspectRatio>
+)

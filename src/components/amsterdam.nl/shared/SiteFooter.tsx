@@ -9,7 +9,7 @@ export const SiteFooter = () => (
       </VisuallyHidden>
       <Grid gapVertical="large" paddingVertical="medium">
         <Grid.Cell span={3}>
-          <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
+          <div style={{ display: 'grid' }} className="amsterdam-gap-xs">
             <Heading level={2} size="level-4" inverseColor>
               Contact
             </Heading>
@@ -41,7 +41,7 @@ export const SiteFooter = () => (
           </div>
         </Grid.Cell>
         <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
-          <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
+          <div style={{ display: 'grid' }} className="amsterdam-gap-xs">
             <Heading level={2} size="level-4" inverseColor>
               Volg de gemeente
             </Heading>
@@ -119,9 +119,9 @@ export const SiteFooter = () => (
           </div>
         </Grid.Cell>
         <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
-          <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 2)' }}>
-            <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 4)' }}>
-              <Heading level={2} size="level-4" inverseColor>
+          <div style={{ display: 'grid' }} className="amsterdam-gap-md">
+            <section>
+              <Heading level={2} size="level-4" inverseColor className="amsterdam-mb-xs">
                 Kalender
               </Heading>
               <Paragraph size="small" inverseColor>
@@ -135,9 +135,9 @@ export const SiteFooter = () => (
                 </Link>
                 .
               </Paragraph>
-            </div>
-            <div style={{ display: 'grid', gap: 'calc(var(--amsterdam-grid-gap) / 4)' }}>
-              <Heading level={3} size="level-4" inverseColor>
+            </section>
+            <section>
+              <Heading level={3} size="level-4" inverseColor className="amsterdam-mb-xs">
                 Uit in Amsterdam
               </Heading>
               <Paragraph size="small" inverseColor>
@@ -147,7 +147,7 @@ export const SiteFooter = () => (
                 </Link>{' '}
                 vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
               </Paragraph>
-            </div>
+            </section>
           </div>
         </Grid.Cell>
       </Grid>
