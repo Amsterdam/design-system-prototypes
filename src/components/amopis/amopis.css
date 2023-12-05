@@ -8,17 +8,17 @@
 }
 
 .amopis-main-background {
-  background-color: #e8f2ff;
+  background-color: var(--amsterdam-color-neutral-grey1);
 }
 
 .amopis-white-background {
-  background-color: var(--amsterdam-color-primary-white)
+  background-color: var(--amsterdam-color-primary-white);
 }
 
 .amopis-user-badge {
   background-color: var(--amsterdam-color-primary-blue);
   border-radius: 50%;
-  padding: .25rem .375rem;
+  padding: 0.25rem 0.375rem;
 }
 
 .amopis-sidebar {
