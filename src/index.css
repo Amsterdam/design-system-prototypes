@@ -148,36 +148,6 @@ a[href="#"] {
   padding-block: 24px;
 }
 
-/* Override line heights */
-
-.amsterdam-heading--1 {
-  line-height: 1.1;
-}
-
-.amsterdam-heading--2 {
-  line-height: 1.15;
-}
-
-.amsterdam-heading--3 {
-  line-height: 1.2;
-}
-
-.amsterdam-heading--4 {
-  line-height: 1.25;
-}
-
-.amsterdam-paragraph {
-  line-height: 1.8;
-}
-
-.amsterdam-paragraph--small {
-  line-height: 1.6;
-}
-
-.amsterdam-paragraph--large {
-  line-height: 1.6;
-}
-
 /* Fake input */
 
 .amsterdam-input {
