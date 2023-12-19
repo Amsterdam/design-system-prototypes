@@ -1,12 +1,12 @@
 import { Grid, Logo, PageMenu } from '@amsterdam/design-system-react'
-import { LoginIcon, MenuIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
+import { LoginIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
 import PageMenuLink from '../../links/PageMenuLink.tsx'
 
 const baseUrl = import.meta.env.BASE_URL
 
 export const SiteHeader = () => (
   <Grid className="amsterdam-header__grid">
-    <Grid.Cell fullWidth>
+    <Grid.Cell span="all">
       <div style={{ display: 'flex', justifyContent: 'space-between', gap: 'calc(var(--amsterdam-grid-gap ) * 4)' }}>
         <a href={baseUrl}>
           <Logo />
@@ -29,7 +29,6 @@ export const SiteHeader = () => (
           <PageMenuLink to={`${baseUrl}zoeken`} className="amsterdam-show-from-wide" icon={SearchIcon}>
             Zoeken
           </PageMenuLink>
-          <PageMenu.Button icon={MenuIcon}>Menu</PageMenu.Button>
         </PageMenu>
       </div>
     </Grid.Cell>

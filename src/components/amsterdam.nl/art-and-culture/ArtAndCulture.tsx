@@ -16,14 +16,14 @@ const baseUrl = import.meta.env.BASE_URL
 export const ArtAndCulture = () => (
   <>
     <Grid>
-      <Grid.Cell fullWidth>
+      <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
       </Grid.Cell>
     </Grid>
     <Grid paddingBottom="medium">
-      <Grid.Cell fullWidth>
+      <Grid.Cell span="all">
         <PageHeading>Kunst en Cultuur</PageHeading>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 4 }}>

@@ -3,7 +3,7 @@ import { Card, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 export const TopTasks = () => (
   <>
     <Grid paddingVertical="medium">
-      <Grid.Cell fullWidth>
+      <Grid.Cell span="all">
         <Heading>Meest bezocht</Heading>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>

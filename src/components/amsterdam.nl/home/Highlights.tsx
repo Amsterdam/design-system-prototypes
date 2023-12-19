@@ -1,7 +1,7 @@
-import { Grid, Heading, Highlight, Link, Paragraph } from '@amsterdam/design-system-react'
+import { Grid, Heading, Link, Paragraph, Spotlight } from '@amsterdam/design-system-react'
 
 export const Highlights = () => (
-  <Highlight color="purple">
+  <Spotlight color="purple">
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
         <Heading inverseColor style={{ marginBlockEnd: '1.5rem' }} size="level-2">
@@ -28,5 +28,5 @@ export const Highlights = () => (
         </Link>
       </Grid.Cell>
     </Grid>
-  </Highlight>
+  </Spotlight>
 )

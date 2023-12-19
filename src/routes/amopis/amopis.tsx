@@ -14,7 +14,7 @@ export default function Amopis() {
             <Project />
           </div>
           <Grid compact paddingVertical="small">
-            <Grid.Cell fullWidth>
+            <Grid.Cell span="all">
               <PageMenu>
                 <PageMenu.Link href="#">Home</PageMenu.Link>
                 <PageMenu.Link href="#">E-mail je vraag of feedback</PageMenu.Link>

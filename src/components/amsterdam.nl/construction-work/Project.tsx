@@ -4,7 +4,7 @@ import {
   Card,
   Grid,
   Heading,
-  Highlight,
+  Spotlight,
   Image,
   Link,
   Paragraph,
@@ -17,7 +17,7 @@ const baseUrl = import.meta.env.BASE_URL
 export const Project = () => (
   <>
     <Grid>
-      <Grid.Cell fullWidth>
+      <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
           <Breadcrumb.Item href={`${baseUrl}projecten`}>Bouwprojecten en verkeersprojecten</Breadcrumb.Item>
@@ -38,8 +38,8 @@ export const Project = () => (
         </Paragraph>
       </Grid.Cell>
     </Grid>
-    <Grid gapVertical="small" paddingBottom="medium">
-      <Grid.Cell fullWidth>
+    <Grid paddingBottom="medium">
+      <Grid.Cell span="all">
         <Heading level={2} size="level-3">
           Overzicht projecten
         </Heading>
@@ -59,14 +59,14 @@ export const Project = () => (
             <Heading level={3} size="level-4">
               <Card.Link href="#">{title}</Card.Link>
             </Heading>
-            <Paragraph size="small">
+            <Paragraph>
               Het woonproject Appelweg biedt straks 63 tijdelijke woningen voor Amsterdamse starters op de woningmarkt.
             </Paragraph>
           </Card>
         </Grid.Cell>
       ))}
     </Grid>
-    <Highlight color="purple">
+    <Spotlight color="purple">
       <Grid paddingVertical="medium">
         <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
           <Heading inverseColor level={2} size="level-4" className="amsterdam-mb-xs">
@@ -104,9 +104,9 @@ export const Project = () => (
           </UnorderedList>
         </Grid.Cell>
       </Grid>
-    </Highlight>
+    </Spotlight>
     <Grid paddingVertical="small">
-      <Grid.Cell fullWidth>
+      <Grid.Cell span="all">
         <Heading level={2} size="level-4">
           Projecten op de kaart
         </Heading>

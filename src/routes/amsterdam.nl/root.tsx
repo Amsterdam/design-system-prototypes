@@ -12,7 +12,7 @@ export default function Root() {
       <Outlet />
       <SiteFooter />
       <Grid paddingVertical="small">
-        <Grid.Cell fullWidth>
+        <Grid.Cell span="all">
           <PageMenu>
             <PageMenuLink to={baseUrl}>Home</PageMenuLink>
             <PageMenuLink to={`${baseUrl}zoeken`}>Zoeken</PageMenuLink>

@@ -6,7 +6,7 @@ const baseUrl = import.meta.env.BASE_URL
 export const News = () => (
   <>
     <Grid>
-      <Grid.Cell fullWidth>
+      <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
           <Breadcrumb.Item href="#">Nieuws</Breadcrumb.Item>
@@ -15,7 +15,7 @@ export const News = () => (
     </Grid>
     <article>
       <Grid paddingBottom="medium">
-        <Grid.Cell fullWidth>
+        <Grid.Cell span={6}>
           <Heading className="amsterdam-mb-xs">Maatregelen tegen overlast fatbikes</Heading>
           <Paragraph>8 november 2023</Paragraph>
         </Grid.Cell>

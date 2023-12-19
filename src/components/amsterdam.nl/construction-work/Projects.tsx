@@ -3,7 +3,7 @@ import {
   Breadcrumb,
   Grid,
   Heading,
-  Highlight,
+  Spotlight,
   Image,
   Link,
   Paragraph,
@@ -17,7 +17,7 @@ const baseUrl = import.meta.env.BASE_URL
 export const Projects = () => (
   <>
     <Grid>
-      <Grid.Cell fullWidth>
+      <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
@@ -55,7 +55,7 @@ export const Projects = () => (
         <input className="amsterdam-input" type="text" />
       </Grid.Cell>
     </Grid>
-    <Highlight color="yellow">
+    <Spotlight color="yellow">
       <Grid paddingVertical="medium">
         <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 3 }}>
           <Heading level={2} size="level-4" className="amsterdam-mb-xs">
@@ -69,7 +69,7 @@ export const Projects = () => (
           </AspectRatio>
         </Grid.Cell>
       </Grid>
-    </Highlight>
+    </Spotlight>
     <AspectRatio ratio="x-wide">
       <Image alt="" src={constructionWorkMapImage} />
     </AspectRatio>

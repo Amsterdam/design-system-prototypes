@@ -82,14 +82,14 @@ const linkSections = [
 export const CivilAffairs = () => (
   <>
     <Grid>
-      <Grid.Cell fullWidth>
+      <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
       </Grid.Cell>
     </Grid>
     <Grid paddingBottom="medium">
-      <Grid.Cell fullWidth>
+      <Grid.Cell span="all">
         <PageHeading>Burgerzaken</PageHeading>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 2 }}>

@@ -13,7 +13,7 @@ import { ChattingIcon, EditDocumentIcon, EmailIcon } from '@amsterdam/design-sys
 
 export const Project = () => (
   <Grid compact paddingVertical="medium">
-    <Grid.Cell fullWidth>
+    <Grid.Cell span="all">
       <Breadcrumb>
         <Breadcrumb.Item href="#">Dashboard</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Projecten</Breadcrumb.Item>
