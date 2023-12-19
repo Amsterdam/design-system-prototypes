@@ -37,7 +37,7 @@ export const Project = () => (
         <UnorderedList markers={false}>
           <UnorderedList.Item>
             <Link icon={ChattingIcon} href="#" variant="inList" style={{ paddingInline: '1rem' }}>
-              Project&shy;details
+              Projectdetails
             </Link>
           </UnorderedList.Item>
           <UnorderedList.Item>
@@ -47,7 +47,7 @@ export const Project = () => (
           </UnorderedList.Item>
           <UnorderedList.Item>
             <Link icon={ChattingIcon} href="#" variant="inList" style={{ paddingInline: '1rem' }}>
-              Project&shy;structuur
+              Projectstructuur
             </Link>
           </UnorderedList.Item>
           <UnorderedList.Item>

@@ -9,7 +9,7 @@ export const TopTasks = () => (
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
         <Card>
           <Heading level={3} size="level-4">
-            <Card.Link href="#">Gemeente&shy;be&shy;las&shy;tin&shy;gen</Card.Link>
+            <Card.Link href="#">Gemeentebelastingen</Card.Link>
           </Heading>
           <Paragraph size="small">
             Bekijk welke belastingen en heffingen er zijn, hoe u bezwaar maakt of een betalingsregeling treft.
