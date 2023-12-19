@@ -1,16 +1,9 @@
-import {
-  AnchorHTMLAttributes,
-  ForwardedRef,
-  HTMLAttributeAnchorTarget,
-  MouseEvent,
-  PropsWithChildren,
-  forwardRef,
-} from 'react'
+import { ForwardedRef, HTMLAttributeAnchorTarget, MouseEvent, forwardRef } from 'react'
 import { useHref, useLinkClickHandler } from 'react-router-dom'
 import { PageMenu } from '@amsterdam/design-system-react'
 import type { PageMenuLinkProps } from '@amsterdam/design-system-react'
 
-export interface LinkProps extends PropsWithChildren<AnchorHTMLAttributes<HTMLAnchorElement>>, PageMenuLinkProps {
+export interface LinkProps extends PageMenuLinkProps {
   to: string
   target?: HTMLAttributeAnchorTarget
   replace?: boolean
