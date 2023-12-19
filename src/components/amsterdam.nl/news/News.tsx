@@ -17,21 +17,25 @@ export const News = () => (
       <Grid paddingBottom="medium">
         <Grid.Cell fullWidth>
           <Heading className="amsterdam-mb-xs">Maatregelen tegen overlast fatbikes</Heading>
-          <Paragraph size="small">8 november 2023</Paragraph>
+          <Paragraph>8 november 2023</Paragraph>
+        </Grid.Cell>
+        <Grid.Cell span={6}></Grid.Cell>
+        <Grid.Cell span={6}>
+          <Paragraph size="large">
+            Door de opkomst van de elektrische fiets is het fietsverkeer chaotischer geworden. Onder kinderen en tieners
+            is de fatbike op het moment erg populair. Fatbikes zijn vaak opgevoerd en te vergelijken met brommers.
+            Amsterdam en andere gemeenten zijn bezorgd over de verkeersveiligheid en vragen de minister om maatregelen.
+          </Paragraph>
+        </Grid.Cell>
+        <Grid.Cell span={6}>
+          <AspectRatio ratio="x-wide" className="amsterdam-mb-md">
+            <Image alt="" src={fatbikesImage} />
+          </AspectRatio>
         </Grid.Cell>
       </Grid>
-      <AspectRatio ratio="x-wide" className="amsterdam-mb-md">
-        <Image alt="" src={fatbikesImage} />
-      </AspectRatio>
       <Grid paddingBottom="medium">
-        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <div style={{ display: 'grid' }} className="amsterdam-gap-md">
-            <Paragraph size="large">
-              Door de opkomst van de elektrische fiets is het fietsverkeer chaotischer geworden. Onder kinderen en
-              tieners is de fatbike op het moment erg populair. Fatbikes zijn vaak opgevoerd en te vergelijken met
-              brommers. Amsterdam en andere gemeenten zijn bezorgd over de verkeersveiligheid en vragen de minister om
-              maatregelen.
-            </Paragraph>
             <Paragraph>
               Mensen voelen zich steeds onveiliger op het fietspad door de toenemende drukte en snelheidsverschillen.
               Ook stijgt het aantal fietsongelukken al jaren. We moeten daarom nu in actie komen.
