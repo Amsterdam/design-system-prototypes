@@ -122,20 +122,6 @@
   }
 }
 
-/* Fake page menu behaviour */
-
-.amsterdam-header__page-menu {
-  justify-content: flex-end;
-}
-
-.amsterdam-header__page-menu :not(:last-child) {
-  display: none;
-
-  @media screen and (min-width: 36rem) {
-    display: block;
-  }
-}
-
 /* Indicate non-functional links */
 
 a[href="#"] {
