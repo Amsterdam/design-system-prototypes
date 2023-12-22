@@ -22,6 +22,8 @@ export const SiteHeader = () => (
             </PageMenuLink>
           </PageMenu>
         }
+        logoLink={baseUrl}
+        logoLinkTitle="Naar de homepage van gemeente Amsterdam"
         menu={<button className="amsterdam-header__menu-button">Menu</button>}
       />
     </Grid.Cell>
