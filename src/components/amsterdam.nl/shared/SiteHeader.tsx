@@ -5,7 +5,7 @@ import PageMenuLink from '../../links/PageMenuLink.tsx'
 const baseUrl = import.meta.env.BASE_URL
 
 export const SiteHeader = () => (
-  <Grid className="amsterdam-header__grid">
+  <Grid>
     <Grid.Cell span="all">
       <Header
         links={
