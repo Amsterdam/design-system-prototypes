@@ -128,20 +128,8 @@ a[href="#"] {
   cursor: not-allowed;
 }
 
-/* Hack header padding */
+/* Override header padding */
 
-.amsterdam-header__grid {
+.amsterdam-header {
   padding-block: 24px;
-}
-
-/* Fake input */
-
-.amsterdam-input {
-  border-style: solid;
-  border-width: 0 0 2px;
-  box-sizing: border-box;
-  font-family: var(--amsterdam-paragraph-font-family);
-  font-size: var(--amsterdam-paragraph-spacious-medium-font-size);
-  padding: 0.5em 1em;
-  width: 100%;
 }
