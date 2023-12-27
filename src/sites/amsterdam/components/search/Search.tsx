@@ -1,5 +1,5 @@
 import { Breadcrumb, Card, Checkbox, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
-import { baseUrl } from '../../../../shared/constants'
+import { siteUrl } from '../../constants'
 
 export const Search = () => (
   <Grid paddingBottom="medium">
@@ -40,7 +40,7 @@ export const Search = () => (
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
       <Breadcrumb>
-        <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
+        <Breadcrumb.Item href={siteUrl}>Home</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Zoekresultaten</Breadcrumb.Item>
       </Breadcrumb>
       <div className="amsterdam-mb-md">

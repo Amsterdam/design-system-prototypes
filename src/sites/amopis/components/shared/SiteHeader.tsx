@@ -1,5 +1,5 @@
 import { Grid, Header, Paragraph } from '@amsterdam/design-system-react'
-import { baseUrl } from '../../../../shared/constants'
+import { siteUrl } from '../../constants'
 
 export const SiteHeader = () => (
   <Grid compact>
@@ -14,7 +14,7 @@ export const SiteHeader = () => (
             </div>
           </div>
         }
-        logoLink={`${baseUrl}amopis`}
+        logoLink={siteUrl}
         logoLinkTitle="Naar de homepage van Amopis"
         title="Amopis"
       />

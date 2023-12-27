@@ -1,7 +1,8 @@
 import { Grid, Header, PageMenu } from '@amsterdam/design-system-react'
 import { LoginIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
 import { PageMenuLink } from '../../../../shared/components/PageMenuLink'
-import { baseUrl } from '../../../../shared/constants'
+import { rootUrl } from '../../../../shared/constants'
+import { siteUrl } from '../../constants'
 
 export const SiteHeader = () => (
   <Grid>
@@ -16,12 +17,13 @@ export const SiteHeader = () => (
             <PageMenu.Link href="https://mijn.amsterdam.nl/" icon={LoginIcon} rel="external">
               Mijn Amsterdam
             </PageMenu.Link>
-            <PageMenuLink to={`${baseUrl}zoeken`} icon={SearchIcon}>
+            <PageMenuLink to={`${siteUrl}zoeken`} icon={SearchIcon}>
               Zoeken
             </PageMenuLink>
+            <PageMenuLink to={rootUrl}>Prototypes</PageMenuLink>
           </PageMenu>
         }
-        logoLink={baseUrl}
+        logoLink={siteUrl}
         logoLinkTitle="Naar de homepage van gemeente Amsterdam"
         menu={<button className="amsterdam-header__menu-button">Menu</button>}
       />

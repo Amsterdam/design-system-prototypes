@@ -9,16 +9,16 @@ import {
   Spotlight,
   UnorderedList,
 } from '@amsterdam/design-system-react'
-import { baseUrl } from '../../../../shared/constants'
 import constructionWorkMapImage from '../../assets/images/construction-work-map.jpg'
 import constructionWorkImage from '../../assets/images/construction-work.jpg'
+import { siteUrl } from '../../constants'
 
 export const Projects = () => (
   <>
     <Grid>
       <Grid.Cell span="all">
         <Breadcrumb>
-          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
+          <Breadcrumb.Item href={siteUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
       </Grid.Cell>
     </Grid>
@@ -40,7 +40,7 @@ export const Projects = () => (
         <UnorderedList markers={false}>
           {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district, index) => (
             <UnorderedList.Item key={index}>
-              <Link href={`${baseUrl}project`} variant="inList">
+              <Link href={`${siteUrl}project`} variant="inList">
                 {district}
               </Link>
             </UnorderedList.Item>

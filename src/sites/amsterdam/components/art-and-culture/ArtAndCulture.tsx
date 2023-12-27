@@ -9,15 +9,15 @@ import {
   UnorderedList,
 } from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
-import { baseUrl } from '../../../../shared/constants'
 import artAndCultureImage from '../../assets/images/art-and-culture.jpg'
+import { siteUrl } from '../../constants'
 
 export const ArtAndCulture = () => (
   <>
     <Grid>
       <Grid.Cell span="all">
         <Breadcrumb>
-          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
+          <Breadcrumb.Item href={siteUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
       </Grid.Cell>
     </Grid>

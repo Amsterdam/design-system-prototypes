@@ -1,5 +1,5 @@
-import { baseUrl } from '../../shared/constants'
 import { ErrorPage } from '../../shared/pages/ErrorPage'
+import { siteUrl } from './constants'
 import { AmsterdamRootPage } from './pages/AmsterdamRootPage'
 import { ArtAndCulturePage } from './pages/ArtAndCulturePage'
 import { CivilAffairsPage } from './pages/CivilAffairsPage'
@@ -10,7 +10,7 @@ import { ProjectsPage } from './pages/ProjectsPage'
 import { SearchPage } from './pages/SearchPage'
 
 export const routes = {
-  path: baseUrl,
+  path: siteUrl,
   element: <AmsterdamRootPage />,
   errorElement: <ErrorPage />,
   children: [
@@ -20,27 +20,27 @@ export const routes = {
     },
     {
       element: <ArtAndCulturePage />,
-      path: `${baseUrl}kunst-en-cultuur`,
+      path: `${siteUrl}kunst-en-cultuur`,
     },
     {
       element: <CivilAffairsPage />,
-      path: `${baseUrl}burgerzaken`,
+      path: `${siteUrl}burgerzaken`,
     },
     {
       element: <NewsPage />,
-      path: `${baseUrl}nieuws`,
+      path: `${siteUrl}nieuws`,
     },
     {
       element: <ProjectsPage />,
-      path: `${baseUrl}projecten`,
+      path: `${siteUrl}projecten`,
     },
     {
       element: <ProjectPage />,
-      path: `${baseUrl}project`,
+      path: `${siteUrl}project`,
     },
     {
       element: <SearchPage />,
-      path: `${baseUrl}zoeken`,
+      path: `${siteUrl}zoeken`,
     },
   ],
 }

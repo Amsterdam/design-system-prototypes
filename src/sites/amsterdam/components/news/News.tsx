@@ -1,13 +1,13 @@
 import { AspectRatio, Breadcrumb, Grid, Heading, Image, Paragraph } from '@amsterdam/design-system-react'
-import { baseUrl } from '../../../../shared/constants'
 import fatbikesImage from '../../assets/images/fatbikes.jpg'
+import { siteUrl } from '../../constants'
 
 export const News = () => (
   <>
     <Grid>
       <Grid.Cell span="all">
         <Breadcrumb>
-          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
+          <Breadcrumb.Item href={siteUrl}>Home</Breadcrumb.Item>
           <Breadcrumb.Item href="#">Nieuws</Breadcrumb.Item>
         </Breadcrumb>
       </Grid.Cell>

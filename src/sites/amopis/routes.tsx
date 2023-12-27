@@ -1,9 +1,9 @@
-import { baseUrl } from '../../shared/constants'
 import { ErrorPage } from '../../shared/pages/ErrorPage'
+import { siteUrl } from './constants.ts'
 import { AmopisRootPage } from './pages/AmopisRootPage'
 
 export const routes = {
-  path: `${baseUrl}amopis`,
+  path: siteUrl,
   element: <AmopisRootPage />,
   errorElement: <ErrorPage />,
 }

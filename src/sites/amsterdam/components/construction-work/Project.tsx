@@ -10,16 +10,16 @@ import {
   Spotlight,
   UnorderedList,
 } from '@amsterdam/design-system-react'
-import { baseUrl } from '../../../../shared/constants'
 import constructionWorkMapImage from '../../assets/images/construction-work-map.jpg'
+import { siteUrl } from '../../constants'
 
 export const Project = () => (
   <>
     <Grid>
       <Grid.Cell span="all">
         <Breadcrumb>
-          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
-          <Breadcrumb.Item href={`${baseUrl}projecten`}>Bouwprojecten en verkeersprojecten</Breadcrumb.Item>
+          <Breadcrumb.Item href={siteUrl}>Home</Breadcrumb.Item>
+          <Breadcrumb.Item href={`${siteUrl}projecten`}>Bouwprojecten en verkeersprojecten</Breadcrumb.Item>
         </Breadcrumb>
       </Grid.Cell>
     </Grid>

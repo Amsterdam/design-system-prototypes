@@ -1,9 +1,9 @@
 import { Grid, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
 import { Outlet } from 'react-router-dom'
 import { PageMenuLink } from '../../../shared/components/PageMenuLink'
-import { baseUrl } from '../../../shared/constants'
 import { SiteFooter } from '../components/shared/SiteFooter'
 import { SiteHeader } from '../components/shared/SiteHeader'
+import { siteUrl } from '../constants'
 
 export const AmsterdamRootPage = () => (
   <>
@@ -17,14 +17,13 @@ export const AmsterdamRootPage = () => (
       <Grid paddingVertical="small">
         <Grid.Cell span="all">
           <PageMenu>
-            <PageMenuLink to={baseUrl}>Home</PageMenuLink>
-            <PageMenuLink to={`${baseUrl}zoeken`}>Zoeken</PageMenuLink>
-            <PageMenuLink to={`${baseUrl}nieuws`}>Nieuws</PageMenuLink>
-            <PageMenuLink to={`${baseUrl}burgerzaken`}>Burgerzaken</PageMenuLink>
-            <PageMenuLink to={`${baseUrl}kunst-en-cultuur`}>Kunst en cultuur</PageMenuLink>
-            <PageMenuLink to={`${baseUrl}projecten`}>Projecten</PageMenuLink>
-            <PageMenuLink to={`${baseUrl}project`}>Project</PageMenuLink>
-            <PageMenuLink to={`${baseUrl}amopis`}>Amopis</PageMenuLink>
+            <PageMenuLink to={siteUrl}>Home</PageMenuLink>
+            <PageMenuLink to={`${siteUrl}zoeken`}>Zoeken</PageMenuLink>
+            <PageMenuLink to={`${siteUrl}nieuws`}>Nieuws</PageMenuLink>
+            <PageMenuLink to={`${siteUrl}burgerzaken`}>Burgerzaken</PageMenuLink>
+            <PageMenuLink to={`${siteUrl}kunst-en-cultuur`}>Kunst en cultuur</PageMenuLink>
+            <PageMenuLink to={`${siteUrl}projecten`}>Projecten</PageMenuLink>
+            <PageMenuLink to={`${siteUrl}project`}>Project</PageMenuLink>
           </PageMenu>
         </Grid.Cell>
       </Grid>

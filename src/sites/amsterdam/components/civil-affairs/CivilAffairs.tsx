@@ -1,5 +1,5 @@
 import { Breadcrumb, Grid, Heading, Link, PageHeading, UnorderedList } from '@amsterdam/design-system-react'
-import { baseUrl } from '../../../../shared/constants'
+import { siteUrl } from '../../constants'
 
 const linkSections = [
   [
@@ -83,7 +83,7 @@ export const CivilAffairs = () => (
     <Grid>
       <Grid.Cell span="all">
         <Breadcrumb>
-          <Breadcrumb.Item href={baseUrl}>Home</Breadcrumb.Item>
+          <Breadcrumb.Item href={siteUrl}>Home</Breadcrumb.Item>
         </Breadcrumb>
       </Grid.Cell>
     </Grid>
