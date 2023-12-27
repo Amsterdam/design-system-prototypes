@@ -1,4 +1,4 @@
-import { Breadcrumb, Card, Checkbox, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Checkbox, Grid, Heading, Paragraph, TextInput } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
 
 export const Search = () => (
@@ -45,7 +45,7 @@ export const Search = () => (
       </Breadcrumb>
       <div className="amsterdam-mb-md">
         <Heading className="amsterdam-mb-xs">Zoeken</Heading>
-        <input className="amsterdam-input amsterdam-mb-xs" type="text" value="afval" />
+        <TextInput className="amsterdam-mb-xs" value="afval" />
         <Paragraph size="small">25 resultaten</Paragraph>
       </div>
       <div style={{ display: 'grid' }} className="amsterdam-gap-md">

@@ -7,6 +7,7 @@ import {
   Link,
   Paragraph,
   Spotlight,
+  TextInput,
   UnorderedList,
 } from '@amsterdam/design-system-react'
 import constructionWorkMapImage from '../../assets/images/construction-work-map.jpg'
@@ -51,7 +52,7 @@ export const Projects = () => (
         <Heading level={2} size="level-4" className="amsterdam-mb-xs">
           Zoek project
         </Heading>
-        <input className="amsterdam-input" type="text" />
+        <TextInput />
       </Grid.Cell>
     </Grid>
     <Spotlight color="yellow">
