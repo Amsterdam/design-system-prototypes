@@ -7,7 +7,7 @@ export const SiteFooter = () => (
         <Heading>Colofon</Heading>
       </VisuallyHidden>
       <Grid gapVertical="large" paddingVertical="medium">
-        <Grid.Cell span={3}>
+        <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
           <div style={{ display: 'grid' }} className="amsterdam-gap-xs">
             <Heading level={2} size="level-4" inverseColor>
               Contact
