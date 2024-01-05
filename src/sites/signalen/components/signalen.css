@@ -1,0 +1,10 @@
+.signalen-form-navigation {
+  display: flex;
+  gap: 1rem;
+  justify-content: end;
+}
+
+.signalen-summary-heading {
+  display: flex;
+  justify-content: space-between;
+}

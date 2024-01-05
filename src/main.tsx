@@ -7,6 +7,7 @@ import { RootPage } from './shared/pages/RootPage'
 
 import { routes as amopisRoutes } from './sites/amopis/routes'
 import { routes as amsterdamRoutes } from './sites/amsterdam/routes'
+import { routes as signalenRoutes } from './sites/signalen/routes'
 
 import '@amsterdam/design-system-tokens/dist/root.css'
 import '@amsterdam/design-system-assets/font/index.css'
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
   },
   amopisRoutes,
   amsterdamRoutes,
+  signalenRoutes,
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
