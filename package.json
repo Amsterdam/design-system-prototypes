@@ -1,7 +1,13 @@
 {
-  "name": "design-system-prototypes",
-  "private": true,
   "version": "0.0.0",
+  "author": "City of Amsterdam",
+  "description": "Prototyping environment for the Amsterdam Design System",
+  "license": "EUPL-1.2",
+  "name": "@amsterdam/design-system-prototypes",
+  "keywords": [
+    "nl-design-system"
+  ],
+  "private": true,
   "engines": {
     "node": "^20",
     "npm": "^8",
