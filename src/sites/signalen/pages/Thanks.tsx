@@ -1,4 +1,6 @@
-import { Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
+import { Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Link } from '../../../shared/components/Link'
+import { siteUrl } from '../constants'
 
 export const Thanks = () => (
   <Grid paddingBottom="medium">
@@ -18,7 +20,7 @@ export const Thanks = () => (
 
         <Heading level={2}>Wilt u nog een andere melding doen?</Heading>
 
-        <Link>Doe een melding</Link>
+        <Link to={`${siteUrl}beschrijf`}>Doe een melding</Link>
       </div>
     </Grid.Cell>
   </Grid>

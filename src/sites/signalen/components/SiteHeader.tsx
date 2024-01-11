@@ -1,5 +1,6 @@
 import { Grid, Header, PageMenu, SkipLink } from '@amsterdam/design-system-react'
 import { siteUrl } from '../constants'
+import { PageMenuLink } from '../../../shared/components/PageMenuLink'
 
 export const SiteHeader = () => (
   <Grid>
@@ -10,8 +11,7 @@ export const SiteHeader = () => (
         logoLinkTitle="Naar de homepage van Signalen Amsterdam"
         links={
           <PageMenu alignEnd>
-            {/* TODO: hier react router link voor gebruiken */}
-            <PageMenu.Link href="/design-system-prototypes/signalen/beschrijf">Doe een melding</PageMenu.Link>
+            <PageMenuLink to={`${siteUrl}beschrijf`}>Doe een melding</PageMenuLink>
             <PageMenu.Link href="#">Meldingenkaart</PageMenu.Link>
             <PageMenu.Link href="#">Mijn meldingen</PageMenu.Link>
           </PageMenu>
