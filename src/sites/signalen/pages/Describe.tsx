@@ -3,18 +3,15 @@ import FormNavigation from '../components/FormNavigation'
 
 export const Describe = () => (
   <Grid paddingBottom="medium">
-    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
+    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
       <form style={{ display: 'grid' }} className="amsterdam-gap-md">
-        <Heading>1. Beschrijf uw melding</Heading>
-        <Paragraph>
-          Voordat u een melding doet kunt u op de meldingenkaart zien welke meldingen bekend zijn bij de gemeente.
-        </Paragraph>
+        <Heading>Doe een melding</Heading>
+
+        <Heading level={2}>Beschrijf uw melding</Heading>
 
         <div>
           <FormLabel htmlFor="description">Waar gaat het om?</FormLabel>
-          <Paragraph size="small">
-            Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.
-          </Paragraph>
+          <Paragraph size="small">Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd</Paragraph>
           <textarea id="description" />
           <Paragraph size="small">8/1000 tekens</Paragraph>
         </div>

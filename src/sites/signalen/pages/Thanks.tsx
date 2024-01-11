@@ -12,9 +12,11 @@ export const Thanks = () => (
 
         <Heading level={2}>Wat doen we met uw melding?</Heading>
         <Paragraph>
-          We laten u binnen 3 werkdagen weten wat we hebben gedaan. En anders hoort u wanneer wij uw melding kunnen
-          oppakken. We houden u op de hoogte via e-mail.
+          U hoort binnen 3 werkdagen wat we met uw melding hebben gedaan. Dringende meldingen pakken wij zo snel
+          mogelijk op.
         </Paragraph>
+
+        <Heading level={2}>Wilt u nog een andere melding doen?</Heading>
 
         <Link>Doe een melding</Link>
       </div>

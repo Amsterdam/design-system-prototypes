@@ -5,7 +5,9 @@ export const Contact = () => (
   <Grid paddingBottom="medium">
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
       <form style={{ display: 'grid' }} className="amsterdam-gap-md">
-        <Heading>3. Contactgegevens</Heading>
+        <Heading>Doe een melding</Heading>
+
+        <Heading level={2}>Contactgegevens</Heading>
 
         <Paragraph size="large">Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?</Paragraph>
 

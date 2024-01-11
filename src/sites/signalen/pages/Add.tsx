@@ -5,7 +5,9 @@ export const Add = () => (
   <Grid paddingBottom="medium">
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
       <form style={{ display: 'grid' }} className="amsterdam-gap-md">
-        <Heading>2. Locatie en vragen</Heading>
+        <Heading>Doe een melding</Heading>
+
+        <Heading level={2}>Locatie en vragen</Heading>
 
         <fieldset>
           <legend>Waar is het?</legend>

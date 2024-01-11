@@ -1,10 +1,15 @@
 .signalen-form-navigation {
   display: flex;
   gap: 1rem;
-  justify-content: end;
+  justify-content: space-between;
 }
 
 .signalen-summary-heading {
   display: flex;
   justify-content: space-between;
+}
+
+/* TODO: should we set this gap default in the Button component? */
+.amsterdam-button.amsterdam-button {
+  gap: 0.5rem;
 }
