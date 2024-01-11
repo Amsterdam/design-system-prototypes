@@ -33,7 +33,7 @@ export const SiteFooter = () => (
       <Grid paddingVertical="small">
         <Grid.Cell span="all">
           <PageMenu>
-            <PageMenu.Link href="#">Over deze website</PageMenu.Link>
+            <PageMenu.Link href="#">Over deze site</PageMenu.Link>
             <PageMenu.Link href="#">Privacy</PageMenu.Link>
             <PageMenu.Link href="#">Toegankelijkheid</PageMenu.Link>
           </PageMenu>

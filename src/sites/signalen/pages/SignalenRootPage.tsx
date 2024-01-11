@@ -5,13 +5,11 @@ import { SiteHeader } from '../components/SiteHeader'
 import '../components/signalen.css'
 
 export const SignalenRootPage = () => (
-  <>
-    <Screen maxWidth="wide">
-      <SiteHeader />
-      <main id="main">
-        <Outlet />
-      </main>
-      <SiteFooter />
-    </Screen>
-  </>
+  <Screen maxWidth="wide">
+    <SiteHeader />
+    <main id="main">
+      <Outlet />
+    </main>
+    <SiteFooter />
+  </Screen>
 )
