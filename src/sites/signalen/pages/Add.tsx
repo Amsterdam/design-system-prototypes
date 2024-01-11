@@ -3,7 +3,7 @@ import FormNavigation from '../components/FormNavigation'
 
 export const Add = () => (
   <Grid paddingBottom="medium">
-    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
+    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
       <form style={{ display: 'grid' }} className="amsterdam-gap-md">
         <Heading>Doe een melding</Heading>
 
