@@ -1,38 +1,51 @@
+import { FormEvent } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { FormLabel, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import FormNavigation from '../components/FormNavigation'
+import { siteUrl } from '../constants'
 
-export const Add = () => (
-  <Grid paddingBottom="medium">
-    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-      <form style={{ display: 'grid' }} className="amsterdam-gap-md">
-        <Heading>Doe een melding</Heading>
+export const Add = () => {
+  const navigate = useNavigate()
 
-        <Heading level={2}>Locatie en vragen</Heading>
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault()
 
-        <fieldset>
-          <legend>Waar is het?</legend>
-          <Paragraph>KAART SELECTOR</Paragraph>
-        </fieldset>
+    navigate(`${siteUrl}contact`)
+  }
 
-        <fieldset>
-          <legend>Wanneer was het?</legend>
+  return (
+    <Grid paddingBottom="medium">
+      <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
+        <form style={{ display: 'grid' }} className="amsterdam-gap-md" onSubmit={handleSubmit}>
+          <Heading>Doe een melding</Heading>
+
+          <Heading level={2}>Locatie en vragen</Heading>
+
+          <fieldset>
+            <legend>Waar is het?</legend>
+            <Paragraph>KAART SELECTOR</Paragraph>
+          </fieldset>
+
+          <fieldset>
+            <legend>Wanneer was het?</legend>
+            <div>
+              <input type="radio" id="nu" name="when" value="nu" />
+              <label htmlFor="nu">Nu</label>
+            </div>
+            <div>
+              <input type="radio" id="eerder" name="when" value="eerder" />
+              <label htmlFor="eerder">Eerder</label>
+            </div>
+          </fieldset>
+
           <div>
-            <input type="radio" id="nu" name="when" value="nu" />
-            <label htmlFor="nu">Nu</label>
+            <FormLabel htmlFor="where">Waar komt het afval vandaan, denkt u? (niet verplicht)</FormLabel>
+            <textarea id="where" />
           </div>
-          <div>
-            <input type="radio" id="eerder" name="when" value="eerder" />
-            <label htmlFor="eerder">Eerder</label>
-          </div>
-        </fieldset>
 
-        <div>
-          <FormLabel htmlFor="where">Waar komt het afval vandaan, denkt u? (niet verplicht)</FormLabel>
-          <textarea id="where" />
-        </div>
-
-        <FormNavigation />
-      </form>
-    </Grid.Cell>
-  </Grid>
-)
+          <FormNavigation />
+        </form>
+      </Grid.Cell>
+    </Grid>
+  )
+}
