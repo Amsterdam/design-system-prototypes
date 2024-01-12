@@ -7,7 +7,7 @@ export const SiteHeader = () => (
     <Grid.Cell span="all">
       <SkipLink href="#main">Direct naar inhoud</SkipLink>
       <Header
-        logoLink={siteUrl}
+        logoLink={`${siteUrl}beschrijf`}
         logoLinkTitle="Naar de homepage van Signalen Amsterdam"
         links={
           <PageMenu alignEnd>
