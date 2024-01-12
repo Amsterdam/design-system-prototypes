@@ -1,13 +1,20 @@
-import { Button, Icon } from '@amsterdam/design-system-react'
-import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
+import { Button } from '@amsterdam/design-system-react'
+import { Link } from '../../../shared/components/Link'
 
-const FormNavigation = ({ firstPage, lastPage }: { firstPage?: boolean; lastPage?: boolean }) => (
+const FormNavigation = ({
+  firstPage,
+  lastPage,
+  backlinkUrl,
+}: {
+  firstPage?: boolean
+  lastPage?: boolean
+  backlinkUrl?: string
+}) => (
   <div className="signalen-form-navigation">
-    {!firstPage && (
-      <Button variant="tertiary">
-        <Icon svg={ChevronLeftIcon} size="level-6" />
+    {!firstPage && backlinkUrl && (
+      <Link to={backlinkUrl} variant="inList">
         Vorige
-      </Button>
+      </Link>
     )}
     <Button type="submit">{lastPage ? 'Versturen' : 'Volgende'}</Button>
   </div>

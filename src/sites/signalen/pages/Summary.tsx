@@ -67,7 +67,7 @@ export const Summary = () => {
             </dl>
           </section>
 
-          <FormNavigation lastPage />
+          <FormNavigation backlinkUrl={`${siteUrl}contact`} lastPage />
         </form>
       </Grid.Cell>
     </Grid>

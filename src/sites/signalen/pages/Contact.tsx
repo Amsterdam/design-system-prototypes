@@ -52,7 +52,7 @@ export const Contact = () => {
             </Checkbox>
           </fieldset>
 
-          <FormNavigation />
+          <FormNavigation backlinkUrl={`${siteUrl}vul-aan`} />
         </form>
       </Grid.Cell>
     </Grid>
