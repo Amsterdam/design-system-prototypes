@@ -1,6 +1,7 @@
 import { Grid, Heading, Link, PageHeading, Screen, UnorderedList } from '@amsterdam/design-system-react'
 import { siteUrl as amopisSiteUrl } from '../../sites/amopis/constants'
 import { siteUrl as amsterdamSiteUrl } from '../../sites/amsterdam/constants'
+import { siteUrl as signalenSiteUrl } from '../../sites/signalen/constants'
 
 type Site = {
   label: string
@@ -15,6 +16,10 @@ const sites: Site[] = [
   {
     label: 'Amopis',
     href: amopisSiteUrl,
+  },
+  {
+    label: 'Signalen',
+    href: `${signalenSiteUrl}beschrijf`,
   },
 ]
 
