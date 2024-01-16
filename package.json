@@ -19,33 +19,33 @@
     "unlink": "npm unlink @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens"
   },
   "dependencies": {
-    "@amsterdam/design-system-assets": "^0.1.5",
+    "@amsterdam/design-system-assets": "^0.1.6",
     "@amsterdam/design-system-css": "^0.3.0",
     "@amsterdam/design-system-react": "^0.3.0",
-    "@amsterdam/design-system-react-icons": "^0.1.10",
+    "@amsterdam/design-system-react-icons": "^0.1.11",
     "@amsterdam/design-system-tokens": "^0.3.0",
-    "@babel/runtime": "^7.23.6",
+    "@babel/runtime": "^7.23.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.0"
+    "react-router-dom": "^6.21.2"
   },
   "devDependencies": {
-    "@types/react": "^18.2.39",
-    "@types/react-dom": "^18.2.17",
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
-    "@vitejs/plugin-react": "^4.2.0",
-    "eslint": "^8.54.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-import": "^2.29.0",
-    "eslint-plugin-jest": "^27.6.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^27.6.3",
     "eslint-plugin-json": "^3.1.0",
-    "eslint-plugin-mdx": "^3.0.0",
+    "eslint-plugin-mdx": "^3.1.5",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
-    "prettier": "^3.1.0",
-    "typescript": "^5.3.2",
-    "vite": "^5.0.4"
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "prettier": "^3.2.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11"
   }
 }
