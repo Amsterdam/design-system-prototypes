@@ -14,6 +14,7 @@ type LinkProps = LinkComponentProps & {
 
 export const Link = forwardRef(
   (
+    // TODO: Remove `PropsWithChildren` when using @amsterdam/design-system-react ^0.4.0
     { children, onClick, replace = false, state, target, to, ...rest }: PropsWithChildren<LinkProps>,
     ref: ForwardedRef<HTMLAnchorElement>,
   ) => {
