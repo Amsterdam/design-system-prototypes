@@ -12,7 +12,7 @@ const FormNavigation = ({
 }) => (
   <div className="signalen-form-navigation">
     {!firstPage && backlinkUrl && (
-      <Link to={backlinkUrl} variant="inList">
+      <Link to={backlinkUrl} variant="inList" className="signalen-back-link">
         Vorige
       </Link>
     )}
