@@ -3,7 +3,6 @@ import { Link as LinkComponent } from '@amsterdam/design-system-react'
 import { ForwardedRef, forwardRef, HTMLAttributeAnchorTarget, MouseEvent, PropsWithChildren } from 'react'
 import { useHref, useLinkClickHandler } from 'react-router-dom'
 
-// TODO: We should export LinkProps with PropsWithChildren
 type LinkProps = LinkComponentProps & {
   to: string
   target?: HTMLAttributeAnchorTarget
