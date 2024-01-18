@@ -4,11 +4,6 @@
   "description": "Prototyping environment for the Amsterdam Design System",
   "name": "design-system-prototypes",
   "private": true,
-  "engines": {
-    "node": "^20",
-    "npm": "^8",
-    "pnpm": "^8"
-  },
   "type": "module",
   "scripts": {
     "build": "tsc && vite build",
