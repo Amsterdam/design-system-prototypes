@@ -23,7 +23,7 @@ const sites: Site[] = [
     href: `${signalenSiteUrl}beschrijf`,
   },
   /* Append site object here */
-]
+].sort((a, b) => a.label.localeCompare(b.label))
 
 export const RootPage = () => (
   <Screen maxWidth="wide">
