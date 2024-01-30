@@ -2,6 +2,7 @@ import { Grid, Heading, Link, PageHeading, Screen, UnorderedList } from '@amster
 import { siteUrl as amopisSiteUrl } from '../../sites/amopis/constants'
 import { siteUrl as amsterdamSiteUrl } from '../../sites/amsterdam/constants'
 import { siteUrl as signalenSiteUrl } from '../../sites/signalen/constants'
+/* Append siteUrl import here */
 
 type Site = {
   label: string
@@ -21,6 +22,7 @@ const sites: Site[] = [
     label: 'Signalen',
     href: `${signalenSiteUrl}beschrijf`,
   },
+  /* Append site object here */
 ]
 
 export const RootPage = () => (

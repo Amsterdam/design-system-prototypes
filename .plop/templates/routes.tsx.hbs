@@ -1,0 +1,16 @@
+import { ErrorPage } from '../../shared/pages/ErrorPage'
+import { siteUrl } from './constants'
+import { HomePage } from './pages/HomePage'
+import { {{pascalCase name}}RootPage } from './pages/{{pascalCase name}}RootPage'
+
+export const routes = {
+  path: siteUrl,
+  element: <{{pascalCase name}}RootPage />,
+  errorElement: <ErrorPage />,
+  children: [
+    {
+      element: <HomePage />,
+      index: true,
+    },
+  ],
+}

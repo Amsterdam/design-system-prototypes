@@ -2,4 +2,14 @@
 
 A prototyping environment for the React components of the [Amsterdam Design System](https://github.com/Amsterdam/design-system).
 
-See it in action: [amsterdam.github.io/design-system-prototypes](http://amsterdam.github.io/design-system-prototypes).
+## Public website
+
+All current prototypes are listed here: [amsterdam.github.io/design-system-prototypes](http://amsterdam.github.io/design-system-prototypes).
+
+## Usage
+
+Feel welcome to create your own prototype.
+
+Scaffold the initial directories and files through `npx plop site {your-site-name}`.
+
+Present a pull request to have it included on the public website.
