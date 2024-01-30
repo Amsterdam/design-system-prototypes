@@ -24,6 +24,7 @@ export const AmsterdamRootPage = () => (
             <PageMenuLink to={`${siteUrl}kunst-en-cultuur`}>Kunst en cultuur</PageMenuLink>
             <PageMenuLink to={`${siteUrl}projecten`}>Projecten</PageMenuLink>
             <PageMenuLink to={`${siteUrl}project`}>Project</PageMenuLink>
+            <PageMenuLink to={`${siteUrl}parkeervergunning-voor-sportverenigingen`}>Parkeren</PageMenuLink>
           </PageMenu>
         </Grid.Cell>
       </Grid>
