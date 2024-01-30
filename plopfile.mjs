@@ -57,7 +57,7 @@ export default function (plop) {
         path: 'src/shared/pages/RootPage.tsx',
         pattern: '* Append site object here */',
         template: `  {
-    label: '{{sentenceCase name}}',
+    label: '{{titleCase name}}',
     href: {{camelCase name}}SiteUrl,
   },`,
       },
@@ -111,7 +111,7 @@ export default function (plop) {
         data: { dollarSign: '$' },
         path: "src/sites/{{kebabCase siteName}}/pages/{{pascalCase siteName}}RootPage.tsx",
         pattern: '{/* Append footer link here */}',
-        template: `            <PageMenuLink to={\`{{dollarSign}}{siteUrl}{{slug}}\`}>{{sentenceCase name}}</PageMenuLink>`,
+        template: `            <PageMenuLink to={\`{{dollarSign}}{siteUrl}{{slug}}\`}>{{titleCase name}}</PageMenuLink>`,
       },
     ],
   })
