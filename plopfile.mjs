@@ -26,12 +26,6 @@ export default function (plop) {
       },
       {
         type: 'add',
-        data: { curlyBefore: '{' },
-        path: 'src/sites/{{kebabCase name}}/components/shared/SiteFooter.tsx',
-        templateFile: '.plop/templates/SiteFooter.tsx.hbs',
-      },
-      {
-        type: 'add',
         path: 'src/sites/{{kebabCase name}}/pages/HomePage.tsx',
         templateFile: '.plop/templates/HomePage.tsx.hbs',
       },

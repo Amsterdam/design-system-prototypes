@@ -1,7 +1,7 @@
 import { Grid, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
 import { Outlet } from 'react-router-dom'
 import { PageMenuLink } from '../../../shared/components/PageMenuLink'
-import { SiteFooter } from '../components/shared/SiteFooter'
+import { SiteFooter } from '../../../shared/components/SiteFooter.tsx'
 import { SiteHeader } from '../components/shared/SiteHeader'
 import { siteUrl } from '../constants'
 
