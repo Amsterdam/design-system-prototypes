@@ -4,11 +4,10 @@ import {
   Grid,
   Heading,
   Image,
-  Link,
+  LinkList,
   Paragraph,
   Spotlight,
   TextInput,
-  UnorderedList,
 } from '@amsterdam/design-system-react'
 import constructionWorkMapImage from '../../assets/images/construction-work-map.jpg'
 import constructionWorkImage from '../../assets/images/construction-work.jpg'
@@ -38,15 +37,13 @@ export const Projects = () => (
         <Heading level={2} size="level-4" className="amsterdam-mb-xs">
           Projecten per stadsdeel
         </Heading>
-        <UnorderedList markers={false}>
+        <LinkList>
           {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district, index) => (
-            <UnorderedList.Item key={index}>
-              <Link href={`${siteUrl}project`} variant="inList">
-                {district}
-              </Link>
-            </UnorderedList.Item>
+            <LinkList.Link href={`${siteUrl}project`} key={index}>
+              {district}
+            </LinkList.Link>
           ))}
-        </UnorderedList>
+        </LinkList>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 2, medium: 4, wide: 5 }}>
         <Heading level={2} size="level-4" className="amsterdam-mb-xs">

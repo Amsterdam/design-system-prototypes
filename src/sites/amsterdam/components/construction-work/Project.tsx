@@ -6,9 +6,9 @@ import {
   Heading,
   Image,
   Link,
+  LinkList,
   Paragraph,
   Spotlight,
-  UnorderedList,
 } from '@amsterdam/design-system-react'
 import constructionWorkMapImage from '../../assets/images/construction-work-map.jpg'
 import { siteUrl } from '../../constants'
@@ -71,7 +71,7 @@ export const Project = () => (
           <Heading inverseColor level={2} size="level-4" className="amsterdam-mb-xs">
             Werk aan de weg
           </Heading>
-          <UnorderedList markers={false}>
+          <LinkList>
             {[
               'Dam tot Damloop 17 september. afsluitingen',
               'De Nieuwe Noorder, omleiding',
@@ -80,27 +80,23 @@ export const Project = () => (
               'H.M. Terwogtweg, afsluitweg',
               'Meer werkzaamheden in stadsdeel Noord',
             ].map((district, index) => (
-              <UnorderedList.Item key={index}>
-                <Link onBackground="dark" href="#" variant="inList">
-                  {district}
-                </Link>
-              </UnorderedList.Item>
+              <LinkList.Link href="#" key={index} onBackground="dark">
+                {district}
+              </LinkList.Link>
             ))}
-          </UnorderedList>
+          </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 1, medium: 2, wide: 4 }} start={{ narrow: 4, medium: 7, wide: 8 }}>
           <Heading inverseColor level={2} size="level-4" className="amsterdam-mb-xs">
             In andere stadsdelen
           </Heading>
-          <UnorderedList markers={false}>
+          <LinkList>
             {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district, index) => (
-              <UnorderedList.Item key={index}>
-                <Link onBackground="dark" href="#" variant="inList">
-                  {district}
-                </Link>
-              </UnorderedList.Item>
+              <LinkList.Link href="#" key={index} onBackground="dark">
+                {district}
+              </LinkList.Link>
             ))}
-          </UnorderedList>
+          </LinkList>
         </Grid.Cell>
       </Grid>
     </Spotlight>

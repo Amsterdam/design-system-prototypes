@@ -1,4 +1,4 @@
-import { Grid, Heading, Link, PageHeading, Screen, UnorderedList } from '@amsterdam/design-system-react'
+import { Grid, Heading, LinkList, PageHeading, Screen } from '@amsterdam/design-system-react'
 import { siteUrl as amopisSiteUrl } from '../../sites/amopis/constants'
 import { siteUrl as amsterdamSiteUrl } from '../../sites/amsterdam/constants'
 import { siteUrl as signalenSiteUrl } from '../../sites/signalen/constants'
@@ -31,15 +31,11 @@ export const RootPage = () => (
         <Heading level={2} size="level-4" className="amsterdam-mb-md">
           Amsterdam Design System
         </Heading>
-        <UnorderedList markers={false}>
+        <LinkList>
           {sites.map(({ href, label }) => (
-            <UnorderedList.Item>
-              <Link href={href} variant="inList" style={{ paddingInline: '1rem' }}>
-                {label}
-              </Link>
-            </UnorderedList.Item>
+            <LinkList.Link href={href}>{label}</LinkList.Link>
           ))}
-        </UnorderedList>
+        </LinkList>
       </Grid.Cell>
     </Grid>
   </Screen>
