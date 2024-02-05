@@ -21,7 +21,7 @@
   "dependencies": {
     "@amsterdam/design-system-assets": "^0.1.6",
     "@amsterdam/design-system-css": "^0.3.0",
-    "@amsterdam/design-system-react": "^0.3.0",
+    "@amsterdam/design-system-react": "^0.4.0",
     "@amsterdam/design-system-react-icons": "^0.1.11",
     "@amsterdam/design-system-tokens": "^0.3.0",
     "@babel/runtime": "^7.23.8",
