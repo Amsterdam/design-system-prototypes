@@ -5,9 +5,7 @@
   "name": "design-system-prototypes",
   "private": true,
   "engines": {
-    "node": "^20",
-    "npm": "^8",
-    "pnpm": "^8"
+    "node": "^20"
   },
   "type": "module",
   "scripts": {
