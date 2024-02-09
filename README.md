@@ -1,12 +1,18 @@
 # Amsterdam Design System Prototypes
 
-A prototyping environment for the React components of the [Amsterdam Design System](https://github.com/Amsterdam/design-system).
+A prototyping environment for the React Library of the [Amsterdam Design System](https://github.com/Amsterdam/design-system).
+
+## Goals
+
+- Serve as a showcase of what can be created using the library
+- Identify missing features and experiment with approaches for them
+- Evaluate static designs and finalising the design in the browser
 
 ## Public website
 
 All current prototypes are listed here: [amsterdam.github.io/design-system-prototypes](http://amsterdam.github.io/design-system-prototypes).
 
-## Usage
+## How to use
 
 Feel welcome to create your own prototype.
 
