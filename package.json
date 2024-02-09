@@ -13,6 +13,7 @@
     "start": "vite",
     "link": "npm link @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "plop": "plop",
     "preview": "vite preview",
     "unlink": "npm unlink @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens"
   },
@@ -42,6 +43,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "plop": "^4.0.1",
     "prettier": "^3.2.5",
     "typescript": "^5.3.3",
     "vite": "^5.1.0"

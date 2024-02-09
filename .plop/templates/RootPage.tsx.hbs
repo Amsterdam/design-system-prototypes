@@ -1,14 +1,15 @@
 import { Grid, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
 import { Outlet } from 'react-router-dom'
 import { PageMenuLink } from '../../../shared/components/PageMenuLink'
+import { rootUrl } from '../../../shared/constants'
 import { SiteFooter } from '../../../shared/components/SiteFooter.tsx'
 import { SiteHeader } from '../components/shared/SiteHeader'
 import { siteUrl } from '../constants'
 
-export const AmsterdamRootPage = () => (
+export const {{pascalCase name}}RootPage = () => (
   <>
     <SkipLink href="#main">Direct naar inhoud</SkipLink>
-    <Screen maxWidth="wide">
+    <Screen>
       <SiteHeader />
       <main id="main">
         <Outlet />
@@ -18,12 +19,7 @@ export const AmsterdamRootPage = () => (
         <Grid.Cell span="all">
           <PageMenu>
             <PageMenuLink to={siteUrl}>Home</PageMenuLink>
-            <PageMenuLink to={`${siteUrl}zoeken`}>Zoeken</PageMenuLink>
-            <PageMenuLink to={`${siteUrl}nieuws`}>Nieuws</PageMenuLink>
-            <PageMenuLink to={`${siteUrl}burgerzaken`}>Burgerzaken</PageMenuLink>
-            <PageMenuLink to={`${siteUrl}kunst-en-cultuur`}>Kunst en cultuur</PageMenuLink>
-            <PageMenuLink to={`${siteUrl}projecten`}>Projecten</PageMenuLink>
-            <PageMenuLink to={`${siteUrl}project`}>Project</PageMenuLink>
+            {/* Append footer link here */}
           </PageMenu>
         </Grid.Cell>
       </Grid>
