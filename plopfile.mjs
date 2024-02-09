@@ -76,12 +76,7 @@ export default function (plop) {
         type: 'input',
         name: 'name',
         message: 'page name',
-      },
-      {
-        type: 'input',
-        name: 'slug',
-        message: 'url slug',
-      },
+      }
     ],
     actions: [
       {
@@ -103,8 +98,8 @@ export default function (plop) {
         pattern: '/* Append route here */',
         template: `    {
       element: <{{pascalCase name}}Page />,
-      path: \`{{dollarSign}}{siteUrl}{{kebabCase slug}}\`,
-    }`,
+      path: \`{{dollarSign}}{siteUrl}{{kebabCase name}}\`,
+    },`,
       },
       {
         type: 'append',
