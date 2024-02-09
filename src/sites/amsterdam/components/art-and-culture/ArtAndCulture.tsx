@@ -1,13 +1,4 @@
-import {
-  Breadcrumb,
-  Grid,
-  Heading,
-  Image,
-  Link,
-  PageHeading,
-  Paragraph,
-  UnorderedList,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Grid, Heading, Image, LinkList, PageHeading, Paragraph } from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 import artAndCultureImage from '../../assets/images/art-and-culture.jpg'
 import { siteUrl } from '../../constants'
@@ -40,28 +31,12 @@ export const ArtAndCulture = () => (
         <Heading level={3} className="amsterdam-mb-xs">
           Vaak gezocht
         </Heading>
-        <UnorderedList markers={false}>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              Monumenten en archeologie
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              Ateliers en broedplaatsen
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              Kunstenplan
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              Subsidies
-            </Link>
-          </UnorderedList.Item>
-        </UnorderedList>
+        <LinkList>
+          <LinkList.Link href="#">Monumenten en archeologie</LinkList.Link>
+          <LinkList.Link href="#">Ateliers en broedplaatsen</LinkList.Link>
+          <LinkList.Link href="#">Kunstenplan</LinkList.Link>
+          <LinkList.Link href="#">Subsidies</LinkList.Link>
+        </LinkList>
       </Grid.Cell>
       <Grid.Cell span={4} start={{ narrow: 1, medium: 1, wide: 5 }}>
         <Heading level={2} size="level-3" className="amsterdam-mb-xs">
@@ -72,43 +47,15 @@ export const ArtAndCulture = () => (
           grachtenpanden. Kunst en cultuur is altijd en overal in Amsterdam. En het houdt niet op als de zon ondergaat:
           ook de clubscene is van culturele waarde voor de stad.
         </Paragraph>
-        <UnorderedList markers={false}>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              Huisvesting voor kunst en cultuur
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              Vrije ruimte in Amsterdam
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              De nacht heeft de toekomst
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              Kunstwerken in de stad
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              Werelderfgoed
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              Stadscuratorium
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link href="#" variant="inList">
-              EIT Culture & Creativity
-            </Link>
-          </UnorderedList.Item>
-        </UnorderedList>
+        <LinkList>
+          <LinkList.Link href="#">Huisvesting voor kunst en cultuur</LinkList.Link>
+          <LinkList.Link href="#">Vrije ruimte in Amsterdam</LinkList.Link>
+          <LinkList.Link href="#">De nacht heeft de toekomst</LinkList.Link>
+          <LinkList.Link href="#">Kunstwerken in de stad</LinkList.Link>
+          <LinkList.Link href="#">Werelderfgoed</LinkList.Link>
+          <LinkList.Link href="#">Stadscuratorium</LinkList.Link>
+          <LinkList.Link href="#">EIT Culture & Creativity</LinkList.Link>
+        </LinkList>
       </Grid.Cell>
       <Grid.Cell
         span={4}
@@ -123,57 +70,33 @@ export const ArtAndCulture = () => (
             <Heading level={2} size="level-3" className="amsterdam-mb-xs">
               Archieven en collecties
             </Heading>
-            <UnorderedList markers={false}>
-              <UnorderedList.Item>
-                <Link href="#" variant="inList">
-                  Stadsarchief
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link href="#" variant="inList">
-                  Collectie van gemeente Amsterdam
-                </Link>
-              </UnorderedList.Item>
-            </UnorderedList>
+            <LinkList>
+              <LinkList.Link href="#">Stadsarchief</LinkList.Link>
+              <LinkList.Link href="#">Collectie van gemeente Amsterdam</LinkList.Link>
+            </LinkList>
           </section>
           <section>
             <Heading level={2} size="level-3" className="amsterdam-mb-xs">
               Bekijk op de kaart
             </Heading>
-            <UnorderedList markers={false}>
-              <UnorderedList.Item>
-                <Link href="#" variant="inList">
-                  Monumenten
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link href="#" variant="inList">
-                  Beschermde stads- en dorpsgezichten
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link href="#" variant="inList">
-                  Archeologische vindplaatsen
-                </Link>
-              </UnorderedList.Item>
-            </UnorderedList>
+            <LinkList>
+              <LinkList.Link href="#">Monumenten</LinkList.Link>
+              <LinkList.Link href="#">Beschermde stads- en dorpsgezichten</LinkList.Link>
+              <LinkList.Link href="#">Archeologische vindplaatsen</LinkList.Link>
+            </LinkList>
           </section>
           <section>
             <Heading level={2} size="level-3" className="amsterdam-mb-xs">
               Weesp
             </Heading>
-            <UnorderedList markers={false}>
-              <UnorderedList.Item>
-                <Link href="#" icon={DownloadIcon} variant="inList">
-                  Cultuurnota Weesp (PDF, 275 kB)
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link href="#" icon={DownloadIcon} variant="inList">
-                  Verordeningen Cultuurprijs Weesp (PDF, 275 kB)
-                </Link>
-              </UnorderedList.Item>
-            </UnorderedList>
+            <LinkList>
+              <LinkList.Link href="#" icon={DownloadIcon}>
+                Cultuurnota Weesp (PDF, 275 kB)
+              </LinkList.Link>
+              <LinkList.Link href="#" icon={DownloadIcon}>
+                Verordeningen Cultuurprijs Weesp (PDF, 275 kB)
+              </LinkList.Link>
+            </LinkList>
           </section>
         </div>
       </Grid.Cell>
