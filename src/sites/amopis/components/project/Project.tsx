@@ -6,8 +6,8 @@ import {
   Heading,
   Image,
   Link,
+  LinkList,
   Paragraph,
-  UnorderedList,
 } from '@amsterdam/design-system-react'
 import { ChattingIcon, EditDocumentIcon, EmailIcon } from '@amsterdam/design-system-react-icons'
 
@@ -34,43 +34,29 @@ export const Project = () => (
     </Grid.Cell>
     <Grid.Cell start={1} span={{ narrow: 4, medium: 2, wide: 2 }}>
       <div className="amopis-white-background">
-        <UnorderedList markers={false}>
-          <UnorderedList.Item>
-            <Link icon={ChattingIcon} href="#" variant="inList" style={{ paddingInline: '1rem' }}>
-              Projectdetails
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link icon={ChattingIcon} href="#" variant="inList" style={{ paddingInline: '1rem' }}>
-              Financiën
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link icon={ChattingIcon} href="#" variant="inList" style={{ paddingInline: '1rem' }}>
-              Projectstructuur
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link icon={ChattingIcon} href="#" variant="inList" style={{ paddingInline: '1rem' }}>
-              Kwaliteit
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link icon={ChattingIcon} href="#" variant="inList" style={{ paddingInline: '1rem' }}>
-              Planning
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link icon={ChattingIcon} href="#" variant="inList" style={{ paddingInline: '1rem' }}>
-              Risisco’s
-            </Link>
-          </UnorderedList.Item>
-          <UnorderedList.Item>
-            <Link icon={ChattingIcon} href="#" variant="inList" style={{ paddingInline: '1rem' }}>
-              Logboek
-            </Link>
-          </UnorderedList.Item>
-        </UnorderedList>
+        <LinkList>
+          <LinkList.Link href="#" icon={ChattingIcon}>
+            Projectdetails
+          </LinkList.Link>
+          <LinkList.Link href="#" icon={ChattingIcon}>
+            Financiën
+          </LinkList.Link>
+          <LinkList.Link href="#" icon={ChattingIcon}>
+            Projectstructuur
+          </LinkList.Link>
+          <LinkList.Link href="#" icon={ChattingIcon}>
+            Kwaliteit
+          </LinkList.Link>
+          <LinkList.Link href="#" icon={ChattingIcon}>
+            Planning
+          </LinkList.Link>
+          <LinkList.Link href="#" icon={ChattingIcon}>
+            Risisco’s
+          </LinkList.Link>
+          <LinkList.Link href="#" icon={ChattingIcon}>
+            Logboek
+          </LinkList.Link>
+        </LinkList>
       </div>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
@@ -78,9 +64,11 @@ export const Project = () => (
         <div className="amsterdam-column amsterdam-gap-sm">
           <div className="amsterdam-row" style={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
             <Heading level={3}>Kerngegevens</Heading>
-            <Link icon={EditDocumentIcon} variant="inList">
-              Wijzig kerngegevens
-            </Link>
+            <LinkList>
+              <LinkList.Link href="#" icon={EditDocumentIcon}>
+                Wijzig kerngegevens
+              </LinkList.Link>
+            </LinkList>
           </div>
           <Heading level={3}>Opdrachtgevers</Heading>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px' }} className="amsterdam-gap-sm">

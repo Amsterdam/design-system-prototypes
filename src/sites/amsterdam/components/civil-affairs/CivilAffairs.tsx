@@ -1,4 +1,4 @@
-import { Breadcrumb, Grid, Heading, Link, PageHeading, UnorderedList } from '@amsterdam/design-system-react'
+import { Breadcrumb, Grid, Heading, LinkList, PageHeading } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
 
 const linkSections = [
@@ -98,15 +98,13 @@ export const CivilAffairs = () => (
               <Heading level={2} size="level-3" className="amsterdam-mb-xs">
                 {title}
               </Heading>
-              <UnorderedList markers={false}>
+              <LinkList>
                 {links.map((link, index) => (
-                  <UnorderedList.Item>
-                    <Link key={index} href="#" variant="inList">
-                      {link}
-                    </Link>
-                  </UnorderedList.Item>
+                  <LinkList.Link href="#" key={index}>
+                    {link}
+                  </LinkList.Link>
                 ))}
-              </UnorderedList>
+              </LinkList>
             </section>
           ))}
         </div>
@@ -118,15 +116,13 @@ export const CivilAffairs = () => (
               <Heading level={2} size="level-3" className="amsterdam-mb-xs">
                 {title}
               </Heading>
-              <UnorderedList markers={false}>
+              <LinkList>
                 {links.map((link, index) => (
-                  <UnorderedList.Item>
-                    <Link key={index} variant="inList">
-                      {link}
-                    </Link>
-                  </UnorderedList.Item>
+                  <LinkList.Link href="#" key={index}>
+                    {link}
+                  </LinkList.Link>
                 ))}
-              </UnorderedList>
+              </LinkList>
             </section>
           ))}
         </div>

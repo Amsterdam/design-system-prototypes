@@ -1,4 +1,4 @@
-import { Footer, Grid, Heading, Link, Paragraph, UnorderedList, VisuallyHidden } from '@amsterdam/design-system-react'
+import { Footer, Grid, Heading, Link, LinkList, Paragraph, VisuallyHidden } from '@amsterdam/design-system-react'
 import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 
 export const SiteFooter = () => (
@@ -16,28 +16,22 @@ export const SiteFooter = () => (
             <Paragraph size="small" inverseColor>
               Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Neem dan contact met ons op.
             </Paragraph>
-            <UnorderedList markers={false}>
-              <UnorderedList.Item>
-                <Link
-                  icon={ChattingIcon}
-                  href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/contactformulier.aspx/?pk_vid=9f948f5fae0c5e90169952648840adc6"
-                  onBackground="dark"
-                  variant="inList"
-                >
-                  Contactformulier
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link href="https://www.amsterdam.nl/contact/" onBackground="dark" variant="inList">
-                  Adressen en openingstijden
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link icon={PhoneIcon} href="tel:+3114020" onBackground="dark" variant="inList">
-                  Bel 14 020
-                </Link>
-              </UnorderedList.Item>
-            </UnorderedList>
+            <LinkList>
+              <LinkList.Link
+                href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/contactformulier.aspx/?pk_vid=9f948f5fae0c5e90169952648840adc6"
+                icon={ChattingIcon}
+                onBackground="dark"
+                size="small"
+              >
+                Contactformulier
+              </LinkList.Link>
+              <LinkList.Link href="https://www.amsterdam.nl/contact/" onBackground="dark" size="small">
+                Adressen en openingstijden
+              </LinkList.Link>
+              <LinkList.Link href="tel:+3114020" icon={PhoneIcon} onBackground="dark" size="small">
+                Bel 14 020
+              </LinkList.Link>
+            </LinkList>
           </div>
         </Grid.Cell>
         <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
@@ -45,77 +39,61 @@ export const SiteFooter = () => (
             <Heading level={2} size="level-4" inverseColor>
               Volg de gemeente
             </Heading>
-            <UnorderedList markers={false}>
-              <UnorderedList.Item>
-                <Link
-                  href="https://www.amsterdam.nl/nieuws/volg-de-gemeente/nieuwsbrief-amsterdam/"
-                  variant="inList"
-                  onBackground="dark"
-                >
-                  Nieuwsbrief Amsterdam
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link href="https://twitter.com/AmsterdamNL" variant="inList" onBackground="dark" rel="external">
-                  Twitter
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link
-                  href="https://www.facebook.com/gemeenteamsterdam"
-                  variant="inList"
-                  onBackground="dark"
-                  rel="external"
-                >
-                  Facebook
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link
-                  href="https://www.instagram.com/gemeenteamsterdam/"
-                  variant="inList"
-                  onBackground="dark"
-                  rel="external"
-                >
-                  Instagram
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link
-                  href="https://www.linkedin.com/company/gemeente-amsterdam"
-                  variant="inList"
-                  onBackground="dark"
-                  rel="external"
-                >
-                  LinkedIn
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link
-                  href="https://social.amsterdam.nl/@gemeenteamsterdam"
-                  variant="inList"
-                  onBackground="dark"
-                  rel="external"
-                >
-                  Mastodon
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link
-                  href="https://www.youtube.com/channel/UCEiYFPFR5jGhFakHhbswlig"
-                  variant="inList"
-                  onBackground="dark"
-                  rel="external"
-                >
-                  YouTube
-                </Link>
-              </UnorderedList.Item>
-              <UnorderedList.Item>
-                <Link href="https://werkenbij.amsterdam.nl/" variant="inList" onBackground="dark">
-                  Werkenbij
-                </Link>
-              </UnorderedList.Item>
-            </UnorderedList>
+            <LinkList>
+              <LinkList.Link
+                href="https://www.amsterdam.nl/nieuws/volg-de-gemeente/nieuwsbrief-amsterdam/"
+                onBackground="dark"
+                size="small"
+              >
+                Nieuwsbrief Amsterdam
+              </LinkList.Link>
+              <LinkList.Link href="https://twitter.com/AmsterdamNL" onBackground="dark" rel="external" size="small">
+                Twitter
+              </LinkList.Link>
+              <LinkList.Link
+                href="https://www.facebook.com/gemeenteamsterdam"
+                onBackground="dark"
+                rel="external"
+                size="small"
+              >
+                Facebook
+              </LinkList.Link>
+              <LinkList.Link
+                href="https://www.instagram.com/gemeenteamsterdam/"
+                onBackground="dark"
+                rel="external"
+                size="small"
+              >
+                Instagram
+              </LinkList.Link>
+              <LinkList.Link
+                href="https://www.linkedin.com/company/gemeente-amsterdam"
+                onBackground="dark"
+                rel="external"
+                size="small"
+              >
+                LinkedIn
+              </LinkList.Link>
+              <LinkList.Link
+                href="https://social.amsterdam.nl/@gemeenteamsterdam"
+                onBackground="dark"
+                rel="external"
+                size="small"
+              >
+                Mastodon
+              </LinkList.Link>
+              <LinkList.Link
+                href="https://www.youtube.com/channel/UCEiYFPFR5jGhFakHhbswlig"
+                onBackground="dark"
+                rel="external"
+                size="small"
+              >
+                YouTube
+              </LinkList.Link>
+              <LinkList.Link href="https://werkenbij.amsterdam.nl/" onBackground="dark" size="small">
+                Werkenbij
+              </LinkList.Link>
+            </LinkList>
           </div>
         </Grid.Cell>
         <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
