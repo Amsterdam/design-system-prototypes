@@ -10,8 +10,8 @@ All current prototypes are listed here: [amsterdam.github.io/design-system-proto
 
 Feel welcome to create your own prototype.
 
-Scaffold the initial directories and files through `npx plop site {site-name}`.
+Scaffold the initial directories and files through `npm run plop site 'Site name'`.
 
-Add a page with `npx plop page {site-name} {page-name} {page-slug}`.
+Add a page with `npm run plop page 'Site name or slug' 'Page name'`.
 
 Present a pull request to have it included on the public website.
