@@ -12,7 +12,7 @@ import {
 import { ChattingIcon, EditDocumentIcon, EmailIcon } from '@amsterdam/design-system-react-icons'
 
 export const Project = () => (
-  <Grid compact paddingVertical="medium">
+  <Grid paddingVertical="medium">
     <Grid.Cell span="all">
       <Breadcrumb>
         <Breadcrumb.Item href="#">Dashboard</Breadcrumb.Item>

@@ -19,10 +19,10 @@
   },
   "dependencies": {
     "@amsterdam/design-system-assets":  "^0.1.7",
-    "@amsterdam/design-system-css": "^0.4.0",
-    "@amsterdam/design-system-react": "^0.4.0",
+    "@amsterdam/design-system-css": "^0.5.0",
+    "@amsterdam/design-system-react": "^0.5.0",
     "@amsterdam/design-system-react-icons": "^0.1.12",
-    "@amsterdam/design-system-tokens": "^0.4.0",
+    "@amsterdam/design-system-tokens": "^0.5.0",
     "@babel/runtime": "^7.23.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -46,6 +46,6 @@
     "plop": "^4.0.1",
     "prettier": "^3.2.5",
     "typescript": "^5.3.3",
-    "vite": "^5.1.0"
+    "vite": "^5.1.1"
   }
 }
