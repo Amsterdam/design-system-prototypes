@@ -1,4 +1,4 @@
-import '@amsterdam/design-system-tokens/dist/compact.css'
+import '@amsterdam/design-system-tokens/dist/compact.theme.css'
 import { Grid, PageMenu, Screen } from '@amsterdam/design-system-react'
 import { rootUrl } from '../../../shared/constants'
 import { Project } from '../components/project/Project'
@@ -6,7 +6,7 @@ import { Sidebar } from '../components/shared/Sidebar'
 import { SiteHeader } from '../components/shared/SiteHeader'
 
 export const AmopisRootPage = () => (
-  <Screen className="amsterdam-screen--amopis">
+  <Screen className="amsterdam-screen--amopis amsterdam-theme--compact">
     <div className="amopis-app-grid">
       <Sidebar />
       <div>

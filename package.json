@@ -22,7 +22,7 @@
     "@amsterdam/design-system-css": "^0.5.0",
     "@amsterdam/design-system-react": "^0.5.0",
     "@amsterdam/design-system-react-icons": "^0.1.12",
-    "@amsterdam/design-system-tokens": "^0.5.0",
+    "@amsterdam/design-system-tokens": "^0.5.1",
     "@babel/runtime": "^7.23.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
