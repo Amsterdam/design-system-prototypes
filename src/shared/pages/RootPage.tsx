@@ -26,7 +26,7 @@ const sites: Site[] = [
 ].sort((a, b) => a.label.localeCompare(b.label))
 
 export const RootPage = () => (
-  <Screen maxWidth="wide">
+  <Screen className="amsterdam-theme" maxWidth="wide">
     <Grid paddingVertical="large">
       <Grid.Cell span="all">
         <PageHeading>Prototypes</PageHeading>

@@ -6,7 +6,7 @@ import { SiteHeader } from '../components/shared/SiteHeader'
 import { siteUrl } from '../constants'
 
 export const AmsterdamRootPage = () => (
-  <>
+  <div className="amsterdam-theme">
     <SkipLink href="#main">Direct naar inhoud</SkipLink>
     <Screen maxWidth="wide">
       <SiteHeader />
@@ -28,5 +28,5 @@ export const AmsterdamRootPage = () => (
         </Grid.Cell>
       </Grid>
     </Screen>
-  </>
+  </div>
 )
