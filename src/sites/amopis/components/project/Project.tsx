@@ -71,8 +71,10 @@ export const Project = () => (
               </LinkList.Link>
             </LinkList>
           </div>
-          <Heading level={3}>Opdrachtgevers</Heading>
-          <Column gap="sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <Column as="section" gap="xs" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+            <Heading level={4} style={{ gridColumn: '1 / -1' }}>
+              Opdrachtgevers
+            </Heading>
             <Paragraph>Ambtelijk opdrachtgever</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Marise Ent</Paragraph>
             <EmailIcon width={24} fill="#004469" />
@@ -80,8 +82,10 @@ export const Project = () => (
             <Paragraph style={{ fontWeight: 'bold' }}>Melanie van der Horst</Paragraph>
             <EmailIcon width={24} fill="#004469" />
           </Column>
-          <Heading level={3}>Opdrachtnemers</Heading>
-          <Column gap="sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <Column as="section" gap="xs" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+            <Heading level={4} style={{ gridColumn: '1 / -1' }}>
+              Opdrachtnemers
+            </Heading>
             <Paragraph>Accounthouder</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Paul Brouwer</Paragraph>
             <EmailIcon width={24} fill="#004469" />
@@ -98,8 +102,10 @@ export const Project = () => (
             <Paragraph style={{ fontWeight: 'bold' }}>Carina Cairo</Paragraph>
             <EmailIcon width={24} fill="#004469" />
           </Column>
-          <Heading level={3}>Basisgegevens</Heading>
-          <Column gap="sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <Column as="section" gap="xs" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+            <Heading level={4} style={{ gridColumn: '1 / -1' }}>
+              Basisgegevens
+            </Heading>
             <Paragraph>Gebied</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Gemeente Amsterdam</Paragraph>
             <span />
