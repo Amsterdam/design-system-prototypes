@@ -34,28 +34,6 @@
   justify-content: space-between;
 }
 
-/* Gaps */
-
-.amsterdam-gap-xs {
-  gap: calc(var(--amsterdam-grid-gap) / 4);
-}
-
-.amsterdam-gap-sm {
-  gap: calc(var(--amsterdam-grid-gap) / 2);
-}
-
-.amsterdam-gap-md {
-  gap: var(--amsterdam-grid-gap);
-}
-
-.amsterdam-gap-lg {
-  gap: calc(var(--amsterdam-grid-gap) * 1.5);
-}
-
-.amsterdam-gap-xl {
-  gap: calc(var(--amsterdam-grid-gap) * 2);
-}
-
 /* Margin bottom */
 
 .amsterdam-mb-xs.amsterdam-mb-xs {

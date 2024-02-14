@@ -65,7 +65,7 @@ export const ArtAndCulture = () => (
           wide: 9,
         }}
       >
-        <div style={{ display: 'grid' }} className="amsterdam-gap-md">
+        <div className="amsterdam-gap--md">
           <section>
             <Heading level={2} size="level-3" className="amsterdam-mb-xs">
               Archieven en collecties

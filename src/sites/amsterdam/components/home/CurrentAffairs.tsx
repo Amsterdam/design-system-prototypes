@@ -8,7 +8,7 @@ export const CurrentAffairs = () => (
   <Grid paddingVertical="medium">
     <Grid.Cell span={3}>
       <Heading className="amsterdam-mb-sm">Kalender</Heading>
-      <div style={{ display: 'grid' }} className="amsterdam-gap-md">
+      <div className="amsterdam-gap--md">
         <Card>
           <Heading level={2} size="level-4">
             <Card.Link href="#">29 juni 2023</Card.Link>

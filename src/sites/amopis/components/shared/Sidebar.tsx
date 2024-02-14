@@ -9,7 +9,7 @@ import {
 
 export const Sidebar = () => (
   <div className="amopis-sidebar">
-    <div className="amsterdam-column amsterdam-gap-md">
+    <div className="amsterdam-gap--md">
       <div className="amsterdam-column amsterdam-column-halign-center">
         <HousingIcon fill="white" width={24} />
         <Paragraph inverseColor style={{ fontSize: 12 }}>
