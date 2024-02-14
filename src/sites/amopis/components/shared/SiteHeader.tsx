@@ -2,7 +2,7 @@ import { Grid, Header, Paragraph } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
 
 export const SiteHeader = () => (
-  <Grid compact>
+  <Grid>
     <Grid.Cell span="all">
       <Header
         links={
