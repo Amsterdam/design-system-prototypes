@@ -15,7 +15,7 @@ export const News = () => (
     <article>
       <Grid paddingBottom="medium">
         <Grid.Cell span={6}>
-          <Heading className="amsterdam-mb-xs">Maatregelen tegen overlast fatbikes</Heading>
+          <Heading className="amsterdam-mb--xs">Maatregelen tegen overlast fatbikes</Heading>
           <Paragraph>8 november 2023</Paragraph>
         </Grid.Cell>
         <Grid.Cell span={6}></Grid.Cell>
@@ -27,7 +27,7 @@ export const News = () => (
           </Paragraph>
         </Grid.Cell>
         <Grid.Cell span={6}>
-          <AspectRatio ratio="x-wide" className="amsterdam-mb-md">
+          <AspectRatio ratio="x-wide" className="amsterdam-mb--md">
             <Image alt="" src={fatbikesImage} />
           </AspectRatio>
         </Grid.Cell>
@@ -40,7 +40,7 @@ export const News = () => (
               Ook stijgt het aantal fietsongelukken al jaren. We moeten daarom nu in actie komen.
             </Paragraph>
             <section>
-              <Heading level={2} className="amsterdam-mb-xs">
+              <Heading level={2} className="amsterdam-mb--xs">
                 Gevaar
               </Heading>
               <Paragraph>
@@ -52,7 +52,7 @@ export const News = () => (
               </Paragraph>
             </section>
             <section>
-              <Heading level={2} className="amsterdam-mb-xs">
+              <Heading level={2} className="amsterdam-mb--xs">
                 Handhaven
               </Heading>
               <Paragraph>
@@ -61,7 +61,7 @@ export const News = () => (
               </Paragraph>
             </section>
             <section>
-              <Heading level={2} className="amsterdam-mb-xs">
+              <Heading level={2} className="amsterdam-mb--xs">
                 Voorlichting
               </Heading>
               <Paragraph>
@@ -73,7 +73,7 @@ export const News = () => (
               </Paragraph>
             </section>
             <section>
-              <Heading level={2} className="amsterdam-mb-xs">
+              <Heading level={2} className="amsterdam-mb--xs">
                 Fietshelm
               </Heading>
               <Paragraph>
@@ -90,7 +90,7 @@ export const News = () => (
               </Paragraph>
             </section>
             <section>
-              <Heading level={2} className="amsterdam-mb-xs">
+              <Heading level={2} className="amsterdam-mb--xs">
                 Andere maatregelen
               </Heading>
               <Paragraph>

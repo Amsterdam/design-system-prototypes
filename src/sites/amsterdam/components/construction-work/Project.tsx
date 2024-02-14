@@ -25,7 +25,7 @@ export const Project = () => (
     </Grid>
     <Grid gapVertical="small" paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-        <Heading className="amsterdam-mb-sm">Bouwprojecten en verkeersprojecten in Noord</Heading>
+        <Heading className="amsterdam-mb--sm">Bouwprojecten en verkeersprojecten in Noord</Heading>
         <Paragraph size="large">
           <strong>Overzicht van projecten in stadsdeel Noord.</strong> Lees waar en wanneer we werken aan nieuwbouw,
           groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele gebieden. En
@@ -68,7 +68,7 @@ export const Project = () => (
     <Spotlight color="purple">
       <Grid paddingVertical="medium">
         <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-          <Heading inverseColor level={2} size="level-4" className="amsterdam-mb-xs">
+          <Heading inverseColor level={2} size="level-4" className="amsterdam-mb--xs">
             Werk aan de weg
           </Heading>
           <LinkList>
@@ -87,7 +87,7 @@ export const Project = () => (
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 1, medium: 2, wide: 4 }} start={{ narrow: 4, medium: 7, wide: 8 }}>
-          <Heading inverseColor level={2} size="level-4" className="amsterdam-mb-xs">
+          <Heading inverseColor level={2} size="level-4" className="amsterdam-mb--xs">
             In andere stadsdelen
           </Heading>
           <LinkList>

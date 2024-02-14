@@ -34,28 +34,6 @@
   justify-content: space-between;
 }
 
-/* Margin bottom */
-
-.amsterdam-mb-xs.amsterdam-mb-xs {
-  margin-block-end: calc(var(--amsterdam-grid-gap) / 4);
-}
-
-.amsterdam-mb-sm.amsterdam-mb-sm {
-  margin-block-end: calc(var(--amsterdam-grid-gap) / 2);
-}
-
-.amsterdam-mb-md.amsterdam-mb-md {
-  margin-block-end: var(--amsterdam-grid-gap);
-}
-
-.amsterdam-mb-lg.amsterdam-mb-lg {
-  margin-block-end: calc(var(--amsterdam-grid-gap) * 1.5);
-}
-
-.amsterdam-mb-lg.amsterdam-mb-lg {
-  margin-block-end: calc(var(--amsterdam-grid-gap) * 2);
-}
-
 /* Indicate non-functional links */
 
 a[href="#"] {

@@ -30,7 +30,7 @@ export const RootPage = () => (
     <Grid paddingVertical="large">
       <Grid.Cell span="all">
         <PageHeading>Prototypes</PageHeading>
-        <Heading level={2} size="level-4" className="amsterdam-mb-md">
+        <Heading level={2} size="level-4" className="amsterdam-mb--md">
           Amsterdam Design System
         </Heading>
         <LinkList>

@@ -95,7 +95,7 @@ export const CivilAffairs = () => (
         <Column>
           {linkSections[0].map(({ title, links }) => (
             <section key={title}>
-              <Heading level={2} size="level-3" className="amsterdam-mb-xs">
+              <Heading level={2} size="level-3" className="amsterdam-mb--xs">
                 {title}
               </Heading>
               <LinkList>
@@ -113,7 +113,7 @@ export const CivilAffairs = () => (
         <Column>
           {linkSections[1].map(({ title, links }) => (
             <section key={title}>
-              <Heading level={2} size="level-3" className="amsterdam-mb-xs">
+              <Heading level={2} size="level-3" className="amsterdam-mb--xs">
                 {title}
               </Heading>
               <LinkList>
