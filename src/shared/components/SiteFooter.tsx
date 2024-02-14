@@ -18,7 +18,7 @@ export const SiteFooter = () => (
       </VisuallyHidden>
       <Grid gapVertical="large" paddingVertical="medium">
         <Grid.Cell span={3}>
-          <Column gap="xs">
+          <Column gap="sm">
             <Heading level={2} size="level-4" inverseColor>
               Contact
             </Heading>
@@ -44,7 +44,7 @@ export const SiteFooter = () => (
           </Column>
         </Grid.Cell>
         <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
-          <Column gap="xs">
+          <Column gap="sm">
             <Heading level={2} size="level-4" inverseColor>
               Volg de gemeente
             </Heading>
@@ -107,8 +107,8 @@ export const SiteFooter = () => (
         </Grid.Cell>
         <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
           <Column>
-            <section>
-              <Heading level={2} size="level-4" inverseColor className="amsterdam-mb-xs">
+            <Column as="section" gap="sm">
+              <Heading level={2} size="level-4" inverseColor>
                 Kalender
               </Heading>
               <Paragraph size="small" inverseColor>
@@ -122,9 +122,9 @@ export const SiteFooter = () => (
                 </Link>
                 .
               </Paragraph>
-            </section>
-            <section>
-              <Heading level={3} size="level-4" inverseColor className="amsterdam-mb-xs">
+            </Column>
+            <Column as="section" gap="sm">
+              <Heading level={3} size="level-4" inverseColor>
                 Uit in Amsterdam
               </Heading>
               <Paragraph size="small" inverseColor>
@@ -134,7 +134,7 @@ export const SiteFooter = () => (
                 </Link>{' '}
                 vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
               </Paragraph>
-            </section>
+            </Column>
           </Column>
         </Grid.Cell>
       </Grid>
