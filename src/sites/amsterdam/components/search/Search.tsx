@@ -1,4 +1,4 @@
-import { Breadcrumb, Card, Checkbox, Grid, Heading, Paragraph, TextInput } from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Checkbox, Column, Grid, Heading, Paragraph, TextInput } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
 
 export const Search = () => (
@@ -48,7 +48,7 @@ export const Search = () => (
         <TextInput className="amsterdam-mb-xs" value="afval" />
         <Paragraph size="small">25 resultaten</Paragraph>
       </div>
-      <div className="amsterdam-gap--md">
+      <Column>
         <Card>
           <Card.HeadingGroup tagline="Nieuws">
             <Heading level={2} size="level-3">
@@ -73,7 +73,7 @@ export const Search = () => (
           </Paragraph>
           <Paragraph size="small">Gepubliceerd: 15 juni 2023</Paragraph>
         </Card>
-      </div>
+      </Column>
     </Grid.Cell>
   </Grid>
 )

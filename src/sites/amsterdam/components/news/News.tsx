@@ -1,4 +1,4 @@
-import { AspectRatio, Breadcrumb, Grid, Heading, Image, Paragraph } from '@amsterdam/design-system-react'
+import { AspectRatio, Breadcrumb, Column, Grid, Heading, Image, Paragraph } from '@amsterdam/design-system-react'
 import fatbikesImage from '../../assets/images/fatbikes.jpg'
 import { siteUrl } from '../../constants'
 
@@ -34,7 +34,7 @@ export const News = () => (
       </Grid>
       <Grid paddingBottom="medium">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-          <div className="amsterdam-gap--md">
+          <Column>
             <Paragraph>
               Mensen voelen zich steeds onveiliger op het fietspad door de toenemende drukte en snelheidsverschillen.
               Ook stijgt het aantal fietsongelukken al jaren. We moeten daarom nu in actie komen.
@@ -100,7 +100,7 @@ export const News = () => (
                 e-bikes.
               </Paragraph>
             </section>
-          </div>
+          </Column>
         </Grid.Cell>
       </Grid>
     </article>

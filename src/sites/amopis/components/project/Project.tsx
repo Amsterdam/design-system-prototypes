@@ -2,6 +2,7 @@ import '../amopis.css'
 import {
   AspectRatio,
   Breadcrumb,
+  Column,
   Grid,
   Heading,
   Image,
@@ -61,7 +62,7 @@ export const Project = () => (
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
-        <div className="amsterdam-gap--sm">
+        <Column>
           <div className="amsterdam-row" style={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
             <Heading level={3}>Kerngegevens</Heading>
             <LinkList>
@@ -71,16 +72,16 @@ export const Project = () => (
             </LinkList>
           </div>
           <Heading level={3}>Opdrachtgevers</Heading>
-          <div className="amsterdam-gap--sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <Column gap="sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
             <Paragraph>Ambtelijk opdrachtgever</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Marise Ent</Paragraph>
             <EmailIcon width={24} fill="#004469" />
             <Paragraph>Bestuurlijk Opdrachtgever Stad</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Melanie van der Horst</Paragraph>
             <EmailIcon width={24} fill="#004469" />
-          </div>
+          </Column>
           <Heading level={3}>Opdrachtnemers</Heading>
-          <div className="amsterdam-gap--sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <Column gap="sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
             <Paragraph>Accounthouder</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Paul Brouwer</Paragraph>
             <EmailIcon width={24} fill="#004469" />
@@ -96,9 +97,9 @@ export const Project = () => (
             <Paragraph>Projectbeheerser</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Carina Cairo</Paragraph>
             <EmailIcon width={24} fill="#004469" />
-          </div>
+          </Column>
           <Heading level={3}>Basisgegevens</Heading>
-          <div className="amsterdam-gap--sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <Column gap="sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
             <Paragraph>Gebied</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Gemeente Amsterdam</Paragraph>
             <span />
@@ -114,13 +115,13 @@ export const Project = () => (
             <Paragraph>Projectsoort</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Programma Bruggen</Paragraph>
             <span />
-          </div>
-        </div>
+          </Column>
+        </Column>
       </div>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 3, wide: 3 }} start={{ narrow: 1, medium: 3, wide: 10 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
-        <div className="amsterdam-gap--sm">
+        <Column gap="sm">
           <div>
             <AspectRatio ratio="x-wide">
               <Image alt="" src="https://picsum.photos/900/720?random=1" />
@@ -137,7 +138,7 @@ export const Project = () => (
               Locatie Brug 423 &nbsp; <Link variant="inline">Bekijk op datapunt.nl</Link>
             </Paragraph>
           </div>
-        </div>
+        </Column>
       </div>
     </Grid.Cell>
   </Grid>
