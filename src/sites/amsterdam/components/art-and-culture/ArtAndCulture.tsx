@@ -1,4 +1,13 @@
-import { Breadcrumb, Grid, Heading, Image, LinkList, PageHeading, Paragraph } from '@amsterdam/design-system-react'
+import {
+  Breadcrumb,
+  Column,
+  Grid,
+  Heading,
+  Image,
+  LinkList,
+  PageHeading,
+  Paragraph,
+} from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 import artAndCultureImage from '../../assets/images/art-and-culture.jpg'
 import { siteUrl } from '../../constants'
@@ -65,7 +74,7 @@ export const ArtAndCulture = () => (
           wide: 9,
         }}
       >
-        <div className="amsterdam-gap--md">
+        <Column>
           <section>
             <Heading level={2} size="level-3" className="amsterdam-mb-xs">
               Archieven en collecties
@@ -98,7 +107,7 @@ export const ArtAndCulture = () => (
               </LinkList.Link>
             </LinkList>
           </section>
-        </div>
+        </Column>
       </Grid.Cell>
     </Grid>
   </>

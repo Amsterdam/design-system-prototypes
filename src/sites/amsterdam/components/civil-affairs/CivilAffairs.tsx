@@ -1,4 +1,4 @@
-import { Breadcrumb, Grid, Heading, LinkList, PageHeading } from '@amsterdam/design-system-react'
+import { Breadcrumb, Column, Grid, Heading, LinkList, PageHeading } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
 
 const linkSections = [
@@ -92,7 +92,7 @@ export const CivilAffairs = () => (
         <PageHeading>Burgerzaken</PageHeading>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-        <div className="amsterdam-gap--md">
+        <Column>
           {linkSections[0].map(({ title, links }) => (
             <section key={title}>
               <Heading level={2} size="level-3" className="amsterdam-mb-xs">
@@ -107,10 +107,10 @@ export const CivilAffairs = () => (
               </LinkList>
             </section>
           ))}
-        </div>
+        </Column>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }}>
-        <div className="amsterdam-gap--md">
+        <Column>
           {linkSections[1].map(({ title, links }) => (
             <section key={title}>
               <Heading level={2} size="level-3" className="amsterdam-mb-xs">
@@ -125,7 +125,7 @@ export const CivilAffairs = () => (
               </LinkList>
             </section>
           ))}
-        </div>
+        </Column>
       </Grid.Cell>
     </Grid>
   </>

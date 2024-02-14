@@ -1,11 +1,11 @@
-import { Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Column, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import { Link } from '../../../shared/components/Link'
 import { siteUrl } from '../constants'
 
 export const Thanks = () => (
   <Grid paddingBottom="medium">
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-      <div className="amsterdam-gap--md">
+      <Column>
         <Heading>Bedankt!</Heading>
         <Paragraph>
           Uw melding is bij ons bekend onder nummer: SIG-14022. Hebt u een e-mailadres ingevuld? Dan ontvangt u een
@@ -21,7 +21,7 @@ export const Thanks = () => (
         <Heading level={2}>Wilt u nog een andere melding doen?</Heading>
 
         <Link to={`${siteUrl}beschrijf`}>Doe een melding</Link>
-      </div>
+      </Column>
     </Grid.Cell>
   </Grid>
 )

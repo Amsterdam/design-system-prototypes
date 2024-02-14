@@ -1,4 +1,13 @@
-import { Footer, Grid, Heading, Link, PageMenu, Paragraph, VisuallyHidden } from '@amsterdam/design-system-react'
+import {
+  Column,
+  Footer,
+  Grid,
+  Heading,
+  Link,
+  PageMenu,
+  Paragraph,
+  VisuallyHidden,
+} from '@amsterdam/design-system-react'
 
 export const SiteFooter = () => (
   <Footer>
@@ -8,7 +17,7 @@ export const SiteFooter = () => (
       </VisuallyHidden>
       <Grid gapVertical="large" paddingVertical="medium">
         <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
-          <div className="amsterdam-gap--xs">
+          <Column gap="xs">
             <Heading level={2} size="level-4" inverseColor>
               Contact
             </Heading>
@@ -22,7 +31,7 @@ export const SiteFooter = () => (
             <Paragraph size="small" inverseColor>
               Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
             </Paragraph>
-          </div>
+          </Column>
         </Grid.Cell>
       </Grid>
     </Footer.Top>

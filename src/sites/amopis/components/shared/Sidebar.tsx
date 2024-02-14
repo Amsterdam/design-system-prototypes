@@ -1,4 +1,4 @@
-import { Paragraph } from '@amsterdam/design-system-react'
+import { Column, Paragraph } from '@amsterdam/design-system-react'
 import {
   DocumentTextIcon,
   ExternalLinkIcon,
@@ -9,7 +9,7 @@ import {
 
 export const Sidebar = () => (
   <div className="amopis-sidebar">
-    <div className="amsterdam-gap--md">
+    <Column>
       <div className="amsterdam-column amsterdam-column-halign-center">
         <HousingIcon fill="white" width={24} />
         <Paragraph inverseColor style={{ fontSize: 12 }}>
@@ -40,6 +40,6 @@ export const Sidebar = () => (
           Instellingen
         </Paragraph>
       </div>
-    </div>
+    </Column>
   </div>
 )
