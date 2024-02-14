@@ -43,9 +43,9 @@ export const Search = () => (
         <Breadcrumb.Item href={siteUrl}>Home</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Zoekresultaten</Breadcrumb.Item>
       </Breadcrumb>
-      <div className="amsterdam-mb-md">
-        <Heading className="amsterdam-mb-xs">Zoeken</Heading>
-        <TextInput className="amsterdam-mb-xs" value="afval" />
+      <div className="amsterdam-mb--md">
+        <Heading className="amsterdam-mb--xs">Zoeken</Heading>
+        <TextInput className="amsterdam-mb--xs" value="afval" />
         <Paragraph size="small">25 resultaten</Paragraph>
       </div>
       <Column>

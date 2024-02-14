@@ -41,7 +41,7 @@ export const Contact = () => {
 
           <fieldset>
             <legend>Mogen we uw melding doorsturen?</legend>
-            <Paragraph className="amsterdam-mb-md">
+            <Paragraph className="amsterdam-mb--md">
               Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
               melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u
               dat goed vindt.
