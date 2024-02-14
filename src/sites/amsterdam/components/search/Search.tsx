@@ -48,7 +48,7 @@ export const Search = () => (
         <TextInput className="amsterdam-mb-xs" value="afval" />
         <Paragraph size="small">25 resultaten</Paragraph>
       </div>
-      <div style={{ display: 'grid' }} className="amsterdam-gap-md">
+      <div className="amsterdam-gap--md">
         <Card>
           <Card.HeadingGroup tagline="Nieuws">
             <Heading level={2} size="level-3">

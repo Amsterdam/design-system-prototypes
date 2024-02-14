@@ -34,7 +34,7 @@ export const News = () => (
       </Grid>
       <Grid paddingBottom="medium">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-          <div style={{ display: 'grid' }} className="amsterdam-gap-md">
+          <div className="amsterdam-gap--md">
             <Paragraph>
               Mensen voelen zich steeds onveiliger op het fietspad door de toenemende drukte en snelheidsverschillen.
               Ook stijgt het aantal fietsongelukken al jaren. We moeten daarom nu in actie komen.

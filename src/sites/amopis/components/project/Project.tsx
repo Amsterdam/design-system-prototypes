@@ -61,7 +61,7 @@ export const Project = () => (
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
-        <div className="amsterdam-column amsterdam-gap-sm">
+        <div className="amsterdam-gap--sm">
           <div className="amsterdam-row" style={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
             <Heading level={3}>Kerngegevens</Heading>
             <LinkList>
@@ -71,7 +71,7 @@ export const Project = () => (
             </LinkList>
           </div>
           <Heading level={3}>Opdrachtgevers</Heading>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px' }} className="amsterdam-gap-sm">
+          <div className="amsterdam-gap--sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
             <Paragraph>Ambtelijk opdrachtgever</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Marise Ent</Paragraph>
             <EmailIcon width={24} fill="#004469" />
@@ -80,7 +80,7 @@ export const Project = () => (
             <EmailIcon width={24} fill="#004469" />
           </div>
           <Heading level={3}>Opdrachtnemers</Heading>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px' }} className="amsterdam-gap-sm">
+          <div className="amsterdam-gap--sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
             <Paragraph>Accounthouder</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Paul Brouwer</Paragraph>
             <EmailIcon width={24} fill="#004469" />
@@ -98,7 +98,7 @@ export const Project = () => (
             <EmailIcon width={24} fill="#004469" />
           </div>
           <Heading level={3}>Basisgegevens</Heading>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 24px' }} className="amsterdam-gap-sm">
+          <div className="amsterdam-gap--sm" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
             <Paragraph>Gebied</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Gemeente Amsterdam</Paragraph>
             <span />
@@ -120,7 +120,7 @@ export const Project = () => (
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 3, wide: 3 }} start={{ narrow: 1, medium: 3, wide: 10 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
-        <div className="amsterdam-column amsterdam-gap-sm">
+        <div className="amsterdam-gap--sm">
           <div>
             <AspectRatio ratio="x-wide">
               <Image alt="" src="https://picsum.photos/900/720?random=1" />
