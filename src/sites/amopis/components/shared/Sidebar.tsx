@@ -10,36 +10,36 @@ import {
 export const Sidebar = () => (
   <div className="amopis-sidebar">
     <Column>
-      <div className="amsterdam-column amsterdam-column-halign-center amsterdam-gap--xs">
+      <Column className="amsterdam-column--halign-center" gap="xs">
         <HousingIcon fill="white" width={24} />
         <Paragraph inverseColor size="small">
           Dashboard
         </Paragraph>
-      </div>
-      <div className="amsterdam-column amsterdam-column-halign-center amsterdam-gap--xs">
+      </Column>
+      <Column className="amsterdam-column--halign-center" gap="xs">
         <SuitcaseIcon fill="white" width={24} />
         <Paragraph inverseColor size="small">
           Projecten
         </Paragraph>
-      </div>
-      <div className="amsterdam-column amsterdam-column-halign-center amsterdam-gap--xs">
+      </Column>
+      <Column className="amsterdam-column--halign-center" gap="xs">
         <DocumentTextIcon fill="white" width={24} />
         <Paragraph inverseColor size="small">
           Rapportages
         </Paragraph>
-      </div>
-      <div className="amsterdam-column amsterdam-column-halign-center amsterdam-gap--xs">
+      </Column>
+      <Column className="amsterdam-column--halign-center" gap="xs">
         <ExternalLinkIcon fill="white" width={24} />
         <Paragraph inverseColor size="small">
           Analyses
         </Paragraph>
-      </div>
-      <div className="amsterdam-column amsterdam-column-halign-center amsterdam-gap--xs">
+      </Column>
+      <Column className="amsterdam-column--halign-center" gap="xs">
         <StopIcon fill="white" width={24} />
         <Paragraph inverseColor size="small">
           Instellingen
         </Paragraph>
-      </div>
+      </Column>
     </Column>
   </div>
 )

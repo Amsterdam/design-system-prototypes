@@ -14,15 +14,10 @@
   min-height: 100vh;
 }
 
-/* Stacks and alignment */
+/* Row and column alignment */
 
-.amsterdam-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.amsterdam-column-halign-center {
-  align-items: center;
+.amsterdam-column--halign-center {
+  justify-items: center;
 }
 
 .amsterdam-row {
