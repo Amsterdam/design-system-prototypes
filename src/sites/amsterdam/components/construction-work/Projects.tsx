@@ -38,8 +38,8 @@ export const Projects = () => (
           Projecten per stadsdeel
         </Heading>
         <LinkList>
-          {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district, index) => (
-            <LinkList.Link href={`${siteUrl}project`} key={index}>
+          {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
+            <LinkList.Link href={`${siteUrl}project`} key={district}>
               {district}
             </LinkList.Link>
           ))}
