@@ -75,17 +75,17 @@ export const ArtAndCulture = () => (
         }}
       >
         <Column>
-          <section>
-            <Heading level={2} size="level-3" className="amsterdam-mb--xs">
+          <Column gap="xs">
+            <Heading level={2} size="level-3">
               Archieven en collecties
             </Heading>
             <LinkList>
               <LinkList.Link href="#">Stadsarchief</LinkList.Link>
               <LinkList.Link href="#">Collectie van gemeente Amsterdam</LinkList.Link>
             </LinkList>
-          </section>
-          <section>
-            <Heading level={2} size="level-3" className="amsterdam-mb--xs">
+          </Column>
+          <Column gap="xs">
+            <Heading level={2} size="level-3">
               Bekijk op de kaart
             </Heading>
             <LinkList>
@@ -93,9 +93,9 @@ export const ArtAndCulture = () => (
               <LinkList.Link href="#">Beschermde stads- en dorpsgezichten</LinkList.Link>
               <LinkList.Link href="#">Archeologische vindplaatsen</LinkList.Link>
             </LinkList>
-          </section>
-          <section>
-            <Heading level={2} size="level-3" className="amsterdam-mb--xs">
+          </Column>
+          <Column gap="xs">
+            <Heading level={2} size="level-3">
               Weesp
             </Heading>
             <LinkList>
@@ -106,7 +106,7 @@ export const ArtAndCulture = () => (
                 Verordeningen Cultuurprijs Weesp (PDF, 275 kB)
               </LinkList.Link>
             </LinkList>
-          </section>
+          </Column>
         </Column>
       </Grid.Cell>
     </Grid>
