@@ -25,8 +25,12 @@
   flex-direction: row;
 }
 
-.amsterdam-row-align-between {
+.amsterdam-row--align-between {
   justify-content: space-between;
+}
+
+.amsterdam-row--valign-baseline {
+  align-items: baseline;
 }
 
 /* Indicate non-functional links */

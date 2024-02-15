@@ -63,7 +63,7 @@ export const Project = () => (
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
         <Column>
-          <div className="amsterdam-row" style={{ justifyContent: 'space-between', alignItems: 'baseline' }}>
+          <div className="amsterdam-row amsterdam-row--align-between amsterdam-row--valign-baseline">
             <Heading level={3}>Kerngegevens</Heading>
             <LinkList>
               <LinkList.Link href="#" icon={EditDocumentIcon}>
