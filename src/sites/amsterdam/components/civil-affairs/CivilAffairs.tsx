@@ -94,8 +94,8 @@ export const CivilAffairs = () => (
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
         <Column>
           {linkSections[0].map(({ title, links }) => (
-            <section key={title}>
-              <Heading level={2} size="level-3" className="amsterdam-mb--xs">
+            <Column as="section" gap="xs" key={title}>
+              <Heading level={2} size="level-3">
                 {title}
               </Heading>
               <LinkList>
@@ -105,15 +105,15 @@ export const CivilAffairs = () => (
                   </LinkList.Link>
                 ))}
               </LinkList>
-            </section>
+            </Column>
           ))}
         </Column>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }}>
         <Column>
           {linkSections[1].map(({ title, links }) => (
-            <section key={title}>
-              <Heading level={2} size="level-3" className="amsterdam-mb--xs">
+            <Column as="section" gap="xs" key={title}>
+              <Heading level={2} size="level-3">
                 {title}
               </Heading>
               <LinkList>
@@ -123,7 +123,7 @@ export const CivilAffairs = () => (
                   </LinkList.Link>
                 ))}
               </LinkList>
-            </section>
+            </Column>
           ))}
         </Column>
       </Grid.Cell>
