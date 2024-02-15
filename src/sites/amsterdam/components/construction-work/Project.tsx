@@ -52,8 +52,8 @@ export const Project = () => (
         'De Bongerd: woonwijk in ontwikkeling',
         'Centrumgebied Amsterdam Noord: nieuw stedelijk centrum',
         'De Kleine Wereld: opknappen van de buurt',
-      ].map((title, index) => (
-        <Grid.Cell key={index} span={{ narrow: 4, medium: 4, wide: 3 }}>
+      ].map((title) => (
+        <Grid.Cell key={title} span={{ narrow: 4, medium: 4, wide: 3 }}>
           <Card>
             <Heading level={3} size="level-4">
               <Card.Link href="#">{title}</Card.Link>
@@ -79,8 +79,8 @@ export const Project = () => (
               'Metaalbewerkerweg en Kamperfoelieweg, omleiding voor fietsers',
               'H.M. Terwogtweg, afsluitweg',
               'Meer werkzaamheden in stadsdeel Noord',
-            ].map((district, index) => (
-              <LinkList.Link href="#" key={index} onBackground="dark">
+            ].map((district) => (
+              <LinkList.Link href="#" key={district} onBackground="dark">
                 {district}
               </LinkList.Link>
             ))}
@@ -91,8 +91,8 @@ export const Project = () => (
             In andere stadsdelen
           </Heading>
           <LinkList>
-            {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district, index) => (
-              <LinkList.Link href="#" key={index} onBackground="dark">
+            {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
+              <LinkList.Link href="#" key={district} onBackground="dark">
                 {district}
               </LinkList.Link>
             ))}

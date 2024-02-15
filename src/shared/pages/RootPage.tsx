@@ -35,7 +35,9 @@ export const RootPage = () => (
         </Heading>
         <LinkList>
           {sites.map(({ href, label }) => (
-            <LinkList.Link href={href}>{label}</LinkList.Link>
+            <LinkList.Link href={href} key={label}>
+              {label}
+            </LinkList.Link>
           ))}
         </LinkList>
       </Grid.Cell>

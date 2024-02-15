@@ -99,8 +99,8 @@ export const CivilAffairs = () => (
                 {title}
               </Heading>
               <LinkList>
-                {links.map((link, index) => (
-                  <LinkList.Link href="#" key={index}>
+                {links.map((link) => (
+                  <LinkList.Link href="#" key={link}>
                     {link}
                   </LinkList.Link>
                 ))}
@@ -117,8 +117,8 @@ export const CivilAffairs = () => (
                 {title}
               </Heading>
               <LinkList>
-                {links.map((link, index) => (
-                  <LinkList.Link href="#" key={index}>
+                {links.map((link) => (
+                  <LinkList.Link href="#" key={link}>
                     {link}
                   </LinkList.Link>
                 ))}
