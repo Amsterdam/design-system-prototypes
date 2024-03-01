@@ -2,6 +2,7 @@ import { Grid, Heading, LinkList, PageHeading, Screen } from '@amsterdam/design-
 import { siteUrl as amopisSiteUrl } from '../../sites/amopis/constants'
 import { siteUrl as amsterdamSiteUrl } from '../../sites/amsterdam/constants'
 import { siteUrl as signalenSiteUrl } from '../../sites/signalen/constants'
+import { siteUrl as formulierenSiteUrl } from '../../sites/formulieren/constants'
 /* Append siteUrl import here */
 
 type Site = {
@@ -21,6 +22,10 @@ const sites: Site[] = [
   {
     label: 'Signalen',
     href: `${signalenSiteUrl}beschrijf`,
+  },
+  {
+    label: 'Formulieren',
+    href: `${formulierenSiteUrl}`,
   },
   /* Append site object here */
 ].sort((a, b) => a.label.localeCompare(b.label))

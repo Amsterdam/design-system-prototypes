@@ -13,6 +13,7 @@ import { RootPage } from './shared/pages/RootPage'
 import { routes as amopisRoutes } from './sites/amopis/routes'
 import { routes as amsterdamRoutes } from './sites/amsterdam/routes'
 import { routes as signalenRoutes } from './sites/signalen/routes'
+import { routes as formRoutes } from './sites/formulieren/routes'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ const router = createBrowserRouter([
   amopisRoutes,
   amsterdamRoutes,
   signalenRoutes,
+  formRoutes,
 ])
 
 ReactDOM.createRoot(document.getElementById('root')!).render(

@@ -21,19 +21,19 @@
     "update:patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && pnpm install"
   },
   "dependencies": {
-    "@amsterdam/design-system-assets":  "^0.1.7",
+    "@amsterdam/design-system-assets": "^0.1.7",
     "@amsterdam/design-system-css": "^0.5.0",
     "@amsterdam/design-system-react": "^0.5.0",
     "@amsterdam/design-system-react-icons": "^0.1.12",
     "@amsterdam/design-system-tokens": "^0.5.1",
     "@babel/runtime": "^7.24.0",
+    "@types/react": "^18.2.61",
+    "@types/react-dom": "^18.2.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.2"
   },
   "devDependencies": {
-    "@types/react": "^18.2.61",
-    "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.1.0",
     "@typescript-eslint/parser": "^7.1.0",
     "@vitejs/plugin-react": "^4.2.1",
