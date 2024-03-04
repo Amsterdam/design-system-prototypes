@@ -75,7 +75,7 @@ export const ArtAndCulture = () => (
         }}
       >
         <Column>
-          <Column gap="xs">
+          <Column gap="extra-small">
             <Heading level={2} size="level-3">
               Archieven en collecties
             </Heading>
@@ -84,7 +84,7 @@ export const ArtAndCulture = () => (
               <LinkList.Link href="#">Collectie van gemeente Amsterdam</LinkList.Link>
             </LinkList>
           </Column>
-          <Column gap="xs">
+          <Column gap="extra-small">
             <Heading level={2} size="level-3">
               Bekijk op de kaart
             </Heading>
@@ -94,7 +94,7 @@ export const ArtAndCulture = () => (
               <LinkList.Link href="#">Archeologische vindplaatsen</LinkList.Link>
             </LinkList>
           </Column>
-          <Column gap="xs">
+          <Column gap="extra-small">
             <Heading level={2} size="level-3">
               Weesp
             </Heading>

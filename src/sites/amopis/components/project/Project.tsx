@@ -71,7 +71,7 @@ export const Project = () => (
               </LinkList.Link>
             </LinkList>
           </div>
-          <Column as="section" gap="xs" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <Column as="section" gap="extra-small" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
             <Heading level={4} style={{ gridColumn: '1 / -1' }}>
               Opdrachtgevers
             </Heading>
@@ -82,7 +82,7 @@ export const Project = () => (
             <Paragraph style={{ fontWeight: 'bold' }}>Melanie van der Horst</Paragraph>
             <EmailIcon width={24} fill="#004469" />
           </Column>
-          <Column as="section" gap="xs" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <Column as="section" gap="extra-small" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
             <Heading level={4} style={{ gridColumn: '1 / -1' }}>
               Opdrachtnemers
             </Heading>
@@ -102,7 +102,7 @@ export const Project = () => (
             <Paragraph style={{ fontWeight: 'bold' }}>Carina Cairo</Paragraph>
             <EmailIcon width={24} fill="#004469" />
           </Column>
-          <Column as="section" gap="xs" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <Column as="section" gap="extra-small" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
             <Heading level={4} style={{ gridColumn: '1 / -1' }}>
               Basisgegevens
             </Heading>
@@ -127,7 +127,7 @@ export const Project = () => (
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 3, wide: 3 }} start={{ narrow: 1, medium: 3, wide: 10 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
-        <Column gap="sm">
+        <Column gap="small">
           <div>
             <AspectRatio ratio="x-wide">
               <Image alt="" src="https://picsum.photos/900/720?random=1" />

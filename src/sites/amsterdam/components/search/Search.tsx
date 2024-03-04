@@ -43,7 +43,7 @@ export const Search = () => (
         <Breadcrumb.Item href={siteUrl}>Home</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Zoekresultaten</Breadcrumb.Item>
       </Breadcrumb>
-      <Column as="div" className="amsterdam-mb--md" gap="xs">
+      <Column className="amsterdam-mb--md" gap="small">
         <Heading>Zoeken</Heading>
         <TextInput value="afval" />
         <Paragraph size="small">25 resultaten</Paragraph>
