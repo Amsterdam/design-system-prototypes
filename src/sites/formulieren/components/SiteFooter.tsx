@@ -34,8 +34,9 @@ export const SiteFooter = () => (
         <Grid.Cell span="all">
           <PageMenu>
             <PageMenu.Link href="#">Over deze site</PageMenu.Link>
-            <PageMenu.Link href="#">Privacy</PageMenu.Link>
-            <PageMenu.Link href="#">Toegankelijkheid</PageMenu.Link>
+            {/* TODO Pagemenu breekt niet op mobiel */}
+            {/* <PageMenu.Link href="#">Privacy</PageMenu.Link>
+            <PageMenu.Link href="#">Toegankelijkheid</PageMenu.Link> */}
           </PageMenu>
         </Grid.Cell>
       </Grid>

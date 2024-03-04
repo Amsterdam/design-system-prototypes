@@ -1,68 +1,60 @@
-import { FormEvent } from 'react'
 import {
   Button,
-  Checkbox,
-  Dialog,
-  // Fieldset,
+  Column,
+  Fieldset,
   FormLabel,
   Grid,
   Heading,
-  LinkList,
   Paragraph,
   TextInput,
 } from '@amsterdam/design-system-react'
-import { siteUrl } from '../constants'
 
 export const Start = () => {
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
-    event.preventDefault()
-
-    const data = new FormData(event.target as HTMLFormElement)
-    const output = document.getElementById('output')
-
-    for (const [key, value] of data) {
-      output?.append(`${key}: ${value}\n`)
-    }
-
-    const testmodal = (document.querySelector('#openDialog') as HTMLDialogElement)?.showModal()
-    console.log(testmodal)
-
-    return false
-  }
-
   return (
-    <form className="amsterdam-gap-md" onSubmit={handleSubmit} id="testform">
+    <form className="amsterdam-gap-md" id="testform">
       <Grid paddingBottom="medium" gapVertical="small" paddingTop="large">
-        <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }} role="aside">
-          <LinkList>
-            <LinkList.Link href={`${siteUrl}`}>Link 1</LinkList.Link>
-            <LinkList.Link href={`${siteUrl}`}>Link 2</LinkList.Link>
-            <LinkList.Link href={`${siteUrl}`}>Link 3</LinkList.Link>
-          </LinkList>
-        </Grid.Cell>
-        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 3, wide: 4 }}>
-          <Heading>Test een Formulier</Heading>
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
+          <Heading>Melding doen</Heading>
           <Paragraph>Hier worden verschillende formulier elementen gebruikt.</Paragraph>
-          <FormLabel htmlFor="name">Naam</FormLabel>
-          <TextInput id="name" />
-          <FormLabel htmlFor="adress">Adres</FormLabel>
-          <TextInput id="adress" />
-          <FormLabel htmlFor="zipcode">Postcode</FormLabel>
-          <TextInput id="zipcode" />
+          <Fieldset legend="Welke gegevens heeft u over deze persoon?">
+            <FormLabel htmlFor="firstname">Voornamen (niet verplicht)</FormLabel>
+            <TextInput id="firstname" />
+            <FormLabel htmlFor="tussenvoegsel">Tussenvoegsel</FormLabel>
+            <TextInput id="tussenvoegsel" />
+            <FormLabel htmlFor="lastname">Achternaam (niet verplicht)</FormLabel>
+            <TextInput id="lastname" />
+            <Column gap="medium">
+              <div>
+                <FormLabel htmlFor="street">Straat</FormLabel>
+                <TextInput id="street" />
+              </div>
+              <div>
+                <FormLabel htmlFor="number">Huisnummer</FormLabel>
+                <TextInput id="number" />
+              </div>
+              <div>
+                <FormLabel htmlFor="addative">Toevoeging</FormLabel>
+                <TextInput id="addative" />
+              </div>
+            </Column>
+            <Column gap="medium">
+              <div>
+                <FormLabel htmlFor="zipcode">Postcode</FormLabel>
+                <TextInput id="zipcode" />
+              </div>
+              <div>
+                <FormLabel htmlFor="city">Plaats</FormLabel>
+                <TextInput id="city" />
+              </div>
+            </Column>
+            <FormLabel htmlFor="explanation">Toelichting (niet verplicht)</FormLabel>
+            <TextInput id="explanation" />
+          </Fieldset>
         </Grid.Cell>
-        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 3, wide: 4 }}>
-          <FormLabel htmlFor="conact">Contactpersoon</FormLabel>
-          <TextInput id="conact" />
-          <Checkbox id="guardian">Wettelijk voogd</Checkbox>
-          <Checkbox id="kennis">Kennis</Checkbox>
-        </Grid.Cell>
-        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 3, wide: 4 }}>
-          <Button type="submit">Versturen</Button>
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
+          <Button type="submit">Volgende</Button>
         </Grid.Cell>
       </Grid>
-      <Dialog title="Formulier gegevens" id="openDialog">
-        <pre id="output"></pre>
-      </Dialog>
     </form>
   )
 }
