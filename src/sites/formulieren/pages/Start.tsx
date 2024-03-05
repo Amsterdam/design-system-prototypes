@@ -20,16 +20,16 @@ export const Start = () => {
           <Fieldset legend="Welke gegevens heeft u over deze persoon?">
             <Column gap="medium">
               <div>
-                <FormLabel htmlFor="firstname">Voornamen (niet verplicht)</FormLabel>
-                <TextInput id="firstname" />
+                <FormLabel htmlFor="firstname">Voornamen</FormLabel>
+                <TextInput id="firstname" required />
               </div>
-              <div>
+              <div style={{ maxWidth: '250px' }}>
                 <FormLabel htmlFor="tussenvoegsel">Tussenvoegsel</FormLabel>
                 <TextInput id="tussenvoegsel" />
               </div>
               <div>
-                <FormLabel htmlFor="lastname">Achternaam (niet verplicht)</FormLabel>
-                <TextInput id="lastname" />
+                <FormLabel htmlFor="lastname">Achternaam</FormLabel>
+                <TextInput id="lastname" required />
               </div>
               <div className="address-row">
                 <div>
@@ -56,8 +56,8 @@ export const Start = () => {
                 </div>
               </div>
               <div>
-                <FormLabel htmlFor="explanation">Toelichting (niet verplicht)</FormLabel>
-                <TextArea id="explanation" rows={8} />
+                <FormLabel htmlFor="explanation">Toelichting</FormLabel>
+                <TextArea id="explanation" rows={8} resize="vertical" />
               </div>
             </Column>
           </Fieldset>
