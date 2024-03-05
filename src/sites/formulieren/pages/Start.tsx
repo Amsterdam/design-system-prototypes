@@ -55,8 +55,10 @@ export const Start = () => {
                   <TextInput id="city" />
                 </div>
               </div>
-              <FormLabel htmlFor="explanation">Toelichting (niet verplicht)</FormLabel>
-              <TextArea id="explanation" rows={8} />
+              <div>
+                <FormLabel htmlFor="explanation">Toelichting (niet verplicht)</FormLabel>
+                <TextArea id="explanation" rows={8} />
+              </div>
             </Column>
           </Fieldset>
         </Grid.Cell>
