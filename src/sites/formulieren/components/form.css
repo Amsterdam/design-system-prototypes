@@ -1,0 +1,31 @@
+.address-row {
+  display: grid;
+  gap: var(--amsterdam-grid-gap);
+  grid-template-columns: repeat(8, 1fr);
+
+  div:nth-child(1) {
+    grid-column: 1 / 5;
+  }
+  
+  div:nth-child(2) {
+    grid-column: 5 / 7;
+  }
+  
+  div:nth-child(3) {
+    grid-column: 7 / 9;
+  }
+}
+
+.zipcode-row {
+  display: grid;
+  gap: var(--amsterdam-grid-gap);
+  grid-template-columns: repeat(8, 1fr);
+
+  div:nth-child(1) {
+    grid-column: 1 / 5;
+  }
+  
+  div:nth-child(2) {
+    grid-column: 5 / 9;
+  }
+}
