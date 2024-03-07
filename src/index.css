@@ -39,12 +39,6 @@ a[href="#"] {
   cursor: not-allowed;
 }
 
-/* Override header padding */
-
-.amsterdam-header {
-  padding-block: 24px;
-}
-
 /* Set strong emphasis in extra bold type */
 strong {
   font-weight: 800;
