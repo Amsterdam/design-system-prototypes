@@ -9,7 +9,7 @@ import {
 
 export const Sidebar = () => (
   <div className="amopis-sidebar">
-    <Column>
+    <Column gap="large">
       <Column className="amsterdam-column--halign-center" gap="extra-small">
         <HousingIcon fill="white" width={24} />
         <Paragraph inverseColor size="small">

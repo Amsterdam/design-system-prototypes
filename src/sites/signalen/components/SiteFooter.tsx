@@ -17,7 +17,7 @@ export const SiteFooter = () => (
       </VisuallyHidden>
       <Grid gapVertical="large" paddingVertical="medium">
         <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
-          <Column gap="small">
+          <Column as="section" gap="extra-small">
             <Heading level={2} size="level-4" inverseColor>
               Contact
             </Heading>

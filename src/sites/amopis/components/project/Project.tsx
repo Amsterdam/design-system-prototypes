@@ -71,7 +71,7 @@ export const Project = () => (
               </LinkList.Link>
             </LinkList>
           </div>
-          <Column as="section" gap="extra-small" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          <section className="amopis-project-details-grid">
             <Heading level={4} style={{ gridColumn: '1 / -1' }}>
               Opdrachtgevers
             </Heading>
@@ -81,8 +81,8 @@ export const Project = () => (
             <Paragraph>Bestuurlijk Opdrachtgever Stad</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Melanie van der Horst</Paragraph>
             <EmailIcon width={24} fill="#004469" />
-          </Column>
-          <Column as="section" gap="extra-small" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          </section>
+          <section className="amopis-project-details-grid">
             <Heading level={4} style={{ gridColumn: '1 / -1' }}>
               Opdrachtnemers
             </Heading>
@@ -101,8 +101,8 @@ export const Project = () => (
             <Paragraph>Projectbeheerser</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Carina Cairo</Paragraph>
             <EmailIcon width={24} fill="#004469" />
-          </Column>
-          <Column as="section" gap="extra-small" style={{ gridTemplateColumns: '1fr 1fr 24px' }}>
+          </section>
+          <section className="amopis-project-details-grid">
             <Heading level={4} style={{ gridColumn: '1 / -1' }}>
               Basisgegevens
             </Heading>
@@ -121,7 +121,7 @@ export const Project = () => (
             <Paragraph>Projectsoort</Paragraph>
             <Paragraph style={{ fontWeight: 'bold' }}>Programma Bruggen</Paragraph>
             <span />
-          </Column>
+          </section>
         </Column>
       </div>
     </Grid.Cell>
