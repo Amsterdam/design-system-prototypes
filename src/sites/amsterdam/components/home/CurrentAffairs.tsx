@@ -1,4 +1,4 @@
-import { AspectRatio, Card, Grid, Heading, Image, Paragraph } from '@amsterdam/design-system-react'
+import { AspectRatio, Card, Column, Grid, Heading, Image, Paragraph } from '@amsterdam/design-system-react'
 import stormschadeImage from '../../assets/images/stormschade.jpg'
 import vervoerImage from '../../assets/images/vervoer.jpg'
 import woonwijkImage from '../../assets/images/woonwijk.jpg'
@@ -7,8 +7,8 @@ import zonnepanelenImage from '../../assets/images/zonnepanelen.jpg'
 export const CurrentAffairs = () => (
   <Grid paddingVertical="medium">
     <Grid.Cell span={3}>
-      <Heading className="amsterdam-mb-sm">Kalender</Heading>
-      <div style={{ display: 'grid' }} className="amsterdam-gap-md">
+      <Heading className="amsterdam-mb--sm">Kalender</Heading>
+      <Column>
         <Card>
           <Heading level={2} size="level-4">
             <Card.Link href="#">29 juni 2023</Card.Link>
@@ -30,10 +30,10 @@ export const CurrentAffairs = () => (
           <Paragraph size="small">Opening tentoonstelling schilderijen Van Rijn</Paragraph>
           <Paragraph size="small">Tijd: 10.00 – 11.30 uur</Paragraph>
         </Card>
-      </div>
+      </Column>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
-      <Heading className="amsterdam-mb-sm">Nieuws</Heading>
+      <Heading className="amsterdam-mb--sm">Nieuws</Heading>
       <Card>
         <AspectRatio ratio="x-wide">
           <Image alt="" src={stormschadeImage} />

@@ -25,8 +25,14 @@
   background-color: var(--amsterdam-color-primary-blue);
   display: flex;
   flex-direction: column;
-  padding-block-start: calc(40px + var(--amsterdam-grid-density-low-gap));
+  padding-block-start: calc(40px + 3 * var(--amsterdam-grid-row-gap-md));
   align-items: center;
+}
+
+.amopis-project-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 24px;
+  row-gap: var(--amsterdam-grid-row-gap-sm);
 }
 
 @media (max-width: 1087px) {

@@ -16,7 +16,7 @@ export const Contact = () => {
   return (
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <form style={{ display: 'grid' }} className="amsterdam-gap-md" onSubmit={handleSubmit}>
+        <form className="amsterdam-gap--md" onSubmit={handleSubmit}>
           <Heading>Doe een melding</Heading>
 
           <Heading level={2}>Contactgegevens</Heading>
@@ -41,7 +41,7 @@ export const Contact = () => {
 
           <fieldset>
             <legend>Mogen we uw melding doorsturen?</legend>
-            <Paragraph className="amsterdam-mb-md">
+            <Paragraph className="amsterdam-mb--md">
               Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
               melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u
               dat goed vindt.

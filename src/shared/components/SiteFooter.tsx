@@ -1,4 +1,13 @@
-import { Footer, Grid, Heading, Link, LinkList, Paragraph, VisuallyHidden } from '@amsterdam/design-system-react'
+import {
+  Column,
+  Footer,
+  Grid,
+  Heading,
+  Link,
+  LinkList,
+  Paragraph,
+  VisuallyHidden,
+} from '@amsterdam/design-system-react'
 import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 
 export const SiteFooter = () => (
@@ -9,7 +18,7 @@ export const SiteFooter = () => (
       </VisuallyHidden>
       <Grid gapVertical="large" paddingVertical="medium">
         <Grid.Cell span={3}>
-          <div style={{ display: 'grid' }} className="amsterdam-gap-xs">
+          <Column gap="extra-small">
             <Heading level={2} size="level-4" inverseColor>
               Contact
             </Heading>
@@ -32,10 +41,10 @@ export const SiteFooter = () => (
                 Bel 14 020
               </LinkList.Link>
             </LinkList>
-          </div>
+          </Column>
         </Grid.Cell>
         <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
-          <div style={{ display: 'grid' }} className="amsterdam-gap-xs">
+          <Column gap="extra-small">
             <Heading level={2} size="level-4" inverseColor>
               Volg de gemeente
             </Heading>
@@ -94,12 +103,12 @@ export const SiteFooter = () => (
                 Werkenbij
               </LinkList.Link>
             </LinkList>
-          </div>
+          </Column>
         </Grid.Cell>
         <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
-          <div style={{ display: 'grid' }} className="amsterdam-gap-md">
-            <section>
-              <Heading level={2} size="level-4" inverseColor className="amsterdam-mb-xs">
+          <Column gap="small">
+            <Column as="section" gap="extra-small">
+              <Heading level={2} size="level-4" inverseColor>
                 Kalender
               </Heading>
               <Paragraph size="small" inverseColor>
@@ -113,9 +122,9 @@ export const SiteFooter = () => (
                 </Link>
                 .
               </Paragraph>
-            </section>
-            <section>
-              <Heading level={3} size="level-4" inverseColor className="amsterdam-mb-xs">
+            </Column>
+            <Column as="section" gap="extra-small">
+              <Heading level={3} size="level-4" inverseColor>
                 Uit in Amsterdam
               </Heading>
               <Paragraph size="small" inverseColor>
@@ -125,8 +134,8 @@ export const SiteFooter = () => (
                 </Link>{' '}
                 vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
               </Paragraph>
-            </section>
-          </div>
+            </Column>
+          </Column>
         </Grid.Cell>
       </Grid>
     </Footer.Top>

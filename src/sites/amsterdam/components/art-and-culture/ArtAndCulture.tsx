@@ -1,4 +1,13 @@
-import { Breadcrumb, Grid, Heading, Image, LinkList, PageHeading, Paragraph } from '@amsterdam/design-system-react'
+import {
+  Breadcrumb,
+  Column,
+  Grid,
+  Heading,
+  Image,
+  LinkList,
+  PageHeading,
+  Paragraph,
+} from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 import artAndCultureImage from '../../assets/images/art-and-culture.jpg'
 import { siteUrl } from '../../constants'
@@ -28,7 +37,7 @@ export const ArtAndCulture = () => (
     </Grid>
     <Grid paddingBottom="medium">
       <Grid.Cell span={4}>
-        <Heading level={3} className="amsterdam-mb-xs">
+        <Heading level={3} className="amsterdam-mb--xs">
           Vaak gezocht
         </Heading>
         <LinkList>
@@ -39,10 +48,10 @@ export const ArtAndCulture = () => (
         </LinkList>
       </Grid.Cell>
       <Grid.Cell span={4} start={{ narrow: 1, medium: 1, wide: 5 }}>
-        <Heading level={2} size="level-3" className="amsterdam-mb-xs">
+        <Heading level={2} size="level-3" className="amsterdam-mb--xs">
           Wie Amsterdam zegt, zegt kunst en cultuur
         </Heading>
-        <Paragraph className="amsterdam-mb-xs">
+        <Paragraph className="amsterdam-mb--xs">
           Van de musea en culturele broedplaatsen tot de stadsparken en de met kunst versierde gevels van de
           grachtenpanden. Kunst en cultuur is altijd en overal in Amsterdam. En het houdt niet op als de zon ondergaat:
           ook de clubscene is van culturele waarde voor de stad.
@@ -65,18 +74,18 @@ export const ArtAndCulture = () => (
           wide: 9,
         }}
       >
-        <div style={{ display: 'grid' }} className="amsterdam-gap-md">
-          <section>
-            <Heading level={2} size="level-3" className="amsterdam-mb-xs">
+        <Column>
+          <Column gap="extra-small">
+            <Heading level={2} size="level-3">
               Archieven en collecties
             </Heading>
             <LinkList>
               <LinkList.Link href="#">Stadsarchief</LinkList.Link>
               <LinkList.Link href="#">Collectie van gemeente Amsterdam</LinkList.Link>
             </LinkList>
-          </section>
-          <section>
-            <Heading level={2} size="level-3" className="amsterdam-mb-xs">
+          </Column>
+          <Column gap="extra-small">
+            <Heading level={2} size="level-3">
               Bekijk op de kaart
             </Heading>
             <LinkList>
@@ -84,9 +93,9 @@ export const ArtAndCulture = () => (
               <LinkList.Link href="#">Beschermde stads- en dorpsgezichten</LinkList.Link>
               <LinkList.Link href="#">Archeologische vindplaatsen</LinkList.Link>
             </LinkList>
-          </section>
-          <section>
-            <Heading level={2} size="level-3" className="amsterdam-mb-xs">
+          </Column>
+          <Column gap="extra-small">
+            <Heading level={2} size="level-3">
               Weesp
             </Heading>
             <LinkList>
@@ -97,8 +106,8 @@ export const ArtAndCulture = () => (
                 Verordeningen Cultuurprijs Weesp (PDF, 275 kB)
               </LinkList.Link>
             </LinkList>
-          </section>
-        </div>
+          </Column>
+        </Column>
       </Grid.Cell>
     </Grid>
   </>

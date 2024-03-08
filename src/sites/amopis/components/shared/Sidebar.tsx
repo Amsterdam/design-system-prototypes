@@ -1,4 +1,4 @@
-import { Paragraph } from '@amsterdam/design-system-react'
+import { Column, Paragraph } from '@amsterdam/design-system-react'
 import {
   DocumentTextIcon,
   ExternalLinkIcon,
@@ -9,37 +9,37 @@ import {
 
 export const Sidebar = () => (
   <div className="amopis-sidebar">
-    <div className="amsterdam-column amsterdam-gap-md">
-      <div className="amsterdam-column amsterdam-column-halign-center">
+    <Column gap="large">
+      <Column className="amsterdam-column--halign-center" gap="extra-small">
         <HousingIcon fill="white" width={24} />
-        <Paragraph inverseColor style={{ fontSize: 12 }}>
+        <Paragraph inverseColor size="small">
           Dashboard
         </Paragraph>
-      </div>
-      <div className="amsterdam-column amsterdam-column-halign-center">
+      </Column>
+      <Column className="amsterdam-column--halign-center" gap="extra-small">
         <SuitcaseIcon fill="white" width={24} />
-        <Paragraph inverseColor style={{ fontSize: 12 }}>
+        <Paragraph inverseColor size="small">
           Projecten
         </Paragraph>
-      </div>
-      <div className="amsterdam-column amsterdam-column-halign-center">
+      </Column>
+      <Column className="amsterdam-column--halign-center" gap="extra-small">
         <DocumentTextIcon fill="white" width={24} />
-        <Paragraph inverseColor style={{ fontSize: 12 }}>
+        <Paragraph inverseColor size="small">
           Rapportages
         </Paragraph>
-      </div>
-      <div className="amsterdam-column amsterdam-column-halign-center">
+      </Column>
+      <Column className="amsterdam-column--halign-center" gap="extra-small">
         <ExternalLinkIcon fill="white" width={24} />
-        <Paragraph inverseColor style={{ fontSize: 12 }}>
+        <Paragraph inverseColor size="small">
           Analyses
         </Paragraph>
-      </div>
-      <div className="amsterdam-column amsterdam-column-halign-center">
+      </Column>
+      <Column className="amsterdam-column--halign-center" gap="extra-small">
         <StopIcon fill="white" width={24} />
-        <Paragraph inverseColor style={{ fontSize: 12 }}>
+        <Paragraph inverseColor size="small">
           Instellingen
         </Paragraph>
-      </div>
-    </div>
+      </Column>
+    </Column>
   </div>
 )
