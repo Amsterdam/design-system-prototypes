@@ -25,7 +25,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Alert>
       </Grid.Cell>
       <Grid.Cell
-        className="ams-column ams-gap-sm"
+        className="ams-column ams-gap--sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
@@ -63,7 +63,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Paragraph>
       </Grid.Cell>
       <Grid.Cell
-        className="ams-column ams-gap-sm"
+        className="ams-column ams-gap--sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
@@ -148,7 +148,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Table>
       </Grid.Cell>
       <Grid.Cell
-        className="ams-column ams-gap-sm"
+        className="ams-column ams-gap--sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
@@ -225,7 +225,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </UnorderedList>
       </Grid.Cell>
       <Grid.Cell
-        className="ams-column ams-gap-sm"
+        className="ams-column ams-gap--sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
@@ -292,7 +292,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Table>
       </Grid.Cell>
       <Grid.Cell
-        className="ams-column ams-gap-sm"
+        className="ams-column ams-gap--sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
@@ -434,7 +434,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Table>
       </Grid.Cell>
       <Grid.Cell
-        className="ams-column ams-gap-sm"
+        className="ams-column ams-gap--sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
@@ -453,7 +453,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Paragraph>
       </Grid.Cell>
       <Grid.Cell
-        className="ams-column ams-gap-sm"
+        className="ams-column ams-gap--sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
@@ -480,7 +480,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Accordion>
       </Grid.Cell>
       <Grid.Cell
-        className="ams-column ams-gap-sm"
+        className="ams-column ams-gap--sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
@@ -511,7 +511,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
     <Spotlight color="dark-green">
       <Grid paddingVertical="medium">
         <Grid.Cell
-          className="ams-column ams-gap-sm"
+          className="ams-column ams-gap--sm"
           span={{ narrow: 4, medium: 6, wide: 7 }}
           start={{ narrow: 1, medium: 2, wide: 3 }}
         >
@@ -556,7 +556,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
     </Spotlight>
     <Grid paddingVertical="medium">
       <Grid.Cell
-        className="ams-column ams-gap-sm"
+        className="ams-column ams-gap--sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
