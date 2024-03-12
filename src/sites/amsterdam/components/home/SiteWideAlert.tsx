@@ -12,7 +12,7 @@ export const SiteWideAlert = ({ children }: SiteWideAlertProps) => {
     visible && (
       <Grid>
         <Grid.Cell span="all">
-          <Alert className="amsterdam-mb--md" closeable onClose={() => setVisible(false)}>
+          <Alert className="ams-mb--md" closeable onClose={() => setVisible(false)}>
             {children}
           </Alert>
         </Grid.Cell>

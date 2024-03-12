@@ -24,7 +24,7 @@ export const Projects = () => (
     </Grid>
     <Grid gapVertical="small" paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-        <Heading className="amsterdam-mb--sm">Bouwprojecten en verkeersprojecten</Heading>
+        <Heading className="ams-mb--sm">Bouwprojecten en verkeersprojecten</Heading>
         <Paragraph size="large">
           <strong>Overzicht van ruim 200 projecten in Amsterdam.</strong> Lees waar en wanneer we werken aan nieuwbouw,
           groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele gebieden. En
@@ -34,7 +34,7 @@ export const Projects = () => (
     </Grid>
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 2, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
-        <Heading level={2} size="level-4" className="amsterdam-mb--xs">
+        <Heading level={2} size="level-4" className="ams-mb--xs">
           Projecten per stadsdeel
         </Heading>
         <LinkList>
@@ -46,7 +46,7 @@ export const Projects = () => (
         </LinkList>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 2, medium: 4, wide: 5 }}>
-        <Heading level={2} size="level-4" className="amsterdam-mb--xs">
+        <Heading level={2} size="level-4" className="ams-mb--xs">
           Zoek project
         </Heading>
         <TextInput />
@@ -55,7 +55,7 @@ export const Projects = () => (
     <Spotlight color="yellow">
       <Grid paddingVertical="medium">
         <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 3 }}>
-          <Heading level={2} size="level-4" className="amsterdam-mb--xs">
+          <Heading level={2} size="level-4" className="ams-mb--xs">
             Kaart met bouwprojecten en verkeersprojecten
           </Heading>
           <Paragraph>Ga via de kaart naar meer informatie over het project dat u zoekt.</Paragraph>

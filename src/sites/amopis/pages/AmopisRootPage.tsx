@@ -6,7 +6,7 @@ import { Sidebar } from '../components/shared/Sidebar'
 import { SiteHeader } from '../components/shared/SiteHeader'
 
 export const AmopisRootPage = () => (
-  <Screen className="amsterdam-screen--amopis amsterdam-theme amsterdam-theme--compact">
+  <Screen className="ams-screen--amopis ams-theme ams-theme--compact">
     <div className="amopis-app-grid">
       <Sidebar />
       <div>

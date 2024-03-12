@@ -25,19 +25,19 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Alert>
       </Grid.Cell>
       <Grid.Cell
-        className="amsterdam-column amsterdam-gap-sm"
+        className="ams-column ams-gap-sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="amsterdam-mb--md">Parkeervergunning voor sportverenigingen</Heading>
-        <Paragraph className="amsterdam-mb--md" size="large">
+        <Heading className="ams-mb--md">Parkeervergunning voor sportverenigingen</Heading>
+        <Paragraph className="ams-mb--md" size="large">
           Sportverenigingen kunnen voor hun vrijwilligers een parkeervergunning voor sportverenigingen aanvragen. Met
           deze parkeervergunning kunt u parkeren in het vergunninggebied waar uw sportvereniging zit.
         </Paragraph>
-        <Heading className="amsterdam-mb--xs" level={2}>
+        <Heading className="ams-mb--xs" level={2}>
           Aanvragen
         </Heading>
-        <Paragraph className="amsterdam-mb--md">
+        <Paragraph className="ams-mb--md">
           Wilt u een parkeervergunning aanvragen voor het gebied waar uw sportvereniging is gevestigd? Kijk dan eerst{' '}
           <Link
             href="https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunninggebied-opzoeken/"
@@ -47,7 +47,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
           </Link>
           .
         </Paragraph>
-        <Heading className="amsterdam-mb--xs" level={3}>
+        <Heading className="ams-mb--xs" level={3}>
           Parkeervergunning met wisselend kenteken
         </Heading>
         <Paragraph>
@@ -63,14 +63,14 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Paragraph>
       </Grid.Cell>
       <Grid.Cell
-        className="amsterdam-column amsterdam-gap-sm"
+        className="ams-column ams-gap-sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="amsterdam-mb--xs" level={3}>
+        <Heading className="ams-mb--xs" level={3}>
           Aantal vergunningen (1)
         </Heading>
-        <Paragraph className="amsterdam-mb--md">
+        <Paragraph className="ams-mb--md">
           Het aantal parkeervergunningen dat een sportvereniging kan krijgen, verschilt per stadsdeel:
         </Paragraph>
         <Table>
@@ -148,18 +148,18 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Table>
       </Grid.Cell>
       <Grid.Cell
-        className="amsterdam-column amsterdam-gap-sm"
+        className="ams-column ams-gap-sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="amsterdam-mb--xs" level={3}>
+        <Heading className="ams-mb--xs" level={3}>
           Aantal vergunningen (2)
         </Heading>
-        <Paragraph className="amsterdam-mb--md">
+        <Paragraph className="ams-mb--md">
           Een sportvereniging kan maximaal 25 vergunningen krijgen. Het precieze aantal hangt af van het aantal leden en
           verschilt per stadsdeel:
         </Paragraph>
-        <Table className="amsterdam-mb--md">
+        <Table className="ams-mb--md">
           <Table.Header>
             <Table.HeaderCell>Stadsdeel</Table.HeaderCell>
             <Table.HeaderCell>Vergunning&shy;gebieden</Table.HeaderCell>
@@ -225,14 +225,14 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </UnorderedList>
       </Grid.Cell>
       <Grid.Cell
-        className="amsterdam-column amsterdam-gap-sm"
+        className="ams-column ams-gap-sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="amsterdam-mb--xs" level={3}>
+        <Heading className="ams-mb--xs" level={3}>
           Aantal vergunningen (3)
         </Heading>
-        <Paragraph className="amsterdam-mb--md">
+        <Paragraph className="ams-mb--md">
           Een sportvereniging krijgt maximaal 25 vergunningen. Het precieze aantal hangt af van het aantal leden. Dat
           verschilt per stadsdeel:
         </Paragraph>
@@ -292,18 +292,18 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Table>
       </Grid.Cell>
       <Grid.Cell
-        className="amsterdam-column amsterdam-gap-sm"
+        className="ams-column ams-gap-sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="amsterdam-mb--xs" level={3}>
+        <Heading className="ams-mb--xs" level={3}>
           Aantal vergunningen (4)
         </Heading>
-        <Paragraph className="amsterdam-mb--md">
+        <Paragraph className="ams-mb--md">
           Een sportvereniging kan maximaal 25 vergunningen krijgen. Het precieze aantal hangt af van het aantal leden en
           verschilt per stadsdeel:
         </Paragraph>
-        <Accordion className="amsterdam-mb--md" headingLevel={4}>
+        <Accordion className="ams-mb--md" headingLevel={4}>
           <Accordion.Section label="Centrum">
             <Paragraph>Aantal vergunningen: 1 per 50 leden.</Paragraph>
             <Paragraph>
@@ -342,13 +342,13 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
             </UnorderedList>
           </Accordion.Section>
         </Accordion>
-        <Heading className="amsterdam-mb--xs" level={3}>
+        <Heading className="ams-mb--xs" level={3}>
           Kosten
         </Heading>
-        <Paragraph className="amsterdam-mb--md">
+        <Paragraph className="ams-mb--md">
           Dit zijn de kosten voor een parkeervergunning voor sportverenigingen per 6 maanden.
         </Paragraph>
-        <Table className="amsterdam-mb--md">
+        <Table className="ams-mb--md">
           <Table.Body>
             <Table.Row>
               <Table.HeaderCell>Stadsdeel</Table.HeaderCell>
@@ -434,11 +434,11 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Table>
       </Grid.Cell>
       <Grid.Cell
-        className="amsterdam-column amsterdam-gap-sm"
+        className="ams-column ams-gap-sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="amsterdam-mb--xs" level={3}>
+        <Heading className="ams-mb--xs" level={3}>
           Betaalperiode
         </Heading>
         <Paragraph>
@@ -453,14 +453,14 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Paragraph>
       </Grid.Cell>
       <Grid.Cell
-        className="amsterdam-column amsterdam-gap-sm"
+        className="ams-column ams-gap-sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="amsterdam-mb--xs" level={3}>
+        <Heading className="ams-mb--xs" level={3}>
           Voorwaarden
         </Heading>
-        <Paragraph className="amsterdam-mb--sm">
+        <Paragraph className="ams-mb--sm">
           Dit zijn de regels voor een parkeervergunning voor sportverenigingen:
         </Paragraph>
         <Accordion headingLevel={4}>
@@ -480,14 +480,14 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         </Accordion>
       </Grid.Cell>
       <Grid.Cell
-        className="amsterdam-column amsterdam-gap-sm"
+        className="ams-column ams-gap-sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="amsterdam-mb--xs" level={3}>
+        <Heading className="ams-mb--xs" level={3}>
           Wat u nodig hebt
         </Heading>
-        <Paragraph className="amsterdam-mb--sm">
+        <Paragraph className="ams-mb--sm">
           Deze documenten hebt u nodig om een parkeervergunning voor sportverenigingen aan te vragen:
         </Paragraph>
         <Accordion headingLevel={4}>
@@ -511,14 +511,14 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
     <Spotlight color="dark-green">
       <Grid paddingVertical="medium">
         <Grid.Cell
-          className="amsterdam-column amsterdam-gap-sm"
+          className="ams-column ams-gap-sm"
           span={{ narrow: 4, medium: 6, wide: 7 }}
           start={{ narrow: 1, medium: 2, wide: 3 }}
         >
-          <Heading className="amsterdam-mb--sm" inverseColor level={3}>
+          <Heading className="ams-mb--sm" inverseColor level={3}>
             Vraag aan
           </Heading>
-          <Paragraph className="amsterdam-mb--sm" inverseColor>
+          <Paragraph className="ams-mb--sm" inverseColor>
             Voldoet u aan de{' '}
             <Link
               href="https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-sportverenigingen/#PagCls_16986648"
@@ -529,10 +529,10 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
             </Link>
             ? Dan kunt u een parkeervergunning voor sportverenigingen aanvragen.
           </Paragraph>
-          <Heading className="amsterdam-mb--sm" inverseColor level={4}>
+          <Heading className="ams-mb--sm" inverseColor level={4}>
             Hoe het werkt
           </Heading>
-          <OrderedList className="amsterdam-mb--md" inverseColor>
+          <OrderedList className="ams-mb--md" inverseColor>
             <OrderedList.Item>U logt in met eHerkenning.</OrderedList.Item>
             <OrderedList.Item>
               U voegt de juiste{' '}
@@ -556,24 +556,24 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
     </Spotlight>
     <Grid paddingVertical="medium">
       <Grid.Cell
-        className="amsterdam-column amsterdam-gap-sm"
+        className="ams-column ams-gap-sm"
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="amsterdam-mb--sm" level={3}>
+        <Heading className="ams-mb--sm" level={3}>
           Kenteken wijzigen
         </Heading>
-        <Heading className="amsterdam-mb--xs" level={4}>
+        <Heading className="ams-mb--xs" level={4}>
           Parkeervergunning met wisselend kenteken
         </Heading>
-        <Paragraph className="amsterdam-mb--sm">
+        <Paragraph className="ams-mb--sm">
           Hebt u een parkeervergunning met wisselend kenteken? Dan kunt u een kenteken online koppelen.{' '}
           <Link href="https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/parkeervergunning-wisselend-gebruiken/">
             Bekijk hoe het werkt
           </Link>
           .
         </Paragraph>
-        <Heading className="amsterdam-mb--xs" level={4}>
+        <Heading className="ams-mb--xs" level={4}>
           Parkeervergunning op vast kenteken
         </Heading>
         <Paragraph>
