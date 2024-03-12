@@ -12,11 +12,11 @@ import {
 
 export const Start = () => {
   return (
-    <form className="amsterdam-gap-md" id="testform">
+    <form>
       <Grid paddingBottom="large" gapVertical="large" paddingTop="large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Heading>Melding doen</Heading>
-          <Paragraph className="amsterdam-mb-md">Hier worden verschillende formulier elementen gebruikt.</Paragraph>
+          <Paragraph className="ams-mb--md">Hier worden verschillende formulier elementen gebruikt.</Paragraph>
           <Fieldset legend="Welke gegevens heeft u over deze persoon?">
             <Column gap="medium">
               <div>

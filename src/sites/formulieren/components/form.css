@@ -4,7 +4,7 @@
 .address-row,
 .zipcode-row {
   display: grid;
-  gap: var(--amsterdam-grid-column-gap);
+  gap: var(--ams-grid-column-gap);
 
   @media screen and (min-width: 68rem) {
     grid-template-columns: repeat(8, 1fr);
@@ -22,7 +22,7 @@
 
   div:nth-child(2) {
     grid-row: 2;
-    
+
     @media screen and (min-width: 68rem) {
       grid-row: 1;
       grid-column: 5 / 7;
@@ -31,7 +31,7 @@
 
   div:nth-child(3) {
     grid-row: 3;
-    
+
     @media screen and (min-width: 68rem) {
       grid-row: 1;
       grid-column: 7 / 9;
@@ -42,7 +42,7 @@
 .zipcode-row {
   div:nth-child(1) {
     grid-row: 1;
-    
+
     @media screen and (min-width: 68rem) {
       grid-column: 1 / 5;
     }
@@ -50,7 +50,7 @@
 
   div:nth-child(2) {
     grid-row: 2;
-    
+
     @media screen and (min-width: 68rem) {
       grid-row: 1;
       grid-column: 5 / 9;
