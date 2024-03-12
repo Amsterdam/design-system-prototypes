@@ -1,4 +1,4 @@
-import { Breadcrumb, Grid, Heading, LinkList, PageHeading } from '@amsterdam/design-system-react'
+import { Breadcrumb, Column, Grid, Heading, LinkList, PageHeading } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
 
 const linkSections = [
@@ -92,40 +92,40 @@ export const CivilAffairs = () => (
         <PageHeading>Burgerzaken</PageHeading>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-        <div className="amsterdam-column amsterdam-gap-md">
+        <Column>
           {linkSections[0].map(({ title, links }) => (
-            <section key={title}>
-              <Heading level={2} size="level-3" className="amsterdam-mb-xs">
+            <Column as="section" gap="extra-small" key={title}>
+              <Heading level={2} size="level-3">
                 {title}
               </Heading>
               <LinkList>
-                {links.map((link, index) => (
-                  <LinkList.Link href="#" key={index}>
+                {links.map((link) => (
+                  <LinkList.Link href="#" key={link}>
                     {link}
                   </LinkList.Link>
                 ))}
               </LinkList>
-            </section>
+            </Column>
           ))}
-        </div>
+        </Column>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }}>
-        <div className="amsterdam-column amsterdam-gap-md">
+        <Column>
           {linkSections[1].map(({ title, links }) => (
-            <section key={title}>
-              <Heading level={2} size="level-3" className="amsterdam-mb-xs">
+            <Column as="section" gap="extra-small" key={title}>
+              <Heading level={2} size="level-3">
                 {title}
               </Heading>
               <LinkList>
-                {links.map((link, index) => (
-                  <LinkList.Link href="#" key={index}>
+                {links.map((link) => (
+                  <LinkList.Link href="#" key={link}>
                     {link}
                   </LinkList.Link>
                 ))}
               </LinkList>
-            </section>
+            </Column>
           ))}
-        </div>
+        </Column>
       </Grid.Cell>
     </Grid>
   </>

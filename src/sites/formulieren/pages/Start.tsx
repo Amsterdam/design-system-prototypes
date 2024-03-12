@@ -38,7 +38,7 @@ export const Start = () => {
                 </div>
                 <div>
                   <FormLabel htmlFor="number">Huisnummer</FormLabel>
-                  <TextInput id="number" />
+                  <TextInput id="number" inputMode="numeric" />
                 </div>
                 <div>
                   <FormLabel htmlFor="addative">Toevoeging</FormLabel>
@@ -52,7 +52,7 @@ export const Start = () => {
                 </div>
                 <div>
                   <FormLabel htmlFor="city">Plaats</FormLabel>
-                  <TextInput id="city" />
+                  <TextInput id="city" placeholder="Amsterdam" />
                 </div>
               </div>
               <div>

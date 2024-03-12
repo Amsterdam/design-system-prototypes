@@ -35,12 +35,14 @@ export const RootPage = () => (
     <Grid paddingVertical="large">
       <Grid.Cell span="all">
         <PageHeading>Prototypes</PageHeading>
-        <Heading level={2} size="level-4" className="amsterdam-mb-md">
+        <Heading level={2} size="level-4" className="amsterdam-mb--md">
           Amsterdam Design System
         </Heading>
         <LinkList>
           {sites.map(({ href, label }) => (
-            <LinkList.Link href={href}>{label}</LinkList.Link>
+            <LinkList.Link href={href} key={label}>
+              {label}
+            </LinkList.Link>
           ))}
         </LinkList>
       </Grid.Cell>
