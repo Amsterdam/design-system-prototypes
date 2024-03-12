@@ -29,15 +29,13 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="ams-mb--md">Parkeervergunning voor sportverenigingen</Heading>
-        <Paragraph className="ams-mb--md" size="large">
+        <Heading>Parkeervergunning voor sportverenigingen</Heading>
+        <Paragraph size="large">
           Sportverenigingen kunnen voor hun vrijwilligers een parkeervergunning voor sportverenigingen aanvragen. Met
           deze parkeervergunning kunt u parkeren in het vergunninggebied waar uw sportvereniging zit.
         </Paragraph>
-        <Heading className="ams-mb--xs" level={2}>
-          Aanvragen
-        </Heading>
-        <Paragraph className="ams-mb--md">
+        <Heading level={2}>Aanvragen</Heading>
+        <Paragraph>
           Wilt u een parkeervergunning aanvragen voor het gebied waar uw sportvereniging is gevestigd? Kijk dan eerst{' '}
           <Link
             href="https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunninggebied-opzoeken/"
@@ -47,9 +45,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
           </Link>
           .
         </Paragraph>
-        <Heading className="ams-mb--xs" level={3}>
-          Parkeervergunning met wisselend kenteken
-        </Heading>
+        <Heading level={3}>Parkeervergunning met wisselend kenteken</Heading>
         <Paragraph>
           In de meeste stadsdelen kunt u de parkeervergunning ook{' '}
           <Link
@@ -67,10 +63,8 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="ams-mb--xs" level={3}>
-          Aantal vergunningen (1)
-        </Heading>
-        <Paragraph className="ams-mb--md">
+        <Heading level={3}>Aantal vergunningen (1)</Heading>
+        <Paragraph>
           Het aantal parkeervergunningen dat een sportvereniging kan krijgen, verschilt per stadsdeel:
         </Paragraph>
         <Table>
@@ -152,14 +146,12 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="ams-mb--xs" level={3}>
-          Aantal vergunningen (2)
-        </Heading>
-        <Paragraph className="ams-mb--md">
+        <Heading level={3}>Aantal vergunningen (2)</Heading>
+        <Paragraph>
           Een sportvereniging kan maximaal 25 vergunningen krijgen. Het precieze aantal hangt af van het aantal leden en
           verschilt per stadsdeel:
         </Paragraph>
-        <Table className="ams-mb--md">
+        <Table>
           <Table.Header>
             <Table.HeaderCell>Stadsdeel</Table.HeaderCell>
             <Table.HeaderCell>Vergunning&shy;gebieden</Table.HeaderCell>
@@ -229,10 +221,8 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="ams-mb--xs" level={3}>
-          Aantal vergunningen (3)
-        </Heading>
-        <Paragraph className="ams-mb--md">
+        <Heading level={3}>Aantal vergunningen (3)</Heading>
+        <Paragraph>
           Een sportvereniging krijgt maximaal 25 vergunningen. Het precieze aantal hangt af van het aantal leden. Dat
           verschilt per stadsdeel:
         </Paragraph>
@@ -296,14 +286,12 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="ams-mb--xs" level={3}>
-          Aantal vergunningen (4)
-        </Heading>
-        <Paragraph className="ams-mb--md">
+        <Heading level={3}>Aantal vergunningen (4)</Heading>
+        <Paragraph>
           Een sportvereniging kan maximaal 25 vergunningen krijgen. Het precieze aantal hangt af van het aantal leden en
           verschilt per stadsdeel:
         </Paragraph>
-        <Accordion className="ams-mb--md" headingLevel={4}>
+        <Accordion headingLevel={4}>
           <Accordion.Section label="Centrum">
             <Paragraph>Aantal vergunningen: 1 per 50 leden.</Paragraph>
             <Paragraph>
@@ -342,13 +330,9 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
             </UnorderedList>
           </Accordion.Section>
         </Accordion>
-        <Heading className="ams-mb--xs" level={3}>
-          Kosten
-        </Heading>
-        <Paragraph className="ams-mb--md">
-          Dit zijn de kosten voor een parkeervergunning voor sportverenigingen per 6 maanden.
-        </Paragraph>
-        <Table className="ams-mb--md">
+        <Heading level={3}>Kosten</Heading>
+        <Paragraph>Dit zijn de kosten voor een parkeervergunning voor sportverenigingen per 6 maanden.</Paragraph>
+        <Table>
           <Table.Body>
             <Table.Row>
               <Table.HeaderCell>Stadsdeel</Table.HeaderCell>
@@ -438,9 +422,7 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="ams-mb--xs" level={3}>
-          Betaalperiode
-        </Heading>
+        <Heading level={3}>Betaalperiode</Heading>
         <Paragraph>
           Een parkeervergunning betaalt u voor een periode van 6 maanden. Bij een nieuwe parkeervergunning kunt u zelf
           bepalen vanaf welke maand u de vergunning laat ingaan. U betaalt altijd voor de hele maand.
@@ -457,12 +439,8 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="ams-mb--xs" level={3}>
-          Voorwaarden
-        </Heading>
-        <Paragraph className="ams-mb--sm">
-          Dit zijn de regels voor een parkeervergunning voor sportverenigingen:
-        </Paragraph>
+        <Heading level={3}>Voorwaarden</Heading>
+        <Paragraph>Dit zijn de regels voor een parkeervergunning voor sportverenigingen:</Paragraph>
         <Accordion headingLevel={4}>
           <Accordion.Section label="Lees de voorwaarden">
             <UnorderedList>
@@ -484,10 +462,8 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="ams-mb--xs" level={3}>
-          Wat u nodig hebt
-        </Heading>
-        <Paragraph className="ams-mb--sm">
+        <Heading level={3}>Wat u nodig hebt</Heading>
+        <Paragraph>
           Deze documenten hebt u nodig om een parkeervergunning voor sportverenigingen aan te vragen:
         </Paragraph>
         <Accordion headingLevel={4}>
@@ -515,10 +491,10 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
           span={{ narrow: 4, medium: 6, wide: 7 }}
           start={{ narrow: 1, medium: 2, wide: 3 }}
         >
-          <Heading className="ams-mb--sm" inverseColor level={3}>
+          <Heading inverseColor level={3}>
             Vraag aan
           </Heading>
-          <Paragraph className="ams-mb--sm" inverseColor>
+          <Paragraph inverseColor>
             Voldoet u aan de{' '}
             <Link
               href="https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-sportverenigingen/#PagCls_16986648"
@@ -529,10 +505,10 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
             </Link>
             ? Dan kunt u een parkeervergunning voor sportverenigingen aanvragen.
           </Paragraph>
-          <Heading className="ams-mb--sm" inverseColor level={4}>
+          <Heading inverseColor level={4}>
             Hoe het werkt
           </Heading>
-          <OrderedList className="ams-mb--md" inverseColor>
+          <OrderedList inverseColor>
             <OrderedList.Item>U logt in met eHerkenning.</OrderedList.Item>
             <OrderedList.Item>
               U voegt de juiste{' '}
@@ -560,22 +536,16 @@ export const ParkeervergunningVoorSportverenigingenPage = () => (
         span={{ narrow: 4, medium: 6, wide: 7 }}
         start={{ narrow: 1, medium: 2, wide: 3 }}
       >
-        <Heading className="ams-mb--sm" level={3}>
-          Kenteken wijzigen
-        </Heading>
-        <Heading className="ams-mb--xs" level={4}>
-          Parkeervergunning met wisselend kenteken
-        </Heading>
-        <Paragraph className="ams-mb--sm">
+        <Heading level={3}>Kenteken wijzigen</Heading>
+        <Heading level={4}>Parkeervergunning met wisselend kenteken</Heading>
+        <Paragraph>
           Hebt u een parkeervergunning met wisselend kenteken? Dan kunt u een kenteken online koppelen.{' '}
           <Link href="https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-bedrijven/parkeervergunning-wisselend-gebruiken/">
             Bekijk hoe het werkt
           </Link>
           .
         </Paragraph>
-        <Heading className="ams-mb--xs" level={4}>
-          Parkeervergunning op vast kenteken
-        </Heading>
+        <Heading level={4}>Parkeervergunning op vast kenteken</Heading>
         <Paragraph>
           U kunt een kentekenwijziging mailen naar{' '}
           <Link href="mailto:parkeervergunning@amsterdam.nl">parkeervergunning@amsterdam.nl</Link>. Wijzigingen
