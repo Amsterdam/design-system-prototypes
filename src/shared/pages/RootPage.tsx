@@ -26,11 +26,11 @@ const sites: Site[] = [
 ].sort((a, b) => a.label.localeCompare(b.label))
 
 export const RootPage = () => (
-  <Screen className="amsterdam-theme" maxWidth="wide">
+  <Screen className="ams-theme" maxWidth="wide">
     <Grid paddingVertical="large">
       <Grid.Cell span="all">
         <PageHeading>Prototypes</PageHeading>
-        <Heading level={2} size="level-4" className="amsterdam-mb--md">
+        <Heading level={2} size="level-4" className="ams-mb--md">
           Amsterdam Design System
         </Heading>
         <LinkList>

@@ -19,13 +19,13 @@ export const Project = () => (
         <Breadcrumb.Item href="#">Dashboard</Breadcrumb.Item>
         <Breadcrumb.Item href="#">Projecten</Breadcrumb.Item>
       </Breadcrumb>
-      <Heading className="amsterdam-mb--sm">Kerngegevens</Heading>
+      <Heading className="ams-mb--sm">Kerngegevens</Heading>
       <Heading level={2}>Brug 423 opwaardering (Berlagebrug) – ams20192715</Heading>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
       <div
         className="amopis-white-background"
-        style={{ padding: '.5rem 1rem', borderBottom: '2px solid var(--amsterdam-color-primary-blue)' }}
+        style={{ padding: '.5rem 1rem', borderBottom: '2px solid var(--ams-color-primary-blue)' }}
       >
         <Link>
           Overzicht &nbsp; | &nbsp; Kerngegevens &nbsp; | &nbsp; Projectinformatie &nbsp; | &nbsp; Projectgrenzen &nbsp;
@@ -63,7 +63,7 @@ export const Project = () => (
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
         <Column>
-          <div className="amsterdam-row amsterdam-row--align-between amsterdam-row--valign-baseline">
+          <div className="ams-row ams-row--align-between ams-row--valign-baseline">
             <Heading level={3}>Kerngegevens</Heading>
             <LinkList>
               <LinkList.Link href="#" icon={EditDocumentIcon}>

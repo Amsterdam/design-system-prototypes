@@ -16,7 +16,7 @@ export const Describe = () => {
   return (
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <form className="amsterdam-gap--md" onSubmit={handleSubmit}>
+        <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Doe een melding</Heading>
 
           <Heading level={2}>Beschrijf uw melding</Heading>

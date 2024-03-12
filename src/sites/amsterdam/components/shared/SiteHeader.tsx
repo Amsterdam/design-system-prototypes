@@ -25,7 +25,7 @@ export const SiteHeader = () => (
         }
         logoLink={siteUrl}
         logoLinkTitle="Naar de homepage van gemeente Amsterdam"
-        menu={<button className="amsterdam-header__menu-button">Menu</button>}
+        menu={<button className="ams-header__menu-button">Menu</button>}
       />
     </Grid.Cell>
   </Grid>
