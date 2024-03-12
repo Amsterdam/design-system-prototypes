@@ -5,6 +5,7 @@ import { ArtAndCulturePage } from './pages/ArtAndCulturePage'
 import { CivilAffairsPage } from './pages/CivilAffairsPage'
 import { HomePage } from './pages/HomePage'
 import { NewsPage } from './pages/NewsPage'
+import { ParkeervergunningVoorSportverenigingenPage } from './pages/ParkeervergunningVoorSportverenigingenPage'
 import { ProjectPage } from './pages/ProjectPage'
 import { ProjectsPage } from './pages/ProjectsPage'
 import { SearchPage } from './pages/SearchPage'
@@ -29,6 +30,10 @@ export const routes = {
     {
       element: <NewsPage />,
       path: `${siteUrl}nieuws`,
+    },
+    {
+      element: <ParkeervergunningVoorSportverenigingenPage />,
+      path: `${siteUrl}parkeervergunning-voor-sportverenigingen`,
     },
     {
       element: <ProjectsPage />,
