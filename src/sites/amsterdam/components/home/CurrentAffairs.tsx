@@ -7,7 +7,7 @@ import zonnepanelenImage from '../../assets/images/zonnepanelen.jpg'
 export const CurrentAffairs = () => (
   <Grid paddingVertical="medium">
     <Grid.Cell span={3}>
-      <Heading className="amsterdam-mb--sm">Kalender</Heading>
+      <Heading className="ams-mb--sm">Kalender</Heading>
       <Column>
         <Card>
           <Heading level={2} size="level-4">
@@ -33,7 +33,7 @@ export const CurrentAffairs = () => (
       </Column>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
-      <Heading className="amsterdam-mb--sm">Nieuws</Heading>
+      <Heading className="ams-mb--sm">Nieuws</Heading>
       <Card>
         <AspectRatio ratio="x-wide">
           <Image alt="" src={stormschadeImage} />

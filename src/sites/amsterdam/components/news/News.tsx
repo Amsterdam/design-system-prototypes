@@ -15,7 +15,7 @@ export const News = () => (
     <article>
       <Grid paddingBottom="medium">
         <Grid.Cell span={6}>
-          <Heading className="amsterdam-mb--xs">Maatregelen tegen overlast fatbikes</Heading>
+          <Heading className="ams-mb--xs">Maatregelen tegen overlast fatbikes</Heading>
           <Paragraph>8 november 2023</Paragraph>
         </Grid.Cell>
         <Grid.Cell span={6}></Grid.Cell>

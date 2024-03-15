@@ -5,7 +5,7 @@ import { SiteHeader } from '../components/SiteHeader'
 import '../components/signalen.css'
 
 export const SignalenRootPage = () => (
-  <Screen className="amsterdam-theme" maxWidth="wide">
+  <Screen className="ams-theme" maxWidth="wide">
     <SiteHeader />
     <main id="main">
       <Outlet />
