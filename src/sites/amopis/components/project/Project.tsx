@@ -9,8 +9,11 @@ import {
   Link,
   LinkList,
   Paragraph,
+  Tabs,
 } from '@amsterdam/design-system-react'
 import { ChattingIcon, EditDocumentIcon, EmailIcon } from '@amsterdam/design-system-react-icons'
+
+const tabLabels = ['Overzicht', 'Kerngegevens', 'Projectinformatie', 'Projectgrenzen', 'Projectcodes', 'Autorisaties']
 
 export const Project = () => (
   <Grid paddingVertical="medium">
@@ -23,15 +26,15 @@ export const Project = () => (
       <Heading level={2}>Brug 423 opwaardering (Berlagebrug) – ams20192715</Heading>
     </Grid.Cell>
     <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
-      <div
-        className="amopis-white-background"
-        style={{ padding: '.5rem 1rem', borderBottom: '2px solid var(--ams-color-primary-blue)' }}
-      >
-        <Link>
-          Overzicht &nbsp; | &nbsp; Kerngegevens &nbsp; | &nbsp; Projectinformatie &nbsp; | &nbsp; Projectgrenzen &nbsp;
-          | &nbsp; Projectcodes &nbsp; | &nbsp; Autorisaties
-        </Link>
-      </div>
+      <Tabs>
+        <Tabs.List>
+          {tabLabels.map((label, index) => (
+            <Tabs.Button tab={index} key={index}>
+              {label}
+            </Tabs.Button>
+          ))}
+        </Tabs.List>
+      </Tabs>
     </Grid.Cell>
     <Grid.Cell start={1} span={{ narrow: 4, medium: 2, wide: 2 }}>
       <div className="amopis-white-background">
