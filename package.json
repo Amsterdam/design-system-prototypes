@@ -9,6 +9,7 @@
   },
   "type": "module",
   "scripts": {
+    "postinstall": "sh node_modules/@amsterdam/design-system-assets/.postinstall.sh",
     "add": "plop",
     "build": "tsc && vite build",
     "start": "vite",
@@ -18,7 +19,8 @@
     "unlink": "npm unlink @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
     "update": "npm-check-updates --configFileName .ncurc.major.js --deep --dep dev,prod --target latest --upgrade && pnpm install",
     "update:minor": "npm-check-updates --configFileName .ncurc.minor.js --deep --dep dev,prod --target minor --upgrade && pnpm install",
-    "update:patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && pnpm install"
+    "update:patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && pnpm install",
+    "clean": "rm -r node_modules dist"
   },
   "dependencies": {
     "@amsterdam/design-system-assets": "^0.2.0",
