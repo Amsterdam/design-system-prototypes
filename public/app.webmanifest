@@ -1,6 +1,6 @@
 {
-  "name": "APP_NAME_FULL",
-  "short_name": "APP_NAME",
+  "name": "Design System Prototypes",
+  "short_name": "Prototypes",
   "icons": [
     {
       "src": "appicons/icon-192.png",
