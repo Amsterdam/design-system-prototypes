@@ -21,7 +21,7 @@ export const Contactgegevens = () => {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    navigate(`${siteUrl}contact`)
+    navigate(`${siteUrl}`)
   }
 
   return (

@@ -38,7 +38,7 @@ export const Contact = () => {
               <Radio name="soort" value="meldingen" disabled>
                 Meldingen openbare ruimte en overlast
               </Radio>
-              <Radio name="soort" value="idee">
+              <Radio name="soort" value="idee" disabled>
                 Idee of suggestie
               </Radio>
             </Fieldset>
