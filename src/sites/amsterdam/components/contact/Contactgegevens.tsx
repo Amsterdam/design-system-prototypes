@@ -8,6 +8,7 @@ import {
   Heading,
   Paragraph,
   Radio,
+  Row,
   TextInput,
 } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
@@ -35,7 +36,7 @@ export const Contactgegevens = () => {
           <form className="ams-gap--md" onSubmit={handleSubmit}>
             <Heading>Contact</Heading>
             <Fieldset legend="Wat zijn uw contactgegevens?">
-              <Column gap="medium">
+              <Column gap="small">
                 <div>
                   <Paragraph>Wij hebben uw gegevens nodig om contact met u te kunnen opnemen.</Paragraph>
                 </div>
@@ -51,7 +52,7 @@ export const Contactgegevens = () => {
                   <FormLabel htmlFor="email">E-mail</FormLabel>
                   <TextInput id="email" name="email" />
                 </div>
-                <div className="tel-row">
+                <Row as="div">
                   <div>
                     <FormLabel htmlFor="country">Landnummer</FormLabel>
                     <select name="country">
@@ -64,7 +65,7 @@ export const Contactgegevens = () => {
                     <FormLabel htmlFor="phone">Telefoonnummer</FormLabel>
                     <TextInput id="phone" name="phone" />
                   </div>
-                </div>
+                </Row>
                 <div>
                   <FormLabel htmlFor="email">E-mail</FormLabel>
                   <TextInput id="email" name="email" />
