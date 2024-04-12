@@ -9,6 +9,9 @@ import { ParkeervergunningVoorSportverenigingenPage } from './pages/Parkeervergu
 import { ProjectPage } from './pages/ProjectPage'
 import { ProjectsPage } from './pages/ProjectsPage'
 import { SearchPage } from './pages/SearchPage'
+import { ContactPage } from './pages/ContactPage'
+import { VraagPage } from './pages/VraagPage'
+import { ContactgegevensPage } from './pages/ContactgegevensPage'
 
 export const routes = {
   path: siteUrl,
@@ -46,6 +49,18 @@ export const routes = {
     {
       element: <SearchPage />,
       path: `${siteUrl}zoeken`,
+    },
+    {
+      element: <ContactPage />,
+      path: `${siteUrl}contact`,
+    },
+    {
+      element: <VraagPage />,
+      path: `${siteUrl}contact/vraag`,
+    },
+    {
+      element: <ContactgegevensPage />,
+      path: `${siteUrl}contact/contactgegevens`,
     },
   ],
 }

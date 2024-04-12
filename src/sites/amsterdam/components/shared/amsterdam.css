@@ -1,11 +1,12 @@
-.signalen-form-navigation {
+.amsterdam-form-navigation {
   align-items: center;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
 }
 
-.signalen-summary-heading {
+.tel-row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  gap: 1rem;
 }
