@@ -12,6 +12,7 @@ import { SearchPage } from './pages/SearchPage'
 import { ContactPage } from './pages/ContactPage'
 import { VraagPage } from './pages/VraagPage'
 import { ContactgegevensPage } from './pages/ContactgegevensPage'
+import { BedanktPage } from './pages/BedanktPage'
 
 export const routes = {
   path: siteUrl,
@@ -61,6 +62,10 @@ export const routes = {
     {
       element: <ContactgegevensPage />,
       path: `${siteUrl}contact/contactgegevens`,
+    },
+    {
+      element: <BedanktPage />,
+      path: `${siteUrl}contact/bedankt`,
     },
   ],
 }
