@@ -1,6 +1,6 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { FormLabel, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Fieldset, FormLabel, Grid, Heading, Paragraph, TextArea } from '@amsterdam/design-system-react'
 import FormNavigation from '../components/FormNavigation'
 import { siteUrl } from '../constants'
 
@@ -24,12 +24,11 @@ export const Describe = () => {
           <div>
             <FormLabel htmlFor="description">Waar gaat het om?</FormLabel>
             <Paragraph size="small">Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd</Paragraph>
-            <textarea id="description" />
+            <TextArea id="description" />
             <Paragraph size="small">8/1000 tekens</Paragraph>
           </div>
 
-          <fieldset>
-            <legend>Foto's toevoegen (niet verplicht)</legend>
+          <Fieldset legend="Foto's toevoegen (niet verplicht)">
             <Paragraph size="small">Voeg een foto toe om de situatie te verduidelijken</Paragraph>
             <input
               type="file"
@@ -41,7 +40,7 @@ export const Describe = () => {
               aria-label="Toevoegen foto"
             />
             <label htmlFor="fileUpload">Toevoegen foto</label>
-          </fieldset>
+          </Fieldset>
           <FormNavigation firstPage />
         </form>
       </Grid.Cell>
