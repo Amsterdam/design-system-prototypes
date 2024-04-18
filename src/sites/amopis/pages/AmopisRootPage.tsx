@@ -1,30 +1,36 @@
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
-import { Grid, PageMenu, Screen } from '@amsterdam/design-system-react'
+import { Grid, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
 import { rootUrl } from '../../../shared/constants'
-import { Project } from '../components/project/Project'
 import { Sidebar } from '../components/shared/Sidebar'
 import { SiteHeader } from '../components/shared/SiteHeader'
+import { Outlet } from 'react-router-dom'
+import { siteUrl } from '../constants'
 
 export const AmopisRootPage = () => (
-  <Screen className="ams-screen--amopis ams-theme ams-theme--compact">
-    <div className="amopis-app-grid">
-      <Sidebar />
-      <div>
-        <SiteHeader />
-        <div className="amopis-main-background">
-          <Project />
+  <>
+    <SkipLink href="#main">Direct naar inhoud</SkipLink>
+    <Screen className="ams-screen--amopis ams-theme ams-theme--compact">
+      <div className="amopis-app-grid">
+        <Sidebar />
+        <div>
+          <SiteHeader />
+          <div id="main" className="amopis-main-background">
+            <Outlet />
+          </div>
+          <Grid paddingVertical="small">
+            <Grid.Cell span="all">
+              <PageMenu>
+                <PageMenu.Link href={rootUrl}>Prototypes</PageMenu.Link>
+                <PageMenu.Link href={siteUrl}>Amopis</PageMenu.Link>
+                <PageMenu.Link href={`${siteUrl}ramingen`}>Ramingen</PageMenu.Link>
+                <PageMenu.Link href="#">E-mail je vraag of feedback</PageMenu.Link>
+                <PageMenu.Link href="#">Bekijk veelgestelde vragen</PageMenu.Link>
+                <PageMenu.Link href="#">Bekijk releasebeschrijving</PageMenu.Link>
+              </PageMenu>
+            </Grid.Cell>
+          </Grid>
         </div>
-        <Grid paddingVertical="small">
-          <Grid.Cell span="all">
-            <PageMenu>
-              <PageMenu.Link href={rootUrl}>Prototypes</PageMenu.Link>
-              <PageMenu.Link href="#">E-mail je vraag of feedback</PageMenu.Link>
-              <PageMenu.Link href="#">Bekijk veelgestelde vragen</PageMenu.Link>
-              <PageMenu.Link href="#">Bekijk releasebeschrijving</PageMenu.Link>
-            </PageMenu>
-          </Grid.Cell>
-        </Grid>
       </div>
-    </div>
-  </Screen>
+    </Screen>
+  </>
 )
