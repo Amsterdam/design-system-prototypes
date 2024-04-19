@@ -1,6 +1,18 @@
 import '../amopis.css'
-import { Breadcrumb, Column, Grid, Heading, LinkList, Paragraph, Tabs } from '@amsterdam/design-system-react'
-import { ChattingIcon, EditDocumentIcon, EmailIcon } from '@amsterdam/design-system-react-icons'
+import {
+  Accordion,
+  Badge,
+  Breadcrumb,
+  Column,
+  Grid,
+  Heading,
+  IconButton,
+  LinkList,
+  Paragraph,
+  Table,
+  Tabs,
+} from '@amsterdam/design-system-react'
+import { ChattingIcon, DocumentEditIcon } from '@amsterdam/design-system-react-icons'
 
 const tabLabels = ['Mijlpalen', 'Planfases', 'Capaciteitsraming', 'Maatregelen en acties']
 
@@ -55,64 +67,70 @@ export const Estimation = () => (
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 10 }}>
       <div className="amopis-white-background" style={{ padding: '1rem' }}>
         <Column>
-          <div className="ams-row ams-row--align-between ams-row--valign-baseline">
+          <section>
             <Heading level={3}>Ramingen</Heading>
-            <LinkList>
-              <LinkList.Link href="#" icon={EditDocumentIcon}>
-                Wijzig kerngegevens
-              </LinkList.Link>
-            </LinkList>
-          </div>
-          <section className="amopis-project-details-grid">
-            <Heading level={4} style={{ gridColumn: '1 / -1' }}>
-              Opdrachtgevers
-            </Heading>
-            <Paragraph>Ambtelijk opdrachtgever</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Marise Ent</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Bestuurlijk Opdrachtgever Stad</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Melanie van der Horst</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
+            <Paragraph>Hier staan alle ramingen voor dit project.</Paragraph>
           </section>
-          <section className="amopis-project-details-grid">
+          <section>
             <Heading level={4} style={{ gridColumn: '1 / -1' }}>
-              Opdrachtnemers
+              Actuele ramingen
             </Heading>
-            <Paragraph>Accounthouder</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Paul Brouwer</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Opdrachtnemer</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Erik Bakker</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Projectbeheerser</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Klaas Helmers</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Projectbeheerser</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Marjolein Boomer</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Projectbeheerser</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Carina Cairo</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-          </section>
-          <section className="amopis-project-details-grid">
-            <Heading level={4} style={{ gridColumn: '1 / -1' }}>
-              Basisgegevens
-            </Heading>
-            <Paragraph>Gebied</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Gemeente Amsterdam</Paragraph>
-            <span />
-            <Paragraph>Stadsdeel</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Amsterdam</Paragraph>
-            <span />
-            <Paragraph>Stadsdeel</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Amsterdam</Paragraph>
-            <span />
-            <Paragraph>Status</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Actief</Paragraph>
-            <span />
-            <Paragraph>Projectsoort</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Programma Bruggen</Paragraph>
-            <span />
+            <Table>
+              <Table.Header>
+                <Table.Row>
+                  <Table.HeaderCell>Raming</Table.HeaderCell>
+                  <Table.HeaderCell>Versie</Table.HeaderCell>
+                  <Table.HeaderCell>Status</Table.HeaderCell>
+                  <Table.HeaderCell>In behandeling bij</Table.HeaderCell>
+                  <Table.HeaderCell>Laatste wijziging</Table.HeaderCell>
+                  <Table.HeaderCell>Acties</Table.HeaderCell>
+                </Table.Row>
+              </Table.Header>
+              <Table.Body>
+                <Table.Row>
+                  <Table.Cell>2025</Table.Cell>
+                  <Table.Cell>25-2</Table.Cell>
+                  <Table.Cell>
+                    <Badge label="Voorgesteld" color="blue" />
+                  </Table.Cell>
+                  <Table.Cell>Marise Ent</Table.Cell>
+                  <Table.Cell>
+                    {`${new Date('12-11-2023').toLocaleDateString('nl-NL')} ${new Date('2023-11-12T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                  </Table.Cell>
+                  <Table.Cell>
+                    <IconButton label="Aanpassen" svg={DocumentEditIcon} />
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>2024</Table.Cell>
+                  <Table.Cell>24-7</Table.Cell>
+                  <Table.Cell>
+                    <Badge label="Vastgesteld" color="dark-green" />
+                  </Table.Cell>
+                  <Table.Cell>Klaas Helmers</Table.Cell>
+                  <Table.Cell>
+                    {`${new Date('01-11-2023').toLocaleDateString('nl-NL')} ${new Date('2023-11-01T15:40').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                  </Table.Cell>
+                  <Table.Cell>
+                    <IconButton label="Aanpassen" svg={DocumentEditIcon} />
+                  </Table.Cell>
+                </Table.Row>
+                <Table.Row>
+                  <Table.Cell>2026</Table.Cell>
+                  <Table.Cell>26-1</Table.Cell>
+                  <Table.Cell>
+                    <Badge label="Concept" color="yellow" />
+                  </Table.Cell>
+                  <Table.Cell>Klaas Helmers</Table.Cell>
+                  <Table.Cell>
+                    {`${new Date('12-11-2023').toLocaleDateString('nl-NL')} ${new Date('2023-11-12T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                  </Table.Cell>
+                  <Table.Cell>
+                    <IconButton label="Aanpassen" svg={DocumentEditIcon} />
+                  </Table.Cell>
+                </Table.Row>
+              </Table.Body>
+            </Table>
           </section>
         </Column>
       </div>
