@@ -3,6 +3,7 @@ import {
   Accordion,
   Badge,
   Breadcrumb,
+  Button,
   Column,
   Grid,
   Heading,
@@ -12,7 +13,7 @@ import {
   Table,
   Tabs,
 } from '@amsterdam/design-system-react'
-import { ChattingIcon, DocumentEditIcon } from '@amsterdam/design-system-react-icons'
+import { ChattingIcon, DocumentEditIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
 
 const tabLabels = ['Mijlpalen', 'Planfases', 'Capaciteitsraming', 'Maatregelen en acties']
 
@@ -95,7 +96,7 @@ export const Estimation = () => (
                   </Table.Cell>
                   <Table.Cell>Marise Ent</Table.Cell>
                   <Table.Cell>
-                    {`${new Date('12-11-2023').toLocaleDateString('nl-NL')} ${new Date('2023-11-12T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                    {`${new Date('2023-11-12').toLocaleDateString('nl-NL')} ${new Date('2023-11-12T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
                   </Table.Cell>
                   <Table.Cell>
                     <IconButton label="Aanpassen" svg={DocumentEditIcon} />
@@ -109,7 +110,7 @@ export const Estimation = () => (
                   </Table.Cell>
                   <Table.Cell>Klaas Helmers</Table.Cell>
                   <Table.Cell>
-                    {`${new Date('01-11-2023').toLocaleDateString('nl-NL')} ${new Date('2023-11-01T15:40').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                    {`${new Date('2023-11-01').toLocaleDateString('nl-NL')} ${new Date('2023-11-01T15:40').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
                   </Table.Cell>
                   <Table.Cell>
                     <IconButton label="Aanpassen" svg={DocumentEditIcon} />
@@ -123,7 +124,7 @@ export const Estimation = () => (
                   </Table.Cell>
                   <Table.Cell>Klaas Helmers</Table.Cell>
                   <Table.Cell>
-                    {`${new Date('12-11-2023').toLocaleDateString('nl-NL')} ${new Date('2023-11-12T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                    {`${new Date('2023-11-12').toLocaleDateString('nl-NL')} ${new Date('2023-11-12T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
                   </Table.Cell>
                   <Table.Cell>
                     <IconButton label="Aanpassen" svg={DocumentEditIcon} />
@@ -131,6 +132,111 @@ export const Estimation = () => (
                 </Table.Row>
               </Table.Body>
             </Table>
+          </section>
+          <Accordion headingLevel={2}>
+            <Accordion.Section label="Voorgaande versies van ramingen">
+              <Table>
+                <Table.Header>
+                  <Table.Row>
+                    <Table.HeaderCell>Raming</Table.HeaderCell>
+                    <Table.HeaderCell>Versie</Table.HeaderCell>
+                    <Table.HeaderCell>Status</Table.HeaderCell>
+                    <Table.HeaderCell>In behandeling bij</Table.HeaderCell>
+                    <Table.HeaderCell>Laatste wijziging</Table.HeaderCell>
+                    <Table.HeaderCell>Acties</Table.HeaderCell>
+                  </Table.Row>
+                </Table.Header>
+                <Table.Body>
+                  <Table.Row>
+                    <Table.Cell>2024</Table.Cell>
+                    <Table.Cell>24-6</Table.Cell>
+                    <Table.Cell>
+                      <Badge label="Voorgesteld" color="blue" />
+                    </Table.Cell>
+                    <Table.Cell>Marjolein Boomer</Table.Cell>
+                    <Table.Cell>
+                      {`${new Date('2023-10-10').toLocaleDateString('nl-NL')} ${new Date('2023-10-10T07:49').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                    </Table.Cell>
+                    <Table.Cell>
+                      <IconButton label="Aanpassen" svg={SearchIcon} />
+                    </Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>2024</Table.Cell>
+                    <Table.Cell>24-5</Table.Cell>
+                    <Table.Cell>
+                      <Badge label="Voorgesteld" color="blue" />
+                    </Table.Cell>
+                    <Table.Cell>Klaas Helmers</Table.Cell>
+                    <Table.Cell>
+                      {`${new Date('2023-09-18').toLocaleDateString('nl-NL')} ${new Date('2023-09-18T15:40').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                    </Table.Cell>
+                    <Table.Cell>
+                      <IconButton label="Aanpassen" svg={SearchIcon} />
+                    </Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>2024</Table.Cell>
+                    <Table.Cell>24-4</Table.Cell>
+                    <Table.Cell>
+                      <Badge label="Voorgesteld" color="blue" />
+                    </Table.Cell>
+                    <Table.Cell>Marjolein Boomer</Table.Cell>
+                    <Table.Cell>
+                      {`${new Date('2023-09-18').toLocaleDateString('nl-NL')} ${new Date('2023-09-18T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                    </Table.Cell>
+                    <Table.Cell>
+                      <IconButton label="Aanpassen" svg={SearchIcon} />
+                    </Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>2024</Table.Cell>
+                    <Table.Cell>24-3</Table.Cell>
+                    <Table.Cell>
+                      <Badge label="Voorgesteld" color="blue" />
+                    </Table.Cell>
+                    <Table.Cell>Marjolein Boomer</Table.Cell>
+                    <Table.Cell>
+                      {`${new Date('2023-09-17').toLocaleDateString('nl-NL')} ${new Date('2023-09-17T07:49').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                    </Table.Cell>
+                    <Table.Cell>
+                      <IconButton label="Aanpassen" svg={SearchIcon} />
+                    </Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>2024</Table.Cell>
+                    <Table.Cell>24-2</Table.Cell>
+                    <Table.Cell>
+                      <Badge label="Wijziging aangevraagd" color="magenta" />
+                    </Table.Cell>
+                    <Table.Cell>Marise Ent</Table.Cell>
+                    <Table.Cell>
+                      {`${new Date('2023-09-15').toLocaleDateString('nl-NL')} ${new Date('2023-09-15T15:40').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                    </Table.Cell>
+                    <Table.Cell>
+                      <IconButton label="Aanpassen" svg={SearchIcon} />
+                    </Table.Cell>
+                  </Table.Row>
+                  <Table.Row>
+                    <Table.Cell>2025</Table.Cell>
+                    <Table.Cell>24-1</Table.Cell>
+                    <Table.Cell>
+                      <Badge label="Concept" color="yellow" />
+                    </Table.Cell>
+                    <Table.Cell>Klaas Helmers</Table.Cell>
+                    <Table.Cell>
+                      {`${new Date('2023-09-09').toLocaleDateString('nl-NL')} ${new Date('2023-09-09T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
+                    </Table.Cell>
+                    <Table.Cell>
+                      <IconButton label="Aanpassen" svg={SearchIcon} />
+                    </Table.Cell>
+                  </Table.Row>
+                </Table.Body>
+              </Table>
+            </Accordion.Section>
+          </Accordion>
+          <section>
+            <Button variant="primary">Maak raming aan</Button>
           </section>
         </Column>
       </div>
