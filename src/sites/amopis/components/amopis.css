@@ -36,12 +36,6 @@
   align-items: center;
 }
 
-.amopis-project-details-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 24px;
-  row-gap: var(--ams-grid-row-gap-sm);
-}
-
 @media (max-width: 1087px) {
   .amopis-sidebar {
     display: none;

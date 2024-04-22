@@ -3,12 +3,14 @@ import {
   AspectRatio,
   Breadcrumb,
   Column,
+  DescriptionList,
   Grid,
   Heading,
   Image,
   Link,
   LinkList,
   Paragraph,
+  Row,
   Tabs,
 } from '@amsterdam/design-system-react'
 import { ChattingIcon, EditDocumentIcon, EmailIcon } from '@amsterdam/design-system-react-icons'
@@ -74,56 +76,85 @@ export const Project = () => (
               </LinkList.Link>
             </LinkList>
           </div>
-          <section className="amopis-project-details-grid">
-            <Heading level={4} style={{ gridColumn: '1 / -1' }}>
+          <section>
+            <Heading level={4} className="ams-mb--sm">
               Opdrachtgevers
             </Heading>
-            <Paragraph>Ambtelijk opdrachtgever</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Marise Ent</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Bestuurlijk Opdrachtgever Stad</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Melanie van der Horst</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
+            <DescriptionList>
+              <DescriptionList.Term>Ambtelijk opdrachtgever</DescriptionList.Term>
+              <DescriptionList.Details>
+                <Row style={{ justifyContent: 'space-between' }}>
+                  <span>Marise Ent</span>
+                  <EmailIcon width={24} fill="#004469" />
+                </Row>
+              </DescriptionList.Details>
+              <DescriptionList.Term>Bestuurlijk Opdrachtgever Stad</DescriptionList.Term>
+              <DescriptionList.Details>
+                <Row style={{ justifyContent: 'space-between' }}>
+                  <span>Melanie van der Horst</span>
+                  <EmailIcon width={24} fill="#004469" />
+                </Row>
+              </DescriptionList.Details>
+            </DescriptionList>
           </section>
-          <section className="amopis-project-details-grid">
-            <Heading level={4} style={{ gridColumn: '1 / -1' }}>
+          <section>
+            <Heading level={4} className="ams-mb--sm">
               Opdrachtnemers
             </Heading>
-            <Paragraph>Accounthouder</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Paul Brouwer</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Opdrachtnemer</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Erik Bakker</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Projectbeheerser</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Klaas Helmers</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Projectbeheerser</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Marjolein Boomer</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
-            <Paragraph>Projectbeheerser</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Carina Cairo</Paragraph>
-            <EmailIcon width={24} fill="#004469" />
+            <DescriptionList>
+              <DescriptionList.Term>Accounthouder</DescriptionList.Term>
+              <DescriptionList.Details>
+                <Row style={{ justifyContent: 'space-between' }}>
+                  <span>Paul Brouwer</span>
+                  <EmailIcon width={24} fill="#004469" />
+                </Row>
+              </DescriptionList.Details>
+              <DescriptionList.Term>Opdrachtnemer</DescriptionList.Term>
+              <DescriptionList.Details>
+                <Row style={{ justifyContent: 'space-between' }}>
+                  <span>Erik Bakker</span>
+                  <EmailIcon width={24} fill="#004469" />
+                </Row>
+              </DescriptionList.Details>
+              <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
+              <DescriptionList.Details>
+                <Row style={{ justifyContent: 'space-between' }}>
+                  <span>Klaas Helmers</span>
+                  <EmailIcon width={24} fill="#004469" />
+                </Row>
+              </DescriptionList.Details>
+              <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
+              <DescriptionList.Details>
+                <Row style={{ justifyContent: 'space-between' }}>
+                  <span>Marjolein Boomer</span>
+                  <EmailIcon width={24} fill="#004469" />
+                </Row>
+              </DescriptionList.Details>
+              <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
+              <DescriptionList.Details>
+                <Row style={{ justifyContent: 'space-between' }}>
+                  <span>Carina Cairo</span>
+                  <EmailIcon width={24} fill="#004469" />
+                </Row>
+              </DescriptionList.Details>
+            </DescriptionList>
           </section>
-          <section className="amopis-project-details-grid">
-            <Heading level={4} style={{ gridColumn: '1 / -1' }}>
+          <section>
+            <Heading level={4} className="ams-mb--sm">
               Basisgegevens
             </Heading>
-            <Paragraph>Gebied</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Gemeente Amsterdam</Paragraph>
-            <span />
-            <Paragraph>Stadsdeel</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Amsterdam</Paragraph>
-            <span />
-            <Paragraph>Stadsdeel</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Amsterdam</Paragraph>
-            <span />
-            <Paragraph>Status</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Actief</Paragraph>
-            <span />
-            <Paragraph>Projectsoort</Paragraph>
-            <Paragraph style={{ fontWeight: 'bold' }}>Programma Bruggen</Paragraph>
-            <span />
+            <DescriptionList>
+              <DescriptionList.Term>Gebied</DescriptionList.Term>
+              <DescriptionList.Details>Gemeente Amsterdam</DescriptionList.Details>
+              <DescriptionList.Term>Stadsdeel</DescriptionList.Term>
+              <DescriptionList.Details>Amsterdam</DescriptionList.Details>
+              <DescriptionList.Term>Stadsdeel</DescriptionList.Term>
+              <DescriptionList.Details>Amsterdam</DescriptionList.Details>
+              <DescriptionList.Term>Status</DescriptionList.Term>
+              <DescriptionList.Details>Actief</DescriptionList.Details>
+              <DescriptionList.Term>Projectsoort</DescriptionList.Term>
+              <DescriptionList.Details>Programma Bruggen</DescriptionList.Details>
+            </DescriptionList>
           </section>
         </Column>
       </div>
