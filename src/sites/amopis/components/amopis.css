@@ -5,10 +5,17 @@
 .amopis-app-grid {
   display: grid;
   grid-template-columns: 112px 1fr;
+  min-height: 100vh;
+}
+
+.amopis-app-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .amopis-main-background {
   background-color: var(--ams-color-neutral-grey1);
+  flex: auto;
 }
 
 .amopis-white-background {

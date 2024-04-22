@@ -12,7 +12,7 @@ export const AmopisRootPage = () => (
     <Screen className="ams-screen--amopis ams-theme ams-theme--compact">
       <div className="amopis-app-grid">
         <Sidebar />
-        <div>
+        <div className="amopis-app-content">
           <SiteHeader />
           <div id="main" className="amopis-main-background">
             <Outlet />
