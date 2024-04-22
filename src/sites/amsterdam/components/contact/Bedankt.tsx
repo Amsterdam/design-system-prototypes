@@ -12,7 +12,7 @@ export const Bedankt = () => (
       <Column className="ams-mb--md" gap="small">
         <Heading>Bedankt!</Heading>
         <Paragraph>
-          Uw melding is bij ons bekend onder nummer: SIG-14022. Hebt u een e-mailadres ingevuld? Dan ontvangt u een
+          Uw melding is bij ons bekend onder nummer: AMS-14022. Hebt u een e-mailadres ingevuld? Dan ontvangt u een
           e-mail met alle gegevens van uw melding.
         </Paragraph>
 
@@ -21,7 +21,7 @@ export const Bedankt = () => (
           U hoort binnen 3 werkdagen wat we met uw melding hebben gedaan. Dringende meldingen pakken wij zo snel
           mogelijk op.
         </Paragraph>
-        <Link to={`${siteUrl}contact`}>Verstuur nog een bericht</Link>
+        <Link to={siteUrl}>Ga terug naar de homepage.</Link>
       </Column>
     </Grid.Cell>
   </Grid>
