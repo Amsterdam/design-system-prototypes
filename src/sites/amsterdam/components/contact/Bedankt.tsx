@@ -15,7 +15,6 @@ export const Bedankt = () => (
           Uw melding is bij ons bekend onder nummer: AMS-14022. Hebt u een e-mailadres ingevuld? Dan ontvangt u een
           e-mail met alle gegevens van uw melding.
         </Paragraph>
-
         <Heading level={2}>Wat doen we met uw melding?</Heading>
         <Paragraph>
           U hoort binnen 3 werkdagen wat we met uw melding hebben gedaan. Dringende meldingen pakken wij zo snel

@@ -30,7 +30,6 @@ export const Contactgegevens = () => {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
           <Breadcrumb.Item href={siteUrl}>Home</Breadcrumb.Item>
-          <Breadcrumb.Item href="#">Contact</Breadcrumb.Item>
         </Breadcrumb>
         <Column className="ams-mb--md" gap="small">
           <form className="ams-gap--md" onSubmit={handleSubmit}>
@@ -90,7 +89,6 @@ export const Contactgegevens = () => {
                 dienstverlening.
               </Paragraph>
             </Alert>
-
             <FormNavigation backlinkUrl={`${siteUrl}contact/vraag`} lastPage />
           </form>
         </Column>
