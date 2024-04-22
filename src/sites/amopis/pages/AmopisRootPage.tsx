@@ -20,12 +20,12 @@ export const AmopisRootPage = () => (
           <Grid paddingVertical="small">
             <Grid.Cell span="all">
               <PageMenu>
-                <PageMenu.Link href={rootUrl}>Prototypes</PageMenu.Link>
-                <PageMenu.Link href={siteUrl}>Amopis</PageMenu.Link>
+                <PageMenu.Link href={siteUrl}>Kerngegevens</PageMenu.Link>
                 <PageMenu.Link href={`${siteUrl}ramingen`}>Ramingen</PageMenu.Link>
                 <PageMenu.Link href="#">E-mail je vraag of feedback</PageMenu.Link>
                 <PageMenu.Link href="#">Bekijk veelgestelde vragen</PageMenu.Link>
                 <PageMenu.Link href="#">Bekijk releasebeschrijving</PageMenu.Link>
+                <PageMenu.Link href={rootUrl}>Prototypes</PageMenu.Link>
               </PageMenu>
             </Grid.Cell>
           </Grid>
