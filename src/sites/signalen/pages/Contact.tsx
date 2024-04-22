@@ -1,6 +1,6 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Checkbox, FormLabel, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Checkbox, Grid, Heading, Label, Paragraph } from '@amsterdam/design-system-react'
 import FormNavigation from '../components/FormNavigation'
 import { siteUrl } from '../constants'
 
@@ -30,12 +30,12 @@ export const Contact = () => {
           </Paragraph>
 
           <div>
-            <FormLabel htmlFor="phone">Wat is uw telefoonnummer?(niet verplicht)</FormLabel>
+            <Label htmlFor="phone">Wat is uw telefoonnummer?(niet verplicht)</Label>
             <input type="tel" id="phone" />
           </div>
 
           <div>
-            <FormLabel htmlFor="mail">Wat is uw e-mailadres?(niet verplicht)</FormLabel>
+            <Label htmlFor="mail">Wat is uw e-mailadres?(niet verplicht)</Label>
             <input type="email" id="mail" />
           </div>
 
