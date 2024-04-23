@@ -10,9 +10,9 @@ import { ProjectPage } from './pages/ProjectPage'
 import { ProjectsPage } from './pages/ProjectsPage'
 import { SearchPage } from './pages/SearchPage'
 import { ContactPage } from './pages/ContactPage'
-import { VraagPage } from './pages/VraagPage'
-import { ContactgegevensPage } from './pages/ContactgegevensPage'
-import { BedanktPage } from './pages/BedanktPage'
+import { QuestionPage } from './pages/QuestionPage'
+import { ContactDetailsPage } from './pages/ContactDetailsPage'
+import { ThanksPage } from './pages/ThanksPage'
 
 export const routes = {
   path: siteUrl,
@@ -56,16 +56,16 @@ export const routes = {
       path: `${siteUrl}contact`,
     },
     {
-      element: <VraagPage />,
+      element: <QuestionPage />,
       path: `${siteUrl}contact/vraag`,
     },
     {
-      element: <ContactgegevensPage />,
-      path: `${siteUrl}contact/contactgegevens`,
+      element: <ContactDetailsPage />,
+      path: `${siteUrl}contact/contactdetails`,
     },
     {
-      element: <BedanktPage />,
-      path: `${siteUrl}contact/bedankt`,
+      element: <ThanksPage />,
+      path: `${siteUrl}contact/thanks`,
     },
   ],
 }

@@ -1,7 +1,7 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Fieldset, FormLabel, Grid, Heading, Paragraph, TextArea } from '@amsterdam/design-system-react'
-import FormNavigation from '../components/FormNavigation'
+import FormNavigation from '../../../shared/components/FormNavigation'
 import { siteUrl } from '../constants'
 
 export const Describe = () => {

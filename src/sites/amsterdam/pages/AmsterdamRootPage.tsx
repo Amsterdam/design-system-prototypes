@@ -4,7 +4,6 @@ import { PageMenuLink } from '../../../shared/components/PageMenuLink'
 import { SiteFooter } from '../../../shared/components/SiteFooter.tsx'
 import { SiteHeader } from '../components/shared/SiteHeader'
 import { siteUrl } from '../constants'
-import '../components/shared/amsterdam.css'
 
 export const AmsterdamRootPage = () => (
   <div className="ams-theme">

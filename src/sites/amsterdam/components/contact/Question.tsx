@@ -9,17 +9,17 @@ import {
   TextArea,
 } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
-import FormNavigation from '../shared/FormNavigation'
+import FormNavigation from '../../../../shared/components/FormNavigation'
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export const Vraag = () => {
+export const Question = () => {
   const navigate = useNavigate()
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    navigate(`${siteUrl}contact/contactgegevens`)
+    navigate(`${siteUrl}contact/contactdetails`)
   }
 
   return (
@@ -33,12 +33,12 @@ export const Vraag = () => {
             <Heading>Contact</Heading>
             <div>
               <FormLabel htmlFor="description">Wat wilt u aan de gemeente vragen?</FormLabel>
-              <TextArea id="description" />
-              <Paragraph size="small">0/1000 tekens</Paragraph>
               <Paragraph size="small">
-                Een duidelijke beschrijving van uw vraag helpt ons bij het behandelen. U kunt eventueel nog een bijlage
-                toevoegen.
+                Een duidelijke beschrijving van uw Question helpt ons bij het behandelen. U kunt eventueel nog een
+                bijlage toevoegen.
               </Paragraph>
+              <TextArea id="description" rows={8} />
+              <Paragraph size="small">0/1000 tekens</Paragraph>
             </div>
             <Fieldset legend="U kunt hier een bijlage toevoegen">
               <input
@@ -50,7 +50,7 @@ export const Vraag = () => {
                 multiple
                 aria-label="Toevoegen bijlage"
               />
-              <label htmlFor="fileUpload">Toevoegen bijlage</label>
+              <label htmlFor="fileUpload">Selecteer bestand</label>
             </Fieldset>
             <FormNavigation backlinkUrl={`${siteUrl}contact`} />
           </form>

@@ -9,20 +9,21 @@ import {
   Paragraph,
   Radio,
   Row,
+  Select,
   TextInput,
 } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
-import FormNavigation from '../shared/FormNavigation'
+import FormNavigation from '../../../../shared/components/FormNavigation'
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export const Contactgegevens = () => {
+export const ContactDetails = () => {
   const navigate = useNavigate()
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    navigate(`${siteUrl}contact/bedankt`)
+    navigate(`${siteUrl}contact/thanks`)
   }
 
   return (
@@ -54,11 +55,11 @@ export const Contactgegevens = () => {
                 <Row as="div">
                   <div>
                     <FormLabel htmlFor="country">Landnummer</FormLabel>
-                    <select name="country">
+                    <Select name="country">
                       <option value="+31">Nederland +31</option>
                       <option value="+32">Belgie +32</option>
                       <option value="+33">Frankrijk +33</option>
-                    </select>
+                    </Select>
                   </div>
                   <div>
                     <FormLabel htmlFor="phone">Telefoonnummer</FormLabel>

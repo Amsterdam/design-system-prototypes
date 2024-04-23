@@ -1,6 +1,8 @@
 import { Button, Icon } from '@amsterdam/design-system-react'
+import { Link } from './Link'
 import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
-import { Link } from '../../../shared/components/Link'
+
+import './form-navigation.css'
 
 const FormNavigation = ({
   firstPage,
@@ -11,10 +13,10 @@ const FormNavigation = ({
   lastPage?: boolean
   backlinkUrl?: string
 }) => (
-  <div className="signalen-form-navigation">
+  <div className="ams-form-navigation">
     {!firstPage && backlinkUrl && (
       <Link to={backlinkUrl} className="signalen-back-link">
-        <Icon svg={ChevronLeftIcon} />
+        <Icon svg={ChevronLeftIcon} size="level-5" />
         Vorige
       </Link>
     )}
