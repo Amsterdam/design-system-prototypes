@@ -37,9 +37,9 @@ export const Describe = () => {
               accept="image/jpeg,image/jpg,image/png,image/gif"
               name="images"
               multiple
-              aria-label="Toevoegen foto"
+              aria-label="Selecteer een bestand"
             />
-            <label htmlFor="fileUpload">Toevoegen foto</label>
+            <label htmlFor="fileUpload">Selecteer een bestand</label>
           </Fieldset>
           <FormNavigation firstPage />
         </form>

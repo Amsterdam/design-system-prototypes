@@ -39,9 +39,9 @@ export const Question = () => {
                 accept="image/jpeg,image/jpg,image/png,image/gif"
                 name="bijlage"
                 multiple
-                aria-label="Toevoegen bijlage"
+                aria-label="Selecteer een bestand"
               />
-              <label htmlFor="fileUpload">Selecteer bestand</label>
+              <label htmlFor="fileUpload">Selecteer een bestand</label>
             </Fieldset>
             <FormNavigation backlinkUrl={`${siteUrl}contact`} />
           </form>
