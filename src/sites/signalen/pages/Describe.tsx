@@ -1,6 +1,6 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Fieldset, FormLabel, Grid, Heading, Paragraph, TextArea } from '@amsterdam/design-system-react'
+import { Fieldset, Grid, Heading, Label, Paragraph, TextArea } from '@amsterdam/design-system-react'
 import FormNavigation from '../../../shared/components/FormNavigation'
 import { siteUrl } from '../constants'
 
@@ -22,7 +22,7 @@ export const Describe = () => {
           <Heading level={2}>Beschrijf uw melding</Heading>
 
           <div>
-            <FormLabel htmlFor="description">Waar gaat het om?</FormLabel>
+            <Label htmlFor="description">Waar gaat het om?</Label>
             <Paragraph size="small">Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd</Paragraph>
             <TextArea id="description" />
             <Paragraph size="small">8/1000 tekens</Paragraph>

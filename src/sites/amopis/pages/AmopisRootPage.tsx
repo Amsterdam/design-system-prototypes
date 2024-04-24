@@ -9,7 +9,7 @@ import { siteUrl } from '../constants'
 export const AmopisRootPage = () => (
   <>
     <SkipLink href="#main">Direct naar inhoud</SkipLink>
-    <Screen className="ams-screen--amopis ams-theme ams-theme--compact">
+    <Screen className="ams-screen--amopis ams-theme ams-theme--compact" fullHeight>
       <div className="amopis-app-grid">
         <Sidebar />
         <div className="amopis-app-content">

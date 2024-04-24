@@ -1,6 +1,6 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Fieldset, FormLabel, Grid, Heading, Paragraph, Radio, TextArea } from '@amsterdam/design-system-react'
+import { Fieldset, Grid, Heading, Label, Paragraph, Radio, TextArea } from '@amsterdam/design-system-react'
 import FormNavigation from '../../../shared/components/FormNavigation'
 import { siteUrl } from '../constants'
 
@@ -31,7 +31,7 @@ export const Add = () => {
           </Fieldset>
 
           <div>
-            <FormLabel htmlFor="where">Waar komt het afval vandaan, denkt u? (niet verplicht)</FormLabel>
+            <Label htmlFor="where">Waar komt het afval vandaan, denkt u? (niet verplicht)</Label>
             <TextArea id="where" />
           </div>
 
