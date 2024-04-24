@@ -3,9 +3,9 @@ import {
   Breadcrumb,
   Column,
   Fieldset,
-  FormLabel,
   Grid,
   Heading,
+  Label,
   Paragraph,
   Radio,
   Row,
@@ -41,20 +41,20 @@ export const ContactDetails = () => {
                   <Paragraph>Wij hebben uw gegevens nodig om contact met u te kunnen opnemen.</Paragraph>
                 </div>
                 <div>
-                  <FormLabel htmlFor="voorletters">Voorletters</FormLabel>
+                  <Label htmlFor="voorletters">Voorletters</Label>
                   <TextInput id="voorletters" name="voorletters" />
                 </div>
                 <div>
-                  <FormLabel htmlFor="achternaam">Achternaam</FormLabel>
+                  <Label htmlFor="achternaam">Achternaam</Label>
                   <TextInput id="achternaam" name="achternaam" />
                 </div>
                 <div>
-                  <FormLabel htmlFor="email">E-mail</FormLabel>
+                  <Label htmlFor="email">E-mail</Label>
                   <TextInput id="email" name="email" />
                 </div>
                 <Row as="div">
                   <div>
-                    <FormLabel htmlFor="country">Landnummer</FormLabel>
+                    <Label htmlFor="country">Landnummer</Label>
                     <Select name="country">
                       <option value="+31">Nederland +31</option>
                       <option value="+32">Belgie +32</option>
@@ -62,16 +62,16 @@ export const ContactDetails = () => {
                     </Select>
                   </div>
                   <div>
-                    <FormLabel htmlFor="phone">Telefoonnummer</FormLabel>
+                    <Label htmlFor="phone">Telefoonnummer</Label>
                     <TextInput id="phone" name="phone" />
                   </div>
                 </Row>
                 <div>
-                  <FormLabel htmlFor="email">E-mail</FormLabel>
+                  <Label htmlFor="email">E-mail</Label>
                   <TextInput id="email" name="email" />
                 </div>
                 <div>
-                  <FormLabel htmlFor="woonplaats">Woonplaats</FormLabel>
+                  <Label htmlFor="woonplaats">Woonplaats</Label>
                   <Radio name="woonplaats" value="amsterdam">
                     Amsterdam
                   </Radio>

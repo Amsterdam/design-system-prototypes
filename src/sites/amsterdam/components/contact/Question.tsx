@@ -1,13 +1,4 @@
-import {
-  Breadcrumb,
-  Column,
-  Fieldset,
-  FormLabel,
-  Grid,
-  Heading,
-  Paragraph,
-  TextArea,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Column, Fieldset, Grid, Heading, Label, Paragraph, TextArea } from '@amsterdam/design-system-react'
 import { siteUrl } from '../../constants'
 import FormNavigation from '../../../../shared/components/FormNavigation'
 import { FormEvent } from 'react'
@@ -32,7 +23,7 @@ export const Question = () => {
           <form className="ams-gap--md" onSubmit={handleSubmit}>
             <Heading>Contact</Heading>
             <div>
-              <FormLabel htmlFor="description">Wat wilt u aan de gemeente vragen?</FormLabel>
+              <Label htmlFor="description">Wat wilt u aan de gemeente vragen?</Label>
               <Paragraph size="small">
                 Een duidelijke beschrijving van uw Question helpt ons bij het behandelen. U kunt eventueel nog een
                 bijlage toevoegen.
