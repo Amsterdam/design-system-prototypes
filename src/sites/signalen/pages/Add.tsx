@@ -1,7 +1,7 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Grid, Heading, Label, Paragraph } from '@amsterdam/design-system-react'
-import FormNavigation from '../components/FormNavigation'
+import { Fieldset, Grid, Heading, Label, Paragraph, Radio, TextArea } from '@amsterdam/design-system-react'
+import FormNavigation from '../../../shared/components/FormNavigation'
 import { siteUrl } from '../constants'
 
 export const Add = () => {
@@ -21,29 +21,21 @@ export const Add = () => {
 
           <Heading level={2}>Locatie en vragen</Heading>
 
-          <fieldset>
-            <legend>Waar is het?</legend>
+          <Fieldset legend="Waar is het?">
             <Paragraph>KAART SELECTOR</Paragraph>
-          </fieldset>
+          </Fieldset>
 
-          <fieldset>
-            <legend>Wanneer was het?</legend>
-            <div>
-              <input type="radio" id="nu" name="when" value="nu" />
-              <label htmlFor="nu">Nu</label>
-            </div>
-            <div>
-              <input type="radio" id="eerder" name="when" value="eerder" />
-              <label htmlFor="eerder">Eerder</label>
-            </div>
-          </fieldset>
+          <Fieldset legend="Wanneer was het?">
+            <Radio id="nu">Nu</Radio>
+            <Radio id="eerder">Eerder</Radio>
+          </Fieldset>
 
           <div>
             <Label htmlFor="where">Waar komt het afval vandaan, denkt u? (niet verplicht)</Label>
-            <textarea id="where" />
+            <TextArea id="where" />
           </div>
 
-          <FormNavigation backlinkUrl={`${siteUrl}beschrijf`} />
+          <FormNavigation previousPageUrl={`${siteUrl}beschrijf`} />
         </form>
       </Grid.Cell>
     </Grid>

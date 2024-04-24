@@ -1,7 +1,7 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Checkbox, Grid, Heading, Label, Paragraph } from '@amsterdam/design-system-react'
-import FormNavigation from '../components/FormNavigation'
+import { Checkbox, Fieldset, Grid, Heading, Label, Paragraph } from '@amsterdam/design-system-react'
+import FormNavigation from '../../../shared/components/FormNavigation'
 import { siteUrl } from '../constants'
 
 export const Contact = () => {
@@ -39,8 +39,7 @@ export const Contact = () => {
             <input type="email" id="mail" />
           </div>
 
-          <fieldset>
-            <legend>Mogen we uw melding doorsturen?</legend>
+          <Fieldset legend="Mogen we uw melding doorsturen?">
             <Paragraph className="ams-mb--md">
               Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
               melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u
@@ -50,9 +49,9 @@ export const Contact = () => {
               Ja, ik geef de gemeente Amsterdam toestemming om mijn melding door te sturen naar andere organisaties als
               de melding niet voor de gemeente is bestemd.
             </Checkbox>
-          </fieldset>
+          </Fieldset>
 
-          <FormNavigation backlinkUrl={`${siteUrl}vul-aan`} />
+          <FormNavigation previousPageUrl={`${siteUrl}vul-aan`} />
         </form>
       </Grid.Cell>
     </Grid>

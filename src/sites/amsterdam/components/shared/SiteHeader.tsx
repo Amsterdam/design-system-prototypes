@@ -13,7 +13,7 @@ export const SiteHeader = () => (
             <PageMenu.Link href="#" lang="en">
               English
             </PageMenu.Link>
-            <PageMenu.Link href="#">Contact</PageMenu.Link>
+            <PageMenuLink to={`${siteUrl}contact`}>Contact</PageMenuLink>
             <PageMenu.Link href="https://mijn.amsterdam.nl/" icon={LoginIcon} rel="external">
               Mijn Amsterdam
             </PageMenu.Link>

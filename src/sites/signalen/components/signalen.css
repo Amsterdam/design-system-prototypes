@@ -1,15 +1,4 @@
-.signalen-form-navigation {
-  align-items: center;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
-}
-
 .signalen-summary-heading {
   display: flex;
   justify-content: space-between;
-}
-
-.signalen-back-link svg {
-  transform: rotate(180deg);
 }
