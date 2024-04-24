@@ -51,7 +51,7 @@ export const Contact = () => {
             </Checkbox>
           </Fieldset>
 
-          <FormNavigation backlinkUrl={`${siteUrl}vul-aan`} />
+          <FormNavigation previousPageUrl={`${siteUrl}vul-aan`} />
         </form>
       </Grid.Cell>
     </Grid>

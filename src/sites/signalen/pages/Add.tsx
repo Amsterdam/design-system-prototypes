@@ -35,7 +35,7 @@ export const Add = () => {
             <TextArea id="where" />
           </div>
 
-          <FormNavigation backlinkUrl={`${siteUrl}beschrijf`} />
+          <FormNavigation previousPageUrl={`${siteUrl}beschrijf`} />
         </form>
       </Grid.Cell>
     </Grid>

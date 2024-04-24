@@ -24,7 +24,7 @@ export const Describe = () => {
           <div>
             <Label htmlFor="description">Waar gaat het om?</Label>
             <Paragraph size="small">Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd</Paragraph>
-            <TextArea id="description" />
+            <TextArea id="description" rows={8} />
             <Paragraph size="small">8/1000 tekens</Paragraph>
           </div>
 
@@ -41,7 +41,7 @@ export const Describe = () => {
             />
             <label htmlFor="fileUpload">Selecteer een bestand</label>
           </Fieldset>
-          <FormNavigation firstPage />
+          <FormNavigation />
         </form>
       </Grid.Cell>
     </Grid>

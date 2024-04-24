@@ -90,7 +90,7 @@ export const ContactDetails = () => {
                 dienstverlening.
               </Paragraph>
             </Alert>
-            <FormNavigation backlinkUrl={`${siteUrl}contact/vraag`} lastPage />
+            <FormNavigation isLastPage previousPageUrl={`${siteUrl}contact/vraag`} />
           </form>
         </Column>
       </Grid.Cell>

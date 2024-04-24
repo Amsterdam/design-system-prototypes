@@ -53,7 +53,7 @@ export const Contact = () => {
             prullenbakken of containers, een losliggende stoeptegel of een kapotte lantaarnpaal. Ook overlast van horeca
             of personen kunt u melden via een melding openbare ruimte en overlast.
           </Paragraph>
-          <FormNavigation firstPage />
+          <FormNavigation />
         </form>
       </Grid.Cell>
     </Grid>

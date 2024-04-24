@@ -25,8 +25,8 @@ export const Question = () => {
             <div>
               <Label htmlFor="description">Wat wilt u aan de gemeente vragen?</Label>
               <Paragraph size="small">
-                Een duidelijke beschrijving van uw Question helpt ons bij het behandelen. U kunt eventueel nog een
-                bijlage toevoegen.
+                Een duidelijke beschrijving van uw vraag helpt ons bij het behandelen. U kunt eventueel nog een bijlage
+                toevoegen.
               </Paragraph>
               <TextArea id="description" rows={8} />
               <Paragraph size="small">0/1000 tekens</Paragraph>
@@ -43,7 +43,7 @@ export const Question = () => {
               />
               <label htmlFor="fileUpload">Selecteer een bestand</label>
             </Fieldset>
-            <FormNavigation backlinkUrl={`${siteUrl}contact`} />
+            <FormNavigation previousPageUrl={`${siteUrl}contact`} />
           </form>
         </Column>
       </Grid.Cell>
