@@ -1,7 +1,7 @@
 'use client'
 
 import { Screen, Grid, PageMenu, SkipLink } from '@amsterdam/design-system-react'
-import { Sidebar } from '../../sites/amopis/components/shared/Sidebar'
+import { Sidebar } from './_components/SideBar/SideBar'
 import { SiteHeader } from './_components/SiteHeader/SiteHeader'
 
 import './amopis.css'
