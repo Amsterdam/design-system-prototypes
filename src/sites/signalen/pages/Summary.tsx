@@ -1,7 +1,7 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
-import FormNavigation from '../components/FormNavigation'
+import FormNavigation from '../../../shared/components/FormNavigation'
 import { siteUrl } from '../constants'
 
 export const Summary = () => {
@@ -67,7 +67,7 @@ export const Summary = () => {
             </dl>
           </section>
 
-          <FormNavigation backlinkUrl={`${siteUrl}contact`} lastPage />
+          <FormNavigation isLastPage previousPageUrl={`${siteUrl}contact`} />
         </form>
       </Grid.Cell>
     </Grid>

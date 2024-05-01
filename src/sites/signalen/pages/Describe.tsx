@@ -1,7 +1,7 @@
 import { FormEvent } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { FormLabel, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
-import FormNavigation from '../components/FormNavigation'
+import { Fieldset, Grid, Heading, Label, Paragraph, TextArea } from '@amsterdam/design-system-react'
+import FormNavigation from '../../../shared/components/FormNavigation'
 import { siteUrl } from '../constants'
 
 export const Describe = () => {
@@ -22,14 +22,13 @@ export const Describe = () => {
           <Heading level={2}>Beschrijf uw melding</Heading>
 
           <div>
-            <FormLabel htmlFor="description">Waar gaat het om?</FormLabel>
+            <Label htmlFor="description">Waar gaat het om?</Label>
             <Paragraph size="small">Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd</Paragraph>
-            <textarea id="description" />
+            <TextArea id="description" rows={8} />
             <Paragraph size="small">8/1000 tekens</Paragraph>
           </div>
 
-          <fieldset>
-            <legend>Foto's toevoegen (niet verplicht)</legend>
+          <Fieldset legend="Foto's toevoegen (niet verplicht)">
             <Paragraph size="small">Voeg een foto toe om de situatie te verduidelijken</Paragraph>
             <input
               type="file"
@@ -38,11 +37,11 @@ export const Describe = () => {
               accept="image/jpeg,image/jpg,image/png,image/gif"
               name="images"
               multiple
-              aria-label="Toevoegen foto"
+              aria-label="Selecteer een bestand"
             />
-            <label htmlFor="fileUpload">Toevoegen foto</label>
-          </fieldset>
-          <FormNavigation firstPage />
+            <label htmlFor="fileUpload">Selecteer een bestand</label>
+          </Fieldset>
+          <FormNavigation />
         </form>
       </Grid.Cell>
     </Grid>

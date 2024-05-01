@@ -5,10 +5,17 @@
 .amopis-app-grid {
   display: grid;
   grid-template-columns: 112px 1fr;
+  min-height: 100vh;
+}
+
+.amopis-app-content {
+  display: flex;
+  flex-direction: column;
 }
 
 .amopis-main-background {
   background-color: var(--ams-color-neutral-grey1);
+  flex: auto;
 }
 
 .amopis-white-background {
@@ -27,12 +34,6 @@
   flex-direction: column;
   padding-block-start: calc(40px + 3 * var(--ams-grid-row-gap-md));
   align-items: center;
-}
-
-.amopis-project-details-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 24px;
-  row-gap: var(--ams-grid-row-gap-sm);
 }
 
 @media (max-width: 1087px) {
