@@ -3,10 +3,14 @@
   "short_name": "Prototypes",
   "icons": [
     {
-      "src": "appicons/icon-192.png",
+      "src": "app-icons/icon-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
-    { "src": "appicons/icon-512.png", "type": "image/png", "sizes": "512x512" }
+    {
+      "src": "app-icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
   ]
 }
