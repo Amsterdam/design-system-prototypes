@@ -58,6 +58,26 @@ const topTasks = [
   },
 ]
 
+const calenderItems = [
+  { date: '29 juni 2023', description: 'Presentatie nieuwe Stopera-gebouw', time: 'Tijd: 18.00 – 21.00 uur' },
+  {
+    date: '22 juni 2023',
+    description: 'Praat mee over het toekomstige slavernijmuseum',
+    time: 'Tijd: 13.00 – 16.00 uur',
+  },
+  {
+    date: '15 juni 2023',
+    description: 'Opening tentoonstelling schilderijen Van Rijn',
+    time: 'Tijd: 10.00 – 11.30 uur',
+  },
+]
+
+const cards = [
+  { heading: 'Nederlands eerste houten woonwijk komt in Zuidoost', image: woonwijkImage },
+  { heading: 'Gratis openbaar vervoer voor kinderen', image: vervoerImage },
+  { heading: 'Zonnepanelen op uw dak? Zo houdt u uw huis veilig', image: zonnepanelenImage },
+]
+
 const HomePage = () => (
   <>
     <Grid>
@@ -131,27 +151,15 @@ const HomePage = () => (
       <Grid.Cell span={3}>
         <Heading className="ams-mb--sm">Kalender</Heading>
         <Column>
-          <Card>
-            <Heading level={2} size="level-4">
-              <Card.Link href="#">29 juni 2023</Card.Link>
-            </Heading>
-            <Paragraph size="small">Presentatie nieuwe Stopera-gebouw</Paragraph>
-            <Paragraph size="small">Tijd: 18.00 – 21.00 uur</Paragraph>
-          </Card>
-          <Card>
-            <Heading level={2} size="level-4">
-              <Card.Link href="#">22 juni 2023</Card.Link>
-            </Heading>
-            <Paragraph size="small">Praat mee over het toekomstige slavernijmuseum</Paragraph>
-            <Paragraph size="small">Tijd: 13.00 – 16.00 uur</Paragraph>
-          </Card>
-          <Card>
-            <Heading level={2} size="level-4">
-              <Card.Link href="#">15 juni 2023</Card.Link>
-            </Heading>
-            <Paragraph size="small">Opening tentoonstelling schilderijen Van Rijn</Paragraph>
-            <Paragraph size="small">Tijd: 10.00 – 11.30 uur</Paragraph>
-          </Card>
+          {calenderItems.map(({ date, description, time }) => (
+            <Card>
+              <Heading level={2} size="level-4">
+                <Card.Link href="#">{date}</Card.Link>
+              </Heading>
+              <Paragraph size="small">{description}</Paragraph>
+              <Paragraph size="small">{time}</Paragraph>
+            </Card>
+          ))}
         </Column>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
@@ -172,42 +180,20 @@ const HomePage = () => (
           </Paragraph>
         </Card>
       </Grid.Cell>
-      <Grid.Cell span={4}>
-        <Card>
-          <AspectRatio ratio="x-wide">
-            <NextImage alt="" fill src={woonwijkImage} />
-          </AspectRatio>
-          <Card.HeadingGroup tagline="Nieuws">
-            <Heading level={2} size="level-4">
-              <Card.Link href="#">Nederlands eerste houten woonwijk komt in Zuidoost</Card.Link>
-            </Heading>
-          </Card.HeadingGroup>
-        </Card>
-      </Grid.Cell>
-      <Grid.Cell span={4}>
-        <Card>
-          <AspectRatio ratio="x-wide">
-            <NextImage alt="" fill src={vervoerImage} />
-          </AspectRatio>
-          <Card.HeadingGroup tagline="Nieuws">
-            <Heading level={2} size="level-4">
-              <Card.Link href="#">Gratis openbaar vervoer voor kinderen</Card.Link>
-            </Heading>
-          </Card.HeadingGroup>
-        </Card>
-      </Grid.Cell>
-      <Grid.Cell span={4}>
-        <Card>
-          <AspectRatio ratio="x-wide">
-            <NextImage alt="" fill src={zonnepanelenImage} />
-          </AspectRatio>
-          <Card.HeadingGroup tagline="Nieuws">
-            <Heading level={2} size="level-4">
-              <Card.Link href="#">Zonnepanelen op uw dak? Zo houdt u uw huis veilig</Card.Link>
-            </Heading>
-          </Card.HeadingGroup>
-        </Card>
-      </Grid.Cell>
+      {cards.map(({ heading, image }) => (
+        <Grid.Cell span={4}>
+          <Card>
+            <AspectRatio ratio="x-wide">
+              <NextImage alt="" fill src={image} />
+            </AspectRatio>
+            <Card.HeadingGroup tagline="Nieuws">
+              <Heading level={2} size="level-4">
+                <Card.Link href="#">{heading}</Card.Link>
+              </Heading>
+            </Card.HeadingGroup>
+          </Card>
+        </Grid.Cell>
+      ))}
     </Grid>
   </>
 )

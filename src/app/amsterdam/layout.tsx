@@ -57,6 +57,41 @@ const footerLinks = [
   },
 ]
 
+const socials = [
+  {
+    href: 'https://www.amsterdam.nl/nieuws/volg-de-gemeente/nieuwsbrief-amsterdam/',
+    label: 'Nieuwsbrief Amsterdam',
+  },
+  {
+    href: 'https://twitter.com/AmsterdamNL',
+    label: 'Twitter',
+  },
+  {
+    href: 'https://www.facebook.com/gemeenteamsterdam',
+    label: 'Facebook',
+  },
+  {
+    href: 'https://www.instagram.com/gemeenteamsterdam/',
+    label: 'Instagram',
+  },
+  {
+    href: 'https://www.linkedin.com/company/gemeente-amsterdam',
+    label: 'LinkedIn',
+  },
+  {
+    href: 'https://social.amsterdam.nl/@gemeenteamsterdam',
+    label: 'Mastodon',
+  },
+  {
+    href: 'https://www.youtube.com/channel/UCEiYFPFR5jGhFakHhbswlig',
+    label: 'YouTube',
+  },
+  {
+    href: 'https://werkenbij.amsterdam.nl/',
+    label: 'Werkenbij',
+  },
+]
+
 const Amsterdam = ({ children }) => (
   <div className="ams-theme">
     <SkipLink href="#main">Direct naar inhoud</SkipLink>
@@ -128,59 +163,11 @@ const Amsterdam = ({ children }) => (
                   Volg de gemeente
                 </Heading>
                 <LinkList>
-                  <LinkList.Link
-                    href="https://www.amsterdam.nl/nieuws/volg-de-gemeente/nieuwsbrief-amsterdam/"
-                    onBackground="dark"
-                    size="small"
-                  >
-                    Nieuwsbrief Amsterdam
-                  </LinkList.Link>
-                  <LinkList.Link href="https://twitter.com/AmsterdamNL" onBackground="dark" rel="external" size="small">
-                    Twitter
-                  </LinkList.Link>
-                  <LinkList.Link
-                    href="https://www.facebook.com/gemeenteamsterdam"
-                    onBackground="dark"
-                    rel="external"
-                    size="small"
-                  >
-                    Facebook
-                  </LinkList.Link>
-                  <LinkList.Link
-                    href="https://www.instagram.com/gemeenteamsterdam/"
-                    onBackground="dark"
-                    rel="external"
-                    size="small"
-                  >
-                    Instagram
-                  </LinkList.Link>
-                  <LinkList.Link
-                    href="https://www.linkedin.com/company/gemeente-amsterdam"
-                    onBackground="dark"
-                    rel="external"
-                    size="small"
-                  >
-                    LinkedIn
-                  </LinkList.Link>
-                  <LinkList.Link
-                    href="https://social.amsterdam.nl/@gemeenteamsterdam"
-                    onBackground="dark"
-                    rel="external"
-                    size="small"
-                  >
-                    Mastodon
-                  </LinkList.Link>
-                  <LinkList.Link
-                    href="https://www.youtube.com/channel/UCEiYFPFR5jGhFakHhbswlig"
-                    onBackground="dark"
-                    rel="external"
-                    size="small"
-                  >
-                    YouTube
-                  </LinkList.Link>
-                  <LinkList.Link href="https://werkenbij.amsterdam.nl/" onBackground="dark" size="small">
-                    Werkenbij
-                  </LinkList.Link>
+                  {socials.map(({ href, label }) => (
+                    <LinkList.Link href={href} onBackground="dark" rel="external" size="small">
+                      {label}
+                    </LinkList.Link>
+                  ))}
                 </LinkList>
               </Column>
             </Grid.Cell>
