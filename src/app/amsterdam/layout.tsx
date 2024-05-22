@@ -48,7 +48,7 @@ const footerLinks = [
     label: 'Projecten',
   },
   {
-    href: '/amsterdam/project',
+    href: '/amsterdam/projecten/project',
     label: 'Project',
   },
   {
@@ -118,7 +118,7 @@ const Amsterdam = ({ children }) => (
                 </NextLink>
               </PageMenu>
             }
-            logoLink="/amsterdam"
+            logoLink="/design-system-prototypes/amsterdam" // TODO: je kunt hier geen Next Link gebruiken
             logoLinkTitle="Naar de homepage van gemeente Amsterdam"
             menu={<button className="ams-header__menu-button">Menu</button>}
           />
@@ -164,7 +164,7 @@ const Amsterdam = ({ children }) => (
                 </Heading>
                 <LinkList>
                   {socials.map(({ href, label }) => (
-                    <LinkList.Link href={href} onBackground="dark" rel="external" size="small">
+                    <LinkList.Link href={href} onBackground="dark" rel="external" size="small" key={label}>
                       {label}
                     </LinkList.Link>
                   ))}
@@ -210,7 +210,7 @@ const Amsterdam = ({ children }) => (
         <Grid.Cell span="all">
           <PageMenu>
             {footerLinks.map(({ href, label }) => (
-              <NextLink legacyBehavior href={href} passHref>
+              <NextLink legacyBehavior href={href} passHref key={label}>
                 <PageMenu.Link href={href}>{label}</PageMenu.Link>
               </NextLink>
             ))}

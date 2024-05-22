@@ -109,7 +109,7 @@ const HomePage = () => (
         <Heading>Meest bezocht</Heading>
       </Grid.Cell>
       {topTasks.map(({ title, description }) => (
-        <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }}>
+        <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }} key={title}>
           <Card>
             <Heading level={3} size="level-4">
               <Card.Link href="#">{title}</Card.Link>
@@ -152,7 +152,7 @@ const HomePage = () => (
         <Heading className="ams-mb--sm">Kalender</Heading>
         <Column>
           {calenderItems.map(({ date, description, time }) => (
-            <Card>
+            <Card key={date}>
               <Heading level={2} size="level-4">
                 <Card.Link href="#">{date}</Card.Link>
               </Heading>
@@ -181,7 +181,7 @@ const HomePage = () => (
         </Card>
       </Grid.Cell>
       {cards.map(({ heading, image }) => (
-        <Grid.Cell span={4}>
+        <Grid.Cell span={4} key={heading}>
           <Card>
             <AspectRatio ratio="x-wide">
               <NextImage alt="" fill src={image} />
