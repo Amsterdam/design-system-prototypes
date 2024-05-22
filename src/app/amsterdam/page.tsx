@@ -13,7 +13,6 @@ import {
   SearchField,
   Spotlight,
 } from '@amsterdam/design-system-react'
-import React from 'react'
 import NextImage from 'next/image'
 import vindenImage from './_assets/vinden.jpg'
 import stormschadeImage from './_assets/stormschade.jpg'

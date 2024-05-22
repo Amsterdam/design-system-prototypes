@@ -16,7 +16,6 @@ import {
 } from '@amsterdam/design-system-react'
 import { ChattingIcon, LoginIcon, PhoneIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
-import React from 'react'
 
 const footerLinks = [
   {
