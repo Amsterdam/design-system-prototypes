@@ -3,7 +3,7 @@
 import { Grid, Breadcrumb, Column, Heading, TextInput, Paragraph, Card, Checkbox } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
-export const filters = [
+const filterPanel = [
   {
     title: 'Contenttype',
     filters: [
@@ -42,14 +42,14 @@ function Zoeken() {
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
         <Column gap="medium">
-          {filters.map((section) => (
-            <Column as="section" key={section.title} gap="extra-small">
+          {filterPanel.map(({ title, filters }) => (
+            <Column as="section" key={title} gap="extra-small">
               <Heading level={2} size="level-4">
-                {section.title}
+                {title}
               </Heading>
-              {section.filters.map((filter) => (
-                <Checkbox key={filter.label}>
-                  {filter.label} ({filter.hits})
+              {filters.map(({ label, hits }) => (
+                <Checkbox key={label}>
+                  {label} ({hits})
                 </Checkbox>
               ))}
             </Column>
