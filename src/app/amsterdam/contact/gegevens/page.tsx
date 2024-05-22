@@ -19,7 +19,7 @@ import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
 import { FormEvent } from 'react'
 
-const Question = () => {
+function Question() {
   const router = useRouter()
 
   const handleSubmit = (e: FormEvent) => {

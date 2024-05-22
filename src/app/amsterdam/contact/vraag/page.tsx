@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+
 'use client'
 
 import { Grid, Breadcrumb, Heading, Label, Paragraph, TextArea, Fieldset, Button } from '@amsterdam/design-system-react'
@@ -5,7 +7,7 @@ import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
 import { FormEvent } from 'react'
 
-const Question = () => {
+function Question() {
   const router = useRouter()
 
   const handleSubmit = (e: FormEvent) => {

@@ -80,59 +80,61 @@ const linkSections = [
   ],
 ]
 
-const Burgerzaken = () => (
-  <>
-    <Grid>
-      <Grid.Cell span="all">
-        <Breadcrumb>
-          <NextLink legacyBehavior passHref href="/amsterdam">
-            <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
-          </NextLink>
-        </Breadcrumb>
-      </Grid.Cell>
-    </Grid>
-    <Grid paddingBottom="medium">
-      <Grid.Cell span="all">
-        <PageHeading>Burgerzaken</PageHeading>
-      </Grid.Cell>
-      <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-        <Column>
-          {linkSections[0].map(({ title, links }) => (
-            <Column as="section" gap="extra-small" key={title}>
-              <Heading level={2} size="level-3">
-                {title}
-              </Heading>
-              <LinkList>
-                {links.map((link) => (
-                  <LinkList.Link href="#" key={link}>
-                    {link}
-                  </LinkList.Link>
-                ))}
-              </LinkList>
-            </Column>
-          ))}
-        </Column>
-      </Grid.Cell>
-      <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }}>
-        <Column>
-          {linkSections[1].map(({ title, links }) => (
-            <Column as="section" gap="extra-small" key={title}>
-              <Heading level={2} size="level-3">
-                {title}
-              </Heading>
-              <LinkList>
-                {links.map((link) => (
-                  <LinkList.Link href="#" key={link}>
-                    {link}
-                  </LinkList.Link>
-                ))}
-              </LinkList>
-            </Column>
-          ))}
-        </Column>
-      </Grid.Cell>
-    </Grid>
-  </>
-)
+function Burgerzaken() {
+  return (
+    <>
+      <Grid>
+        <Grid.Cell span="all">
+          <Breadcrumb>
+            <NextLink legacyBehavior passHref href="/amsterdam">
+              <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+            </NextLink>
+          </Breadcrumb>
+        </Grid.Cell>
+      </Grid>
+      <Grid paddingBottom="medium">
+        <Grid.Cell span="all">
+          <PageHeading>Burgerzaken</PageHeading>
+        </Grid.Cell>
+        <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
+          <Column>
+            {linkSections[0].map(({ title, links }) => (
+              <Column as="section" gap="extra-small" key={title}>
+                <Heading level={2} size="level-3">
+                  {title}
+                </Heading>
+                <LinkList>
+                  {links.map((link) => (
+                    <LinkList.Link href="#" key={link}>
+                      {link}
+                    </LinkList.Link>
+                  ))}
+                </LinkList>
+              </Column>
+            ))}
+          </Column>
+        </Grid.Cell>
+        <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }}>
+          <Column>
+            {linkSections[1].map(({ title, links }) => (
+              <Column as="section" gap="extra-small" key={title}>
+                <Heading level={2} size="level-3">
+                  {title}
+                </Heading>
+                <LinkList>
+                  {links.map((link) => (
+                    <LinkList.Link href="#" key={link}>
+                      {link}
+                    </LinkList.Link>
+                  ))}
+                </LinkList>
+              </Column>
+            ))}
+          </Column>
+        </Grid.Cell>
+      </Grid>
+    </>
+  )
+}
 
 export default Burgerzaken

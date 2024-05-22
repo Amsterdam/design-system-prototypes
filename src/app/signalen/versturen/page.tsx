@@ -4,7 +4,7 @@ import { FormEvent } from 'react'
 import { Button, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 
-const Versturen = () => {
+function Versturen() {
   const router = useRouter()
 
   const handleSubmit = (e: FormEvent) => {

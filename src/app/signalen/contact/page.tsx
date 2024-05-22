@@ -4,7 +4,7 @@ import { FormEvent } from 'react'
 import { Button, Checkbox, Fieldset, Grid, Heading, Label, Paragraph } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 
-const Contact = () => {
+function Contact() {
   const router = useRouter()
 
   const handleSubmit = (e: FormEvent) => {

@@ -4,7 +4,7 @@ import { Grid, Heading, Fieldset, Paragraph, Radio, Label, TextArea, Button } fr
 import { useRouter } from 'next/navigation'
 import { FormEvent } from 'react'
 
-const VulAan = () => {
+function VulAan() {
   const router = useRouter()
 
   const handleSubmit = (e: FormEvent) => {

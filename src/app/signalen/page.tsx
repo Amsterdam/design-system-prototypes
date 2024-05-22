@@ -1,10 +1,12 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+
 'use client'
 
 import { Grid, Heading, Fieldset, Paragraph, Label, TextArea, Button } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { FormEvent } from 'react'
 
-const Contact = () => {
+function Contact() {
   const router = useRouter()
 
   const handleSubmit = (e: FormEvent) => {
