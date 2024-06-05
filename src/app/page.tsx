@@ -1,6 +1,6 @@
 'use client'
 
-import { Screen, Grid, PageHeading, Heading, LinkList } from '@amsterdam/design-system-react'
+import { Grid, Heading, LinkList, PageHeading, Screen } from '@amsterdam/design-system-react'
 import Link from 'next/link'
 
 export default function Page() {

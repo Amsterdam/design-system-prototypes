@@ -2,7 +2,18 @@
 
 'use client'
 
-import { Grid, Breadcrumb, Heading, Label, Paragraph, TextArea, Fieldset, Button } from '@amsterdam/design-system-react'
+import {
+  Breadcrumb,
+  Button,
+  Field,
+  FieldSet,
+  FileInput,
+  Grid,
+  Heading,
+  Label,
+  Paragraph,
+  TextArea,
+} from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
 import { FormEvent } from 'react'
@@ -20,12 +31,12 @@ function Question() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
           <NextLink legacyBehavior passHref href="/amsterdam">
-            <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Contact</Heading>
-          <div>
+          <Field>
             <Label htmlFor="description">Wat wilt u aan de gemeente vragen?</Label>
             <Paragraph size="small">
               Een duidelijke beschrijving van uw vraag helpt ons bij het behandelen. U kunt eventueel nog een bijlage
@@ -33,19 +44,17 @@ function Question() {
             </Paragraph>
             <TextArea id="description" rows={4} />
             <Paragraph size="small">0/1000 tekens</Paragraph>
-          </div>
-          <Fieldset legend="U kunt hier een bijlage toevoegen">
-            <input
-              type="file"
-              id="fileUpload"
-              data-testid="file-input-upload"
+          </Field>
+          <FieldSet legend="U kunt hier een bijlage toevoegen">
+            <FileInput
               accept="image/jpeg,image/jpg,image/png,image/gif"
-              name="bijlage"
-              multiple
               aria-label="Selecteer een bestand"
+              data-testid="file-input-upload"
+              id="fileUpload"
+              multiple
+              name="bijlage"
             />
-            <label htmlFor="fileUpload">Selecteer een bestand</label>
-          </Fieldset>
+          </FieldSet>
           <div className="ams-form-navigation">
             <Button type="submit">Volgende</Button>
           </div>

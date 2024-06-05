@@ -1,6 +1,6 @@
 'use client'
 
-import { Screen, Grid, PageMenu, SkipLink } from '@amsterdam/design-system-react'
+import { Grid, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
 import Link from 'next/link'
 
 import { Sidebar } from './_components/SideBar/SideBar'

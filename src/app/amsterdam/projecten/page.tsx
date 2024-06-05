@@ -1,14 +1,14 @@
 'use client'
 
 import {
-  Grid,
-  Breadcrumb,
-  Heading,
-  Paragraph,
-  LinkList,
-  TextInput,
-  Spotlight,
   AspectRatio,
+  Breadcrumb,
+  Grid,
+  Heading,
+  LinkList,
+  Paragraph,
+  Spotlight,
+  TextInput,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
@@ -23,7 +23,7 @@ function Projecten() {
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink legacyBehavior passHref href="/amsterdam">
-              <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+              <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
         </Grid.Cell>

@@ -1,27 +1,23 @@
 'use client'
 
 import {
-  Screen,
-  SkipLink,
-  Grid,
-  PageMenu,
-  Header,
   Column,
   Footer,
+  Grid,
+  Header,
   Heading,
-  LinkList,
-  Paragraph,
-  VisuallyHidden,
   Link,
+  LinkList,
+  PageMenu,
+  Paragraph,
+  Screen,
+  SkipLink,
+  VisuallyHidden,
 } from '@amsterdam/design-system-react'
 import { ChattingIcon, LoginIcon, PhoneIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 
 const footerLinks = [
-  {
-    href: '/amsterdam',
-    label: 'Kerngegevens',
-  },
   {
     href: '/amsterdam',
     label: 'Home',
@@ -110,15 +106,15 @@ function Amsterdam({ children }) {
                   <PageMenu.Link href="https://mijn.amsterdam.nl/" icon={LoginIcon} rel="external">
                     Mijn Amsterdam
                   </PageMenu.Link>
-                  <NextLink legacyBehavior href="/amsterdam/zoeken" passHref>
-                    <PageMenu.Link icon={SearchIcon}>Zoeken</PageMenu.Link>
-                  </NextLink>
                   <NextLink legacyBehavior href="/" passHref>
                     <PageMenu.Link>Prototypes</PageMenu.Link>
                   </NextLink>
+                  <NextLink legacyBehavior href="/amsterdam/zoeken" passHref>
+                    <PageMenu.Link icon={SearchIcon}>Zoeken</PageMenu.Link>
+                  </NextLink>
                 </PageMenu>
               }
-              logoLink="/design-system-prototypes/amsterdam" // TODO: je kunt hier geen Next Link gebruiken
+              logoLink="amsterdam" // TODO: je kunt hier geen Next Link gebruiken
               logoLinkTitle="Naar de homepage van gemeente Amsterdam"
               menu={
                 <button type="button" className="ams-header__menu-button">

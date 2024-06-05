@@ -1,15 +1,16 @@
 'use client'
 
 import {
-  Grid,
+  Alert,
   Breadcrumb,
+  Button,
+  Column,
+  Field,
+  FieldSet,
+  Grid,
   Heading,
   Label,
   Paragraph,
-  Fieldset,
-  Button,
-  Alert,
-  Column,
   Radio,
   Row,
   Select,
@@ -32,47 +33,45 @@ function Question() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
           <NextLink legacyBehavior passHref href="/amsterdam">
-            <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Contact</Heading>
-          <Fieldset legend="Wat zijn uw contactgegevens?">
-            <Column gap="small">
-              <div>
-                <Paragraph>Wij hebben uw gegevens nodig om contact met u te kunnen opnemen.</Paragraph>
-              </div>
-              <div>
+          <FieldSet legend="Wat zijn uw contactgegevens?">
+            <Column gap="small" style={{ clear: 'both' }}>
+              <Paragraph>Wij hebben uw gegevens nodig om contact met u te kunnen opnemen.</Paragraph>
+              <Field>
                 <Label htmlFor="voorletters">Voorletters</Label>
                 <TextInput id="voorletters" name="voorletters" />
-              </div>
-              <div>
+              </Field>
+              <Field>
                 <Label htmlFor="achternaam">Achternaam</Label>
                 <TextInput id="achternaam" name="achternaam" />
-              </div>
-              <div>
+              </Field>
+              <Field>
                 <Label htmlFor="email">E-mail</Label>
                 <TextInput id="email" name="email" />
-              </div>
+              </Field>
               <Row as="div">
-                <div>
+                <Field>
                   <Label htmlFor="country">Landnummer</Label>
                   <Select name="country">
                     <option value="+31">Nederland +31</option>
                     <option value="+32">Belgie +32</option>
                     <option value="+33">Frankrijk +33</option>
                   </Select>
-                </div>
-                <div>
+                </Field>
+                <Field>
                   <Label htmlFor="phone">Telefoonnummer</Label>
                   <TextInput id="phone" name="phone" />
-                </div>
+                </Field>
               </Row>
-              <div>
+              <Field>
                 <Label htmlFor="email">E-mail</Label>
                 <TextInput id="email" name="email" />
-              </div>
-              <div>
+              </Field>
+              <Field>
                 <Label htmlFor="woonplaats">Woonplaats</Label>
                 <Radio name="woonplaats" value="amsterdam">
                   Amsterdam
@@ -83,9 +82,9 @@ function Question() {
                 <Radio name="woonplaats" value="anders">
                   Anders
                 </Radio>
-              </div>
+              </Field>
             </Column>
-          </Fieldset>
+          </FieldSet>
           <Alert severity="info">
             <Paragraph>
               We bewaren uw contactgegevens voor het afhandelen van uw vraag of klacht en het verbeteren van onze

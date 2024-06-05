@@ -1,6 +1,6 @@
 'use client'
 
-import { Grid, Breadcrumb, Column, Heading, TextInput, Paragraph, Card, Checkbox } from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Checkbox, Column, Grid, Heading, Paragraph, TextInput } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 const filterPanel = [
@@ -41,7 +41,7 @@ function Zoeken() {
   return (
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
-        <Column gap="medium">
+        <Column>
           {filterPanel.map(({ title, filters }) => (
             <Column as="section" key={title} gap="extra-small">
               <Heading level={2} size="level-4">
@@ -59,9 +59,9 @@ function Zoeken() {
       <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
         <Breadcrumb>
           <NextLink legacyBehavior passHref href="/amsterdam">
-            <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           </NextLink>
-          <Breadcrumb.Item href="#">Zoekresultaten</Breadcrumb.Item>
+          <Breadcrumb.Link href="#">Zoekresultaten</Breadcrumb.Link>
         </Breadcrumb>
         <Column className="ams-mb--md" gap="small">
           <Heading>Zoeken</Heading>

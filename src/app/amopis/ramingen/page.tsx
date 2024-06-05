@@ -23,8 +23,8 @@ function Estimation() {
     <Grid paddingVertical="medium">
       <Grid.Cell span="all">
         <Breadcrumb>
-          <Breadcrumb.Item href="#">Dashboard</Breadcrumb.Item>
-          <Breadcrumb.Item href="#">Planning</Breadcrumb.Item>
+          <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
+          <Breadcrumb.Link href="#">Planning</Breadcrumb.Link>
         </Breadcrumb>
         <Heading className="ams-mb--sm">Capaciteitsraming</Heading>
         <Heading level={2}>Brug 423 opwaardering (Berlagebrug) – ams20192715</Heading>

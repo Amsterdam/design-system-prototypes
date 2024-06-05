@@ -1,17 +1,17 @@
 'use client'
 
 import {
-  Grid,
+  Accordion,
   Alert,
+  Button,
+  Grid,
   Heading,
+  Link,
+  OrderedList,
   Paragraph,
+  Spotlight,
   Table,
   UnorderedList,
-  Accordion,
-  Spotlight,
-  OrderedList,
-  Button,
-  Link,
 } from '@amsterdam/design-system-react'
 
 function Parkeren() {

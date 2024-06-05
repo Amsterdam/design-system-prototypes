@@ -17,11 +17,8 @@ function Versturen() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Doe een melding</Heading>
-
           <Heading level={2}>Versturen</Heading>
-
           <Paragraph>Controleer uw gegevens en verstuur uw melding.</Paragraph>
-
           <section>
             <header className="signalen-summary-heading">
               <Heading level={2} size="level-4">
@@ -34,7 +31,6 @@ function Versturen() {
               <dd>afval</dd>
             </dl>
           </section>
-
           <section>
             <header className="signalen-summary-heading">
               <Heading level={2} size="level-4">
@@ -49,7 +45,6 @@ function Versturen() {
               <dd>Nu</dd>
             </dl>
           </section>
-
           <section>
             <header className="signalen-summary-heading">
               <Heading level={2} size="level-4">

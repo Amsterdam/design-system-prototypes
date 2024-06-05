@@ -1,14 +1,14 @@
 'use client'
 
 import {
-  Grid,
+  AspectRatio,
   Breadcrumb,
-  PageHeading,
-  Paragraph,
+  Column,
+  Grid,
   Heading,
   LinkList,
-  Column,
-  AspectRatio,
+  PageHeading,
+  Paragraph,
 } from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
@@ -23,7 +23,7 @@ function KunstEnCultuur() {
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink legacyBehavior passHref href="/amsterdam">
-              <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+              <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
         </Grid.Cell>
