@@ -38,9 +38,11 @@ function Question() {
         </Breadcrumb>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Contact</Heading>
-          <FieldSet legend="Wat zijn uw contactgegevens?">
+          <FieldSet aria-describedby="contactgegevensDescription" legend="Wat zijn uw contactgegevens?">
             <Column gap="small" style={{ clear: 'both' }}>
-              <Paragraph>Wij hebben uw gegevens nodig om contact met u te kunnen opnemen.</Paragraph>
+              <Paragraph id="contactgegevensDescription">
+                Wij hebben uw gegevens nodig om contact met u te kunnen opnemen.
+              </Paragraph>
               <Field>
                 <Label htmlFor="voorletters">Voorletters</Label>
                 <TextInput id="voorletters" name="voorletters" />

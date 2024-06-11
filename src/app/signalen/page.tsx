@@ -31,10 +31,12 @@ function Contact() {
           <Heading>Doe een melding</Heading>
           <Heading level={2}>Beschrijf uw melding</Heading>
           <Field>
-            <Label htmlFor="description">Waar gaat het om?</Label>
-            <Paragraph size="small">Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd</Paragraph>
-            <TextArea id="description" rows={4} />
             <Paragraph size="small">8/1000 tekens</Paragraph>
+            <Label htmlFor="body">Waar gaat het om?</Label>
+            <Paragraph id="bodyDescription" size="small">
+              Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd
+            </Paragraph>
+            <TextArea aria-describedby="bodyDescription" id="body" rows={4} />
           </Field>
           <FieldSet legend="Foto's toevoegen (niet verplicht)">
             <Paragraph size="small">Voeg een foto toe om de situatie te verduidelijken</Paragraph>

@@ -32,13 +32,13 @@ function Contact() {
             <Label htmlFor="mail">Wat is uw e-mailadres?(niet verplicht)</Label>
             <input type="email" id="mail" />
           </Field>
-          <FieldSet legend="Mogen we uw melding doorsturen?">
-            <Paragraph className="ams-mb--md">
+          <FieldSet aria-describedby="forwardingPermissionDescription" legend="Mogen we uw melding doorsturen?">
+            <Paragraph className="ams-mb--md" id="forwardingPermissionDescription">
               Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
               melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u
               dat goed vindt.
             </Paragraph>
-            <Checkbox>
+            <Checkbox name="forwardingPermission">
               Ja, ik geef de gemeente Amsterdam toestemming om mijn melding door te sturen naar andere organisaties als
               de melding niet voor de gemeente is bestemd.
             </Checkbox>

@@ -37,13 +37,13 @@ function Question() {
         <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Contact</Heading>
           <Field>
-            <Label htmlFor="description">Wat wilt u aan de gemeente vragen?</Label>
-            <Paragraph size="small">
+            <Label htmlFor="body">Wat wilt u aan de gemeente vragen?</Label>
+            <Paragraph id="bodyDescription" size="small">
               Een duidelijke beschrijving van uw vraag helpt ons bij het behandelen. U kunt eventueel nog een bijlage
               toevoegen.
             </Paragraph>
-            <TextArea id="description" rows={4} />
             <Paragraph size="small">0/1000 tekens</Paragraph>
+            <TextArea aria-describedby="bodyDescription" id="body" rows={4} />
           </Field>
           <FieldSet legend="U kunt hier een bijlage toevoegen">
             <FileInput
