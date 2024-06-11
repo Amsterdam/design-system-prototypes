@@ -6,7 +6,6 @@ import {
   Breadcrumb,
   Button,
   Field,
-  FieldSet,
   FileInput,
   Grid,
   Heading,
@@ -45,7 +44,8 @@ function Question() {
             <Paragraph size="small">0/1000 tekens</Paragraph>
             <TextArea aria-describedby="bodyDescription" id="body" rows={4} />
           </Field>
-          <FieldSet legend="U kunt hier een bijlage toevoegen">
+          <Field>
+            <Label htmlFor="fileUpload">U kunt hier een bijlage toevoegen</Label>
             <FileInput
               accept="image/jpeg,image/jpg,image/png,image/gif"
               aria-label="Selecteer een bestand"
@@ -54,7 +54,7 @@ function Question() {
               multiple
               name="bijlage"
             />
-          </FieldSet>
+          </Field>
           <div className="ams-form-navigation">
             <Button type="submit">Volgende</Button>
           </div>

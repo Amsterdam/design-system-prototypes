@@ -5,7 +5,6 @@
 import {
   Button,
   Field,
-  FieldSet,
   FileInput,
   Grid,
   Heading,
@@ -38,8 +37,9 @@ function Contact() {
             </Paragraph>
             <TextArea aria-describedby="bodyDescription" id="body" rows={4} />
           </Field>
-          <FieldSet legend="Foto's toevoegen (niet verplicht)">
-            <Paragraph size="small">Voeg een foto toe om de situatie te verduidelijken</Paragraph>
+          <Field>
+            <Label htmlFor="fileUpload">Foto’s toevoegen (niet verplicht)</Label>
+            <Paragraph size="small">Voeg een foto toe om de situatie te verduidelijken.</Paragraph>
             <FileInput
               accept="image/jpeg,image/jpg,image/png,image/gif"
               aria-label="Selecteer een bestand"
@@ -48,7 +48,7 @@ function Contact() {
               multiple
               name="images"
             />
-          </FieldSet>
+          </Field>
           <div className="ams-form-navigation">
             <Button type="submit">Volgende</Button>
           </div>
