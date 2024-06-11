@@ -7,6 +7,7 @@ import {
   Button,
   Field,
   FileInput,
+  FormFieldCharacterCounter,
   Grid,
   Heading,
   Label,
@@ -15,10 +16,11 @@ import {
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
-import { FormEvent } from 'react'
+import { FormEvent, useState } from 'react'
 
 function Question() {
   const router = useRouter()
+  const [textareaLength, setTextareaLength] = useState(0)
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
@@ -41,8 +43,13 @@ function Question() {
               Een duidelijke beschrijving van uw vraag helpt ons bij het behandelen. U kunt eventueel nog een bijlage
               toevoegen.
             </Paragraph>
-            <Paragraph size="small">0/1000 tekens</Paragraph>
-            <TextArea aria-describedby="bodyDescription" id="body" rows={4} />
+            <TextArea
+              aria-describedby="bodyDescription"
+              id="body"
+              onChange={(e) => setTextareaLength(e.target.value.length)}
+              rows={4}
+            />
+            <FormFieldCharacterCounter length={textareaLength} maxLength={1000} />
           </Field>
           <Field>
             <Label htmlFor="fileUpload">U kunt hier een bijlage toevoegen</Label>
