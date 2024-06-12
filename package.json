@@ -5,7 +5,12 @@
   "name": "design-system-prototypes",
   "private": true,
   "engines": {
-    "node": "^20"
+    "node": "^20",
+    "npm": "^10"
+  },
+  "volta": {
+    "node": "20.12.2",
+    "npm": "10.5.2"
   },
   "type": "module",
   "scripts": {
@@ -21,11 +26,7 @@
     "update:patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && npm install"
   },
   "dependencies": {
-    "@amsterdam/design-system-assets": "^0.2.0",
-    "@amsterdam/design-system-css": "^0.8.0",
-    "@amsterdam/design-system-react": "^0.8.0",
-    "@amsterdam/design-system-react-icons": "^0.1.12",
-    "@amsterdam/design-system-tokens": "^0.8.0",
+    "@amsterdam/design-system-react": "^0.9.0",
     "@babel/runtime": "^7.24.5",
     "next": "^14.2.3",
     "react": "^18.3.1",
