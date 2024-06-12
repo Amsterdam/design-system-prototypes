@@ -6,7 +6,7 @@ import { Grid, Heading, Icon, Paragraph, Link as ADSLink, Column } from '@amster
 import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
 import Link from 'next/link'
 
-function Docs() {
+function Thanks() {
   return (
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
@@ -55,4 +55,4 @@ function Docs() {
   )
 }
 
-export default Docs
+export default Thanks
