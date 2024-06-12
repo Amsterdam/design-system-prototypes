@@ -22,9 +22,11 @@
   },
   "dependencies": {
     "@amsterdam/design-system-react": "^0.9.0",
+    "@amsterdam/design-system-react-icons": "^0.1.12",
     "next": "^14.2.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-hook-form": "^7.51.5",
     "sharp": "^0.33.4"
   },
   "devDependencies": {

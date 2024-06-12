@@ -1,11 +1,12 @@
+/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 
 'use client'
 
 import {
   Button,
+  ErrorMessage,
   Field,
-  FileInput,
   FormFieldCharacterCounter,
   Grid,
   Heading,
@@ -14,50 +15,56 @@ import {
   TextArea,
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { FormEvent, useState } from 'react'
+import { useForm, useWatch } from 'react-hook-form'
 
-function Contact() {
+function SignalenHome() {
+  const {
+    control,
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+
+  const body = useWatch({
+    control,
+    name: 'body',
+    defaultValue: '',
+  })
+
   const router = useRouter()
-  const [textareaLength, setTextareaLength] = useState(0)
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault()
-    router.push('/signalen/vul-aan')
-  }
+  const onSubmit = () => router.push('/signalen/vul-aan-1')
 
   return (
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <form className="ams-gap--md" onSubmit={handleSubmit}>
-          <Heading>Doe een melding</Heading>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+          <Heading>Melding openbare ruimte</Heading>
           <Heading level={2}>Beschrijf uw melding</Heading>
-          <Field>
+          <Field invalid={Boolean(errors.body)}>
             <Label htmlFor="body">Waar gaat het om?</Label>
             <Paragraph id="bodyDescription" size="small">
-              Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd
+              Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.
             </Paragraph>
+            {errors.body && <ErrorMessage id="bodyError">{`${errors.body.message}`}</ErrorMessage>}
             <TextArea
-              aria-describedby="bodyDescription"
+              aria-describedby={`bodyDescription${errors.body ? ' bodyError' : ''}`}
+              aria-required="true"
               id="body"
-              onChange={(e) => setTextareaLength(e.target.value.length)}
+              invalid={Boolean(errors.body)}
               rows={4}
+              {...register('body', {
+                required: 'Dit is een verplicht veld',
+                maxLength: {
+                  value: 1000,
+                  message: 'U heeft te veel tekens gebruikt',
+                },
+              })}
             />
-            <FormFieldCharacterCounter length={textareaLength} maxLength={1000} />
+            <FormFieldCharacterCounter length={body.length} maxLength={1000} />
           </Field>
-          <Field>
-            <Label htmlFor="fileUpload">Foto’s toevoegen (niet verplicht)</Label>
-            <Paragraph size="small">Voeg een foto toe om de situatie te verduidelijken.</Paragraph>
-            <FileInput
-              accept="image/jpeg,image/jpg,image/png,image/gif"
-              aria-label="Selecteer een bestand"
-              data-testid="file-input-upload"
-              id="fileUpload"
-              multiple
-              name="images"
-            />
-          </Field>
-          <div className="ams-form-navigation">
-            <Button type="submit">Volgende</Button>
+          <div>
+            <Button type="submit">Volgende vraag</Button>
           </div>
         </form>
       </Grid.Cell>
@@ -65,4 +72,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default SignalenHome
