@@ -36,7 +36,7 @@ function VulAan3() {
             aria-required="true"
             invalid={Boolean(errors.who)}
           >
-            <Paragraph>Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?</Paragraph>
+            <Paragraph size="small">Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?</Paragraph>
             {errors.who && <ErrorMessage id="whoError">{`${errors.who.message}`}</ErrorMessage>}
             <Radio
               value="ja"

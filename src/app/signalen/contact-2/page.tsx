@@ -26,7 +26,7 @@ function Contact2() {
           <Heading>Melding openbare ruimte</Heading>
           <Heading level={2}>Gegevens</Heading>
           <FieldSet aria-describedby="permissionDescription" legend="Mogen we uw melding doorsturen?">
-            <Paragraph className="ams-mb--sm" id="permissionDescription">
+            <Paragraph className="ams-mb--sm" id="permissionDescription" size="small">
               Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
               melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u
               dat goed vindt.
