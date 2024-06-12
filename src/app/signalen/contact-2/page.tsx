@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Button, Checkbox, Grid, Heading, Icon, Paragraph } from '@amsterdam/design-system-react'
+import { Button, Checkbox, FieldSet, Grid, Heading, Icon, Paragraph } from '@amsterdam/design-system-react'
 import Link from 'next/link'
 import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
 import { useRouter } from 'next/navigation'
@@ -25,16 +25,17 @@ function Contact2() {
         <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <Heading>Melding openbare ruimte</Heading>
           <Heading level={2}>Gegevens</Heading>
-          <Paragraph size="large">Mogen we uw melding doorsturen?</Paragraph>
-          <Paragraph>
-            Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
-            melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u dat
-            goed vindt.
-          </Paragraph>
-          <Checkbox {...register('permission')}>
-            Ja, ik geef de gemeente Amsterdam toestemming om mijn melding door te sturen naar andere organisaties als de
-            melding niet voor de gemeente is bestemd.
-          </Checkbox>
+          <FieldSet aria-describedby="permissionDescription" legend="Mogen we uw melding doorsturen?">
+            <Paragraph className="ams-mb--sm" id="permissionDescription">
+              Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
+              melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u
+              dat goed vindt.
+            </Paragraph>
+            <Checkbox id="permission" {...register('permission')}>
+              Ja, ik geef de gemeente Amsterdam toestemming om mijn melding door te sturen naar andere organisaties als
+              de melding niet voor de gemeente is bestemd.
+            </Checkbox>
+          </FieldSet>
           <div>
             <Button type="submit">Volgende</Button>
           </div>

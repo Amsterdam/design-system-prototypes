@@ -2,7 +2,17 @@
 
 'use client'
 
-import { Button, Field, Grid, Heading, Icon, Label, Paragraph, TextInput } from '@amsterdam/design-system-react'
+import {
+  Button,
+  Field,
+  FieldSet,
+  Grid,
+  Heading,
+  Icon,
+  Label,
+  Paragraph,
+  TextInput,
+} from '@amsterdam/design-system-react'
 import Link from 'next/link'
 import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
 import { useRouter } from 'next/navigation'
@@ -25,22 +35,26 @@ function Contact1() {
         <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <Heading>Melding openbare ruimte</Heading>
           <Heading level={2}>Gegevens</Heading>
-          <Paragraph size="large">Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?</Paragraph>
-          <Paragraph>
-            Vaak hebben we nog een vraag. Daarmee kunnen we het probleem sneller of beter oplossen. Of we willen iets
-            uitleggen. Wij willen u dan graag even bellen. Of anders e-mailen wij u. Wij gebruiken uw telefoonnummer en
-            e-mailadres alléén voor deze melding.
-          </Paragraph>
-          <div className="ams-gap--sm">
-            <Field>
-              <Label htmlFor="phone">Wat is uw telefoonnummer? (niet verplicht)</Label>
-              <TextInput type="tel" id="phone" {...register('phone')} />
-            </Field>
-            <Field>
-              <Label htmlFor="mail">Wat is uw e-mailadres? (niet verplicht)</Label>
-              <TextInput type="email" id="mail" {...register('mail')} />
-            </Field>
-          </div>
+          <FieldSet
+            aria-describedby="contactDescription"
+            legend="Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?"
+          >
+            <Paragraph className="ams-mb--sm" id="contactDescription">
+              Vaak hebben we nog een vraag. Daarmee kunnen we het probleem sneller of beter oplossen. Of we willen iets
+              uitleggen. Wij willen u dan graag even bellen. Of anders e-mailen wij u. Wij gebruiken uw telefoonnummer
+              en e-mailadres alléén voor deze melding.
+            </Paragraph>
+            <div className="ams-gap--sm">
+              <Field>
+                <Label htmlFor="phone">Wat is uw telefoonnummer? (niet verplicht)</Label>
+                <TextInput type="tel" id="phone" {...register('phone')} />
+              </Field>
+              <Field>
+                <Label htmlFor="mail">Wat is uw e-mailadres? (niet verplicht)</Label>
+                <TextInput type="email" id="mail" {...register('mail')} />
+              </Field>
+            </div>
+          </FieldSet>
           <div>
             <Button type="submit">Volgende</Button>
           </div>
