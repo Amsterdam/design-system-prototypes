@@ -46,8 +46,16 @@ function Contact() {
           </Field>
           <Field>
             <Label htmlFor="fileUpload">Foto’s toevoegen (niet verplicht)</Label>
-            <Paragraph size="small">Voeg een foto toe om de situatie te verduidelijken.</Paragraph>
-            <FileInput accept="image/jpeg,image/jpg,image/png,image/gif" id="fileUpload" multiple name="images" />
+            <Paragraph id="fileUploadDescription" size="small">
+              Voeg een foto toe om de situatie te verduidelijken.
+            </Paragraph>
+            <FileInput
+              accept="image/jpeg,image/jpg,image/png,image/gif"
+              aria-describedby="fileUploadDescription"
+              id="fileUpload"
+              multiple
+              name="images"
+            />
           </Field>
           <div className="ams-form-navigation">
             <Button type="submit">Volgende</Button>
