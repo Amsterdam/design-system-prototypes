@@ -53,14 +53,7 @@ function Question() {
           </Field>
           <Field>
             <Label htmlFor="fileUpload">U kunt hier een bijlage toevoegen</Label>
-            <FileInput
-              accept="image/jpeg,image/jpg,image/png,image/gif"
-              aria-label="Selecteer een bestand"
-              data-testid="file-input-upload"
-              id="fileUpload"
-              multiple
-              name="bijlage"
-            />
+            <FileInput accept="image/jpeg,image/jpg,image/png,image/gif" id="fileUpload" multiple name="bijlage" />
           </Field>
           <div className="ams-form-navigation">
             <Button type="submit">Volgende</Button>
