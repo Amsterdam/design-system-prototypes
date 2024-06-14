@@ -36,7 +36,7 @@ function Contact2() {
           </Checkbox>
         </FieldSet>
         <div>
-          <Button type="submit">Volgende</Button>
+          <Button type="submit">Volgende vraag</Button>
         </div>
       </form>
     </>

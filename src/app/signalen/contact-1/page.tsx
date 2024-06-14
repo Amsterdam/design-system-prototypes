@@ -55,7 +55,7 @@ function Contact1() {
           </Column>
         </FieldSet>
         <div>
-          <Button type="submit">Volgende</Button>
+          <Button type="submit">Volgende vraag</Button>
         </div>
       </form>
     </>
