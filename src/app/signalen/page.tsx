@@ -58,10 +58,10 @@ function SignalenHome() {
           invalid={Boolean(errors.body)}
           rows={4}
           {...register('body', {
-            required: 'Dit is een verplicht veld',
+            required: 'Geef aan waar uw melding over gaat.',
             maxLength: {
               value: 1000,
-              message: 'U heeft te veel tekens gebruikt',
+              message: 'Beschrijf uw melding in minder dan 1000 tekens.',
             },
           })}
         />

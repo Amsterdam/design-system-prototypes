@@ -53,7 +53,9 @@ function VulAan3() {
               value="ja"
               invalid={Boolean(errors.who)}
               aria-required="true"
-              {...register('who', { required: 'Dit is een verplicht veld' })}
+              {...register('who', {
+                required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
+              })}
             >
               Ja
             </Radio>
@@ -61,7 +63,9 @@ function VulAan3() {
               value="nee"
               invalid={Boolean(errors.who)}
               aria-required="true"
-              {...register('who', { required: 'Dit is een verplicht veld' })}
+              {...register('who', {
+                required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
+              })}
             >
               Nee
             </Radio>
