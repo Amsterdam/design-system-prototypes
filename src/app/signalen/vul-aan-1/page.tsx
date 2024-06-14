@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Button, FieldSet, Heading, Icon, Radio } from '@amsterdam/design-system-react'
+import { Button, Column, FieldSet, Heading, Icon, Radio } from '@amsterdam/design-system-react'
 import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -24,13 +24,15 @@ function VulAan1() {
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
         <Heading>Melding openbare ruimte</Heading>
         <Heading level={2}>Beschrijf uw melding</Heading>
-        <FieldSet legend="Wanneer heeft u de overlast? (niet verplicht)" role="radiogroup">
-          <Radio value="nu" {...register('when')}>
-            Nu
-          </Radio>
-          <Radio value="eerder" {...register('when')}>
-            Eerder
-          </Radio>
+        <FieldSet legend="Wanneer heeft u de overlast? (niet verplicht)" role="radiogroup" style={{ display: 'grid' }}>
+          <Column gap="extra-small">
+            <Radio value="nu" {...register('when')}>
+              Nu
+            </Radio>
+            <Radio value="eerder" {...register('when')}>
+              Eerder
+            </Radio>
+          </Column>
         </FieldSet>
         <div>
           <Button type="submit">Volgende vraag</Button>

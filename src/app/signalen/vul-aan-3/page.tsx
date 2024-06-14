@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Button, ErrorMessage, FieldSet, Heading, Icon, Paragraph, Radio } from '@amsterdam/design-system-react'
+import { Button, Column, ErrorMessage, FieldSet, Heading, Icon, Paragraph, Radio } from '@amsterdam/design-system-react'
 import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
@@ -34,25 +34,30 @@ function VulAan3() {
           role="radiogroup"
           aria-required="true"
           invalid={Boolean(errors.who)}
+          style={{ display: 'grid' }}
         >
-          <Paragraph size="small">Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?</Paragraph>
-          {errors.who && <ErrorMessage id="whoError">{`${errors.who.message}`}</ErrorMessage>}
-          <Radio
-            value="ja"
-            invalid={Boolean(errors.who)}
-            aria-required="true"
-            {...register('who', { required: 'Dit is een verplicht veld' })}
-          >
-            Ja
-          </Radio>
-          <Radio
-            value="nee"
-            invalid={Boolean(errors.who)}
-            aria-required="true"
-            {...register('who', { required: 'Dit is een verplicht veld' })}
-          >
-            Nee
-          </Radio>
+          <Paragraph size="small" className="ams-mb--xs">
+            Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?
+          </Paragraph>
+          {errors.who && <ErrorMessage className="ams-mb--xs" id="whoError">{`${errors.who.message}`}</ErrorMessage>}
+          <Column gap="extra-small">
+            <Radio
+              value="ja"
+              invalid={Boolean(errors.who)}
+              aria-required="true"
+              {...register('who', { required: 'Dit is een verplicht veld' })}
+            >
+              Ja
+            </Radio>
+            <Radio
+              value="nee"
+              invalid={Boolean(errors.who)}
+              aria-required="true"
+              {...register('who', { required: 'Dit is een verplicht veld' })}
+            >
+              Nee
+            </Radio>
+          </Column>
         </FieldSet>
         <div>
           <Button type="submit">Volgende vraag</Button>

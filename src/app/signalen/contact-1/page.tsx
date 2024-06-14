@@ -2,7 +2,17 @@
 
 'use client'
 
-import { Button, Field, FieldSet, Heading, Icon, Label, Paragraph, TextInput } from '@amsterdam/design-system-react'
+import {
+  Button,
+  Column,
+  Field,
+  FieldSet,
+  Heading,
+  Icon,
+  Label,
+  Paragraph,
+  TextInput,
+} from '@amsterdam/design-system-react'
 import Link from 'next/link'
 import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
 import { useRouter } from 'next/navigation'
@@ -33,7 +43,7 @@ function Contact1() {
             uitleggen. Wij willen u dan graag even bellen. Of anders e-mailen wij u. Wij gebruiken uw telefoonnummer en
             e-mailadres alléén voor deze melding.
           </Paragraph>
-          <div className="ams-gap--sm">
+          <Column gap="extra-small">
             <Field>
               <Label htmlFor="phone">Wat is uw telefoonnummer? (niet verplicht)</Label>
               <TextInput type="tel" id="phone" {...register('phone')} />
@@ -42,7 +52,7 @@ function Contact1() {
               <Label htmlFor="mail">Wat is uw e-mailadres? (niet verplicht)</Label>
               <TextInput type="email" id="mail" {...register('mail')} />
             </Field>
-          </div>
+          </Column>
         </FieldSet>
         <div>
           <Button type="submit">Volgende</Button>
