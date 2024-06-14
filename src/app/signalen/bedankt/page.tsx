@@ -12,7 +12,9 @@ function Thanks() {
       <Column gap="small">
         <Heading level={2}>Bedankt</Heading>
         <Paragraph size="small">
-          Bedankt voor uw melding. Wij hebben uw melding ontvangen op 21-11-2023 om 17:11. Uw meldnummer is 1977916.
+          Bedankt voor uw melding. Wij hebben uw melding ontvangen op {new Date(Date.now()).toLocaleDateString('nl')} om{' '}
+          {new Date(Date.now()).toLocaleTimeString('nl', { hour: 'numeric', minute: 'numeric' })}. Uw meldnummer is
+          1977916.
         </Paragraph>
 
         <Heading level={3} size="level-4">
