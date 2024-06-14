@@ -26,8 +26,8 @@ function Signalen({ children }) {
             logoLinkTitle="Naar de homepage van Signalen Amsterdam"
             links={
               <PageMenu alignEnd>
-                <NextLink href="/signalen/beschrijf" legacyBehavior passHref>
-                  <PageMenu.Link href="/signalen/beschrijf">Doe een melding</PageMenu.Link>
+                <NextLink href="/signalen" legacyBehavior passHref>
+                  <PageMenu.Link>Doe een melding</PageMenu.Link>
                 </NextLink>
                 <PageMenu.Link href="#">Meldingenkaart</PageMenu.Link>
                 <PageMenu.Link href="#">Mijn meldingen</PageMenu.Link>
