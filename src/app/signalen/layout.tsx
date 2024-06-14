@@ -39,7 +39,13 @@ function Signalen({ children }) {
           />
         </Grid.Cell>
       </Grid>
-      <main id="main">{children}</main>
+      <main id="main">
+        <Grid paddingVertical="medium">
+          <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
+            {children}
+          </Grid.Cell>
+        </Grid>
+      </main>
       <Footer>
         <Footer.Top>
           <VisuallyHidden>
