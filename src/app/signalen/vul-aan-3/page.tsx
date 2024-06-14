@@ -6,7 +6,10 @@ import { Button, Column, ErrorMessage, FieldSet, Heading, Icon, Paragraph, Radio
 import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
+import { useMemo } from 'react'
 import { useForm } from 'react-hook-form'
+import { addErrorCountToPageTitle } from '../_utils/addErrorCountToPageTitle'
+import { formatErrors } from '../_utils/formatErrors'
 
 function VulAan3() {
   const {
@@ -18,6 +21,11 @@ function VulAan3() {
   const router = useRouter()
 
   const onSubmit = () => router.push('/signalen/contact-1')
+
+  // Add error count to doc title
+  const initialDocTitle = useMemo(() => document.title, [])
+  const formattedErrors = formatErrors(errors)
+  addErrorCountToPageTitle(formattedErrors, initialDocTitle)
 
   return (
     <>

@@ -8,14 +8,16 @@ import {
   ErrorMessage,
   Field,
   FormFieldCharacterCounter,
-  Grid,
   Heading,
   Label,
   Paragraph,
   TextArea,
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
+import { useMemo } from 'react'
 import { useForm, useWatch } from 'react-hook-form'
+import { formatErrors } from './_utils/formatErrors'
+import { addErrorCountToPageTitle } from './_utils/addErrorCountToPageTitle'
 
 function SignalenHome() {
   const {
@@ -33,6 +35,11 @@ function SignalenHome() {
 
   const router = useRouter()
   const onSubmit = () => router.push('/signalen/vul-aan-1')
+
+  // Add error count to doc title
+  const initialDocTitle = useMemo(() => document.title, [])
+  const formattedErrors = formatErrors(errors)
+  addErrorCountToPageTitle(formattedErrors, initialDocTitle)
 
   return (
     <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
