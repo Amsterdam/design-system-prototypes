@@ -16,7 +16,7 @@ function Docs() {
 
   return (
     <>
-      <BackLink href="/signalen" className="ams-mb--xs">
+      <BackLink href="/signalen/contact-2" className="ams-mb--xs">
         Vorige vraag
       </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>

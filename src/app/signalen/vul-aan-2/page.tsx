@@ -16,7 +16,7 @@ function VulAan2() {
 
   return (
     <>
-      <BackLink href="/signalen" className="ams-mb--xs">
+      <BackLink href="/signalen/vul-aan-1" className="ams-mb--xs">
         Vorige vraag
       </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>

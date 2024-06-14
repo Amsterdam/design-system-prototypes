@@ -18,6 +18,7 @@ import { useMemo } from 'react'
 import { useForm, useWatch } from 'react-hook-form'
 import { formatErrors } from './_utils/formatErrors'
 import { addErrorCountToPageTitle } from './_utils/addErrorCountToPageTitle'
+import { FormErrorList } from './_components/FormErrorList'
 
 function SignalenHome() {
   const {
@@ -48,6 +49,7 @@ function SignalenHome() {
         <Heading level={2}>Beschrijf uw melding</Heading>
         <Paragraph>Stap 1 van 3</Paragraph>
       </hgroup>
+      <FormErrorList errors={formattedErrors} />
       <Field invalid={Boolean(errors.body)}>
         <Label htmlFor="body">Waar gaat het om?</Label>
         <Paragraph id="bodyDescription" size="small">

@@ -9,6 +9,7 @@ import { useForm } from 'react-hook-form'
 import { addErrorCountToPageTitle } from '../_utils/addErrorCountToPageTitle'
 import { formatErrors } from '../_utils/formatErrors'
 import { BackLink } from '../_components/BackLink'
+import { FormErrorList } from '../_components/FormErrorList'
 
 function VulAan3() {
   const {
@@ -28,7 +29,7 @@ function VulAan3() {
 
   return (
     <>
-      <BackLink href="/signalen" className="ams-mb--xs">
+      <BackLink href="/signalen/vul-aan-2" className="ams-mb--xs">
         Vorige vraag
       </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
@@ -37,6 +38,7 @@ function VulAan3() {
           <Heading level={2}>Beschrijf uw melding</Heading>
           <Paragraph>Stap 1 van 3</Paragraph>
         </hgroup>
+        <FormErrorList errors={formattedErrors} />
         <FieldSet
           legend="Weet u wie de eigenaar is van het verkeerd geplaatste afval?"
           aria-describedby={errors.who ? 'whoError' : ''}

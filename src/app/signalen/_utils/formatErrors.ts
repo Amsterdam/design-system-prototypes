@@ -3,6 +3,6 @@ export const formatErrors = (errors) => {
 
   return Object.keys(errors).map((key) => ({
     id: `#${errors[key].ref.id}`,
-    message: errors[key].message,
+    label: errors[key].message,
   }))
 }

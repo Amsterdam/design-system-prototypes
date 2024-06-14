@@ -16,7 +16,7 @@ function Contact1() {
 
   return (
     <>
-      <BackLink href="/signalen" className="ams-mb--xs">
+      <BackLink href="/signalen/vul-aan-3" className="ams-mb--xs">
         Vorige vraag
       </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
