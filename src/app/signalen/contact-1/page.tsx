@@ -2,21 +2,10 @@
 
 'use client'
 
-import {
-  Button,
-  Column,
-  Field,
-  FieldSet,
-  Heading,
-  Icon,
-  Label,
-  Paragraph,
-  TextInput,
-} from '@amsterdam/design-system-react'
-import Link from 'next/link'
-import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
+import { Button, Column, Field, FieldSet, Heading, Label, Paragraph, TextInput } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { BackLink } from '../_components/BackLink'
 
 function Contact1() {
   const { register, handleSubmit } = useForm()
@@ -27,13 +16,15 @@ function Contact1() {
 
   return (
     <>
-      <Link className="ams-link-list__link ams-mb--sm" href="/signalen/vul-aan-3">
-        <Icon svg={ChevronLeftIcon} size="level-5" />
+      <BackLink href="/signalen" className="ams-mb--xs">
         Vorige vraag
-      </Link>
+      </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
         <Heading>Melding openbare ruimte</Heading>
-        <Heading level={2}>Gegevens</Heading>
+        <hgroup className="ams-card__heading-group">
+          <Heading level={2}>Gegevens</Heading>
+          <Paragraph>Stap 2 van 3</Paragraph>
+        </hgroup>
         <FieldSet
           aria-describedby="contactDescription"
           legend="Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?"

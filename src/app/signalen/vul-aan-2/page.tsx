@@ -2,11 +2,10 @@
 
 'use client'
 
-import { Button, Field, Heading, Icon, Label, Paragraph, TextArea } from '@amsterdam/design-system-react'
-import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
-import Link from 'next/link'
+import { Button, Field, Heading, Label, Paragraph, TextArea } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { BackLink } from '../_components/BackLink'
 
 function VulAan2() {
   const { register, handleSubmit } = useForm()
@@ -17,13 +16,15 @@ function VulAan2() {
 
   return (
     <>
-      <Link className="ams-link-list__link ams-mb--sm" href="/signalen/vul-aan-1">
-        <Icon svg={ChevronLeftIcon} size="level-5" />
+      <BackLink href="/signalen" className="ams-mb--xs">
         Vorige vraag
-      </Link>
+      </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
         <Heading>Melding openbare ruimte</Heading>
-        <Heading level={2}>Beschrijf uw melding</Heading>
+        <hgroup className="ams-card__heading-group">
+          <Heading level={2}>Beschrijf uw melding</Heading>
+          <Paragraph>Stap 1 van 3</Paragraph>
+        </hgroup>
         <Field>
           <Label htmlFor="type">Welk afval is verkeerd neergezet? (niet verplicht)</Label>
           <Paragraph id="typeDescription" size="small">

@@ -44,7 +44,10 @@ function SignalenHome() {
   return (
     <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
       <Heading>Melding openbare ruimte</Heading>
-      <Heading level={2}>Beschrijf uw melding</Heading>
+      <hgroup className="ams-card__heading-group">
+        <Heading level={2}>Beschrijf uw melding</Heading>
+        <Paragraph>Stap 1 van 3</Paragraph>
+      </hgroup>
       <Field invalid={Boolean(errors.body)}>
         <Label htmlFor="body">Waar gaat het om?</Label>
         <Paragraph id="bodyDescription" size="small">

@@ -2,11 +2,10 @@
 
 'use client'
 
-import { Button, Checkbox, FieldSet, Heading, Icon, Paragraph } from '@amsterdam/design-system-react'
-import Link from 'next/link'
-import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
+import { Button, Checkbox, FieldSet, Heading, Paragraph } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { BackLink } from '../_components/BackLink'
 
 function Contact2() {
   const { register, handleSubmit } = useForm()
@@ -17,13 +16,15 @@ function Contact2() {
 
   return (
     <>
-      <Link className="ams-link-list__link ams-mb--sm" href="/signalen/contact-1">
-        <Icon svg={ChevronLeftIcon} size="level-5" />
+      <BackLink href="/signalen" className="ams-mb--xs">
         Vorige vraag
-      </Link>
+      </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
         <Heading>Melding openbare ruimte</Heading>
-        <Heading level={2}>Gegevens</Heading>
+        <hgroup className="ams-card__heading-group">
+          <Heading level={2}>Gegevens</Heading>
+          <Paragraph>Stap 2 van 3</Paragraph>
+        </hgroup>
         <FieldSet aria-describedby="permissionDescription" legend="Mogen we uw melding doorsturen?">
           <Paragraph className="ams-mb--sm" id="permissionDescription" size="small">
             Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw

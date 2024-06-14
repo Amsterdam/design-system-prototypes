@@ -2,20 +2,10 @@
 
 'use client'
 
-import {
-  Button,
-  Field,
-  FileInput,
-  Heading,
-  Icon,
-  Label,
-  Paragraph,
-  UnorderedList,
-} from '@amsterdam/design-system-react'
-import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
-import Link from 'next/link'
+import { Button, Field, FileInput, Heading, Label, Paragraph, UnorderedList } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { BackLink } from '../_components/BackLink'
 
 function Docs() {
   const { register, handleSubmit } = useForm()
@@ -26,13 +16,15 @@ function Docs() {
 
   return (
     <>
-      <Link className="ams-link-list__link ams-mb--sm" href="/signalen/contact-2">
-        <Icon svg={ChevronLeftIcon} size="level-5" />
+      <BackLink href="/signalen" className="ams-mb--xs">
         Vorige vraag
-      </Link>
+      </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
         <Heading>Melding openbare ruimte</Heading>
-        <Heading level={2}>Documenten</Heading>
+        <hgroup className="ams-card__heading-group">
+          <Heading level={2}>Documenten</Heading>
+          <Paragraph>Stap 3 van 3</Paragraph>
+        </hgroup>
         <Field>
           <Label htmlFor="files">Heeft u een bestand om toe te voegen? (niet verplicht)</Label>
           <div className="ams-mb--sm">
@@ -49,7 +41,7 @@ function Docs() {
           <FileInput id="files" aria-describedby="filesDescription" {...register('files')} />
         </Field>
         <div>
-          <Button type="submit">Volgende vraag</Button>
+          <Button type="submit">Verstuur melding</Button>
         </div>
       </form>
     </>

@@ -2,14 +2,13 @@
 
 'use client'
 
-import { Button, Column, ErrorMessage, FieldSet, Heading, Icon, Paragraph, Radio } from '@amsterdam/design-system-react'
-import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
-import Link from 'next/link'
+import { Button, Column, ErrorMessage, FieldSet, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useMemo } from 'react'
 import { useForm } from 'react-hook-form'
 import { addErrorCountToPageTitle } from '../_utils/addErrorCountToPageTitle'
 import { formatErrors } from '../_utils/formatErrors'
+import { BackLink } from '../_components/BackLink'
 
 function VulAan3() {
   const {
@@ -29,13 +28,15 @@ function VulAan3() {
 
   return (
     <>
-      <Link className="ams-link-list__link ams-mb--sm" href="/signalen/vul-aan-2">
-        <Icon svg={ChevronLeftIcon} size="level-5" />
+      <BackLink href="/signalen" className="ams-mb--xs">
         Vorige vraag
-      </Link>
+      </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
         <Heading>Melding openbare ruimte</Heading>
-        <Heading level={2}>Beschrijf uw melding</Heading>
+        <hgroup className="ams-card__heading-group">
+          <Heading level={2}>Beschrijf uw melding</Heading>
+          <Paragraph>Stap 1 van 3</Paragraph>
+        </hgroup>
         <FieldSet
           legend="Weet u wie de eigenaar is van het verkeerd geplaatste afval?"
           aria-describedby={errors.who ? 'whoError' : ''}

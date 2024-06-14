@@ -2,11 +2,10 @@
 
 'use client'
 
-import { Button, Column, FieldSet, Heading, Icon, Radio } from '@amsterdam/design-system-react'
-import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
-import Link from 'next/link'
+import { Button, Column, FieldSet, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { BackLink } from '../_components/BackLink'
 
 function VulAan1() {
   const { register, handleSubmit } = useForm()
@@ -17,13 +16,15 @@ function VulAan1() {
 
   return (
     <>
-      <Link className="ams-link-list__link ams-mb--sm" href="/signalen">
-        <Icon svg={ChevronLeftIcon} size="level-5" />
+      <BackLink href="/signalen" className="ams-mb--xs">
         Vorige vraag
-      </Link>
+      </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
         <Heading>Melding openbare ruimte</Heading>
-        <Heading level={2}>Beschrijf uw melding</Heading>
+        <hgroup className="ams-card__heading-group">
+          <Heading level={2}>Beschrijf uw melding</Heading>
+          <Paragraph>Stap 1 van 3</Paragraph>
+        </hgroup>
         <FieldSet legend="Wanneer heeft u de overlast? (niet verplicht)" role="radiogroup" style={{ display: 'grid' }}>
           <Column gap="extra-small">
             <Radio value="nu" {...register('when')}>
