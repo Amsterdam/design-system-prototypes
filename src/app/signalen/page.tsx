@@ -32,7 +32,6 @@ function SignalenHome() {
   })
 
   const router = useRouter()
-
   const onSubmit = () => router.push('/signalen/vul-aan-1')
 
   return (

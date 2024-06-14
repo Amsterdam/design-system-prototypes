@@ -55,7 +55,7 @@ function Question() {
                 <Label htmlFor="email">E-mail</Label>
                 <TextInput id="email" name="email" />
               </Field>
-              <Row as="div">
+              <Row>
                 <Field>
                   <Label htmlFor="country">Landnummer</Label>
                   <Select name="country">

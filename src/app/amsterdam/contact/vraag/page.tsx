@@ -48,6 +48,7 @@ function Question() {
               id="body"
               onChange={(e) => setTextareaLength(e.target.value.length)}
               rows={4}
+<<<<<<< HEAD
             />
             <FormFieldCharacterCounter length={textareaLength} maxLength={1000} />
           </Field>
@@ -61,6 +62,14 @@ function Question() {
               multiple
               name="bijlage"
             />
+=======
+            />
+            <FormFieldCharacterCounter length={textareaLength} maxLength={1000} />
+          </Field>
+          <Field>
+            <Label htmlFor="fileUpload">U kunt hier een bijlage toevoegen</Label>
+            <FileInput accept="image/jpeg,image/jpg,image/png,image/gif" id="fileUpload" multiple name="bijlage" />
+>>>>>>> 34990b01ecae7d7426062f5e9cae5da90873c790
           </Field>
           <div className="ams-form-navigation">
             <Button type="submit">Volgende</Button>
