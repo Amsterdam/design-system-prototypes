@@ -1,6 +1,6 @@
 'use client'
 
-import { Grid, Breadcrumb, Heading, Paragraph, AspectRatio, Column } from '@amsterdam/design-system-react'
+import { AspectRatio, Breadcrumb, Column, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
 import fatbikesImage from '../_assets/fatbikes.jpg'
@@ -12,9 +12,9 @@ function Nieuws() {
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink legacyBehavior passHref href="/amsterdam">
-              <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+              <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
             </NextLink>
-            <Breadcrumb.Item href="#">Nieuws</Breadcrumb.Item>
+            <Breadcrumb.Link href="#">Nieuws</Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>

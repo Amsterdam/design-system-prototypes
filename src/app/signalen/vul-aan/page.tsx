@@ -1,6 +1,16 @@
 'use client'
 
-import { Grid, Heading, Fieldset, Paragraph, Radio, Label, TextArea, Button } from '@amsterdam/design-system-react'
+import {
+  Button,
+  Field,
+  FieldSet,
+  Grid,
+  Heading,
+  Label,
+  Paragraph,
+  Radio,
+  TextArea,
+} from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { FormEvent } from 'react'
 
@@ -17,22 +27,18 @@ function VulAan() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Doe een melding</Heading>
-
           <Heading level={2}>Locatie en vragen</Heading>
-
-          <Fieldset legend="Waar is het?">
+          <FieldSet legend="Waar is het?">
             <Paragraph>KAART SELECTOR</Paragraph>
-          </Fieldset>
-
-          <Fieldset legend="Wanneer was het?">
+          </FieldSet>
+          <FieldSet legend="Wanneer was het?">
             <Radio id="nu">Nu</Radio>
             <Radio id="eerder">Eerder</Radio>
-          </Fieldset>
-
-          <div>
+          </FieldSet>
+          <Field>
             <Label htmlFor="where">Waar komt het afval vandaan, denkt u? (niet verplicht)</Label>
             <TextArea id="where" rows={4} />
-          </div>
+          </Field>
           <div className="ams-form-navigation">
             <Button type="submit">Volgende</Button>
           </div>

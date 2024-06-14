@@ -1,6 +1,6 @@
 'use client'
 
-import { Link, Column, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Column, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 function Bedankt() {

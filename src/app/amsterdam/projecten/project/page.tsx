@@ -1,15 +1,15 @@
 'use client'
 
 import {
-  Grid,
-  Breadcrumb,
-  Heading,
-  Paragraph,
-  Card,
-  Spotlight,
-  LinkList,
   AspectRatio,
+  Breadcrumb,
+  Card,
+  Grid,
+  Heading,
   Link,
+  LinkList,
+  Paragraph,
+  Spotlight,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
@@ -23,10 +23,10 @@ function Project() {
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink legacyBehavior passHref href="/amsterdam">
-              <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+              <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
             </NextLink>
             <NextLink legacyBehavior passHref href="/amsterdam/projecten">
-              <Breadcrumb.Item href="/amsterdam/projecten">Home</Breadcrumb.Item>
+              <Breadcrumb.Link href="/amsterdam/projecten">Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
         </Grid.Cell>

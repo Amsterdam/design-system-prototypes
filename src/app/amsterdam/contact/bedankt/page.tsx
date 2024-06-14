@@ -1,6 +1,6 @@
 'use client'
 
-import { Grid, Breadcrumb, Column, Heading, Paragraph, Link } from '@amsterdam/design-system-react'
+import { Breadcrumb, Column, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 function Bedankt() {
@@ -9,7 +9,7 @@ function Bedankt() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
           <NextLink legacyBehavior passHref href="/amsterdam">
-            <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
         <Column className="ams-mb--md" gap="small">

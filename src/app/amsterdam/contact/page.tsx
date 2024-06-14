@@ -1,6 +1,6 @@
 'use client'
 
-import { Grid, Breadcrumb, Heading, Fieldset, Radio, Paragraph, Link, Button } from '@amsterdam/design-system-react'
+import { Breadcrumb, Button, FieldSet, Grid, Heading, Link, Paragraph, Radio } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
 import { FormEvent } from 'react'
@@ -18,12 +18,12 @@ function Contact() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
           <NextLink legacyBehavior passHref href="/amsterdam">
-            <Breadcrumb.Item href="/amsterdam">Home</Breadcrumb.Item>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Contact</Heading>
-          <Fieldset legend="Waar gaat uw melding over?">
+          <FieldSet legend="Waar gaat uw melding over?">
             <Radio name="soort" value="vraag" defaultChecked>
               Vraag
             </Radio>
@@ -36,7 +36,7 @@ function Contact() {
             <Radio name="soort" value="idee" disabled>
               Idee of suggestie
             </Radio>
-          </Fieldset>
+          </FieldSet>
           <Paragraph size="small">
             U dient een klacht in als u vindt dat de gemeente Amsterdam u niet netjes heeft behandeld. Lees meer over de
             klachtenprocedure op{' '}

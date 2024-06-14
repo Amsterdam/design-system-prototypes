@@ -2,12 +2,23 @@
 
 'use client'
 
-import { Grid, Heading, Fieldset, Paragraph, Label, TextArea, Button } from '@amsterdam/design-system-react'
+import {
+  Button,
+  Field,
+  FileInput,
+  FormFieldCharacterCounter,
+  Grid,
+  Heading,
+  Label,
+  Paragraph,
+  TextArea,
+} from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { FormEvent } from 'react'
+import { FormEvent, useState } from 'react'
 
 function Contact() {
   const router = useRouter()
+  const [textareaLength, setTextareaLength] = useState(0)
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
@@ -19,29 +30,33 @@ function Contact() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Doe een melding</Heading>
-
           <Heading level={2}>Beschrijf uw melding</Heading>
-
-          <div>
-            <Label htmlFor="description">Waar gaat het om?</Label>
-            <Paragraph size="small">Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd</Paragraph>
-            <TextArea id="description" rows={4} />
-            <Paragraph size="small">8/1000 tekens</Paragraph>
-          </div>
-
-          <Fieldset legend="Foto's toevoegen (niet verplicht)">
-            <Paragraph size="small">Voeg een foto toe om de situatie te verduidelijken</Paragraph>
-            <input
-              type="file"
-              id="fileUpload"
-              data-testid="file-input-upload"
-              accept="image/jpeg,image/jpg,image/png,image/gif"
-              name="images"
-              multiple
-              aria-label="Selecteer een bestand"
+          <Field>
+            <Label htmlFor="body">Waar gaat het om?</Label>
+            <Paragraph id="bodyDescription" size="small">
+              Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd
+            </Paragraph>
+            <TextArea
+              aria-describedby="bodyDescription"
+              id="body"
+              onChange={(e) => setTextareaLength(e.target.value.length)}
+              rows={4}
             />
-            <label htmlFor="fileUpload">Selecteer een bestand</label>
-          </Fieldset>
+            <FormFieldCharacterCounter length={textareaLength} maxLength={1000} />
+          </Field>
+          <Field>
+            <Label htmlFor="fileUpload">Foto’s toevoegen (niet verplicht)</Label>
+            <Paragraph id="fileUploadDescription" size="small">
+              Voeg een foto toe om de situatie te verduidelijken.
+            </Paragraph>
+            <FileInput
+              accept="image/jpeg,image/jpg,image/png,image/gif"
+              aria-describedby="fileUploadDescription"
+              id="fileUpload"
+              multiple
+              name="images"
+            />
+          </Field>
           <div className="ams-form-navigation">
             <Button type="submit">Volgende</Button>
           </div>
