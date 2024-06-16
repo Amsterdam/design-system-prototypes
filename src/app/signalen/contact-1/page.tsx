@@ -76,6 +76,7 @@ function Contact1() {
               {errors.mail && <ErrorMessage id="mailError">{`${errors.mail.message}`}</ErrorMessage>}
               <TextInput
                 autoComplete="email"
+                autoCorrect="off" // Used by Safari
                 aria-describedby={errors.mail ? 'mailError' : undefined}
                 id="mail"
                 spellCheck="false"
