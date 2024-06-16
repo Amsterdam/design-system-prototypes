@@ -1,14 +1,29 @@
 /* eslint-disable react/jsx-props-no-spreading */
+// Validation sourced from https://github.com/frameless/gemeentevoorbeeld.nl/blob/main/packages/next-templates/src/utils/validation.ts
 
 'use client'
 
-import { Button, Column, Field, FieldSet, Heading, Label, Paragraph, TextInput } from '@amsterdam/design-system-react'
+import {
+  Button,
+  Column,
+  ErrorMessage,
+  Field,
+  FieldSet,
+  Heading,
+  Label,
+  Paragraph,
+  TextInput,
+} from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { BackLink } from '../_components/BackLink'
 
 function Contact1() {
-  const { register, handleSubmit } = useForm()
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
 
   const router = useRouter()
 
@@ -34,14 +49,50 @@ function Contact1() {
             uitleggen. Wij willen u dan graag even bellen. Of anders e-mailen wij u. Wij gebruiken uw telefoonnummer en
             e-mailadres alléén voor deze melding.
           </Paragraph>
-          <Column gap="extra-small">
+          <Column gap="small">
             <Field>
               <Label htmlFor="phone">Wat is uw telefoonnummer? (niet verplicht)</Label>
-              <TextInput type="tel" id="phone" {...register('phone')} />
+              {errors.phone && <ErrorMessage id="phoneError">{`${errors.phone.message}`}</ErrorMessage>}
+              <TextInput
+                autoComplete="tel"
+                aria-describedby={errors.mail ? 'phoneError' : undefined}
+                id="phone"
+                type="tel"
+                {...register('phone', {
+                  pattern: {
+                    value: /^\+?[0-9]+$/,
+                    message:
+                      'Het ingevulde telefoonnummer is niet toegestaan. Vul een telefoonnummer in, zoals bijvoorbeeld 06123456789 of +316123456789.',
+                  },
+                  maxLength: {
+                    value: 15,
+                    message: 'Het ingevulde telefoonnummer is niet toegestaan. Gebruik niet meer dan 15 tekens.',
+                  },
+                })}
+              />
             </Field>
             <Field>
               <Label htmlFor="mail">Wat is uw e-mailadres? (niet verplicht)</Label>
-              <TextInput type="email" id="mail" {...register('mail')} />
+              {errors.mail && <ErrorMessage id="mailError">{`${errors.mail.message}`}</ErrorMessage>}
+              <TextInput
+                autoComplete="email"
+                aria-describedby={errors.mail ? 'mailError' : undefined}
+                id="mail"
+                spellCheck="false"
+                type="email"
+                {...register('mail', {
+                  pattern: {
+                    value:
+                      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                    message:
+                      'Het ingevulde e-mailadres is niet toegestaan. Vul een e-mailadres in, zoals bijvoorbeeld hallo@voorbeeld.com.',
+                  },
+                  maxLength: {
+                    value: 200,
+                    message: 'Het ingevulde e-mailadres is niet toegestaan. Gebruik niet meer dan 200 tekens.',
+                  },
+                })}
+              />
             </Field>
           </Column>
         </FieldSet>
