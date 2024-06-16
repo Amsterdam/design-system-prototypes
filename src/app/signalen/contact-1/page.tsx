@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-props-no-spreading */
-// Validation sourced from https://github.com/frameless/gemeentevoorbeeld.nl/blob/main/packages/next-templates/src/utils/validation.ts
 
 'use client'
 
@@ -60,9 +59,10 @@ function Contact1() {
                 type="tel"
                 {...register('phone', {
                   pattern: {
-                    value: /^\+?[0-9]+$/,
+                    // Validation sourced from current Signals
+                    value: /^[ ()0-9+-]*$/,
                     message:
-                      'Het ingevulde telefoonnummer is niet toegestaan. Vul een telefoonnummer in, zoals bijvoorbeeld 06123456789 of +316123456789.',
+                      'Het ingevulde telefoonnummer is niet toegestaan. Vul een telefoonnummer in, zoals 06123456789 of +316123456789.',
                   },
                   maxLength: {
                     value: 15,
@@ -82,10 +82,11 @@ function Contact1() {
                 type="email"
                 {...register('mail', {
                   pattern: {
+                    // Validation sourced from https://github.com/frameless/gemeentevoorbeeld.nl/blob/main/packages/next-templates/src/utils/validation.ts
                     value:
                       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
                     message:
-                      'Het ingevulde e-mailadres is niet toegestaan. Vul een e-mailadres in, zoals bijvoorbeeld hallo@voorbeeld.com.',
+                      'Het ingevulde e-mailadres is niet toegestaan. Vul een e-mailadres in, zoals hallo@voorbeeld.com.',
                   },
                   maxLength: {
                     value: 200,
