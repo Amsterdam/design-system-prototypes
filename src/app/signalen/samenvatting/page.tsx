@@ -101,10 +101,10 @@ function Summary() {
           <Paragraph>Stap 4 van 4</Paragraph>
         </hgroup>
         <Paragraph>Controleer de onderstaande gegevens.</Paragraph>
-        <dl className="ams-summary-description-list">
+        <dl className="ams-summary-description-list ams-gap--sm">
           {questions.map(({ id, questionText, href }) => (
-            <Fragment key={id}>
-              <dt className="ams-summary-description-list__term">{questionText}</dt>
+            <div key={id}>
+              <dt className="ams-summary-description-list__term ams-mb--xs">{questionText}</dt>
               <div className="ams-summary-description-list__details-container">
                 <dd className="ams-summary-description-list__details" dir="auto">
                   {formatAnswer(id, formData) || 'Niet ingevuld'}
@@ -118,7 +118,7 @@ function Summary() {
                   </Link>
                 </dd>
               </div>
-            </Fragment>
+            </div>
           ))}
         </dl>
         <form onSubmit={handleSubmit(onSubmit)}>
