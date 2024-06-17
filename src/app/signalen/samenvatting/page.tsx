@@ -19,6 +19,7 @@ import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
 
 import '../_components/SummaryDescriptionList/summary-description-list.css'
+import './edit-link.css'
 
 const questions = [
   {
@@ -110,7 +111,7 @@ function Summary() {
                 </dd>
                 <dd className="ams-summary-description-list__details">
                   <Link href={href} legacyBehavior passHref>
-                    <ADSLink variant="inline">
+                    <ADSLink variant="inline" className="ams-edit-link">
                       Wijzig
                       <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
                     </ADSLink>
