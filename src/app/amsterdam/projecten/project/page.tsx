@@ -23,10 +23,10 @@ function Project() {
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink legacyBehavior passHref href="/amsterdam">
-              <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
+              <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
             <NextLink legacyBehavior passHref href="/amsterdam/projecten">
-              <Breadcrumb.Link href="/amsterdam/projecten">Home</Breadcrumb.Link>
+              <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
         </Grid.Cell>

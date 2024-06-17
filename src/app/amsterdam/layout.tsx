@@ -211,7 +211,7 @@ function Amsterdam({ children }) {
             <PageMenu>
               {footerLinks.map(({ href, label }) => (
                 <NextLink legacyBehavior href={href} passHref key={label}>
-                  <PageMenu.Link href={href}>{label}</PageMenu.Link>
+                  <PageMenu.Link>{label}</PageMenu.Link>
                 </NextLink>
               ))}
             </PageMenu>

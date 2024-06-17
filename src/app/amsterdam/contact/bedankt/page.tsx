@@ -9,7 +9,7 @@ function Bedankt() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
           <NextLink legacyBehavior passHref href="/amsterdam">
-            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
+            <Breadcrumb.Link>Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
         <Column className="ams-mb--md" gap="small">
@@ -24,7 +24,7 @@ function Bedankt() {
             mogelijk op.
           </Paragraph>
           <NextLink legacyBehavior passHref href="/amsterdam">
-            <Link href="/amsterdam">Ga terug naar de homepage.</Link>
+            <Link>Ga terug naar de homepage.</Link>
           </NextLink>
         </Column>
       </Grid.Cell>

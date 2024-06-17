@@ -14,13 +14,13 @@ export default function Page() {
           </Heading>
           <LinkList>
             <Link legacyBehavior href="/amopis" passHref>
-              <LinkList.Link href="/amopis">Amopis</LinkList.Link>
+              <LinkList.Link>Amopis</LinkList.Link>
             </Link>
             <Link legacyBehavior href="/amsterdam" passHref>
-              <LinkList.Link href="/amsterdam">Amsterdam</LinkList.Link>
+              <LinkList.Link>Amsterdam</LinkList.Link>
             </Link>
             <Link legacyBehavior href="/signalen" passHref>
-              <LinkList.Link href="/signalen">Signalen</LinkList.Link>
+              <LinkList.Link>Signalen</LinkList.Link>
             </Link>
           </LinkList>
         </Grid.Cell>
