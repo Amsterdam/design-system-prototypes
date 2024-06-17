@@ -19,6 +19,7 @@ import { useFormContext } from '../FormContext'
 
 import '../_components/SummaryDescriptionList/summary-description-list.css'
 import './edit-link.css'
+import { capitalizeFirstLetter } from '../_utils/capitalizeFirstLetter'
 
 const questions = [
   {
@@ -30,6 +31,16 @@ const questions = [
     id: 'when',
     questionText: 'Wanneer heeft u de overlast?',
     href: '/signalen/vul-aan-1',
+  },
+  {
+    id: 'whenDay',
+    questionText: 'Welke dag was het?',
+    href: '/signalen/vul-aan-1b',
+  },
+  {
+    id: 'whenTimeHour',
+    questionText: 'Hoe laat was het?',
+    href: '/signalen/vul-aan-1b',
   },
   {
     id: 'type',
@@ -63,12 +74,14 @@ const questions = [
   },
 ]
 
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1)
-}
-
 const formatAnswer = (id: string, formData) => {
   switch (id) {
+    case 'whenTimeHour':
+      return (
+        formData.whenTimeHour &&
+        formData.whenTimeMinute &&
+        `${formData.whenTimeHour}:${String(formData.whenTimeMinute).padStart(2, '0')}`
+      )
     case 'files':
       return formData?.files && formData?.files['0']?.name
     case 'permission':
@@ -101,24 +114,29 @@ function Summary() {
         </hgroup>
         <Paragraph>Controleer de onderstaande gegevens.</Paragraph>
         <dl className="ams-summary-description-list ams-gap--sm">
-          {questions.map(({ id, questionText, href }) => (
-            <div key={id}>
-              <dt className="ams-summary-description-list__term ams-mb--xs">{questionText}</dt>
-              <div className="ams-summary-description-list__details-container">
-                <dd className="ams-summary-description-list__details" dir="auto">
-                  {formatAnswer(id, formData) || 'Niet ingevuld'}
-                </dd>
-                <dd className="ams-summary-description-list__details">
-                  <Link href={href} legacyBehavior passHref>
-                    <ADSLink variant="inline" className="ams-edit-link">
-                      Wijzig
-                      <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
-                    </ADSLink>
-                  </Link>
-                </dd>
+          {questions.map(({ id, questionText, href }) => {
+            // Don't show whenX questions if when is now
+            if ((id === 'whenDay' || id === 'whenTimeHour') && formData.when === 'nu') return undefined
+
+            return (
+              <div key={id}>
+                <dt className="ams-summary-description-list__term ams-mb--xs">{questionText}</dt>
+                <div className="ams-summary-description-list__details-container">
+                  <dd className="ams-summary-description-list__details" dir="auto">
+                    {formatAnswer(id, formData) || 'Niet ingevuld'}
+                  </dd>
+                  <dd className="ams-summary-description-list__details">
+                    <Link href={href} legacyBehavior passHref>
+                      <ADSLink variant="inline" className="ams-edit-link">
+                        Wijzig
+                        <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
+                      </ADSLink>
+                    </Link>
+                  </dd>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </dl>
         <form onSubmit={handleSubmit(onSubmit)}>
           <input type="hidden" value="true" {...register('answers-checked')} />
