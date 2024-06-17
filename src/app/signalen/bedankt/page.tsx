@@ -2,8 +2,25 @@
 
 import { Heading, Paragraph, Link as ADSLink, Column, Grid } from '@amsterdam/design-system-react'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import { useFormContext } from '../FormContext'
 
 function Thanks() {
+  const { updateFormData } = useFormContext()
+
+  useEffect(() => {
+    // Reset form data
+    updateFormData({
+      body: null,
+      when: null,
+      type: null,
+      who: null,
+      phone: null,
+      mail: null,
+      permission: null,
+    })
+  }, [])
+
   return (
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
       <Column>

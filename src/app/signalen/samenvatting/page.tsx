@@ -81,24 +81,12 @@ const formatAnswer = (id: string, formData) => {
 }
 
 function Summary() {
-  const { formData, updateFormData } = useFormContext()
+  const { formData } = useFormContext()
 
   const { register, handleSubmit } = useForm()
 
   const router = useRouter()
-  const onSubmit = () => {
-    // Reset form data
-    updateFormData({
-      body: null,
-      when: null,
-      type: null,
-      who: null,
-      phone: null,
-      mail: null,
-      permission: null,
-    })
-    router.push('/signalen/bedankt')
-  }
+  const onSubmit = () => router.push('/signalen/bedankt')
 
   return (
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 9 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
@@ -117,7 +105,7 @@ function Summary() {
             <Fragment key={id}>
               <dt className="ams-summary-description-list__term">{questionText}</dt>
               <div className="ams-summary-description-list__details-container">
-                <dd className="ams-summary-description-list__details">
+                <dd className="ams-summary-description-list__details" dir="auto">
                   {formatAnswer(id, formData) || 'Niet ingevuld'}
                 </dd>
                 <dd className="ams-summary-description-list__details">
