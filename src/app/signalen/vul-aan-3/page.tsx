@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Button, Column, ErrorMessage, FieldSet, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
+import { Button, Column, ErrorMessage, FieldSet, Grid, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
@@ -42,7 +42,7 @@ function VulAan3() {
   }, [formattedErrors, documentTitle])
 
   return (
-    <>
+    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
       <BackLink href="/signalen/vul-aan-2" className="ams-mb--xs">
         Vorige vraag
       </BackLink>
@@ -50,7 +50,7 @@ function VulAan3() {
         <Heading>Melding openbare ruimte</Heading>
         <hgroup className="ams-card__heading-group">
           <Heading level={2}>Beschrijf uw melding</Heading>
-          <Paragraph>Stap 1 van 3</Paragraph>
+          <Paragraph>Stap 1 van 4</Paragraph>
         </hgroup>
         <FormErrorList errors={formattedErrors} />
         <FieldSet
@@ -94,7 +94,7 @@ function VulAan3() {
           <Button type="submit">Volgende vraag</Button>
         </div>
       </form>
-    </>
+    </Grid.Cell>
   )
 }
 

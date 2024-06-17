@@ -8,6 +8,7 @@ import {
   ErrorMessage,
   Field,
   FieldSet,
+  Grid,
   Heading,
   Label,
   Paragraph,
@@ -52,7 +53,7 @@ function Contact1() {
   }, [formattedErrors, documentTitle])
 
   return (
-    <>
+    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
       <BackLink href="/signalen/vul-aan-3" className="ams-mb--xs">
         Vorige vraag
       </BackLink>
@@ -60,7 +61,7 @@ function Contact1() {
         <Heading>Melding openbare ruimte</Heading>
         <hgroup className="ams-card__heading-group">
           <Heading level={2}>Gegevens</Heading>
-          <Paragraph>Stap 2 van 3</Paragraph>
+          <Paragraph>Stap 2 van 4</Paragraph>
         </hgroup>
         <FormErrorList errors={formattedErrors} />
         <FieldSet
@@ -131,7 +132,7 @@ function Contact1() {
           <Button type="submit">Volgende vraag</Button>
         </div>
       </form>
-    </>
+    </Grid.Cell>
   )
 }
 

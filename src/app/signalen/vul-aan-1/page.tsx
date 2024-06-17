@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Button, Column, FieldSet, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
+import { Button, Column, FieldSet, Grid, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { BackLink } from '../_components/BackLink'
@@ -20,7 +20,7 @@ function VulAan1() {
   }
 
   return (
-    <>
+    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
       <BackLink href="/signalen" className="ams-mb--xs">
         Vorige vraag
       </BackLink>
@@ -28,7 +28,7 @@ function VulAan1() {
         <Heading>Melding openbare ruimte</Heading>
         <hgroup className="ams-card__heading-group">
           <Heading level={2}>Beschrijf uw melding</Heading>
-          <Paragraph>Stap 1 van 3</Paragraph>
+          <Paragraph>Stap 1 van 4</Paragraph>
         </hgroup>
         <FieldSet legend="Wanneer heeft u de overlast? (niet verplicht)" role="radiogroup" style={{ display: 'grid' }}>
           <Column gap="extra-small">
@@ -44,7 +44,7 @@ function VulAan1() {
           <Button type="submit">Volgende vraag</Button>
         </div>
       </form>
-    </>
+    </Grid.Cell>
   )
 }
 
