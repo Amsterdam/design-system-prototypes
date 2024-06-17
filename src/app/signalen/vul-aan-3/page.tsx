@@ -4,12 +4,13 @@
 
 import { Button, Column, ErrorMessage, FieldSet, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { useMemo } from 'react'
+import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { addErrorCountToPageTitle } from '../_utils/addErrorCountToPageTitle'
 import { formatErrors } from '../_utils/formatErrors'
 import { BackLink } from '../_components/BackLink'
 import { FormErrorList } from '../_components/FormErrorList'
+import { useFormContext } from '../FormContext'
 
 function VulAan3() {
   const {
@@ -17,15 +18,28 @@ function VulAan3() {
     handleSubmit,
     formState: { errors },
   } = useForm()
+  const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()
 
-  const onSubmit = () => router.push('/signalen/contact-1')
+  const onSubmit = (data) => {
+    updateFormData(data)
+    router.push('/signalen/contact-1')
+  }
 
   // Add error count to doc title
-  const initialDocTitle = useMemo(() => document.title, [])
   const formattedErrors = formatErrors(errors)
-  addErrorCountToPageTitle(formattedErrors, initialDocTitle)
+  const [documentTitle, setDocumentTitle] = useState<string>()
+
+  useEffect(() => {
+    setDocumentTitle(document.title)
+  }, [])
+
+  useEffect(() => {
+    if (documentTitle) {
+      addErrorCountToPageTitle(formattedErrors, documentTitle)
+    }
+  }, [formattedErrors, documentTitle])
 
   return (
     <>
@@ -53,9 +67,10 @@ function VulAan3() {
           {errors.who && <ErrorMessage className="ams-mb--xs" id="whoError">{`${errors.who.message}`}</ErrorMessage>}
           <Column gap="extra-small">
             <Radio
-              value="ja"
-              invalid={Boolean(errors.who)}
               aria-required="true"
+              defaultChecked={formData.who === 'ja'}
+              invalid={Boolean(errors.who)}
+              value="ja"
               {...register('who', {
                 required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
               })}
@@ -63,9 +78,10 @@ function VulAan3() {
               Ja
             </Radio>
             <Radio
-              value="nee"
-              invalid={Boolean(errors.who)}
               aria-required="true"
+              defaultChecked={formData.who === 'nee'}
+              invalid={Boolean(errors.who)}
+              value="nee"
               {...register('who', {
                 required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
               })}

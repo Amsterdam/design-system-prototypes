@@ -14,13 +14,16 @@ import {
   TextArea,
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { useMemo } from 'react'
+import { useEffect, useState } from 'react'
 import { useForm, useWatch } from 'react-hook-form'
 import { formatErrors } from './_utils/formatErrors'
 import { addErrorCountToPageTitle } from './_utils/addErrorCountToPageTitle'
 import { FormErrorList } from './_components/FormErrorList'
+import { useFormContext } from './FormContext'
 
 function SignalenHome() {
+  const { formData, updateFormData } = useFormContext()
+
   const {
     control,
     register,
@@ -31,16 +34,28 @@ function SignalenHome() {
   const body = useWatch({
     control,
     name: 'body',
-    defaultValue: '',
+    defaultValue: formData.body || '',
   })
 
   const router = useRouter()
-  const onSubmit = () => router.push('/signalen/vul-aan-1')
+  const onSubmit = (data) => {
+    updateFormData(data)
+    router.push('/signalen/vul-aan-1')
+  }
 
   // Add error count to doc title
-  const initialDocTitle = useMemo(() => document.title, [])
   const formattedErrors = formatErrors(errors)
-  addErrorCountToPageTitle(formattedErrors, initialDocTitle)
+  const [documentTitle, setDocumentTitle] = useState<string>()
+
+  useEffect(() => {
+    setDocumentTitle(document.title)
+  }, [])
+
+  useEffect(() => {
+    if (documentTitle) {
+      addErrorCountToPageTitle(formattedErrors, documentTitle)
+    }
+  }, [formattedErrors, documentTitle])
 
   return (
     <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
@@ -59,6 +74,7 @@ function SignalenHome() {
         <TextArea
           aria-describedby={`bodyDescription${errors.body ? ' bodyError' : ''}`}
           aria-required="true"
+          defaultValue={formData.body}
           id="body"
           invalid={Boolean(errors.body)}
           rows={4}

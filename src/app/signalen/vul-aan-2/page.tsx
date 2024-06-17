@@ -6,13 +6,18 @@ import { Button, Field, Heading, Label, Paragraph, TextArea } from '@amsterdam/d
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { BackLink } from '../_components/BackLink'
+import { useFormContext } from '../FormContext'
 
 function VulAan2() {
   const { register, handleSubmit } = useForm()
+  const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()
 
-  const onSubmit = () => router.push('/signalen/vul-aan-3')
+  const onSubmit = (data) => {
+    updateFormData(data)
+    router.push('/signalen/vul-aan-3')
+  }
 
   return (
     <>
@@ -31,7 +36,13 @@ function VulAan2() {
             U helpt ons door zoveel mogelijk informatie te geven over het soort afval: huisafval, bedrijfsafval,
             grofvuil of dozen en papier.
           </Paragraph>
-          <TextArea aria-describedby="typeDescription" id="type" rows={4} {...register('type')} />
+          <TextArea
+            aria-describedby="typeDescription"
+            defaultValue={formData.type}
+            id="type"
+            rows={4}
+            {...register('type')}
+          />
         </Field>
         <div>
           <Button type="submit">Volgende vraag</Button>

@@ -6,13 +6,18 @@ import { Button, Checkbox, FieldSet, Heading, Paragraph } from '@amsterdam/desig
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { BackLink } from '../_components/BackLink'
+import { useFormContext } from '../FormContext'
 
 function Contact2() {
   const { register, handleSubmit } = useForm()
+  const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()
 
-  const onSubmit = () => router.push('/signalen/documenten')
+  const onSubmit = (data) => {
+    updateFormData(data)
+    router.push('/signalen/documenten')
+  }
 
   return (
     <>
@@ -31,7 +36,7 @@ function Contact2() {
             melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u dat
             goed vindt.
           </Paragraph>
-          <Checkbox id="permission" {...register('permission')}>
+          <Checkbox id="permission" {...register('permission')} defaultChecked={formData.permission}>
             Ja, ik geef de gemeente Amsterdam toestemming om mijn melding door te sturen naar andere organisaties als de
             melding niet voor de gemeente is bestemd.
           </Checkbox>

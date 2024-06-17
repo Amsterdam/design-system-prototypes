@@ -6,13 +6,18 @@ import { Button, Column, FieldSet, Heading, Paragraph, Radio } from '@amsterdam/
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { BackLink } from '../_components/BackLink'
+import { useFormContext } from '../FormContext'
 
 function VulAan1() {
   const { register, handleSubmit } = useForm()
+  const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()
 
-  const onSubmit = () => router.push('/signalen/vul-aan-2')
+  const onSubmit = (data) => {
+    updateFormData(data)
+    router.push('/signalen/vul-aan-2')
+  }
 
   return (
     <>
@@ -27,10 +32,10 @@ function VulAan1() {
         </hgroup>
         <FieldSet legend="Wanneer heeft u de overlast? (niet verplicht)" role="radiogroup" style={{ display: 'grid' }}>
           <Column gap="extra-small">
-            <Radio value="nu" {...register('when')}>
+            <Radio value="nu" {...register('when')} defaultChecked={formData.when === 'nu'}>
               Nu
             </Radio>
-            <Radio value="eerder" {...register('when')}>
+            <Radio value="eerder" {...register('when')} defaultChecked={formData.when === 'eerder'}>
               Eerder
             </Radio>
           </Column>

@@ -15,7 +15,12 @@ import {
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { useEffect, useState } from 'react'
 import { BackLink } from '../_components/BackLink'
+import { FormErrorList } from '../_components/FormErrorList'
+import { addErrorCountToPageTitle } from '../_utils/addErrorCountToPageTitle'
+import { formatErrors } from '../_utils/formatErrors'
+import { useFormContext } from '../FormContext'
 
 function Contact1() {
   const {
@@ -23,10 +28,28 @@ function Contact1() {
     handleSubmit,
     formState: { errors },
   } = useForm()
+  const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()
 
-  const onSubmit = () => router.push('/signalen/contact-2')
+  const onSubmit = (data) => {
+    updateFormData(data)
+    router.push('/signalen/contact-2')
+  }
+
+  // Add error count to doc title
+  const formattedErrors = formatErrors(errors)
+  const [documentTitle, setDocumentTitle] = useState<string>()
+
+  useEffect(() => {
+    setDocumentTitle(document.title)
+  }, [])
+
+  useEffect(() => {
+    if (documentTitle) {
+      addErrorCountToPageTitle(formattedErrors, documentTitle)
+    }
+  }, [formattedErrors, documentTitle])
 
   return (
     <>
@@ -39,6 +62,7 @@ function Contact1() {
           <Heading level={2}>Gegevens</Heading>
           <Paragraph>Stap 2 van 3</Paragraph>
         </hgroup>
+        <FormErrorList errors={formattedErrors} />
         <FieldSet
           aria-describedby="contactDescription"
           legend="Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?"
@@ -55,6 +79,7 @@ function Contact1() {
               <TextInput
                 autoComplete="tel"
                 aria-describedby={errors.mail ? 'phoneError' : undefined}
+                defaultValue={formData.phone}
                 id="phone"
                 type="tel"
                 {...register('phone', {
@@ -75,9 +100,11 @@ function Contact1() {
               <Label htmlFor="mail">Wat is uw e-mailadres? (niet verplicht)</Label>
               {errors.mail && <ErrorMessage id="mailError">{`${errors.mail.message}`}</ErrorMessage>}
               <TextInput
+                autoCapitalize="none"
                 autoComplete="email"
                 autoCorrect="off" // Used by Safari
                 aria-describedby={errors.mail ? 'mailError' : undefined}
+                defaultValue={formData.mail}
                 id="mail"
                 spellCheck="false"
                 type="email"

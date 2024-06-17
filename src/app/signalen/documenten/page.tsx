@@ -6,13 +6,27 @@ import { Button, Field, FileInput, Heading, Label, Paragraph, UnorderedList } fr
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { BackLink } from '../_components/BackLink'
+import { useFormContext } from '../FormContext'
 
 function Docs() {
   const { register, handleSubmit } = useForm()
+  const { updateFormData } = useFormContext()
 
   const router = useRouter()
 
-  const onSubmit = () => router.push('/signalen/bedankt')
+  const onSubmit = () => {
+    // Reset form data
+    updateFormData({
+      body: null,
+      when: null,
+      type: null,
+      who: null,
+      phone: null,
+      mail: null,
+      permission: null,
+    })
+    router.push('/signalen/bedankt')
+  }
 
   return (
     <>
