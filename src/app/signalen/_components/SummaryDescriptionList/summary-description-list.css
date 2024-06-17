@@ -13,14 +13,20 @@
 }
 
 .ams-summary-description-list__term {
+  display: grid;
   font-weight: var(--ams-text-font-weight-bold);
   font-size: var(--ams-description-list-font-size);
+  grid-template-columns: 2fr 1fr;
 }
 
 .ams-summary-description-list__details-container {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: 2fr 1fr;
+  gap: 0.5rem;
+
+  @media screen and (min-width: 36rem) {
+    gap: 2rem;
+    grid-template-columns: 2fr 1fr;
+  }
 }
 
 .ams-summary-description-list__details {

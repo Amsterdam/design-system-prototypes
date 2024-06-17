@@ -3,7 +3,15 @@
 'use client'
 
 import { Fragment } from 'react'
-import { Heading, Paragraph, Column, Button, Link as ADSLink, Grid } from '@amsterdam/design-system-react'
+import {
+  Heading,
+  Paragraph,
+  Column,
+  Button,
+  Link as ADSLink,
+  Grid,
+  VisuallyHidden,
+} from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import Link from 'next/link'
@@ -17,49 +25,41 @@ const questions = [
     id: 'body',
     questionText: 'Waar gaat het om?',
     href: '/signalen',
-    hrefLabel: 'Wijzig uw melding',
   },
   {
     id: 'when',
     questionText: 'Wanneer heeft u de overlast?',
     href: '/signalen/vul-aan-1',
-    hrefLabel: 'Wijzig vraag',
   },
   {
     id: 'type',
     questionText: 'Welk afval is verkeerd neergezet?',
     href: '/signalen/vul-aan-2',
-    hrefLabel: 'Wijzig vraag',
   },
   {
     id: 'who',
     questionText: 'Weet u wie de eigenaar is van het verkeerd geplaatste afval?',
     href: '/signalen/vul-aan-3',
-    hrefLabel: 'Wijzig vraag',
   },
   {
     id: 'phone',
     questionText: 'Wat is uw telefoonnummer?',
     href: '/signalen/contact-1',
-    hrefLabel: 'Wijzig vraag',
   },
   {
     id: 'mail',
     questionText: 'Wat is uw e-mailadres?',
     href: '/signalen/contact-1',
-    hrefLabel: 'Wijzig vraag',
   },
   {
     id: 'permission',
     questionText: 'Mogen we uw melding doorsturen?',
     href: '/signalen/contact-2',
-    hrefLabel: 'Wijzig vraag',
   },
   {
     id: 'files',
     questionText: 'Heeft u een bestand om toe te voegen?',
     href: '/signalen/documenten',
-    hrefLabel: 'Wijzig vraag',
   },
 ]
 
@@ -113,7 +113,7 @@ function Summary() {
         </hgroup>
         <Paragraph>Controleer de onderstaande gegevens.</Paragraph>
         <dl className="ams-summary-description-list">
-          {questions.map(({ id, questionText, href, hrefLabel }) => (
+          {questions.map(({ id, questionText, href }) => (
             <Fragment key={id}>
               <dt className="ams-summary-description-list__term">{questionText}</dt>
               <div className="ams-summary-description-list__details-container">
@@ -122,7 +122,10 @@ function Summary() {
                 </dd>
                 <dd className="ams-summary-description-list__details">
                   <Link href={href} legacyBehavior passHref>
-                    <ADSLink variant="inline">{hrefLabel}</ADSLink>
+                    <ADSLink variant="inline">
+                      Wijzig
+                      <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
+                    </ADSLink>
                   </Link>
                 </dd>
               </div>
