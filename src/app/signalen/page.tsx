@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable jsx-a11y/label-has-associated-control */
 
 'use client'
 
@@ -22,7 +21,7 @@ import { addErrorCountToPageTitle } from './_utils/addErrorCountToPageTitle'
 import { FormErrorList } from './_components/FormErrorList'
 import { useFormContext } from './FormContext'
 
-function SignalenHome() {
+function Home() {
   const { formData, updateFormData } = useFormContext()
 
   const {
@@ -98,4 +97,4 @@ function SignalenHome() {
   )
 }
 
-export default SignalenHome
+export default Home

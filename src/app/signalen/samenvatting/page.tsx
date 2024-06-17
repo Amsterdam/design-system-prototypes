@@ -2,7 +2,6 @@
 
 'use client'
 
-import { Fragment } from 'react'
 import {
   Heading,
   Paragraph,
