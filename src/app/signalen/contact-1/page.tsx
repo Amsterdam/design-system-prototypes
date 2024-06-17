@@ -81,6 +81,7 @@ function Contact1() {
                 aria-describedby={errors.mail ? 'phoneError' : undefined}
                 defaultValue={formData.phone}
                 id="phone"
+                style={{ maxInlineSize: '10em' }}
                 type="tel"
                 {...register('phone', {
                   pattern: {
@@ -106,6 +107,7 @@ function Contact1() {
                 aria-describedby={errors.mail ? 'mailError' : undefined}
                 defaultValue={formData.mail}
                 id="mail"
+                style={{ maxInlineSize: '19em' }}
                 spellCheck="false"
                 type="email"
                 {...register('mail', {
