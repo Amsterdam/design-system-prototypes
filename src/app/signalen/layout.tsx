@@ -53,7 +53,7 @@ function Signalen({ children }) {
       <Footer>
         <Footer.Top>
           <VisuallyHidden>
-            <Heading>Colofon</Heading>
+            <Heading inverseColor>Colofon</Heading>
           </VisuallyHidden>
           <Grid gapVertical="large" paddingVertical="medium">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>

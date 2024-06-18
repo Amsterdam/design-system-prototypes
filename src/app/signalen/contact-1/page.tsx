@@ -79,7 +79,7 @@ function Contact1() {
               {errors.phone && <ErrorMessage id="phoneError">{`${errors.phone.message}`}</ErrorMessage>}
               <TextInput
                 autoComplete="tel"
-                aria-describedby={errors.mail ? 'phoneError' : undefined}
+                aria-describedby={errors.phone ? 'phoneError' : undefined}
                 defaultValue={formData.phone}
                 id="phone"
                 style={{ maxInlineSize: '10em' }}
