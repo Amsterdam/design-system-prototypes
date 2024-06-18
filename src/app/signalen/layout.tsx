@@ -43,9 +43,7 @@ function Signalen({ children }) {
         </Grid.Cell>
       </Grid>
       <main id="main">
-        <FormProvider>
-          <Grid paddingVertical="medium">{children}</Grid>
-        </FormProvider>
+        <FormProvider>{children}</FormProvider>
         <Suspense fallback={null}>
           <ResetFocusOnNavigation />
         </Suspense>

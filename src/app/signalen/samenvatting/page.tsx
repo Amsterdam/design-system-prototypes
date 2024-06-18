@@ -102,46 +102,48 @@ function Summary() {
   const onSubmit = () => router.push('/signalen/bedankt')
 
   return (
-    <Grid.Cell span={{ narrow: 4, medium: 6, wide: 9 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-      <BackLink href="/signalen/documenten" className="ams-mb--xs">
-        Vorige vraag
-      </BackLink>
-      <Column gap="medium">
-        <Heading>Melding openbare ruimte</Heading>
-        <hgroup className="ams-card__heading-group">
-          <Heading level={2}>Samenvatting</Heading>
-          <Paragraph>Stap 4 van 4</Paragraph>
-        </hgroup>
-        <Paragraph>Controleer de onderstaande gegevens.</Paragraph>
-        <dl className="ams-summary-description-list ams-gap--sm">
-          {questions.map(({ id, questionText, href }) => {
-            // Don't show whenX questions if when is now
-            if ((id === 'whenDay' || id === 'whenTimeHour') && formData.when === 'nu') return undefined
+    <Grid paddingVertical="medium">
+      <Grid.Cell span={{ narrow: 4, medium: 6, wide: 9 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
+        <BackLink href="/signalen/documenten" className="ams-mb--xs">
+          Vorige vraag
+        </BackLink>
+        <Column gap="medium">
+          <Heading>Melding openbare ruimte</Heading>
+          <hgroup className="ams-card__heading-group">
+            <Heading level={2}>Samenvatting</Heading>
+            <Paragraph>Stap 4 van 4</Paragraph>
+          </hgroup>
+          <Paragraph>Controleer de onderstaande gegevens.</Paragraph>
+          <dl className="ams-summary-description-list ams-gap--sm">
+            {questions.map(({ id, questionText, href }) => {
+              // Don't show whenX questions if when is now
+              if ((id === 'whenDay' || id === 'whenTimeHour') && formData.when === 'nu') return undefined
 
-            return (
-              <div key={id} className="ams-summary-description-list__container">
-                <dt className="ams-summary-description-list__term ams-mb--xs">{questionText}</dt>
-                <dd className="ams-summary-description-list__details" dir="auto">
-                  {formatAnswer(id, formData) || 'Niet ingevuld'}
-                </dd>
-                <dd className="ams-summary-description-list__link">
-                  <Link href={href} legacyBehavior passHref>
-                    <ADSLink variant="inline" className="ams-edit-link">
-                      Wijzig
-                      <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
-                    </ADSLink>
-                  </Link>
-                </dd>
-              </div>
-            )
-          })}
-        </dl>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <input type="hidden" value="true" {...register('answers-checked')} />
-          <Button type="submit">Verstuur melding</Button>
-        </form>
-      </Column>
-    </Grid.Cell>
+              return (
+                <div key={id} className="ams-summary-description-list__container">
+                  <dt className="ams-summary-description-list__term ams-mb--xs">{questionText}</dt>
+                  <dd className="ams-summary-description-list__details" dir="auto">
+                    {formatAnswer(id, formData) || 'Niet ingevuld'}
+                  </dd>
+                  <dd className="ams-summary-description-list__link">
+                    <Link href={href} legacyBehavior passHref>
+                      <ADSLink variant="inline" className="ams-edit-link">
+                        Wijzig
+                        <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
+                      </ADSLink>
+                    </Link>
+                  </dd>
+                </div>
+              )
+            })}
+          </dl>
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <input type="hidden" value="true" {...register('answers-checked')} />
+            <Button type="submit">Verstuur melding</Button>
+          </form>
+        </Column>
+      </Grid.Cell>
+    </Grid>
   )
 }
 
