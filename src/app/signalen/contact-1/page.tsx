@@ -16,12 +16,11 @@ import {
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
-import { useEffect, useState } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { FormErrorList } from '../_components/FormErrorList'
-import { addErrorCountToPageTitle } from '../_utils/addErrorCountToPageTitle'
 import { formatErrors } from '../_utils/formatErrors'
 import { useFormContext } from '../FormContext'
+import { useAddErrorCountToPageTitle } from '../_hooks/useAddErrorCountToPageTitle'
 
 function Contact1() {
   const {
@@ -38,19 +37,9 @@ function Contact1() {
     router.push('/signalen/contact-2')
   }
 
-  // Add error count to doc title
   const formattedErrors = formatErrors(errors)
-  const [documentTitle, setDocumentTitle] = useState<string>()
 
-  useEffect(() => {
-    setDocumentTitle(document.title)
-  }, [])
-
-  useEffect(() => {
-    if (documentTitle) {
-      addErrorCountToPageTitle(formattedErrors, documentTitle)
-    }
-  }, [formattedErrors, documentTitle])
+  useAddErrorCountToPageTitle(formattedErrors)
 
   return (
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>

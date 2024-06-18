@@ -4,13 +4,12 @@
 
 import { Button, Column, ErrorMessage, FieldSet, Grid, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { addErrorCountToPageTitle } from '../_utils/addErrorCountToPageTitle'
 import { formatErrors } from '../_utils/formatErrors'
 import { BackLink } from '../_components/BackLink'
 import { FormErrorList } from '../_components/FormErrorList'
 import { useFormContext } from '../FormContext'
+import { useAddErrorCountToPageTitle } from '../_hooks/useAddErrorCountToPageTitle'
 
 function VulAan3() {
   const {
@@ -27,19 +26,9 @@ function VulAan3() {
     router.push('/signalen/contact-1')
   }
 
-  // Add error count to doc title
   const formattedErrors = formatErrors(errors)
-  const [documentTitle, setDocumentTitle] = useState<string>()
 
-  useEffect(() => {
-    setDocumentTitle(document.title)
-  }, [])
-
-  useEffect(() => {
-    if (documentTitle) {
-      addErrorCountToPageTitle(formattedErrors, documentTitle)
-    }
-  }, [formattedErrors, documentTitle])
+  useAddErrorCountToPageTitle(formattedErrors)
 
   return (
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
