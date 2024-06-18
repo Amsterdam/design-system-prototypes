@@ -119,21 +119,19 @@ function Summary() {
             if ((id === 'whenDay' || id === 'whenTimeHour') && formData.when === 'nu') return undefined
 
             return (
-              <div key={id}>
+              <div key={id} className="ams-summary-description-list__container">
                 <dt className="ams-summary-description-list__term ams-mb--xs">{questionText}</dt>
-                <div className="ams-summary-description-list__details-container">
-                  <dd className="ams-summary-description-list__details" dir="auto">
-                    {formatAnswer(id, formData) || 'Niet ingevuld'}
-                  </dd>
-                  <dd className="ams-summary-description-list__details">
-                    <Link href={href} legacyBehavior passHref>
-                      <ADSLink variant="inline" className="ams-edit-link">
-                        Wijzig
-                        <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
-                      </ADSLink>
-                    </Link>
-                  </dd>
-                </div>
+                <dd className="ams-summary-description-list__details" dir="auto">
+                  {formatAnswer(id, formData) || 'Niet ingevuld'}
+                </dd>
+                <dd className="ams-summary-description-list__link">
+                  <Link href={href} legacyBehavior passHref>
+                    <ADSLink variant="inline" className="ams-edit-link">
+                      Wijzig
+                      <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
+                    </ADSLink>
+                  </Link>
+                </dd>
               </div>
             )
           })}

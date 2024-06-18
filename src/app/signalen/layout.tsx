@@ -52,9 +52,9 @@ function Signalen({ children }) {
       </main>
       <Footer>
         <Footer.Top>
-          <VisuallyHidden>
-            <Heading inverseColor>Colofon</Heading>
-          </VisuallyHidden>
+          <Heading inverseColor>
+            <VisuallyHidden>Colofon</VisuallyHidden>
+          </Heading>
           <Grid gapVertical="large" paddingVertical="medium">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
               <Column as="section" gap="extra-small">
@@ -76,9 +76,9 @@ function Signalen({ children }) {
           </Grid>
         </Footer.Top>
         <Footer.Bottom>
-          <VisuallyHidden>
-            <Heading level={2}>Over deze website</Heading>
-          </VisuallyHidden>
+          <Heading level={2}>
+            <VisuallyHidden>Over deze website</VisuallyHidden>
+          </Heading>
           <Grid paddingVertical="small">
             <Grid.Cell span="all">
               <PageMenu>

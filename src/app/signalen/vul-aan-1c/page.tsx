@@ -41,7 +41,7 @@ function VulAan1() {
               style={{ maxInlineSize: '7rem' }}
               {...register('whenTimeHour')}
             >
-              <Select.Option value="" />
+              <Select.Option value="">--</Select.Option>
               {hourOptions.map((hour) => (
                 <Select.Option key={hour} value={hour}>
                   {hour}
@@ -57,7 +57,7 @@ function VulAan1() {
               style={{ maxInlineSize: '7rem' }}
               {...register('whenTimeMinute')}
             >
-              <Select.Option value="" />
+              <Select.Option value="">--</Select.Option>
               {minuteOptions.map((minute) => (
                 <Select.Option key={minute} value={minute}>
                   {minute}
