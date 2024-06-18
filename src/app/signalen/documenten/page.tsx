@@ -41,12 +41,12 @@ function Docs() {
         </hgroup>
         <Field>
           <Label htmlFor="files">Heeft u een bestand om toe te voegen? (niet verplicht)</Label>
-          <div className="ams-mb--sm">
+          <div className="ams-mb--sm" id="filesDescription">
             <Paragraph size="small">
               Voeg een foto of bestand (PDF) toe om de situatie te verduidelijken. Verwijder alle persoonsgegevens van u
               en derden.
             </Paragraph>
-            <UnorderedList id="filesDescription" size="small">
+            <UnorderedList size="small">
               <UnorderedList.Item>U kunt maximaal drie bestanden tegelijk toevoegen. </UnorderedList.Item>
               <UnorderedList.Item>Toegestane bestandtypes: jpg, jpeg, png en pdf.</UnorderedList.Item>
               <UnorderedList.Item>Een bestand mag maximaal 20 MB groot zijn.</UnorderedList.Item>
