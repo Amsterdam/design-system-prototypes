@@ -16,7 +16,7 @@ function VulAan1() {
 
   const onSubmit = (data) => {
     updateFormData(data)
-    router.push(data.when === 'nu' ? '/signalen/vul-aan-2' : '/signalen/vul-aan-1b')
+    router.push(data.when === 'eerder' ? '/signalen/vul-aan-1b' : '/signalen/vul-aan-2')
   }
 
   return (

@@ -21,7 +21,10 @@ function VulAan2() {
 
   return (
     <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-      <BackLink href={formData.when === 'nu' ? '/signalen/vul-aan-1' : '/signalen/vul-aan-1c'} className="ams-mb--xs">
+      <BackLink
+        href={formData.when === 'eerder' ? '/signalen/vul-aan-1c' : '/signalen/vul-aan-1'}
+        className="ams-mb--xs"
+      >
         Vorige vraag
       </BackLink>
       <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
