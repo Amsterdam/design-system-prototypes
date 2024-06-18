@@ -40,7 +40,7 @@ const questions = [
   {
     id: 'whenTimeHour',
     questionText: 'Hoe laat was het?',
-    href: '/signalen/vul-aan-1b',
+    href: '/signalen/vul-aan-1c',
   },
   {
     id: 'type',
