@@ -9,9 +9,9 @@ import { Icon } from '@amsterdam/design-system-react'
 import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
 import { forwardRef } from 'react'
 import type { AnchorHTMLAttributes, ForwardedRef } from 'react'
+import Link from 'next/link'
 
 import './back-link.css'
-import Link from 'next/link'
 
 export type BackLinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'placeholder'>
 
