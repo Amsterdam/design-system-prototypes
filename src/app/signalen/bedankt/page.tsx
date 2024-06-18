@@ -62,9 +62,11 @@ function Thanks() {
           <Heading level={3} size="level-4">
             Wilt u nog een andere melding doen?
           </Heading>
-          <Link href="/signalen" legacyBehavior passHref>
-            <ADSLink>Doe een melding</ADSLink>
-          </Link>
+          <div>
+            <Link href="/signalen" legacyBehavior passHref>
+              <ADSLink>Doe een melding</ADSLink>
+            </Link>
+          </div>
         </Column>
       </Column>
     </Grid.Cell>
