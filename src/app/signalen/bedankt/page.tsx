@@ -28,9 +28,12 @@ function Thanks() {
         <Column gap="small">
           <Heading level={2}>Bedankt</Heading>
           <Paragraph size="small">
-            Bedankt voor uw melding. Wij hebben uw melding ontvangen op {new Date(Date.now()).toLocaleDateString('nl')}{' '}
-            om {new Date(Date.now()).toLocaleTimeString('nl', { hour: 'numeric', minute: 'numeric' })}. Uw meldnummer is
-            1977916.
+            Bedankt voor uw melding. Wij hebben uw melding ontvangen op{' '}
+            <time dateTime={new Date(Date.now()).toLocaleDateString('nl')}>
+              {new Date(Date.now()).toLocaleDateString('nl', { day: 'numeric', month: 'long', year: 'numeric' })}
+            </time>{' '}
+            om <time>{new Date(Date.now()).toLocaleTimeString('nl', { hour: 'numeric', minute: 'numeric' })}</time>. Uw
+            meldnummer is 1977916.
           </Paragraph>
 
           <Heading level={3} size="level-4">
