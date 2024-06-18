@@ -13,6 +13,9 @@ function Thanks() {
     updateFormData({
       body: null,
       when: null,
+      whenDay: null,
+      whenTimeHour: null,
+      whenTimeMinute: null,
       type: null,
       who: null,
       phone: null,
