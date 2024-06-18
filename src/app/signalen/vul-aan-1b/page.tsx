@@ -25,6 +25,10 @@ const optionLabel = (daysBack) => {
   return capitalizeFirstLetter(date.toLocaleDateString('nl', { weekday: 'long', day: 'numeric', month: 'long' }))
 }
 
+const dayOptions = Array.from({ length: 6 }, (_, i) => i + 1)
+const hourOptions = Array.from(Array(24).keys())
+const minuteOptions = Array.from(Array(12).keys()).map((minute) => minute * 5)
+
 function VulAan1() {
   const { register, handleSubmit } = useForm()
   const { formData, updateFormData } = useFormContext()
@@ -52,24 +56,16 @@ function VulAan1() {
             <Radio value="vandaag" {...register('whenDay')} defaultChecked={formData.whenDay === 'vandaag'}>
               Vandaag
             </Radio>
-            <Radio value={optionLabel(1)} {...register('whenDay')} defaultChecked={formData.whenDay === optionLabel(1)}>
-              {optionLabel(1)}
-            </Radio>
-            <Radio value={optionLabel(2)} {...register('whenDay')} defaultChecked={formData.whenDay === optionLabel(2)}>
-              {optionLabel(2)}
-            </Radio>
-            <Radio value={optionLabel(3)} {...register('whenDay')} defaultChecked={formData.whenDay === optionLabel(3)}>
-              {optionLabel(3)}
-            </Radio>
-            <Radio value={optionLabel(4)} {...register('whenDay')} defaultChecked={formData.whenDay === optionLabel(4)}>
-              {optionLabel(4)}
-            </Radio>
-            <Radio value={optionLabel(5)} {...register('whenDay')} defaultChecked={formData.whenDay === optionLabel(5)}>
-              {optionLabel(5)}
-            </Radio>
-            <Radio value={optionLabel(6)} {...register('whenDay')} defaultChecked={formData.whenDay === optionLabel(6)}>
-              {optionLabel(6)}
-            </Radio>
+            {dayOptions.map((dayBack) => (
+              <Radio
+                key={dayBack}
+                value={optionLabel(dayBack)}
+                {...register('whenDay')}
+                defaultChecked={formData.whenDay === optionLabel(dayBack)}
+              >
+                {optionLabel(dayBack)}
+              </Radio>
+            ))}
           </Column>
         </FieldSet>
         <FieldSet legend="Hoe laat was het? (niet verplicht)" style={{ display: 'grid' }}>
@@ -81,30 +77,11 @@ function VulAan1() {
               {...register('whenTimeHour')}
             >
               <Select.Option value="" />
-              <Select.Option>0</Select.Option>
-              <Select.Option>1</Select.Option>
-              <Select.Option>2</Select.Option>
-              <Select.Option>3</Select.Option>
-              <Select.Option>4</Select.Option>
-              <Select.Option>5</Select.Option>
-              <Select.Option>6</Select.Option>
-              <Select.Option>7</Select.Option>
-              <Select.Option>8</Select.Option>
-              <Select.Option>9</Select.Option>
-              <Select.Option>10</Select.Option>
-              <Select.Option>11</Select.Option>
-              <Select.Option>12</Select.Option>
-              <Select.Option>13</Select.Option>
-              <Select.Option>14</Select.Option>
-              <Select.Option>15</Select.Option>
-              <Select.Option>16</Select.Option>
-              <Select.Option>17</Select.Option>
-              <Select.Option>18</Select.Option>
-              <Select.Option>19</Select.Option>
-              <Select.Option>20</Select.Option>
-              <Select.Option>21</Select.Option>
-              <Select.Option>22</Select.Option>
-              <Select.Option>23</Select.Option>
+              {hourOptions.map((hour) => (
+                <Select.Option key={hour} value={hour}>
+                  {hour}
+                </Select.Option>
+              ))}
             </Select>
             <span className="ams-paragraph" id="uur">
               uur
@@ -116,18 +93,11 @@ function VulAan1() {
               {...register('whenTimeMinute')}
             >
               <Select.Option value="" />
-              <Select.Option>0</Select.Option>
-              <Select.Option>5</Select.Option>
-              <Select.Option>10</Select.Option>
-              <Select.Option>15</Select.Option>
-              <Select.Option>20</Select.Option>
-              <Select.Option>25</Select.Option>
-              <Select.Option>30</Select.Option>
-              <Select.Option>35</Select.Option>
-              <Select.Option>40</Select.Option>
-              <Select.Option>45</Select.Option>
-              <Select.Option>50</Select.Option>
-              <Select.Option>55</Select.Option>
+              {minuteOptions.map((minute) => (
+                <Select.Option key={minute} value={minute}>
+                  {minute}
+                </Select.Option>
+              ))}
             </Select>
             <span aria-hidden className="ams-paragraph">
               min
