@@ -55,13 +55,13 @@ function VulAan3() {
         <FormErrorList errors={formattedErrors} />
         <FieldSet
           legend="Weet u wie de eigenaar is van het verkeerd geplaatste afval?"
-          aria-describedby={errors.who ? 'whoError' : ''}
+          aria-describedby={`whoDescription${errors.who ? ' whoError' : ''}`}
           role="radiogroup"
           aria-required="true"
           invalid={Boolean(errors.who)}
           style={{ display: 'grid' }}
         >
-          <Paragraph size="small" className="ams-mb--xs">
+          <Paragraph id="whoDescription" size="small" className="ams-mb--xs">
             Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?
           </Paragraph>
           {errors.who && <ErrorMessage className="ams-mb--xs" id="whoError">{`${errors.who.message}`}</ErrorMessage>}
