@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from 'react'
 import {
   Column,
   Footer,
@@ -15,6 +16,7 @@ import {
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { FormProvider } from './FormContext'
+import { ResetFocusOnNavigation } from './_components/ResetFocusOnNavigation/ResetFocusOnNavigation'
 
 function Signalen({ children }) {
   return (
@@ -44,6 +46,9 @@ function Signalen({ children }) {
         <FormProvider>
           <Grid paddingVertical="medium">{children}</Grid>
         </FormProvider>
+        <Suspense fallback={null}>
+          <ResetFocusOnNavigation />
+        </Suspense>
       </main>
       <Footer>
         <Footer.Top>
