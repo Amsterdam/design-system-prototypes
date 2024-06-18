@@ -25,7 +25,7 @@ function Signalen({ children }) {
         <Grid.Cell span="all">
           <SkipLink href="#main">Direct naar inhoud</SkipLink>
           <Header
-            logoLink="signalen" // TODO: je kunt hier geen Next Link gebruiken
+            logoLink="/design-system-prototypes/signalen" // TODO: je kunt hier geen Next Link gebruiken
             logoLinkTitle="Naar de homepage van Signalen Amsterdam"
             links={
               <PageMenu alignEnd>
