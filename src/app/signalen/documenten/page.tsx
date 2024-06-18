@@ -52,7 +52,7 @@ function Docs() {
               <UnorderedList.Item>Een bestand mag maximaal 20 MB groot zijn.</UnorderedList.Item>
             </UnorderedList>
           </div>
-          <FileInput aria-describedby="filesDescription" id="files" {...register('files')} />
+          <FileInput aria-describedby="filesDescription" id="files" accept="image/*,.pdf" {...register('files')} />
         </Field>
         <div>
           <Button type="submit">Volgende vraag</Button>
