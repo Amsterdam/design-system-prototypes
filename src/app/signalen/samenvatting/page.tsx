@@ -38,7 +38,7 @@ const questions = [
     href: '/signalen/vul-aan-1b',
   },
   {
-    id: 'whenTimeHour',
+    id: 'whenTime',
     questionText: 'Hoe laat was het?',
     href: '/signalen/vul-aan-1c',
   },
@@ -76,12 +76,6 @@ const questions = [
 
 const formatAnswer = (id: string, formData) => {
   switch (id) {
-    case 'whenTimeHour':
-      return (
-        formData.whenTimeHour &&
-        formData.whenTimeMinute &&
-        `${formData.whenTimeHour}:${String(formData.whenTimeMinute).padStart(2, '0')}`
-      )
     case 'files':
       return formData?.files && formData?.files['0']?.name
     case 'permission':
@@ -117,7 +111,7 @@ function Summary() {
           <dl className="ams-summary-description-list ams-gap--sm">
             {questions.map(({ id, questionText, href }) => {
               // Don't show whenX questions if when is now
-              if ((id === 'whenDay' || id === 'whenTimeHour') && formData.when === 'nu') return undefined
+              if ((id === 'whenDay' || id === 'whenTime') && formData.when === 'nu') return undefined
 
               return (
                 <div key={id} className="ams-summary-description-list__container">
