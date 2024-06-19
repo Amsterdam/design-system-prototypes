@@ -31,7 +31,11 @@ function Contact2() {
             <Heading level={2}>Gegevens</Heading>
             <Paragraph>Stap 2 van 4</Paragraph>
           </hgroup>
-          <FieldSet aria-describedby="permissionDescription" legend="Mogen we uw melding doorsturen? (niet verplicht)">
+          <FieldSet
+            id="permissionGroup"
+            aria-labelledby="permissionGroup permissionDescription"
+            legend="Mogen we uw melding doorsturen? (niet verplicht)"
+          >
             <Paragraph className="ams-mb--sm" id="permissionDescription" size="small">
               Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
               melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u
