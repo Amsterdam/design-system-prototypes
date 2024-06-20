@@ -59,7 +59,7 @@ function Zoeken() {
       <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
         <Breadcrumb>
           <NextLink legacyBehavior passHref href="/amsterdam">
-            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
+            <Breadcrumb.Link>Home</Breadcrumb.Link>
           </NextLink>
           <Breadcrumb.Link href="#">Zoekresultaten</Breadcrumb.Link>
         </Breadcrumb>

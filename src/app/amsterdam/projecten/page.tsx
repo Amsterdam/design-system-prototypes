@@ -23,7 +23,7 @@ function Projecten() {
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink legacyBehavior passHref href="/amsterdam">
-              <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
+              <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
         </Grid.Cell>
@@ -46,9 +46,7 @@ function Projecten() {
           <LinkList>
             {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
               <NextLink legacyBehavior passHref href="/amsterdam/projecten/project">
-                <LinkList.Link href="/amsterdam/projecten/project" key={district}>
-                  {district}
-                </LinkList.Link>
+                <LinkList.Link key={district}>{district}</LinkList.Link>
               </NextLink>
             ))}
           </LinkList>

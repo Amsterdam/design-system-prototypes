@@ -25,16 +25,16 @@ function Amopis({ children }: { children: React.ReactNode }) {
               <Grid.Cell span="all">
                 <PageMenu>
                   <Link legacyBehavior href="/amopis" passHref>
-                    <PageMenu.Link href="/amopis">Kerngegevens</PageMenu.Link>
+                    <PageMenu.Link>Kerngegevens</PageMenu.Link>
                   </Link>
                   <Link legacyBehavior href="/amopis/ramingen" passHref>
-                    <PageMenu.Link href="/amopis/ramingen">Ramingen</PageMenu.Link>
+                    <PageMenu.Link>Ramingen</PageMenu.Link>
                   </Link>
                   <PageMenu.Link href="#">E-mail je vraag of feedback</PageMenu.Link>
                   <PageMenu.Link href="#">Bekijk veelgestelde vragen</PageMenu.Link>
                   <PageMenu.Link href="#">Bekijk releasebeschrijving</PageMenu.Link>
                   <Link legacyBehavior href="/" passHref>
-                    <PageMenu.Link href="/">Prototypes</PageMenu.Link>
+                    <PageMenu.Link>Prototypes</PageMenu.Link>
                   </Link>
                 </PageMenu>
               </Grid.Cell>
