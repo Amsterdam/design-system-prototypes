@@ -1,11 +1,11 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
+/* eslint-disable react/jsx-props-no-spreading */
 
 'use client'
 
 import {
   Button,
+  ErrorMessage,
   Field,
-  FileInput,
   FormFieldCharacterCounter,
   Grid,
   Heading,
@@ -14,51 +14,73 @@ import {
   TextArea,
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { FormEvent, useState } from 'react'
+import { useForm, useWatch } from 'react-hook-form'
+import { formatErrors } from './_utils/formatErrors'
+import { FormErrorList } from './_components/FormErrorList'
+import { useFormContext } from './FormContext'
+import { useAddErrorCountToPageTitle } from './_hooks/useAddErrorCountToPageTitle'
 
-function Contact() {
+function Home() {
+  const { formData, updateFormData } = useFormContext()
+
+  const {
+    control,
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm()
+
+  const body = useWatch({
+    control,
+    name: 'body',
+    defaultValue: formData.body || '',
+  })
+
   const router = useRouter()
-  const [textareaLength, setTextareaLength] = useState(0)
-
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault()
-    router.push('/signalen/vul-aan')
+  const onSubmit = (data) => {
+    updateFormData(data)
+    router.push('/signalen/vul-aan-1')
   }
 
+  const formattedErrors = formatErrors(errors)
+
+  useAddErrorCountToPageTitle(formattedErrors)
+
   return (
-    <Grid paddingBottom="medium">
+    <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <form className="ams-gap--md" onSubmit={handleSubmit}>
-          <Heading>Doe een melding</Heading>
-          <Heading level={2}>Beschrijf uw melding</Heading>
-          <Field>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+          <Heading>Melding openbare ruimte</Heading>
+          <hgroup className="ams-card__heading-group">
+            <Heading level={2}>Beschrijf uw melding</Heading>
+            <Paragraph>Stap 1 van 4</Paragraph>
+          </hgroup>
+          <FormErrorList errors={formattedErrors} />
+          <Field invalid={Boolean(errors.body)}>
             <Label htmlFor="body">Waar gaat het om?</Label>
             <Paragraph id="bodyDescription" size="small">
-              Typ geen persoonsgegevens in deze omschrijving, dit wordt apart gevraagd
+              Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.
             </Paragraph>
+            {errors.body && <ErrorMessage id="bodyError">{`${errors.body.message}`}</ErrorMessage>}
             <TextArea
-              aria-describedby="bodyDescription"
+              aria-describedby={`bodyDescription${errors.body ? ' bodyError' : ''}`}
+              aria-required="true"
+              defaultValue={formData.body}
               id="body"
-              onChange={(e) => setTextareaLength(e.target.value.length)}
+              invalid={Boolean(errors.body)}
               rows={4}
+              {...register('body', {
+                required: 'Geef aan waar uw melding over gaat.',
+                maxLength: {
+                  value: 1000,
+                  message: 'Beschrijf uw melding in minder dan 1000 tekens.',
+                },
+              })}
             />
-            <FormFieldCharacterCounter length={textareaLength} maxLength={1000} />
+            <FormFieldCharacterCounter length={body.length} maxLength={1000} />
           </Field>
-          <Field>
-            <Label htmlFor="fileUpload">Foto’s toevoegen (niet verplicht)</Label>
-            <Paragraph id="fileUploadDescription" size="small">
-              Voeg een foto toe om de situatie te verduidelijken.
-            </Paragraph>
-            <FileInput
-              accept="image/jpeg,image/jpg,image/png,image/gif"
-              aria-describedby="fileUploadDescription"
-              id="fileUpload"
-              multiple
-              name="images"
-            />
-          </Field>
-          <div className="ams-form-navigation">
-            <Button type="submit">Volgende</Button>
+          <div>
+            <Button type="submit">Volgende vraag</Button>
           </div>
         </form>
       </Grid.Cell>
@@ -66,4 +88,4 @@ function Contact() {
   )
 }
 
-export default Contact
+export default Home
