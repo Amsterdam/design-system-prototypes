@@ -1,34 +1,77 @@
 'use client'
 
-import { Column, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
+import { Heading, Paragraph, Link, Column, Grid } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+import { useEffect } from 'react'
+import { useFormContext } from '../FormContext'
 
-function Bedankt() {
+function Thanks() {
+  const { updateFormData } = useFormContext()
+
+  useEffect(() => {
+    // Reset form data
+    updateFormData({
+      body: null,
+      when: null,
+      whenDay: null,
+      whenTime: null,
+      type: null,
+      who: null,
+      phone: null,
+      mail: null,
+      permission: null,
+    })
+  }, [])
+
   return (
-    <Grid paddingBottom="medium">
+    <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <Column>
-          <Heading>Bedankt!</Heading>
-          <Paragraph>
-            Uw melding is bij ons bekend onder nummer: SIG-14022. Hebt u een e-mailadres ingevuld? Dan ontvangt u een
-            e-mail met alle gegevens van uw melding.
-          </Paragraph>
+          <Heading>Melding openbare ruimte</Heading>
+          <Column gap="small">
+            <Heading level={2}>Bedankt</Heading>
+            <Paragraph size="small">
+              Bedankt voor uw melding. Wij hebben uw melding ontvangen op{' '}
+              <time dateTime={new Date(Date.now()).toLocaleDateString('nl')}>
+                {new Date(Date.now()).toLocaleDateString('nl', { day: 'numeric', month: 'long', year: 'numeric' })}
+              </time>{' '}
+              om <time>{new Date(Date.now()).toLocaleTimeString('nl', { hour: 'numeric', minute: 'numeric' })}</time>.
+              Uw meldnummer is 1977916.
+            </Paragraph>
 
-          <Heading level={2}>Wat doen we met uw melding?</Heading>
-          <Paragraph>
-            U hoort binnen 3 werkdagen wat we met uw melding hebben gedaan. Dringende meldingen pakken wij zo snel
-            mogelijk op.
-          </Paragraph>
+            <Heading level={3} size="level-4">
+              Wat doen we met uw melding?
+            </Heading>
+            <Paragraph size="small">Meldingen pakken we binnen 3 werkdagen op.</Paragraph>
 
-          <Heading level={2}>Wilt u nog een andere melding doen?</Heading>
+            <Heading level={3} size="level-4">
+              Vragen of meer informatie?{' '}
+            </Heading>
+            <Paragraph size="small">
+              Neem dan contact met ons op via{' '}
+              <Link href="tel:14020" variant="inline">
+                14 020
+              </Link>
+              . Vermeld hierbij alstublieft uw meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
+              <Link variant="inline" href="https://www.amsterdam.nl/">
+                amsterdam.nl
+              </Link>
+              .
+            </Paragraph>
 
-          <NextLink legacyBehavior passHref href="/signalen">
-            <Link href="/signalen">Doe een melding</Link>
-          </NextLink>
+            <Heading level={3} size="level-4">
+              Wilt u nog een andere melding doen?
+            </Heading>
+            <div>
+              <NextLink href="/signalen" legacyBehavior passHref>
+                <Link>Doe een melding</Link>
+              </NextLink>
+            </div>
+          </Column>
         </Column>
       </Grid.Cell>
     </Grid>
   )
 }
 
-export default Bedankt
+export default Thanks

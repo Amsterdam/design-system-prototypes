@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from 'react'
 import {
   Column,
   Footer,
@@ -13,6 +14,8 @@ import {
   SkipLink,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+import { FormProvider } from './FormContext'
+import { ResetFocusOnNavigation } from './_components/ResetFocusOnNavigation/ResetFocusOnNavigation'
 
 function Signalen({ children }) {
   return (
@@ -21,12 +24,12 @@ function Signalen({ children }) {
         <Grid.Cell span="all">
           <SkipLink href="#main">Direct naar inhoud</SkipLink>
           <Header
-            logoLink="signalen" // TODO: je kunt hier geen Next Link gebruiken
+            logoLink="/design-system-prototypes/signalen" // TODO: je kunt hier geen Next Link gebruiken
             logoLinkTitle="Naar de homepage van Signalen Amsterdam"
             links={
               <PageMenu alignEnd>
-                <NextLink href="/signalen/beschrijf" legacyBehavior passHref>
-                  <PageMenu.Link href="/signalen/beschrijf">Doe een melding</PageMenu.Link>
+                <NextLink href="/signalen" legacyBehavior passHref>
+                  <PageMenu.Link>Doe een melding</PageMenu.Link>
                 </NextLink>
                 <PageMenu.Link href="#">Meldingenkaart</PageMenu.Link>
                 <PageMenu.Link href="#">Mijn meldingen</PageMenu.Link>
@@ -38,7 +41,12 @@ function Signalen({ children }) {
           />
         </Grid.Cell>
       </Grid>
-      <main id="main">{children}</main>
+      <main id="main">
+        <FormProvider>{children}</FormProvider>
+        <Suspense fallback={null}>
+          <ResetFocusOnNavigation />
+        </Suspense>
+      </main>
       <Footer>
         <Footer.Top>
           <Heading inverseColor className="ams-visually-hidden">

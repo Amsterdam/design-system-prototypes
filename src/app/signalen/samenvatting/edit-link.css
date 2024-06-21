@@ -1,0 +1,7 @@
+.ams-edit-link:visited {
+  color: var(--ams-link-color);
+}
+
+.ams-edit-link:hover {
+  color: var(--ams-link-hover-color);
+}
