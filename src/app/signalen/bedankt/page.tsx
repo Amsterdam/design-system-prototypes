@@ -1,7 +1,7 @@
 'use client'
 
-import { Heading, Paragraph, Link as ADSLink, Column, Grid } from '@amsterdam/design-system-react'
-import Link from 'next/link'
+import { Heading, Paragraph, Link, Column, Grid } from '@amsterdam/design-system-react'
+import NextLink from 'next/link'
 import { useEffect } from 'react'
 import { useFormContext } from '../FormContext'
 
@@ -49,13 +49,13 @@ function Thanks() {
             </Heading>
             <Paragraph size="small">
               Neem dan contact met ons op via{' '}
-              <ADSLink href="tel:14020" variant="inline">
+              <Link href="tel:14020" variant="inline">
                 14 020
-              </ADSLink>
+              </Link>
               . Vermeld hierbij alstublieft uw meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
-              <ADSLink variant="inline" href="https://www.amsterdam.nl/">
+              <Link variant="inline" href="https://www.amsterdam.nl/">
                 amsterdam.nl
-              </ADSLink>
+              </Link>
               .
             </Paragraph>
 
@@ -63,9 +63,9 @@ function Thanks() {
               Wilt u nog een andere melding doen?
             </Heading>
             <div>
-              <Link href="/signalen" legacyBehavior passHref>
-                <ADSLink>Doe een melding</ADSLink>
-              </Link>
+              <NextLink href="/signalen" legacyBehavior passHref>
+                <Link>Doe een melding</Link>
+              </NextLink>
             </div>
           </Column>
         </Column>

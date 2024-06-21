@@ -2,18 +2,10 @@
 
 'use client'
 
-import {
-  Heading,
-  Paragraph,
-  Column,
-  Button,
-  Link as ADSLink,
-  Grid,
-  VisuallyHidden,
-} from '@amsterdam/design-system-react'
+import { Heading, Paragraph, Column, Button, Link, Grid, VisuallyHidden } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
-import Link from 'next/link'
+import NextLink from 'next/link'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
 
@@ -120,12 +112,12 @@ function Summary() {
                     {formatAnswer(id, formData) || 'Niet ingevuld'}
                   </dd>
                   <dd className="ams-summary-description-list__link">
-                    <Link href={href} legacyBehavior passHref>
-                      <ADSLink variant="inline" className="ams-edit-link">
+                    <NextLink href={href} legacyBehavior passHref>
+                      <Link variant="inline" className="ams-edit-link">
                         Wijzig
                         <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
-                      </ADSLink>
-                    </Link>
+                      </Link>
+                    </NextLink>
                   </dd>
                 </div>
               )
