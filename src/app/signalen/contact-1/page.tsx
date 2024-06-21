@@ -64,7 +64,7 @@ function Contact1() {
               en e-mailadres alléén voor deze melding.
             </Paragraph>
             <Column gap="small">
-              <Field>
+              <Field invalid={Boolean(errors.phone)}>
                 <Label htmlFor="phone">Wat is uw telefoonnummer? (niet verplicht)</Label>
                 {errors.phone && <ErrorMessage id="phoneError">{`${errors.phone.message}`}</ErrorMessage>}
                 <TextInput
@@ -72,6 +72,7 @@ function Contact1() {
                   aria-describedby={errors.phone ? 'phoneError' : undefined}
                   defaultValue={formData.phone}
                   id="phone"
+                  invalid={Boolean(errors.phone)}
                   style={{ maxInlineSize: '10em' }}
                   type="tel"
                   {...register('phone', {
@@ -88,7 +89,7 @@ function Contact1() {
                   })}
                 />
               </Field>
-              <Field>
+              <Field invalid={Boolean(errors.mail)}>
                 <Label htmlFor="mail">Wat is uw e-mailadres? (niet verplicht)</Label>
                 {errors.mail && <ErrorMessage id="mailError">{`${errors.mail.message}`}</ErrorMessage>}
                 <TextInput
@@ -98,6 +99,7 @@ function Contact1() {
                   aria-describedby={errors.mail ? 'mailError' : undefined}
                   defaultValue={formData.mail}
                   id="mail"
+                  invalid={Boolean(errors.mail)}
                   style={{ maxInlineSize: '19em' }}
                   spellCheck="false"
                   type="email"
