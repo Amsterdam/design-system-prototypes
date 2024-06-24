@@ -12,7 +12,6 @@ import {
   Paragraph,
   Screen,
   SkipLink,
-  VisuallyHidden,
 } from '@amsterdam/design-system-react'
 import { ChattingIcon, LoginIcon, PhoneIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
@@ -127,9 +126,9 @@ function Amsterdam({ children }) {
         <main id="main">{children}</main>
         <Footer>
           <Footer.Top>
-            <VisuallyHidden>
-              <Heading>Colofon</Heading>
-            </VisuallyHidden>
+            <Heading inverseColor className="ams-visually-hidden">
+              Colofon
+            </Heading>
             <Grid gapVertical="large" paddingVertical="medium">
               <Grid.Cell span={3}>
                 <Column gap="extra-small">
@@ -206,6 +205,9 @@ function Amsterdam({ children }) {
             </Grid>
           </Footer.Top>
         </Footer>
+        <Heading level={2} className="ams-visually-hidden">
+          Sitemap
+        </Heading>
         <Grid paddingVertical="small">
           <Grid.Cell span="all">
             <PageMenu>

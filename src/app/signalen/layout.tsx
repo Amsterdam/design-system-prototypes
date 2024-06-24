@@ -12,7 +12,6 @@ import {
   Paragraph,
   Screen,
   SkipLink,
-  VisuallyHidden,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { FormProvider } from './FormContext'
@@ -50,8 +49,8 @@ function Signalen({ children }) {
       </main>
       <Footer>
         <Footer.Top>
-          <Heading inverseColor>
-            <VisuallyHidden>Colofon</VisuallyHidden>
+          <Heading inverseColor className="ams-visually-hidden">
+            Colofon
           </Heading>
           <Grid gapVertical="large" paddingVertical="medium">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
@@ -74,8 +73,8 @@ function Signalen({ children }) {
           </Grid>
         </Footer.Top>
         <Footer.Bottom>
-          <Heading level={2}>
-            <VisuallyHidden>Over deze website</VisuallyHidden>
+          <Heading level={2} className="ams-visually-hidden">
+            Over deze website
           </Heading>
           <Grid paddingVertical="small">
             <Grid.Cell span="all">
