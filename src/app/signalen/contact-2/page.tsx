@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Button, Checkbox, FieldSet, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Button, Checkbox, Column, FieldSet, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { BackLink } from '../_components/BackLink'
@@ -25,12 +25,14 @@ function Contact2() {
         <BackLink href="/signalen/contact-1" className="ams-mb--xs">
           Vorige vraag
         </BackLink>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-card__heading-group">
             <Heading level={2}>Gegevens</Heading>
             <Paragraph>Stap 2 van 4</Paragraph>
           </hgroup>
+        </Column>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet
             id="permissionGroup"
             aria-labelledby="permissionGroup permissionDescription"

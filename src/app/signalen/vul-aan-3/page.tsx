@@ -36,13 +36,15 @@ function VulAan3() {
         <BackLink href="/signalen/vul-aan-2" className="ams-mb--xs">
           Vorige vraag
         </BackLink>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-card__heading-group">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
           <FormErrorList errors={formattedErrors} />
+        </Column>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet
             legend="Weet u wie de eigenaar is van het verkeerd geplaatste afval?"
             aria-describedby={`whoDescription${errors.who ? ' whoError' : ''}`}

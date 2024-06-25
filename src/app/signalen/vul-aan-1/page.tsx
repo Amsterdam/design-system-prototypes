@@ -25,12 +25,14 @@ function VulAan1() {
         <BackLink href="/signalen" className="ams-mb--xs">
           Vorige vraag
         </BackLink>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-card__heading-group">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
+        </Column>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet
             legend="Wanneer heeft u de overlast? (niet verplicht)"
             role="radiogroup"

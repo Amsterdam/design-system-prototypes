@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Button, Field, Grid, Heading, Label, Paragraph, TextArea } from '@amsterdam/design-system-react'
+import { Button, Column, Field, Grid, Heading, Label, Paragraph, TextArea } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { BackLink } from '../_components/BackLink'
@@ -28,12 +28,14 @@ function VulAan2() {
         >
           Vorige vraag
         </BackLink>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-card__heading-group">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
+        </Column>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <Field>
             <Label htmlFor="type">Welk afval is verkeerd neergezet? (niet verplicht)</Label>
             <Paragraph id="typeDescription" size="small">

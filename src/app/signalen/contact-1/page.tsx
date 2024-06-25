@@ -47,13 +47,15 @@ function Contact1() {
         <BackLink href="/signalen/vul-aan-3" className="ams-mb--xs">
           Vorige vraag
         </BackLink>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-card__heading-group">
             <Heading level={2}>Gegevens</Heading>
             <Paragraph>Stap 2 van 4</Paragraph>
           </hgroup>
           <FormErrorList errors={formattedErrors} />
+        </Column>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet
             aria-describedby="contactDescription"
             legend="Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?"

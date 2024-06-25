@@ -4,6 +4,7 @@
 
 import {
   Button,
+  Column,
   Field,
   FileInput,
   Grid,
@@ -34,12 +35,14 @@ function Docs() {
         <BackLink href="/signalen/contact-2" className="ams-mb--xs">
           Vorige vraag
         </BackLink>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-card__heading-group">
             <Heading level={2}>Documenten</Heading>
             <Paragraph>Stap 3 van 4</Paragraph>
           </hgroup>
+        </Column>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <Field>
             <Label htmlFor="files">Heeft u een bestand om toe te voegen? (niet verplicht)</Label>
             <div className="ams-mb--sm" id="filesDescription">

@@ -4,6 +4,7 @@
 
 import {
   Button,
+  Column,
   ErrorMessage,
   Field,
   FormFieldCharacterCounter,
@@ -49,13 +50,15 @@ function Home() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-card__heading-group">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
           <FormErrorList errors={formattedErrors} />
+        </Column>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <Field invalid={Boolean(errors.body)}>
             <Label htmlFor="body">Waar gaat het om?</Label>
             <Paragraph id="bodyDescription" size="small">

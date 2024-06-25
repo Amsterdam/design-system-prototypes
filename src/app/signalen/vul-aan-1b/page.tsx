@@ -33,12 +33,14 @@ function VulAan1() {
         <BackLink href="/signalen/vul-aan-1" className="ams-mb--xs">
           Vorige vraag
         </BackLink>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-card__heading-group">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
+        </Column>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet legend="Welke dag was het? (niet verplicht)" role="radiogroup" style={{ display: 'grid' }}>
             <Column gap="extra-small">
               <Radio value="vandaag" {...register('whenDay')} defaultChecked={formData.whenDay === 'vandaag'}>
