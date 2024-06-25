@@ -4,6 +4,7 @@
 
 import {
   Button,
+  Column,
   ErrorMessage,
   Field,
   FormFieldCharacterCounter,
@@ -15,6 +16,7 @@ import {
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm, useWatch } from 'react-hook-form'
+import { useEffect } from 'react'
 import { formatErrors } from './_utils/formatErrors'
 import { FormErrorList } from './_components/FormErrorList'
 import { useFormContext } from './FormContext'
@@ -42,6 +44,10 @@ function Home() {
     router.push('/signalen/vul-aan-1')
   }
 
+  useEffect(() => {
+    document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+  }, [])
+
   const formattedErrors = formatErrors(errors)
 
   useAddErrorCountToPageTitle(formattedErrors)
@@ -49,13 +55,15 @@ function Home() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
-          <hgroup className="ams-card__heading-group">
+          <hgroup className="ams-gap--xs">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
           <FormErrorList errors={formattedErrors} />
+        </Column>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
           <Field invalid={Boolean(errors.body)}>
             <Label htmlFor="body">Waar gaat het om?</Label>
             <Paragraph id="bodyDescription" size="small">

@@ -6,6 +6,7 @@ import { Heading, Paragraph, Column, Button, Link, Grid, VisuallyHidden } from '
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import NextLink from 'next/link'
+import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
 
@@ -87,6 +88,10 @@ function Summary() {
   const router = useRouter()
   const onSubmit = () => router.push('/signalen/bedankt')
 
+  useEffect(() => {
+    document.title = 'Stap 4 van 4, samenvatting - Gemeente Amsterdam'
+  }, [])
+
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 9 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
@@ -95,7 +100,7 @@ function Summary() {
         </BackLink>
         <Column gap="medium">
           <Heading>Melding openbare ruimte</Heading>
-          <hgroup className="ams-card__heading-group">
+          <hgroup className="ams-gap--xs">
             <Heading level={2}>Samenvatting</Heading>
             <Paragraph>Stap 4 van 4</Paragraph>
           </hgroup>
