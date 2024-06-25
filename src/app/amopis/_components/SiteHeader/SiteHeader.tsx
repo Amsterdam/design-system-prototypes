@@ -14,7 +14,7 @@ export function SiteHeader() {
               </div>
             </div>
           }
-          logoLink="amopis"
+          logoLink={`${process.env.basePath}amopis`}
           logoLinkTitle="Naar de homepage van Amopis"
           title="Amopis"
         />

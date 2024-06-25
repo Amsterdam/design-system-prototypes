@@ -113,7 +113,7 @@ function Amsterdam({ children }) {
                   </NextLink>
                 </PageMenu>
               }
-              logoLink="amsterdam" // TODO: je kunt hier geen Next Link gebruiken
+              logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen Next Link gebruiken
               logoLinkTitle="Naar de homepage van gemeente Amsterdam"
               menu={
                 <button type="button" className="ams-header__menu-button">
