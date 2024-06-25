@@ -15,6 +15,7 @@ import {
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
 
@@ -28,6 +29,10 @@ function Docs() {
     updateFormData(data)
     router.push('/signalen/samenvatting')
   }
+
+  useEffect(() => {
+    document.title = 'Stap 3 van 4, documenten - Gemeente Amsterdam'
+  }, [])
 
   return (
     <Grid paddingVertical="medium">

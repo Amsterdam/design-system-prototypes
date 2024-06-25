@@ -5,6 +5,7 @@
 import { Button, Checkbox, Column, FieldSet, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
 
@@ -18,6 +19,10 @@ function Contact2() {
     updateFormData(data)
     router.push('/signalen/documenten')
   }
+
+  useEffect(() => {
+    document.title = 'Stap 2 van 4, gegevens - Gemeente Amsterdam'
+  }, [])
 
   return (
     <Grid paddingVertical="medium">

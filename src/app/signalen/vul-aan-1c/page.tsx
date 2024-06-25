@@ -5,6 +5,7 @@
 import { Button, Column, Field, Grid, Heading, Label, Paragraph, TimeInput } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
 
@@ -18,6 +19,10 @@ function VulAan1() {
     updateFormData(data)
     router.push('/signalen/vul-aan-2')
   }
+
+  useEffect(() => {
+    document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+  }, [])
 
   return (
     <Grid paddingVertical="medium">

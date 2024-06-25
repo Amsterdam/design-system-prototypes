@@ -16,6 +16,7 @@ import {
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { FormErrorList } from '../_components/FormErrorList'
 import { formatErrors } from '../_utils/formatErrors'
@@ -36,6 +37,10 @@ function Contact1() {
     updateFormData(data)
     router.push('/signalen/contact-2')
   }
+
+  useEffect(() => {
+    document.title = 'Stap 2 van 4, gegevens - Gemeente Amsterdam'
+  }, [])
 
   const formattedErrors = formatErrors(errors)
 

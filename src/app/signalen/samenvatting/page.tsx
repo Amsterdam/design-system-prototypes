@@ -6,6 +6,7 @@ import { Heading, Paragraph, Column, Button, Link, Grid, VisuallyHidden } from '
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import NextLink from 'next/link'
+import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
 
@@ -86,6 +87,10 @@ function Summary() {
 
   const router = useRouter()
   const onSubmit = () => router.push('/signalen/bedankt')
+
+  useEffect(() => {
+    document.title = 'Stap 4 van 4, samenvatting - Gemeente Amsterdam'
+  }, [])
 
   return (
     <Grid paddingVertical="medium">

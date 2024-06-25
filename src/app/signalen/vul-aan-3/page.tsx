@@ -5,6 +5,7 @@
 import { Button, Column, ErrorMessage, FieldSet, Grid, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
+import { useEffect } from 'react'
 import { formatErrors } from '../_utils/formatErrors'
 import { BackLink } from '../_components/BackLink'
 import { FormErrorList } from '../_components/FormErrorList'
@@ -25,6 +26,10 @@ function VulAan3() {
     updateFormData(data)
     router.push('/signalen/contact-1')
   }
+
+  useEffect(() => {
+    document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+  }, [])
 
   const formattedErrors = formatErrors(errors)
 
