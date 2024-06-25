@@ -35,7 +35,7 @@ function VulAan2() {
         </BackLink>
         <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
-          <hgroup className="ams-card__heading-group">
+          <hgroup className="ams-gap--xs">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
