@@ -1,6 +1,14 @@
 'use client'
 
-import { Grid, Heading, LinkList, PageHeading, Screen } from '@amsterdam/design-system-react'
+import {
+  Grid,
+  Heading,
+  LinkList,
+  PageHeading,
+  Screen,
+  Link as ADSLink,
+  Paragraph,
+} from '@amsterdam/design-system-react'
 import Link from 'next/link'
 
 export default function Page() {
@@ -22,7 +30,14 @@ export default function Page() {
             <Link legacyBehavior href="/signalen" passHref>
               <LinkList.Link>Signalen</LinkList.Link>
             </Link>
+            <Link legacyBehavior href="/about" passHref>
+              <LinkList.Link>Next Link to About</LinkList.Link>
+            </Link>
           </LinkList>
+
+          <Paragraph>
+            <ADSLink href="/about">ADS Link to About</ADSLink>
+          </Paragraph>
         </Grid.Cell>
       </Grid>
     </Screen>
