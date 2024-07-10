@@ -7,7 +7,7 @@ import {
   Column,
   ErrorMessage,
   Field,
-  FormFieldCharacterCounter,
+  FormFieldCharacterCount,
   Grid,
   Heading,
   Label,
@@ -85,7 +85,7 @@ function Home() {
                 },
               })}
             />
-            <FormFieldCharacterCounter length={body.length} maxLength={1000} />
+            <FormFieldCharacterCount length={body.length} maxLength={1000} />
           </Field>
           <div>
             <Button type="submit">Volgende vraag</Button>
