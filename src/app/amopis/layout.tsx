@@ -11,9 +11,9 @@ import '@amsterdam/design-system-tokens/dist/compact.theme.css'
 
 function Amopis({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <div className="ams-theme ams-theme--compact">
       <SkipLink href="#main">Direct naar inhoud</SkipLink>
-      <Screen className="ams-screen--amopis ams-theme ams-theme--compact" fullHeight>
+      <Screen className="ams-screen--amopis" fullHeight>
         <div className="amopis-app-grid">
           <Sidebar />
           <Column gap="none">
@@ -42,7 +42,7 @@ function Amopis({ children }: { children: React.ReactNode }) {
           </Column>
         </div>
       </Screen>
-    </>
+    </div>
   )
 }
 
