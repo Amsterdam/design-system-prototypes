@@ -1,11 +1,11 @@
 .ams-screen.ams-screen--amopis {
-  max-width: initial;
+  max-inline-size: initial; /* `Screen` doesn’t support stretching to the full width of the viewport. */
 }
 
 .amopis-app-grid {
   display: grid;
   grid-template-columns: 112px 1fr;
-  min-height: 100vh;
+  min-block-size: 100vh; /* We can’t propagate the `fullHeight` prop of `Screen`. */
 }
 
 .amopis-main-background {
