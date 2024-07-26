@@ -11,6 +11,7 @@ import { BackLink } from '../_components/BackLink'
 import { FormErrorList } from '../_components/FormErrorList'
 import { useFormContext } from '../FormContext'
 import { useAddErrorCountToPageTitle } from '../_hooks/useAddErrorCountToPageTitle'
+import { docTitle } from '../../../constants'
 
 function VulAan3() {
   const {
@@ -29,6 +30,10 @@ function VulAan3() {
 
   useEffect(() => {
     document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   const formattedErrors = formatErrors(errors)

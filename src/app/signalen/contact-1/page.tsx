@@ -22,6 +22,7 @@ import { FormErrorList } from '../_components/FormErrorList'
 import { formatErrors } from '../_utils/formatErrors'
 import { useFormContext } from '../FormContext'
 import { useAddErrorCountToPageTitle } from '../_hooks/useAddErrorCountToPageTitle'
+import { docTitle } from '../../../constants'
 
 function Contact1() {
   const {
@@ -40,6 +41,10 @@ function Contact1() {
 
   useEffect(() => {
     document.title = 'Stap 2 van 4, gegevens - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   const formattedErrors = formatErrors(errors)

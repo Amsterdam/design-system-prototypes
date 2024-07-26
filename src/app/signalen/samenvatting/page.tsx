@@ -13,6 +13,7 @@ import { useFormContext } from '../FormContext'
 import '../_components/SummaryDescriptionList/summary-description-list.css'
 import './edit-link.css'
 import { capitalizeFirstLetter } from '../_utils/capitalizeFirstLetter'
+import { docTitle } from '../../../constants'
 
 const questions = [
   {
@@ -90,6 +91,10 @@ function Summary() {
 
   useEffect(() => {
     document.title = 'Stap 4 van 4, samenvatting - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   return (

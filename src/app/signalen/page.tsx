@@ -21,6 +21,7 @@ import { formatErrors } from './_utils/formatErrors'
 import { FormErrorList } from './_components/FormErrorList'
 import { useFormContext } from './FormContext'
 import { useAddErrorCountToPageTitle } from './_hooks/useAddErrorCountToPageTitle'
+import { docTitle } from '../../constants'
 
 function Home() {
   const { formData, updateFormData } = useFormContext()
@@ -46,6 +47,10 @@ function Home() {
 
   useEffect(() => {
     document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   const formattedErrors = formatErrors(errors)

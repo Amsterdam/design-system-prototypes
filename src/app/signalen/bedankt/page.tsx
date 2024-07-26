@@ -4,6 +4,7 @@ import { Heading, Paragraph, Link, Column, Grid } from '@amsterdam/design-system
 import NextLink from 'next/link'
 import { useEffect } from 'react'
 import { useFormContext } from '../FormContext'
+import { docTitle } from '../../../constants'
 
 function Thanks() {
   const { updateFormData } = useFormContext()
@@ -25,6 +26,10 @@ function Thanks() {
 
   useEffect(() => {
     document.title = 'Bedankt - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   return (

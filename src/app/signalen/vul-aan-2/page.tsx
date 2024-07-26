@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
+import { docTitle } from '../../../constants'
 
 function VulAan2() {
   const { register, handleSubmit } = useForm()
@@ -22,6 +23,10 @@ function VulAan2() {
 
   useEffect(() => {
     document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   return (

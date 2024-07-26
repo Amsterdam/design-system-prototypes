@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
+import { docTitle } from '../../../constants'
 
 function Contact2() {
   const { register, handleSubmit } = useForm()
@@ -22,6 +23,10 @@ function Contact2() {
 
   useEffect(() => {
     document.title = 'Stap 2 van 4, gegevens - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   return (

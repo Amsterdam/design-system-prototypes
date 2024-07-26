@@ -9,6 +9,7 @@ import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
 import { capitalizeFirstLetter } from '../_utils/capitalizeFirstLetter'
+import { docTitle } from '../../../constants'
 
 const optionLabel = (daysBack) => {
   const date = new Date(new Date().setDate(new Date().getDate() - daysBack))
@@ -30,6 +31,10 @@ function VulAan1() {
 
   useEffect(() => {
     document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   return (
