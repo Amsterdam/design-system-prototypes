@@ -39,7 +39,7 @@ function Question() {
         <form className="ams-gap--md" onSubmit={handleSubmit}>
           <Heading>Contact</Heading>
           <FieldSet aria-describedby="contactgegevensDescription" legend="Wat zijn uw contactgegevens?">
-            <Column gap="small" style={{ clear: 'both' }}>
+            <Column gap="small">
               <Paragraph id="contactgegevensDescription">
                 Wij hebben uw gegevens nodig om contact met u te kunnen opnemen.
               </Paragraph>
