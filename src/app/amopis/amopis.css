@@ -8,11 +8,6 @@
   min-height: 100vh;
 }
 
-.amopis-app-content {
-  display: flex;
-  flex-direction: column;
-}
-
 .amopis-main-background {
   background-color: var(--ams-color-neutral-grey1);
   flex: auto;
@@ -20,12 +15,6 @@
 
 .amopis-white-background {
   background-color: var(--ams-color-primary-white);
-}
-
-.amopis-user-badge {
-  background-color: var(--ams-color-primary-blue);
-  border-radius: 50%;
-  padding: 0.25rem 0.375rem;
 }
 
 .amopis-sidebar {

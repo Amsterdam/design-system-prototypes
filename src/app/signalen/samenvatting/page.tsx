@@ -98,7 +98,7 @@ function Summary() {
         <BackLink href="/signalen/documenten" className="ams-mb--xs">
           Vorige vraag
         </BackLink>
-        <Column gap="medium">
+        <Column>
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-gap--xs">
             <Heading level={2}>Samenvatting</Heading>
