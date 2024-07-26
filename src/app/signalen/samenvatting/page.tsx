@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Heading, Paragraph, Column, Button, Link, Grid, VisuallyHidden } from '@amsterdam/design-system-react'
+import { Heading, Paragraph, Column, Button, Link, Grid } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import NextLink from 'next/link'
@@ -120,7 +120,7 @@ function Summary() {
                     <NextLink href={href} legacyBehavior passHref>
                       <Link variant="inline" className="ams-edit-link">
                         Wijzig
-                        <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
+                        <span className="ams-visually-hidden"> vraag: {questionText}</span>
                       </Link>
                     </NextLink>
                   </dd>

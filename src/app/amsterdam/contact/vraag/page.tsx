@@ -5,9 +5,9 @@
 import {
   Breadcrumb,
   Button,
+  CharacterCount,
   Field,
   FileInput,
-  FormFieldCharacterCounter,
   Grid,
   Heading,
   Label,
@@ -49,7 +49,7 @@ function Question() {
               onChange={(e) => setTextareaLength(e.target.value.length)}
               rows={4}
             />
-            <FormFieldCharacterCounter length={textareaLength} maxLength={1000} />
+            <CharacterCount length={textareaLength} maxLength={1000} />
           </Field>
           <Field>
             <Label htmlFor="fileUpload">U kunt hier een bijlage toevoegen</Label>

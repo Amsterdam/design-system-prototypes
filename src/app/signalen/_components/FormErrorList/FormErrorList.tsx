@@ -27,7 +27,7 @@ export const FormErrorList = forwardRef(
       <Alert
         {...restProps}
         className={`ams-form-error-list ${className}`}
-        title="Verbeter de fouten voor u verder gaat"
+        heading="Verbeter de fouten voor u verder gaat"
         headingLevel={3}
         ref={ref}
         role="alert"

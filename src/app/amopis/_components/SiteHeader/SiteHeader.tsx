@@ -5,6 +5,7 @@ export function SiteHeader() {
     <Grid>
       <Grid.Cell span="all">
         <Header
+          appName="Amopis"
           links={
             <div style={{ display: 'flex', justifyContent: 'end' }}>
               <div className="amopis-user-badge">
@@ -16,7 +17,6 @@ export function SiteHeader() {
           }
           logoLink={`${process.env.basePath}amopis`}
           logoLinkTitle="Naar de homepage van Amopis"
-          title="Amopis"
         />
       </Grid.Cell>
     </Grid>
