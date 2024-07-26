@@ -46,7 +46,7 @@ function VulAan1() {
           </hgroup>
         </Column>
         <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
-          <FieldSet legend="Welke dag was het? (niet verplicht)" role="radiogroup" style={{ display: 'grid' }}>
+          <FieldSet legend="Welke dag was het? (niet verplicht)" role="radiogroup">
             <Column gap="extra-small">
               <Radio value="vandaag" {...register('whenDay')} defaultChecked={formData.whenDay === 'vandaag'}>
                 Vandaag

@@ -56,7 +56,6 @@ function VulAan3() {
             role="radiogroup"
             aria-required="true"
             invalid={Boolean(errors.who)}
-            style={{ display: 'grid' }}
           >
             <Paragraph id="whoDescription" size="small" className="ams-mb--xs">
               Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?

@@ -38,11 +38,7 @@ function VulAan1() {
           </hgroup>
         </Column>
         <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
-          <FieldSet
-            legend="Wanneer heeft u de overlast? (niet verplicht)"
-            role="radiogroup"
-            style={{ display: 'grid' }}
-          >
+          <FieldSet legend="Wanneer heeft u de overlast? (niet verplicht)" role="radiogroup">
             <Column gap="extra-small">
               <Radio value="nu" {...register('when')} defaultChecked={formData.when === 'nu'}>
                 Nu
