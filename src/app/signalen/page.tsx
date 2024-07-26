@@ -8,6 +8,7 @@ import {
   Column,
   ErrorMessage,
   Field,
+  FormErrorList,
   Grid,
   Heading,
   Label,
@@ -18,7 +19,6 @@ import { useRouter } from 'next/navigation'
 import { useForm, useWatch } from 'react-hook-form'
 import { useEffect } from 'react'
 import { formatErrors } from './_utils/formatErrors'
-import { FormErrorList } from './_components/FormErrorList'
 import { useFormContext } from './FormContext'
 import { useAddErrorCountToPageTitle } from './_hooks/useAddErrorCountToPageTitle'
 import { docTitle } from '../../constants'

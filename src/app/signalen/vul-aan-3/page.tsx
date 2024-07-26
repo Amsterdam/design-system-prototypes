@@ -2,13 +2,22 @@
 
 'use client'
 
-import { Button, Column, ErrorMessage, FieldSet, Grid, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
+import {
+  Button,
+  Column,
+  ErrorMessage,
+  FieldSet,
+  FormErrorList,
+  Grid,
+  Heading,
+  Paragraph,
+  Radio,
+} from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
 import { formatErrors } from '../_utils/formatErrors'
 import { BackLink } from '../_components/BackLink'
-import { FormErrorList } from '../_components/FormErrorList'
 import { useFormContext } from '../FormContext'
 import { useAddErrorCountToPageTitle } from '../_hooks/useAddErrorCountToPageTitle'
 import { docTitle } from '../../../constants'
