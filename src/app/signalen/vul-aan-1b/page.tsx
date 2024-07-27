@@ -9,6 +9,7 @@ import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
 import { capitalizeFirstLetter } from '../_utils/capitalizeFirstLetter'
+import { docTitle } from '../../../constants'
 
 const optionLabel = (daysBack) => {
   const date = new Date(new Date().setDate(new Date().getDate() - daysBack))
@@ -30,6 +31,10 @@ function VulAan1() {
 
   useEffect(() => {
     document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   return (
@@ -46,7 +51,7 @@ function VulAan1() {
           </hgroup>
         </Column>
         <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
-          <FieldSet legend="Welke dag was het? (niet verplicht)" role="radiogroup" style={{ display: 'grid' }}>
+          <FieldSet legend="Welke dag was het? (niet verplicht)" role="radiogroup">
             <Column gap="extra-small">
               <Radio value="vandaag" {...register('whenDay')} defaultChecked={formData.whenDay === 'vandaag'}>
                 Vandaag

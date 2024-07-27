@@ -10,27 +10,6 @@
 
 .ams-body {
   background-color: #ffffff;
-  margin: 0;
-  min-height: 100vh;
-}
-
-/* Row and column alignment */
-
-.ams-column--halign-center {
-  justify-items: center;
-}
-
-.ams-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.ams-row--align-between {
-  justify-content: space-between;
-}
-
-.ams-row--valign-baseline {
-  align-items: baseline;
 }
 
 /* Indicate non-functional links */

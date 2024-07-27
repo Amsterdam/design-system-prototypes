@@ -61,7 +61,7 @@ function KunstEnCultuur() {
           <Heading level={2} size="level-3" className="ams-mb--xs">
             Wie Amsterdam zegt, zegt kunst en cultuur
           </Heading>
-          <Paragraph className="ams-mb--xs">
+          <Paragraph className="ams-mb--sm">
             Van de musea en culturele broedplaatsen tot de stadsparken en de met kunst versierde gevels van de
             grachtenpanden. Kunst en cultuur is altijd en overal in Amsterdam. En het houdt niet op als de zon
             ondergaat: ook de clubscene is van culturele waarde voor de stad.
@@ -84,7 +84,7 @@ function KunstEnCultuur() {
             wide: 9,
           }}
         >
-          <Column>
+          <Column gap="extra-large">
             <Column gap="extra-small">
               <Heading level={2} size="level-3">
                 Archieven en collecties

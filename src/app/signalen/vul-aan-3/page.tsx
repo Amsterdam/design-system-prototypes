@@ -2,15 +2,25 @@
 
 'use client'
 
-import { Button, Column, ErrorMessage, FieldSet, Grid, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
+import {
+  Button,
+  Column,
+  ErrorMessage,
+  FieldSet,
+  FormErrorList,
+  Grid,
+  Heading,
+  Paragraph,
+  Radio,
+} from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
 import { formatErrors } from '../_utils/formatErrors'
 import { BackLink } from '../_components/BackLink'
-import { FormErrorList } from '../_components/FormErrorList'
 import { useFormContext } from '../FormContext'
 import { useAddErrorCountToPageTitle } from '../_hooks/useAddErrorCountToPageTitle'
+import { docTitle } from '../../../constants'
 
 function VulAan3() {
   const {
@@ -29,6 +39,10 @@ function VulAan3() {
 
   useEffect(() => {
     document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   const formattedErrors = formatErrors(errors)
@@ -56,7 +70,6 @@ function VulAan3() {
             role="radiogroup"
             aria-required="true"
             invalid={Boolean(errors.who)}
-            style={{ display: 'grid' }}
           >
             <Paragraph id="whoDescription" size="small" className="ams-mb--xs">
               Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?

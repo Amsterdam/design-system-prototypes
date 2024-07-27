@@ -70,14 +70,14 @@ function Project() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
         <div className="amopis-white-background" style={{ padding: '1rem' }}>
           <Column>
-            <div className="ams-row ams-row--align-between ams-row--valign-baseline">
+            <Row align="between" alignVertical="baseline">
               <Heading level={3}>Kerngegevens</Heading>
               <LinkList>
                 <LinkList.Link href="#" icon={EditDocumentIcon}>
                   Wijzig kerngegevens
                 </LinkList.Link>
               </LinkList>
-            </div>
+            </Row>
             <section>
               <Heading level={4} className="ams-mb--sm">
                 Opdrachtgevers

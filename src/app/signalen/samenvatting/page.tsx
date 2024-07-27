@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Heading, Paragraph, Column, Button, Link, Grid, VisuallyHidden } from '@amsterdam/design-system-react'
+import { Heading, Paragraph, Column, Button, Link, Grid } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import NextLink from 'next/link'
@@ -13,6 +13,7 @@ import { useFormContext } from '../FormContext'
 import '../_components/SummaryDescriptionList/summary-description-list.css'
 import './edit-link.css'
 import { capitalizeFirstLetter } from '../_utils/capitalizeFirstLetter'
+import { docTitle } from '../../../constants'
 
 const questions = [
   {
@@ -90,6 +91,10 @@ function Summary() {
 
   useEffect(() => {
     document.title = 'Stap 4 van 4, samenvatting - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   return (
@@ -98,7 +103,7 @@ function Summary() {
         <BackLink href="/signalen/documenten" className="ams-mb--xs">
           Vorige vraag
         </BackLink>
-        <Column gap="medium">
+        <Column>
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-gap--xs">
             <Heading level={2}>Samenvatting</Heading>
@@ -120,7 +125,7 @@ function Summary() {
                     <NextLink href={href} legacyBehavior passHref>
                       <Link variant="inline" className="ams-edit-link">
                         Wijzig
-                        <VisuallyHidden> vraag: {questionText}</VisuallyHidden>
+                        <span className="ams-visually-hidden"> vraag: {questionText}</span>
                       </Link>
                     </NextLink>
                   </dd>

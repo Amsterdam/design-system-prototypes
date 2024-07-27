@@ -8,6 +8,7 @@ import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
+import { docTitle } from '../../../constants'
 
 function VulAan1() {
   const { register, handleSubmit } = useForm()
@@ -22,6 +23,10 @@ function VulAan1() {
 
   useEffect(() => {
     document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   return (
@@ -38,11 +43,7 @@ function VulAan1() {
           </hgroup>
         </Column>
         <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
-          <FieldSet
-            legend="Wanneer heeft u de overlast? (niet verplicht)"
-            role="radiogroup"
-            style={{ display: 'grid' }}
-          >
+          <FieldSet legend="Wanneer heeft u de overlast? (niet verplicht)" role="radiogroup">
             <Column gap="extra-small">
               <Radio value="nu" {...register('when')} defaultChecked={formData.when === 'nu'}>
                 Nu

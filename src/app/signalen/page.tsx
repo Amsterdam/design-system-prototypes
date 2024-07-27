@@ -4,10 +4,11 @@
 
 import {
   Button,
+  CharacterCount,
   Column,
   ErrorMessage,
   Field,
-  FormFieldCharacterCounter,
+  FormErrorList,
   Grid,
   Heading,
   Label,
@@ -18,9 +19,9 @@ import { useRouter } from 'next/navigation'
 import { useForm, useWatch } from 'react-hook-form'
 import { useEffect } from 'react'
 import { formatErrors } from './_utils/formatErrors'
-import { FormErrorList } from './_components/FormErrorList'
 import { useFormContext } from './FormContext'
 import { useAddErrorCountToPageTitle } from './_hooks/useAddErrorCountToPageTitle'
+import { docTitle } from '../../constants'
 
 function Home() {
   const { formData, updateFormData } = useFormContext()
@@ -46,6 +47,10 @@ function Home() {
 
   useEffect(() => {
     document.title = 'Stap 1 van 4, beschrijf uw melding - Gemeente Amsterdam'
+
+    return () => {
+      document.title = docTitle
+    }
   }, [])
 
   const formattedErrors = formatErrors(errors)
@@ -85,7 +90,7 @@ function Home() {
                 },
               })}
             />
-            <FormFieldCharacterCounter length={body.length} maxLength={1000} />
+            <CharacterCount length={body.length} maxLength={1000} />
           </Field>
           <div>
             <Button type="submit">Volgende vraag</Button>

@@ -1,6 +1,6 @@
 'use client'
 
-import { Grid, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
+import { Column, Grid, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
 import Link from 'next/link'
 
 import { Sidebar } from './_components/SideBar/SideBar'
@@ -11,12 +11,12 @@ import '@amsterdam/design-system-tokens/dist/compact.theme.css'
 
 function Amopis({ children }: { children: React.ReactNode }) {
   return (
-    <>
+    <div className="ams-theme ams-theme--compact">
       <SkipLink href="#main">Direct naar inhoud</SkipLink>
-      <Screen className="ams-screen--amopis ams-theme ams-theme--compact" fullHeight>
+      <Screen className="ams-screen--amopis" fullHeight>
         <div className="amopis-app-grid">
           <Sidebar />
-          <div className="amopis-app-content">
+          <Column gap="none">
             <SiteHeader />
             <div id="main" className="amopis-main-background">
               {children}
@@ -39,10 +39,10 @@ function Amopis({ children }: { children: React.ReactNode }) {
                 </PageMenu>
               </Grid.Cell>
             </Grid>
-          </div>
+          </Column>
         </div>
       </Screen>
-    </>
+    </div>
   )
 }
 
