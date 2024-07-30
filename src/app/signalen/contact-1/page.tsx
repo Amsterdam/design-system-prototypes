@@ -62,7 +62,7 @@ function Contact1() {
           </hgroup>
           <FormErrorList errors={formattedErrors} />
         </Column>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)} noValidate>
           <FieldSet
             aria-describedby="contactDescription"
             legend="Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?"
@@ -111,10 +111,13 @@ function Contact1() {
                   invalid={Boolean(errors.mail)}
                   style={{ maxInlineSize: '19em' }}
                   spellCheck="false"
+                  // TODO: This makes the input invalid the second you start typing, because a valid e-mail needs an @.
+                  // Maybe we should remove the :invalid styling. Or should we use type="text" here?
                   type="email"
                   {...register('mail', {
                     pattern: {
                       // Validation sourced from https://github.com/frameless/gemeentevoorbeeld.nl/blob/main/packages/next-templates/src/utils/validation.ts
+                      // TODO: Maybe we want to source this from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email#basic_validation ?
                       value:
                         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
                       message:
