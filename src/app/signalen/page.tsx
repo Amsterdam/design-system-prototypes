@@ -31,7 +31,7 @@ function Home() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm()
+  } = useForm({ shouldFocusError: false })
 
   const body = useWatch({
     control,

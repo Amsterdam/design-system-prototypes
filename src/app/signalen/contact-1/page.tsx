@@ -29,7 +29,7 @@ function Contact1() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm()
+  } = useForm({ shouldFocusError: false })
   const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()
