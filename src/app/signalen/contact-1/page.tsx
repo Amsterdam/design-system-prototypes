@@ -21,7 +21,6 @@ import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { formatErrors } from '../_utils/formatErrors'
 import { useFormContext } from '../FormContext'
-import { useAddErrorCountToPageTitle } from '../_hooks/useAddErrorCountToPageTitle'
 import { docTitle } from '../../../constants'
 
 function Contact1() {
@@ -48,8 +47,6 @@ function Contact1() {
   }, [])
 
   const formattedErrors = formatErrors(errors)
-
-  useAddErrorCountToPageTitle(formattedErrors)
 
   return (
     <Grid paddingVertical="medium">
