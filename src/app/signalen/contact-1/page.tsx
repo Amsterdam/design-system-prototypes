@@ -21,7 +21,6 @@ import { useEffect } from 'react'
 import { BackLink } from '../_components/BackLink'
 import { formatErrors } from '../_utils/formatErrors'
 import { useFormContext } from '../FormContext'
-import { useAddErrorCountToPageTitle } from '../_hooks/useAddErrorCountToPageTitle'
 import { docTitle } from '../../../constants'
 
 function Contact1() {
@@ -29,7 +28,7 @@ function Contact1() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm()
+  } = useForm({ shouldFocusError: false })
   const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()
@@ -49,8 +48,6 @@ function Contact1() {
 
   const formattedErrors = formatErrors(errors)
 
-  useAddErrorCountToPageTitle(formattedErrors)
-
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
@@ -65,7 +62,7 @@ function Contact1() {
           </hgroup>
           <FormErrorList errors={formattedErrors} />
         </Column>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)} noValidate>
           <FieldSet
             aria-describedby="contactDescription"
             legend="Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?"
@@ -114,10 +111,13 @@ function Contact1() {
                   invalid={Boolean(errors.mail)}
                   style={{ maxInlineSize: '19em' }}
                   spellCheck="false"
+                  // TODO: This makes the input invalid the second you start typing, because a valid e-mail needs an @.
+                  // Maybe we should remove the :invalid styling. Or should we use type="text" here?
                   type="email"
                   {...register('mail', {
                     pattern: {
                       // Validation sourced from https://github.com/frameless/gemeentevoorbeeld.nl/blob/main/packages/next-templates/src/utils/validation.ts
+                      // TODO: Maybe we want to source this from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email#basic_validation ?
                       value:
                         /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
                       message:

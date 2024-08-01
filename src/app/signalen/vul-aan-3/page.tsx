@@ -19,7 +19,6 @@ import { useEffect } from 'react'
 import { formatErrors } from '../_utils/formatErrors'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
-import { useAddErrorCountToPageTitle } from '../_hooks/useAddErrorCountToPageTitle'
 import { docTitle } from '../../../constants'
 
 function VulAan3() {
@@ -27,7 +26,7 @@ function VulAan3() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm()
+  } = useForm({ shouldFocusError: false })
   const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()
@@ -46,8 +45,6 @@ function VulAan3() {
   }, [])
 
   const formattedErrors = formatErrors(errors)
-
-  useAddErrorCountToPageTitle(formattedErrors)
 
   return (
     <Grid paddingVertical="medium">

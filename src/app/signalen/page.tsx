@@ -20,7 +20,6 @@ import { useForm, useWatch } from 'react-hook-form'
 import { useEffect } from 'react'
 import { formatErrors } from './_utils/formatErrors'
 import { useFormContext } from './FormContext'
-import { useAddErrorCountToPageTitle } from './_hooks/useAddErrorCountToPageTitle'
 import { docTitle } from '../../constants'
 
 function Home() {
@@ -31,7 +30,7 @@ function Home() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm()
+  } = useForm({ shouldFocusError: false })
 
   const body = useWatch({
     control,
@@ -54,8 +53,6 @@ function Home() {
   }, [])
 
   const formattedErrors = formatErrors(errors)
-
-  useAddErrorCountToPageTitle(formattedErrors)
 
   return (
     <Grid paddingVertical="medium">
