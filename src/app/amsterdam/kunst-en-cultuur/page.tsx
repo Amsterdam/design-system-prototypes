@@ -40,8 +40,7 @@ function KunstEnCultuur() {
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 8, wide: 8 }}>
           <AspectRatio ratio="wide">
-            {/* TODO: proportions are off */}
-            <NextImage alt="" src={artAndCultureImage} />
+            <NextImage alt="" src={artAndCultureImage} fill />
           </AspectRatio>
         </Grid.Cell>
       </Grid>
