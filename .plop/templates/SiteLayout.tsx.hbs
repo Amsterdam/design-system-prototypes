@@ -1,3 +1,5 @@
+'use client'
+
 import {
   Column,
   Footer,
@@ -6,6 +8,7 @@ import {
   Heading,
   Link,
   PageMenu,
+  Paragraph,
   Screen,
   SkipLink,
 } from '@amsterdam/design-system-react'
@@ -66,11 +69,12 @@ export default function {{pascalCase name}}({ children }) {
                 <PageMenu.Link href="#">Over deze site</PageMenu.Link>
                 <PageMenu.Link href="#">Privacy</PageMenu.Link>
                 <PageMenu.Link href="#">Toegankelijkheid</PageMenu.Link>
+                {/* Append footer link here */}
               </PageMenu>
             </Grid.Cell>
           </Grid>
         </Footer.Bottom>
-      </Footer>      
+      </Footer>
     </Screen>
   )
 }
