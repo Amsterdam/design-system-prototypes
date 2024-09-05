@@ -13,7 +13,6 @@
 }
 
 /* Indicate non-functional links */
-
 a[href="#"] {
   cursor: not-allowed;
 }
@@ -22,3 +21,22 @@ a[href="#"] {
 strong {
   font-weight: 800;
 }
+
+.ams-details {
+  color: var(--ams-color-primary-black);
+  font-family: var(--ams-text-font-family);
+  font-size: var(--ams-text-level-6-font-size);
+  font-weight: var(--ams-text-font-weight-normal);
+  line-height: var(--ams-text-level-6-line-height);
+
+  summary {
+    cursor: var(--ams-action-activate-cursor);
+    width: max-content;
+  }
+
+  code {
+    font-size: 75%;
+    line-height: 2;
+  }
+}
+
