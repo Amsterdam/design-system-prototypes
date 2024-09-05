@@ -86,7 +86,7 @@ const socials = [
   },
 ]
 
-function Amsterdam({ children }) {
+export default function Amsterdam({ children }) {
   return (
     <div className="ams-theme">
       <SkipLink href="#main">Direct naar inhoud</SkipLink>
@@ -223,5 +223,3 @@ function Amsterdam({ children }) {
     </div>
   )
 }
-
-export default Amsterdam

@@ -22,6 +22,7 @@ export default function Page() {
             <Link legacyBehavior href="/signalen" passHref>
               <LinkList.Link>Signalen</LinkList.Link>
             </Link>
+            {/* Append route import here */}
           </LinkList>
         </Grid.Cell>
       </Grid>

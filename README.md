@@ -12,7 +12,7 @@ A prototyping environment for the React Library of the [Amsterdam Design System]
 
 All current prototypes are listed here: [amsterdam.github.io/design-system-prototypes](http://amsterdam.github.io/design-system-prototypes).
 
-<!-- ## How to use
+## How to use
 
 Feel welcome to create your own prototype.
 
@@ -20,4 +20,4 @@ Scaffold the initial directories and files through `npm run add site 'Site name'
 
 Add a page with `npm run add page 'Site name or slug' 'Page name'`.
 
-Present a pull request to have it included on the public website. -->
+Present a pull request to have it included on the public website.

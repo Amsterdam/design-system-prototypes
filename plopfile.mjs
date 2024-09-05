@@ -11,55 +11,22 @@ export default function (plop) {
     actions: [
       {
         type: 'add',
-        path: 'src/sites/{{kebabCase name}}/constants.ts',
-        templateFile: '.plop/templates/constants.ts.hbs',
+        data: { curlyBefore: '{' },
+        path: 'src/app/{{kebabCase name}}/layout.tsx',
+        templateFile: '.plop/templates/SiteLayout.tsx.hbs',
       },
       {
         type: 'add',
-        path: 'src/sites/{{kebabCase name}}/pages/{{pascalCase name}}RootPage.tsx',
-        templateFile: '.plop/templates/RootPage.tsx.hbs',
-      },
-      {
-        type: 'add',
-        path: 'src/sites/{{kebabCase name}}/components/shared/SiteHeader.tsx',
-        templateFile: '.plop/templates/SiteHeader.tsx.hbs',
-      },
-      {
-        type: 'add',
-        path: 'src/sites/{{kebabCase name}}/pages/HomePage.tsx',
+        path: 'src/app/{{kebabCase name}}/page.tsx',
         templateFile: '.plop/templates/HomePage.tsx.hbs',
       },
       {
-        type: 'add',
-        path: 'src/sites/{{kebabCase name}}/routes.tsx',
-        templateFile: '.plop/templates/routes.tsx.hbs',
-      },
-      {
         type: 'append',
-        path: 'src/main.tsx',
-        pattern: '/* Append routes import here */',
-        template: `import { routes as {{camelCase name}}Routes } from './sites/{{kebabCase name}}/routes'`,
-      },
-      {
-        type: 'append',
-        path: 'src/main.tsx',
-        pattern: '* Append routes object here */',
-        template: `  {{camelCase name}}Routes,`,
-      },
-      {
-        type: 'append',
-        path: 'src/shared/pages/RootPage.tsx',
-        pattern: '/* Append siteUrl import here */',
-        template: `import { siteUrl as {{camelCase name}}SiteUrl } from '../../sites/{{kebabCase name}}/constants'`,
-      },
-      {
-        type: 'append',
-        path: 'src/shared/pages/RootPage.tsx',
-        pattern: '* Append site object here */',
-        template: `  {
-    label: '{{name}}',
-    href: {{camelCase name}}SiteUrl,
-  },`,
+        path: 'src/app/page.tsx',
+        pattern: '{/* Append route import here */}',
+        template: `            <Link legacyBehavior href="/{{kebabCase name}}" passHref>
+              <LinkList.Link>{{titleCase name}}</LinkList.Link>
+            </Link>`,
       },
     ],
   })
@@ -76,37 +43,22 @@ export default function (plop) {
         type: 'input',
         name: 'name',
         message: 'page name',
-      }
+      },
     ],
     actions: [
       {
         type: 'add',
         data: { curlyBefore: '{' },
-        path: 'src/sites/{{kebabCase siteName}}/pages/{{pascalCase name}}Page.tsx',
+        path: 'src/app/{{kebabCase siteName}}/{{kebabCase name}}/page.tsx',
         templateFile: '.plop/templates/Page.tsx.hbs',
       },
       {
         type: 'append',
-        path: "src/sites/{{kebabCase siteName}}/routes.tsx",
-        pattern: '/* Append route import here */',
-        template: `import { {{pascalCase name}}Page } from './pages/{{pascalCase name}}Page'`,
-      },
-      {
-        type: 'append',
-        data: { dollarSign: '$' },
-        path: 'src/sites/{{kebabCase siteName}}/routes.tsx',
-        pattern: '/* Append route here */',
-        template: `    {
-      element: <{{pascalCase name}}Page />,
-      path: \`{{dollarSign}}{siteUrl}{{kebabCase name}}\`,
-    },`,
-      },
-      {
-        type: 'append',
-        data: { dollarSign: '$' },
-        path: "src/sites/{{kebabCase siteName}}/pages/{{pascalCase siteName}}RootPage.tsx",
+        path: 'src/app/{{kebabCase siteName}}/layout.tsx',
         pattern: '{/* Append footer link here */}',
-        template: `            <PageMenuLink to={\`{{dollarSign}}{siteUrl}{{kebabCase name}}\`}>{{name}}</PageMenuLink>`,
+        template: `                <NextLink legacyBehavior href="/{{kebabCase siteName}}/{{kebabCase name}}" passHref>
+                  <PageMenu.Link>{{sentenceCase name}}</PageMenu.Link>
+                </NextLink>`,
       },
     ],
   })
