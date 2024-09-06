@@ -38,9 +38,9 @@ export default function Page() {
                 <br />
                 npm install
                 <br />
-                npm run add site 'Site name'
+                npm run add site &apos;Site name&apos;
                 <br />
-                npm run add page 'Site name' 'Page name'
+                npm run add page &apos;Site name&apos; &apos;Page name&apos;
                 <br />
                 npm run dev
               </code>
