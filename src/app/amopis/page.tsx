@@ -82,7 +82,7 @@ function Project() {
               <Heading level={4} className="ams-mb--sm">
                 Opdrachtgevers
               </Heading>
-              <DescriptionList>
+              <DescriptionList termsWidth="md">
                 <DescriptionList.Term>Ambtelijk opdrachtgever</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
@@ -103,7 +103,7 @@ function Project() {
               <Heading level={4} className="ams-mb--sm">
                 Opdrachtnemers
               </Heading>
-              <DescriptionList>
+              <DescriptionList termsWidth="md">
                 <DescriptionList.Term>Accounthouder</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
@@ -145,7 +145,7 @@ function Project() {
               <Heading level={4} className="ams-mb--sm">
                 Basisgegevens
               </Heading>
-              <DescriptionList>
+              <DescriptionList termsWidth="md">
                 <DescriptionList.Term>Gebied</DescriptionList.Term>
                 <DescriptionList.Description>Gemeente Amsterdam</DescriptionList.Description>
                 <DescriptionList.Term>Stadsdeel</DescriptionList.Term>
