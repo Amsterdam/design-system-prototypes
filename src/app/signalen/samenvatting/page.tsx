@@ -118,7 +118,7 @@ function Summary() {
               return (
                 <div key={id} className="ams-summary-description-list__container">
                   <dt className="ams-summary-description-list__term ams-mb--xs">{questionText}</dt>
-                  <dd className="ams-summary-description-list__details" dir="auto">
+                  <dd className="ams-summary-description-list__description" dir="auto">
                     {formatAnswer(id, formData) || 'Niet ingevuld'}
                   </dd>
                   <dd className="ams-summary-description-list__link">

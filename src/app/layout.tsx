@@ -1,10 +1,11 @@
+import { ReactNode } from 'react'
 import '@amsterdam/design-system-tokens/dist/index.theme.css'
 import '@amsterdam/design-system-assets/font/index.css'
 import '@amsterdam/design-system-css/dist/index.css'
 import './index.css'
 import { docTitle } from '../constants'
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="nl">
       <head>
