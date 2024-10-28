@@ -129,7 +129,7 @@ function HomePage() {
               Check welke ontheffing of vergunning u nodig heeft. Bijvoorbeeld een RVV, TVM, objectvergunning,{' '}
               nachtwerkontheffing, e-RVV, e-TVM of filmmelding. Dat regult u allemaal met 1 formulier.
             </Paragraph>
-            <Link href="#" variant="standalone" onBackground="dark">
+            <Link href="#" inverseColor variant="standalone">
               Eenvoudig regelen
             </Link>
           </Grid.Cell>
@@ -141,7 +141,7 @@ function HomePage() {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae cumque deleniti exercitationem
               facere fugiat laudantium libero magnam mollitia nisi, omnis pariatur preferendis.
             </Paragraph>
-            <Link href="#" variant="standalone" onBackground="dark">
+            <Link href="#" inverseColor variant="standalone">
               Alle bouw- en verkeerswerkzaamheden
             </Link>
           </Grid.Cell>

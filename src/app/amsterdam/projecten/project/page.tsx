@@ -89,7 +89,7 @@ function Project() {
                 'H.M. Terwogtweg, afsluitweg',
                 'Meer werkzaamheden in stadsdeel Noord',
               ].map((district) => (
-                <LinkList.Link href="#" key={district} onBackground="dark">
+                <LinkList.Link href="#" inverseColor key={district}>
                   {district}
                 </LinkList.Link>
               ))}
@@ -101,7 +101,7 @@ function Project() {
             </Heading>
             <LinkList>
               {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
-                <LinkList.Link href="#" key={district} onBackground="dark">
+                <LinkList.Link href="#" inverseColor key={district}>
                   {district}
                 </LinkList.Link>
               ))}

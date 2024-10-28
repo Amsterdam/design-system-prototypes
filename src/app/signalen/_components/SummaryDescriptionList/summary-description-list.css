@@ -32,7 +32,7 @@
   font-size: var(--ams-description-list-font-size);
 }
 
-.ams-summary-description-list__details {
+.ams-summary-description-list__description {
   margin-inline: 0;
   font-size: var(--ams-text-level-6-font-size);
   grid-column-start: 1;

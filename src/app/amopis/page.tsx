@@ -84,19 +84,19 @@ function Project() {
               </Heading>
               <DescriptionList>
                 <DescriptionList.Term>Ambtelijk opdrachtgever</DescriptionList.Term>
-                <DescriptionList.Details>
+                <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Marise Ent</span>
                     <EmailIcon width={24} fill="#004469" />
                   </Row>
-                </DescriptionList.Details>
+                </DescriptionList.Description>
                 <DescriptionList.Term>Bestuurlijk Opdrachtgever Stad</DescriptionList.Term>
-                <DescriptionList.Details>
+                <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Melanie van der Horst</span>
                     <EmailIcon width={24} fill="#004469" />
                   </Row>
-                </DescriptionList.Details>
+                </DescriptionList.Description>
               </DescriptionList>
             </section>
             <section>
@@ -105,40 +105,40 @@ function Project() {
               </Heading>
               <DescriptionList>
                 <DescriptionList.Term>Accounthouder</DescriptionList.Term>
-                <DescriptionList.Details>
+                <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Paul Brouwer</span>
                     <EmailIcon width={24} fill="#004469" />
                   </Row>
-                </DescriptionList.Details>
+                </DescriptionList.Description>
                 <DescriptionList.Term>Opdrachtnemer</DescriptionList.Term>
-                <DescriptionList.Details>
+                <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Erik Bakker</span>
                     <EmailIcon width={24} fill="#004469" />
                   </Row>
-                </DescriptionList.Details>
+                </DescriptionList.Description>
                 <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
-                <DescriptionList.Details>
+                <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Klaas Helmers</span>
                     <EmailIcon width={24} fill="#004469" />
                   </Row>
-                </DescriptionList.Details>
+                </DescriptionList.Description>
                 <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
-                <DescriptionList.Details>
+                <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Marjolein Boomer</span>
                     <EmailIcon width={24} fill="#004469" />
                   </Row>
-                </DescriptionList.Details>
+                </DescriptionList.Description>
                 <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
-                <DescriptionList.Details>
+                <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Carina Cairo</span>
                     <EmailIcon width={24} fill="#004469" />
                   </Row>
-                </DescriptionList.Details>
+                </DescriptionList.Description>
               </DescriptionList>
             </section>
             <section>
@@ -147,15 +147,15 @@ function Project() {
               </Heading>
               <DescriptionList>
                 <DescriptionList.Term>Gebied</DescriptionList.Term>
-                <DescriptionList.Details>Gemeente Amsterdam</DescriptionList.Details>
+                <DescriptionList.Description>Gemeente Amsterdam</DescriptionList.Description>
                 <DescriptionList.Term>Stadsdeel</DescriptionList.Term>
-                <DescriptionList.Details>Amsterdam</DescriptionList.Details>
+                <DescriptionList.Description>Amsterdam</DescriptionList.Description>
                 <DescriptionList.Term>Stadsdeel</DescriptionList.Term>
-                <DescriptionList.Details>Amsterdam</DescriptionList.Details>
+                <DescriptionList.Description>Amsterdam</DescriptionList.Description>
                 <DescriptionList.Term>Status</DescriptionList.Term>
-                <DescriptionList.Details>Actief</DescriptionList.Details>
+                <DescriptionList.Description>Actief</DescriptionList.Description>
                 <DescriptionList.Term>Projectsoort</DescriptionList.Term>
-                <DescriptionList.Details>Programma Bruggen</DescriptionList.Details>
+                <DescriptionList.Description>Programma Bruggen</DescriptionList.Description>
               </DescriptionList>
             </section>
           </Column>

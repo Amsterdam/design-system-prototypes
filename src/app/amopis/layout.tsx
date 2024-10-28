@@ -1,5 +1,6 @@
 'use client'
 
+import { ReactNode } from 'react'
 import { Column, Grid, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
 import Link from 'next/link'
 
@@ -9,7 +10,7 @@ import { SiteHeader } from './_components/SiteHeader/SiteHeader'
 import './amopis.css'
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
 
-function Amopis({ children }: { children: React.ReactNode }) {
+function Amopis({ children }: { children: ReactNode }) {
   return (
     <div className="ams-theme ams-theme--compact">
       <SkipLink href="#main">Direct naar inhoud</SkipLink>

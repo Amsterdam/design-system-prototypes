@@ -491,7 +491,7 @@ function Parkeren() {
                 Voldoet u aan de{' '}
                 <Link
                   href="https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-sportverenigingen/#PagCls_16986648"
-                  onBackground="dark"
+                  inverseColor
                   variant="inline"
                 >
                   voorwaarden
@@ -507,7 +507,7 @@ function Parkeren() {
                   U voegt de juiste{' '}
                   <Link
                     href="https://www.amsterdam.nl/parkeren/parkeervergunning/parkeervergunning-sportverenigingen/#PagCls_16986651"
-                    onBackground="dark"
+                    inverseColor
                     variant="inline"
                   >
                     documenten

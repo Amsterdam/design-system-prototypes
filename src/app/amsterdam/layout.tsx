@@ -142,15 +142,15 @@ export default function Amsterdam({ children }) {
                     <LinkList.Link
                       href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/contactformulier.aspx/?pk_vid=9f948f5fae0c5e90169952648840adc6"
                       icon={ChattingIcon}
-                      onBackground="dark"
+                      inverseColor
                       size="small"
                     >
                       Contactformulier
                     </LinkList.Link>
-                    <LinkList.Link href="https://www.amsterdam.nl/contact/" onBackground="dark" size="small">
+                    <LinkList.Link href="https://www.amsterdam.nl/contact/" inverseColor size="small">
                       Adressen en openingstijden
                     </LinkList.Link>
-                    <LinkList.Link href="tel:+3114020" icon={PhoneIcon} onBackground="dark" size="small">
+                    <LinkList.Link href="tel:+3114020" icon={PhoneIcon} inverseColor size="small">
                       Bel 14 020
                     </LinkList.Link>
                   </LinkList>
@@ -163,7 +163,7 @@ export default function Amsterdam({ children }) {
                   </Heading>
                   <LinkList>
                     {socials.map(({ href, label }) => (
-                      <LinkList.Link href={href} onBackground="dark" rel="external" size="small" key={label}>
+                      <LinkList.Link href={href} inverseColor rel="external" size="small" key={label}>
                         {label}
                       </LinkList.Link>
                     ))}
@@ -180,7 +180,7 @@ export default function Amsterdam({ children }) {
                       Van buurtactiviteiten tot inspraakavonden. Wat organiseert de gemeente voor u? Kijk op{' '}
                       <Link
                         href="https://activiteiten.amsterdam.nl/?pk_vid=9f948f5fae0c5e90169952714540adc6"
-                        onBackground="dark"
+                        inverseColor
                         variant="inline"
                       >
                         Kalender Amsterdam
@@ -194,7 +194,7 @@ export default function Amsterdam({ children }) {
                     </Heading>
                     <Paragraph size="small" inverseColor>
                       Benieuwd wat er allemaal te doen is in de stad? Op{' '}
-                      <Link href="https://www.iamsterdam.com/" onBackground="dark" variant="inline">
+                      <Link href="https://www.iamsterdam.com/" inverseColor variant="inline">
                         Iamsterdam.com
                       </Link>{' '}
                       vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
