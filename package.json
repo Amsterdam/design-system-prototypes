@@ -27,18 +27,18 @@
   },
   "dependencies": {
     "@amsterdam/design-system-assets": "^0.2.2",
-    "@amsterdam/design-system-css": "^0.13.0",
-    "@amsterdam/design-system-react": "^0.13.0",
+    "@amsterdam/design-system-css": "^0.13.1",
+    "@amsterdam/design-system-react": "^0.13.1",
     "@amsterdam/design-system-react-icons": "^0.1.13",
     "@amsterdam/design-system-tokens": "^0.13.0",
     "next": "^15.0.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-hook-form": "^7.53.1",
+    "react-hook-form": "^7.53.2",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "^14.2.16",
+    "@next/eslint-plugin-next": "^14.2.17",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
