@@ -1,17 +1,22 @@
-import path from 'node:path'
+/* eslint-disable @typescript-eslint/naming-convention */
+/* eslint-disable import/no-unresolved */
+/* eslint-disable no-underscore-dangle */
 import { fileURLToPath } from 'node:url'
-import js from '@eslint/js'
 import { FlatCompat } from '@eslint/eslintrc'
+import eslint from '@eslint/js'
+import path from 'node:path'
+import tseslint from 'typescript-eslint'
 
-const filename = fileURLToPath(import.meta.url)
-const dirname = path.dirname(filename)
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 const compat = new FlatCompat({
-  baseDirectory: dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
+  baseDirectory: __dirname,
+  recommendedConfig: eslint.configs.recommended,
+  allConfig: eslint.configs.all,
+  ...tseslint.configs.recommended,
 })
 
-export default [
+export default tseslint.config(
   {
     ignores: [
       '**/node_modules/',
@@ -30,7 +35,6 @@ export default [
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:@next/next/recommended',
   ),
   {
@@ -68,4 +72,4 @@ export default [
       'react/react-in-jsx-scope': 'off',
     },
   },
-]
+)
