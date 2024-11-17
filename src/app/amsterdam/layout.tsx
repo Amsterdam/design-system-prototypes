@@ -49,6 +49,10 @@ const footerLinks = [
     href: '/amsterdam/parkeervergunning-voor-sportverenigingen',
     label: 'Parkeren',
   },
+  {
+    href: '/amsterdam/bestuur-en-organisatie',
+    label: 'Bestuur en Organisatie',
+  },
 ]
 
 const socials = [
