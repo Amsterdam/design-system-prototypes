@@ -57,6 +57,10 @@ const footerLinks = [
     href: '/amsterdam/bestuur-en-organisatie/gemeenteraad',
     label: 'Gemeenteraad',
   },
+  {
+    href: '/amsterdam/bestuur-en-organisatie/college-van-burgemeester-en-wethouders',
+    label: 'College van burgemeester en wethouders',
+  },
 ]
 
 const socials = [
