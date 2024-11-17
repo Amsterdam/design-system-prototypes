@@ -53,6 +53,10 @@ const footerLinks = [
     href: '/amsterdam/bestuur-en-organisatie',
     label: 'Bestuur en Organisatie',
   },
+  {
+    href: '/amsterdam/bestuur-en-organisatie/gemeenteraad',
+    label: 'Gemeenteraad',
+  },
 ]
 
 const socials = [

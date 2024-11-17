@@ -8,6 +8,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.ams-theme {
+  --ams-header-padding-block: var(--ams-space-grid-md); /* Increase header padding */
+}
+
 .ams-body {
   background-color: #ffffff;
 }
@@ -40,3 +44,7 @@ strong {
   }
 }
 
+/* Make card tagline grey */
+.ams-card__heading-group > .ams-paragraph--small {
+  color: #474747;
+}
