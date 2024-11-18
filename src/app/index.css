@@ -19,6 +19,10 @@
 /* Indicate non-functional links */
 a[href="#"] {
   cursor: not-allowed;
+
+  &:hover {
+    text-decoration-line: line-through;
+  }
 }
 
 /* Set strong emphasis in extra bold type */
