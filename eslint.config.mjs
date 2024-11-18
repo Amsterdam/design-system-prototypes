@@ -18,16 +18,7 @@ const compat = new FlatCompat({
 
 export default tseslint.config(
   {
-    ignores: [
-      '**/node_modules/',
-      '**/vendor/',
-      '**/build/',
-      '**/coverage/',
-      '**/dist/',
-      '**/tmp/',
-      'proprietary/react-icons',
-      'packages/react/unstyled',
-    ],
+    ignores: ['**/node_modules/', '**/vendor/', '**/build/', '**/coverage/', '**/dist/', '**/tmp/'],
   },
   ...compat.extends(
     'airbnb',
