@@ -78,14 +78,8 @@ type PersonProps = {
 }
 
 function PersonCardCell({ fullName, image, index, jobTitle }: PersonProps & { index: number }) {
-  const getWideStart = (value: number) => {
-    if (value % 3 === 0) return 2
-    if (value % 3 === 1) return 5
-    return 8
-  }
-
   return (
-    <Grid.Cell span={3} start={{ narrow: 1, medium: index % 2 === 0 ? 2 : 5, wide: getWideStart(index) }}>
+    <Grid.Cell span={3} start={{ narrow: 1, medium: index % 2 === 0 ? 2 : 5, wide: (index % 4) * 3 + 1 }}>
       <Card>
         <AspectRatio ratio="x-wide">
           <NextImage alt="" src={image} fill />
@@ -122,7 +116,7 @@ export default function CollegeVanBurgemeesterEnWethouders() {
         <NextImage alt="" src={municipalExecutive} fill />
       </AspectRatio>
       <Grid paddingVertical="large">
-        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 9 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 12 }} start={{ narrow: 1, medium: 2, wide: 1 }}>
           <Heading className="ams-mb--xs" level={2}>
             Burgemeester en wethouders
           </Heading>
