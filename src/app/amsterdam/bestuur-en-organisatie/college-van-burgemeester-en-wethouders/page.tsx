@@ -115,7 +115,7 @@ export default function CollegeVanBurgemeesterEnWethouders() {
       <AspectRatio ratio="2x-wide">
         <NextImage alt="" src={municipalExecutive} fill />
       </AspectRatio>
-      <Grid paddingVertical="large">
+      <Grid paddingVertical="large" gapVertical="small">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 12 }} start={{ narrow: 1, medium: 2, wide: 1 }}>
           <Heading className="ams-mb--xs" level={2}>
             Burgemeester en wethouders

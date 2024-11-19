@@ -95,7 +95,7 @@ export default function Gemeenteraad() {
       <AspectRatio ratio="2x-wide">
         <NextImage alt="" src={cityCouncilImage} fill />
       </AspectRatio>
-      <Grid paddingVertical="large">
+      <Grid paddingVertical="large" gapVertical="small">
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
           <Heading className="ams-mb--xs" level={2}>
             Raadsinformatie
