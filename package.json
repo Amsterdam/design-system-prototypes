@@ -31,8 +31,6 @@
     "@amsterdam/design-system-react": "^0.13.1",
     "@amsterdam/design-system-react-icons": "^0.1.13",
     "@amsterdam/design-system-tokens": "^0.13.0",
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.14.0",
     "next": "^15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -40,6 +38,8 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.14.0",
     "@next/eslint-plugin-next": "^15.0.3",
     "@types/eslint__js": "^8.42.3",
     "@types/react": "^18.3.12",
