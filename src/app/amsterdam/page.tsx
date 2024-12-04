@@ -2,7 +2,6 @@
 
 import {
   Alert,
-  AspectRatio,
   Card,
   Column,
   Grid,
@@ -92,9 +91,7 @@ function HomePage() {
         </Grid.Cell>
       </Grid>
       <Overlap>
-        <AspectRatio ratio="2x-wide">
-          <NextImage src={vindenImage} alt="" fill />
-        </AspectRatio>
+        <NextImage alt="" className="ams-image ams-aspect-ratio--2x-wide" src={vindenImage} />
         <Grid style={{ alignSelf: 'center' }}>
           <Grid.Cell span={{ medium: 6, narrow: 4, wide: 8 }} start={{ medium: 2, narrow: 1, wide: 3 }}>
             <SearchField onSubmit={() => {}}>
@@ -165,9 +162,7 @@ function HomePage() {
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
           <Heading className="ams-mb--sm">Nieuws</Heading>
           <Card>
-            <AspectRatio ratio="x-wide">
-              <NextImage alt="" fill src={stormschadeImage} />
-            </AspectRatio>
+            <NextImage alt="" className="ams-image" src={stormschadeImage} />
             <Card.HeadingGroup tagline="Nieuws">
               <Heading level={2} size="level-4">
                 <Card.Link href="#">Waar u stormschade kunt melden</Card.Link>
@@ -183,9 +178,7 @@ function HomePage() {
         {cards.map(({ heading, image }) => (
           <Grid.Cell span={4} key={heading}>
             <Card>
-              <AspectRatio ratio="x-wide">
-                <NextImage alt="" fill src={image} />
-              </AspectRatio>
+              <NextImage alt="" className="ams-image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">
                 <Heading level={2} size="level-4">
                   <Card.Link href="#">{heading}</Card.Link>

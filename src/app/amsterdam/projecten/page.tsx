@@ -1,15 +1,6 @@
 'use client'
 
-import {
-  AspectRatio,
-  Breadcrumb,
-  Grid,
-  Heading,
-  LinkList,
-  Paragraph,
-  Spotlight,
-  TextInput,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Grid, Heading, LinkList, Paragraph, Spotlight, TextInput } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
 
@@ -67,15 +58,11 @@ function Projecten() {
             <Paragraph>Ga via de kaart naar meer informatie over het project dat u zoekt.</Paragraph>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }}>
-            <AspectRatio ratio="x-wide">
-              <NextImage alt="" src={constructionWorkImage} />
-            </AspectRatio>
+            <NextImage alt="" className="ams-image" src={constructionWorkImage} />
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <AspectRatio ratio="x-wide">
-        <NextImage alt="" src={constructionWorkMapImage} />
-      </AspectRatio>
+      <NextImage alt="" className="ams-image" src={constructionWorkMapImage} />
     </>
   )
 }

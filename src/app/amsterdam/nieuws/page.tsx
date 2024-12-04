@@ -1,6 +1,6 @@
 'use client'
 
-import { AspectRatio, Breadcrumb, Column, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Breadcrumb, Column, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
 import fatbikesImage from '../_assets/fatbikes.jpg'
@@ -35,9 +35,7 @@ function Nieuws() {
             </Paragraph>
           </Grid.Cell>
           <Grid.Cell span={6}>
-            <AspectRatio ratio="x-wide">
-              <NextImage alt="" src={fatbikesImage} fill />
-            </AspectRatio>
+            <NextImage alt="" className="ams-image" src={fatbikesImage} />
           </Grid.Cell>
         </Grid>
         <Grid paddingBottom="medium">

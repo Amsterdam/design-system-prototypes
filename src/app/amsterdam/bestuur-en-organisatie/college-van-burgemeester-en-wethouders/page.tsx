@@ -1,7 +1,6 @@
 'use client'
 
 import {
-  AspectRatio,
   Breadcrumb,
   Card,
   Grid,
@@ -93,9 +92,7 @@ function PersonCardCell({ fullName, image, index, jobTitle }: PersonProps & { in
       start={{ narrow: 1, medium: index % 2 === 0 ? 2 : 5, wide: ((index % 4) * 3 + 1) as GridColumnNumber }}
     >
       <Card>
-        <AspectRatio ratio="x-wide">
-          <NextImage alt="" src={image} fill />
-        </AspectRatio>
+        <NextImage alt="" className="ams-image" src={image} />
         <Heading size="level-4">
           <Card.Link href="#">{fullName}</Card.Link>
         </Heading>
@@ -124,9 +121,7 @@ export default function CollegeVanBurgemeesterEnWethouders() {
           <Paragraph size="large">Het dagelijks bestuur van onze gemeente uitgebreid in beeld.</Paragraph>
         </Grid.Cell>
       </Grid>
-      <AspectRatio ratio="2x-wide">
-        <NextImage alt="" src={municipalExecutive} fill />
-      </AspectRatio>
+      <NextImage alt="" className="ams-image ams-aspect-ratio--2x-wide" src={municipalExecutive} />
       <Grid paddingVertical="large" gapVertical="small">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 12 }} start={{ narrow: 1, medium: 2, wide: 1 }}>
           <Heading className="ams-mb--xs" level={2}>
