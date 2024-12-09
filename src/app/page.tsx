@@ -21,6 +21,9 @@ export default function Page() {
             <Link legacyBehavior href="/amsterdam" passHref>
               <LinkList.Link>Amsterdam</LinkList.Link>
             </Link>
+            <Link legacyBehavior href="/data-amsterdam" passHref>
+              <LinkList.Link>Data Amsterdam</LinkList.Link>
+            </Link>
             <Link legacyBehavior href="/signalen" passHref>
               <LinkList.Link>Signalen</LinkList.Link>
             </Link>
