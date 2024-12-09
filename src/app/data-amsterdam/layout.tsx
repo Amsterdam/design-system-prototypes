@@ -21,6 +21,7 @@ export default function DataAmsterdam({ children }) {
         <Grid.Cell span="all">
           <SkipLink href="#main">Direct naar inhoud</SkipLink>
           <Header
+            appName="Data Amsterdam"
             logoLink={`${process.env.basePath}data-amsterdam`}
             logoLinkTitle="Naar de homepage van Data Amsterdam"
             links={
@@ -28,7 +29,13 @@ export default function DataAmsterdam({ children }) {
                 <NextLink legacyBehavior href="/" passHref>
                   <PageMenu.Link>Prototypes</PageMenu.Link>
                 </NextLink>
+                <PageMenu.Link href="#">Inloggen</PageMenu.Link>
               </PageMenu>
+            }
+            menu={
+              <button type="button" className="ams-header__menu-button">
+                Menu
+              </button>
             }
           />
         </Grid.Cell>

@@ -8,6 +8,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+.ams-theme {
+  --ams-header-padding-block: var(--ams-space-grid-md); /* Increase header padding */
+}
+
 .ams-body {
   background-color: #ffffff;
 }
