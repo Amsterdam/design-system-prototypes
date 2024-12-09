@@ -7,11 +7,13 @@ import {
   Header,
   Heading,
   Link,
+  LinkList,
   PageMenu,
   Paragraph,
   Screen,
   SkipLink,
 } from '@amsterdam/design-system-react'
+import { ChatBubbleIcon, ChattingIcon, EmailIcon, InfoIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 
 export default function DataAmsterdam({ children }) {
@@ -49,19 +51,60 @@ export default function DataAmsterdam({ children }) {
           <Grid gapVertical="large" paddingVertical="medium">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
               <Column as="section" gap="extra-small">
-                <Heading level={2} size="level-4" inverseColor>
-                  Contact
+                <Heading className="ams-mb--xs" inverseColor level={2} size="level-4">
+                  Vragen
                 </Heading>
-                <Paragraph size="small" inverseColor>
-                  Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Bel het telefoonnummer{' '}
-                  <Link href="tel:+3114020" inverseColor variant="inline">
-                    14 020
-                  </Link>
-                  .
+                <Paragraph className="ams-mb--xs" inverseColor size="small">
+                  Heeft u een vraag en kunt u het antwoord niet vinden op deze website? Of heeft u bevindingen? Neem dan
+                  contact met ons op.
                 </Paragraph>
-                <Paragraph size="small" inverseColor>
-                  Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
-                </Paragraph>
+                <LinkList>
+                  <LinkList.Link href="#" icon={ChattingIcon} inverseColor size="small">
+                    Veelgestelde vragen
+                  </LinkList.Link>
+                  <LinkList.Link href="#" icon={EmailIcon} inverseColor size="small">
+                    Contact opnemen
+                  </LinkList.Link>
+                  <LinkList.Link href="#" icon={InfoIcon} inverseColor size="small">
+                    Uitleg gebruik
+                  </LinkList.Link>
+                  <LinkList.Link href="#" icon={ChatBubbleIcon} inverseColor size="small">
+                    Feedback geven
+                  </LinkList.Link>
+                </LinkList>
+              </Column>
+            </Grid.Cell>
+            <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
+              <Column as="section" gap="extra-small">
+                <Heading className="ams-mb--xs" inverseColor level={2} size="level-4">
+                  Colofon
+                </Heading>
+                <LinkList>
+                  <LinkList.Link href="#" inverseColor size="small">
+                    Databeleid
+                  </LinkList.Link>
+                  <LinkList.Link href="#" inverseColor size="small">
+                    Over de organisatie
+                  </LinkList.Link>
+                  <LinkList.Link href="#" inverseColor size="small">
+                    Over het dataplatform
+                  </LinkList.Link>
+                  <LinkList.Link href="#" inverseColor size="small">
+                    Over deze site
+                  </LinkList.Link>
+                </LinkList>
+              </Column>
+            </Grid.Cell>
+            <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
+              <Column as="section" gap="extra-small">
+                <Heading className="ams-mb--xs" inverseColor level={2} size="level-4">
+                  Volg ons
+                </Heading>
+                <LinkList>
+                  <LinkList.Link href="#" inverseColor size="small">
+                    Nieuwsbrief i-domein inschrijven
+                  </LinkList.Link>
+                </LinkList>
               </Column>
             </Grid.Cell>
           </Grid>
@@ -73,9 +116,7 @@ export default function DataAmsterdam({ children }) {
           <Grid paddingVertical="small">
             <Grid.Cell span="all">
               <PageMenu>
-                <PageMenu.Link href="#">Over deze site</PageMenu.Link>
-                <PageMenu.Link href="#">Privacy</PageMenu.Link>
-                <PageMenu.Link href="#">Toegankelijkheid</PageMenu.Link>
+                <PageMenu.Link href="#">Privacy en cookies</PageMenu.Link>
                 {/* Append footer link here */}
               </PageMenu>
             </Grid.Cell>
