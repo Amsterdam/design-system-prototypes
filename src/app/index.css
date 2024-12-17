@@ -8,14 +8,6 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.ams-theme {
-  --ams-header-padding-block: var(--ams-space-grid-md); /* Increase header padding */
-}
-
-.ams-body {
-  background-color: #ffffff;
-}
-
 /* Indicate non-functional links */
 a[href="#"] {
   cursor: not-allowed;
@@ -23,11 +15,6 @@ a[href="#"] {
   &:hover {
     text-decoration-line: line-through;
   }
-}
-
-/* Set strong emphasis in extra bold type */
-strong {
-  font-weight: 800;
 }
 
 .ams-details {
@@ -46,9 +33,4 @@ strong {
     font-size: 75%;
     line-height: 2;
   }
-}
-
-/* Make card tagline grey */
-.ams-card__heading-group > .ams-paragraph--small {
-  color: #474747;
 }
