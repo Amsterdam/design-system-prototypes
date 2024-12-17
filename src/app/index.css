@@ -8,18 +8,13 @@
   -webkit-text-size-adjust: 100%;
 }
 
-.ams-body {
-  background-color: #ffffff;
-}
-
 /* Indicate non-functional links */
 a[href="#"] {
   cursor: not-allowed;
-}
 
-/* Set strong emphasis in extra bold type */
-strong {
-  font-weight: 800;
+  &:hover {
+    text-decoration-line: line-through;
+  }
 }
 
 .ams-details {
@@ -39,4 +34,3 @@ strong {
     line-height: 2;
   }
 }
-
