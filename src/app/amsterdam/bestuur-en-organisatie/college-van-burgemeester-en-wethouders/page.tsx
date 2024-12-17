@@ -1,6 +1,15 @@
 'use client'
 
-import { AspectRatio, Breadcrumb, Card, Grid, Heading, PageHeading, Paragraph } from '@amsterdam/design-system-react'
+import {
+  AspectRatio,
+  Breadcrumb,
+  Card,
+  Grid,
+  GridColumnNumber,
+  Heading,
+  PageHeading,
+  Paragraph,
+} from '@amsterdam/design-system-react'
 import NextImage, { type StaticImageData } from 'next/image'
 import NextLink from 'next/link'
 
@@ -79,7 +88,10 @@ type PersonProps = {
 
 function PersonCardCell({ fullName, image, index, jobTitle }: PersonProps & { index: number }) {
   return (
-    <Grid.Cell span={3} start={{ narrow: 1, medium: index % 2 === 0 ? 2 : 5, wide: (index % 4) * 3 + 1 }}>
+    <Grid.Cell
+      span={3}
+      start={{ narrow: 1, medium: index % 2 === 0 ? 2 : 5, wide: ((index % 4) * 3 + 1) as GridColumnNumber }}
+    >
       <Card>
         <AspectRatio ratio="x-wide">
           <NextImage alt="" src={image} fill />
