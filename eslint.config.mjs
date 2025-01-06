@@ -21,8 +21,6 @@ export default tseslint.config(
     ignores: ['**/node_modules/', '**/vendor/', '**/build/', '**/coverage/', '**/dist/', '**/tmp/'],
   },
   ...compat.extends(
-    'airbnb',
-    'airbnb-typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
@@ -37,7 +35,6 @@ export default tseslint.config(
         project: ['./tsconfig.json'],
       },
     },
-
     settings: {
       'import/resolver': {
         node: {
@@ -45,18 +42,15 @@ export default tseslint.config(
         },
       },
     },
-
     rules: {
       'jsx-a11y/anchor-is-valid': 'off',
       'import/prefer-default-export': 'off',
-
       'react/jsx-filename-extension': [
         1,
         {
           extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },
       ],
-
       'react/no-unknown-property': 'off',
       'react/prop-types': 'off',
       'react/jsx-key': 'off',
