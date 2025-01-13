@@ -1,18 +1,14 @@
-import { Avatar, Grid, Header, Row } from '@amsterdam/design-system-react'
+import { Avatar, Grid, Header } from '@amsterdam/design-system-react'
 
 export function SiteHeader() {
   return (
     <Grid>
       <Grid.Cell span="all">
         <Header
-          appName="Amopis"
-          links={
-            <Row align="end">
-              <Avatar label="KH" title="Goedemorgen Kees Herder" />
-            </Row>
-          }
+          brandName="Amopis"
           logoLink={`${process.env.basePath}amopis`}
           logoLinkTitle="Naar de homepage van Amopis"
+          menuItems={<Avatar label="KH" title="Goedemorgen Kees Herder" />}
         />
       </Grid.Cell>
     </Grid>

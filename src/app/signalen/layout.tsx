@@ -26,18 +26,6 @@ function Signalen({ children }) {
           <Header
             logoLink={`${process.env.basePath}signalen`} // TODO: je kunt hier geen Next Link gebruiken
             logoLinkTitle="Naar de homepage van Signalen Amsterdam"
-            links={
-              <PageMenu alignEnd>
-                <NextLink href="/signalen" legacyBehavior passHref>
-                  <PageMenu.Link>Doe een melding</PageMenu.Link>
-                </NextLink>
-                <PageMenu.Link href="#">Meldingenkaart</PageMenu.Link>
-                <PageMenu.Link href="#">Mijn meldingen</PageMenu.Link>
-                <NextLink legacyBehavior href="/" passHref>
-                  <PageMenu.Link>Prototypes</PageMenu.Link>
-                </NextLink>
-              </PageMenu>
-            }
           />
         </Grid.Cell>
       </Grid>
@@ -82,6 +70,9 @@ function Signalen({ children }) {
                 <PageMenu.Link href="#">Over deze site</PageMenu.Link>
                 <PageMenu.Link href="#">Privacy</PageMenu.Link>
                 <PageMenu.Link href="#">Toegankelijkheid</PageMenu.Link>
+                <NextLink href="/" legacyBehavior passHref>
+                  <PageMenu.Link>Prototypes</PageMenu.Link>
+                </NextLink>
               </PageMenu>
             </Grid.Cell>
           </Grid>
