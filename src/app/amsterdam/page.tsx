@@ -13,6 +13,7 @@ import {
   Spotlight,
 } from '@amsterdam/design-system-react'
 import NextImage from 'next/image'
+import { useState } from 'react'
 import vindenImage from './_assets/vinden.jpg'
 import stormschadeImage from './_assets/stormschade.jpg'
 import woonwijkImage from './_assets/woonwijk.jpg'
@@ -77,19 +78,23 @@ const cards = [
 ]
 
 function HomePage() {
+  const [isAlertVisible, setIsAlertVisible] = useState(true)
+
   return (
     <>
-      <Grid>
-        <Grid.Cell span="all">
-          <Alert className="ams-mb--md" closeable>
-            <Paragraph>
-              Tijdens Koningsdag zijn alle Stadsloketten gesloten. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Aliquid aspernatur modi, omnis quam vitae. Ook 14 020 en alle andere telefoonnummers van de gemeente
-              zijn niet bereikbaar.
-            </Paragraph>
-          </Alert>
-        </Grid.Cell>
-      </Grid>
+      {isAlertVisible && (
+        <Grid>
+          <Grid.Cell span="all">
+            <Alert className="ams-mb--md" closeable onClose={() => setIsAlertVisible(false)}>
+              <Paragraph>
+                Tijdens Koningsdag zijn alle Stadsloketten gesloten. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Aliquid aspernatur modi, omnis quam vitae. Ook 14 020 en alle andere telefoonnummers van de
+                gemeente zijn niet bereikbaar.
+              </Paragraph>
+            </Alert>
+          </Grid.Cell>
+        </Grid>
+      )}
       <Overlap>
         <NextImage alt="" className="ams-image ams-aspect-ratio--2x-wide" src={vindenImage} />
         <Grid style={{ alignSelf: 'center' }}>
