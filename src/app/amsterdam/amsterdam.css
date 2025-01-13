@@ -1,0 +1,9 @@
+.ams-mega-menu__columns {
+  column-gap: var(--ams-space-grid-md);
+  column-width: 20rem;
+
+  .ams-link-list__link {
+    break-inside: avoid;
+  }
+}
+

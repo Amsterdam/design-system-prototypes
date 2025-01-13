@@ -223,13 +223,15 @@ export default function Amsterdam({ children }) {
                   <Heading className="ams-mb--sm" level={2} size="level-3">
                     Alle onderwerpen
                   </Heading>
-                  <LinkList>
-                    {megaMenuLinks.map(({ href, label }) => (
-                      <LinkList.Link href={href} key={label}>
-                        {label}
-                      </LinkList.Link>
-                    ))}
-                  </LinkList>
+                  <div className="ams-mega-menu__columns">
+                    <LinkList>
+                      {megaMenuLinks.map(({ href, label }) => (
+                        <LinkList.Link href={href} key={label}>
+                          {label}
+                        </LinkList.Link>
+                      ))}
+                    </LinkList>
+                  </div>
                 </Grid.Cell>
               </Grid>
             </Header>
