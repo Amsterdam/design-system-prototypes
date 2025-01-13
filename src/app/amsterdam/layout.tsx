@@ -49,6 +49,18 @@ const footerLinks = [
     href: '/amsterdam/parkeervergunning-voor-sportverenigingen',
     label: 'Parkeren',
   },
+  {
+    href: '/amsterdam/bestuur-en-organisatie',
+    label: 'Bestuur en Organisatie',
+  },
+  {
+    href: '/amsterdam/bestuur-en-organisatie/gemeenteraad',
+    label: 'Gemeenteraad',
+  },
+  {
+    href: '/amsterdam/bestuur-en-organisatie/college-van-burgemeester-en-wethouders',
+    label: 'College van burgemeester en wethouders',
+  },
 ]
 
 const socials = [

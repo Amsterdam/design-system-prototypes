@@ -37,7 +37,6 @@ export default tseslint.config(
         project: ['./tsconfig.json'],
       },
     },
-
     settings: {
       'import/resolver': {
         node: {
@@ -45,18 +44,16 @@ export default tseslint.config(
         },
       },
     },
-
     rules: {
       'jsx-a11y/anchor-is-valid': 'off',
       'import/prefer-default-export': 'off',
-
       'react/jsx-filename-extension': [
         1,
         {
           extensions: ['.js', '.jsx', '.ts', '.tsx'],
         },
       ],
-
+      'react/require-default-props': 'off',
       'react/no-unknown-property': 'off',
       'react/prop-types': 'off',
       'react/jsx-key': 'off',
