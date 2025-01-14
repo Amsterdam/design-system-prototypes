@@ -59,10 +59,6 @@ const megaMenuLinks = [
     label: 'Parkeren',
   },
   {
-    href: '/amsterdam/parkeervergunning-voor-sportverenigingen',
-    label: 'Parkeervergunning voor sportverenigingen',
-  },
-  {
     href: '#',
     label: 'Sport',
   },
