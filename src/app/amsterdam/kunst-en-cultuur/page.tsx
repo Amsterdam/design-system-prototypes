@@ -10,7 +10,7 @@ import artAndCultureImage from '../_assets/art-and-culture.jpg'
 function KunstEnCultuur() {
   return (
     <>
-      <Grid>
+      <Grid paddingTop="small">
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>
@@ -33,7 +33,7 @@ function KunstEnCultuur() {
           <NextImage alt="" className="ams-image" src={artAndCultureImage} />
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="medium">
+      <Grid paddingBottom="large">
         <Grid.Cell span={4}>
           <Heading level={3} className="ams-mb--xs">
             Vaak gezocht

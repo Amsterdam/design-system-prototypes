@@ -10,7 +10,7 @@ import constructionWorkMapImage from '../_assets/construction-work-map.jpg'
 function Projecten() {
   return (
     <>
-      <Grid>
+      <Grid paddingTop="small">
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>

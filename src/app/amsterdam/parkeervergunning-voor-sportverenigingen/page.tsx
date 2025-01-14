@@ -524,7 +524,7 @@ function Parkeren() {
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <Grid paddingVertical="medium">
+      <Grid paddingVertical="large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Column gap="small">
             <Heading level={3}>Kenteken wijzigen</Heading>

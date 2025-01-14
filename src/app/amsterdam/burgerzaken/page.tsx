@@ -83,7 +83,7 @@ const linkSections = [
 function Burgerzaken() {
   return (
     <>
-      <Grid>
+      <Grid paddingTop="small">
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>
@@ -92,7 +92,7 @@ function Burgerzaken() {
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="medium">
+      <Grid paddingBottom="large">
         <Grid.Cell span="all">
           <PageHeading>Burgerzaken</PageHeading>
         </Grid.Cell>
