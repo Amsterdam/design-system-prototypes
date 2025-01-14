@@ -191,52 +191,48 @@ export default function Amsterdam({ children }) {
     <div className="ams-theme">
       <SkipLink href="#main">Direct naar inhoud</SkipLink>
       <Screen maxWidth="wide">
-        <Grid>
-          <Grid.Cell span="all">
-            <Header
-              menuItems={[
-                <Header.MenuLink href="https://mijn.amsterdam.nl/" key={1} rel="external">
+        <Header
+          menuItems={[
+            <Header.MenuLink href="https://mijn.amsterdam.nl/" key={1} rel="external">
+              Mijn Amsterdam
+            </Header.MenuLink>,
+            <Header.MenuLink href="#" key={2} lang="en">
+              English
+            </Header.MenuLink>,
+            <NextLink href="/amsterdam/zoeken" key={3} legacyBehavior passHref>
+              <Header.MenuLink fixed>Zoeken</Header.MenuLink>
+            </NextLink>,
+          ]}
+          logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen Next Link gebruiken
+          logoLinkTitle="Naar de homepage van gemeente Amsterdam"
+        >
+          <Grid paddingBottom="large" paddingTop="small">
+            <Header.GridCellNarrowWindowOnly span="all">
+              <LinkList>
+                <LinkList.Link href="https://mijn.amsterdam.nl/" rel="external">
                   Mijn Amsterdam
-                </Header.MenuLink>,
-                <Header.MenuLink href="#" key={2} lang="en">
+                </LinkList.Link>
+                <LinkList.Link href="#" lang="en">
                   English
-                </Header.MenuLink>,
-                <NextLink href="/amsterdam/zoeken" key={3} legacyBehavior passHref>
-                  <Header.MenuLink fixed>Zoeken</Header.MenuLink>
-                </NextLink>,
-              ]}
-              logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen Next Link gebruiken
-              logoLinkTitle="Naar de homepage van gemeente Amsterdam"
-            >
-              <Grid paddingBottom="large" paddingTop="small">
-                <Header.GridCellNarrowWindowOnly span="all">
-                  <LinkList>
-                    <LinkList.Link href="https://mijn.amsterdam.nl/" rel="external">
-                      Mijn Amsterdam
+                </LinkList.Link>
+              </LinkList>
+            </Header.GridCellNarrowWindowOnly>
+            <Grid.Cell span="all">
+              <Heading className="ams-mb--sm" level={2} size="level-3">
+                Alle onderwerpen
+              </Heading>
+              <div className="ams-mega-menu__columns">
+                <LinkList>
+                  {megaMenuLinks.map(({ href, label }) => (
+                    <LinkList.Link href={href} key={label}>
+                      {label}
                     </LinkList.Link>
-                    <LinkList.Link href="#" lang="en">
-                      English
-                    </LinkList.Link>
-                  </LinkList>
-                </Header.GridCellNarrowWindowOnly>
-                <Grid.Cell span="all">
-                  <Heading className="ams-mb--sm" level={2} size="level-3">
-                    Alle onderwerpen
-                  </Heading>
-                  <div className="ams-mega-menu__columns">
-                    <LinkList>
-                      {megaMenuLinks.map(({ href, label }) => (
-                        <LinkList.Link href={href} key={label}>
-                          {label}
-                        </LinkList.Link>
-                      ))}
-                    </LinkList>
-                  </div>
-                </Grid.Cell>
-              </Grid>
-            </Header>
-          </Grid.Cell>
-        </Grid>
+                  ))}
+                </LinkList>
+              </div>
+            </Grid.Cell>
+          </Grid>
+        </Header>
         <main id="main">{children}</main>
         <Footer>
           <Footer.Top>

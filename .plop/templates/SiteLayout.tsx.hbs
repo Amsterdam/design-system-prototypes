@@ -20,12 +20,12 @@ export default function {{pascalCase name}}({ children }) {
       <Grid>
         <Grid.Cell span="all">
           <SkipLink href="#main">Direct naar inhoud</SkipLink>
-          <Header
-            logoLink={`${process.env.basePath}{{kebabCase name}}`}
-            logoLinkTitle="Naar de homepage van {{titleCase name}}"
-          />
         </Grid.Cell>
       </Grid>
+      <Header
+        logoLink={`${process.env.basePath}{{kebabCase name}}`}
+        logoLinkTitle="Naar de homepage van {{titleCase name}}"
+      />
       <main id="main">{children}</main>
       <Footer>
         <Footer.Top>

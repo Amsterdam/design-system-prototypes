@@ -18,7 +18,12 @@ function Amopis({ children }: { children: ReactNode }) {
         <div className="amopis-app-grid">
           <Sidebar />
           <Column gap="none">
-            <SiteHeader />
+            <Header
+              brandName="Amopis"
+              logoLink={`${process.env.basePath}amopis`}
+              logoLinkTitle="Naar de homepage van Amopis"
+              menuItems={<Avatar label="KH" title="Goedemorgen Kees Herder" />}
+            />
             <div id="main" className="amopis-main-background">
               {children}
             </div>
