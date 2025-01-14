@@ -36,7 +36,7 @@ function Projecten() {
           </Heading>
           <LinkList>
             {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
-              <NextLink href="/amsterdam/projecten/project" key={district} legacyBehavior passHref>
+              <NextLink href="/amsterdam/projecten/stadsdeel" key={district} legacyBehavior passHref>
                 <LinkList.Link key={district}>{district}</LinkList.Link>
               </NextLink>
             ))}

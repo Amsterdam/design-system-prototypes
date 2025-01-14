@@ -91,9 +91,11 @@ function Project() {
             </Heading>
             <LinkList>
               {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
-                <LinkList.Link href="#" inverseColor key={district}>
-                  {district}
-                </LinkList.Link>
+                <NextLink href="/amsterdam/projecten/stadsdeel" key={district} legacyBehavior passHref>
+                  <LinkList.Link inverseColor key={district}>
+                    {district}
+                  </LinkList.Link>
+                </NextLink>
               ))}
             </LinkList>
           </Grid.Cell>
