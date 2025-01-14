@@ -17,7 +17,7 @@ function Contact() {
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
-          <NextLink legacyBehavior passHref href="/amsterdam">
+          <NextLink href="/amsterdam" legacyBehavior passHref>
             <Breadcrumb.Link>Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
@@ -40,7 +40,7 @@ function Contact() {
           <Paragraph size="small">
             U dient een klacht in als u vindt dat de gemeente Amsterdam u niet netjes heeft behandeld. Lees meer over de
             klachtenprocedure op{' '}
-            <Link variant="inline" href="https://amsterdam.nl/klachten">
+            <Link href="https://amsterdam.nl/klachten" variant="inline">
               amsterdam.nl/klachten
             </Link>
             .

@@ -8,7 +8,7 @@ function Bedankt() {
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
-          <NextLink legacyBehavior passHref href="/amsterdam">
+          <NextLink href="/amsterdam" legacyBehavior passHref>
             <Breadcrumb.Link>Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
@@ -23,7 +23,7 @@ function Bedankt() {
             U hoort binnen 3 werkdagen wat we met uw melding hebben gedaan. Dringende meldingen pakken wij zo snel
             mogelijk op.
           </Paragraph>
-          <NextLink legacyBehavior passHref href="/amsterdam">
+          <NextLink href="/amsterdam" legacyBehavior passHref>
             <Link>Ga terug naar de homepage.</Link>
           </NextLink>
         </Column>

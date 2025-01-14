@@ -17,7 +17,7 @@ export type BackLinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'place
 
 export const BackLink = forwardRef(
   ({ children, className, href, ...otherProps }: BackLinkProps, ref: ForwardedRef<HTMLAnchorElement>) => (
-    <Link {...otherProps} href={href} ref={ref} className={`ams-back-link ${className}`}>
+    <Link {...otherProps} className={`ams-back-link ${className}`} href={href} ref={ref}>
       <Icon svg={ChevronLeftIcon} size="level-6" />
       {children}
     </Link>

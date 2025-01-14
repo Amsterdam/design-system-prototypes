@@ -1,11 +1,10 @@
 'use client'
 
 import { ReactNode } from 'react'
-import { Column, Grid, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
+import { Avatar, Column, Grid, Header, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
 import Link from 'next/link'
 
 import { Sidebar } from './_components/SideBar/SideBar'
-import { SiteHeader } from './_components/SiteHeader/SiteHeader'
 
 import './amopis.css'
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
@@ -30,16 +29,16 @@ function Amopis({ children }: { children: ReactNode }) {
             <Grid paddingVertical="small">
               <Grid.Cell span="all">
                 <PageMenu>
-                  <Link legacyBehavior href="/amopis" passHref>
+                  <Link href="/amopis" legacyBehavior passHref>
                     <PageMenu.Link>Kerngegevens</PageMenu.Link>
                   </Link>
-                  <Link legacyBehavior href="/amopis/ramingen" passHref>
+                  <Link href="/amopis/ramingen" legacyBehavior passHref>
                     <PageMenu.Link>Ramingen</PageMenu.Link>
                   </Link>
                   <PageMenu.Link href="#">E-mail je vraag of feedback</PageMenu.Link>
                   <PageMenu.Link href="#">Bekijk veelgestelde vragen</PageMenu.Link>
                   <PageMenu.Link href="#">Bekijk releasebeschrijving</PageMenu.Link>
-                  <Link legacyBehavior href="/" passHref>
+                  <Link href="/" legacyBehavior passHref>
                     <PageMenu.Link>Prototypes</PageMenu.Link>
                   </Link>
                 </PageMenu>

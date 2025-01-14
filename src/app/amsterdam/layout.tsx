@@ -245,7 +245,7 @@ export default function Amsterdam({ children }) {
                   </Heading>
                   <LinkList>
                     {socials.map(({ href, label }) => (
-                      <LinkList.Link href={href} inverseColor rel="external" size="small" key={label}>
+                      <LinkList.Link href={href} inverseColor key={label} rel="external" size="small">
                         {label}
                       </LinkList.Link>
                     ))}
@@ -294,7 +294,7 @@ export default function Amsterdam({ children }) {
           <Grid.Cell span="all">
             <PageMenu>
               {footerLinks.map(({ href, label }) => (
-                <NextLink legacyBehavior href={href} passHref key={label}>
+                <NextLink href={href} key={label} legacyBehavior passHref>
                   <PageMenu.Link>{label}</PageMenu.Link>
                 </NextLink>
               ))}

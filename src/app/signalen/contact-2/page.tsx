@@ -32,7 +32,7 @@ function Contact2() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink href="/signalen/contact-1" className="ams-mb--xs">
+        <BackLink className="ams-mb--xs" href="/signalen/contact-1">
           Vorige vraag
         </BackLink>
         <Column className="ams-mb--md">

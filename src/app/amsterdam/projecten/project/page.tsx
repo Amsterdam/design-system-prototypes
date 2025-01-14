@@ -12,10 +12,10 @@ function Project() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink legacyBehavior passHref href="/amsterdam">
+            <NextLink href="/amsterdam" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
-            <NextLink legacyBehavior passHref href="/amsterdam/projecten">
+            <NextLink href="/amsterdam/projecten" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
@@ -23,7 +23,7 @@ function Project() {
       </Grid>
       <Grid gapVertical="small" paddingBottom="medium">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-          <Heading className="ams-mb--sm">Bouwprojecten en verkeersprojecten in Noord</Heading>
+          <Heading className="ams-mb--sm">Bouw- en verkeersprojecten in Noord</Heading>
           <Paragraph size="large">
             <strong>Overzicht van projecten in stadsdeel Noord.</strong> Lees waar en wanneer we werken aan nieuwbouw,
             groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele gebieden. En
