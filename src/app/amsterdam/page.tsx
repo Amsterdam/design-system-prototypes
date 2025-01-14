@@ -13,6 +13,7 @@ import {
   Spotlight,
 } from '@amsterdam/design-system-react'
 import NextImage from 'next/image'
+import NextLink from 'next/link'
 import { useState } from 'react'
 import vindenImage from './_assets/vinden.jpg'
 import stormschadeImage from './_assets/stormschade.jpg'
@@ -170,7 +171,9 @@ function HomePage() {
             <NextImage alt="" className="ams-image" src={stormschadeImage} />
             <Card.HeadingGroup tagline="Nieuws">
               <Heading level={2} size="level-4">
-                <Card.Link href="#">Waar u stormschade kunt melden</Card.Link>
+                <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
+                  <Card.Link>Waar u stormschade kunt melden</Card.Link>
+                </NextLink>
               </Heading>
             </Card.HeadingGroup>
             <Paragraph size="small">
@@ -186,7 +189,9 @@ function HomePage() {
               <NextImage alt="" className="ams-image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">
                 <Heading level={2} size="level-4">
-                  <Card.Link href="#">{heading}</Card.Link>
+                  <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
+                    <Card.Link>{heading}</Card.Link>
+                  </NextLink>
                 </Heading>
               </Card.HeadingGroup>
             </Card>

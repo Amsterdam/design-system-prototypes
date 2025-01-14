@@ -23,15 +23,15 @@ const megaMenuLinks = [
     label: 'Afval',
   },
   {
-    href: '#',
+    href: '/amsterdam/bestuur-en-organisatie',
     label: 'Bestuur en organisatie',
   },
   {
-    href: '#',
+    href: '/amsterdam/projecten',
     label: 'Bouw- en verkeersprojecten',
   },
   {
-    href: '#',
+    href: '/amsterdam/burgerzaken',
     label: 'Burgerzaken',
   },
   {
@@ -43,7 +43,7 @@ const megaMenuLinks = [
     label: 'Gezondheidsdienst (GGD)',
   },
   {
-    href: '#',
+    href: '/amsterdam/kunst-en-cultuur',
     label: 'Kunst, cultuur en vrije tijd',
   },
   {
@@ -57,6 +57,10 @@ const megaMenuLinks = [
   {
     href: '#',
     label: 'Parkeren',
+  },
+  {
+    href: '/amsterdam/parkeervergunning-voor-sportverenigingen',
+    label: 'Parkeervergunning voor sportverenigingen',
   },
   {
     href: '#',
@@ -106,48 +110,16 @@ const megaMenuLinks = [
 
 const footerLinks = [
   {
-    href: '/amsterdam',
-    label: 'Home',
+    href: '#',
+    label: 'Over deze site',
   },
   {
-    href: '/amsterdam/zoeken',
-    label: 'Zoeken',
+    href: '#',
+    label: 'Privacy',
   },
   {
-    href: '/amsterdam/nieuws',
-    label: 'Nieuws',
-  },
-  {
-    href: '/amsterdam/burgerzaken',
-    label: 'Burgerzaken',
-  },
-  {
-    href: '/amsterdam/kunst-en-cultuur',
-    label: 'Kunst en cultuur',
-  },
-  {
-    href: '/amsterdam/projecten',
-    label: 'Projecten',
-  },
-  {
-    href: '/amsterdam/projecten/project',
-    label: 'Project',
-  },
-  {
-    href: '/amsterdam/parkeervergunning-voor-sportverenigingen',
-    label: 'Parkeren',
-  },
-  {
-    href: '/amsterdam/bestuur-en-organisatie',
-    label: 'Bestuur en Organisatie',
-  },
-  {
-    href: '/amsterdam/bestuur-en-organisatie/gemeenteraad',
-    label: 'Gemeenteraad',
-  },
-  {
-    href: '/amsterdam/bestuur-en-organisatie/college-van-burgemeester-en-wethouders',
-    label: 'College van burgemeester en wethouders',
+    href: '#',
+    label: 'Cookies op deze site',
   },
 ]
 
