@@ -27,7 +27,7 @@
   },
   "dependencies": {
     "@amsterdam/design-system-assets": "^0.2.2",
-    "@amsterdam/design-system-css": "^0.13.1",
+    "@amsterdam/design-system-css": "^0.14.0",
     "@amsterdam/design-system-react": "^0.13.1",
     "@amsterdam/design-system-react-icons": "^0.1.13",
     "@amsterdam/design-system-tokens": "^0.13.0",
