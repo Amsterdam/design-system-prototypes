@@ -30,7 +30,7 @@
     "@amsterdam/design-system-css": "^0.13.1",
     "@amsterdam/design-system-react": "^0.13.1",
     "@amsterdam/design-system-react-icons": "^0.1.13",
-    "@amsterdam/design-system-tokens": "^0.13.0",
+    "@amsterdam/design-system-tokens": "^0.14.0",
     "@eslint/eslintrc": "^3.2.0",
     "@eslint/js": "^9.17.0",
     "clsx": "^2.1.1",
