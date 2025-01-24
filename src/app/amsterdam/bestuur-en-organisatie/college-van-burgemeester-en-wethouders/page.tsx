@@ -109,7 +109,7 @@ PersonCardCell.defaultProps = {
 export default function CollegeVanBurgemeesterEnWethouders() {
   return (
     <>
-      <Grid paddingBottom="large" paddingTop="small">
+      <Grid paddingBottom="medium">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>

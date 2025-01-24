@@ -19,7 +19,7 @@ const tabLabels = ['Overzicht', 'Kerngegevens', 'Projectinformatie', 'Projectgre
 
 function Project() {
   return (
-    <Grid paddingBottom="large" paddingTop="small">
+    <Grid paddingVertical="medium">
       <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>

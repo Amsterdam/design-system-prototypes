@@ -174,7 +174,7 @@ export default function Amsterdam({ children }) {
           logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen Next Link gebruiken
           logoLinkTitle="Naar de homepage van gemeente Amsterdam"
         >
-          <Grid paddingBottom="medium" paddingTop="small">
+          <Grid paddingBottom="large" paddingTop="small">
             <Header.GridCellNarrowWindowOnly span="all">
               <LinkList>
                 <LinkList.Link href="https://mijn.amsterdam.nl/" rel="external">

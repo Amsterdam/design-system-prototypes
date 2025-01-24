@@ -20,7 +20,7 @@ const tabLabels = ['Mijlpalen', 'Planfases', 'Capaciteitsraming', 'Maatregelen e
 
 function Estimation() {
   return (
-    <Grid paddingBottom="large" paddingTop="small">
+    <Grid paddingVertical="medium">
       <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>

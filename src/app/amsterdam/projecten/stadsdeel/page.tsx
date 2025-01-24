@@ -9,14 +9,14 @@ import constructionWorkMapImage from '../../_assets/construction-work-map.jpg'
 function Project() {
   return (
     <>
-      <Grid paddingTop="small">
+      <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
             <NextLink href="/amsterdam/projecten" legacyBehavior passHref>
-              <Breadcrumb.Link>Projecten</Breadcrumb.Link>
+              <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
         </Grid.Cell>

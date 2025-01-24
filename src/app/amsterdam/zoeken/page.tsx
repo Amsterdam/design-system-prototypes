@@ -39,7 +39,7 @@ const filterPanel = [
 
 function Zoeken() {
   return (
-    <Grid paddingBottom="large" paddingTop="small">
+    <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
         <Column>
           {filterPanel.map(({ title, filters }) => (

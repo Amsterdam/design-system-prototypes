@@ -8,7 +8,7 @@ import fatbikesImage from '../_assets/fatbikes.jpg'
 function Nieuws() {
   return (
     <>
-      <Grid paddingTop="small">
+      <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>
@@ -38,7 +38,7 @@ function Nieuws() {
             <NextImage alt="" className="ams-image" src={fatbikesImage} />
           </Grid.Cell>
         </Grid>
-        <Grid paddingBottom="large">
+        <Grid paddingBottom="medium">
           <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
             <Column>
               <Paragraph>
