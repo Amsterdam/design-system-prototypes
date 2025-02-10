@@ -157,8 +157,12 @@ const socials = [
 export default function Amsterdam({ children }) {
   return (
     <div className="ams-theme">
-      <SkipLink href="#main">Direct naar inhoud</SkipLink>
       <Screen maxWidth="wide">
+        <Grid>
+          <Grid.Cell span="all">
+            <SkipLink href="#main">Direct naar inhoud</SkipLink>
+          </Grid.Cell>
+        </Grid>
         <Header
           menuItems={[
             <Header.MenuLink href="https://mijn.amsterdam.nl/" key={1} rel="external">
