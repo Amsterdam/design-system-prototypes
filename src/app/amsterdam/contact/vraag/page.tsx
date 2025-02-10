@@ -29,7 +29,7 @@ function Question() {
     <Grid paddingBottom="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
-          <NextLink legacyBehavior passHref href="/amsterdam">
+          <NextLink href="/amsterdam" legacyBehavior passHref>
             <Breadcrumb.Link>Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>

@@ -1,7 +1,6 @@
 'use client'
 
 import {
-  AspectRatio,
   Breadcrumb,
   Column,
   DescriptionList,
@@ -165,17 +164,13 @@ function Project() {
         <div className="amopis-white-background" style={{ padding: '1rem' }}>
           <Column gap="small">
             <div>
-              <AspectRatio ratio="x-wide">
-                <Image alt="" src="https://picsum.photos/900/720?random=1" />
-              </AspectRatio>
+              <Image alt="" src="https://picsum.photos/900/720?random=1" />
               <Paragraph>
                 Impressie Brug 423 &nbsp; <Link variant="inline">Afbeelding wijzigen</Link>
               </Paragraph>
             </div>
             <div>
-              <AspectRatio ratio="x-wide">
-                <Image alt="" src="https://picsum.photos/900/720?random=2" />
-              </AspectRatio>
+              <Image alt="" src="https://picsum.photos/900/720?random=2" />
               <Paragraph>
                 Locatie Brug 423 &nbsp; <Link variant="inline">Bekijk op datapunt.nl</Link>
               </Paragraph>

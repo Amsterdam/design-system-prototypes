@@ -66,7 +66,7 @@ export default function BestuurEnOrganisatie() {
       <Grid paddingBottom="large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
-            <NextLink legacyBehavior passHref href="/amsterdam">
+            <NextLink href="/amsterdam" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>

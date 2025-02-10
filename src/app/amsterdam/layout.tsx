@@ -13,53 +13,109 @@ import {
   Screen,
   SkipLink,
 } from '@amsterdam/design-system-react'
-import { ChattingIcon, LoginIcon, PhoneIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
+import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
+import './amsterdam.css'
 
-const footerLinks = [
+const megaMenuLinks = [
   {
-    href: '/amsterdam',
-    label: 'Home',
+    href: '#',
+    label: 'Afval',
   },
   {
-    href: '/amsterdam/zoeken',
-    label: 'Zoeken',
+    href: '/amsterdam/bestuur-en-organisatie',
+    label: 'Bestuur en organisatie',
   },
   {
-    href: '/amsterdam/nieuws',
-    label: 'Nieuws',
+    href: '/amsterdam/projecten',
+    label: 'Bouw- en verkeersprojecten',
   },
   {
     href: '/amsterdam/burgerzaken',
     label: 'Burgerzaken',
   },
   {
+    href: '#',
+    label: 'Gemeentebelastingen',
+  },
+  {
+    href: '#',
+    label: 'Gezondheidsdienst (GGD)',
+  },
+  {
     href: '/amsterdam/kunst-en-cultuur',
-    label: 'Kunst en cultuur',
+    label: 'Kunst, cultuur en vrije tijd',
   },
   {
-    href: '/amsterdam/projecten',
-    label: 'Projecten',
+    href: '#',
+    label: 'Ondernemen',
   },
   {
-    href: '/amsterdam/projecten/project',
-    label: 'Project',
+    href: '#',
+    label: 'Onderwijs en jeugd',
   },
   {
-    href: '/amsterdam/parkeervergunning-voor-sportverenigingen',
+    href: '#',
     label: 'Parkeren',
   },
   {
-    href: '/amsterdam/bestuur-en-organisatie',
-    label: 'Bestuur en Organisatie',
+    href: '#',
+    label: 'Sport',
   },
   {
-    href: '/amsterdam/bestuur-en-organisatie/gemeenteraad',
-    label: 'Gemeenteraad',
+    href: '#',
+    label: 'Stadsdelen',
   },
   {
-    href: '/amsterdam/bestuur-en-organisatie/college-van-burgemeester-en-wethouders',
-    label: 'College van burgemeester en wethouders',
+    href: '#',
+    label: 'Subsidies',
+  },
+  {
+    href: '#',
+    label: 'Vacatures',
+  },
+  {
+    href: '#',
+    label: 'Vergunningen',
+  },
+  {
+    href: '#',
+    label: 'Verkeer en vervoer',
+  },
+  {
+    href: '#',
+    label: 'Verkiezingen',
+  },
+  {
+    href: '#',
+    label: 'Werk aan de weg',
+  },
+  {
+    href: '#',
+    label: 'Werk en inkomen',
+  },
+  {
+    href: '#',
+    label: 'Wonen en leefomgeving',
+  },
+  {
+    href: '#',
+    label: 'Zorg en ondersteuning',
+  },
+]
+
+const footerLinks = [
+  {
+    href: '#',
+    label: 'Over deze site',
+  },
+  {
+    href: '#',
+    label: 'Privacy',
+  },
+  {
+    href: '#',
+    label: 'Cookies op deze site',
   },
 ]
 
@@ -101,40 +157,54 @@ const socials = [
 export default function Amsterdam({ children }) {
   return (
     <div className="ams-theme">
-      <SkipLink href="#main">Direct naar inhoud</SkipLink>
       <Screen maxWidth="wide">
         <Grid>
           <Grid.Cell span="all">
-            <Header
-              links={
-                <PageMenu alignEnd>
-                  <PageMenu.Link href="#" lang="en">
-                    English
-                  </PageMenu.Link>
-                  <NextLink legacyBehavior href="/amsterdam/contact" passHref>
-                    <PageMenu.Link>Contact</PageMenu.Link>
-                  </NextLink>
-                  <PageMenu.Link href="https://mijn.amsterdam.nl/" icon={LoginIcon} rel="external">
-                    Mijn Amsterdam
-                  </PageMenu.Link>
-                  <NextLink legacyBehavior href="/" passHref>
-                    <PageMenu.Link>Prototypes</PageMenu.Link>
-                  </NextLink>
-                  <NextLink legacyBehavior href="/amsterdam/zoeken" passHref>
-                    <PageMenu.Link icon={SearchIcon}>Zoeken</PageMenu.Link>
-                  </NextLink>
-                </PageMenu>
-              }
-              logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen Next Link gebruiken
-              logoLinkTitle="Naar de homepage van gemeente Amsterdam"
-              menu={
-                <button type="button" className="ams-header__menu-button">
-                  Menu
-                </button>
-              }
-            />
+            <SkipLink href="#main">Direct naar inhoud</SkipLink>
           </Grid.Cell>
         </Grid>
+        <Header
+          menuItems={[
+            <Header.MenuLink href="https://mijn.amsterdam.nl/" key={1} rel="external">
+              Mijn Amsterdam
+            </Header.MenuLink>,
+            <Header.MenuLink href="#" key={2} lang="en">
+              English
+            </Header.MenuLink>,
+            <NextLink href="/amsterdam/zoeken" key={3} legacyBehavior passHref>
+              <Header.MenuLink fixed>Zoeken</Header.MenuLink>
+            </NextLink>,
+          ]}
+          logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen Next Link gebruiken
+          logoLinkTitle="Naar de homepage van gemeente Amsterdam"
+        >
+          <Grid paddingBottom="large" paddingTop="small">
+            <Header.GridCellNarrowWindowOnly span="all">
+              <LinkList>
+                <LinkList.Link href="https://mijn.amsterdam.nl/" rel="external">
+                  Mijn Amsterdam
+                </LinkList.Link>
+                <LinkList.Link href="#" lang="en">
+                  English
+                </LinkList.Link>
+              </LinkList>
+            </Header.GridCellNarrowWindowOnly>
+            <Grid.Cell span="all">
+              <Heading className="ams-mb--sm" level={2} size="level-3">
+                Alle onderwerpen
+              </Heading>
+              <div className="ams-mega-menu__columns">
+                <LinkList>
+                  {megaMenuLinks.map(({ href, label }) => (
+                    <LinkList.Link href={href} key={label}>
+                      {label}
+                    </LinkList.Link>
+                  ))}
+                </LinkList>
+              </div>
+            </Grid.Cell>
+          </Grid>
+        </Header>
         <main id="main">{children}</main>
         <Footer>
           <Footer.Top>
@@ -175,7 +245,7 @@ export default function Amsterdam({ children }) {
                   </Heading>
                   <LinkList>
                     {socials.map(({ href, label }) => (
-                      <LinkList.Link href={href} inverseColor rel="external" size="small" key={label}>
+                      <LinkList.Link href={href} inverseColor key={label} rel="external" size="small">
                         {label}
                       </LinkList.Link>
                     ))}
@@ -224,10 +294,13 @@ export default function Amsterdam({ children }) {
           <Grid.Cell span="all">
             <PageMenu>
               {footerLinks.map(({ href, label }) => (
-                <NextLink legacyBehavior href={href} passHref key={label}>
+                <NextLink href={href} key={label} legacyBehavior passHref>
                   <PageMenu.Link>{label}</PageMenu.Link>
                 </NextLink>
               ))}
+              <NextLink href="/" legacyBehavior passHref>
+                <PageMenu.Link>Prototypes</PageMenu.Link>
+              </NextLink>
             </PageMenu>
           </Grid.Cell>
         </Grid>

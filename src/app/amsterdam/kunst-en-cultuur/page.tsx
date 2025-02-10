@@ -1,15 +1,6 @@
 'use client'
 
-import {
-  AspectRatio,
-  Breadcrumb,
-  Column,
-  Grid,
-  Heading,
-  LinkList,
-  PageHeading,
-  Paragraph,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Column, Grid, Heading, LinkList, PageHeading, Paragraph } from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
@@ -22,7 +13,7 @@ function KunstEnCultuur() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink legacyBehavior passHref href="/amsterdam">
+            <NextLink href="/amsterdam" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
@@ -39,9 +30,7 @@ function KunstEnCultuur() {
           </Paragraph>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 8, wide: 8 }}>
-          <AspectRatio ratio="x-wide">
-            <NextImage alt="" src={artAndCultureImage} fill />
-          </AspectRatio>
+          <NextImage alt="" className="ams-image" src={artAndCultureImage} />
         </Grid.Cell>
       </Grid>
       <Grid paddingBottom="medium">

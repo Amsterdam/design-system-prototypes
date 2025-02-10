@@ -1,15 +1,6 @@
 'use client'
 
-import {
-  AspectRatio,
-  Breadcrumb,
-  Grid,
-  Heading,
-  LinkList,
-  Paragraph,
-  Spotlight,
-  TextInput,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Grid, Heading, LinkList, Paragraph, Spotlight, TextInput } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
 
@@ -22,7 +13,7 @@ function Projecten() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink legacyBehavior passHref href="/amsterdam">
+            <NextLink href="/amsterdam" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
@@ -30,7 +21,7 @@ function Projecten() {
       </Grid>
       <Grid gapVertical="small" paddingBottom="medium">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-          <Heading className="ams-mb--sm">Bouwprojecten en verkeersprojecten</Heading>
+          <Heading className="ams-mb--sm">Bouw- en verkeersprojecten</Heading>
           <Paragraph size="large">
             <strong>Overzicht van ruim 200 projecten in Amsterdam.</strong> Lees waar en wanneer we werken aan
             nieuwbouw, groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele
@@ -45,7 +36,7 @@ function Projecten() {
           </Heading>
           <LinkList>
             {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
-              <NextLink legacyBehavior passHref href="/amsterdam/projecten/project">
+              <NextLink href="/amsterdam/projecten/stadsdeel" key={district} legacyBehavior passHref>
                 <LinkList.Link key={district}>{district}</LinkList.Link>
               </NextLink>
             ))}
@@ -67,15 +58,11 @@ function Projecten() {
             <Paragraph>Ga via de kaart naar meer informatie over het project dat u zoekt.</Paragraph>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }}>
-            <AspectRatio ratio="x-wide">
-              <NextImage alt="" src={constructionWorkImage} />
-            </AspectRatio>
+            <NextImage alt="" className="ams-image" src={constructionWorkImage} />
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <AspectRatio ratio="x-wide">
-        <NextImage alt="" src={constructionWorkMapImage} />
-      </AspectRatio>
+      <NextImage alt="" className="ams-image" src={constructionWorkMapImage} />
     </>
   )
 }

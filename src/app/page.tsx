@@ -15,13 +15,13 @@ export default function Page() {
         </Grid.Cell>
         <Grid.Cell span="all">
           <LinkList>
-            <Link legacyBehavior href="/amopis" passHref>
+            <Link href="/amopis" legacyBehavior passHref>
               <LinkList.Link>Amopis</LinkList.Link>
             </Link>
-            <Link legacyBehavior href="/amsterdam" passHref>
+            <Link href="/amsterdam" legacyBehavior passHref>
               <LinkList.Link>Amsterdam</LinkList.Link>
             </Link>
-            <Link legacyBehavior href="/signalen" passHref>
+            <Link href="/signalen" legacyBehavior passHref>
               <LinkList.Link>Signalen</LinkList.Link>
             </Link>
             {/* Append route import here */}

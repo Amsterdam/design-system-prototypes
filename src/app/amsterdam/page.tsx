@@ -2,7 +2,6 @@
 
 import {
   Alert,
-  AspectRatio,
   Card,
   Column,
   Grid,
@@ -14,6 +13,8 @@ import {
   Spotlight,
 } from '@amsterdam/design-system-react'
 import NextImage from 'next/image'
+import NextLink from 'next/link'
+import { useState } from 'react'
 import vindenImage from './_assets/vinden.jpg'
 import stormschadeImage from './_assets/stormschade.jpg'
 import woonwijkImage from './_assets/woonwijk.jpg'
@@ -78,23 +79,25 @@ const cards = [
 ]
 
 function HomePage() {
+  const [isAlertVisible, setIsAlertVisible] = useState(true)
+
   return (
     <>
-      <Grid>
-        <Grid.Cell span="all">
-          <Alert className="ams-mb--md" closeable>
-            <Paragraph>
-              Tijdens Koningsdag zijn alle Stadsloketten gesloten. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Aliquid aspernatur modi, omnis quam vitae. Ook 14 020 en alle andere telefoonnummers van de gemeente
-              zijn niet bereikbaar.
-            </Paragraph>
-          </Alert>
-        </Grid.Cell>
-      </Grid>
+      {isAlertVisible && (
+        <Grid>
+          <Grid.Cell span="all">
+            <Alert className="ams-mb--md" closeable onClose={() => setIsAlertVisible(false)}>
+              <Paragraph>
+                Tijdens Koningsdag zijn alle Stadsloketten gesloten. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Aliquid aspernatur modi, omnis quam vitae. Ook 14 020 en alle andere telefoonnummers van de
+                gemeente zijn niet bereikbaar.
+              </Paragraph>
+            </Alert>
+          </Grid.Cell>
+        </Grid>
+      )}
       <Overlap>
-        <AspectRatio ratio="2x-wide">
-          <NextImage src={vindenImage} alt="" fill />
-        </AspectRatio>
+        <NextImage alt="" className="ams-image ams-aspect-ratio--2x-wide" src={vindenImage} />
         <Grid style={{ alignSelf: 'center' }}>
           <Grid.Cell span={{ medium: 6, narrow: 4, wide: 8 }} start={{ medium: 2, narrow: 1, wide: 3 }}>
             <SearchField onSubmit={() => {}}>
@@ -165,12 +168,12 @@ function HomePage() {
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
           <Heading className="ams-mb--sm">Nieuws</Heading>
           <Card>
-            <AspectRatio ratio="x-wide">
-              <NextImage alt="" fill src={stormschadeImage} />
-            </AspectRatio>
+            <NextImage alt="" className="ams-image" src={stormschadeImage} />
             <Card.HeadingGroup tagline="Nieuws">
               <Heading level={2} size="level-4">
-                <Card.Link href="#">Waar u stormschade kunt melden</Card.Link>
+                <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
+                  <Card.Link>Waar u stormschade kunt melden</Card.Link>
+                </NextLink>
               </Heading>
             </Card.HeadingGroup>
             <Paragraph size="small">
@@ -183,12 +186,12 @@ function HomePage() {
         {cards.map(({ heading, image }) => (
           <Grid.Cell span={4} key={heading}>
             <Card>
-              <AspectRatio ratio="x-wide">
-                <NextImage alt="" fill src={image} />
-              </AspectRatio>
+              <NextImage alt="" className="ams-image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">
                 <Heading level={2} size="level-4">
-                  <Card.Link href="#">{heading}</Card.Link>
+                  <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
+                    <Card.Link>{heading}</Card.Link>
+                  </NextLink>
                 </Heading>
               </Card.HeadingGroup>
             </Card>

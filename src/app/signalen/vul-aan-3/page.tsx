@@ -49,7 +49,7 @@ function VulAan3() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink href="/signalen/vul-aan-2" className="ams-mb--xs">
+        <BackLink className="ams-mb--xs" href="/signalen/vul-aan-2">
           Vorige vraag
         </BackLink>
         <Column className="ams-mb--md">

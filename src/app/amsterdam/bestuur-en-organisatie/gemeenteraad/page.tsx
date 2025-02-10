@@ -1,15 +1,6 @@
 'use client'
 
-import {
-  AspectRatio,
-  Breadcrumb,
-  Card,
-  Grid,
-  Heading,
-  LinkList,
-  PageHeading,
-  Paragraph,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Grid, Heading, LinkList, PageHeading, Paragraph } from '@amsterdam/design-system-react'
 import { ExternalLinkIcon } from '@amsterdam/design-system-react-icons'
 import NextImage from 'next/image'
 import type { StaticImageData } from 'next/image'
@@ -52,9 +43,7 @@ function NewsArticle({ date, description, image, tagline, title }: NewsArticlePr
   return (
     <>
       <Grid.Cell span={{ narrow: 4, medium: 3, wide: 4 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-        <AspectRatio ratio="x-wide">
-          <NextImage alt="" src={image} fill />
-        </AspectRatio>
+        <NextImage alt="" className="ams-image" src={image} />
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 5, wide: 6 }}>
         <Card>
@@ -79,7 +68,7 @@ export default function Gemeenteraad() {
       <Grid paddingBottom="medium">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
-            <NextLink legacyBehavior passHref href="/amsterdam">
+            <NextLink href="/amsterdam" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
             <Breadcrumb.Link href="/amsterdam/bestuur-en-organisatie">Bestuur en Organisatie</Breadcrumb.Link>
@@ -92,9 +81,7 @@ export default function Gemeenteraad() {
           </Paragraph>
         </Grid.Cell>
       </Grid>
-      <AspectRatio ratio="2x-wide">
-        <NextImage alt="" src={cityCouncilImage} fill />
-      </AspectRatio>
+      <NextImage alt="" className="ams-image ams-aspect-ratio--2x-wide" src={cityCouncilImage} />
       <Grid paddingVertical="large" gapVertical="small">
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
           <Heading className="ams-mb--xs" level={2}>

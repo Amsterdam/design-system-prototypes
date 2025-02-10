@@ -1,16 +1,6 @@
 'use client'
 
-import {
-  AspectRatio,
-  Breadcrumb,
-  Card,
-  Grid,
-  Heading,
-  Link,
-  LinkList,
-  Paragraph,
-  Spotlight,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Grid, Heading, Link, LinkList, Paragraph, Spotlight } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
 
@@ -22,10 +12,10 @@ function Project() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink legacyBehavior passHref href="/amsterdam">
+            <NextLink href="/amsterdam" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
-            <NextLink legacyBehavior passHref href="/amsterdam/projecten">
+            <NextLink href="/amsterdam/projecten" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
@@ -33,7 +23,7 @@ function Project() {
       </Grid>
       <Grid gapVertical="small" paddingBottom="medium">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-          <Heading className="ams-mb--sm">Bouwprojecten en verkeersprojecten in Noord</Heading>
+          <Heading className="ams-mb--sm">Bouw- en verkeersprojecten in Noord</Heading>
           <Paragraph size="large">
             <strong>Overzicht van projecten in stadsdeel Noord.</strong> Lees waar en wanneer we werken aan nieuwbouw,
             groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele gebieden. En
@@ -101,9 +91,11 @@ function Project() {
             </Heading>
             <LinkList>
               {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
-                <LinkList.Link href="#" inverseColor key={district}>
-                  {district}
-                </LinkList.Link>
+                <NextLink href="/amsterdam/projecten/stadsdeel" key={district} legacyBehavior passHref>
+                  <LinkList.Link inverseColor key={district}>
+                    {district}
+                  </LinkList.Link>
+                </NextLink>
               ))}
             </LinkList>
           </Grid.Cell>
@@ -116,9 +108,7 @@ function Project() {
           </Heading>
         </Grid.Cell>
       </Grid>
-      <AspectRatio ratio="x-wide">
-        <NextImage id="kaart" alt="" src={constructionWorkMapImage} />
-      </AspectRatio>
+      <NextImage alt="" className="ams-image" id="kaart" src={constructionWorkMapImage} />
     </>
   )
 }

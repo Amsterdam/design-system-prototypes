@@ -100,7 +100,7 @@ function Summary() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 9 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink href="/signalen/documenten" className="ams-mb--xs">
+        <BackLink className="ams-mb--xs" href="/signalen/documenten">
           Vorige vraag
         </BackLink>
         <Column>

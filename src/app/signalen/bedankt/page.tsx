@@ -62,7 +62,7 @@ function Thanks() {
                 14 020
               </Link>
               . Vermeld hierbij alstublieft uw meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
-              <Link variant="inline" href="https://www.amsterdam.nl/">
+              <Link href="https://www.amsterdam.nl/" variant="inline">
                 amsterdam.nl
               </Link>
               .
