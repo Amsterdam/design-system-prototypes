@@ -8,10 +8,6 @@
     "node": "20",
     "npm": "10"
   },
-  "volta": {
-    "node": "20.12.2",
-    "npm": "10.5.2"
-  },
   "type": "module",
   "scripts": {
     "add": "plop",
