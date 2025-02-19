@@ -19,7 +19,9 @@ function Subsection({ isEven, title }: SubsectionProps) {
     <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={isEven ? { narrow: 1, medium: 1, wide: 2 } : undefined}>
       <Card>
         <Heading level={3} size="level-4">
-          <Card.Link href={linkUrls[title] ?? '#'}>{title}</Card.Link>
+          <NextLink href={linkUrls[title] ?? '#'} legacyBehavior passHref>
+            <Card.Link>{title}</Card.Link>
+          </NextLink>
         </Heading>
         <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore.</Paragraph>
       </Card>

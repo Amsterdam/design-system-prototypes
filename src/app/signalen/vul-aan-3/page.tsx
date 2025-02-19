@@ -13,6 +13,7 @@ import {
   Paragraph,
   Radio,
 } from '@amsterdam/design-system-react'
+import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
@@ -49,9 +50,9 @@ function VulAan3() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb--xs" href="/signalen/vul-aan-2">
-          Vorige vraag
-        </BackLink>
+        <NextLink href="/signalen/vul-aan-2" legacyBehavior passHref>
+          <BackLink className="ams-mb--xs">Vorige vraag</BackLink>
+        </NextLink>
         <Column className="ams-mb--md">
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-gap--xs">

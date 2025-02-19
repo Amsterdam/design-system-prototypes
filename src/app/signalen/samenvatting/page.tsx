@@ -100,9 +100,9 @@ function Summary() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 9 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb--xs" href="/signalen/documenten">
-          Vorige vraag
-        </BackLink>
+        <NextLink href="/signalen/documenten" legacyBehavior passHref>
+          <BackLink className="ams-mb--xs">Vorige vraag</BackLink>
+        </NextLink>
         <Column>
           <Heading>Melding openbare ruimte</Heading>
           <hgroup className="ams-gap--xs">

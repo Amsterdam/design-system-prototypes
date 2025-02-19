@@ -115,7 +115,9 @@ export default function CollegeVanBurgemeesterEnWethouders() {
             <NextLink href="/amsterdam" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
-            <Breadcrumb.Link href="/amsterdam/bestuur-en-organisatie">Bestuur en Organisatie</Breadcrumb.Link>
+            <NextLink href="/amsterdam/bestuur-en-organisatie" legacyBehavior passHref>
+              <Breadcrumb.Link>Bestuur en Organisatie</Breadcrumb.Link>
+            </NextLink>
           </Breadcrumb>
           <PageHeading className="ams-mb--sm">College van burgemeester en wethouders</PageHeading>
           <Paragraph size="large">Het dagelijks bestuur van onze gemeente uitgebreid in beeld.</Paragraph>
