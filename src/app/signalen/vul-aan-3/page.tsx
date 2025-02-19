@@ -13,7 +13,6 @@ import {
   Paragraph,
   Radio,
 } from '@amsterdam/design-system-react'
-import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
