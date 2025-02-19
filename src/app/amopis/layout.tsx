@@ -2,7 +2,7 @@
 
 import { ReactNode } from 'react'
 import { Avatar, Column, Grid, Header, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
-import Link from 'next/link'
+import NextLink from 'next/link'
 
 import { Sidebar } from './_components/SideBar/SideBar'
 
@@ -29,18 +29,18 @@ function Amopis({ children }: { children: ReactNode }) {
             <Grid paddingVertical="small">
               <Grid.Cell span="all">
                 <PageMenu>
-                  <Link href="/amopis" legacyBehavior passHref>
+                  <NextLink href="/amopis" legacyBehavior passHref>
                     <PageMenu.Link>Kerngegevens</PageMenu.Link>
-                  </Link>
-                  <Link href="/amopis/ramingen" legacyBehavior passHref>
+                  </NextLink>
+                  <NextLink href="/amopis/ramingen" legacyBehavior passHref>
                     <PageMenu.Link>Ramingen</PageMenu.Link>
-                  </Link>
+                  </NextLink>
                   <PageMenu.Link href="#">E-mail je vraag of feedback</PageMenu.Link>
                   <PageMenu.Link href="#">Bekijk veelgestelde vragen</PageMenu.Link>
                   <PageMenu.Link href="#">Bekijk releasebeschrijving</PageMenu.Link>
-                  <Link href="/" legacyBehavior passHref>
+                  <NextLink href="/" legacyBehavior passHref>
                     <PageMenu.Link>Prototypes</PageMenu.Link>
-                  </Link>
+                  </NextLink>
                 </PageMenu>
               </Grid.Cell>
             </Grid>

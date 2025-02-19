@@ -24,9 +24,9 @@ export default function (plop) {
         type: 'append',
         path: 'src/app/page.tsx',
         pattern: '{/* Append route import here */}',
-        template: `            <Link legacyBehavior href="/{{kebabCase name}}" passHref>
+        template: `            <NextLink href="/{{kebabCase name}}" legacyBehavior passHref>
               <LinkList.Link>{{titleCase name}}</LinkList.Link>
-            </Link>`,
+            </NextLink>`,
       },
     ],
   })

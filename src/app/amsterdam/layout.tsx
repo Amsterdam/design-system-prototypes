@@ -175,7 +175,7 @@ export default function Amsterdam({ children }) {
               <Header.MenuLink fixed>Zoeken</Header.MenuLink>
             </NextLink>,
           ]}
-          logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen Next Link gebruiken
+          logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen NextLink gebruiken
           logoLinkTitle="Naar de homepage van gemeente Amsterdam"
         >
           <Grid paddingBottom="large" paddingTop="small">
@@ -196,9 +196,9 @@ export default function Amsterdam({ children }) {
               <div className="ams-mega-menu__columns">
                 <LinkList>
                   {megaMenuLinks.map(({ href, label }) => (
-                    <LinkList.Link href={href} key={label}>
-                      {label}
-                    </LinkList.Link>
+                    <NextLink href={href} key={label} legacyBehavior passHref>
+                      <LinkList.Link>{label}</LinkList.Link>
+                    </NextLink>
                   ))}
                 </LinkList>
               </div>
