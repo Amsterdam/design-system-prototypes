@@ -37,9 +37,6 @@ function Signalen({ children }) {
       </main>
       <Footer>
         <Footer.Top>
-          <Heading inverseColor className="ams-visually-hidden">
-            Colofon
-          </Heading>
           <Grid gapVertical="large" paddingVertical="medium">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
               <Column as="section" gap="extra-small">
