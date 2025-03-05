@@ -72,9 +72,6 @@ export default function Amsterdam({ children }) {
         {children}
         <Footer>
           <Footer.Top>
-            <Heading inverseColor className="ams-visually-hidden">
-              Colofon
-            </Heading>
             <Grid gapVertical="large" paddingVertical="medium">
               <Grid.Cell span={3}>
                 <Column gap="extra-small">
@@ -135,7 +132,7 @@ export default function Amsterdam({ children }) {
                     </Paragraph>
                   </Column>
                   <Column as="section" gap="extra-small">
-                    <Heading level={3} size="level-4" inverseColor>
+                    <Heading level={2} size="level-4" inverseColor>
                       Uit in Amsterdam
                     </Heading>
                     <Paragraph size="small" inverseColor>
