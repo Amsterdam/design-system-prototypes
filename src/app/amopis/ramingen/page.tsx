@@ -94,7 +94,7 @@ function Estimation() {
                     <Table.Cell>2025</Table.Cell>
                     <Table.Cell>25-2</Table.Cell>
                     <Table.Cell>
-                      <Badge label="Voorgesteld" color="blue" />
+                      <Badge label="Voorgesteld" color="azure" />
                     </Table.Cell>
                     <Table.Cell>Marise Ent</Table.Cell>
                     <Table.Cell>
@@ -108,7 +108,7 @@ function Estimation() {
                     <Table.Cell>2024</Table.Cell>
                     <Table.Cell>24-7</Table.Cell>
                     <Table.Cell>
-                      <Badge label="Vastgesteld" color="dark-green" />
+                      <Badge label="Vastgesteld" />
                     </Table.Cell>
                     <Table.Cell>Klaas Helmers</Table.Cell>
                     <Table.Cell>
@@ -153,7 +153,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-6</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="blue" />
+                        <Badge label="Voorgesteld" color="azure" />
                       </Table.Cell>
                       <Table.Cell>Marjolein Boomer</Table.Cell>
                       <Table.Cell>
@@ -167,7 +167,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-5</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="blue" />
+                        <Badge label="Voorgesteld" color="azure" />
                       </Table.Cell>
                       <Table.Cell>Klaas Helmers</Table.Cell>
                       <Table.Cell>
@@ -181,7 +181,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-4</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="blue" />
+                        <Badge label="Voorgesteld" color="azure" />
                       </Table.Cell>
                       <Table.Cell>Marjolein Boomer</Table.Cell>
                       <Table.Cell>
@@ -195,7 +195,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-3</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="blue" />
+                        <Badge label="Voorgesteld" color="azure" />
                       </Table.Cell>
                       <Table.Cell>Marjolein Boomer</Table.Cell>
                       <Table.Cell>

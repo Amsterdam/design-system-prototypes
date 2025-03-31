@@ -124,7 +124,7 @@ function HomePage() {
           </Grid.Cell>
         ))}
       </Grid>
-      <Spotlight color="purple">
+      <Spotlight>
         <Grid paddingVertical="medium">
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
             <Heading color="inverse" level={2} style={{ marginBlockEnd: '1.5rem' }}>

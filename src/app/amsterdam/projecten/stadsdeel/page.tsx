@@ -64,7 +64,7 @@ function Project() {
           </Grid.Cell>
         ))}
       </Grid>
-      <Spotlight color="purple">
+      <Spotlight>
         <Grid paddingVertical="medium">
           <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
             <Heading color="inverse" level={2} size="level-4" className="ams-mb-s">
