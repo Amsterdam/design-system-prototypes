@@ -8,7 +8,7 @@ import {
   Column,
   ErrorMessage,
   Field,
-  FormErrorList,
+  InvalidFormAlert,
   Grid,
   Heading,
   Label,
@@ -63,7 +63,7 @@ function Home() {
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
-          <FormErrorList errors={formattedErrors} />
+          <InvalidFormAlert errors={formattedErrors} />
         </Column>
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <Field invalid={Boolean(errors.body)}>

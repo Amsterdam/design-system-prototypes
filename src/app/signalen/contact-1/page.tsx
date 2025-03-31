@@ -8,7 +8,7 @@ import {
   ErrorMessage,
   Field,
   FieldSet,
-  FormErrorList,
+  InvalidFormAlert,
   Grid,
   Heading,
   Label,
@@ -60,7 +60,7 @@ function Contact1() {
             <Heading level={2}>Gegevens</Heading>
             <Paragraph>Stap 2 van 4</Paragraph>
           </hgroup>
-          <FormErrorList errors={formattedErrors} />
+          <InvalidFormAlert errors={formattedErrors} />
         </Column>
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)} noValidate>
           <FieldSet

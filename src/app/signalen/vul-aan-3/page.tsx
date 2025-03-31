@@ -7,7 +7,7 @@ import {
   Column,
   ErrorMessage,
   FieldSet,
-  FormErrorList,
+  InvalidFormAlert,
   Grid,
   Heading,
   Paragraph,
@@ -58,7 +58,7 @@ function VulAan3() {
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
-          <FormErrorList errors={formattedErrors} />
+          <InvalidFormAlert errors={formattedErrors} />
         </Column>
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet
