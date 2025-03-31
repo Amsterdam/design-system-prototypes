@@ -86,7 +86,13 @@ function HomePage() {
       {isAlertVisible && (
         <Grid>
           <Grid.Cell span="all">
-            <Alert className="ams-mb-l" closeable onClose={() => setIsAlertVisible(false)}>
+            <Alert
+              className="ams-mb-l"
+              closeable
+              heading="Stadsloketten sluiten op Koningsdag"
+              headingLevel={2}
+              onClose={() => setIsAlertVisible(false)}
+            >
               <Paragraph>
                 Tijdens Koningsdag zijn alle Stadsloketten gesloten. Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Aliquid aspernatur modi, omnis quam vitae. Ook 14 020 en alle andere telefoonnummers van de

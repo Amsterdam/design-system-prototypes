@@ -60,7 +60,7 @@ function Contact1() {
             <Heading level={2}>Gegevens</Heading>
             <Paragraph>Stap 2 van 4</Paragraph>
           </hgroup>
-          <InvalidFormAlert errors={formattedErrors} />
+          <InvalidFormAlert errors={formattedErrors} heading="Verbeter de fouten voor u verder gaat" headingLevel={2} />
         </Column>
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)} noValidate>
           <FieldSet

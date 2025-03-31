@@ -87,7 +87,7 @@ function Question() {
               </Field>
             </Column>
           </FieldSet>
-          <Alert severity="info">
+          <Alert heading="Wat doen we met uw gegevens?" headingLevel={2}>
             <Paragraph>
               We bewaren uw contactgegevens voor het afhandelen van uw vraag of klacht en het verbeteren van onze
               dienstverlening.
