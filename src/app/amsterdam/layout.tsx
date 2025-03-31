@@ -64,7 +64,7 @@ export default function Amsterdam({ children }) {
           <Footer.Spotlight>
             <Grid gapVertical="large" paddingVertical="medium">
               <Grid.Cell span={3}>
-                <Column gap="extra-small">
+                <Column>
                   <Heading color="inverse" level={2} size="level-4">
                     Contact
                   </Heading>
@@ -90,7 +90,7 @@ export default function Amsterdam({ children }) {
                 </Column>
               </Grid.Cell>
               <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
-                <Column gap="extra-small">
+                <Column>
                   <Heading color="inverse" level={2} size="level-4">
                     Volg de gemeente
                   </Heading>
@@ -104,8 +104,8 @@ export default function Amsterdam({ children }) {
                 </Column>
               </Grid.Cell>
               <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
-                <Column gap="small">
-                  <Column as="section" gap="extra-small">
+                <Column>
+                  <Column as="section">
                     <Heading color="inverse" level={2} size="level-4">
                       Kalender
                     </Heading>
@@ -121,7 +121,7 @@ export default function Amsterdam({ children }) {
                       .
                     </Paragraph>
                   </Column>
-                  <Column as="section" gap="extra-small">
+                  <Column as="section">
                     <Heading color="inverse" level={2} size="level-4">
                       Uit in Amsterdam
                     </Heading>

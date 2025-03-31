@@ -97,9 +97,9 @@ function Burgerzaken() {
           <PageHeading>Burgerzaken</PageHeading>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-          <Column gap="extra-large">
+          <Column gap="x-large">
             {linkSections[0].map(({ title, links }) => (
-              <Column as="section" gap="extra-small" key={title}>
+              <Column as="section" key={title}>
                 <Heading level={2} size="level-3">
                   {title}
                 </Heading>
@@ -115,9 +115,9 @@ function Burgerzaken() {
           </Column>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }}>
-          <Column gap="extra-large">
+          <Column gap="x-large">
             {linkSections[1].map(({ title, links }) => (
-              <Column as="section" gap="extra-small" key={title}>
+              <Column as="section" key={title}>
                 <Heading level={2} size="level-3">
                   {title}
                 </Heading>

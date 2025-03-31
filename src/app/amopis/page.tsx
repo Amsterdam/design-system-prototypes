@@ -25,9 +25,7 @@ function Project() {
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
           <Breadcrumb.Link href="#">Projecten</Breadcrumb.Link>
         </Breadcrumb>
-        <Heading className="ams-mb--sm" level={1}>
-          Kerngegevens
-        </Heading>
+        <Heading level={1}>Kerngegevens</Heading>
         <Heading level={2}>Brug 423 opwaardering (Berlagebrug) – ams20192715</Heading>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
@@ -80,9 +78,7 @@ function Project() {
               </LinkList>
             </Row>
             <section>
-              <Heading level={4} className="ams-mb--sm">
-                Opdrachtgevers
-              </Heading>
+              <Heading level={4}>Opdrachtgevers</Heading>
               <DescriptionList termsWidth="md">
                 <DescriptionList.Term>Ambtelijk opdrachtgever</DescriptionList.Term>
                 <DescriptionList.Description>
@@ -101,9 +97,7 @@ function Project() {
               </DescriptionList>
             </section>
             <section>
-              <Heading level={4} className="ams-mb--sm">
-                Opdrachtnemers
-              </Heading>
+              <Heading level={4}>Opdrachtnemers</Heading>
               <DescriptionList termsWidth="md">
                 <DescriptionList.Term>Accounthouder</DescriptionList.Term>
                 <DescriptionList.Description>
@@ -143,9 +137,7 @@ function Project() {
               </DescriptionList>
             </section>
             <section>
-              <Heading level={4} className="ams-mb--sm">
-                Basisgegevens
-              </Heading>
+              <Heading level={4}>Basisgegevens</Heading>
               <DescriptionList termsWidth="md">
                 <DescriptionList.Term>Gebied</DescriptionList.Term>
                 <DescriptionList.Description>Gemeente Amsterdam</DescriptionList.Description>
@@ -164,7 +156,7 @@ function Project() {
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 3, wide: 3 }} start={{ narrow: 1, medium: 3, wide: 10 }}>
         <div className="amopis-white-background" style={{ padding: '1rem' }}>
-          <Column gap="small">
+          <Column>
             <div>
               <Image alt="" src="https://picsum.photos/900/720?random=1" />
               <Paragraph>

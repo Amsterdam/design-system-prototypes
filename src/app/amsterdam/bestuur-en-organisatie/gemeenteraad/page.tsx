@@ -75,7 +75,7 @@ export default function Gemeenteraad() {
               <Breadcrumb.Link>Bestuur en Organisatie</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading className="ams-mb--sm">Gemeenteraad</PageHeading>
+          <PageHeading>Gemeenteraad</PageHeading>
           <Paragraph size="large">
             De gemeenteraad is het hoogste bestuursorgaan van de stad. De raad bestaat uit 45 volksvertegenwoordigers
             van verschillende politieke groeperingen. De raadsleden worden elke 4 jaar gekozen door Amsterdammers bij de
@@ -86,10 +86,10 @@ export default function Gemeenteraad() {
       <NextImage alt="" className="ams-image ams-aspect-ratio--2x-wide" src={cityCouncilImage} />
       <Grid paddingVertical="large" gapVertical="small">
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
-          <Heading className="ams-mb--xs" level={2}>
+          <Heading className="ams-mb-s" level={2}>
             Raadsinformatie
           </Heading>
-          <Paragraph className="ams-mb--xs">
+          <Paragraph className="ams-mb-s">
             Vergaderschema’s en stukken, beelden en uitslagen van vergaderingen.
           </Paragraph>
           <LinkList>
@@ -99,10 +99,10 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 5, wide: 7 }}>
-          <Heading className="ams-mb--xs" level={2}>
+          <Heading className="ams-mb-s" level={2}>
             Raadsleden en fracties
           </Heading>
-          <Paragraph className="ams-mb--xs">
+          <Paragraph className="ams-mb-s">
             Welke politieke partijen zijn vertegenwoordigd in de raad? Wie zijn de raadsleden en wat doen zij?
           </Paragraph>
           <LinkList>
@@ -110,10 +110,10 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
-          <Heading className="ams-mb--xs" level={2}>
+          <Heading className="ams-mb-s" level={2}>
             Raadscommissies
           </Heading>
-          <Paragraph className="ams-mb--xs">
+          <Paragraph className="ams-mb-s">
             Wat is een raadscommissie, welke commissies zijn er en wie zitten erin? Aanmelden om in te spreken.
           </Paragraph>
           <LinkList>
@@ -121,10 +121,10 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 5, wide: 7 }}>
-          <Heading className="ams-mb--xs" level={2}>
+          <Heading className="ams-mb-s" level={2}>
             Invloed uitoefenen
           </Heading>
-          <Paragraph className="ams-mb--xs">
+          <Paragraph className="ams-mb-s">
             Direct contact opnemen met een raadslid, inspreken bij een raadscommissie en meer.
           </Paragraph>
           <LinkList>
@@ -132,7 +132,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
-          <Heading className="ams-mb--xs" level={2}>
+          <Heading className="ams-mb-s" level={2}>
             Bestuursorganen
           </Heading>
           <LinkList>
@@ -142,7 +142,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 5, wide: 7 }}>
-          <Heading className="ams-mb--xs" level={2}>
+          <Heading className="ams-mb-s" level={2}>
             Agenda’s en stukken
           </Heading>
           <LinkList>

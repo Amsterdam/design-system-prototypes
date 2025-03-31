@@ -36,10 +36,10 @@ function Question() {
             <Breadcrumb.Link>Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
-        <form className="ams-gap--md" onSubmit={handleSubmit}>
+        <form className="ams-gap-l" onSubmit={handleSubmit}>
           <Heading level={1}>Contact</Heading>
           <FieldSet aria-describedby="contactgegevensDescription" legend="Wat zijn uw contactgegevens?">
-            <Column gap="small">
+            <Column>
               <Paragraph id="contactgegevensDescription">
                 Wij hebben uw gegevens nodig om contact met u te kunnen opnemen.
               </Paragraph>

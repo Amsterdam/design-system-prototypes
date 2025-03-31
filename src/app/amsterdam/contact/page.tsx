@@ -21,7 +21,7 @@ function Contact() {
             <Breadcrumb.Link>Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
-        <form className="ams-gap--md" onSubmit={handleSubmit}>
+        <form className="ams-gap-l" onSubmit={handleSubmit}>
           <Heading level={1}>Contact</Heading>
           <FieldSet legend="Waar gaat uw melding over?">
             <Radio name="soort" value="vraag" defaultChecked>

@@ -86,7 +86,7 @@ function HomePage() {
       {isAlertVisible && (
         <Grid>
           <Grid.Cell span="all">
-            <Alert className="ams-mb--md" closeable onClose={() => setIsAlertVisible(false)}>
+            <Alert className="ams-mb-l" closeable onClose={() => setIsAlertVisible(false)}>
               <Paragraph>
                 Tijdens Koningsdag zijn alle Stadsloketten gesloten. Lorem ipsum dolor sit amet, consectetur adipisicing
                 elit. Aliquid aspernatur modi, omnis quam vitae. Ook 14 020 en alle andere telefoonnummers van de
@@ -154,7 +154,7 @@ function HomePage() {
       </Spotlight>
       <Grid paddingVertical="medium">
         <Grid.Cell span={3}>
-          <Heading className="ams-mb--sm" level={2} size="level-1">
+          <Heading level={2} size="level-1">
             Kalender
           </Heading>
           <Column>
@@ -170,7 +170,7 @@ function HomePage() {
           </Column>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
-          <Heading className="ams-mb--sm" level={2} size="level-1">
+          <Heading level={2} size="level-1">
             Nieuws
           </Heading>
           <Card>

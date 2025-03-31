@@ -51,28 +51,28 @@ function Contact1() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb--xs" href="/signalen/vul-aan-3">
+        <BackLink className="ams-mb-s" href="/signalen/vul-aan-3">
           Vorige vraag
         </BackLink>
-        <Column className="ams-mb--md">
+        <Column className="ams-mb-l">
           <Heading level={1}>Melding openbare ruimte</Heading>
-          <hgroup className="ams-gap--xs">
+          <hgroup className="ams-gap-s">
             <Heading level={2}>Gegevens</Heading>
             <Paragraph>Stap 2 van 4</Paragraph>
           </hgroup>
           <FormErrorList errors={formattedErrors} />
         </Column>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)} noValidate>
+        <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)} noValidate>
           <FieldSet
             aria-describedby="contactDescription"
             legend="Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?"
           >
-            <Paragraph className="ams-mb--sm" id="contactDescription" size="small">
+            <Paragraph id="contactDescription" size="small">
               Vaak hebben we nog een vraag. Daarmee kunnen we het probleem sneller of beter oplossen. Of we willen iets
               uitleggen. Wij willen u dan graag even bellen. Of anders e-mailen wij u. Wij gebruiken uw telefoonnummer
               en e-mailadres alléén voor deze melding.
             </Paragraph>
-            <Column gap="small">
+            <Column>
               <Field invalid={Boolean(errors.phone)}>
                 <Label htmlFor="phone">Wat is uw telefoonnummer? (niet verplicht)</Label>
                 {errors.phone && <ErrorMessage id="phoneError">{`${errors.phone.message}`}</ErrorMessage>}

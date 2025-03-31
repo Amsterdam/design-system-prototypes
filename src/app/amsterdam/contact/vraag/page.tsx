@@ -33,7 +33,7 @@ function Question() {
             <Breadcrumb.Link>Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
-        <form className="ams-gap--md" onSubmit={handleSubmit}>
+        <form className="ams-gap-l" onSubmit={handleSubmit}>
           <Heading level={1}>Contact</Heading>
           <Field>
             <Label htmlFor="body">Wat wilt u aan de gemeente vragen?</Label>
