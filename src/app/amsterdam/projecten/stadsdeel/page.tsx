@@ -67,7 +67,7 @@ function Project() {
       <Spotlight color="purple">
         <Grid paddingVertical="medium">
           <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-            <Heading inverseColor level={2} size="level-4" className="ams-mb--xs">
+            <Heading color="inverse" level={2} size="level-4" className="ams-mb--xs">
               Werk aan de weg
             </Heading>
             <LinkList>
@@ -79,20 +79,20 @@ function Project() {
                 'H.M. Terwogtweg, afsluitweg',
                 'Meer werkzaamheden in stadsdeel Noord',
               ].map((district) => (
-                <LinkList.Link href="#" inverseColor key={district}>
+                <LinkList.Link color="inverse" href="#" key={district}>
                   {district}
                 </LinkList.Link>
               ))}
             </LinkList>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 1, medium: 2, wide: 4 }} start={{ narrow: 4, medium: 7, wide: 8 }}>
-            <Heading inverseColor level={2} size="level-4" className="ams-mb--xs">
+            <Heading color="inverse" level={2} size="level-4" className="ams-mb--xs">
               In andere stadsdelen
             </Heading>
             <LinkList>
               {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
                 <NextLink href="/amsterdam/projecten/stadsdeel" key={district} legacyBehavior passHref>
-                  <LinkList.Link inverseColor key={district}>
+                  <LinkList.Link color="inverse" key={district}>
                     {district}
                   </LinkList.Link>
                 </NextLink>

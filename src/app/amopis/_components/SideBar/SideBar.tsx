@@ -13,31 +13,31 @@ export function Sidebar() {
       <Column gap="large">
         <Column alignHorizontal="center" gap="extra-small">
           <HousingIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Dashboard
           </Paragraph>
         </Column>
         <Column alignHorizontal="center" gap="extra-small">
           <SuitcaseIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Projecten
           </Paragraph>
         </Column>
         <Column alignHorizontal="center" gap="extra-small">
           <DocumentTextIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Rapportages
           </Paragraph>
         </Column>
         <Column alignHorizontal="center" gap="extra-small">
           <ExternalLinkIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Analyses
           </Paragraph>
         </Column>
         <Column alignHorizontal="center" gap="extra-small">
           <StopIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Instellingen
           </Paragraph>
         </Column>

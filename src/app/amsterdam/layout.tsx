@@ -75,25 +75,25 @@ export default function Amsterdam({ children }) {
             <Grid gapVertical="large" paddingVertical="medium">
               <Grid.Cell span={3}>
                 <Column gap="extra-small">
-                  <Heading level={2} size="level-4" inverseColor>
+                  <Heading color="inverse" level={2} size="level-4">
                     Contact
                   </Heading>
-                  <Paragraph size="small" inverseColor>
+                  <Paragraph color="inverse" size="small">
                     Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Neem dan contact met ons op.
                   </Paragraph>
                   <LinkList>
                     <LinkList.Link
+                      color="inverse"
                       href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/contactformulier.aspx/?pk_vid=9f948f5fae0c5e90169952648840adc6"
                       icon={ChattingIcon}
-                      inverseColor
                       size="small"
                     >
                       Contactformulier
                     </LinkList.Link>
-                    <LinkList.Link href="https://www.amsterdam.nl/contact/" inverseColor size="small">
+                    <LinkList.Link color="inverse" href="https://www.amsterdam.nl/contact/" size="small">
                       Adressen en openingstijden
                     </LinkList.Link>
-                    <LinkList.Link href="tel:+3114020" icon={PhoneIcon} inverseColor size="small">
+                    <LinkList.Link color="inverse" href="tel:+3114020" icon={PhoneIcon} size="small">
                       Bel 14 020
                     </LinkList.Link>
                   </LinkList>
@@ -101,12 +101,12 @@ export default function Amsterdam({ children }) {
               </Grid.Cell>
               <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
                 <Column gap="extra-small">
-                  <Heading level={2} size="level-4" inverseColor>
+                  <Heading color="inverse" level={2} size="level-4">
                     Volg de gemeente
                   </Heading>
                   <LinkList>
                     {socials.map(({ href, label }) => (
-                      <LinkList.Link href={href} inverseColor key={label} rel="external" size="small">
+                      <LinkList.Link color="inverse" href={href} key={label} rel="external" size="small">
                         {label}
                       </LinkList.Link>
                     ))}
@@ -116,14 +116,14 @@ export default function Amsterdam({ children }) {
               <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
                 <Column gap="small">
                   <Column as="section" gap="extra-small">
-                    <Heading level={2} size="level-4" inverseColor>
+                    <Heading color="inverse" level={2} size="level-4">
                       Kalender
                     </Heading>
-                    <Paragraph size="small" inverseColor>
+                    <Paragraph color="inverse" size="small">
                       Van buurtactiviteiten tot inspraakavonden. Wat organiseert de gemeente voor u? Kijk op{' '}
                       <Link
+                        color="inverse"
                         href="https://activiteiten.amsterdam.nl/?pk_vid=9f948f5fae0c5e90169952714540adc6"
-                        inverseColor
                         variant="inline"
                       >
                         Kalender Amsterdam
@@ -132,12 +132,12 @@ export default function Amsterdam({ children }) {
                     </Paragraph>
                   </Column>
                   <Column as="section" gap="extra-small">
-                    <Heading level={2} size="level-4" inverseColor>
+                    <Heading color="inverse" level={2} size="level-4">
                       Uit in Amsterdam
                     </Heading>
-                    <Paragraph size="small" inverseColor>
+                    <Paragraph color="inverse" size="small">
                       Benieuwd wat er allemaal te doen is in de stad? Op{' '}
-                      <Link href="https://www.iamsterdam.com/" inverseColor variant="inline">
+                      <Link color="inverse" href="https://www.iamsterdam.com/" variant="inline">
                         Iamsterdam.com
                       </Link>{' '}
                       vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
