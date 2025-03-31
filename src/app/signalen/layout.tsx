@@ -38,7 +38,7 @@ function Signalen({ children }) {
         <Footer.Spotlight>
           <Grid gapVertical="large" paddingVertical="medium">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
-              <Column as="section">
+              <Column>
                 <Heading color="inverse" level={2} size="level-4">
                   Contact
                 </Heading>

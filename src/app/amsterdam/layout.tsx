@@ -105,7 +105,7 @@ export default function Amsterdam({ children }) {
               </Grid.Cell>
               <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
                 <Column>
-                  <Column as="section">
+                  <Column>
                     <Heading color="inverse" level={2} size="level-4">
                       Kalender
                     </Heading>
@@ -121,7 +121,7 @@ export default function Amsterdam({ children }) {
                       .
                     </Paragraph>
                   </Column>
-                  <Column as="section">
+                  <Column>
                     <Heading color="inverse" level={2} size="level-4">
                       Uit in Amsterdam
                     </Heading>

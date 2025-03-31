@@ -43,7 +43,7 @@ function Zoeken() {
       <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
         <Column>
           {filterPanel.map(({ title, filters }) => (
-            <Column as="section" key={title}>
+            <Column key={title}>
               <Heading level={2} size="level-4">
                 {title}
               </Heading>

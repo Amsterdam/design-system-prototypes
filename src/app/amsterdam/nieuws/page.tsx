@@ -47,7 +47,7 @@ function Nieuws() {
                 Mensen voelen zich steeds onveiliger op het fietspad door de toenemende drukte en snelheidsverschillen.
                 Ook stijgt het aantal fietsongelukken al jaren. We moeten daarom nu in actie komen.
               </Paragraph>
-              <Column as="section">
+              <Column>
                 <Heading level={2}>Gevaar</Heading>
                 <Paragraph>
                   Er zijn fatbikes die een groter vermogen hebben dan een e-bike en waar je makkelijk een snelheid mee
@@ -57,14 +57,14 @@ function Nieuws() {
                   bij een ongeval.
                 </Paragraph>
               </Column>
-              <Column as="section">
+              <Column>
                 <Heading level={2}>Handhaven</Heading>
                 <Paragraph>
                   De politie controleert op overtredingen met opgevoerde/illegale e-bikes en fatbikes. Er worden boetes
                   uitgedeeld en bij grove overtredingen neemt de politie fatbikes in beslag.
                 </Paragraph>
               </Column>
-              <Column as="section">
+              <Column>
                 <Heading level={2}>Voorlichting</Heading>
                 <Paragraph>
                   We vermoeden dat een deel van de fatbike-bestuurders niet op de hoogte is van de regels en risico’s.
@@ -74,7 +74,7 @@ function Nieuws() {
                   openbare weg.
                 </Paragraph>
               </Column>
-              <Column as="section">
+              <Column>
                 <Heading level={2}>Fietshelm</Heading>
                 <Paragraph>
                   Fietsen kan ook veiliger worden als fietsers een helm dragen. Het risico op (zwaar) hoofdletsel neemt
@@ -89,7 +89,7 @@ function Nieuws() {
                   landelijke fietshelm&shy;campagne.
                 </Paragraph>
               </Column>
-              <Column as="section">
+              <Column>
                 <Heading level={2}>Andere maatregelen</Heading>
                 <Paragraph>
                   Amsterdam heeft samen met 20 andere gemeenten een brief gestuurd naar de minister. We vragen hierin
