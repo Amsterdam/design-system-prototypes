@@ -25,7 +25,9 @@ function Project() {
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
           <Breadcrumb.Link href="#">Projecten</Breadcrumb.Link>
         </Breadcrumb>
-        <Heading className="ams-mb--sm">Kerngegevens</Heading>
+        <Heading className="ams-mb--sm" level={1}>
+          Kerngegevens
+        </Heading>
         <Heading level={2}>Brug 423 opwaardering (Berlagebrug) – ams20192715</Heading>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>

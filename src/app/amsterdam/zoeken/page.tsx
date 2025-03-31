@@ -64,7 +64,7 @@ function Zoeken() {
           <Breadcrumb.Link href="#">Zoekresultaten</Breadcrumb.Link>
         </Breadcrumb>
         <Column className="ams-mb--md" gap="small">
-          <Heading>Zoeken</Heading>
+          <Heading level={1}>Zoeken</Heading>
           <TextInput defaultValue="afval" />
           <Paragraph size="small">25 resultaten</Paragraph>
         </Column>

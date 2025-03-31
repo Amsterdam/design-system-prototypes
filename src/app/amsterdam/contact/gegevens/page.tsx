@@ -37,7 +37,7 @@ function Question() {
           </NextLink>
         </Breadcrumb>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
-          <Heading>Contact</Heading>
+          <Heading level={1}>Contact</Heading>
           <FieldSet aria-describedby="contactgegevensDescription" legend="Wat zijn uw contactgegevens?">
             <Column gap="small">
               <Paragraph id="contactgegevensDescription">

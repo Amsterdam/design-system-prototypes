@@ -148,9 +148,6 @@ export default function Amsterdam({ children }) {
             </Grid>
           </Footer.Top>
         </Footer>
-        <Heading level={2} className="ams-visually-hidden">
-          Sitemap
-        </Heading>
         <Grid paddingVertical="small">
           <Grid.Cell span="all">
             <PageMenu>

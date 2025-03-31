@@ -109,7 +109,9 @@ function HomePage() {
       </Overlap>
       <Grid paddingVertical="medium">
         <Grid.Cell span="all">
-          <Heading>Meest bezocht</Heading>
+          <Heading level={2} size="level-1">
+            Meest bezocht
+          </Heading>
         </Grid.Cell>
         {topTasks.map(({ title, description }) => (
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }} key={title}>
@@ -125,7 +127,7 @@ function HomePage() {
       <Spotlight color="purple">
         <Grid paddingVertical="medium">
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
-            <Heading color="inverse" style={{ marginBlockEnd: '1.5rem' }} size="level-2">
+            <Heading color="inverse" level={2} style={{ marginBlockEnd: '1.5rem' }}>
               Ontheffing of vergunning
             </Heading>
             <Paragraph color="inverse" size="small" style={{ marginBlockEnd: '1.5rem' }}>
@@ -137,7 +139,7 @@ function HomePage() {
             </Link>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
-            <Heading color="inverse" style={{ marginBlockEnd: '1.5rem' }} size="level-2">
+            <Heading color="inverse" level={2} style={{ marginBlockEnd: '1.5rem' }}>
               Werkzaamheden
             </Heading>
             <Paragraph color="inverse" lang="la" size="small" style={{ marginBlockEnd: '1.5rem' }}>
@@ -152,11 +154,13 @@ function HomePage() {
       </Spotlight>
       <Grid paddingVertical="medium">
         <Grid.Cell span={3}>
-          <Heading className="ams-mb--sm">Kalender</Heading>
+          <Heading className="ams-mb--sm" level={2} size="level-1">
+            Kalender
+          </Heading>
           <Column>
             {calenderItems.map(({ date, description, time }) => (
               <Card key={date}>
-                <Heading level={2} size="level-4">
+                <Heading level={3} size="level-4">
                   <Card.Link href="#">{date}</Card.Link>
                 </Heading>
                 <Paragraph size="small">{description}</Paragraph>
@@ -166,11 +170,13 @@ function HomePage() {
           </Column>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
-          <Heading className="ams-mb--sm">Nieuws</Heading>
+          <Heading className="ams-mb--sm" level={2} size="level-1">
+            Nieuws
+          </Heading>
           <Card>
             <NextImage alt="" className="ams-image" src={stormschadeImage} />
             <Card.HeadingGroup tagline="Nieuws">
-              <Heading level={2} size="level-4">
+              <Heading level={3} size="level-4">
                 <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
                   <Card.Link>Waar u stormschade kunt melden</Card.Link>
                 </NextLink>
@@ -188,7 +194,7 @@ function HomePage() {
             <Card>
               <NextImage alt="" className="ams-image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">
-                <Heading level={2} size="level-4">
+                <Heading level={3} size="level-4">
                   <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
                     <Card.Link>{heading}</Card.Link>
                   </NextLink>

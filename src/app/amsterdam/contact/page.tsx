@@ -22,7 +22,7 @@ function Contact() {
           </NextLink>
         </Breadcrumb>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
-          <Heading>Contact</Heading>
+          <Heading level={1}>Contact</Heading>
           <FieldSet legend="Waar gaat uw melding over?">
             <Radio name="soort" value="vraag" defaultChecked>
               Vraag

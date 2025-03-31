@@ -34,7 +34,7 @@ function Question() {
           </NextLink>
         </Breadcrumb>
         <form className="ams-gap--md" onSubmit={handleSubmit}>
-          <Heading>Contact</Heading>
+          <Heading level={1}>Contact</Heading>
           <Field>
             <Label htmlFor="body">Wat wilt u aan de gemeente vragen?</Label>
             <Paragraph id="bodyDescription" size="small">

@@ -36,7 +36,7 @@ function Thanks() {
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <Column>
-          <Heading>Melding openbare ruimte</Heading>
+          <Heading level={1}>Melding openbare ruimte</Heading>
           <Column gap="small">
             <Heading level={2}>Bedankt</Heading>
             <Paragraph size="small">
