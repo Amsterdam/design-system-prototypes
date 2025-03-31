@@ -1,16 +1,6 @@
 'use client'
 
-import {
-  Column,
-  Footer,
-  Grid,
-  Heading,
-  Link,
-  LinkList,
-  PageMenu,
-  Paragraph,
-  Screen,
-} from '@amsterdam/design-system-react'
+import { Column, Footer, Grid, Heading, Link, LinkList, Paragraph, Screen } from '@amsterdam/design-system-react'
 import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import './amsterdam.css'
@@ -71,7 +61,7 @@ export default function Amsterdam({ children }) {
       <Screen maxWidth="wide">
         {children}
         <Footer>
-          <Footer.Top>
+          <Footer.Spotlight>
             <Grid gapVertical="large" paddingVertical="medium">
               <Grid.Cell span={3}>
                 <Column gap="extra-small">
@@ -146,22 +136,18 @@ export default function Amsterdam({ children }) {
                 </Column>
               </Grid.Cell>
             </Grid>
-          </Footer.Top>
-        </Footer>
-        <Grid paddingVertical="small">
-          <Grid.Cell span="all">
-            <PageMenu>
-              {footerLinks.map(({ href, label }) => (
-                <NextLink href={href} key={label} legacyBehavior passHref>
-                  <PageMenu.Link>{label}</PageMenu.Link>
-                </NextLink>
-              ))}
-              <NextLink href="/" legacyBehavior passHref>
-                <PageMenu.Link>Prototypes</PageMenu.Link>
+          </Footer.Spotlight>
+          <Footer.Menu>
+            {footerLinks.map(({ href, label }) => (
+              <NextLink href={href} key={label} legacyBehavior passHref>
+                <Footer.MenuLink>{label}</Footer.MenuLink>
               </NextLink>
-            </PageMenu>
-          </Grid.Cell>
-        </Grid>
+            ))}
+            <NextLink href="/" legacyBehavior passHref>
+              <Footer.MenuLink>Prototypes</Footer.MenuLink>
+            </NextLink>
+          </Footer.Menu>
+        </Footer>
       </Screen>
     </div>
   )

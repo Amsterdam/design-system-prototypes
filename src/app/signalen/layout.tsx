@@ -8,7 +8,6 @@ import {
   Header,
   Heading,
   Link,
-  PageMenu,
   Paragraph,
   Screen,
   SkipLink,
@@ -36,7 +35,7 @@ function Signalen({ children }) {
         </Suspense>
       </main>
       <Footer>
-        <Footer.Top>
+        <Footer.Spotlight>
           <Grid gapVertical="large" paddingVertical="medium">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
               <Column as="section" gap="extra-small">
@@ -56,24 +55,15 @@ function Signalen({ children }) {
               </Column>
             </Grid.Cell>
           </Grid>
-        </Footer.Top>
-        <Footer.Bottom>
-          <Heading level={2} className="ams-visually-hidden">
-            Over deze website
-          </Heading>
-          <Grid paddingVertical="small">
-            <Grid.Cell span="all">
-              <PageMenu>
-                <PageMenu.Link href="#">Over deze site</PageMenu.Link>
-                <PageMenu.Link href="#">Privacy</PageMenu.Link>
-                <PageMenu.Link href="#">Toegankelijkheid</PageMenu.Link>
-                <NextLink href="/" legacyBehavior passHref>
-                  <PageMenu.Link>Prototypes</PageMenu.Link>
-                </NextLink>
-              </PageMenu>
-            </Grid.Cell>
-          </Grid>
-        </Footer.Bottom>
+        </Footer.Spotlight>
+        <Footer.Menu>
+          <Footer.MenuLink href="#">Over deze site</Footer.MenuLink>
+          <Footer.MenuLink href="#">Privacy</Footer.MenuLink>
+          <Footer.MenuLink href="#">Toegankelijkheid</Footer.MenuLink>
+          <NextLink href="/" legacyBehavior passHref>
+            <Footer.MenuLink>Prototypes</Footer.MenuLink>
+          </NextLink>
+        </Footer.Menu>
       </Footer>
     </Screen>
   )
