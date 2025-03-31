@@ -21,8 +21,6 @@ export default tseslint.config(
     ignores: ['**/node_modules/', '**/vendor/', '**/build/', '**/coverage/', '**/dist/', '**/tmp/'],
   },
   ...compat.extends(
-    'airbnb',
-    'airbnb-typescript',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended',
     'plugin:react/recommended',
