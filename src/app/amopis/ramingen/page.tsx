@@ -32,8 +32,8 @@ function Estimation() {
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
         <Tabs>
           <Tabs.List>
-            {tabLabels.map((label, index) => (
-              <Tabs.Button tab={index} key={label}>
+            {tabLabels.map((label) => (
+              <Tabs.Button key={label} tab={label}>
                 {label}
               </Tabs.Button>
             ))}
