@@ -59,7 +59,7 @@ function Estimation() {
               Planning
             </LinkList.Link>
             <LinkList.Link href="#" icon={ChattingIcon}>
-              Risisco’s
+              Risico’s
             </LinkList.Link>
             <LinkList.Link href="#" icon={ChattingIcon}>
               Logboek

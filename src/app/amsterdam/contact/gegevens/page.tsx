@@ -60,7 +60,7 @@ function Question() {
                   <Label htmlFor="country">Landnummer</Label>
                   <Select name="country">
                     <option value="+31">Nederland +31</option>
-                    <option value="+32">Belgie +32</option>
+                    <option value="+32">België +32</option>
                     <option value="+33">Frankrijk +33</option>
                   </Select>
                 </Field>
