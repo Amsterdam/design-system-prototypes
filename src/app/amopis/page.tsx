@@ -79,7 +79,7 @@ function Project() {
             </Row>
             <section>
               <Heading level={4}>Opdrachtgevers</Heading>
-              <DescriptionList termsWidth="md">
+              <DescriptionList termsWidth="medium">
                 <DescriptionList.Term>Ambtelijk opdrachtgever</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
@@ -98,7 +98,7 @@ function Project() {
             </section>
             <section>
               <Heading level={4}>Opdrachtnemers</Heading>
-              <DescriptionList termsWidth="md">
+              <DescriptionList termsWidth="medium">
                 <DescriptionList.Term>Accounthouder</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
@@ -138,7 +138,7 @@ function Project() {
             </section>
             <section>
               <Heading level={4}>Basisgegevens</Heading>
-              <DescriptionList termsWidth="md">
+              <DescriptionList termsWidth="medium">
                 <DescriptionList.Term>Gebied</DescriptionList.Term>
                 <DescriptionList.Description>Gemeente Amsterdam</DescriptionList.Description>
                 <DescriptionList.Term>Stadsdeel</DescriptionList.Term>
