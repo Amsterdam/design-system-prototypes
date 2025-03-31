@@ -123,7 +123,7 @@ export default function CollegeVanBurgemeesterEnWethouders() {
           <Paragraph size="large">Het dagelijks bestuur van onze gemeente uitgebreid in beeld.</Paragraph>
         </Grid.Cell>
       </Grid>
-      <NextImage alt="" className="ams-image ams-aspect-ratio--2x-wide" src={municipalExecutive} />
+      <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={municipalExecutive} />
       <Grid paddingVertical="large" gapVertical="small">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 12 }} start={{ narrow: 1, medium: 2, wide: 1 }}>
           <Heading className="ams-mb-s" level={2}>

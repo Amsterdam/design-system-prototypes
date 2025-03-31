@@ -83,7 +83,7 @@ export default function Gemeenteraad() {
           </Paragraph>
         </Grid.Cell>
       </Grid>
-      <NextImage alt="" className="ams-image ams-aspect-ratio--2x-wide" src={cityCouncilImage} />
+      <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={cityCouncilImage} />
       <Grid paddingVertical="large" gapVertical="small">
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
           <Heading className="ams-mb-s" level={2}>
