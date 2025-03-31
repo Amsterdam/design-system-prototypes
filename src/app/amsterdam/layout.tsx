@@ -64,11 +64,11 @@ export default function Amsterdam({ children }) {
           <Footer.Spotlight>
             <Grid gapVertical="large" paddingVertical="medium">
               <Grid.Cell span={3}>
-                <Column>
-                  <Heading color="inverse" level={2} size="level-4">
+                <div>
+                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
                     Contact
                   </Heading>
-                  <Paragraph color="inverse" size="small">
+                  <Paragraph className="ams-mb-m" color="inverse" size="small">
                     Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Neem dan contact met ons op.
                   </Paragraph>
                   <LinkList>
@@ -87,11 +87,11 @@ export default function Amsterdam({ children }) {
                       Bel 14 020
                     </LinkList.Link>
                   </LinkList>
-                </Column>
+                </div>
               </Grid.Cell>
               <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
-                <Column>
-                  <Heading color="inverse" level={2} size="level-4">
+                <div>
+                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
                     Volg de gemeente
                   </Heading>
                   <LinkList>
@@ -101,39 +101,37 @@ export default function Amsterdam({ children }) {
                       </LinkList.Link>
                     ))}
                   </LinkList>
-                </Column>
+                </div>
               </Grid.Cell>
-              <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
-                <Column>
-                  <Column>
-                    <Heading color="inverse" level={2} size="level-4">
-                      Kalender
-                    </Heading>
-                    <Paragraph color="inverse" size="small">
-                      Van buurtactiviteiten tot inspraakavonden. Wat organiseert de gemeente voor u? Kijk op{' '}
-                      <Link
-                        color="inverse"
-                        href="https://activiteiten.amsterdam.nl/?pk_vid=9f948f5fae0c5e90169952714540adc6"
-                        variant="inline"
-                      >
-                        Kalender Amsterdam
-                      </Link>
-                      .
-                    </Paragraph>
-                  </Column>
-                  <Column>
-                    <Heading color="inverse" level={2} size="level-4">
-                      Uit in Amsterdam
-                    </Heading>
-                    <Paragraph color="inverse" size="small">
-                      Benieuwd wat er allemaal te doen is in de stad? Op{' '}
-                      <Link color="inverse" href="https://www.iamsterdam.com/" variant="inline">
-                        Iamsterdam.com
-                      </Link>{' '}
-                      vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
-                    </Paragraph>
-                  </Column>
-                </Column>
+              <Grid.Cell className="ams-gap-xl" span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
+                <div>
+                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                    Kalender
+                  </Heading>
+                  <Paragraph color="inverse" size="small">
+                    Van buurtactiviteiten tot inspraakavonden. Wat organiseert de gemeente voor u? Kijk op{' '}
+                    <Link
+                      color="inverse"
+                      href="https://activiteiten.amsterdam.nl/?pk_vid=9f948f5fae0c5e90169952714540adc6"
+                      variant="inline"
+                    >
+                      Kalender Amsterdam
+                    </Link>
+                    .
+                  </Paragraph>
+                </div>
+                <div>
+                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                    Uit in Amsterdam
+                  </Heading>
+                  <Paragraph color="inverse" size="small">
+                    Benieuwd wat er allemaal te doen is in de stad? Op{' '}
+                    <Link color="inverse" href="https://www.iamsterdam.com/" variant="inline">
+                      Iamsterdam.com
+                    </Link>{' '}
+                    vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
+                  </Paragraph>
+                </div>
               </Grid.Cell>
             </Grid>
           </Footer.Spotlight>

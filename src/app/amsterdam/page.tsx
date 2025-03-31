@@ -84,10 +84,9 @@ function HomePage() {
   return (
     <>
       {isAlertVisible && (
-        <Grid>
+        <Grid paddingTop="small" paddingBottom="large">
           <Grid.Cell span="all">
             <Alert
-              className="ams-mb-l"
               closeable
               heading="Stadsloketten sluiten op Koningsdag"
               headingLevel={2}
@@ -133,10 +132,10 @@ function HomePage() {
       <Spotlight>
         <Grid paddingVertical="medium">
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
-            <Heading color="inverse" level={2} style={{ marginBlockEnd: '1.5rem' }}>
+            <Heading className="ams-mb-s" color="inverse" level={2}>
               Ontheffing of vergunning
             </Heading>
-            <Paragraph color="inverse" size="small" style={{ marginBlockEnd: '1.5rem' }}>
+            <Paragraph className="ams-mb-m" color="inverse" size="small">
               Check welke ontheffing of vergunning u nodig heeft. Bijvoorbeeld een RVV, TVM, objectvergunning,{' '}
               nachtwerkontheffing, e-RVV, e-TVM of filmmelding. Dat regult u allemaal met 1 formulier.
             </Paragraph>
@@ -145,10 +144,10 @@ function HomePage() {
             </Link>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
-            <Heading color="inverse" level={2} style={{ marginBlockEnd: '1.5rem' }}>
+            <Heading className="ams-mb-s" color="inverse" level={2}>
               Werkzaamheden
             </Heading>
-            <Paragraph color="inverse" lang="la" size="small" style={{ marginBlockEnd: '1.5rem' }}>
+            <Paragraph className="ams-mb-m" color="inverse" lang="la" size="small">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae cumque deleniti exercitationem
               facere fugiat laudantium libero magnam mollitia nisi, omnis pariatur preferendis.
             </Paragraph>
@@ -158,9 +157,9 @@ function HomePage() {
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <Grid paddingVertical="medium">
+      <Grid paddingTop="medium" paddingBottom="large">
         <Grid.Cell span={3}>
-          <Heading level={2} size="level-1">
+          <Heading className="ams-mb-xl" level={2} size="level-1">
             Kalender
           </Heading>
           <Column>
@@ -176,7 +175,7 @@ function HomePage() {
           </Column>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
-          <Heading level={2} size="level-1">
+          <Heading className="ams-mb-xl" level={2} size="level-1">
             Nieuws
           </Heading>
           <Card>

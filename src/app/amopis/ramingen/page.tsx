@@ -68,7 +68,7 @@ function Estimation() {
         </div>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 10 }}>
-        <div className="amopis-white-background" style={{ padding: '1rem' }}>
+        <div className="amopis-white-background">
           <Column>
             <section>
               <Heading level={3}>Ramingen</Heading>

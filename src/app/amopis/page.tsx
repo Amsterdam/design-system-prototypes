@@ -67,8 +67,8 @@ function Project() {
         </div>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
-        <div className="amopis-white-background" style={{ padding: '1rem' }}>
-          <Column>
+        <div className="amopis-white-background">
+          <Column gap="x-large">
             <Row align="between" alignVertical="baseline">
               <Heading level={3}>Kerngegevens</Heading>
               <LinkList>
@@ -78,7 +78,9 @@ function Project() {
               </LinkList>
             </Row>
             <section>
-              <Heading level={4}>Opdrachtgevers</Heading>
+              <Heading className="ams-mb-m" level={4}>
+                Opdrachtgevers
+              </Heading>
               <DescriptionList termsWidth="medium">
                 <DescriptionList.Term>Ambtelijk opdrachtgever</DescriptionList.Term>
                 <DescriptionList.Description>
@@ -97,7 +99,9 @@ function Project() {
               </DescriptionList>
             </section>
             <section>
-              <Heading level={4}>Opdrachtnemers</Heading>
+              <Heading className="ams-mb-m" level={4}>
+                Opdrachtnemers
+              </Heading>
               <DescriptionList termsWidth="medium">
                 <DescriptionList.Term>Accounthouder</DescriptionList.Term>
                 <DescriptionList.Description>
@@ -137,7 +141,9 @@ function Project() {
               </DescriptionList>
             </section>
             <section>
-              <Heading level={4}>Basisgegevens</Heading>
+              <Heading className="ams-mb-m" level={4}>
+                Basisgegevens
+              </Heading>
               <DescriptionList termsWidth="medium">
                 <DescriptionList.Term>Gebied</DescriptionList.Term>
                 <DescriptionList.Description>Gemeente Amsterdam</DescriptionList.Description>
@@ -155,20 +161,20 @@ function Project() {
         </div>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 3, wide: 3 }} start={{ narrow: 1, medium: 3, wide: 10 }}>
-        <div className="amopis-white-background" style={{ padding: '1rem' }}>
+        <div className="amopis-white-background">
           <Column>
-            <div>
+            <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=1" />
               <Paragraph>
                 Impressie Brug 423 &nbsp; <Link variant="inline">Afbeelding wijzigen</Link>
               </Paragraph>
-            </div>
-            <div>
+            </Column>
+            <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=2" />
               <Paragraph>
                 Locatie Brug 423 &nbsp; <Link variant="inline">Bekijk op datapunt.nl</Link>
               </Paragraph>
-            </div>
+            </Column>
           </Column>
         </div>
       </Grid.Cell>
