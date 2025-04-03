@@ -10,34 +10,34 @@ import {
 export function Sidebar() {
   return (
     <div className="amopis-sidebar">
-      <Column gap="large">
-        <Column alignHorizontal="center" gap="extra-small">
+      <Column gap="x-large">
+        <Column alignHorizontal="center" gap="x-small">
           <HousingIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Dashboard
           </Paragraph>
         </Column>
-        <Column alignHorizontal="center" gap="extra-small">
+        <Column alignHorizontal="center" gap="x-small">
           <SuitcaseIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Projecten
           </Paragraph>
         </Column>
-        <Column alignHorizontal="center" gap="extra-small">
+        <Column alignHorizontal="center" gap="x-small">
           <DocumentTextIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Rapportages
           </Paragraph>
         </Column>
-        <Column alignHorizontal="center" gap="extra-small">
+        <Column alignHorizontal="center" gap="x-small">
           <ExternalLinkIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Analyses
           </Paragraph>
         </Column>
-        <Column alignHorizontal="center" gap="extra-small">
+        <Column alignHorizontal="center" gap="x-small">
           <StopIcon fill="white" width={24} />
-          <Paragraph inverseColor size="small">
+          <Paragraph color="inverse" size="small">
             Instellingen
           </Paragraph>
         </Column>

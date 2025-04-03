@@ -57,7 +57,7 @@ export default function (plop) {
         path: 'src/app/{{kebabCase siteName}}/layout.tsx',
         pattern: '{/* Append footer link here */}',
         template: `                <NextLink legacyBehavior href="/{{kebabCase siteName}}/{{kebabCase name}}" passHref>
-                  <PageMenu.Link>{{sentenceCase name}}</PageMenu.Link>
+                  <Footer.MenuLink>{{sentenceCase name}}</Footer.MenuLink>
                 </NextLink>`,
       },
     ],

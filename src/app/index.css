@@ -18,14 +18,14 @@ a[href="#"] {
 }
 
 .ams-details {
-  color: var(--ams-color-primary-black);
-  font-family: var(--ams-text-font-family);
-  font-size: var(--ams-text-level-6-font-size);
-  font-weight: var(--ams-text-font-weight-normal);
-  line-height: var(--ams-text-level-6-line-height);
+  color: var(--ams-color-text);
+  font-family: var(--ams-typography-font-family);
+  font-size: var(--ams-typography-body-text-font-size);
+  font-weight: var(--ams-typography-body-text-font-weight);
+  line-height: var(--ams-typography-body-text-line-height);
 
   summary {
-    cursor: var(--ams-action-activate-cursor);
+    cursor: var(--ams-cursor-interactive);
     width: max-content;
   }
 

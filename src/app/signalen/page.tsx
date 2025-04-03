@@ -8,7 +8,7 @@ import {
   Column,
   ErrorMessage,
   Field,
-  FormErrorList,
+  InvalidFormAlert,
   Grid,
   Heading,
   Label,
@@ -57,15 +57,15 @@ function Home() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <Column className="ams-mb--md">
-          <Heading>Melding openbare ruimte</Heading>
-          <hgroup className="ams-gap--xs">
+        <Column className="ams-mb-l">
+          <Heading level={1}>Melding openbare ruimte</Heading>
+          <hgroup className="ams-gap-s">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
-          <FormErrorList errors={formattedErrors} />
+          <InvalidFormAlert errors={formattedErrors} heading="Verbeter de fouten voor u verder gaat" headingLevel={2} />
         </Column>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <Field invalid={Boolean(errors.body)}>
             <Label htmlFor="body">Waar gaat het om?</Label>
             <Paragraph id="bodyDescription" size="small">

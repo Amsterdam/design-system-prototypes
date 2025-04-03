@@ -35,7 +35,7 @@ function KunstEnCultuur() {
       </Grid>
       <Grid paddingBottom="medium">
         <Grid.Cell span={4}>
-          <Heading level={3} className="ams-mb--xs">
+          <Heading level={3} className="ams-mb-s">
             Vaak gezocht
           </Heading>
           <LinkList>
@@ -46,10 +46,10 @@ function KunstEnCultuur() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={4} start={{ narrow: 1, medium: 1, wide: 5 }}>
-          <Heading level={2} size="level-3" className="ams-mb--xs">
+          <Heading level={2} size="level-3" className="ams-mb-s">
             Wie Amsterdam zegt, zegt kunst en cultuur
           </Heading>
-          <Paragraph className="ams-mb--sm">
+          <Paragraph>
             Van de musea en culturele broedplaatsen tot de stadsparken en de met kunst versierde gevels van de
             grachtenpanden. Kunst en cultuur is altijd en overal in Amsterdam. En het houdt niet op als de zon
             ondergaat: ook de clubscene is van culturele waarde voor de stad.
@@ -72,8 +72,8 @@ function KunstEnCultuur() {
             wide: 9,
           }}
         >
-          <Column gap="extra-large">
-            <Column gap="extra-small">
+          <Column gap="x-large">
+            <Column>
               <Heading level={2} size="level-3">
                 Archieven en collecties
               </Heading>
@@ -82,7 +82,7 @@ function KunstEnCultuur() {
                 <LinkList.Link href="#">Collectie van gemeente Amsterdam</LinkList.Link>
               </LinkList>
             </Column>
-            <Column gap="extra-small">
+            <Column>
               <Heading level={2} size="level-3">
                 Bekijk op de kaart
               </Heading>
@@ -92,7 +92,7 @@ function KunstEnCultuur() {
                 <LinkList.Link href="#">Archeologische vindplaatsen</LinkList.Link>
               </LinkList>
             </Column>
-            <Column gap="extra-small">
+            <Column>
               <Heading level={2} size="level-3">
                 Weesp
               </Heading>

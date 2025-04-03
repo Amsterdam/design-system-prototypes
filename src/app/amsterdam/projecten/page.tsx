@@ -21,7 +21,7 @@ function Projecten() {
       </Grid>
       <Grid gapVertical="small" paddingBottom="medium">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-          <Heading className="ams-mb--sm">Bouw- en verkeersprojecten</Heading>
+          <Heading level={1}>Bouw- en verkeersprojecten</Heading>
           <Paragraph size="large">
             <strong>Overzicht van ruim 200 projecten in Amsterdam.</strong> Lees waar en wanneer we werken aan
             nieuwbouw, groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele
@@ -31,7 +31,7 @@ function Projecten() {
       </Grid>
       <Grid paddingBottom="medium">
         <Grid.Cell span={{ narrow: 2, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
-          <Heading level={2} size="level-4" className="ams-mb--xs">
+          <Heading level={2} size="level-4" className="ams-mb-s">
             Projecten per stadsdeel
           </Heading>
           <LinkList>
@@ -43,7 +43,7 @@ function Projecten() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 2, medium: 4, wide: 5 }}>
-          <Heading level={2} size="level-4" className="ams-mb--xs">
+          <Heading level={2} size="level-4" className="ams-mb-s">
             Zoek project
           </Heading>
           <TextInput />
@@ -52,7 +52,7 @@ function Projecten() {
       <Spotlight color="yellow">
         <Grid paddingVertical="medium">
           <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 3 }}>
-            <Heading level={2} size="level-4" className="ams-mb--xs">
+            <Heading level={2} size="level-4" className="ams-mb-s">
               Kaart met bouwprojecten en verkeersprojecten
             </Heading>
             <Paragraph>Ga via de kaart naar meer informatie over het project dat u zoekt.</Paragraph>

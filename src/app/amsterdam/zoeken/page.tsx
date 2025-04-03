@@ -43,7 +43,7 @@ function Zoeken() {
       <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
         <Column>
           {filterPanel.map(({ title, filters }) => (
-            <Column as="section" key={title} gap="extra-small">
+            <Column key={title}>
               <Heading level={2} size="level-4">
                 {title}
               </Heading>
@@ -63,8 +63,8 @@ function Zoeken() {
           </NextLink>
           <Breadcrumb.Link href="#">Zoekresultaten</Breadcrumb.Link>
         </Breadcrumb>
-        <Column className="ams-mb--md" gap="small">
-          <Heading>Zoeken</Heading>
+        <Column className="ams-mb-l">
+          <Heading level={1}>Zoeken</Heading>
           <TextInput defaultValue="afval" />
           <Paragraph size="small">25 resultaten</Paragraph>
         </Column>

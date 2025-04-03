@@ -1,13 +1,11 @@
 'use client'
 
 import { ReactNode } from 'react'
-import { Avatar, Column, Grid, Header, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
+import { Avatar, Column, Footer, Grid, Header, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
-
 import { Sidebar } from './_components/SideBar/SideBar'
-
-import './amopis.css'
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
+import './amopis.css'
 
 function Amopis({ children }: { children: ReactNode }) {
   return (
@@ -26,24 +24,22 @@ function Amopis({ children }: { children: ReactNode }) {
             <div id="main" className="amopis-main-background">
               {children}
             </div>
-            <Grid paddingVertical="small">
-              <Grid.Cell span="all">
-                <PageMenu>
-                  <NextLink href="/amopis" legacyBehavior passHref>
-                    <PageMenu.Link>Kerngegevens</PageMenu.Link>
-                  </NextLink>
-                  <NextLink href="/amopis/ramingen" legacyBehavior passHref>
-                    <PageMenu.Link>Ramingen</PageMenu.Link>
-                  </NextLink>
-                  <PageMenu.Link href="#">E-mail je vraag of feedback</PageMenu.Link>
-                  <PageMenu.Link href="#">Bekijk veelgestelde vragen</PageMenu.Link>
-                  <PageMenu.Link href="#">Bekijk releasebeschrijving</PageMenu.Link>
-                  <NextLink href="/" legacyBehavior passHref>
-                    <PageMenu.Link>Prototypes</PageMenu.Link>
-                  </NextLink>
-                </PageMenu>
-              </Grid.Cell>
-            </Grid>
+            <Footer>
+              <Footer.Menu>
+                <NextLink href="/amopis" legacyBehavior passHref>
+                  <Footer.MenuLink>Kerngegevens</Footer.MenuLink>
+                </NextLink>
+                <NextLink href="/amopis/ramingen" legacyBehavior passHref>
+                  <Footer.MenuLink>Ramingen</Footer.MenuLink>
+                </NextLink>
+                <Footer.MenuLink href="#">E-mail je vraag of feedback</Footer.MenuLink>
+                <Footer.MenuLink href="#">Bekijk veelgestelde vragen</Footer.MenuLink>
+                <Footer.MenuLink href="#">Bekijk releasebeschrijving</Footer.MenuLink>
+                <NextLink href="/" legacyBehavior passHref>
+                  <Footer.MenuLink>Prototypes</Footer.MenuLink>
+                </NextLink>
+              </Footer.Menu>
+            </Footer>
           </Column>
         </div>
       </Screen>

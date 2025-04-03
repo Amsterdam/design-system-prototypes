@@ -26,14 +26,14 @@ function Estimation() {
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
           <Breadcrumb.Link href="#">Planning</Breadcrumb.Link>
         </Breadcrumb>
-        <Heading className="ams-mb--sm">Capaciteitsraming</Heading>
+        <Heading level={1}>Capaciteitsraming</Heading>
         <Heading level={2}>Brug 423 opwaardering (Berlagebrug) – ams20192715</Heading>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
         <Tabs>
           <Tabs.List>
-            {tabLabels.map((label, index) => (
-              <Tabs.Button tab={index} key={label}>
+            {tabLabels.map((label) => (
+              <Tabs.Button key={label} tab={label}>
                 {label}
               </Tabs.Button>
             ))}
@@ -59,7 +59,7 @@ function Estimation() {
               Planning
             </LinkList.Link>
             <LinkList.Link href="#" icon={ChattingIcon}>
-              Risisco’s
+              Risico’s
             </LinkList.Link>
             <LinkList.Link href="#" icon={ChattingIcon}>
               Logboek
@@ -68,7 +68,7 @@ function Estimation() {
         </div>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 10 }}>
-        <div className="amopis-white-background" style={{ padding: '1rem' }}>
+        <div className="amopis-white-background">
           <Column>
             <section>
               <Heading level={3}>Ramingen</Heading>
@@ -94,7 +94,7 @@ function Estimation() {
                     <Table.Cell>2025</Table.Cell>
                     <Table.Cell>25-2</Table.Cell>
                     <Table.Cell>
-                      <Badge label="Voorgesteld" color="blue" />
+                      <Badge label="Voorgesteld" color="azure" />
                     </Table.Cell>
                     <Table.Cell>Marise Ent</Table.Cell>
                     <Table.Cell>
@@ -108,7 +108,7 @@ function Estimation() {
                     <Table.Cell>2024</Table.Cell>
                     <Table.Cell>24-7</Table.Cell>
                     <Table.Cell>
-                      <Badge label="Vastgesteld" color="dark-green" />
+                      <Badge label="Vastgesteld" />
                     </Table.Cell>
                     <Table.Cell>Klaas Helmers</Table.Cell>
                     <Table.Cell>
@@ -153,7 +153,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-6</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="blue" />
+                        <Badge label="Voorgesteld" color="azure" />
                       </Table.Cell>
                       <Table.Cell>Marjolein Boomer</Table.Cell>
                       <Table.Cell>
@@ -167,7 +167,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-5</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="blue" />
+                        <Badge label="Voorgesteld" color="azure" />
                       </Table.Cell>
                       <Table.Cell>Klaas Helmers</Table.Cell>
                       <Table.Cell>
@@ -181,7 +181,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-4</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="blue" />
+                        <Badge label="Voorgesteld" color="azure" />
                       </Table.Cell>
                       <Table.Cell>Marjolein Boomer</Table.Cell>
                       <Table.Cell>
@@ -195,7 +195,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-3</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="blue" />
+                        <Badge label="Voorgesteld" color="azure" />
                       </Table.Cell>
                       <Table.Cell>Marjolein Boomer</Table.Cell>
                       <Table.Cell>

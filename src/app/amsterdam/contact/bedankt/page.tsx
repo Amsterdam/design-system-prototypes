@@ -12,8 +12,8 @@ function Bedankt() {
             <Breadcrumb.Link>Home</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
-        <Column className="ams-mb--md" gap="small">
-          <Heading>Bedankt!</Heading>
+        <Column className="ams-mb-l">
+          <Heading level={1}>Bedankt!</Heading>
           <Paragraph>
             Uw melding is bij ons bekend onder nummer: AMS-14022. Heeft u een e-mailadres ingevuld? Dan ontvangt u een
             e-mail met alle gegevens van uw vraag.

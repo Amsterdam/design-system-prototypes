@@ -29,7 +29,7 @@ export default function Page() {
         </Grid.Cell>
         <Grid.Cell span="all">
           <details className="ams-details">
-            <summary className="ams-mb--xs">Kickstart your own</summary>
+            <summary className="ams-mb-s">Kickstart your own</summary>
             <Paragraph size="small">
               <code>
                 git clone git@github.com:Amsterdam/design-system-prototypes.git

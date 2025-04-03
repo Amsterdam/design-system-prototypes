@@ -40,10 +40,10 @@ function Section({ description, linkText, subsections, title }: SectionProps) {
   return (
     <Grid paddingBottom="large" gapVertical="small">
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-        <Heading className={clsx({ 'ams-mb--xs': description || linkText })} level={2}>
+        <Heading className={clsx({ 'ams-mb-s': description || linkText })} level={2}>
           {title}
         </Heading>
-        {description && <Paragraph className="ams-mb--sm">{description}</Paragraph>}
+        {description && <Paragraph>{description}</Paragraph>}
         {linkText && (
           <Link href="#" variant="standalone">
             {linkText}
@@ -72,7 +72,7 @@ export default function BestuurEnOrganisatie() {
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading className="ams-mb--sm">Bestuur en Organisatie</PageHeading>
+          <PageHeading>Bestuur en Organisatie</PageHeading>
           <Paragraph size="large">
             Aenean lorem elit, commodo eget elit sit amet, auctor venenatis ligula. Phasellus faucibus fringilla
             viverra. Aliquam vestibulum vehicula enim, ac consequat nisl mattis id.{' '}
