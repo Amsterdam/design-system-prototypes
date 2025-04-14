@@ -48,7 +48,7 @@
     "eslint-plugin-prettier": "5.2.6",
     "eslint-plugin-react": "7.37.4",
     "eslint-plugin-react-hooks": "5.2.0",
-    "npm-check-updates": "17.1.16",
+    "npm-check-updates": "17.1.18",
     "plop": "4.0.1",
     "prettier": "3.5.3",
     "typescript": "5.8.2",
