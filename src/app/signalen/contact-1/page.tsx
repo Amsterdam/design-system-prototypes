@@ -67,7 +67,7 @@ function Contact1() {
             aria-describedby="contactDescription"
             legend="Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?"
           >
-            <Paragraph id="contactDescription" size="small">
+            <Paragraph className="ams-mb-m" id="contactDescription" size="small">
               Vaak hebben we nog een vraag. Daarmee kunnen we het probleem sneller of beter oplossen. Of we willen iets
               uitleggen. Wij willen u dan graag even bellen. Of anders e-mailen wij u. Wij gebruiken uw telefoonnummer
               en e-mailadres alléén voor deze melding.

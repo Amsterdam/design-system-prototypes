@@ -52,21 +52,19 @@ function VulAan1() {
         </Column>
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet legend="Welke dag was het? (niet verplicht)" role="radiogroup">
-            <Column>
-              <Radio value="vandaag" {...register('whenDay')} defaultChecked={formData.whenDay === 'vandaag'}>
-                Vandaag
+            <Radio value="vandaag" {...register('whenDay')} defaultChecked={formData.whenDay === 'vandaag'}>
+              Vandaag
+            </Radio>
+            {dayOptions.map((dayBack) => (
+              <Radio
+                key={dayBack}
+                value={optionLabel(dayBack)}
+                {...register('whenDay')}
+                defaultChecked={formData.whenDay === optionLabel(dayBack)}
+              >
+                {optionLabel(dayBack)}
               </Radio>
-              {dayOptions.map((dayBack) => (
-                <Radio
-                  key={dayBack}
-                  value={optionLabel(dayBack)}
-                  {...register('whenDay')}
-                  defaultChecked={formData.whenDay === optionLabel(dayBack)}
-                >
-                  {optionLabel(dayBack)}
-                </Radio>
-              ))}
-            </Column>
+            ))}
           </FieldSet>{' '}
           <div>
             <Button type="submit">Volgende vraag</Button>

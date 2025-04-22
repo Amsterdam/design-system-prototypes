@@ -44,14 +44,12 @@ function VulAan1() {
         </Column>
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet legend="Wanneer heeft u de overlast? (niet verplicht)" role="radiogroup">
-            <Column>
-              <Radio value="nu" {...register('when')} defaultChecked={formData.when === 'nu'}>
-                Nu
-              </Radio>
-              <Radio value="eerder" {...register('when')} defaultChecked={formData.when === 'eerder'}>
-                Eerder
-              </Radio>
-            </Column>
+            <Radio value="nu" {...register('when')} defaultChecked={formData.when === 'nu'}>
+              Nu
+            </Radio>
+            <Radio value="eerder" {...register('when')} defaultChecked={formData.when === 'eerder'}>
+              Eerder
+            </Radio>
           </FieldSet>
           <div>
             <Button type="submit">Volgende vraag</Button>

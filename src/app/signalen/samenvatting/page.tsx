@@ -110,14 +110,14 @@ function Summary() {
             <Paragraph>Stap 4 van 4</Paragraph>
           </hgroup>
           <Paragraph>Controleer de onderstaande gegevens.</Paragraph>
-          <dl className="ams-summary-description-list">
+          <dl className="ams-summary-description-list ams-gap-m">
             {questions.map(({ id, questionText, href }) => {
               // Don't show whenX questions if when is now
               if ((id === 'whenDay' || id === 'whenTime') && formData.when === 'nu') return undefined
 
               return (
                 <div key={id} className="ams-summary-description-list__container">
-                  <dt className="ams-summary-description-list__term ams-mb-s">{questionText}</dt>
+                  <dt className="ams-summary-description-list__term">{questionText}</dt>
                   <dd className="ams-summary-description-list__description" dir="auto">
                     {formatAnswer(id, formData) || 'Niet ingevuld'}
                   </dd>

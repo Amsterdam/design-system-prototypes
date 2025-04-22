@@ -72,30 +72,28 @@ function VulAan3() {
               Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?
             </Paragraph>
             {errors.who && <ErrorMessage className="ams-mb-s" id="whoError">{`${errors.who.message}`}</ErrorMessage>}
-            <Column>
-              <Radio
-                aria-required="true"
-                defaultChecked={formData.who === 'ja'}
-                invalid={Boolean(errors.who)}
-                value="ja"
-                {...register('who', {
-                  required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
-                })}
-              >
-                Ja
-              </Radio>
-              <Radio
-                aria-required="true"
-                defaultChecked={formData.who === 'nee'}
-                invalid={Boolean(errors.who)}
-                value="nee"
-                {...register('who', {
-                  required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
-                })}
-              >
-                Nee
-              </Radio>
-            </Column>
+            <Radio
+              aria-required="true"
+              defaultChecked={formData.who === 'ja'}
+              invalid={Boolean(errors.who)}
+              value="ja"
+              {...register('who', {
+                required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
+              })}
+            >
+              Ja
+            </Radio>
+            <Radio
+              aria-required="true"
+              defaultChecked={formData.who === 'nee'}
+              invalid={Boolean(errors.who)}
+              value="nee"
+              {...register('who', {
+                required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
+              })}
+            >
+              Nee
+            </Radio>
           </FieldSet>
           <div>
             <Button type="submit">Volgende vraag</Button>
