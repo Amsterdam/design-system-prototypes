@@ -83,6 +83,9 @@ function HomePage() {
 
   return (
     <>
+      <Heading level={1} className="ams-visually-hidden">
+        Homepage Gemeente Amsterdam
+      </Heading>
       {isAlertVisible && (
         <Grid paddingTop="small" paddingBottom="large">
           <Grid.Cell span="all">
