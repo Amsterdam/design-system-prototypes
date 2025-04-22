@@ -27,6 +27,12 @@
   align-items: center;
 }
 
+.amopis-visual-headings-order {
+  display: flex;
+  gap: var(--ams-space-xs);
+  flex-direction: column-reverse;
+}
+
 @media (max-width: 1087px) {
   .amopis-sidebar {
     display: none;

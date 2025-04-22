@@ -26,8 +26,14 @@ function Estimation() {
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
           <Breadcrumb.Link href="#">Planning</Breadcrumb.Link>
         </Breadcrumb>
-        <Heading level={1}>Capaciteitsraming</Heading>
-        <Heading level={2}>Brug 423 opwaardering (Berlagebrug) – ams20192715</Heading>
+        <div className="amopis-visual-headings-order">
+          <Heading level={1} size="level-2">
+            Brug 423 opwaardering (Berlagebrug) – ams20192715
+          </Heading>
+          <Heading level={2} size="level-1">
+            Capaciteitsraming
+          </Heading>
+        </div>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
         <Tabs>
