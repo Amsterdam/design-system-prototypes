@@ -119,7 +119,7 @@ export default function CollegeVanBurgemeesterEnWethouders() {
               <Breadcrumb.Link>Bestuur en Organisatie</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading>College van burgemeester en wethouders</PageHeading>
+          <PageHeading className="ams-mb-m">College van burgemeester en wethouders</PageHeading>
           <Paragraph size="large">Het dagelijks bestuur van onze gemeente uitgebreid in beeld.</Paragraph>
         </Grid.Cell>
       </Grid>

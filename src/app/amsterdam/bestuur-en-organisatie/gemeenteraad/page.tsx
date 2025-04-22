@@ -75,7 +75,7 @@ export default function Gemeenteraad() {
               <Breadcrumb.Link>Bestuur en Organisatie</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading>Gemeenteraad</PageHeading>
+          <PageHeading className="ams-mb-m">Gemeenteraad</PageHeading>
           <Paragraph size="large">
             De gemeenteraad is het hoogste bestuursorgaan van de stad. De raad bestaat uit 45 volksvertegenwoordigers
             van verschillende politieke groeperingen. De raadsleden worden elke 4 jaar gekozen door Amsterdammers bij de

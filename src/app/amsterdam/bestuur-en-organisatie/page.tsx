@@ -72,7 +72,7 @@ export default function BestuurEnOrganisatie() {
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading>Bestuur en Organisatie</PageHeading>
+          <PageHeading className="ams-mb-m">Bestuur en Organisatie</PageHeading>
           <Paragraph size="large">
             Aenean lorem elit, commodo eget elit sit amet, auctor venenatis ligula. Phasellus faucibus fringilla
             viverra. Aliquam vestibulum vehicula enim, ac consequat nisl mattis id.{' '}
