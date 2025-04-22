@@ -56,6 +56,9 @@ function Signalen({ children }) {
             </Grid.Cell>
           </Grid>
         </Footer.Spotlight>
+        <Heading className="ams-visually-hidden" level={2}>
+          Over deze website
+        </Heading>
         <Footer.Menu>
           <Footer.MenuLink href="#">Over deze site</Footer.MenuLink>
           <Footer.MenuLink href="#">Privacy</Footer.MenuLink>
