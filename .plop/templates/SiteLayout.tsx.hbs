@@ -1,17 +1,6 @@
 'use client'
 
-import {
-  Column,
-  Footer,
-  Grid,
-  Header,
-  Heading,
-  Link,
-  PageMenu,
-  Paragraph,
-  Screen,
-  SkipLink,
-} from '@amsterdam/design-system-react'
+import { Footer, Grid, Header, Heading, LinkList, Paragraph, Screen, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 export default function {{pascalCase name}}({ children }) {
@@ -30,22 +19,24 @@ export default function {{pascalCase name}}({ children }) {
       <Footer>
         <Footer.Spotlight>
           <Grid gapVertical="large" paddingVertical="medium">
-            <Grid.Cell span={{curlyBefore}}{ narrow: 3, medium: 4, wide: 4 }}>
-              <Column>
-                <Heading color="inverse" level={2} size="level-4">
-                  Contact
-                </Heading>
-                <Paragraph color="inverse" size="small">
-                  Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Bel het telefoonnummer{' '}
-                  <Link color="inverse" href="tel:+3114020" variant="inline">
-                    14 020
-                  </Link>
-                  .
-                </Paragraph>
-                <Paragraph color="inverse" size="small">
-                  Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
-                </Paragraph>
-              </Column>
+            <Grid.Cell span="all">
+              <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                Koptekst
+              </Heading>
+              <Paragraph className="ams-mb-m" color="inverse" size="small">
+                Paragraaf.
+              </Paragraph>
+              <LinkList>
+                <LinkList.Link color="inverse" href="#" size="small">
+                  Link 1
+                </LinkList.Link>
+                <LinkList.Link color="inverse" href="#" size="small">
+                  Link 2
+                </LinkList.Link>
+                <LinkList.Link color="inverse" href="#" size="small">
+                  Link 3
+                </LinkList.Link>
+              </LinkList>
             </Grid.Cell>
           </Grid>
         </Footer.Spotlight>
