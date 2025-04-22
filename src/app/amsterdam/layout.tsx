@@ -64,44 +64,40 @@ export default function Amsterdam({ children }) {
           <Footer.Spotlight>
             <Grid gapVertical="large" paddingVertical="medium">
               <Grid.Cell span={3}>
-                <div>
-                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
-                    Contact
-                  </Heading>
-                  <Paragraph className="ams-mb-m" color="inverse" size="small">
-                    Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Neem dan contact met ons op.
-                  </Paragraph>
-                  <LinkList>
-                    <LinkList.Link
-                      color="inverse"
-                      href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/contactformulier.aspx/?pk_vid=9f948f5fae0c5e90169952648840adc6"
-                      icon={ChattingIcon}
-                      size="small"
-                    >
-                      Contactformulier
-                    </LinkList.Link>
-                    <LinkList.Link color="inverse" href="https://www.amsterdam.nl/contact/" size="small">
-                      Adressen en openingstijden
-                    </LinkList.Link>
-                    <LinkList.Link color="inverse" href="tel:+3114020" icon={PhoneIcon} size="small">
-                      Bel 14 020
-                    </LinkList.Link>
-                  </LinkList>
-                </div>
+                <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                  Contact
+                </Heading>
+                <Paragraph className="ams-mb-m" color="inverse" size="small">
+                  Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Neem dan contact met ons op.
+                </Paragraph>
+                <LinkList>
+                  <LinkList.Link
+                    color="inverse"
+                    href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/contactformulier.aspx/?pk_vid=9f948f5fae0c5e90169952648840adc6"
+                    icon={ChattingIcon}
+                    size="small"
+                  >
+                    Contactformulier
+                  </LinkList.Link>
+                  <LinkList.Link color="inverse" href="https://www.amsterdam.nl/contact/" size="small">
+                    Adressen en openingstijden
+                  </LinkList.Link>
+                  <LinkList.Link color="inverse" href="tel:+3114020" icon={PhoneIcon} size="small">
+                    Bel 14 020
+                  </LinkList.Link>
+                </LinkList>
               </Grid.Cell>
               <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
-                <div>
-                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
-                    Volg de gemeente
-                  </Heading>
-                  <LinkList>
-                    {socials.map(({ href, label }) => (
-                      <LinkList.Link color="inverse" href={href} key={label} rel="external" size="small">
-                        {label}
-                      </LinkList.Link>
-                    ))}
-                  </LinkList>
-                </div>
+                <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                  Volg de gemeente
+                </Heading>
+                <LinkList>
+                  {socials.map(({ href, label }) => (
+                    <LinkList.Link color="inverse" href={href} key={label} rel="external" size="small">
+                      {label}
+                    </LinkList.Link>
+                  ))}
+                </LinkList>
               </Grid.Cell>
               <Grid.Cell className="ams-gap-xl" span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
                 <div>
