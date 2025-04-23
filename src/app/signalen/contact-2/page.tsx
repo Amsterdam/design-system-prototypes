@@ -32,23 +32,23 @@ function Contact2() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb--xs" href="/signalen/contact-1">
+        <BackLink className="ams-mb-s" href="/signalen/contact-1">
           Vorige vraag
         </BackLink>
-        <Column className="ams-mb--md">
-          <Heading>Melding openbare ruimte</Heading>
-          <hgroup className="ams-gap--xs">
+        <Column className="ams-mb-l">
+          <Heading level={1}>Melding openbare ruimte</Heading>
+          <hgroup className="ams-gap-s">
             <Heading level={2}>Gegevens</Heading>
             <Paragraph>Stap 2 van 4</Paragraph>
           </hgroup>
         </Column>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet
             id="permissionGroup"
             aria-labelledby="permissionGroup permissionDescription"
             legend="Mogen we uw melding doorsturen? (niet verplicht)"
           >
-            <Paragraph className="ams-mb--sm" id="permissionDescription" size="small">
+            <Paragraph className="ams-mb-m" id="permissionDescription" size="small">
               Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
               melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u
               dat goed vindt.

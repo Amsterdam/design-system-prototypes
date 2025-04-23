@@ -25,14 +25,18 @@ function Project() {
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
           <Breadcrumb.Link href="#">Projecten</Breadcrumb.Link>
         </Breadcrumb>
-        <Heading className="ams-mb--sm">Kerngegevens</Heading>
-        <Heading level={2}>Brug 423 opwaardering (Berlagebrug) – ams20192715</Heading>
+        <Heading level={2} size="level-1">
+          Kerngegevens
+        </Heading>
+        <Heading level={1} size="level-2">
+          Brug 423 opwaardering (Berlagebrug) – ams20192715
+        </Heading>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
         <Tabs>
           <Tabs.List>
-            {tabLabels.map((label, index) => (
-              <Tabs.Button tab={index} key={label}>
+            {tabLabels.map((label) => (
+              <Tabs.Button key={label} tab={label}>
                 {label}
               </Tabs.Button>
             ))}
@@ -58,7 +62,7 @@ function Project() {
               Planning
             </LinkList.Link>
             <LinkList.Link href="#" icon={ChattingIcon}>
-              Risisco’s
+              Risico’s
             </LinkList.Link>
             <LinkList.Link href="#" icon={ChattingIcon}>
               Logboek
@@ -67,8 +71,8 @@ function Project() {
         </div>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
-        <div className="amopis-white-background" style={{ padding: '1rem' }}>
-          <Column>
+        <div className="amopis-white-background">
+          <Column gap="x-large">
             <Row align="between" alignVertical="baseline">
               <Heading level={3}>Kerngegevens</Heading>
               <LinkList>
@@ -78,10 +82,10 @@ function Project() {
               </LinkList>
             </Row>
             <section>
-              <Heading level={4} className="ams-mb--sm">
+              <Heading className="ams-mb-m" level={4}>
                 Opdrachtgevers
               </Heading>
-              <DescriptionList termsWidth="md">
+              <DescriptionList termsWidth="medium">
                 <DescriptionList.Term>Ambtelijk opdrachtgever</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
@@ -99,10 +103,10 @@ function Project() {
               </DescriptionList>
             </section>
             <section>
-              <Heading level={4} className="ams-mb--sm">
+              <Heading className="ams-mb-m" level={4}>
                 Opdrachtnemers
               </Heading>
-              <DescriptionList termsWidth="md">
+              <DescriptionList termsWidth="medium">
                 <DescriptionList.Term>Accounthouder</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
@@ -141,10 +145,10 @@ function Project() {
               </DescriptionList>
             </section>
             <section>
-              <Heading level={4} className="ams-mb--sm">
+              <Heading className="ams-mb-m" level={4}>
                 Basisgegevens
               </Heading>
-              <DescriptionList termsWidth="md">
+              <DescriptionList termsWidth="medium">
                 <DescriptionList.Term>Gebied</DescriptionList.Term>
                 <DescriptionList.Description>Gemeente Amsterdam</DescriptionList.Description>
                 <DescriptionList.Term>Stadsdeel</DescriptionList.Term>
@@ -161,20 +165,20 @@ function Project() {
         </div>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 3, wide: 3 }} start={{ narrow: 1, medium: 3, wide: 10 }}>
-        <div className="amopis-white-background" style={{ padding: '1rem' }}>
-          <Column gap="small">
-            <div>
+        <div className="amopis-white-background">
+          <Column>
+            <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=1" />
               <Paragraph>
                 Impressie Brug 423 &nbsp; <Link variant="inline">Afbeelding wijzigen</Link>
               </Paragraph>
-            </div>
-            <div>
+            </Column>
+            <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=2" />
               <Paragraph>
                 Locatie Brug 423 &nbsp; <Link variant="inline">Bekijk op datapunt.nl</Link>
               </Paragraph>
-            </div>
+            </Column>
           </Column>
         </div>
       </Grid.Cell>

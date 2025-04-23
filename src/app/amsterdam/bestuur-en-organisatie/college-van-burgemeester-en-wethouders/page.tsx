@@ -93,7 +93,7 @@ function PersonCardCell({ fullName, image, index, jobTitle }: PersonProps & { in
     >
       <Card>
         <NextImage alt="" className="ams-image" src={image} />
-        <Heading size="level-4">
+        <Heading level={3} size="level-4">
           <Card.Link href="#">{fullName}</Card.Link>
         </Heading>
         <Paragraph>{jobTitle ?? 'Wethouder'}</Paragraph>
@@ -119,14 +119,14 @@ export default function CollegeVanBurgemeesterEnWethouders() {
               <Breadcrumb.Link>Bestuur en Organisatie</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading className="ams-mb--sm">College van burgemeester en wethouders</PageHeading>
+          <PageHeading className="ams-mb-m">College van burgemeester en wethouders</PageHeading>
           <Paragraph size="large">Het dagelijks bestuur van onze gemeente uitgebreid in beeld.</Paragraph>
         </Grid.Cell>
       </Grid>
-      <NextImage alt="" className="ams-image ams-aspect-ratio--2x-wide" src={municipalExecutive} />
+      <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={municipalExecutive} />
       <Grid paddingVertical="large" gapVertical="small">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 12 }} start={{ narrow: 1, medium: 2, wide: 1 }}>
-          <Heading className="ams-mb--xs" level={2}>
+          <Heading className="ams-mb-s" level={2}>
             Burgemeester en wethouders
           </Heading>
         </Grid.Cell>

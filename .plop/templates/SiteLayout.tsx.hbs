@@ -1,17 +1,6 @@
 'use client'
 
-import {
-  Column,
-  Footer,
-  Grid,
-  Header,
-  Heading,
-  Link,
-  PageMenu,
-  Paragraph,
-  Screen,
-  SkipLink,
-} from '@amsterdam/design-system-react'
+import { Footer, Grid, Header, Heading, LinkList, Paragraph, Screen, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 export default function {{pascalCase name}}({ children }) {
@@ -28,45 +17,41 @@ export default function {{pascalCase name}}({ children }) {
       />
       <main id="main">{children}</main>
       <Footer>
-        <Footer.Top>
+        <Footer.Spotlight>
           <Grid gapVertical="large" paddingVertical="medium">
-            <Grid.Cell span={{curlyBefore}}{ narrow: 3, medium: 4, wide: 4 }}>
-              <Column as="section" gap="extra-small">
-                <Heading level={2} size="level-4" inverseColor>
-                  Contact
-                </Heading>
-                <Paragraph size="small" inverseColor>
-                  Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Bel het telefoonnummer{' '}
-                  <Link href="tel:+3114020" inverseColor variant="inline">
-                    14 020
-                  </Link>
-                  .
-                </Paragraph>
-                <Paragraph size="small" inverseColor>
-                  Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
-                </Paragraph>
-              </Column>
-            </Grid.Cell>
-          </Grid>
-        </Footer.Top>
-        <Footer.Bottom>
-          <Heading level={2} className="ams-visually-hidden">
-            Over deze website
-          </Heading>
-          <Grid paddingVertical="small">
             <Grid.Cell span="all">
-              <PageMenu>
-                <NextLink href="/" legacyBehavior passHref>
-                  <Header.MenuLink>Prototypes</Header.MenuLink>
-                </NextLink>
-                <PageMenu.Link href="#">Over deze site</PageMenu.Link>
-                <PageMenu.Link href="#">Privacy</PageMenu.Link>
-                <PageMenu.Link href="#">Toegankelijkheid</PageMenu.Link>
-                {/* Append footer link here */}
-              </PageMenu>
+              <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                Koptekst
+              </Heading>
+              <Paragraph className="ams-mb-m" color="inverse" size="small">
+                Paragraaf.
+              </Paragraph>
+              <LinkList>
+                <LinkList.Link color="inverse" href="#" size="small">
+                  Link 1
+                </LinkList.Link>
+                <LinkList.Link color="inverse" href="#" size="small">
+                  Link 2
+                </LinkList.Link>
+                <LinkList.Link color="inverse" href="#" size="small">
+                  Link 3
+                </LinkList.Link>
+              </LinkList>
             </Grid.Cell>
           </Grid>
-        </Footer.Bottom>
+        </Footer.Spotlight>
+        <Heading className="ams-visually-hidden" level={2}>
+          Over deze website
+        </Heading>
+        <Footer.Menu>
+          <NextLink href="/" legacyBehavior passHref>
+            <Footer.MenuLink>Prototypes</Footer.MenuLink>
+          </NextLink>
+          <Footer.MenuLink href="#">Over deze site</Footer.MenuLink>
+          <Footer.MenuLink href="#">Privacy</Footer.MenuLink>
+          <Footer.MenuLink href="#">Toegankelijkheid</Footer.MenuLink>
+          {/* Append footer link here */}
+        </Footer.Menu>
       </Footer>
     </Screen>
   )

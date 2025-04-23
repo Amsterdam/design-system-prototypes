@@ -40,33 +40,31 @@ function VulAan1() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb--xs" href="/signalen/vul-aan-1">
+        <BackLink className="ams-mb-s" href="/signalen/vul-aan-1">
           Vorige vraag
         </BackLink>
-        <Column className="ams-mb--md">
-          <Heading>Melding openbare ruimte</Heading>
-          <hgroup className="ams-gap--xs">
+        <Column className="ams-mb-l">
+          <Heading level={1}>Melding openbare ruimte</Heading>
+          <hgroup className="ams-gap-s">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
         </Column>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet legend="Welke dag was het? (niet verplicht)" role="radiogroup">
-            <Column gap="extra-small">
-              <Radio value="vandaag" {...register('whenDay')} defaultChecked={formData.whenDay === 'vandaag'}>
-                Vandaag
+            <Radio value="vandaag" {...register('whenDay')} defaultChecked={formData.whenDay === 'vandaag'}>
+              Vandaag
+            </Radio>
+            {dayOptions.map((dayBack) => (
+              <Radio
+                key={dayBack}
+                value={optionLabel(dayBack)}
+                {...register('whenDay')}
+                defaultChecked={formData.whenDay === optionLabel(dayBack)}
+              >
+                {optionLabel(dayBack)}
               </Radio>
-              {dayOptions.map((dayBack) => (
-                <Radio
-                  key={dayBack}
-                  value={optionLabel(dayBack)}
-                  {...register('whenDay')}
-                  defaultChecked={formData.whenDay === optionLabel(dayBack)}
-                >
-                  {optionLabel(dayBack)}
-                </Radio>
-              ))}
-            </Column>
+            ))}
           </FieldSet>{' '}
           <div>
             <Button type="submit">Volgende vraag</Button>

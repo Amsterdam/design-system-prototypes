@@ -42,25 +42,25 @@ function Docs() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb--xs" href="/signalen/contact-2">
+        <BackLink className="ams-mb-s" href="/signalen/contact-2">
           Vorige vraag
         </BackLink>
-        <Column className="ams-mb--md">
-          <Heading>Melding openbare ruimte</Heading>
-          <hgroup className="ams-gap--xs">
+        <Column className="ams-mb-l">
+          <Heading level={1}>Melding openbare ruimte</Heading>
+          <hgroup className="ams-gap-s">
             <Heading level={2}>Documenten</Heading>
             <Paragraph>Stap 3 van 4</Paragraph>
           </hgroup>
         </Column>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <Field>
             <Label htmlFor="files">Heeft u een bestand om toe te voegen? (niet verplicht)</Label>
-            <div className="ams-mb--sm" id="filesDescription">
-              <Paragraph size="small">
+            <div id="filesDescription">
+              <Paragraph className="ams-mb-m" size="small">
                 Voeg een foto of bestand (PDF) toe om de situatie te verduidelijken. Verwijder alle persoonsgegevens van
                 u en derden.
               </Paragraph>
-              <UnorderedList size="small">
+              <UnorderedList className="ams-mb-m" size="small">
                 <UnorderedList.Item>U kunt maximaal drie bestanden tegelijk toevoegen. </UnorderedList.Item>
                 <UnorderedList.Item>Toegestane bestandtypes: jpg, jpeg, png en pdf.</UnorderedList.Item>
                 <UnorderedList.Item>Een bestand mag maximaal 20 MB groot zijn.</UnorderedList.Item>

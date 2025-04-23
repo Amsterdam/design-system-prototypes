@@ -23,7 +23,7 @@ function Project() {
       </Grid>
       <Grid gapVertical="small" paddingBottom="medium">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-          <Heading className="ams-mb--sm">Bouw- en verkeersprojecten in Noord</Heading>
+          <Heading level={1}>Bouw- en verkeersprojecten in Noord</Heading>
           <Paragraph size="large">
             <strong>Overzicht van projecten in stadsdeel Noord.</strong> Lees waar en wanneer we werken aan nieuwbouw,
             groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele gebieden. En
@@ -64,10 +64,10 @@ function Project() {
           </Grid.Cell>
         ))}
       </Grid>
-      <Spotlight color="purple">
+      <Spotlight>
         <Grid paddingVertical="medium">
           <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-            <Heading inverseColor level={2} size="level-4" className="ams-mb--xs">
+            <Heading color="inverse" level={2} size="level-4" className="ams-mb-s">
               Werk aan de weg
             </Heading>
             <LinkList>
@@ -79,20 +79,20 @@ function Project() {
                 'H.M. Terwogtweg, afsluitweg',
                 'Meer werkzaamheden in stadsdeel Noord',
               ].map((district) => (
-                <LinkList.Link href="#" inverseColor key={district}>
+                <LinkList.Link color="inverse" href="#" key={district}>
                   {district}
                 </LinkList.Link>
               ))}
             </LinkList>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 1, medium: 2, wide: 4 }} start={{ narrow: 4, medium: 7, wide: 8 }}>
-            <Heading inverseColor level={2} size="level-4" className="ams-mb--xs">
+            <Heading color="inverse" level={2} size="level-4" className="ams-mb-s">
               In andere stadsdelen
             </Heading>
             <LinkList>
               {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
                 <NextLink href="/amsterdam/projecten/stadsdeel" key={district} legacyBehavior passHref>
-                  <LinkList.Link inverseColor key={district}>
+                  <LinkList.Link color="inverse" key={district}>
                     {district}
                   </LinkList.Link>
                 </NextLink>

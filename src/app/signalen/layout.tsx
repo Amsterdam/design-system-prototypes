@@ -8,7 +8,6 @@ import {
   Header,
   Heading,
   Link,
-  PageMenu,
   Paragraph,
   Screen,
   SkipLink,
@@ -36,44 +35,38 @@ function Signalen({ children }) {
         </Suspense>
       </main>
       <Footer>
-        <Footer.Top>
+        <Footer.Spotlight>
           <Grid gapVertical="large" paddingVertical="medium">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
-              <Column as="section" gap="extra-small">
-                <Heading level={2} size="level-4" inverseColor>
+              <Column>
+                <Heading color="inverse" level={2} size="level-4">
                   Contact
                 </Heading>
-                <Paragraph size="small" inverseColor>
+                <Paragraph color="inverse" size="small">
                   Lukt het niet om een melding te doen? Bel het telefoonnummer{' '}
-                  <Link href="tel:+3114020" inverseColor variant="inline">
+                  <Link color="inverse" href="tel:+3114020" variant="inline">
                     14 020
                   </Link>
                   .
                 </Paragraph>
-                <Paragraph size="small" inverseColor>
+                <Paragraph color="inverse" size="small">
                   Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
                 </Paragraph>
               </Column>
             </Grid.Cell>
           </Grid>
-        </Footer.Top>
-        <Footer.Bottom>
-          <Heading level={2} className="ams-visually-hidden">
-            Over deze website
-          </Heading>
-          <Grid paddingVertical="small">
-            <Grid.Cell span="all">
-              <PageMenu>
-                <PageMenu.Link href="#">Over deze site</PageMenu.Link>
-                <PageMenu.Link href="#">Privacy</PageMenu.Link>
-                <PageMenu.Link href="#">Toegankelijkheid</PageMenu.Link>
-                <NextLink href="/" legacyBehavior passHref>
-                  <PageMenu.Link>Prototypes</PageMenu.Link>
-                </NextLink>
-              </PageMenu>
-            </Grid.Cell>
-          </Grid>
-        </Footer.Bottom>
+        </Footer.Spotlight>
+        <Heading className="ams-visually-hidden" level={2}>
+          Over deze website
+        </Heading>
+        <Footer.Menu>
+          <Footer.MenuLink href="#">Over deze site</Footer.MenuLink>
+          <Footer.MenuLink href="#">Privacy</Footer.MenuLink>
+          <Footer.MenuLink href="#">Toegankelijkheid</Footer.MenuLink>
+          <NextLink href="/" legacyBehavior passHref>
+            <Footer.MenuLink>Prototypes</Footer.MenuLink>
+          </NextLink>
+        </Footer.Menu>
       </Footer>
     </Screen>
   )

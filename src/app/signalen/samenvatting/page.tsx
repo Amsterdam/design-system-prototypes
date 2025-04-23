@@ -100,24 +100,24 @@ function Summary() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 9 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb--xs" href="/signalen/documenten">
+        <BackLink className="ams-mb-s" href="/signalen/documenten">
           Vorige vraag
         </BackLink>
         <Column>
-          <Heading>Melding openbare ruimte</Heading>
-          <hgroup className="ams-gap--xs">
+          <Heading level={1}>Melding openbare ruimte</Heading>
+          <hgroup className="ams-gap-s">
             <Heading level={2}>Samenvatting</Heading>
             <Paragraph>Stap 4 van 4</Paragraph>
           </hgroup>
           <Paragraph>Controleer de onderstaande gegevens.</Paragraph>
-          <dl className="ams-summary-description-list ams-gap--sm">
+          <dl className="ams-summary-description-list ams-gap-m">
             {questions.map(({ id, questionText, href }) => {
               // Don't show whenX questions if when is now
               if ((id === 'whenDay' || id === 'whenTime') && formData.when === 'nu') return undefined
 
               return (
                 <div key={id} className="ams-summary-description-list__container">
-                  <dt className="ams-summary-description-list__term ams-mb--xs">{questionText}</dt>
+                  <dt className="ams-summary-description-list__term">{questionText}</dt>
                   <dd className="ams-summary-description-list__description" dir="auto">
                     {formatAnswer(id, formData) || 'Niet ingevuld'}
                   </dd>

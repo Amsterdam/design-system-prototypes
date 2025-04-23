@@ -7,7 +7,7 @@ import {
   Column,
   ErrorMessage,
   FieldSet,
-  FormErrorList,
+  InvalidFormAlert,
   Grid,
   Heading,
   Paragraph,
@@ -49,18 +49,18 @@ function VulAan3() {
   return (
     <Grid paddingVertical="medium">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb--xs" href="/signalen/vul-aan-2">
+        <BackLink className="ams-mb-s" href="/signalen/vul-aan-2">
           Vorige vraag
         </BackLink>
-        <Column className="ams-mb--md">
-          <Heading>Melding openbare ruimte</Heading>
-          <hgroup className="ams-gap--xs">
+        <Column className="ams-mb-l">
+          <Heading level={1}>Melding openbare ruimte</Heading>
+          <hgroup className="ams-gap-s">
             <Heading level={2}>Beschrijf uw melding</Heading>
             <Paragraph>Stap 1 van 4</Paragraph>
           </hgroup>
-          <FormErrorList errors={formattedErrors} />
+          <InvalidFormAlert errors={formattedErrors} heading="Verbeter de fouten voor u verder gaat" headingLevel={2} />
         </Column>
-        <form className="ams-gap--md" onSubmit={handleSubmit(onSubmit)}>
+        <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet
             legend="Weet u wie de eigenaar is van het verkeerd geplaatste afval?"
             aria-describedby={`whoDescription${errors.who ? ' whoError' : ''}`}
@@ -68,34 +68,32 @@ function VulAan3() {
             aria-required="true"
             invalid={Boolean(errors.who)}
           >
-            <Paragraph id="whoDescription" size="small" className="ams-mb--xs">
+            <Paragraph id="whoDescription" size="small" className="ams-mb-s">
               Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?
             </Paragraph>
-            {errors.who && <ErrorMessage className="ams-mb--xs" id="whoError">{`${errors.who.message}`}</ErrorMessage>}
-            <Column gap="extra-small">
-              <Radio
-                aria-required="true"
-                defaultChecked={formData.who === 'ja'}
-                invalid={Boolean(errors.who)}
-                value="ja"
-                {...register('who', {
-                  required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
-                })}
-              >
-                Ja
-              </Radio>
-              <Radio
-                aria-required="true"
-                defaultChecked={formData.who === 'nee'}
-                invalid={Boolean(errors.who)}
-                value="nee"
-                {...register('who', {
-                  required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
-                })}
-              >
-                Nee
-              </Radio>
-            </Column>
+            {errors.who && <ErrorMessage className="ams-mb-s" id="whoError">{`${errors.who.message}`}</ErrorMessage>}
+            <Radio
+              aria-required="true"
+              defaultChecked={formData.who === 'ja'}
+              invalid={Boolean(errors.who)}
+              value="ja"
+              {...register('who', {
+                required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
+              })}
+            >
+              Ja
+            </Radio>
+            <Radio
+              aria-required="true"
+              defaultChecked={formData.who === 'nee'}
+              invalid={Boolean(errors.who)}
+              value="nee"
+              {...register('who', {
+                required: 'Geef aan of u weet wie het afval heeft geplaatst. U hoeft geen naam op te geven.',
+              })}
+            >
+              Nee
+            </Radio>
           </FieldSet>
           <div>
             <Button type="submit">Volgende vraag</Button>
