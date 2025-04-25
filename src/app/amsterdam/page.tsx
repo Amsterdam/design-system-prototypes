@@ -128,7 +128,7 @@ function HomePage() {
               <Card.Heading level={3} size="level-4">
                 <Card.Link href="#">{title}</Card.Link>
               </Card.Heading>
-              <Paragraph size="small">{description}</Paragraph>
+              <Paragraph>{description}</Paragraph>
             </Card>
           </Grid.Cell>
         ))}
@@ -172,7 +172,7 @@ function HomePage() {
                 <Card.Heading level={3} size="level-4">
                   <Card.Link href="#">{date}</Card.Link>
                 </Card.Heading>
-                <Paragraph size="small">{description}</Paragraph>
+                <Paragraph>{description}</Paragraph>
                 <Paragraph size="small">{time}</Paragraph>
               </Card>
             ))}
@@ -191,7 +191,7 @@ function HomePage() {
                 </NextLink>
               </Card.Heading>
             </Card.HeadingGroup>
-            <Paragraph size="small">
+            <Paragraph>
               Storm Poly raasde woensdag 5 juli over de stad. Het zal in sommige gevallen nog enkele dagen duren voordat
               alle schade is opgeruimd. U kunt een melding doen van afgebroken takken, andere stormschade of
               wateroverlast.
