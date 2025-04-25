@@ -58,5 +58,9 @@
     "node-plop": {
       "inquirer": "9.3.5"
     }
-  }
+  },
+  "browserslist": [
+    "defaults and fully supports es6-module",
+    "maintained node versions"
+  ]
 }
