@@ -36,11 +36,14 @@ function Project() {
         <Tabs>
           <Tabs.List>
             {tabLabels.map((label) => (
-              <Tabs.Button key={label} tab={label}>
+              <Tabs.Button aria-controls={label} key={label}>
                 {label}
               </Tabs.Button>
             ))}
           </Tabs.List>
+          {tabLabels.map((label) => (
+            <Tabs.Panel id={label} />
+          ))}
         </Tabs>
       </Grid.Cell>
       <Grid.Cell start={1} span={{ narrow: 4, medium: 2, wide: 2 }}>
