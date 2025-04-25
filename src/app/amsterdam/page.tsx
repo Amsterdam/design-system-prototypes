@@ -125,9 +125,9 @@ function HomePage() {
         {topTasks.map(({ title, description }) => (
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }} key={title}>
             <Card>
-              <Heading level={3} size="level-4">
+              <Card.Heading level={3} size="level-4">
                 <Card.Link href="#">{title}</Card.Link>
-              </Heading>
+              </Card.Heading>
               <Paragraph size="small">{description}</Paragraph>
             </Card>
           </Grid.Cell>
@@ -169,9 +169,9 @@ function HomePage() {
           <Column>
             {calenderItems.map(({ date, description, time }) => (
               <Card key={date}>
-                <Heading level={3} size="level-4">
+                <Card.Heading level={3} size="level-4">
                   <Card.Link href="#">{date}</Card.Link>
-                </Heading>
+                </Card.Heading>
                 <Paragraph size="small">{description}</Paragraph>
                 <Paragraph size="small">{time}</Paragraph>
               </Card>
@@ -183,13 +183,13 @@ function HomePage() {
             Nieuws
           </Heading>
           <Card>
-            <NextImage alt="" className="ams-image" src={stormschadeImage} />
+            <NextImage alt="" className="ams-image ams-card__image" src={stormschadeImage} />
             <Card.HeadingGroup tagline="Nieuws">
-              <Heading level={3} size="level-4">
+              <Card.Heading level={3} size="level-4">
                 <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
                   <Card.Link>Waar u stormschade kunt melden</Card.Link>
                 </NextLink>
-              </Heading>
+              </Card.Heading>
             </Card.HeadingGroup>
             <Paragraph size="small">
               Storm Poly raasde woensdag 5 juli over de stad. Het zal in sommige gevallen nog enkele dagen duren voordat
@@ -201,13 +201,13 @@ function HomePage() {
         {cards.map(({ heading, image }) => (
           <Grid.Cell span={4} key={heading}>
             <Card>
-              <NextImage alt="" className="ams-image" src={image} />
+              <NextImage alt="" className="ams-image ams-card__image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">
-                <Heading level={3} size="level-4">
+                <Card.Heading level={3} size="level-4">
                   <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
                     <Card.Link>{heading}</Card.Link>
                   </NextLink>
-                </Heading>
+                </Card.Heading>
               </Card.HeadingGroup>
             </Card>
           </Grid.Cell>

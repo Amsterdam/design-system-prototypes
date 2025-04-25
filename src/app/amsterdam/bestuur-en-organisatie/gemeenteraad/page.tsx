@@ -48,9 +48,9 @@ function NewsArticle({ date, description, image, tagline, title }: NewsArticlePr
       <Grid.Cell span={{ narrow: 4, medium: 5, wide: 6 }}>
         <Card>
           <Card.HeadingGroup tagline={tagline}>
-            <Heading level={3}>
+            <Card.Heading level={3}>
               <Card.Link href="#">{title}</Card.Link>
-            </Heading>
+            </Card.Heading>
           </Card.HeadingGroup>
           <Paragraph>{description}</Paragraph>
           <Paragraph size="small" style={{ color: '#474747' }}>

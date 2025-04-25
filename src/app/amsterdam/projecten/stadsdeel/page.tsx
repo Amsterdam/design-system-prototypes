@@ -49,9 +49,9 @@ function Project() {
         ].map((title) => (
           <Grid.Cell key={title} span={{ narrow: 4, medium: 4, wide: 3 }}>
             <Card>
-              <Heading level={3} size="level-4">
+              <Card.Heading level={3} size="level-4">
                 <Card.Link href="#">{title}</Card.Link>
-              </Heading>
+              </Card.Heading>
               <Paragraph>
                 Het woonproject Appelweg biedt straks 63 tijdelijke woningen voor Amsterdamse starters op de
                 woningmarkt.

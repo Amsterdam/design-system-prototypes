@@ -92,10 +92,10 @@ function PersonCardCell({ fullName, image, index, jobTitle }: PersonProps & { in
       start={{ narrow: 1, medium: index % 2 === 0 ? 2 : 5, wide: ((index % 4) * 3 + 1) as GridColumnNumber }}
     >
       <Card>
-        <NextImage alt="" className="ams-image" src={image} />
-        <Heading level={3} size="level-4">
+        <NextImage alt="" className="ams-image ams-card__image" src={image} />
+        <Card.Heading level={3} size="level-4">
           <Card.Link href="#">{fullName}</Card.Link>
-        </Heading>
+        </Card.Heading>
         <Paragraph>{jobTitle ?? 'Wethouder'}</Paragraph>
       </Card>
     </Grid.Cell>
