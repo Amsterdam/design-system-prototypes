@@ -1,6 +1,6 @@
 'use client'
 
-import { Column, Footer, Grid, Heading, Link, LinkList, Paragraph, Screen } from '@amsterdam/design-system-react'
+import { Column, Grid, Heading, Link, LinkList, Page, PageFooter, Paragraph } from '@amsterdam/design-system-react'
 import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import './amsterdam.css'
@@ -58,10 +58,10 @@ const socials = [
 export default function Amsterdam({ children }) {
   return (
     <div className="ams-theme">
-      <Screen maxWidth="wide">
+      <Page>
         {children}
-        <Footer>
-          <Footer.Spotlight>
+        <PageFooter>
+          <PageFooter.Spotlight>
             <Grid gapVertical="large" paddingVertical="medium">
               <Grid.Cell span={3}>
                 <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
@@ -130,22 +130,22 @@ export default function Amsterdam({ children }) {
                 </div>
               </Grid.Cell>
             </Grid>
-          </Footer.Spotlight>
+          </PageFooter.Spotlight>
           <Heading className="ams-visually-hidden" level={2}>
             Over deze website
           </Heading>
-          <Footer.Menu>
+          <PageFooter.Menu>
             {footerLinks.map(({ href, label }) => (
               <NextLink href={href} key={label} legacyBehavior passHref>
-                <Footer.MenuLink>{label}</Footer.MenuLink>
+                <PageFooter.MenuLink>{label}</PageFooter.MenuLink>
               </NextLink>
             ))}
             <NextLink href="/" legacyBehavior passHref>
-              <Footer.MenuLink>Prototypes</Footer.MenuLink>
+              <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
             </NextLink>
-          </Footer.Menu>
-        </Footer>
-      </Screen>
+          </PageFooter.Menu>
+        </PageFooter>
+      </Page>
     </div>
   )
 }

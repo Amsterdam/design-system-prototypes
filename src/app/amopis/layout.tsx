@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode } from 'react'
-import { Avatar, Column, Footer, Grid, Header, PageMenu, Screen, SkipLink } from '@amsterdam/design-system-react'
+import { Avatar, Column, Grid, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { Sidebar } from './_components/SideBar/SideBar'
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
@@ -11,11 +11,11 @@ function Amopis({ children }: { children: ReactNode }) {
   return (
     <div className="ams-theme ams-theme--compact">
       <SkipLink href="#main">Direct naar inhoud</SkipLink>
-      <Screen className="ams-screen--amopis" fullHeight>
+      <Page className="ams-page--amopis">
         <div className="amopis-app-grid">
           <Sidebar />
           <Column gap="none">
-            <Header
+            <PageHeader
               brandName="Amopis"
               logoLink={`${process.env.basePath}amopis`}
               logoLinkTitle="Naar de homepage van Amopis"
@@ -24,25 +24,25 @@ function Amopis({ children }: { children: ReactNode }) {
             <div id="main" className="amopis-main-background">
               {children}
             </div>
-            <Footer>
-              <Footer.Menu>
+            <PageFooter>
+              <PageFooter.Menu>
                 <NextLink href="/amopis" legacyBehavior passHref>
-                  <Footer.MenuLink>Kerngegevens</Footer.MenuLink>
+                  <PageFooter.MenuLink>Kerngegevens</PageFooter.MenuLink>
                 </NextLink>
                 <NextLink href="/amopis/ramingen" legacyBehavior passHref>
-                  <Footer.MenuLink>Ramingen</Footer.MenuLink>
+                  <PageFooter.MenuLink>Ramingen</PageFooter.MenuLink>
                 </NextLink>
-                <Footer.MenuLink href="#">E-mail je vraag of feedback</Footer.MenuLink>
-                <Footer.MenuLink href="#">Bekijk veelgestelde vragen</Footer.MenuLink>
-                <Footer.MenuLink href="#">Bekijk releasebeschrijving</Footer.MenuLink>
+                <PageFooter.MenuLink href="#">E-mail je vraag of feedback</PageFooter.MenuLink>
+                <PageFooter.MenuLink href="#">Bekijk veelgestelde vragen</PageFooter.MenuLink>
+                <PageFooter.MenuLink href="#">Bekijk releasebeschrijving</PageFooter.MenuLink>
                 <NextLink href="/" legacyBehavior passHref>
-                  <Footer.MenuLink>Prototypes</Footer.MenuLink>
+                  <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
                 </NextLink>
-              </Footer.Menu>
-            </Footer>
+              </PageFooter.Menu>
+            </PageFooter>
           </Column>
         </div>
-      </Screen>
+      </Page>
     </div>
   )
 }
