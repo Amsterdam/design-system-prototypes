@@ -19,7 +19,7 @@ function Projecten() {
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
-      <Grid gapVertical="small" paddingBottom="medium">
+      <Grid gapVertical="large" paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
           <Heading level={1}>Bouw- en verkeersprojecten</Heading>
           <Paragraph size="large">
@@ -29,7 +29,7 @@ function Projecten() {
           </Paragraph>
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="medium">
+      <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 2, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
           <Heading level={2} size="level-4" className="ams-mb-s">
             Projecten per stadsdeel
@@ -50,7 +50,7 @@ function Projecten() {
         </Grid.Cell>
       </Grid>
       <Spotlight color="yellow">
-        <Grid paddingVertical="medium">
+        <Grid paddingVertical="x-large">
           <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 3 }}>
             <Heading level={2} size="level-4" className="ams-mb-s">
               Kaart met bouwprojecten en verkeersprojecten

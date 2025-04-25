@@ -21,7 +21,7 @@ function Project() {
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
-      <Grid gapVertical="small" paddingBottom="medium">
+      <Grid gapVertical="large" paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
           <Heading level={1}>Bouw- en verkeersprojecten in Noord</Heading>
           <Paragraph size="large">
@@ -31,7 +31,7 @@ function Project() {
           </Paragraph>
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="medium">
+      <Grid paddingBottom="x-large">
         <Grid.Cell span="all">
           <Heading level={2} size="level-3">
             Overzicht projecten
@@ -61,7 +61,7 @@ function Project() {
         ))}
       </Grid>
       <Spotlight>
-        <Grid paddingVertical="medium">
+        <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
             <Heading color="inverse" level={2} size="level-4" className="ams-mb-s">
               Werk aan de weg
@@ -97,7 +97,7 @@ function Project() {
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <Grid paddingVertical="small">
+      <Grid paddingVertical="large">
         <Grid.Cell span="all">
           <Heading level={2} size="level-4">
             Projecten op de kaart

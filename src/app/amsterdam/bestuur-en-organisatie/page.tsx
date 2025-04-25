@@ -47,7 +47,7 @@ type SectionProps = {
 
 function Section({ description, linkText, subsections, title }: SectionProps) {
   return (
-    <Grid paddingBottom="large" gapVertical="small">
+    <Grid paddingBottom="2x-large" gapVertical="large">
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
         <Heading className={clsx({ 'ams-mb-s': description || linkText })} level={2}>
           {title}
@@ -70,7 +70,7 @@ Section.defaultProps = {
 export default function BestuurEnOrganisatie() {
   return (
     <>
-      <Grid paddingBottom="large">
+      <Grid paddingBottom="2x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>

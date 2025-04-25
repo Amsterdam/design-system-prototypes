@@ -6,7 +6,7 @@ import NextLink from 'next/link'
 export default function Signalen() {
   return (
     <Page className="ams-theme">
-      <Grid paddingVertical="large">
+      <Grid paddingVertical="2x-large">
         <Grid.Cell span="all">
           <PageHeading>Prototypes</PageHeading>
           <Heading level={2} size="level-4">

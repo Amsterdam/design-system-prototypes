@@ -92,7 +92,7 @@ function Burgerzaken() {
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="medium">
+      <Grid paddingBottom="x-large">
         <Grid.Cell span="all">
           <PageHeading>Burgerzaken</PageHeading>
         </Grid.Cell>

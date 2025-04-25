@@ -113,7 +113,7 @@ function Template({ children }) {
         logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen NextLink gebruiken
         logoLinkTitle="Naar de homepage van gemeente Amsterdam"
       >
-        <Grid paddingBottom="large" paddingTop="small">
+        <Grid paddingBottom="2x-large" paddingTop="large">
           <PageHeader.GridCellNarrowWindowOnly span="all">
             <LinkList>
               <LinkList.Link href="https://mijn.amsterdam.nl/" rel="external">

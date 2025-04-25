@@ -33,7 +33,7 @@ function Thanks() {
   }, [])
 
   return (
-    <Grid paddingVertical="medium">
+    <Grid paddingVertical="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <Column>
           <Heading level={1}>Melding openbare ruimte</Heading>

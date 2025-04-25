@@ -19,7 +19,7 @@ function KunstEnCultuur() {
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="medium">
+      <Grid paddingBottom="x-large">
         <Grid.Cell span="all">
           <PageHeading>Kunst en Cultuur</PageHeading>
         </Grid.Cell>
@@ -33,7 +33,7 @@ function KunstEnCultuur() {
           <NextImage alt="" className="ams-image" src={artAndCultureImage} />
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="medium">
+      <Grid paddingBottom="x-large">
         <Grid.Cell span={4}>
           <Heading level={3} className="ams-mb-s">
             Vaak gezocht

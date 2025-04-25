@@ -88,7 +88,7 @@ function HomePage() {
         Homepage Gemeente Amsterdam
       </Heading>
       {isAlertVisible && (
-        <Grid paddingTop="small" paddingBottom="large">
+        <Grid paddingTop="large" paddingBottom="2x-large">
           <Grid.Cell span="all">
             <Alert
               closeable
@@ -116,7 +116,7 @@ function HomePage() {
           </Grid.Cell>
         </Grid>
       </Overlap>
-      <Grid paddingVertical="medium">
+      <Grid paddingVertical="x-large">
         <Grid.Cell span="all">
           <Heading level={2} size="level-1">
             Meest bezocht
@@ -134,7 +134,7 @@ function HomePage() {
         ))}
       </Grid>
       <Spotlight>
-        <Grid paddingVertical="medium">
+        <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
             <Heading className="ams-mb-s" color="inverse" level={2}>
               Ontheffing of vergunning
@@ -161,7 +161,7 @@ function HomePage() {
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <Grid paddingTop="medium" paddingBottom="large">
+      <Grid paddingTop="x-large" paddingBottom="2x-large">
         <Grid.Cell span={3}>
           <Heading className="ams-mb-xl" level={2} size="level-1">
             Kalender
