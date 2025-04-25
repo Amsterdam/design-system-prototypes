@@ -123,7 +123,7 @@ function Summary() {
                   </dd>
                   <dd className="ams-summary-description-list__link">
                     <NextLink href={href} legacyBehavior passHref>
-                      <Link variant="inline" className="ams-edit-link">
+                      <Link className="ams-edit-link">
                         Wijzig
                         <span className="ams-visually-hidden"> vraag: {questionText}</span>
                       </Link>

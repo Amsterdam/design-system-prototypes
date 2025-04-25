@@ -27,11 +27,7 @@ function Project() {
           <Paragraph size="large">
             <strong>Overzicht van projecten in stadsdeel Noord.</strong> Lees waar en wanneer we werken aan nieuwbouw,
             groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele gebieden. En
-            hoe u kunt meedenken. Ga naar de{' '}
-            <Link href="#kaart" variant="inline">
-              kaart
-            </Link>{' '}
-            om een project in de stad te zien.
+            hoe u kunt meedenken. Ga naar de <Link href="#kaart">kaart</Link> om een project in de stad te zien.
           </Paragraph>
         </Grid.Cell>
       </Grid>

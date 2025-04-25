@@ -11,6 +11,7 @@ import {
   Paragraph,
   SearchField,
   Spotlight,
+  StandaloneLink,
 } from '@amsterdam/design-system-react'
 import NextImage from 'next/image'
 import NextLink from 'next/link'
@@ -142,9 +143,9 @@ function HomePage() {
               Check welke ontheffing of vergunning u nodig heeft. Bijvoorbeeld een RVV, TVM, objectvergunning,{' '}
               nachtwerkontheffing, e-RVV, e-TVM of filmmelding. Dat regult u allemaal met 1 formulier.
             </Paragraph>
-            <Link color="inverse" href="#" variant="standalone">
+            <StandaloneLink color="inverse" href="#">
               Eenvoudig regelen
-            </Link>
+            </StandaloneLink>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
             <Heading className="ams-mb-s" color="inverse" level={2}>
@@ -154,9 +155,9 @@ function HomePage() {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae cumque deleniti exercitationem
               facere fugiat laudantium libero magnam mollitia nisi, omnis pariatur preferendis.
             </Paragraph>
-            <Link color="inverse" href="#" variant="standalone">
+            <StandaloneLink color="inverse" href="#">
               Alle bouw- en verkeerswerkzaamheden
-            </Link>
+            </StandaloneLink>
           </Grid.Cell>
         </Grid>
       </Spotlight>

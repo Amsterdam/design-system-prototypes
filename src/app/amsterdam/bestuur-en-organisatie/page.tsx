@@ -1,6 +1,15 @@
 'use client'
 
-import { Breadcrumb, Card, Grid, Heading, Link, PageHeading, Paragraph } from '@amsterdam/design-system-react'
+import {
+  Breadcrumb,
+  Card,
+  Grid,
+  Heading,
+  Link,
+  PageHeading,
+  Paragraph,
+  StandaloneLink,
+} from '@amsterdam/design-system-react'
 import clsx from 'clsx'
 import NextLink from 'next/link'
 
@@ -44,11 +53,7 @@ function Section({ description, linkText, subsections, title }: SectionProps) {
           {title}
         </Heading>
         {description && <Paragraph>{description}</Paragraph>}
-        {linkText && (
-          <Link href="#" variant="standalone">
-            {linkText}
-          </Link>
-        )}
+        {linkText && <StandaloneLink href="#">{linkText}</StandaloneLink>}
       </Grid.Cell>
       {subsections.map((subtitle, index) => (
         <Subsection isEven={index % 2 === 0} key={subtitle} title={subtitle} />

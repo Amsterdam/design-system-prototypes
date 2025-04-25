@@ -44,7 +44,7 @@ function Signalen({ children }) {
                 </Heading>
                 <Paragraph color="inverse" size="small">
                   Lukt het niet om een melding te doen? Bel het telefoonnummer{' '}
-                  <Link color="inverse" href="tel:+3114020" variant="inline">
+                  <Link color="inverse" href="tel:+3114020">
                     14 020
                   </Link>
                   .

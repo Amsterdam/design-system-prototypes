@@ -170,13 +170,13 @@ function Project() {
             <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=1" />
               <Paragraph>
-                Impressie Brug 423 &nbsp; <Link variant="inline">Afbeelding wijzigen</Link>
+                Impressie Brug 423 &nbsp; <Link href="#">Afbeelding wijzigen</Link>
               </Paragraph>
             </Column>
             <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=2" />
               <Paragraph>
-                Locatie Brug 423 &nbsp; <Link variant="inline">Bekijk op datapunt.nl</Link>
+                Locatie Brug 423 &nbsp; <Link href="#">Bekijk op datapunt.nl</Link>
               </Paragraph>
             </Column>
           </Column>

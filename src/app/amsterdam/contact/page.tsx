@@ -39,11 +39,7 @@ function Contact() {
           </FieldSet>
           <Paragraph size="small">
             U dient een klacht in als u vindt dat de gemeente Amsterdam u niet netjes heeft behandeld. Lees meer over de
-            klachtenprocedure op{' '}
-            <Link href="https://amsterdam.nl/klachten" variant="inline">
-              amsterdam.nl/klachten
-            </Link>
-            .
+            klachtenprocedure op <Link href="https://amsterdam.nl/klachten">amsterdam.nl/klachten</Link>.
           </Paragraph>
           <Paragraph size="small">
             Een melding openbare ruimte en overlast gaat bijvoorbeeld over afval dat niet is opgehaald, volle

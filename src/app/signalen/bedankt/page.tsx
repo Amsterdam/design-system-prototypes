@@ -57,15 +57,9 @@ function Thanks() {
               Vragen of meer informatie?{' '}
             </Heading>
             <Paragraph size="small">
-              Neem dan contact met ons op via{' '}
-              <Link href="tel:14020" variant="inline">
-                14 020
-              </Link>
-              . Vermeld hierbij alstublieft uw meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
-              <Link href="https://www.amsterdam.nl/" variant="inline">
-                amsterdam.nl
-              </Link>
-              .
+              Neem dan contact met ons op via <Link href="tel:14020">14 020</Link>. Vermeld hierbij alstublieft uw
+              meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
+              <Link href="https://www.amsterdam.nl/">amsterdam.nl</Link>.
             </Paragraph>
 
             <Heading level={3} size="level-4">

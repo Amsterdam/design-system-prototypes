@@ -109,7 +109,6 @@ export default function Amsterdam({ children }) {
                     <Link
                       color="inverse"
                       href="https://activiteiten.amsterdam.nl/?pk_vid=9f948f5fae0c5e90169952714540adc6"
-                      variant="inline"
                     >
                       Kalender Amsterdam
                     </Link>
@@ -122,7 +121,7 @@ export default function Amsterdam({ children }) {
                   </Heading>
                   <Paragraph color="inverse" size="small">
                     Benieuwd wat er allemaal te doen is in de stad? Op{' '}
-                    <Link color="inverse" href="https://www.iamsterdam.com/" variant="inline">
+                    <Link color="inverse" href="https://www.iamsterdam.com/">
                       Iamsterdam.com
                     </Link>{' '}
                     vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
