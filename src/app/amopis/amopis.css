@@ -1,5 +1,5 @@
 .ams-page.ams-page--amopis {
-  max-inline-size: initial; /* `Screen` doesn’t support stretching to the full width of the viewport. */
+  max-inline-size: initial; /* `Page` doesn’t support stretching to the full width of the viewport. */
 }
 
 .amopis-app-grid {
