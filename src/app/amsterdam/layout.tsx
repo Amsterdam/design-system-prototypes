@@ -1,67 +1,34 @@
 'use client'
 
-import { Column, Footer, Grid, Heading, Link, LinkList, Paragraph, Screen } from '@amsterdam/design-system-react'
+import { PageFooter, Grid, Heading, Link, LinkList, Paragraph, Page } from '@amsterdam/design-system-react'
 import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import './amsterdam.css'
 
-const footerLinks = [
-  {
-    href: '#',
-    label: 'Over deze site',
-  },
-  {
-    href: '#',
-    label: 'Privacy',
-  },
-  {
-    href: '#',
-    label: 'Cookies op deze site',
-  },
+const PageFooterLinks = [
+  { href: '#', label: 'Over deze site' },
+  { href: '#', label: 'Privacy' },
+  { href: '#', label: 'Cookies op deze site' },
 ]
 
 const socials = [
-  {
-    href: 'https://www.amsterdam.nl/nieuws/volg-de-gemeente/nieuwsbrief-amsterdam/',
-    label: 'Nieuwsbrief Amsterdam',
-  },
-  {
-    href: 'https://twitter.com/AmsterdamNL',
-    label: 'Twitter',
-  },
-  {
-    href: 'https://www.facebook.com/gemeenteamsterdam',
-    label: 'Facebook',
-  },
-  {
-    href: 'https://www.instagram.com/gemeenteamsterdam/',
-    label: 'Instagram',
-  },
-  {
-    href: 'https://www.linkedin.com/company/gemeente-amsterdam',
-    label: 'LinkedIn',
-  },
-  {
-    href: 'https://social.amsterdam.nl/@gemeenteamsterdam',
-    label: 'Mastodon',
-  },
-  {
-    href: 'https://www.youtube.com/channel/UCEiYFPFR5jGhFakHhbswlig',
-    label: 'YouTube',
-  },
-  {
-    href: 'https://werkenbij.amsterdam.nl/',
-    label: 'Werkenbij',
-  },
+  { href: 'https://www.amsterdam.nl/nieuws/volg-de-gemeente/nieuwsbrief-amsterdam/', label: 'Nieuwsbrief Amsterdam' },
+  { href: 'https://twitter.com/AmsterdamNL', label: 'Twitter' },
+  { href: 'https://www.facebook.com/gemeenteamsterdam', label: 'Facebook' },
+  { href: 'https://www.instagram.com/gemeenteamsterdam/', label: 'Instagram' },
+  { href: 'https://www.linkedin.com/company/gemeente-amsterdam', label: 'LinkedIn' },
+  { href: 'https://social.amsterdam.nl/@gemeenteamsterdam', label: 'Mastodon' },
+  { href: 'https://www.youtube.com/channel/UCEiYFPFR5jGhFakHhbswlig', label: 'YouTube' },
+  { href: 'https://werkenbij.amsterdam.nl/', label: 'Werkenbij' },
 ]
 
 export default function Amsterdam({ children }) {
   return (
     <div className="ams-theme">
-      <Screen maxWidth="wide">
+      <Page maxWidth="wide">
         {children}
-        <Footer>
-          <Footer.Spotlight>
+        <PageFooter>
+          <PageFooter.Spotlight>
             <Grid gapVertical="large" paddingVertical="medium">
               <Grid.Cell span={3}>
                 <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
@@ -130,22 +97,22 @@ export default function Amsterdam({ children }) {
                 </div>
               </Grid.Cell>
             </Grid>
-          </Footer.Spotlight>
+          </PageFooter.Spotlight>
           <Heading className="ams-visually-hidden" level={2}>
             Over deze website
           </Heading>
-          <Footer.Menu>
-            {footerLinks.map(({ href, label }) => (
+          <PageFooter.Menu>
+            {PageFooterLinks.map(({ href, label }) => (
               <NextLink href={href} key={label} legacyBehavior passHref>
-                <Footer.MenuLink>{label}</Footer.MenuLink>
+                <PageFooter.MenuLink>{label}</PageFooter.MenuLink>
               </NextLink>
             ))}
             <NextLink href="/" legacyBehavior passHref>
-              <Footer.MenuLink>Prototypes</Footer.MenuLink>
+              <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
             </NextLink>
-          </Footer.Menu>
-        </Footer>
-      </Screen>
+          </PageFooter.Menu>
+        </PageFooter>
+      </Page>
     </div>
   )
 }
