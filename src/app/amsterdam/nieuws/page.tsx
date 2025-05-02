@@ -19,7 +19,7 @@ function Nieuws() {
         </Grid.Cell>
       </Grid>
       <article>
-        <Grid paddingBottom="medium">
+        <Grid paddingBottom="x-large">
           {/* TODO: this looks off on medium screen widths, should probably be full width */}
           <Grid.Cell span={6}>
             <Heading level={1} className="ams-mb-s">
@@ -40,7 +40,7 @@ function Nieuws() {
             <NextImage alt="" className="ams-image" src={fatbikesImage} />
           </Grid.Cell>
         </Grid>
-        <Grid paddingBottom="medium">
+        <Grid paddingBottom="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
             <Column>
               <Paragraph>

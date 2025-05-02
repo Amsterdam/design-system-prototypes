@@ -65,7 +65,7 @@ function NewsArticle({ date, description, image, tagline, title }: NewsArticlePr
 export default function Gemeenteraad() {
   return (
     <>
-      <Grid paddingBottom="medium">
+      <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>
@@ -84,7 +84,7 @@ export default function Gemeenteraad() {
         </Grid.Cell>
       </Grid>
       <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={cityCouncilImage} />
-      <Grid paddingVertical="large" gapVertical="small">
+      <Grid paddingVertical="x-large" gapVertical="large">
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
           <Heading className="ams-mb-s" level={2}>
             Raadsinformatie

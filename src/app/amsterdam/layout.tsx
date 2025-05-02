@@ -25,11 +25,11 @@ const socials = [
 export default function Amsterdam({ children }) {
   return (
     <div className="ams-theme">
-      <Page maxWidth="wide">
+      <Page>
         {children}
         <PageFooter>
           <PageFooter.Spotlight>
-            <Grid gapVertical="large" paddingVertical="medium">
+            <Grid gapVertical="large" paddingVertical="x-large">
               <Grid.Cell span={3}>
                 <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
                   Contact
@@ -76,7 +76,6 @@ export default function Amsterdam({ children }) {
                     <Link
                       color="inverse"
                       href="https://activiteiten.amsterdam.nl/?pk_vid=9f948f5fae0c5e90169952714540adc6"
-                      variant="inline"
                     >
                       Kalender Amsterdam
                     </Link>
@@ -89,7 +88,7 @@ export default function Amsterdam({ children }) {
                   </Heading>
                   <Paragraph color="inverse" size="small">
                     Benieuwd wat er allemaal te doen is in de stad? Op{' '}
-                    <Link color="inverse" href="https://www.iamsterdam.com/" variant="inline">
+                    <Link color="inverse" href="https://www.iamsterdam.com/">
                       Iamsterdam.com
                     </Link>{' '}
                     vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.

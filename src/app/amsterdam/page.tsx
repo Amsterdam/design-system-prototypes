@@ -116,7 +116,7 @@ function HomePage() {
           </Grid.Cell>
         </Grid>
       </Overlap>
-      <Grid paddingVertical="large">
+      <Grid paddingVertical="x-large">
         <Grid.Cell span="all">
           <Heading level={2} size="level-1">
             Meest bezocht
@@ -134,7 +134,7 @@ function HomePage() {
         ))}
       </Grid>
       <Spotlight>
-        <Grid paddingVertical="large">
+        <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
             <Heading className="ams-mb-s" color="inverse" level={2}>
               Ontheffing of vergunning
