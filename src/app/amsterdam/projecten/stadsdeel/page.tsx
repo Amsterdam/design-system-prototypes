@@ -23,7 +23,9 @@ function Project() {
       </Grid>
       <Grid gapVertical="large" paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-          <Heading level={1}>Bouw- en verkeersprojecten in Noord</Heading>
+          <Heading level={1} className="ams-mb-m">
+            Bouw- en verkeersprojecten in Noord
+          </Heading>
           <Paragraph size="large">
             <strong>Overzicht van projecten in stadsdeel Noord.</strong> Lees waar en wanneer we werken aan nieuwbouw,
             groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele gebieden. En
@@ -62,8 +64,8 @@ function Project() {
       </Grid>
       <Spotlight>
         <Grid paddingVertical="x-large">
-          <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-            <Heading color="inverse" level={2} size="level-4" className="ams-mb-s">
+          <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
+            <Heading color="inverse" level={2} size="level-4" className="ams-mb-m">
               Werk aan de weg
             </Heading>
             <LinkList>
@@ -81,8 +83,8 @@ function Project() {
               ))}
             </LinkList>
           </Grid.Cell>
-          <Grid.Cell span={{ narrow: 1, medium: 2, wide: 4 }} start={{ narrow: 4, medium: 7, wide: 8 }}>
-            <Heading color="inverse" level={2} size="level-4" className="ams-mb-s">
+          <Grid.Cell span={{ narrow: 4, medium: 2, wide: 4 }} start={{ narrow: 1, medium: 7, wide: 8 }}>
+            <Heading color="inverse" level={2} size="level-4" className="ams-mb-m">
               In andere stadsdelen
             </Heading>
             <LinkList>
@@ -97,14 +99,20 @@ function Project() {
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <Grid paddingVertical="small">
+      <Grid paddingVertical="large">
         <Grid.Cell span="all">
           <Heading level={2} size="level-4">
             Projecten op de kaart
           </Heading>
         </Grid.Cell>
       </Grid>
-      <NextImage alt="" className="ams-image" id="kaart" src={constructionWorkMapImage} />
+      <NextImage
+        alt=""
+        style={{ inlineSize: '100%' }}
+        className="ams-image"
+        id="kaart"
+        src={constructionWorkMapImage}
+      />
     </>
   )
 }
