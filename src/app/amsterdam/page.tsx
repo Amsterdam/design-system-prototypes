@@ -6,7 +6,6 @@ import {
   Column,
   Grid,
   Heading,
-  Link,
   Overlap,
   Paragraph,
   SearchField,

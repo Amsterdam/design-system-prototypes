@@ -1,6 +1,6 @@
 'use client'
 
-import { PageHeader, Grid, LinkList, Heading, SkipLink } from '@amsterdam/design-system-react'
+import { PageHeader, Grid, LinkList, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 const megaMenuLinks = [

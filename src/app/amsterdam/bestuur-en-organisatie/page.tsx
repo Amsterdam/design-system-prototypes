@@ -1,15 +1,6 @@
 'use client'
 
-import {
-  Breadcrumb,
-  Card,
-  Grid,
-  Heading,
-  Link,
-  PageHeading,
-  Paragraph,
-  StandaloneLink,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Grid, Heading, PageHeading, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
 import clsx from 'clsx'
 import NextLink from 'next/link'
 

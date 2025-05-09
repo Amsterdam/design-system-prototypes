@@ -1,16 +1,6 @@
 'use client'
 
-import {
-  Column,
-  PageFooter,
-  Grid,
-  Heading,
-  Link,
-  LinkList,
-  Paragraph,
-  Page,
-  StandaloneLink,
-} from '@amsterdam/design-system-react'
+import { PageFooter, Grid, Heading, LinkList, Paragraph, Page, StandaloneLink } from '@amsterdam/design-system-react'
 import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import './amsterdam.css'
@@ -67,94 +57,92 @@ const socials = [
 
 export default function Amsterdam({ children }) {
   return (
-    <div className="ams-theme">
-      <Page>
-        {children}
-        <PageFooter>
-          <PageFooter.Spotlight>
-            <Grid gapVertical="2x-large" paddingVertical="x-large">
-              <Grid.Cell span={3}>
+    <Page className="ams-theme">
+      {children}
+      <PageFooter>
+        <PageFooter.Spotlight>
+          <Grid gapVertical="2x-large" paddingVertical="x-large">
+            <Grid.Cell span={3}>
+              <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                Contact
+              </Heading>
+              <Paragraph className="ams-mb-m" color="inverse" size="small">
+                Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Neem dan contact met ons op.
+              </Paragraph>
+              <LinkList>
+                <LinkList.Link
+                  color="inverse"
+                  href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/contactformulier.aspx/?pk_vid=9f948f5fae0c5e90169952648840adc6"
+                  icon={ChattingIcon}
+                  size="small"
+                >
+                  Contactformulier
+                </LinkList.Link>
+                <LinkList.Link color="inverse" href="https://www.amsterdam.nl/contact/" size="small">
+                  Adressen en openingstijden
+                </LinkList.Link>
+                <LinkList.Link color="inverse" href="tel:+3114020" icon={PhoneIcon} size="small">
+                  Bel 14 020
+                </LinkList.Link>
+              </LinkList>
+            </Grid.Cell>
+            <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
+              <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                Volg de gemeente
+              </Heading>
+              <LinkList>
+                {socials.map(({ href, label }) => (
+                  <LinkList.Link color="inverse" href={href} key={label} rel="external" size="small">
+                    {label}
+                  </LinkList.Link>
+                ))}
+              </LinkList>
+            </Grid.Cell>
+            <Grid.Cell className="ams-gap-xl" span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
+              <div>
                 <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
-                  Contact
+                  Kalender
                 </Heading>
-                <Paragraph className="ams-mb-m" color="inverse" size="small">
-                  Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Neem dan contact met ons op.
-                </Paragraph>
-                <LinkList>
-                  <LinkList.Link
+                <Paragraph color="inverse" size="small">
+                  Van buurtactiviteiten tot inspraakavonden. Wat organiseert de gemeente voor u? Kijk op{' '}
+                  <StandaloneLink
                     color="inverse"
-                    href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/contactformulier.aspx/?pk_vid=9f948f5fae0c5e90169952648840adc6"
-                    icon={ChattingIcon}
-                    size="small"
+                    href="https://activiteiten.amsterdam.nl/?pk_vid=9f948f5fae0c5e90169952714540adc6"
                   >
-                    Contactformulier
-                  </LinkList.Link>
-                  <LinkList.Link color="inverse" href="https://www.amsterdam.nl/contact/" size="small">
-                    Adressen en openingstijden
-                  </LinkList.Link>
-                  <LinkList.Link color="inverse" href="tel:+3114020" icon={PhoneIcon} size="small">
-                    Bel 14 020
-                  </LinkList.Link>
-                </LinkList>
-              </Grid.Cell>
-              <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
+                    Kalender Amsterdam
+                  </StandaloneLink>
+                  .
+                </Paragraph>
+              </div>
+              <div>
                 <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
-                  Volg de gemeente
+                  Uit in Amsterdam
                 </Heading>
-                <LinkList>
-                  {socials.map(({ href, label }) => (
-                    <LinkList.Link color="inverse" href={href} key={label} rel="external" size="small">
-                      {label}
-                    </LinkList.Link>
-                  ))}
-                </LinkList>
-              </Grid.Cell>
-              <Grid.Cell className="ams-gap-xl" span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
-                <div>
-                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
-                    Kalender
-                  </Heading>
-                  <Paragraph color="inverse" size="small">
-                    Van buurtactiviteiten tot inspraakavonden. Wat organiseert de gemeente voor u? Kijk op{' '}
-                    <StandaloneLink
-                      color="inverse"
-                      href="https://activiteiten.amsterdam.nl/?pk_vid=9f948f5fae0c5e90169952714540adc6"
-                    >
-                      Kalender Amsterdam
-                    </StandaloneLink>
-                    .
-                  </Paragraph>
-                </div>
-                <div>
-                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
-                    Uit in Amsterdam
-                  </Heading>
-                  <Paragraph color="inverse" size="small">
-                    Benieuwd wat er allemaal te doen is in de stad? Op{' '}
-                    <StandaloneLink color="inverse" href="https://www.iamsterdam.com/">
-                      Iamsterdam.com
-                    </StandaloneLink>{' '}
-                    vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
-                  </Paragraph>
-                </div>
-              </Grid.Cell>
-            </Grid>
-          </PageFooter.Spotlight>
-          <Heading className="ams-visually-hidden" level={2}>
-            Over deze website
-          </Heading>
-          <PageFooter.Menu>
-            {PageFooterLinks.map(({ href, label }) => (
-              <NextLink href={href} key={label} legacyBehavior passHref>
-                <PageFooter.MenuLink>{label}</PageFooter.MenuLink>
-              </NextLink>
-            ))}
-            <NextLink href="/" legacyBehavior passHref>
-              <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
+                <Paragraph color="inverse" size="small">
+                  Benieuwd wat er allemaal te doen is in de stad? Op{' '}
+                  <StandaloneLink color="inverse" href="https://www.iamsterdam.com/">
+                    Iamsterdam.com
+                  </StandaloneLink>{' '}
+                  vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
+                </Paragraph>
+              </div>
+            </Grid.Cell>
+          </Grid>
+        </PageFooter.Spotlight>
+        <Heading className="ams-visually-hidden" level={2}>
+          Over deze website
+        </Heading>
+        <PageFooter.Menu>
+          {PageFooterLinks.map(({ href, label }) => (
+            <NextLink href={href} key={label} legacyBehavior passHref>
+              <PageFooter.MenuLink>{label}</PageFooter.MenuLink>
             </NextLink>
-          </PageFooter.Menu>
-        </PageFooter>
-      </Page>
-    </div>
+          ))}
+          <NextLink href="/" legacyBehavior passHref>
+            <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
+          </NextLink>
+        </PageFooter.Menu>
+      </PageFooter>
+    </Page>
   )
 }
