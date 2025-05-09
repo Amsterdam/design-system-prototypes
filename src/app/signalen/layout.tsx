@@ -3,13 +3,13 @@
 import { Suspense } from 'react'
 import {
   Column,
-  Footer,
   Grid,
-  Header,
   Heading,
   Link,
+  Page,
+  PageFooter,
+  PageHeader,
   Paragraph,
-  Screen,
   SkipLink,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
@@ -18,11 +18,11 @@ import { ResetFocusOnNavigation } from './_components/ResetFocusOnNavigation/Res
 
 function Signalen({ children }) {
   return (
-    <Screen className="ams-theme" maxWidth="wide">
+    <Page className="ams-theme">
       <Grid>
         <Grid.Cell span="all">
           <SkipLink href="#main">Direct naar inhoud</SkipLink>
-          <Header
+          <PageHeader
             logoLink={`${process.env.basePath}signalen`} // TODO: je kunt hier geen NextLink gebruiken
             logoLinkTitle="Naar de homepage van Signalen Amsterdam"
           />
@@ -34,9 +34,9 @@ function Signalen({ children }) {
           <ResetFocusOnNavigation />
         </Suspense>
       </main>
-      <Footer>
-        <Footer.Spotlight>
-          <Grid gapVertical="large" paddingVertical="medium">
+      <PageFooter>
+        <PageFooter.Spotlight>
+          <Grid gapVertical="2x-large" paddingVertical="x-large">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
               <Column>
                 <Heading color="inverse" level={2} size="level-4">
@@ -44,7 +44,7 @@ function Signalen({ children }) {
                 </Heading>
                 <Paragraph color="inverse" size="small">
                   Lukt het niet om een melding te doen? Bel het telefoonnummer{' '}
-                  <Link color="inverse" href="tel:+3114020" variant="inline">
+                  <Link color="inverse" href="tel:+3114020">
                     14 020
                   </Link>
                   .
@@ -55,20 +55,20 @@ function Signalen({ children }) {
               </Column>
             </Grid.Cell>
           </Grid>
-        </Footer.Spotlight>
+        </PageFooter.Spotlight>
         <Heading className="ams-visually-hidden" level={2}>
           Over deze website
         </Heading>
-        <Footer.Menu>
-          <Footer.MenuLink href="#">Over deze site</Footer.MenuLink>
-          <Footer.MenuLink href="#">Privacy</Footer.MenuLink>
-          <Footer.MenuLink href="#">Toegankelijkheid</Footer.MenuLink>
+        <PageFooter.Menu>
+          <PageFooter.MenuLink href="#">Over deze site</PageFooter.MenuLink>
+          <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
+          <PageFooter.MenuLink href="#">Toegankelijkheid</PageFooter.MenuLink>
           <NextLink href="/" legacyBehavior passHref>
-            <Footer.MenuLink>Prototypes</Footer.MenuLink>
+            <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
           </NextLink>
-        </Footer.Menu>
-      </Footer>
-    </Screen>
+        </PageFooter.Menu>
+      </PageFooter>
+    </Page>
   )
 }
 

@@ -19,7 +19,7 @@ const tabLabels = ['Overzicht', 'Kerngegevens', 'Projectinformatie', 'Projectgre
 
 function Project() {
   return (
-    <Grid paddingVertical="medium">
+    <Grid paddingVertical="x-large">
       <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
@@ -36,11 +36,14 @@ function Project() {
         <Tabs>
           <Tabs.List>
             {tabLabels.map((label) => (
-              <Tabs.Button key={label} tab={label}>
+              <Tabs.Button aria-controls={label} key={label}>
                 {label}
               </Tabs.Button>
             ))}
           </Tabs.List>
+          {tabLabels.map((label) => (
+            <Tabs.Panel id={label} />
+          ))}
         </Tabs>
       </Grid.Cell>
       <Grid.Cell start={1} span={{ narrow: 4, medium: 2, wide: 2 }}>
@@ -170,13 +173,13 @@ function Project() {
             <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=1" />
               <Paragraph>
-                Impressie Brug 423 &nbsp; <Link variant="inline">Afbeelding wijzigen</Link>
+                Impressie Brug 423 &nbsp; <Link href="#">Afbeelding wijzigen</Link>
               </Paragraph>
             </Column>
             <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=2" />
               <Paragraph>
-                Locatie Brug 423 &nbsp; <Link variant="inline">Bekijk op datapunt.nl</Link>
+                Locatie Brug 423 &nbsp; <Link href="#">Bekijk op datapunt.nl</Link>
               </Paragraph>
             </Column>
           </Column>
