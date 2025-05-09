@@ -1,6 +1,6 @@
 'use client'
 
-import { PageFooter, Grid, Heading, Link, LinkList, Paragraph, Page } from '@amsterdam/design-system-react'
+import { Column, Grid, Heading, Link, LinkList, Page, PageFooter, Paragraph } from '@amsterdam/design-system-react'
 import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import './amsterdam.css'
@@ -29,7 +29,7 @@ export default function Amsterdam({ children }) {
         {children}
         <PageFooter>
           <PageFooter.Spotlight>
-            <Grid gapVertical="large" paddingVertical="x-large">
+            <Grid gapVertical="2x-large" paddingVertical="x-large">
               <Grid.Cell span={3}>
                 <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
                   Contact
@@ -101,7 +101,7 @@ export default function Amsterdam({ children }) {
             Over deze website
           </Heading>
           <PageFooter.Menu>
-            {PageFooterLinks.map(({ href, label }) => (
+            {footerLinks.map(({ href, label }) => (
               <NextLink href={href} key={label} legacyBehavior passHref>
                 <PageFooter.MenuLink>{label}</PageFooter.MenuLink>
               </NextLink>

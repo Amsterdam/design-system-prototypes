@@ -1,11 +1,11 @@
 'use client'
 
-import { Grid, Heading, LinkList, PageHeading, Paragraph, Page } from '@amsterdam/design-system-react'
+import { Grid, Heading, LinkList, Page, PageHeading, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
-export default function Page() {
+export default function Signalen() {
   return (
-    <Page>
+    <Page className="ams-theme">
       <Grid paddingVertical="2x-large">
         <Grid.Cell span="all">
           <PageHeading>Prototypes</PageHeading>

@@ -51,9 +51,9 @@ function Project() {
         ].map((title) => (
           <Grid.Cell key={title} span={{ narrow: 4, medium: 4, wide: 3 }}>
             <Card>
-              <Heading level={3} size="level-4">
+              <Card.Heading level={3} size="level-4">
                 <Card.Link href="#">{title}</Card.Link>
-              </Heading>
+              </Card.Heading>
               <Paragraph>
                 Het woonproject Appelweg biedt straks 63 tijdelijke woningen voor Amsterdamse starters op de
                 woningmarkt.
@@ -64,8 +64,8 @@ function Project() {
       </Grid>
       <Spotlight>
         <Grid paddingVertical="x-large">
-          <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-            <Heading color="inverse" level={2} size="level-4" className="ams-mb-m">
+          <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
+            <Heading color="inverse" level={2} size="level-4" className="ams-mb-s">
               Werk aan de weg
             </Heading>
             <LinkList>

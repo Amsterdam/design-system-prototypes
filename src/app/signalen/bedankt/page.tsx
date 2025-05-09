@@ -39,7 +39,7 @@ function Thanks() {
           <Heading level={1}>Melding openbare ruimte</Heading>
           <Column>
             <Heading level={2}>Bedankt</Heading>
-            <Paragraph size="small">
+            <Paragraph>
               Bedankt voor uw melding. Wij hebben uw melding ontvangen op{' '}
               <time dateTime={new Date(Date.now()).toLocaleDateString('nl')}>
                 {new Date(Date.now()).toLocaleDateString('nl', { day: 'numeric', month: 'long', year: 'numeric' })}
@@ -51,12 +51,12 @@ function Thanks() {
             <Heading level={3} size="level-4">
               Wat doen we met uw melding?
             </Heading>
-            <Paragraph size="small">Meldingen pakken we binnen 3 werkdagen op.</Paragraph>
+            <Paragraph>Meldingen pakken we binnen 3 werkdagen op.</Paragraph>
 
             <Heading level={3} size="level-4">
               Vragen of meer informatie?{' '}
             </Heading>
-            <Paragraph size="small">
+            <Paragraph>
               Neem dan contact met ons op via <Link href="tel:14020">14 020</Link>. Vermeld hierbij alstublieft uw
               meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
               <Link href="https://www.amsterdam.nl/">amsterdam.nl</Link>.

@@ -1,6 +1,6 @@
 'use client'
 
-import { PageHeader, Grid, LinkList, Heading, SkipLink } from '@amsterdam/design-system-react'
+import { Grid, LinkList, Heading, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 const megaMenuLinks = [
@@ -50,7 +50,7 @@ function Template({ children }) {
         logoLink={`${process.env.basePath}amsterdam`} // TODO: je kunt hier geen NextLink gebruiken
         logoLinkTitle="Naar de homepage van gemeente Amsterdam"
       >
-        <Grid paddingVertical="large">
+        <Grid paddingBottom="2x-large" paddingTop="large">
           <PageHeader.GridCellNarrowWindowOnly span="all">
             <LinkList>
               <LinkList.Link href="https://mijn.amsterdam.nl/" rel="external">

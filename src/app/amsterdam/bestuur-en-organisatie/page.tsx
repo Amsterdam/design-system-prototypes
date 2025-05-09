@@ -18,11 +18,11 @@ function Subsection({ isEven, title }: SubsectionProps) {
   return (
     <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={isEven ? { narrow: 1, medium: 1, wide: 2 } : undefined}>
       <Card>
-        <Heading level={3} size="level-4">
+        <Card.Heading level={3} size="level-4">
           <NextLink href={linkUrls[title] ?? '#'} legacyBehavior passHref>
             <Card.Link>{title}</Card.Link>
           </NextLink>
-        </Heading>
+        </Card.Heading>
         <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore.</Paragraph>
       </Card>
     </Grid.Cell>
@@ -38,7 +38,7 @@ type SectionProps = {
 
 function Section({ description, linkText, subsections, title }: SectionProps) {
   return (
-    <Grid paddingBottom="large" gapVertical="large">
+    <Grid paddingBottom="2x-large" gapVertical="2x-large">
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
         <Heading className={clsx({ 'ams-mb-s': description || linkText })} level={2}>
           {title}
@@ -61,7 +61,7 @@ Section.defaultProps = {
 export default function BestuurEnOrganisatie() {
   return (
     <>
-      <Grid paddingBottom="large">
+      <Grid paddingBottom="2x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>

@@ -3,13 +3,13 @@
 import { Suspense } from 'react'
 import {
   Column,
-  PageFooter,
   Grid,
-  PageHeader,
   Heading,
   Link,
-  Paragraph,
   Page,
+  PageFooter,
+  PageHeader,
+  Paragraph,
   SkipLink,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
