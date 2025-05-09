@@ -1,11 +1,21 @@
 'use client'
 
-import { Column, Footer, Grid, Heading, Link, LinkList, Paragraph, Screen } from '@amsterdam/design-system-react'
+import {
+  Column,
+  PageFooter,
+  Grid,
+  Heading,
+  Link,
+  LinkList,
+  Paragraph,
+  Page,
+  StandaloneLink,
+} from '@amsterdam/design-system-react'
 import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import './amsterdam.css'
 
-const footerLinks = [
+const PageFooterLinks = [
   {
     href: '#',
     label: 'Over deze site',
@@ -58,11 +68,11 @@ const socials = [
 export default function Amsterdam({ children }) {
   return (
     <div className="ams-theme">
-      <Screen maxWidth="wide">
+      <Page>
         {children}
-        <Footer>
-          <Footer.Spotlight>
-            <Grid gapVertical="large" paddingVertical="medium">
+        <PageFooter>
+          <PageFooter.Spotlight>
+            <Grid gapVertical="2x-large" paddingVertical="x-large">
               <Grid.Cell span={3}>
                 <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
                   Contact
@@ -106,13 +116,12 @@ export default function Amsterdam({ children }) {
                   </Heading>
                   <Paragraph color="inverse" size="small">
                     Van buurtactiviteiten tot inspraakavonden. Wat organiseert de gemeente voor u? Kijk op{' '}
-                    <Link
+                    <StandaloneLink
                       color="inverse"
                       href="https://activiteiten.amsterdam.nl/?pk_vid=9f948f5fae0c5e90169952714540adc6"
-                      variant="inline"
                     >
                       Kalender Amsterdam
-                    </Link>
+                    </StandaloneLink>
                     .
                   </Paragraph>
                 </div>
@@ -122,30 +131,30 @@ export default function Amsterdam({ children }) {
                   </Heading>
                   <Paragraph color="inverse" size="small">
                     Benieuwd wat er allemaal te doen is in de stad? Op{' '}
-                    <Link color="inverse" href="https://www.iamsterdam.com/" variant="inline">
+                    <StandaloneLink color="inverse" href="https://www.iamsterdam.com/">
                       Iamsterdam.com
-                    </Link>{' '}
+                    </StandaloneLink>{' '}
                     vindt u de beste tips op het gebied van cultuur, uitgaan en evenementen.
                   </Paragraph>
                 </div>
               </Grid.Cell>
             </Grid>
-          </Footer.Spotlight>
+          </PageFooter.Spotlight>
           <Heading className="ams-visually-hidden" level={2}>
             Over deze website
           </Heading>
-          <Footer.Menu>
-            {footerLinks.map(({ href, label }) => (
+          <PageFooter.Menu>
+            {PageFooterLinks.map(({ href, label }) => (
               <NextLink href={href} key={label} legacyBehavior passHref>
-                <Footer.MenuLink>{label}</Footer.MenuLink>
+                <PageFooter.MenuLink>{label}</PageFooter.MenuLink>
               </NextLink>
             ))}
             <NextLink href="/" legacyBehavior passHref>
-              <Footer.MenuLink>Prototypes</Footer.MenuLink>
+              <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
             </NextLink>
-          </Footer.Menu>
-        </Footer>
-      </Screen>
+          </PageFooter.Menu>
+        </PageFooter>
+      </Page>
     </div>
   )
 }

@@ -11,6 +11,7 @@ import {
   Paragraph,
   SearchField,
   Spotlight,
+  StandaloneLink,
 } from '@amsterdam/design-system-react'
 import NextImage from 'next/image'
 import NextLink from 'next/link'
@@ -87,7 +88,7 @@ function HomePage() {
         Homepage Gemeente Amsterdam
       </Heading>
       {isAlertVisible && (
-        <Grid paddingTop="small" paddingBottom="large">
+        <Grid paddingTop="large" paddingBottom="2x-large">
           <Grid.Cell span="all">
             <Alert
               closeable
@@ -115,7 +116,7 @@ function HomePage() {
           </Grid.Cell>
         </Grid>
       </Overlap>
-      <Grid paddingVertical="medium">
+      <Grid paddingVertical="x-large">
         <Grid.Cell span="all">
           <Heading level={2} size="level-1">
             Meest bezocht
@@ -133,7 +134,7 @@ function HomePage() {
         ))}
       </Grid>
       <Spotlight>
-        <Grid paddingVertical="medium">
+        <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
             <Heading className="ams-mb-s" color="inverse" level={2}>
               Ontheffing of vergunning
@@ -142,9 +143,9 @@ function HomePage() {
               Check welke ontheffing of vergunning u nodig heeft. Bijvoorbeeld een RVV, TVM, objectvergunning,{' '}
               nachtwerkontheffing, e-RVV, e-TVM of filmmelding. Dat regult u allemaal met 1 formulier.
             </Paragraph>
-            <Link color="inverse" href="#" variant="standalone">
+            <StandaloneLink color="inverse" href="#">
               Eenvoudig regelen
-            </Link>
+            </StandaloneLink>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
             <Heading className="ams-mb-s" color="inverse" level={2}>
@@ -154,13 +155,13 @@ function HomePage() {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae cumque deleniti exercitationem
               facere fugiat laudantium libero magnam mollitia nisi, omnis pariatur preferendis.
             </Paragraph>
-            <Link color="inverse" href="#" variant="standalone">
+            <StandaloneLink color="inverse" href="#">
               Alle bouw- en verkeerswerkzaamheden
-            </Link>
+            </StandaloneLink>
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <Grid paddingTop="medium" paddingBottom="large">
+      <Grid paddingTop="x-large" paddingBottom="2x-large">
         <Grid.Cell span={3}>
           <Heading className="ams-mb-xl" level={2} size="level-1">
             Kalender

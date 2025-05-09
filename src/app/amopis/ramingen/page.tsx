@@ -20,7 +20,7 @@ const tabLabels = ['Mijlpalen', 'Planfases', 'Capaciteitsraming', 'Maatregelen e
 
 function Estimation() {
   return (
-    <Grid paddingVertical="medium">
+    <Grid paddingVertical="x-large">
       <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
@@ -37,7 +37,7 @@ function Estimation() {
         <Tabs>
           <Tabs.List>
             {tabLabels.map((label) => (
-              <Tabs.Button key={label} tab={label}>
+              <Tabs.Button key={label} aria-controls={label}>
                 {label}
               </Tabs.Button>
             ))}

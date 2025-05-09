@@ -1,6 +1,6 @@
 'use client'
 
-import { Heading, Paragraph, Link, Column, Grid } from '@amsterdam/design-system-react'
+import { Heading, Paragraph, Link, Column, Grid, StandaloneLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { useEffect } from 'react'
 import { useFormContext } from '../FormContext'
@@ -33,7 +33,7 @@ function Thanks() {
   }, [])
 
   return (
-    <Grid paddingVertical="medium">
+    <Grid paddingVertical="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <Column>
           <Heading level={1}>Melding openbare ruimte</Heading>
@@ -57,15 +57,9 @@ function Thanks() {
               Vragen of meer informatie?{' '}
             </Heading>
             <Paragraph size="small">
-              Neem dan contact met ons op via{' '}
-              <Link href="tel:14020" variant="inline">
-                14 020
-              </Link>
-              . Vermeld hierbij alstublieft uw meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
-              <Link href="https://www.amsterdam.nl/" variant="inline">
-                amsterdam.nl
-              </Link>
-              .
+              Neem dan contact met ons op via <StandaloneLink href="tel:14020">14 020</StandaloneLink>. Vermeld hierbij
+              alstublieft uw meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
+              <StandaloneLink href="https://www.amsterdam.nl/">amsterdam.nl</StandaloneLink>.
             </Paragraph>
 
             <Heading level={3} size="level-4">

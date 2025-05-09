@@ -1,11 +1,11 @@
 'use client'
 
-import { Footer, Grid, Header, Heading, LinkList, Paragraph, Screen, SkipLink } from '@amsterdam/design-system-react'
+import { Footer, Grid, Header, Heading, LinkList, Paragraph, Page, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 export default function {{pascalCase name}}({ children }) {
   return (
-    <Screen className="ams-theme">
+    <Page className="ams-theme">
       <Grid>
         <Grid.Cell span="all">
           <SkipLink href="#main">Direct naar inhoud</SkipLink>
@@ -18,7 +18,7 @@ export default function {{pascalCase name}}({ children }) {
       <main id="main">{children}</main>
       <Footer>
         <Footer.Spotlight>
-          <Grid gapVertical="large" paddingVertical="medium">
+          <Grid gapVertical="2x-large" paddingVertical="x-large">
             <Grid.Cell span="all">
               <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
                 Koptekst
@@ -53,6 +53,6 @@ export default function {{pascalCase name}}({ children }) {
           {/* Append footer link here */}
         </Footer.Menu>
       </Footer>
-    </Screen>
+    </Page>
   )
 }

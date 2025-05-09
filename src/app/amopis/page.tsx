@@ -7,10 +7,10 @@ import {
   Grid,
   Heading,
   Image,
-  Link,
   LinkList,
   Paragraph,
   Row,
+  StandaloneLink,
   Tabs,
 } from '@amsterdam/design-system-react'
 import { ChattingIcon, EditDocumentIcon, EmailIcon } from '@amsterdam/design-system-react-icons'
@@ -19,7 +19,7 @@ const tabLabels = ['Overzicht', 'Kerngegevens', 'Projectinformatie', 'Projectgre
 
 function Project() {
   return (
-    <Grid paddingVertical="medium">
+    <Grid paddingVertical="x-large">
       <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
@@ -36,7 +36,7 @@ function Project() {
         <Tabs>
           <Tabs.List>
             {tabLabels.map((label) => (
-              <Tabs.Button key={label} tab={label}>
+              <Tabs.Button key={label} aria-controls={label}>
                 {label}
               </Tabs.Button>
             ))}
@@ -170,13 +170,13 @@ function Project() {
             <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=1" />
               <Paragraph>
-                Impressie Brug 423 &nbsp; <Link variant="inline">Afbeelding wijzigen</Link>
+                Impressie Brug 423 &nbsp; <StandaloneLink>Afbeelding wijzigen</StandaloneLink>
               </Paragraph>
             </Column>
             <Column gap="x-small">
               <Image alt="" src="https://picsum.photos/900/720?random=2" />
               <Paragraph>
-                Locatie Brug 423 &nbsp; <Link variant="inline">Bekijk op datapunt.nl</Link>
+                Locatie Brug 423 &nbsp; <StandaloneLink>Bekijk op datapunt.nl</StandaloneLink>
               </Paragraph>
             </Column>
           </Column>

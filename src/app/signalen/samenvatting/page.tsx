@@ -2,7 +2,7 @@
 
 'use client'
 
-import { Heading, Paragraph, Column, Button, Link, Grid } from '@amsterdam/design-system-react'
+import { Heading, Paragraph, Column, Button, Grid, StandaloneLink } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
 import { useForm } from 'react-hook-form'
 import NextLink from 'next/link'
@@ -98,7 +98,7 @@ function Summary() {
   }, [])
 
   return (
-    <Grid paddingVertical="medium">
+    <Grid paddingVertical="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 9 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <BackLink className="ams-mb-s" href="/signalen/documenten">
           Vorige vraag
@@ -123,10 +123,10 @@ function Summary() {
                   </dd>
                   <dd className="ams-summary-description-list__link">
                     <NextLink href={href} legacyBehavior passHref>
-                      <Link variant="inline" className="ams-edit-link">
+                      <StandaloneLink className="ams-edit-StandaloneLink">
                         Wijzig
                         <span className="ams-visually-hidden"> vraag: {questionText}</span>
-                      </Link>
+                      </StandaloneLink>
                     </NextLink>
                   </dd>
                 </div>
