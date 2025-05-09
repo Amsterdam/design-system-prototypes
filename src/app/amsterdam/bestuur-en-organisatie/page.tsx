@@ -1,15 +1,6 @@
 'use client'
 
-import {
-  Breadcrumb,
-  Card,
-  Grid,
-  Heading,
-  Link,
-  PageHeading,
-  Paragraph,
-  StandaloneLink,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Grid, Heading, PageHeading, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
 import clsx from 'clsx'
 import NextLink from 'next/link'
 
@@ -47,7 +38,7 @@ type SectionProps = {
 
 function Section({ description, linkText, subsections, title }: SectionProps) {
   return (
-    <Grid paddingBottom="2x-large" gapVertical="large">
+    <Grid paddingBottom="2x-large" gapVertical="2x-large">
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
         <Heading className={clsx({ 'ams-mb-s': description || linkText })} level={2}>
           {title}

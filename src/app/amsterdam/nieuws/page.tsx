@@ -27,7 +27,7 @@ function Nieuws() {
             </Heading>
             <Paragraph>8 november 2023</Paragraph>
           </Grid.Cell>
-          <Grid.Cell span={6} />
+          {/* <Grid.Cell span={6} /> */}
           <Grid.Cell span={6}>
             <Paragraph size="large">
               Door de opkomst van de elektrische fiets is het fietsverkeer chaotischer geworden. Onder kinderen en
@@ -42,63 +42,59 @@ function Nieuws() {
         </Grid>
         <Grid paddingBottom="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-            <Column>
-              <Paragraph>
-                Mensen voelen zich steeds onveiliger op het fietspad door de toenemende drukte en snelheidsverschillen.
-                Ook stijgt het aantal fietsongelukken al jaren. We moeten daarom nu in actie komen.
-              </Paragraph>
-              <Column>
-                <Heading level={2}>Gevaar</Heading>
-                <Paragraph>
-                  Er zijn fatbikes die een groter vermogen hebben dan een e-bike en waar je makkelijk een snelheid mee
-                  bereikt van boven de 25 kilometer per uur. De bestuurder hoeft nauwelijks te trappen. Ook jonge
-                  kinderen rijden op fatbikes. Ze zijn zich vaak niet bewust van het gevaar dat ze zelf lopen of kunnen
-                  veroorzaken. En als je fatbike is opgevoerd, ben je zelfs als je een verzekering hebt, niet verzekerd
-                  bij een ongeval.
-                </Paragraph>
-              </Column>
-              <Column>
-                <Heading level={2}>Handhaven</Heading>
-                <Paragraph>
-                  De politie controleert op overtredingen met opgevoerde/illegale e-bikes en fatbikes. Er worden boetes
-                  uitgedeeld en bij grove overtredingen neemt de politie fatbikes in beslag.
-                </Paragraph>
-              </Column>
-              <Column>
-                <Heading level={2}>Voorlichting</Heading>
-                <Paragraph>
-                  We vermoeden dat een deel van de fatbike-bestuurders niet op de hoogte is van de regels en risico’s.
-                  Daarom gaan we hier de komende tijd meer aandacht aan besteden, onder andere door ouders te informeren
-                  via scholen. Het onderwerp gaat ook een plekje krijgen binnen het verkeersonderwijs. We gaan het met
-                  leerlingen hebben over illegale en opgevoerde fatbikes en de gevolgen van het hiermee rijden op de
-                  openbare weg.
-                </Paragraph>
-              </Column>
-              <Column>
-                <Heading level={2}>Fietshelm</Heading>
-                <Paragraph>
-                  Fietsen kan ook veiliger worden als fietsers een helm dragen. Het risico op (zwaar) hoofdletsel neemt
-                  daarmee af. Maar uit onderzoek blijkt dat het instellen van een helmplicht voor (e-)fietsers een
-                  negatief effect heeft op het fietsgebruik en daardoor op de gezondheid. Een helm mag ook nooit de
-                  enige oplossing zijn en afleiden van effectievere verkeersveiligheids&shy;maatregelen. Amsterdam is
-                  daarom geen voorstander van een helmplicht.
-                </Paragraph>
-                <Paragraph>
-                  Wel zien we kansen om het op vrijwillige basis dragen van een fietshelm te stimuleren, vooral onder
-                  kinderen en ouderen. Het Rijk werkt aan een nieuw Meerjarenplan Fietsveiligheid met daarin een
-                  landelijke fietshelm&shy;campagne.
-                </Paragraph>
-              </Column>
-              <Column>
-                <Heading level={2}>Andere maatregelen</Heading>
-                <Paragraph>
-                  Amsterdam heeft samen met 20 andere gemeenten een brief gestuurd naar de minister. We vragen hierin
-                  naar een concreet pakket aan maatregelen voor de korte termijn. Daarbij denken wij bijvoorbeeld aan
-                  een landelijk verbod op de verkoop van opvoersetjes. En aan een minimumleeftijd voor het gebruik van
-                  e-bikes.
-                </Paragraph>
-              </Column>
-            </Column>
+            <Paragraph className="ams-mb-xl">
+              Mensen voelen zich steeds onveiliger op het fietspad door de toenemende drukte en snelheidsverschillen.
+              Ook stijgt het aantal fietsongelukken al jaren. We moeten daarom nu in actie komen.
+            </Paragraph>
+            <Heading level={2} className="ams-mb-s">
+              Gevaar
+            </Heading>
+            <Paragraph className="ams-mb-xl">
+              Er zijn fatbikes die een groter vermogen hebben dan een e-bike en waar je makkelijk een snelheid mee
+              bereikt van boven de 25 kilometer per uur. De bestuurder hoeft nauwelijks te trappen. Ook jonge kinderen
+              rijden op fatbikes. Ze zijn zich vaak niet bewust van het gevaar dat ze zelf lopen of kunnen veroorzaken.
+              En als je fatbike is opgevoerd, ben je zelfs als je een verzekering hebt, niet verzekerd bij een ongeval.
+            </Paragraph>
+            <Heading level={2} className="ams-mb-s">
+              Handhaven
+            </Heading>
+            <Paragraph className="ams-mb-xl">
+              De politie controleert op overtredingen met opgevoerde/illegale e-bikes en fatbikes. Er worden boetes
+              uitgedeeld en bij grove overtredingen neemt de politie fatbikes in beslag.
+            </Paragraph>
+            <Heading level={2} className="ams-mb-s">
+              Voorlichting
+            </Heading>
+            <Paragraph className="ams-mb-xl">
+              We vermoeden dat een deel van de fatbike-bestuurders niet op de hoogte is van de regels en risico’s.
+              Daarom gaan we hier de komende tijd meer aandacht aan besteden, onder andere door ouders te informeren via
+              scholen. Het onderwerp gaat ook een plekje krijgen binnen het verkeersonderwijs. We gaan het met
+              leerlingen hebben over illegale en opgevoerde fatbikes en de gevolgen van het hiermee rijden op de
+              openbare weg.
+            </Paragraph>
+            <Heading level={2} className="ams-mb-s">
+              Fietshelm
+            </Heading>
+            <Paragraph className="ams-mb-xl">
+              Fietsen kan ook veiliger worden als fietsers een helm dragen. Het risico op (zwaar) hoofdletsel neemt
+              daarmee af. Maar uit onderzoek blijkt dat het instellen van een helmplicht voor (e-)fietsers een negatief
+              effect heeft op het fietsgebruik en daardoor op de gezondheid. Een helm mag ook nooit de enige oplossing
+              zijn en afleiden van effectievere verkeersveiligheids&shy;maatregelen. Amsterdam is daarom geen
+              voorstander van een helmplicht.
+            </Paragraph>
+            <Paragraph className="ams-mb-xl">
+              Wel zien we kansen om het op vrijwillige basis dragen van een fietshelm te stimuleren, vooral onder
+              kinderen en ouderen. Het Rijk werkt aan een nieuw Meerjarenplan Fietsveiligheid met daarin een landelijke
+              fietshelm&shy;campagne.
+            </Paragraph>
+            <Heading level={2} className="ams-mb-s">
+              Andere maatregelen
+            </Heading>
+            <Paragraph>
+              Amsterdam heeft samen met 20 andere gemeenten een brief gestuurd naar de minister. We vragen hierin naar
+              een concreet pakket aan maatregelen voor de korte termijn. Daarbij denken wij bijvoorbeeld aan een
+              landelijk verbod op de verkoop van opvoersetjes. En aan een minimumleeftijd voor het gebruik van e-bikes.
+            </Paragraph>
           </Grid.Cell>
         </Grid>
       </article>
