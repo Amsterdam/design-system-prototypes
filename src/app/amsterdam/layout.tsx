@@ -5,7 +5,7 @@ import { ChattingIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import './amsterdam.css'
 
-const PageFooterLinks = [
+const footerLinks = [
   { href: '#', label: 'Over deze site' },
   { href: '#', label: 'Privacy' },
   { href: '#', label: 'Cookies op deze site' },
