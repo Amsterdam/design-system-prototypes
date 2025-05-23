@@ -1,23 +1,23 @@
 'use client'
 
-import { Footer, Grid, Header, Heading, LinkList, Paragraph, Screen, SkipLink } from '@amsterdam/design-system-react'
+import { Grid, Heading, LinkList, Page, PageFooter, PageHeader, Paragraph, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 export default function {{pascalCase name}}({ children }) {
   return (
-    <Screen className="ams-theme">
+    <Page className="ams-theme">
       <Grid>
         <Grid.Cell span="all">
           <SkipLink href="#main">Direct naar inhoud</SkipLink>
         </Grid.Cell>
       </Grid>
-      <Header
+      <PageHeader
         logoLink={`${process.env.basePath}{{kebabCase name}}`}
         logoLinkTitle="Naar de homepage van {{titleCase name}}"
       />
       <main id="main">{children}</main>
-      <Footer>
-        <Footer.Spotlight>
+      <PageFooter>
+        <PageFooter.Spotlight>
           <Grid gapVertical="2x-large" paddingVertical="x-large">
             <Grid.Cell span="all">
               <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
@@ -39,20 +39,20 @@ export default function {{pascalCase name}}({ children }) {
               </LinkList>
             </Grid.Cell>
           </Grid>
-        </Footer.Spotlight>
+        </PageFooter.Spotlight>
         <Heading className="ams-visually-hidden" level={2}>
           Over deze website
         </Heading>
-        <Footer.Menu>
+        <PageFooter.Menu>
           <NextLink href="/" legacyBehavior passHref>
-            <Footer.MenuLink>Prototypes</Footer.MenuLink>
+            <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
           </NextLink>
-          <Footer.MenuLink href="#">Over deze site</Footer.MenuLink>
-          <Footer.MenuLink href="#">Privacy</Footer.MenuLink>
-          <Footer.MenuLink href="#">Toegankelijkheid</Footer.MenuLink>
-          {/* Append footer link here */}
-        </Footer.Menu>
-      </Footer>
-    </Screen>
+          <PageFooter.MenuLink href="#">Over deze site</PageFooter.MenuLink>
+          <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
+          <PageFooter.MenuLink href="#">Toegankelijkheid</PageFooter.MenuLink>
+          {/* Append Pagefooter link here */}
+        </PageFooter.Menu>
+      </PageFooter>
+    </Page>
   )
 }
