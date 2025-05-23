@@ -21,7 +21,9 @@ function Projecten() {
       </Grid>
       <Grid gapVertical="large" paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-          <Heading level={1}>Bouw- en verkeersprojecten</Heading>
+          <Heading level={1} className="ams-mb-m">
+            Bouw- en verkeersprojecten
+          </Heading>
           <Paragraph size="large">
             <strong>Overzicht van ruim 200 projecten in Amsterdam.</strong> Lees waar en wanneer we werken aan
             nieuwbouw, groot onderhoud, herinrichting van straten en wegen, aanpak van parken of ontwikkeling van hele
