@@ -6,53 +6,20 @@ import NextLink from 'next/link'
 import './amsterdam.css'
 
 const footerLinks = [
-  {
-    href: '#',
-    label: 'Over deze site',
-  },
-  {
-    href: '#',
-    label: 'Privacy',
-  },
-  {
-    href: '#',
-    label: 'Cookies op deze site',
-  },
+  { href: '#', label: 'Over deze site' },
+  { href: '#', label: 'Privacy' },
+  { href: '#', label: 'Cookies op deze site' },
 ]
 
 const socials = [
-  {
-    href: 'https://www.amsterdam.nl/nieuws/volg-de-gemeente/nieuwsbrief-amsterdam/',
-    label: 'Nieuwsbrief Amsterdam',
-  },
-  {
-    href: 'https://twitter.com/AmsterdamNL',
-    label: 'Twitter',
-  },
-  {
-    href: 'https://www.facebook.com/gemeenteamsterdam',
-    label: 'Facebook',
-  },
-  {
-    href: 'https://www.instagram.com/gemeenteamsterdam/',
-    label: 'Instagram',
-  },
-  {
-    href: 'https://www.linkedin.com/company/gemeente-amsterdam',
-    label: 'LinkedIn',
-  },
-  {
-    href: 'https://social.amsterdam.nl/@gemeenteamsterdam',
-    label: 'Mastodon',
-  },
-  {
-    href: 'https://www.youtube.com/channel/UCEiYFPFR5jGhFakHhbswlig',
-    label: 'YouTube',
-  },
-  {
-    href: 'https://werkenbij.amsterdam.nl/',
-    label: 'Werkenbij',
-  },
+  { href: 'https://www.amsterdam.nl/nieuws/volg-de-gemeente/nieuwsbrief-amsterdam/', label: 'Nieuwsbrief Amsterdam' },
+  { href: 'https://twitter.com/AmsterdamNL', label: 'Twitter' },
+  { href: 'https://www.facebook.com/gemeenteamsterdam', label: 'Facebook' },
+  { href: 'https://www.instagram.com/gemeenteamsterdam/', label: 'Instagram' },
+  { href: 'https://www.linkedin.com/company/gemeente-amsterdam', label: 'LinkedIn' },
+  { href: 'https://social.amsterdam.nl/@gemeenteamsterdam', label: 'Mastodon' },
+  { href: 'https://www.youtube.com/channel/UCEiYFPFR5jGhFakHhbswlig', label: 'YouTube' },
+  { href: 'https://werkenbij.amsterdam.nl/', label: 'Werkenbij' },
 ]
 
 export default function Amsterdam({ children }) {

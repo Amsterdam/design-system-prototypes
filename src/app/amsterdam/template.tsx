@@ -4,90 +4,27 @@ import { Grid, LinkList, Heading, PageHeader, SkipLink } from '@amsterdam/design
 import NextLink from 'next/link'
 
 const megaMenuLinks = [
-  {
-    href: '#',
-    label: 'Afval',
-  },
-  {
-    href: '/amsterdam/bestuur-en-organisatie',
-    label: 'Bestuur en organisatie',
-  },
-  {
-    href: '/amsterdam/projecten',
-    label: 'Bouw- en verkeersprojecten',
-  },
-  {
-    href: '/amsterdam/burgerzaken',
-    label: 'Burgerzaken',
-  },
-  {
-    href: '#',
-    label: 'Gemeentebelastingen',
-  },
-  {
-    href: '#',
-    label: 'Gezondheidsdienst (GGD)',
-  },
-  {
-    href: '/amsterdam/kunst-en-cultuur',
-    label: 'Kunst, cultuur en vrije tijd',
-  },
-  {
-    href: '#',
-    label: 'Ondernemen',
-  },
-  {
-    href: '#',
-    label: 'Onderwijs en jeugd',
-  },
-  {
-    href: '#',
-    label: 'Parkeren',
-  },
-  {
-    href: '#',
-    label: 'Sport',
-  },
-  {
-    href: '#',
-    label: 'Stadsdelen',
-  },
-  {
-    href: '#',
-    label: 'Subsidies',
-  },
-  {
-    href: '#',
-    label: 'Vacatures',
-  },
-  {
-    href: '#',
-    label: 'Vergunningen',
-  },
-  {
-    href: '#',
-    label: 'Verkeer en vervoer',
-  },
-  {
-    href: '#',
-    label: 'Verkiezingen',
-  },
-  {
-    href: '#',
-    label: 'Werk aan de weg',
-  },
-  {
-    href: '#',
-    label: 'Werk en inkomen',
-  },
-  {
-    href: '#',
-    label: 'Wonen en leefomgeving',
-  },
-  {
-    href: '#',
-    label: 'Zorg en ondersteuning',
-  },
+  { href: '#', label: 'Afval' },
+  { href: '/amsterdam/bestuur-en-organisatie', label: 'Bestuur en organisatie' },
+  { href: '/amsterdam/projecten', label: 'Bouw- en verkeersprojecten' },
+  { href: '/amsterdam/burgerzaken', label: 'Burgerzaken' },
+  { href: '#', label: 'Gemeentebelastingen' },
+  { href: '#', label: 'Gezondheidsdienst (GGD)' },
+  { href: '/amsterdam/kunst-en-cultuur', label: 'Kunst, cultuur en vrije tijd' },
+  { href: '#', label: 'Ondernemen' },
+  { href: '#', label: 'Onderwijs en jeugd' },
+  { href: '#', label: 'Parkeren' },
+  { href: '#', label: 'Sport' },
+  { href: '#', label: 'Stadsdelen' },
+  { href: '#', label: 'Subsidies' },
+  { href: '#', label: 'Vacatures' },
+  { href: '#', label: 'Vergunningen' },
+  { href: '#', label: 'Verkeer en vervoer' },
+  { href: '#', label: 'Verkiezingen' },
+  { href: '#', label: 'Werk aan de weg' },
+  { href: '#', label: 'Werk en inkomen' },
+  { href: '#', label: 'Wonen en leefomgeving' },
+  { href: '#', label: 'Zorg en ondersteuning' },
 ]
 
 function Template({ children }) {

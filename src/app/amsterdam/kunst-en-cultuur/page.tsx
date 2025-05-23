@@ -46,7 +46,7 @@ function KunstEnCultuur() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={4} start={{ narrow: 1, medium: 1, wide: 5 }}>
-          <Heading level={2} size="level-3" className="ams-mb-s">
+          <Heading level={2} size="level-3" className="ams-mb-xs">
             Wie Amsterdam zegt, zegt kunst en cultuur
           </Heading>
           <Paragraph className="ams-mb-m">
