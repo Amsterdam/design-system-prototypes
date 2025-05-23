@@ -109,7 +109,6 @@ function HomePage() {
         <NextImage
           alt=""
           className="ams-image ams-aspect-ratio-16-5"
-          style={{ inlineSize: '100%' }}
           src={vindenImage}
         />
         <Grid style={{ alignSelf: 'center' }}>
