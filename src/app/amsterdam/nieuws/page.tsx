@@ -27,7 +27,6 @@ function Nieuws() {
             </Heading>
             <Paragraph>8 november 2023</Paragraph>
           </Grid.Cell>
-          {/* <Grid.Cell span={6} /> */}
           <Grid.Cell span={6}>
             <Paragraph size="large">
               Door de opkomst van de elektrische fiets is het fietsverkeer chaotischer geworden. Onder kinderen en
