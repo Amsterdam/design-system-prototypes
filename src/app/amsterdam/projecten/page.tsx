@@ -31,7 +31,7 @@ function Projecten() {
       </Grid>
       <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 2, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
-          <Heading level={2} size="level-4" className="ams-mb-m">
+          <Heading level={2} size="level-4" className="ams-mb-s">
             Projecten per stadsdeel
           </Heading>
           <LinkList>
