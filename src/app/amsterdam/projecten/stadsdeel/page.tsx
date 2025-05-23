@@ -108,7 +108,6 @@ function Project() {
       </Grid>
       <NextImage
         alt=""
-        style={{ inlineSize: '100%' }}
         className="ams-image"
         id="kaart"
         src={constructionWorkMapImage}
