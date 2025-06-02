@@ -22,7 +22,7 @@
     "update:patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && npm install"
   },
   "dependencies": {
-    "@amsterdam/design-system-assets": "0.3.0",
+    "@amsterdam/design-system-assets": "1.0.0",
     "@amsterdam/design-system-css": "0.16.0",
     "@amsterdam/design-system-react": "0.16.0",
     "@amsterdam/design-system-react-icons": "0.1.14",
