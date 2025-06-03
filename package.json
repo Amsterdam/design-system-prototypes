@@ -22,11 +22,11 @@
     "update:patch": "npm-check-updates --configFileName .ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && npm install"
   },
   "dependencies": {
-    "@amsterdam/design-system-assets": "0.3.0",
-    "@amsterdam/design-system-css": "0.16.0",
-    "@amsterdam/design-system-react": "0.16.0",
-    "@amsterdam/design-system-react-icons": "0.1.14",
-    "@amsterdam/design-system-tokens": "0.16.0",
+    "@amsterdam/design-system-assets": "1.0.0",
+    "@amsterdam/design-system-css": "1.0.0",
+    "@amsterdam/design-system-react": "1.0.0",
+    "@amsterdam/design-system-react-icons": "1.0.0",
+    "@amsterdam/design-system-tokens": "1.0.0",
     "@eslint/eslintrc": "3.3.1",
     "@eslint/js": "9.28.0",
     "clsx": "2.1.1",
