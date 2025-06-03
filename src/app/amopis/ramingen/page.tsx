@@ -14,7 +14,7 @@ import {
   Table,
   Tabs,
 } from '@amsterdam/design-system-react'
-import { DocumentWithPencilIcon, SearchIcon } from '@amsterdam/design-system-react-icons'
+import { DocumentWithPencilIcon } from '@amsterdam/design-system-react-icons'
 
 const tabLabels = ['Mijlpalen', 'Planfases', 'Capaciteitsraming', 'Maatregelen en acties']
 
@@ -153,7 +153,7 @@ function Estimation() {
                         {`${new Date('2023-10-10').toLocaleDateString('nl-NL')} ${new Date('2023-10-10T07:49').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
                       </Table.Cell>
                       <Table.Cell>
-                        <IconButton label="Aanpassen" svg={SearchIcon} />
+                        <IconButton label="Aanpassen" svg={DocumentWithPencilIcon} />
                       </Table.Cell>
                     </Table.Row>
                     <Table.Row>
@@ -167,7 +167,7 @@ function Estimation() {
                         {`${new Date('2023-09-18').toLocaleDateString('nl-NL')} ${new Date('2023-09-18T15:40').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
                       </Table.Cell>
                       <Table.Cell>
-                        <IconButton label="Aanpassen" svg={SearchIcon} />
+                        <IconButton label="Aanpassen" svg={DocumentWithPencilIcon} />
                       </Table.Cell>
                     </Table.Row>
                     <Table.Row>
@@ -181,7 +181,7 @@ function Estimation() {
                         {`${new Date('2023-09-18').toLocaleDateString('nl-NL')} ${new Date('2023-09-18T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
                       </Table.Cell>
                       <Table.Cell>
-                        <IconButton label="Aanpassen" svg={SearchIcon} />
+                        <IconButton label="Aanpassen" svg={DocumentWithPencilIcon} />
                       </Table.Cell>
                     </Table.Row>
                     <Table.Row>
@@ -195,7 +195,7 @@ function Estimation() {
                         {`${new Date('2023-09-17').toLocaleDateString('nl-NL')} ${new Date('2023-09-17T07:49').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
                       </Table.Cell>
                       <Table.Cell>
-                        <IconButton label="Aanpassen" svg={SearchIcon} />
+                        <IconButton label="Aanpassen" svg={DocumentWithPencilIcon} />
                       </Table.Cell>
                     </Table.Row>
                     <Table.Row>
@@ -209,7 +209,7 @@ function Estimation() {
                         {`${new Date('2023-09-15').toLocaleDateString('nl-NL')} ${new Date('2023-09-15T15:40').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
                       </Table.Cell>
                       <Table.Cell>
-                        <IconButton label="Aanpassen" svg={SearchIcon} />
+                        <IconButton label="Aanpassen" svg={DocumentWithPencilIcon} />
                       </Table.Cell>
                     </Table.Row>
                     <Table.Row>
@@ -223,7 +223,7 @@ function Estimation() {
                         {`${new Date('2023-09-09').toLocaleDateString('nl-NL')} ${new Date('2023-09-09T11:42').toLocaleTimeString('nl-NL', { hour: '2-digit', minute: '2-digit' })}`}
                       </Table.Cell>
                       <Table.Cell>
-                        <IconButton label="Aanpassen" svg={SearchIcon} />
+                        <IconButton label="Aanpassen" svg={DocumentWithPencilIcon} />
                       </Table.Cell>
                     </Table.Row>
                   </Table.Body>
