@@ -6,7 +6,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
 
 import { Icon } from '@amsterdam/design-system-react'
-import { ChevronLeftIcon } from '@amsterdam/design-system-react-icons'
+import { ChevronBackwardIcon } from '@amsterdam/design-system-react-icons'
 import { forwardRef } from 'react'
 import type { AnchorHTMLAttributes, ForwardedRef } from 'react'
 import NextLink from 'next/link'
@@ -18,7 +18,7 @@ export type BackLinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'place
 export const BackLink = forwardRef(
   ({ children, className, href, ...otherProps }: BackLinkProps, ref: ForwardedRef<HTMLAnchorElement>) => (
     <NextLink {...otherProps} className={`ams-back-link ${className}`} href={href} ref={ref}>
-      <Icon svg={ChevronLeftIcon} size="small" />
+      <Icon svg={ChevronBackwardIcon} size="small" />
       {children}
     </NextLink>
   ),

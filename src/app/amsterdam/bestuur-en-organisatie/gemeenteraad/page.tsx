@@ -1,7 +1,7 @@
 'use client'
 
 import { Breadcrumb, Card, Grid, Heading, LinkList, PageHeading, Paragraph } from '@amsterdam/design-system-react'
-import { ExternalLinkIcon } from '@amsterdam/design-system-react-icons'
+import { LinkExternalIcon } from '@amsterdam/design-system-react-icons'
 import NextImage from 'next/image'
 import type { StaticImageData } from 'next/image'
 import NextLink from 'next/link'
@@ -93,7 +93,7 @@ export default function Gemeenteraad() {
             Vergaderschema’s en stukken, beelden en uitslagen van vergaderingen.
           </Paragraph>
           <LinkList>
-            <LinkList.Link href="https://amsterdam.raadsinformatie.nl/" icon={ExternalLinkIcon}>
+            <LinkList.Link href="https://amsterdam.raadsinformatie.nl/" icon={LinkExternalIcon}>
               Bekijk op amsterdam.raadsinformatie.nl
             </LinkList.Link>
           </LinkList>
