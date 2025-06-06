@@ -1,10 +1,10 @@
 import { Column, Paragraph } from '@amsterdam/design-system-react'
 import {
-  DocumentTextIcon,
-  ExternalLinkIcon,
-  HousingIcon,
-  StopIcon,
-  SuitcaseIcon,
+  CogwheelIcon,
+  DocumentsIcon,
+  FolderIcon,
+  HouseIcon,
+  LineChartUpIcon,
 } from '@amsterdam/design-system-react-icons'
 
 export function Sidebar() {
@@ -12,31 +12,31 @@ export function Sidebar() {
     <div className="amopis-sidebar">
       <Column gap="x-large">
         <Column alignHorizontal="center" gap="x-small">
-          <HousingIcon fill="white" width={24} />
+          <HouseIcon fill="white" width={24} />
           <Paragraph color="inverse" size="small">
             Dashboard
           </Paragraph>
         </Column>
         <Column alignHorizontal="center" gap="x-small">
-          <SuitcaseIcon fill="white" width={24} />
+          <FolderIcon fill="white" width={24} />
           <Paragraph color="inverse" size="small">
             Projecten
           </Paragraph>
         </Column>
         <Column alignHorizontal="center" gap="x-small">
-          <DocumentTextIcon fill="white" width={24} />
+          <DocumentsIcon fill="white" width={24} />
           <Paragraph color="inverse" size="small">
             Rapportages
           </Paragraph>
         </Column>
         <Column alignHorizontal="center" gap="x-small">
-          <ExternalLinkIcon fill="white" width={24} />
+          <LineChartUpIcon fill="white" width={24} />
           <Paragraph color="inverse" size="small">
             Analyses
           </Paragraph>
         </Column>
         <Column alignHorizontal="center" gap="x-small">
-          <StopIcon fill="white" width={24} />
+          <CogwheelIcon fill="white" width={24} />
           <Paragraph color="inverse" size="small">
             Instellingen
           </Paragraph>

@@ -13,7 +13,7 @@ import {
   Row,
   Tabs,
 } from '@amsterdam/design-system-react'
-import { ChattingIcon, EditDocumentIcon, EmailIcon } from '@amsterdam/design-system-react-icons'
+import { DocumentWithPencilIcon, MailIcon } from '@amsterdam/design-system-react-icons'
 
 const tabLabels = ['Overzicht', 'Kerngegevens', 'Projectinformatie', 'Projectgrenzen', 'Projectcodes', 'Autorisaties']
 
@@ -49,27 +49,13 @@ function Project() {
       <Grid.Cell start={1} span={{ narrow: 4, medium: 2, wide: 2 }}>
         <div className="amopis-white-background">
           <LinkList>
-            <LinkList.Link href="#" icon={ChattingIcon}>
-              Projectdetails
-            </LinkList.Link>
-            <LinkList.Link href="#" icon={ChattingIcon}>
-              Financiën
-            </LinkList.Link>
-            <LinkList.Link href="#" icon={ChattingIcon}>
-              Projectstructuur
-            </LinkList.Link>
-            <LinkList.Link href="#" icon={ChattingIcon}>
-              Kwaliteit
-            </LinkList.Link>
-            <LinkList.Link href="#" icon={ChattingIcon}>
-              Planning
-            </LinkList.Link>
-            <LinkList.Link href="#" icon={ChattingIcon}>
-              Risico’s
-            </LinkList.Link>
-            <LinkList.Link href="#" icon={ChattingIcon}>
-              Logboek
-            </LinkList.Link>
+            <LinkList.Link href="#">Projectdetails</LinkList.Link>
+            <LinkList.Link href="#">Financiën</LinkList.Link>
+            <LinkList.Link href="#">Projectstructuur</LinkList.Link>
+            <LinkList.Link href="#">Kwaliteit</LinkList.Link>
+            <LinkList.Link href="#">Planning</LinkList.Link>
+            <LinkList.Link href="#">Risico’s</LinkList.Link>
+            <LinkList.Link href="#">Logboek</LinkList.Link>
           </LinkList>
         </div>
       </Grid.Cell>
@@ -79,7 +65,7 @@ function Project() {
             <Row align="between" alignVertical="baseline">
               <Heading level={3}>Kerngegevens</Heading>
               <LinkList>
-                <LinkList.Link href="#" icon={EditDocumentIcon}>
+                <LinkList.Link href="#" icon={DocumentWithPencilIcon}>
                   Wijzig kerngegevens
                 </LinkList.Link>
               </LinkList>
@@ -93,14 +79,14 @@ function Project() {
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Marise Ent</span>
-                    <EmailIcon width={24} fill="#004469" />
+                    <MailIcon width={24} fill="#004469" />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Bestuurlijk Opdrachtgever Stad</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Melanie van der Horst</span>
-                    <EmailIcon width={24} fill="#004469" />
+                    <MailIcon width={24} fill="#004469" />
                   </Row>
                 </DescriptionList.Description>
               </DescriptionList>
@@ -114,35 +100,35 @@ function Project() {
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Paul Brouwer</span>
-                    <EmailIcon width={24} fill="#004469" />
+                    <MailIcon width={24} fill="#004469" />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Opdrachtnemer</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Erik Bakker</span>
-                    <EmailIcon width={24} fill="#004469" />
+                    <MailIcon width={24} fill="#004469" />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Klaas Helmers</span>
-                    <EmailIcon width={24} fill="#004469" />
+                    <MailIcon width={24} fill="#004469" />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Marjolein Boomer</span>
-                    <EmailIcon width={24} fill="#004469" />
+                    <MailIcon width={24} fill="#004469" />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Carina Cairo</span>
-                    <EmailIcon width={24} fill="#004469" />
+                    <MailIcon width={24} fill="#004469" />
                   </Row>
                 </DescriptionList.Description>
               </DescriptionList>
