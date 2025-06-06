@@ -3,25 +3,17 @@
  * Copyright Gemeente Amsterdam
  */
 
-/* eslint-disable react/jsx-props-no-spreading */
-
-import { Icon } from '@amsterdam/design-system-react'
+import { StandaloneLink } from '@amsterdam/design-system-react'
 import { ChevronBackwardIcon } from '@amsterdam/design-system-react-icons'
-import { forwardRef } from 'react'
-import type { AnchorHTMLAttributes, ForwardedRef } from 'react'
 import NextLink from 'next/link'
+import type { AnchorHTMLAttributes } from 'react'
 
-import './back-link.css'
+type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'color'> & {
+  href: string
+}
 
-export type BackLinkProps = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'placeholder'>
-
-export const BackLink = forwardRef(
-  ({ children, className, href, ...otherProps }: BackLinkProps, ref: ForwardedRef<HTMLAnchorElement>) => (
-    <NextLink {...otherProps} className={`ams-back-link ${className}`} href={href} ref={ref}>
-      <Icon svg={ChevronBackwardIcon} size="small" />
-      {children}
-    </NextLink>
-  ),
+export const BackLink = ({ href, ...restProps }: Props) => (
+  <NextLink href={href} legacyBehavior passHref>
+    <StandaloneLink {...restProps} icon={ChevronBackwardIcon} />
+  </NextLink>
 )
-
-BackLink.displayName = 'BackLink'
