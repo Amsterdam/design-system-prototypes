@@ -125,7 +125,7 @@ export default function Controleer() {
             </Column>
           </Accordion.Section>
         </Accordion>
-        <form>
+        <form action="/afspraak-maken/bedankt" method="post">
           <ActionGroup className="ams-mb-m">
             <Button
               formAction="/afspraak-maken/wie"
