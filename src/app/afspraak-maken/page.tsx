@@ -2,6 +2,7 @@
 
 import { Grid, Heading, OrderedList, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
 import { ChevronForwardIcon } from '@amsterdam/design-system-react-icons'
+import NextLink from 'next/link'
 
 export default function Introductie() {
   return (
@@ -31,9 +32,9 @@ export default function Introductie() {
             <strong>Bevestiging</strong> – Controleer de gegevens die u heeft ingevuld. Verstuur de aanvraag.
           </OrderedList.Item>
         </OrderedList>
-        <StandaloneLink href="#" icon={ChevronForwardIcon}>
-          Start het formulier
-        </StandaloneLink>
+        <NextLink href="afspraak-maken/waarvoor" legacyBehavior passHref>
+          <StandaloneLink icon={ChevronForwardIcon}>Start het formulier</StandaloneLink>
+        </NextLink>
       </Grid.Cell>
     </Grid>
   )
