@@ -23,7 +23,7 @@ export default function Waar() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 6 }} start={{ narrow: 1, medium: 2, wide: 4 }}>
         <Heading level={1}>Afspraak maken</Heading>
         <Paragraph className="ams-mb-xl">Stap 1 van 3: Afspraak</Paragraph>
-        <form>
+        <form action="/afspraak-maken/wie" method="post">
           <Field className="ams-mb-l">
             <Label htmlFor="waar">Stadsloket</Label>
             <Select id="waar">
