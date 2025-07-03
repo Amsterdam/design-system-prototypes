@@ -21,7 +21,7 @@ const telCountryCodeOptions = [
   'Bahama’s (+1242)',
   'België (+32)',
   'Duitsland (+49)',
-  'Falklandeilanden (+500)',
+  'Frankrijk (+33)',
   'Malawi (+265)',
 ]
 
@@ -31,7 +31,7 @@ export default function Wie() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 6 }} start={{ narrow: 1, medium: 2, wide: 4 }}>
         <Heading level={1}>Afspraak maken</Heading>
         <Paragraph className="ams-mb-xl">Stap 2 van 3: Uw gegevens</Paragraph>
-        <form>
+        <form action="/afspraak-maken/controleer" method="post">
           <Field className="ams-mb-l">
             <Label htmlFor="given-name">Voornaam</Label>
             <TextInput autoComplete="given-name" id="given-name" size={24} />
@@ -75,7 +75,7 @@ export default function Wie() {
               Vorige vraag
             </Button>
             <Button icon={ChevronForwardIcon} type="submit" variant="primary">
-              Volgende vraag
+              Controleer uw invoer
             </Button>
           </ActionGroup>
           <Button type="submit" variant="tertiary">
