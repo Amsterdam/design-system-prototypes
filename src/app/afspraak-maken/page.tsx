@@ -1,0 +1,14 @@
+'use client'
+
+import { Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+
+export default function HomePage() {
+  return (
+    <Grid paddingBottom="x-large">
+      <Grid.Cell span="all">
+        <Heading level={1}>Afspraak maken</Heading>
+        <Paragraph>Hallo nieuw prototype</Paragraph>
+      </Grid.Cell>
+    </Grid>
+  )
+}
