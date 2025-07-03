@@ -54,6 +54,7 @@
     "typescript-eslint": "8.35.1"
   },
   "overrides": {
+    "eslint": "9.30.1",
     "node-plop": {
       "inquirer": "9.3.5"
     }
