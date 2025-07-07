@@ -5,6 +5,7 @@ import {
   Button,
   DateInput,
   Field,
+  FieldSet,
   Grid,
   Heading,
   Label,
@@ -40,10 +41,22 @@ export default function Wie() {
             <Label htmlFor="family-name">Achternaam</Label>
             <TextInput autoComplete="family-name" id="family-name" size={24} />
           </Field>
-          <Field className="ams-mb-l">
-            <Label htmlFor="bday">Geboortedatum</Label>
-            <DateInput id="bday" />
-          </Field>
+          <FieldSet legend="Geboortedatum" className="ams-mb-l">
+            <Row wrap>
+              <Field>
+                <Label htmlFor="bday">Dag</Label>
+                <TextInput autoComplete="bday-day" id="bday-day" size={2} />
+              </Field>
+              <Field>
+                <Label htmlFor="bday">Maand</Label>
+                <TextInput autoComplete="bday-month" id="bday-month" size={2} />
+              </Field>
+              <Field>
+                <Label htmlFor="bday">Jaar</Label>
+                <TextInput autoComplete="bday-year" id="bday-year" size={4} />
+              </Field>
+            </Row>
+          </FieldSet>
           <Field className="ams-mb-l">
             <Label htmlFor="email">E-mailadres</Label>
             <TextInput autoComplete="email" autoCorrect="off" spellCheck="false" type="email" id="email" size={24} />
