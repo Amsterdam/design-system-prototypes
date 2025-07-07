@@ -26,7 +26,7 @@ export default function Bedankt() {
           U heeft een afspraak gemaakt. Wij sturen een e-mail met de gegevens van uw afspraak naar{' '}
           <Link href="#">micah@live.nl</Link>. U krijgt van ons een e-mail met de gegevens van uw afspraak.
         </Paragraph>
-        <Heading className="ams-mb-xs" level={2} size="level-4">
+        <Heading className="ams-mb-xs" level={2} size="level-3">
           Neem dit mee naar uw afspraak
         </Heading>
         <UnorderedList className="ams-mb-l">

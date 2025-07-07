@@ -11,13 +11,13 @@ export default function Introductie() {
         <Heading className="ams-mb-xl" level={1}>
           Afspraak maken
         </Heading>
-        <Heading className="ams-mb-s" level={2}>
+        <Heading className="ams-mb-xs" level={2} size="level-3">
           Waar u dit formulier voor gebruikt
         </Heading>
         <Paragraph className="ams-mb-xl">
           Met dit formulier maakt u een afspraak bij een Stadsloket in Amsterdam of Weesp.
         </Paragraph>
-        <Heading className="ams-mb-s" level={2}>
+        <Heading className="ams-mb-xs" level={2} size="level-3">
           De stappen in dit formulier
         </Heading>
         <OrderedList className="ams-mb-xl">
