@@ -73,7 +73,7 @@ export default function Wie() {
               </Select>
             </Field>
             <Field>
-              <Label htmlFor="email">Telefoonnummer</Label>
+              <Label htmlFor="phone">Telefoonnummer</Label>
               <TextInput autoComplete="tel" type="tel" id="phone" size={24} />
             </Field>
           </Row>
