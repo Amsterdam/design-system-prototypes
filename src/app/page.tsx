@@ -21,6 +21,9 @@ export default function Signalen() {
             <NextLink href="/amsterdam" legacyBehavior passHref>
               <LinkList.Link>Amsterdam</LinkList.Link>
             </NextLink>
+            <NextLink href="/rijke-tabellen" legacyBehavior passHref>
+              <LinkList.Link>Rijke tabellen</LinkList.Link>
+            </NextLink>
             <NextLink href="/signalen" legacyBehavior passHref>
               <LinkList.Link>Signalen</LinkList.Link>
             </NextLink>

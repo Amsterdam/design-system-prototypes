@@ -1,0 +1,28 @@
+.ams-theme--compact {
+  --ams-switch-inline-size: 2.4rem;
+  --ams-switch-thumb-block-size: 1.2rem;
+  --ams-switch-thumb-inline-size: 1.2rem;
+  --ams-select-border-width: var(--ams-border-width-s);
+  --ams-text-input-border-width: var(--ams-border-width-s);
+}
+
+.ams-select {
+  inline-size: initial;
+  max-inline-size: 100%;
+}
+
+.ams-switch {
+  display: flex;
+}
+
+.ams-table__cell--align-center {
+  text-align: center;
+}
+
+.ams-table__cell--align-end {
+  text-align: end;
+}
+
+.ams-table__cell--nowrap {
+  white-space: nowrap;
+}
