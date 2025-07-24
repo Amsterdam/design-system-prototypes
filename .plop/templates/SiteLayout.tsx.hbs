@@ -1,6 +1,6 @@
 'use client'
 
-import { Grid, Heading, LinkList, Page, PageFooter, PageHeader, Paragraph, SkipLink } from '@amsterdam/design-system-react'
+import { Grid, Heading, LinkList, Logo, Page, PageFooter, PageHeader, Paragraph, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 export default function {{pascalCase name}}({ children }) {
@@ -12,7 +12,11 @@ export default function {{pascalCase name}}({ children }) {
         </Grid.Cell>
       </Grid>
       <PageHeader
-        logoLink={`${process.env.basePath}{{kebabCase name}}`}
+        logoLinkComponent={() => (
+          <NextLink className="ams-page-header__logo-link" href={`${process.env.basePath}{{kebabCase name}}`}>
+            <Logo />
+          </NextLink>
+        )}
         logoLinkTitle="Naar de homepage van {{titleCase name}}"
       />
       <main id="main">{children}</main>

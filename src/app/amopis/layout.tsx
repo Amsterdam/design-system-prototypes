@@ -1,7 +1,7 @@
 'use client'
 
 import { ReactNode } from 'react'
-import { Avatar, Column, Grid, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
+import { Avatar, Column, Grid, Logo, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { Sidebar } from './_components/SideBar/SideBar'
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
@@ -17,7 +17,11 @@ function Amopis({ children }: { children: ReactNode }) {
           <Column gap="none">
             <PageHeader
               brandName="Amopis"
-              logoLink={`${process.env.basePath}amopis`}
+              logoLinkComponent={() => (
+                <NextLink className="ams-page-header__logo-link" href={`${process.env.basePath}amopis`}>
+                  <Logo />
+                </NextLink>
+              )}
               logoLinkTitle="Naar de homepage van Amopis"
               menuItems={<Avatar label="KH" title="Goedemorgen Kees Herder" />}
             />
