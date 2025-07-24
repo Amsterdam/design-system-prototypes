@@ -15,7 +15,7 @@ import {
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
-export default function RijkeTabellen({ children }: PropsWithChildren<{}>) {
+export default function RijkeTabellen({ children }: PropsWithChildren) {
   const [compactMode, setCompactMode] = useState(false)
 
   return (

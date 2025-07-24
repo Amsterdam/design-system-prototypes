@@ -35,7 +35,9 @@ export default function SorterenViaSelect() {
           <Label htmlFor="sortOrder">Sorteren op</Label>
           <Select id="sortOrder" onChange={(e) => setSortOrder(e.target.value as SortOrder)} value={sortOrder}>
             {sortOptions.map(({ label, value }) => (
-              <Select.Option value={value}>{label}</Select.Option>
+              <Select.Option key={value} value={value}>
+                {label}
+              </Select.Option>
             ))}
           </Select>
         </Row>
