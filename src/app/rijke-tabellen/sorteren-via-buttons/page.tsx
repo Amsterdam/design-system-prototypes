@@ -4,8 +4,8 @@ import { Breadcrumb, Grid, Heading, IconButton, Row, Table } from '@amsterdam/de
 import { ArrowDownIcon, ArrowUpIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import { useState } from 'react'
-import { getSortedRanking, ranking, RankingTableBody } from '../common'
 import type { SortOrder, Team } from '../common'
+import { getSortedRanking, ranking, RankingTableBody } from '../common'
 
 export default function SorterenViaButtons() {
   const [sortOrder, setSortOrder] = useState<SortOrder>('position-asc')

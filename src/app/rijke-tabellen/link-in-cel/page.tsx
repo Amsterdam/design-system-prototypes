@@ -6,7 +6,7 @@ import { useSearchParams } from 'next/navigation'
 import { ranking } from '../common'
 import { RankingTableHeaderRow } from '../common/RankingTableHeaderRow'
 
-export default function LinkInCel(props: any) {
+export default function LinkInCel() {
   const searchParams = useSearchParams()
   const selection = Number(searchParams.get('selectie'))
 

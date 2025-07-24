@@ -1,6 +1,5 @@
 'use client'
 
-import { PropsWithChildren, useState } from 'react'
 import {
   Grid,
   Heading,
@@ -14,6 +13,7 @@ import {
   Switch,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+import { PropsWithChildren, useState } from 'react'
 
 export default function RijkeTabellen({ children }: PropsWithChildren) {
   const [compactMode, setCompactMode] = useState(false)

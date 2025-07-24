@@ -3,8 +3,8 @@
 import { Breadcrumb, Grid, Heading, Label, Row, Select, Table } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { useState } from 'react'
-import { getSortedRanking, ranking, RankingTableBody } from '../common'
 import type { SortOrder } from '../common'
+import { getSortedRanking, ranking, RankingTableBody } from '../common'
 import { RankingTableHeaderRow } from '../common/RankingTableHeaderRow'
 
 const sortOptions: Array<{ label: string; value: SortOrder }> = [
