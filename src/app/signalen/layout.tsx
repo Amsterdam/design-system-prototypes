@@ -23,7 +23,7 @@ function Signalen({ children }) {
         <Grid.Cell span="all">
           <SkipLink href="#main">Direct naar inhoud</SkipLink>
           <PageHeader
-            logoLink={`${process.env.basePath}signalen`} // TODO: je kunt hier geen NextLink gebruiken
+            logoLinkComponent={(props) => <NextLink {...props} href={`${process.env.basePath}signalen`} />}
             logoLinkTitle="Naar de homepage van Signalen Amsterdam"
           />
         </Grid.Cell>
