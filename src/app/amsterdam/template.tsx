@@ -36,11 +36,7 @@ function Template({ children }) {
         </Grid.Cell>
       </Grid>
       <PageHeader
-        logoLinkComponent={() => (
-          <NextLink className="ams-page-header__logo-link" href={`${process.env.basePath}amsterdam`}>
-            <Logo />
-          </NextLink>
-        )}
+        logoLinkComponent={(props) => <NextLink {...props} href={`${process.env.basePath}amsterdam`} />}
         logoLinkTitle="Naar de homepage van gemeente Amsterdam"
         menuItems={[
           <PageHeader.MenuLink href="https://mijn.amsterdam.nl/" key={1} rel="external">

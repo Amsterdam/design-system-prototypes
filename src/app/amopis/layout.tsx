@@ -17,11 +17,7 @@ function Amopis({ children }: { children: ReactNode }) {
           <Column gap="none">
             <PageHeader
               brandName="Amopis"
-              logoLinkComponent={() => (
-                <NextLink className="ams-page-header__logo-link" href={`${process.env.basePath}amopis`}>
-                  <Logo />
-                </NextLink>
-              )}
+              logoLinkComponent={(props) => <NextLink {...props} href={`${process.env.basePath}amopis`} />}
               logoLinkTitle="Naar de homepage van Amopis"
               menuItems={<Avatar label="KH" title="Goedemorgen Kees Herder" />}
             />
