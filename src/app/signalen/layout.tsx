@@ -6,7 +6,6 @@ import {
   Grid,
   Heading,
   Link,
-  Logo,
   Page,
   PageFooter,
   PageHeader,

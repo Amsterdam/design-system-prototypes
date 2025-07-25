@@ -1,6 +1,6 @@
 'use client'
 
-import { Breadcrumb, Column, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import { Breadcrumb, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import NextImage from 'next/image'
 import fatbikesImage from '../_assets/fatbikes.jpg'
