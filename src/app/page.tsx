@@ -25,6 +25,9 @@ export default function Signalen() {
               <LinkList.Link>Signalen</LinkList.Link>
             </NextLink>
             {/* Append route import here */}
+            <NextLink href="/afspraak-maken" legacyBehavior passHref>
+              <LinkList.Link>Afspraak maken</LinkList.Link>
+            </NextLink>
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span="all">
