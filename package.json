@@ -17,9 +17,9 @@
     "lint": "next lint",
     "link": "npm link @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
     "unlink": "npm unlink @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
-    "update": "npm-check-updates --configFilePath ./.ncurc.major.js --deep --dep dev,prod --target latest --upgrade && npm install",
-    "update:minor": "npm-check-updates --configFilePath ./.ncurc.minor.js --deep --dep dev,prod --target minor --upgrade && npm install",
-    "update:patch": "npm-check-updates --configFilePath ./.ncurc.patch.js --deep --dep dev,prod --target patch --upgrade && npm install"
+    "update": "npm-check-updates --upgrade && npm install",
+    "update:minor": "npm-check-updates --target minor --upgrade && npm install",
+    "update:patch": "npm-check-updates --target patch --upgrade && npm install"
   },
   "dependencies": {
     "@amsterdam/design-system-assets": "1.0.0",
