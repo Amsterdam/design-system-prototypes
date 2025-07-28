@@ -140,7 +140,7 @@ export default function Controleer() {
               Afspraak bevestigen
             </Button>
           </ActionGroup>
-          <Button type="submit" variant="tertiary">
+          <Button formAction="/afspraak-maken" type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
         </form>

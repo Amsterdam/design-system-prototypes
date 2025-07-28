@@ -1,15 +1,6 @@
 'use client'
 
-import {
-  Grid,
-  Heading,
-  LinkList,
-  Page,
-  PageFooter,
-  PageHeader,
-  Paragraph,
-  SkipLink,
-} from '@amsterdam/design-system-react'
+import { Grid, Heading, LinkList, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import { DocumentIcon, MailIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 
@@ -22,7 +13,7 @@ export default function AfspraakMaken({ children }) {
         </Grid.Cell>
       </Grid>
       <PageHeader
-        logoLink="/afspraak-maken"
+        logoLinkComponent={(props) => <NextLink {...props} href="/afspraak-maken" />}
         logoLinkTitle="Naar de homepage van Afspraak maken"
         menuItems={[
           <PageHeader.MenuLink href="#" key={1} lang="en">
