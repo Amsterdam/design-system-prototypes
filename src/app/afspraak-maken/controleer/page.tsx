@@ -12,6 +12,7 @@ import {
   StandaloneLink,
 } from '@amsterdam/design-system-react'
 import { ChevronBackwardIcon, ChevronForwardIcon } from '@amsterdam/design-system-react-icons'
+import Form from 'next/form'
 
 type ReviewItem = {
   label: string
@@ -125,7 +126,7 @@ export default function Controleer() {
             </Column>
           </Accordion.Section>
         </Accordion>
-        <form action="/afspraak-maken/bedankt" method="post">
+        <Form action="/afspraak-maken/bedankt">
           <ActionGroup className="ams-mb-m">
             <Button
               formAction="/afspraak-maken/wie"
@@ -143,7 +144,7 @@ export default function Controleer() {
           <Button formAction="/afspraak-maken" type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
-        </form>
+        </Form>
       </Grid.Cell>
     </Grid>
   )
