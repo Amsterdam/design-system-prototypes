@@ -1,8 +1,8 @@
 'use client'
 
-import { Grid, Heading, OrderedList, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
-import { ChevronForwardIcon } from '@amsterdam/design-system-react-icons'
+import { Grid, Heading, OrderedList, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+import './afspraak-maken.css'
 
 export default function Introductie() {
   return (
@@ -32,8 +32,8 @@ export default function Introductie() {
             <strong>Bevestiging</strong> – Controleer de gegevens die u heeft ingevuld. Verstuur de aanvraag.
           </OrderedList.Item>
         </OrderedList>
-        <NextLink href="afspraak-maken/waarvoor" legacyBehavior passHref>
-          <StandaloneLink icon={ChevronForwardIcon}>Start het formulier</StandaloneLink>
+        <NextLink href="afspraak-maken/waarvoor" className="ams-call-to-action-link">
+          Start het formulier
         </NextLink>
       </Grid.Cell>
     </Grid>

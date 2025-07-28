@@ -1,19 +1,7 @@
 'use client'
 
-import {
-  Accordion,
-  ActionGroup,
-  Button,
-  Column,
-  Grid,
-  Heading,
-  Link,
-  Paragraph,
-  Row,
-  StandaloneLink,
-  UnorderedList,
-} from '@amsterdam/design-system-react'
-import { ChevronBackwardIcon, ChevronForwardIcon, DownloadIcon } from '@amsterdam/design-system-react-icons'
+import { Grid, Heading, Link, Paragraph, StandaloneLink, UnorderedList } from '@amsterdam/design-system-react'
+import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 
 export default function Bedankt() {
   return (

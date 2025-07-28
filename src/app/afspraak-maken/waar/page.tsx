@@ -10,10 +10,10 @@ import {
   Label,
   Paragraph,
   Select,
-  StandaloneLink,
   TimeInput,
 } from '@amsterdam/design-system-react'
 import { ChevronBackwardIcon, ChevronForwardIcon } from '@amsterdam/design-system-react-icons'
+import Form from 'next/form'
 
 const waarOptions = ['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'West', 'Zuid', 'Zuidoost', 'Weesp']
 
@@ -23,7 +23,7 @@ export default function Waar() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 6 }} start={{ narrow: 1, medium: 2, wide: 4 }}>
         <Heading level={1}>Afspraak maken</Heading>
         <Paragraph className="ams-mb-xl">Stap 1 van 3: Afspraak</Paragraph>
-        <form action="/afspraak-maken/wie" method="post">
+        <Form action="/afspraak-maken/wie">
           <Field className="ams-mb-l">
             <Label htmlFor="waar">Stadsloket</Label>
             <Select id="waar">
@@ -57,10 +57,10 @@ export default function Waar() {
               Volgende vraag
             </Button>
           </ActionGroup>
-          <Button type="submit" variant="tertiary">
+          <Button formAction="/afspraak-maken" type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
-        </form>
+        </Form>
       </Grid.Cell>
     </Grid>
   )

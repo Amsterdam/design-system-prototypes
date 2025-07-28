@@ -3,7 +3,6 @@
 import {
   ActionGroup,
   Button,
-  DateInput,
   Field,
   FieldSet,
   Grid,
@@ -12,10 +11,10 @@ import {
   Paragraph,
   Row,
   Select,
-  StandaloneLink,
   TextInput,
 } from '@amsterdam/design-system-react'
 import { ChevronBackwardIcon, ChevronForwardIcon } from '@amsterdam/design-system-react-icons'
+import Form from 'next/form'
 
 const telCountryCodeOptions = [
   'Nederland (+31)',
@@ -32,7 +31,7 @@ export default function Wie() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 6 }} start={{ narrow: 1, medium: 2, wide: 4 }}>
         <Heading level={1}>Afspraak maken</Heading>
         <Paragraph className="ams-mb-xl">Stap 2 van 3: Uw gegevens</Paragraph>
-        <form action="/afspraak-maken/controleer" method="post">
+        <Form action="/afspraak-maken/controleer">
           <Field className="ams-mb-l">
             <Label htmlFor="given-name">Voornaam</Label>
             <TextInput autoComplete="given-name" id="given-name" size={24} />
@@ -91,10 +90,10 @@ export default function Wie() {
               Controleer uw invoer
             </Button>
           </ActionGroup>
-          <Button type="submit" variant="tertiary">
+          <Button formAction="/afspraak-maken" type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
-        </form>
+        </Form>
       </Grid.Cell>
     </Grid>
   )

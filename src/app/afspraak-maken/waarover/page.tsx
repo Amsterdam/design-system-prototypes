@@ -1,19 +1,10 @@
 'use client'
 
-import {
-  ActionGroup,
-  Button,
-  Field,
-  Grid,
-  Heading,
-  Label,
-  Paragraph,
-  Select,
-  StandaloneLink,
-} from '@amsterdam/design-system-react'
+import { ActionGroup, Button, Field, Grid, Heading, Label, Paragraph, Select } from '@amsterdam/design-system-react'
 import { ChevronBackwardIcon, ChevronForwardIcon } from '@amsterdam/design-system-react-icons'
+import Form from 'next/form'
 
-const waaroverOptions = ['Paspoort aanvragen', 'Paspoor vermist of gestolen', 'Paspoort ophalen']
+const waaroverOptions = ['Paspoort aanvragen', 'Paspoort vermist of gestolen', 'Paspoort ophalen']
 
 export default function Waarover() {
   return (
@@ -21,7 +12,7 @@ export default function Waarover() {
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 6 }} start={{ narrow: 1, medium: 2, wide: 4 }}>
         <Heading level={1}>Afspraak maken</Heading>
         <Paragraph className="ams-mb-xl">Stap 1 van 3: Afspraak</Paragraph>
-        <form action="/afspraak-maken/hoeveel" method="post">
+        <Form action="/afspraak-maken/hoeveel">
           <Field className="ams-mb-xl">
             <Label htmlFor="waarover">Kies waar het over gaat</Label>
             <Select id="waarover">
@@ -47,10 +38,10 @@ export default function Waarover() {
               Volgende vraag
             </Button>
           </ActionGroup>
-          <Button type="submit" variant="tertiary">
+          <Button formAction="/afspraak-maken" type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
-        </form>
+        </Form>
       </Grid.Cell>
     </Grid>
   )
