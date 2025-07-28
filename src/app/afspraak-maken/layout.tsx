@@ -22,7 +22,7 @@ export default function AfspraakMaken({ children }) {
         </Grid.Cell>
       </Grid>
       <PageHeader
-        logoLink={`${process.env.basePath}afspraak-maken`}
+        logoLink="/afspraak-maken"
         logoLinkTitle="Naar de homepage van Afspraak maken"
         menuItems={[
           <PageHeader.MenuLink href="#" key={1} lang="en">
