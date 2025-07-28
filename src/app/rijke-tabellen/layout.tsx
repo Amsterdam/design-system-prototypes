@@ -26,13 +26,8 @@ export default function RijkeTabellen({ children }: PropsWithChildren) {
         </Grid.Cell>
       </Grid>
       <PageHeader
-        logoLink={`${process.env.basePath}rijke-tabellen`}
+        logoLinkComponent={(props) => <NextLink {...props} href="/rijke-tabellen" />}
         logoLinkTitle="Naar de homepage van Rijke tabellen"
-        logoLinkComponent={() => (
-          <NextLink href={`${process.env.basePath}rijke-tabellen`}>
-            <Logo />
-          </NextLink>
-        )}
       />
       <main id="main">{children}</main>
       <PageFooter>
