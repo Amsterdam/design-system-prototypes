@@ -15,6 +15,9 @@ export default function Signalen() {
         </Grid.Cell>
         <Grid.Cell span="all">
           <LinkList>
+            <NextLink href="/afspraak-maken" legacyBehavior passHref>
+              <LinkList.Link>Afspraak maken</LinkList.Link>
+            </NextLink>
             <NextLink href="/amopis" legacyBehavior passHref>
               <LinkList.Link>Amopis</LinkList.Link>
             </NextLink>
@@ -25,9 +28,6 @@ export default function Signalen() {
               <LinkList.Link>Signalen</LinkList.Link>
             </NextLink>
             {/* Append route import here */}
-            <NextLink href="/afspraak-maken" legacyBehavior passHref>
-              <LinkList.Link>Afspraak maken</LinkList.Link>
-            </NextLink>
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span="all">
