@@ -24,7 +24,7 @@ export default function Hoeveel() {
           </Field>
           <ActionGroup className="ams-mb-m">
             <Button
-              formAction="/afspraak-maken/waarover"
+              formAction={`${process.env.basePath}afspraak-maken/waarover`}
               icon={ChevronBackwardIcon}
               iconBefore
               type="submit"
@@ -36,7 +36,7 @@ export default function Hoeveel() {
               Volgende vraag
             </Button>
           </ActionGroup>
-          <Button formAction="/afspraak-maken" type="submit" variant="tertiary">
+          <Button formAction={`${process.env.basePath}afspraak-maken`} type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
         </Form>

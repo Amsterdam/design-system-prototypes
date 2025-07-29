@@ -129,7 +129,7 @@ export default function Controleer() {
         <Form action="/afspraak-maken/bedankt">
           <ActionGroup className="ams-mb-m">
             <Button
-              formAction="/afspraak-maken/wie"
+              formAction={`${process.env.basePath}afspraak-maken/wie`}
               icon={ChevronBackwardIcon}
               iconBefore
               type="submit"
@@ -141,7 +141,7 @@ export default function Controleer() {
               Afspraak bevestigen
             </Button>
           </ActionGroup>
-          <Button formAction="/afspraak-maken" type="submit" variant="tertiary">
+          <Button formAction={`${process.env.basePath}afspraak-maken`} type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
         </Form>

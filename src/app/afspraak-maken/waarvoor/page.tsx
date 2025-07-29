@@ -52,7 +52,7 @@ export default function Waarvoor() {
               Volgende vraag
             </Button>
           </ActionGroup>
-          <Button formAction="/afspraak-maken" type="submit" variant="tertiary">
+          <Button formAction={`${process.env.basePath}afspraak-maken`} type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
         </Form>
