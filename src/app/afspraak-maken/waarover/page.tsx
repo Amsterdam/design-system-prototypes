@@ -26,7 +26,7 @@ export default function Waarover() {
           </Field>
           <ActionGroup className="ams-mb-m">
             <Button
-              formAction={`${process.env.basePath}afspraak-maken/waarvoor`}
+              formAction={`${process.env.basePath}/afspraak-maken/waarvoor`}
               icon={ChevronBackwardIcon}
               iconBefore
               type="submit"
@@ -38,7 +38,7 @@ export default function Waarover() {
               Volgende vraag
             </Button>
           </ActionGroup>
-          <Button formAction={`${process.env.basePath}afspraak-maken`} type="submit" variant="tertiary">
+          <Button formAction={`${process.env.basePath}/afspraak-maken`} type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
         </Form>
