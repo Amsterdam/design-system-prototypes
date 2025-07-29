@@ -45,7 +45,7 @@ export default function Waar() {
           </Field>
           <ActionGroup className="ams-mb-m">
             <Button
-              formAction="/afspraak-maken/hoeveel"
+              formAction={`${process.env.basePath}afspraak-maken/hoeveel`}
               icon={ChevronBackwardIcon}
               iconBefore
               type="submit"
@@ -57,7 +57,7 @@ export default function Waar() {
               Volgende vraag
             </Button>
           </ActionGroup>
-          <Button formAction="/afspraak-maken" type="submit" variant="tertiary">
+          <Button formAction={`${process.env.basePath}afspraak-maken`} type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
         </Form>
