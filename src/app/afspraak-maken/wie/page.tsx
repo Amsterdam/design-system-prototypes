@@ -78,7 +78,7 @@ export default function Wie() {
           </Row>
           <ActionGroup className="ams-mb-m">
             <Button
-              formAction={`${process.env.basePath}afspraak-maken/waar`}
+              formAction={`${process.env.basePath}/afspraak-maken/waar`}
               icon={ChevronBackwardIcon}
               iconBefore
               type="submit"
@@ -90,7 +90,7 @@ export default function Wie() {
               Controleer uw invoer
             </Button>
           </ActionGroup>
-          <Button formAction={`${process.env.basePath}afspraak-maken`} type="submit" variant="tertiary">
+          <Button formAction={`${process.env.basePath}/afspraak-maken`} type="submit" variant="tertiary">
             Opslaan en later verder
           </Button>
         </Form>

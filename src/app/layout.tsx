@@ -9,10 +9,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="nl">
       <head>
-        <link rel="icon" href={`${process.env.basePath}favicon/favicon.ico`} sizes="16x16 32x32 48x48 64x64" />
-        <link rel="icon" href={`${process.env.basePath}favicon/icon.svg`} type="image/svg+xml" />
-        <link rel="apple-touch-icon" href={`${process.env.basePath}favicon/apple-touch-icon.png`} />
-        <link rel="manifest" href={`${process.env.basePath}app.webmanifest`} />
+        <link rel="icon" href={`${process.env.basePath}/favicon/favicon.ico`} sizes="16x16 32x32 48x48 64x64" />
+        <link rel="icon" href={`${process.env.basePath}/favicon/icon.svg`} type="image/svg+xml" />
+        <link rel="apple-touch-icon" href={`${process.env.basePath}/favicon/apple-touch-icon.png`} />
+        <link rel="manifest" href={`${process.env.basePath}/app.webmanifest`} />
         <title>{docTitle}</title>
       </head>
       <body className="ams-body">{children}</body>

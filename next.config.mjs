@@ -9,7 +9,7 @@ const nextConfig = (phase) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
       env: {
-        basePath: '/',
+        basePath: '',
       },
     }
   }
@@ -17,7 +17,7 @@ const nextConfig = (phase) => {
   return {
     basePath: '/design-system-prototypes',
     env: {
-      basePath: '/design-system-prototypes/',
+      basePath: '/design-system-prototypes',
     },
     output: 'export',
     images: { unoptimized: true },
