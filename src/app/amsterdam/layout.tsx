@@ -1,6 +1,6 @@
 'use client'
 
-import { Column, Grid, Heading, Link, LinkList, Page, PageFooter, Paragraph } from '@amsterdam/design-system-react'
+import { Grid, Heading, Link, LinkList, Page, PageFooter, Paragraph } from '@amsterdam/design-system-react'
 import {
   ClockIcon,
   FacebookIcon,
