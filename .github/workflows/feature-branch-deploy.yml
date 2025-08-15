@@ -1,0 +1,82 @@
+# Based on https://evilmartians.com/chronicles/super-github-pages-budget-frontend-staging-with-storybook-and-more
+
+name: Feature branch build and deploy
+
+on:
+  push:
+    branches-ignore: [main]
+  pull_request:
+    types: [reopened]
+
+permissions:
+  contents: write
+  deployments: write
+
+jobs:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }}
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    steps:
+      - name: Create branch name without text before first forward slash
+        run: |
+          RAW_BRANCH_NAME=${{ github.head_ref || github.ref_name }}
+          BRANCH_NAME=$(echo $RAW_BRANCH_NAME | sed 's/[^/]*\///')
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+
+      - name: Check out
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+
+      - name: Create deployment
+        uses: bobheadxi/deployments@648679e8e4915b27893bd7dbc35cb504dc915bc8 # v1.5.0
+        id: deployment
+        with:
+          step: start
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: demo-${{ env.BRANCH_NAME }}
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          cache: pnpm
+          node-version-file: .nvmrc
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build Storybook
+        env:
+          STORYBOOK_BUILD_PATH: demo-${{ env.BRANCH_NAME }}
+        run: pnpm --filter=storybook build
+
+      - name: Create a version mark
+        run: |
+          touch ./storybook/dist/${{ github.sha }}.txt
+
+      - name: Pushing to pages branch
+        uses: JamesIves/github-pages-deploy-action@6c2d9db40f9296374acc17b90404b6e8864128c8 # v4.7.3
+        with:
+          branch: gh-pages
+          folder: storybook/dist
+          target-folder: demo-${{ env.BRANCH_NAME }}
+
+      - name: Wait for GitHub Pages to be deployed
+        uses: mydea/action-wait-for-api@45d9c58e690337a05eb5ae14a1478f29eacbf9db # v2.0.0
+        with:
+          url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/demo-${{ env.BRANCH_NAME }}/${{ github.sha }}.txt
+          expected-status: 200
+          timeout: 600
+          interval: 15
+
+      - name: Update deployment status
+        uses: bobheadxi/deployments@648679e8e4915b27893bd7dbc35cb504dc915bc8 # v1.5.0
+        if: always()
+        with:
+          step: finish
+          token: ${{ secrets.GITHUB_TOKEN }}
+          status: ${{ job.status }}
+          env: ${{ steps.deployment.outputs.env }}
+          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+          env_url: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/demo-${{ env.BRANCH_NAME }}

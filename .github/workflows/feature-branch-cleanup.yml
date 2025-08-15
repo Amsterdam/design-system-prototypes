@@ -1,0 +1,53 @@
+# Based on https://evilmartians.com/chronicles/super-github-pages-budget-frontend-staging-with-storybook-and-more
+
+name: Feature branch cleanup
+
+on:
+  pull_request:
+    types: [closed]
+
+permissions:
+  contents: write
+  deployments: write
+
+env:
+  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
+jobs:
+  remove_stale_pages:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    steps:
+      - name: Create branch name without text before first forward slash
+        run: |
+          RAW_BRANCH_NAME=${{ github.head_ref || github.ref_name }}
+          BRANCH_NAME=$(echo $RAW_BRANCH_NAME | sed 's/[^/]*\///')
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+
+      - name: Check out branch to access .nvmrc
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version-file: .nvmrc
+
+      - name: Check out gh-pages branch
+        uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+        with:
+          ref: gh-pages
+
+      - name: Delete folder
+        run: |
+          git config --global user.name GitHub Action
+          git config --global user.email github-action@users.noreply.github.com
+          git rm demo-${{ env.BRANCH_NAME }} -r
+          git add .
+          git commit -m "Remove feature branch folder"
+          git push
+
+      - name: Deactivate deployment
+        uses: bobheadxi/deployments@648679e8e4915b27893bd7dbc35cb504dc915bc8 # v1.5.0
+        if: always()
+        with:
+          step: deactivate-env
+          token: ${{ secrets.GITHUB_TOKEN }}
+          env: demo-${{ env.BRANCH_NAME }}
