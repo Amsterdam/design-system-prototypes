@@ -35,31 +35,27 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           env: demo-${{ env.BRANCH_NAME }}
 
-      - name: Install pnpm
-        uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
-
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
         with:
-          cache: pnpm
           node-version-file: .nvmrc
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: npm ci
 
-      - name: Build Storybook
+      - name: Build with Next.js
         env:
-          STORYBOOK_BUILD_PATH: demo-${{ env.BRANCH_NAME }}
-        run: pnpm --filter=storybook build
+          NEXT_PUBLIC_BASE_PATH: demo-${{ env.BRANCH_NAME }}
+        run: npm run build
 
       - name: Create a version mark
         run: |
-          touch ./storybook/dist/${{ github.sha }}.txt
+          touch ./out/${{ github.sha }}.txt
 
       - name: Pushing to pages branch
         uses: JamesIves/github-pages-deploy-action@6c2d9db40f9296374acc17b90404b6e8864128c8 # v4.7.3
         with:
           branch: gh-pages
-          folder: storybook/dist
+          folder: /out
           target-folder: demo-${{ env.BRANCH_NAME }}
 
       - name: Wait for GitHub Pages to be deployed
