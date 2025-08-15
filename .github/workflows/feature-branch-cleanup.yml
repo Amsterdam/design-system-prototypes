@@ -10,8 +10,6 @@ permissions:
   contents: write
   deployments: write
 
-env:
-  BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
 jobs:
   remove_stale_pages:
     runs-on: ubuntu-latest
@@ -39,9 +37,9 @@ jobs:
         run: |
           git config --global user.name GitHub Action
           git config --global user.email github-action@users.noreply.github.com
-          git rm demo-${{ env.BRANCH_NAME }} -r
+          git rm -rf demo-${{ env.BRANCH_NAME }}
           git add .
-          git commit -m "Remove feature branch folder"
+          git commit --allow-empty -m "Remove feature branch folder"
           git push
 
       - name: Deactivate deployment
