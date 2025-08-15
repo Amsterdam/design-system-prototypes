@@ -15,9 +15,9 @@ const nextConfig = (phase) => {
   }
 
   return {
-    basePath: '/design-system-prototypes',
+    basePath: `/design-system-prototypes/${process.env.NEXT_PUBLIC_BASE_PATH}`,
     env: {
-      basePath: '/design-system-prototypes',
+      basePath: `/design-system-prototypes/${process.env.NEXT_PUBLIC_BASE_PATH}`,
     },
     output: 'export',
     images: { unoptimized: true },
