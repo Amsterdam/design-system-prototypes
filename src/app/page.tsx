@@ -28,6 +28,9 @@ export default function Signalen() {
               <LinkList.Link>Signalen</LinkList.Link>
             </NextLink>
             {/* Append route import here */}
+            <NextLink href="/camping-vliegenbos" legacyBehavior passHref>
+              <LinkList.Link>Camping Vliegenbos</LinkList.Link>
+            </NextLink>
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span="all">

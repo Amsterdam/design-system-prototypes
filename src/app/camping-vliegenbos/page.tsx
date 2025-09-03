@@ -1,0 +1,83 @@
+'use client'
+
+import NextImage from 'next/image'
+import { Card, Grid, Heading, Overlap, Paragraph } from '@amsterdam/design-system-react'
+
+import pictureCampingImage from './_assets/picture-camping.jpg'
+import aboutCampingImage from './_assets/about-the-camping.jpg'
+import searchAndBookImage from './_assets/search-and-book.jpg'
+import routeImage from './_assets/route.jpeg'
+import marqueeImage from './_assets/marquee.jpg'
+import campersAndCaravansImage from './_assets/campers-and-caravans.jpg'
+import trekkersHuttenimage from './_assets/trekkershutten.jpg'
+
+const cards = [
+  {
+    label: 'Over de camping',
+    href: '/over-de-camping',
+    img: aboutCampingImage,
+  },
+  {
+    label: 'Zoek en boek',
+    href: '/zoek-en-boek',
+    img: searchAndBookImage,
+  },
+  {
+    label: 'Route',
+    href: '/route',
+    img: routeImage,
+  },
+  {
+    label: 'Tenten',
+    href: '/tenten',
+    img: marqueeImage,
+  },
+  {
+    label: 'Campers en caravans',
+    href: '/campers-en-caravans',
+    img: campersAndCaravansImage,
+  },
+  {
+    label: 'Trekkershutten',
+    href: '/trekkershutten',
+    img: trekkersHuttenimage,
+  },
+]
+
+export default function HomePage() {
+  return (
+    <>
+      <Grid paddingBottom="large" as="section">
+        <Grid.Cell span="all">
+          <Overlap>
+            <NextImage src={pictureCampingImage} className="ams-image ams-aspect-ratio-16-5" alt="" />
+
+            <Grid style={{ alignSelf: 'flex-end' }} paddingBottom="large">
+              <Grid.Cell span={8}>
+                <div className="vliegenbos-notice">
+                  <Heading level={1}>Welkom op camping Vliegenbos</Heading>
+                  <Paragraph>
+                    Camping Vliegenbos is in Amsterdam Noord, vlakbij de gratis veerboot naar het centrum van Amsterdam.
+                  </Paragraph>
+                </div>
+              </Grid.Cell>
+            </Grid>
+          </Overlap>
+        </Grid.Cell>
+      </Grid>
+
+      <Grid paddingBottom="2x-large" paddingTop="large">
+        {cards.map((card, idx) => (
+          <Grid.Cell span={4} key={`${idx}-card`}>
+            <Card>
+              <Card.Image alt="" aspectRatio="4:3" src={card.img.src} />
+              <Card.Heading level={4}>
+                <Card.Link href={card.href}>{card.label}</Card.Link>
+              </Card.Heading>
+            </Card>
+          </Grid.Cell>
+        ))}
+      </Grid>
+    </>
+  )
+}
