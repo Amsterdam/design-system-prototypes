@@ -2,3 +2,11 @@
   background-color: var(--ams-color-background);
   padding: var(--ams-space-l);
 }
+
+.vliegenbos-home-image {
+  height: 100%;
+
+  @media screen and (min-width: $ams-breakpoint-wide) {
+    height: auto;
+  }
+}

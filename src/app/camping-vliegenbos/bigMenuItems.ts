@@ -3,7 +3,7 @@ const bigMenuItems = [
     heading: 'Nederlands',
     items: [
       {
-        href: '/camping-vliegenbos/',
+        href: '/camping-vliegenbos/over-de-camping',
         label: 'Over de camping',
       },
       {
