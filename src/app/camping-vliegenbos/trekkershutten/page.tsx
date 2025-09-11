@@ -15,7 +15,7 @@ import {
   UnorderedList,
 } from '@amsterdam/design-system-react'
 import { useSearchParams } from 'next/navigation'
-import { useEffect, useState } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import { TommyEndpointResponse } from './types'
 
 function extractListItems(htmlString: string) {
@@ -28,6 +28,14 @@ function extractListItems(htmlString: string) {
 }
 
 export default function Trekkershutten() {
+  return (
+    <Suspense>
+      <InnerPage></InnerPage>
+    </Suspense>
+  )
+}
+
+const InnerPage = () => {
   const [data, setData] = useState<TommyEndpointResponse['data'][0]['metadata']['accommodations'][0] | null>(null)
   const [loading, setLoading] = useState(true)
   const searchParams = useSearchParams()
