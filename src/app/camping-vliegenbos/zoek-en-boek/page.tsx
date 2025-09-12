@@ -347,7 +347,9 @@ export default function ZoekEnBoek() {
                       ))}
                   </UnorderedList>
                 </Column>
-                <StandaloneLink href={`trekkershutten?id=${accommodation.id}`}>Meer lezen</StandaloneLink>
+                <StandaloneLink href={`camping-vliegenbos/huren-kamperen?id=${accommodation.id}`}>
+                  Meer lezen
+                </StandaloneLink>
               </Card>
             </Grid.Cell>
           ))}

@@ -14,32 +14,32 @@ import trekkersHuttenimage from './_assets/trekkershutten.jpg'
 const cards = [
   {
     label: 'Over de camping',
-    href: '/camping-vliegenbos/over-de-camping',
+    href: 'camping-vliegenbos/over-de-camping',
     img: aboutCampingImage,
   },
   {
     label: 'Zoek en boek',
-    href: '/camping-vliegenbos/zoek-en-boek',
+    href: 'camping-vliegenbos/zoek-en-boek',
     img: searchAndBookImage,
   },
   {
     label: 'Route',
-    href: '/camping-vliegenbos/route',
+    href: 'camping-vliegenbos/route',
     img: routeImage,
   },
   {
     label: 'Tenten',
-    href: '/camping-vliegenbos/tenten',
+    href: 'camping-vliegenbos/tenten',
     img: marqueeImage,
   },
   {
     label: 'Campers en caravans',
-    href: '/camping-vliegenbos/campers-en-caravans',
+    href: 'camping-vliegenbos/campers-en-caravans',
     img: campersAndCaravansImage,
   },
   {
     label: 'Trekkershutten',
-    href: '/camping-vliegenbos/trekkershutten',
+    href: 'camping-vliegenbos/trekkershutten',
     img: trekkersHuttenimage,
   },
 ]
