@@ -10,6 +10,7 @@ import {
   Image,
   ImageSlider,
   Link,
+  LinkList,
   Paragraph,
   StandaloneLink,
   UnorderedList,

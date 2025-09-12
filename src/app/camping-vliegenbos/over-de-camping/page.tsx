@@ -28,7 +28,6 @@ export default function OverDeCamping() {
             <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
               <Breadcrumb>
                 <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
-                <Breadcrumb.Link href="/camping-vliegenbos/over-de-camping">Over de camping</Breadcrumb.Link>
               </Breadcrumb>
               <Heading size="level-2" level={1}>
                 Over camping Vliegenbos
