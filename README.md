@@ -1,7 +1,5 @@
 # Amsterdam Design System Prototypes
 
-TEST
-
 A prototyping environment for the React Library of the [Amsterdam Design System](https://github.com/Amsterdam/design-system).
 
 ## Goals
