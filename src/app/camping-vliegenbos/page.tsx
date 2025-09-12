@@ -55,7 +55,6 @@ export default function HomePage() {
               className="ams-image ams-aspect-ratio-16-5 vliegenbos-home-image"
               alt=""
             />
-
             <Grid style={{ alignSelf: 'flex-end' }} paddingBottom="large">
               <Grid.Cell span={8}>
                 <div className="vliegenbos-notice">
@@ -71,8 +70,7 @@ export default function HomePage() {
           </Overlap>
         </Grid.Cell>
       </Grid>
-
-      <Grid paddingBottom="large" paddingTop="large" as="section">
+      <Grid paddingBottom="large" as="section">
         {cards.map((card, idx) => (
           <Grid.Cell span={4} key={`${idx}-card`}>
             <Card>
@@ -83,10 +81,6 @@ export default function HomePage() {
             </Card>
           </Grid.Cell>
         ))}
-      </Grid>
-
-      <Grid paddingBottom="large" paddingTop="large" as="section">
-        <Heading level={2}>Prijzen</Heading>
       </Grid>
     </>
   )
