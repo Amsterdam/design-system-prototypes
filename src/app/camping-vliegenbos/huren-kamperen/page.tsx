@@ -95,8 +95,6 @@ const InnerPage = () => {
     src: image.original,
   }))
 
-  console.log(reformattedImages)
-
   return (
     <Grid gapVertical="large" paddingBottom="large" as="section">
       <Grid.Cell span="all">
