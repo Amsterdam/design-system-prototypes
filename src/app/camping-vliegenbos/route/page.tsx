@@ -1,7 +1,9 @@
 'use client'
 
 import { Breadcrumb, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
-import ZoomControls from './components/ZoomControls'
+import dynamic from 'next/dynamic'
+
+const Map = dynamic(() => import('./components/ZoomControls'), { ssr: false })
 
 export default function Route() {
   return (
@@ -14,7 +16,14 @@ export default function Route() {
           Route
         </Heading>
         <Paragraph className="ams-mb-s">Je kunt Camping Vliegenbos vinden aan de Meeuwenlaan 138</Paragraph>
-        <ZoomControls />
+        <div
+          style={{
+            // NOTE: Because the Map component loads in dynamically we need to set a min height to prevent layout shift
+            minHeight: '460px',
+          }}
+        >
+          <Map />
+        </div>
       </Grid.Cell>
     </Grid>
   )

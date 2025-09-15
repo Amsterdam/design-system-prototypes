@@ -72,9 +72,10 @@ const MapProvider: FunctionComponent<MapProps> = ({ scrollWheelZoom, children })
       <div
         ref={containerRef}
         style={{
-          height: '460px',
           position: 'relative',
           width: '100%',
+          minHeight: '320px',
+          aspectRatio: 16 / 9,
         }}
       >
         {!!mapInstance && <MapContext.Provider value={{ mapInstance }}>{children}</MapContext.Provider>}
