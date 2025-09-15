@@ -139,7 +139,7 @@ export default function ZoekEnBoek() {
     <>
       <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-          <Heading level={1} size="level-3">
+          <Heading level={1} size="level-2">
             Zoek en boek
           </Heading>
           <Paragraph>

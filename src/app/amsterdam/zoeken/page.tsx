@@ -44,7 +44,7 @@ function Zoeken() {
         <Column>
           {filterPanel.map(({ title, filters }) => (
             <Column key={title}>
-              <Heading level={2} size="level-4">
+              <Heading level={2} size="level-2">
                 {title}
               </Heading>
               {filters.map(({ label, hits }) => (

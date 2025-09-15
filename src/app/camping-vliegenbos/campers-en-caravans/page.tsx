@@ -27,7 +27,9 @@ export default function Tenten() {
               <Breadcrumb>
                 <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
               </Breadcrumb>
-              <Heading level={1}>Campers en caravans</Heading>
+              <Heading level={1} size="level-2">
+                Campers en caravans
+              </Heading>
               <Paragraph>
                 Camping Vliegenbos heeft halfverharde plekken voor campers, kampeerauto's, caravans en vouwwagens. Op de
                 camping is ook een servicepunt voor drinkwater, vuilwater en chemisch toilet.

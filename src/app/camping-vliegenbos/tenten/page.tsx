@@ -25,7 +25,9 @@ export default function Tenten() {
               <Breadcrumb>
                 <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
               </Breadcrumb>
-              <Heading level={1}>Tenten</Heading>
+              <Heading level={1} size="level-2">
+                Tenten
+              </Heading>
               <Paragraph>
                 Kamperen dichtbij het centrum van Amsterdam? Kom naar camping Vliegenbos en je hebt het beste van 2
                 werelden. Stad en natuur! De camping is open voor tenten tussen april en oktober.
