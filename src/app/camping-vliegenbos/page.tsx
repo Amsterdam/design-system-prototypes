@@ -69,18 +69,20 @@ export default function HomePage() {
             </Grid>
           </Overlap>
         </Grid.Cell>
-      </Grid>
-      <Grid paddingBottom="large" as="section">
-        {cards.map((card, idx) => (
-          <Grid.Cell span={4} key={`${idx}-card`}>
-            <Card>
-              <Card.Image alt="" src={card.img.src} />
-              <Card.Heading level={4}>
-                <Card.Link href={card.href}>{card.label}</Card.Link>
-              </Card.Heading>
-            </Card>
-          </Grid.Cell>
-        ))}
+        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 10 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
+          <Grid>
+            {cards.map((card, idx) => (
+              <Grid.Cell span={4} key={`${idx}-card`}>
+                <Card>
+                  <Card.Image alt="" src={card.img.src} />
+                  <Card.Heading level={4}>
+                    <Card.Link href={card.href}>{card.label}</Card.Link>
+                  </Card.Heading>
+                </Card>
+              </Grid.Cell>
+            ))}
+          </Grid>
+        </Grid.Cell>
       </Grid>
     </>
   )

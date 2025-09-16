@@ -80,7 +80,7 @@ export default function Tenten() {
           </Alert>
         </Breakout.Cell>
       </Breakout>
-      <Grid gapVertical="large" as="section">
+      <Grid as="section" paddingVertical="large">
         <Grid.Cell
           span={{ narrow: 4, medium: 5, wide: 7 }}
           start={{ narrow: 1, medium: 2, wide: 3 }}
@@ -93,7 +93,7 @@ export default function Tenten() {
             We maken geen onderscheid tussen een camper, caravan of vouwwagen. U mag elke plek kiezen, als uw camper of
             combinatie maar de juiste lengte heeft.
           </Paragraph>
-          <DescriptionList>
+          <DescriptionList className="ams-mb-m">
             <DescriptionList.Term>Auto- of camperplek Basic</DescriptionList.Term>
             <DescriptionList.Description>
               <UnorderedList>

@@ -69,7 +69,7 @@ export default function Tenten() {
           </StandaloneLink>
         </Breakout.Cell>
       </Breakout>
-      <Grid gapVertical="large" as="section">
+      <Grid gapVertical="large" paddingVertical="large" as="section">
         <Grid.Cell
           span={{ narrow: 4, medium: 5, wide: 7 }}
           start={{ narrow: 1, medium: 2, wide: 3 }}

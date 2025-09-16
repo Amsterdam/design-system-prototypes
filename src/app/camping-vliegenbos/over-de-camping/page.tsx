@@ -22,7 +22,7 @@ import mapCampingImage from '../_assets/map_camping.jpg'
 export default function OverDeCamping() {
   return (
     <>
-      <Grid gapVertical="large" as="section">
+      <Grid as="section">
         <Grid.Cell span="all">
           <Grid>
             <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
@@ -182,7 +182,7 @@ export default function OverDeCamping() {
         </Grid.Cell>
       </Grid>
       <Spotlight color="azure">
-        <Grid gapVertical="2x-large" paddingVertical="x-large">
+        <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
             <Heading level={2} color="inverse" size="level-3">
               Reserveren
@@ -192,7 +192,7 @@ export default function OverDeCamping() {
               dagen op de camping blijven. In onderstaande gevallen kun je niet online reserveren en moet je contact
               opnemen met de receptie.
             </Paragraph>
-            <UnorderedList color="inverse">
+            <UnorderedList color="inverse" className="ams-mb-s">
               <UnorderedList.Item>Verblijf van 1 nacht in een trekkershut </UnorderedList.Item>
               <UnorderedList.Item>Verblijf langer dan 7 nachten </UnorderedList.Item>
               <UnorderedList.Item>Verblijf met meer dan 4 personen in 1 hut </UnorderedList.Item>
