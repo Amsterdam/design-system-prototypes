@@ -18,7 +18,7 @@ import './camping-vliegenbos.css'
 
 const menuLinks = [
   {
-    href: '/reserveren',
+    href: '/camping-vliegenbos/reserveren',
     label: 'Reserveren / Reservation',
   },
 ]

@@ -11,11 +11,11 @@ import {
   UnorderedList,
 } from '@amsterdam/design-system-react'
 
-import cityCamperImage1 from '../../_assets/city-camper-amsterdam.jpg'
-import cityCamperImage2 from '../../_assets/city-camper-amsterdam-2.jpg'
-import cityCamperImage3 from '../../_assets/city-camper-amsterdam-3.jpg'
-import cityCamperImage4 from '../../_assets/city-camper-amsterdam-4.jpeg'
-import cityCamperImage5 from '../../_assets/city-camper-amsterdam-5.jpeg'
+import cityCamperImage1 from '../../_assets/city-cabin-vliegenbos-1.jpg'
+import cityCamperImage2 from '../../_assets/city-cabin-vliegenbos-2.jpg'
+import cityCamperImage3 from '../../_assets/city-cabin-vliegenbos-3.jpg'
+import cityCamperImage4 from '../../_assets/city-cabin-vliegenbos-4.jpg'
+import cityCamperImage5 from '../../_assets/city-cabin-vliegenbos-5.jpg'
 
 const images = [cityCamperImage1, cityCamperImage2, cityCamperImage3, cityCamperImage4, cityCamperImage5]
 const reformattedImages = images.map((image) => ({
@@ -47,9 +47,9 @@ export default function CityCabinAmsterdam() {
             <Breadcrumb.Link href="/camping-vliegenbos/trekkershutten">Trekkershutten</Breadcrumb.Link>
           </Breadcrumb>
           <Heading level={1} size="level-2">
-            City Cabin 'Amsterdam'
+            City Cabin 'Vliegenbos'
           </Heading>
-          <Paragraph>De trekkershut is geïnspireerd op een Zweeds langhuis.</Paragraph>
+          <Paragraph>De trekkershut is gemaakt met gerecycled materiaal.</Paragraph>
           <StandaloneLink href="/camping-vliegenbos/reserveren">Reserveer online</StandaloneLink>
         </Grid.Cell>
         <Grid.Cell span="all" className="ams-mb-l">
@@ -59,7 +59,7 @@ export default function CityCabinAmsterdam() {
           <Grid>
             <Grid.Cell span={6}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!4v1757946479997!6m8!1m7!1sCAoSLEFGMVFpcE5pTnhIYTZTaXBxb2t1eU1KTTFRb1Q0R3JqOG9IVU1EZFZFNDFU!2m2!1d52.39125479165292!2d4.931651391306213!3f214.39!4f-12.060000000000002!5f0.4000000000000002"
+                src="https://www.google.com/maps/embed?pb=!4v1758011480356!6m8!1m7!1sCAoSLEFGMVFpcE1Cd0dxTXZYb3RIeU5CMmJIZHBxTVNsVVBqaXVnRDBOamItOVVZ!2m2!1d52.39125026793637!2d4.931213150507417!3f290.4!4f0!5f0.7820865974627469"
                 width="100%"
                 height="450"
                 style={{ border: 0 }}
@@ -69,10 +69,10 @@ export default function CityCabinAmsterdam() {
             </Grid.Cell>
             <Grid.Cell span={6}>
               <UnorderedList>
-                <UnorderedList.Item>2 eenpersoonsbedden en 1 stapelbed inclusief beddengoed</UnorderedList.Item>
-                <UnorderedList.Item>Een ingerichte Kitchenette met minikoelkast</UnorderedList.Item>
+                <UnorderedList.Item>2 tweepersoonsbedden (opklapbed) inclusief beddengoed.</UnorderedList.Item>
+                <UnorderedList.Item>Een ingerichte Kitchenette met minikoelkast.</UnorderedList.Item>
                 <UnorderedList.Item>Een eigen toilet</UnorderedList.Item>
-                <UnorderedList.Item>Tafel met een bank en 2 stoelen</UnorderedList.Item>
+                <UnorderedList.Item>Tafel met een bank en 2 krukjes.</UnorderedList.Item>
                 <UnorderedList.Item>Vloerverwarming</UnorderedList.Item>
                 <UnorderedList.Item>Veranda</UnorderedList.Item>
               </UnorderedList>

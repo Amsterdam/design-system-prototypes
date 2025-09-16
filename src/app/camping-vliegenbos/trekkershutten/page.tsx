@@ -1,17 +1,6 @@
 'use client'
 
-import {
-  Breadcrumb,
-  Card,
-  Grid,
-  Heading,
-  Image,
-  Link,
-  Paragraph,
-  Spotlight,
-  Tabs,
-  UnorderedList,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Grid, Heading, Image, Link, Paragraph } from '@amsterdam/design-system-react'
 import trekkershuttenImage from '../_assets/trekkershutten-head.jpg'
 import card1 from '../_assets/city-camper-amsterdam.jpg'
 import card2 from '../_assets/city-cabin-noord.jpeg'
@@ -45,21 +34,15 @@ const cards = [
   },
 ]
 
-const goodToKnow = [
-  'De trekkershutten zijn geschikt voor 4 personen. Neem contact op met de receptie als je met 5 personen wil komen',
-  'Parkeerplaatsen zijn beperkt en niet te reserveren. We raden aan om niet met de auto te komen, tenzij het niet anders kan. Er is goed openbaar vervoer naar het centrum.',
-  'Bij de trekkershut zijn ook schoonmaakspullen. Als je de hut niet schoon achterlaat, rekenen we schoonmaakkosten.',
-  'Roken is niet toegestaan in de trekkershutten.',
-  'Huisdieren zijn niet toegestaan.',
-]
-
-const arrivalDeparture = ['Aankomst vanaf 15.00 uur', 'Vertrek tot 11.00 uur']
-
 export default function Trekkershutten() {
   return (
     <>
-      <Grid paddingBottom="large">
-        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
+      <Grid paddingBottom="large" gapVertical="none">
+        <Grid.Cell
+          span={{ narrow: 4, medium: 6, wide: 8 }}
+          start={{ narrow: 1, medium: 1, wide: 2 }}
+          className="ams-mb-m"
+        >
           <Breadcrumb>
             <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
           </Breadcrumb>
@@ -72,7 +55,7 @@ export default function Trekkershutten() {
             zijn daarom ook heel geschikt om te huren als groep.
           </Paragraph>
         </Grid.Cell>
-        <Grid.Cell span="all">
+        <Grid.Cell span="all" className="ams-mb-l">
           <Image src={trekkershuttenImage.src} alt="" />
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
@@ -99,30 +82,6 @@ export default function Trekkershutten() {
             </Card>
           </Grid.Cell>
         ))}
-      </Grid>
-      <Grid paddingBottom="large">
-        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-          <Tabs>
-            <Tabs.List>
-              <Tabs.Button aria-controls="goed-om-te-weten">Goed om te weten</Tabs.Button>
-              <Tabs.Button aria-controls="aankomst-en-vertrek">Aankomst en vertrek</Tabs.Button>
-            </Tabs.List>
-            <Tabs.Panel id="goed-om-te-weten">
-              <UnorderedList>
-                {goodToKnow.map((item, index) => (
-                  <UnorderedList.Item key={`${index}-goodtoknow-item`}>{item}</UnorderedList.Item>
-                ))}
-              </UnorderedList>
-            </Tabs.Panel>
-            <Tabs.Panel id="aankomst-en-vertrek">
-              <UnorderedList>
-                {arrivalDeparture.map((item, index) => (
-                  <UnorderedList.Item key={`${index}-arrival-departure-item`}>{item}</UnorderedList.Item>
-                ))}
-              </UnorderedList>
-            </Tabs.Panel>
-          </Tabs>
-        </Grid.Cell>
       </Grid>
     </>
   )

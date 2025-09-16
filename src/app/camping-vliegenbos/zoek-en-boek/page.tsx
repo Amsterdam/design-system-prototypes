@@ -110,14 +110,12 @@ export default function ZoekEnBoek() {
         .then((res) => res.json())
         .then((response) => {
           const result = response as ITommyAvailabilityResult
-          console.log({ result, data })
           const filteredAccomodationsIds = result.data
             .at(0)
             .accommodations.flatMap((accommodation) => accommodation.accommodation)
           const filteredAccomodations = data?.filter(
             (accommodation) => accommodation.id && filteredAccomodationsIds.includes(accommodation.id),
           )
-          console.log({ filteredAccomodations })
           setAccommodationsData(filteredAccomodations)
         })
     }
