@@ -3,7 +3,6 @@
 import {
   Grid,
   Heading,
-  Link,
   LinkList,
   Page,
   PageFooter,
@@ -18,7 +17,7 @@ import './camping-vliegenbos.css'
 
 const menuLinks = [
   {
-    href: '/camping-vliegenbos/reserveren',
+    href: 'camping-vliegenbos/reserveren',
     label: 'Reserveren / Reservation',
   },
 ]
