@@ -7,7 +7,7 @@ import { docTitle } from '../constants'
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="nl">
+    <html lang="nl" style={{ fontSize: 'initial!important' }}>
       <head>
         <link rel="icon" href={`${process.env.basePath}/favicon/favicon.ico`} sizes="16x16 32x32 48x48 64x64" />
         <link rel="icon" href={`${process.env.basePath}/favicon/icon.svg`} type="image/svg+xml" />

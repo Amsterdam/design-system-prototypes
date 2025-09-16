@@ -6,7 +6,7 @@ export default function Reserveren() {
   return (
     <Grid paddingBottom="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-        <Heading level={1} size="level-2">
+        <Heading level={1} size="level-2" className="ams-mb-s">
           Reserveren
         </Heading>
         <div
