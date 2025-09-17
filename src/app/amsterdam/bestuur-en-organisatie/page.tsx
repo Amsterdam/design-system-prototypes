@@ -18,7 +18,7 @@ function Subsection({ isEven, title }: SubsectionProps) {
   return (
     <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={isEven ? { narrow: 1, medium: 1, wide: 2 } : undefined}>
       <Card>
-        <Card.Heading level={3} size="level-4">
+        <Card.Heading level={3}>
           <NextLink href={linkUrls[title] ?? '#'} legacyBehavior passHref>
             <Card.Link>{title}</Card.Link>
           </NextLink>

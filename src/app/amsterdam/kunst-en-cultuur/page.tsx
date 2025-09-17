@@ -35,7 +35,7 @@ function KunstEnCultuur() {
       </Grid>
       <Grid paddingBottom="x-large">
         <Grid.Cell span={4}>
-          <Heading level={3} className="ams-mb-s">
+          <Heading className="ams-mb-s" level={2} size="level-3">
             Vaak gezocht
           </Heading>
           <LinkList>
@@ -46,7 +46,7 @@ function KunstEnCultuur() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={4} start={{ narrow: 1, medium: 1, wide: 5 }}>
-          <Heading level={2} size="level-3" className="ams-mb-xs">
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Wie Amsterdam zegt, zegt kunst en cultuur
           </Heading>
           <Paragraph className="ams-mb-m">

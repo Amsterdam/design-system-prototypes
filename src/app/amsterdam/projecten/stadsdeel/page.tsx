@@ -35,9 +35,7 @@ function Project() {
       </Grid>
       <Grid paddingBottom="x-large">
         <Grid.Cell span="all">
-          <Heading level={2} size="level-3">
-            Overzicht projecten
-          </Heading>
+          <Heading level={2}>Overzicht projecten</Heading>
         </Grid.Cell>
         {[
           'Appelweg: tijdelijke starterswoningen',
@@ -51,7 +49,7 @@ function Project() {
         ].map((title) => (
           <Grid.Cell key={title} span={{ narrow: 4, medium: 4, wide: 3 }}>
             <Card>
-              <Card.Heading level={3} size="level-4">
+              <Card.Heading level={3}>
                 <Card.Link href="#">{title}</Card.Link>
               </Card.Heading>
               <Paragraph>
@@ -65,7 +63,7 @@ function Project() {
       <Spotlight>
         <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-            <Heading color="inverse" level={2} size="level-4" className="ams-mb-s">
+            <Heading color="inverse" level={2} className="ams-mb-s">
               Werk aan de weg
             </Heading>
             <LinkList>
@@ -84,7 +82,7 @@ function Project() {
             </LinkList>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 2, wide: 4 }} start={{ narrow: 1, medium: 7, wide: 8 }}>
-            <Heading color="inverse" level={2} size="level-4" className="ams-mb-s">
+            <Heading color="inverse" level={2} className="ams-mb-s">
               In andere stadsdelen
             </Heading>
             <LinkList>
@@ -101,17 +99,10 @@ function Project() {
       </Spotlight>
       <Grid paddingVertical="large">
         <Grid.Cell span="all">
-          <Heading level={2} size="level-4">
-            Projecten op de kaart
-          </Heading>
+          <Heading level={2}>Projecten op de kaart</Heading>
         </Grid.Cell>
       </Grid>
-      <NextImage
-        alt=""
-        className="ams-image"
-        id="kaart"
-        src={constructionWorkMapImage}
-      />
+      <NextImage alt="" className="ams-image" id="kaart" src={constructionWorkMapImage} />
     </>
   )
 }

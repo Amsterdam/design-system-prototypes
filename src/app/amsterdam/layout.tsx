@@ -40,7 +40,7 @@ export default function Amsterdam({ children }) {
           <PageFooter.Spotlight>
             <Grid gapVertical="2x-large" paddingVertical="x-large">
               <Grid.Cell span={3}>
-                <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                   Contact
                 </Heading>
                 <Paragraph className="ams-mb-m" color="inverse" size="small">
@@ -64,7 +64,7 @@ export default function Amsterdam({ children }) {
                 </LinkList>
               </Grid.Cell>
               <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
-                <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                   Volg de gemeente
                 </Heading>
                 <LinkList>
@@ -77,7 +77,7 @@ export default function Amsterdam({ children }) {
               </Grid.Cell>
               <Grid.Cell className="ams-gap-xl" span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
                 <div>
-                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                     Kalender
                   </Heading>
                   <Paragraph color="inverse" size="small">
@@ -92,7 +92,7 @@ export default function Amsterdam({ children }) {
                   </Paragraph>
                 </div>
                 <div>
-                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                     Uit in Amsterdam
                   </Heading>
                   <Paragraph color="inverse" size="small">

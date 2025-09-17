@@ -39,7 +39,7 @@ function Signalen({ children }) {
           <Grid gapVertical="2x-large" paddingVertical="x-large">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
               <Column>
-                <Heading color="inverse" level={2} size="level-4">
+                <Heading color="inverse" level={2}>
                   Contact
                 </Heading>
                 <Paragraph color="inverse" size="small">

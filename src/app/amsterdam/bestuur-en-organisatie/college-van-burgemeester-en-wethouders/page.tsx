@@ -84,7 +84,7 @@ function PersonCardCell({ fullName, image, index, jobTitle }: PersonProps & { in
     >
       <Card>
         <NextImage alt="" className="ams-image ams-card__image" src={image} />
-        <Card.Heading level={3} size="level-4">
+        <Card.Heading level={3}>
           <Card.Link href="#">{fullName}</Card.Link>
         </Card.Heading>
         <Paragraph>{jobTitle ?? 'Wethouder'}</Paragraph>

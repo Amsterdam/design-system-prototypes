@@ -88,7 +88,7 @@ export default function Gemeenteraad() {
       <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={cityCouncilImage} />
       <Grid paddingVertical="2x-large" gapVertical="large">
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-s" level={2} size="level-3">
             Raadsinformatie
           </Heading>
           <Paragraph className="ams-mb-s">
@@ -101,7 +101,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 5, wide: 7 }}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-s" level={2} size="level-3">
             Raadsleden en fracties
           </Heading>
           <Paragraph className="ams-mb-s">
@@ -112,7 +112,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-s" level={2} size="level-3">
             Raadscommissies
           </Heading>
           <Paragraph className="ams-mb-s">
@@ -123,7 +123,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 5, wide: 7 }}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-s" level={2} size="level-3">
             Invloed uitoefenen
           </Heading>
           <Paragraph className="ams-mb-s">
@@ -134,7 +134,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-s" level={2} size="level-3">
             Bestuursorganen
           </Heading>
           <LinkList>
@@ -144,7 +144,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 5, wide: 7 }}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-s" level={2} size="level-3">
             Agenda’s en stukken
           </Heading>
           <LinkList>
