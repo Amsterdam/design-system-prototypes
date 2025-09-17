@@ -1,6 +1,6 @@
 'use client'
 
-import { Breadcrumb, Card, Grid, Heading, LinkList, PageHeading, Paragraph } from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Grid, Heading, LinkList, Paragraph } from '@amsterdam/design-system-react'
 import { LinkExternalIcon } from '@amsterdam/design-system-react-icons'
 import NextImage from 'next/image'
 import type { StaticImageData } from 'next/image'
@@ -75,7 +75,9 @@ export default function Gemeenteraad() {
               <Breadcrumb.Link>Bestuur en Organisatie</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading className="ams-mb-m">Gemeenteraad</PageHeading>
+          <Heading className="ams-mb-m" level={1}>
+            Gemeenteraad
+          </Heading>
           <Paragraph size="large">
             De gemeenteraad is het hoogste bestuursorgaan van de stad. De raad bestaat uit 45 volksvertegenwoordigers
             van verschillende politieke groeperingen. De raadsleden worden elke 4 jaar gekozen door Amsterdammers bij de
