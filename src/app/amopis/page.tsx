@@ -42,7 +42,7 @@ function Project() {
             ))}
           </Tabs.List>
           {tabLabels.map((label) => (
-            <Tabs.Panel id={label} />
+            <Tabs.Panel id={label} key={label} />
           ))}
         </Tabs>
       </Grid.Cell>
