@@ -35,7 +35,7 @@ function KunstEnCultuur() {
       </Grid>
       <Grid paddingBottom="x-large">
         <Grid.Cell span={4}>
-          <Heading className="ams-mb-s" level={2} size="level-3">
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Vaak gezocht
           </Heading>
           <LinkList>

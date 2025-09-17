@@ -113,7 +113,7 @@ function HomePage() {
           </Grid.Cell>
         </Grid>
       </Overlap>
-      <Grid paddingVertical="x-large">
+      <Grid paddingVertical="x-large" gapVertical="large">
         <Grid.Cell span="all">
           <Heading level={2} size="level-1">
             Meest bezocht
@@ -133,7 +133,7 @@ function HomePage() {
       <Spotlight>
         <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
-            <Heading className="ams-mb-s" color="inverse" level={2}>
+            <Heading className="ams-mb-xs" color="inverse" level={2} size="level-3">
               Ontheffing of vergunning
             </Heading>
             <Paragraph className="ams-mb-m" color="inverse">
@@ -145,7 +145,7 @@ function HomePage() {
             </StandaloneLink>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
-            <Heading className="ams-mb-s" color="inverse" level={2}>
+            <Heading className="ams-mb-xs" color="inverse" level={2} size="level-3">
               Werkzaamheden
             </Heading>
             <Paragraph className="ams-mb-m" color="inverse" lang="la">
@@ -160,7 +160,7 @@ function HomePage() {
       </Spotlight>
       <Grid paddingTop="x-large" paddingBottom="2x-large">
         <Grid.Cell span={3}>
-          <Heading className="ams-mb-xl" level={2} size="level-1">
+          <Heading className="ams-mb-l" level={2} size="level-1">
             Kalender
           </Heading>
           <Column>
@@ -176,7 +176,7 @@ function HomePage() {
           </Column>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
-          <Heading className="ams-mb-xl" level={2} size="level-1">
+          <Heading className="ams-mb-l" level={2} size="level-1">
             Nieuws
           </Heading>
           <Card>

@@ -1,7 +1,18 @@
 'use client'
 
-import { Breadcrumb, Card, Checkbox, Column, Grid, Heading, Paragraph, TextInput } from '@amsterdam/design-system-react'
+import {
+  Breadcrumb,
+  Card,
+  Checkbox,
+  Column,
+  FieldSet,
+  Grid,
+  Heading,
+  Paragraph,
+  TextInput,
+} from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+import { Fragment } from 'react'
 
 const filterPanel = [
   {
@@ -43,16 +54,13 @@ function Zoeken() {
       <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
         <Column>
           {filterPanel.map(({ title, filters }) => (
-            <Column key={title}>
-              <Heading level={2} size="level-3">
-                {title}
-              </Heading>
+            <FieldSet legend={title} key={title}>
               {filters.map(({ label, hits }) => (
                 <Checkbox key={label}>
                   {label} ({hits})
                 </Checkbox>
               ))}
-            </Column>
+            </FieldSet>
           ))}
         </Column>
       </Grid.Cell>
@@ -63,12 +71,12 @@ function Zoeken() {
           </NextLink>
           <Breadcrumb.Link href="#">Zoekresultaten</Breadcrumb.Link>
         </Breadcrumb>
-        <Column className="ams-mb-l">
+        <Column className="ams-mb-xl">
           <Heading level={1}>Zoeken</Heading>
           <TextInput defaultValue="afval" />
           <Paragraph>25 resultaten</Paragraph>
         </Column>
-        <Column>
+        <Column gap="x-large">
           <Card>
             <Card.HeadingGroup tagline="Nieuws">
               <Card.Heading level={2} size="level-3">
