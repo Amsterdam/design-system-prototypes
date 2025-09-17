@@ -66,7 +66,7 @@ function Zoeken() {
         <Column className="ams-mb-l">
           <Heading level={1}>Zoeken</Heading>
           <TextInput defaultValue="afval" />
-          <Paragraph size="small">25 resultaten</Paragraph>
+          <Paragraph>25 resultaten</Paragraph>
         </Column>
         <Column>
           <Card>

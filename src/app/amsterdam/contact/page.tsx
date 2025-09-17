@@ -37,11 +37,11 @@ function Contact() {
               Idee of suggestie
             </Radio>
           </FieldSet>
-          <Paragraph size="small">
+          <Paragraph>
             U dient een klacht in als u vindt dat de gemeente Amsterdam u niet netjes heeft behandeld. Lees meer over de
             klachtenprocedure op <Link href="https://amsterdam.nl/klachten">amsterdam.nl/klachten</Link>.
           </Paragraph>
-          <Paragraph size="small">
+          <Paragraph>
             Een melding openbare ruimte en overlast gaat bijvoorbeeld over afval dat niet is opgehaald, volle
             prullenbakken of containers, een losliggende stoeptegel of een kapotte lantaarnpaal. Ook overlast van horeca
             of personen kunt u melden via een melding openbare ruimte en overlast.

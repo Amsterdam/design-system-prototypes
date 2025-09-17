@@ -42,14 +42,14 @@ function Signalen({ children }) {
                 <Heading color="inverse" level={2}>
                   Contact
                 </Heading>
-                <Paragraph color="inverse" size="small">
+                <Paragraph color="inverse">
                   Lukt het niet om een melding te doen? Bel het telefoonnummer{' '}
                   <Link color="inverse" href="tel:+3114020">
                     14 020
                   </Link>
                   .
                 </Paragraph>
-                <Paragraph color="inverse" size="small">
+                <Paragraph color="inverse">
                   Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
                 </Paragraph>
               </Column>

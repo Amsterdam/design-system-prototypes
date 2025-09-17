@@ -136,7 +136,7 @@ function HomePage() {
             <Heading className="ams-mb-s" color="inverse" level={2}>
               Ontheffing of vergunning
             </Heading>
-            <Paragraph className="ams-mb-m" color="inverse" size="small">
+            <Paragraph className="ams-mb-m" color="inverse">
               Check welke ontheffing of vergunning u nodig heeft. Bijvoorbeeld een RVV, TVM, objectvergunning,{' '}
               nachtwerkontheffing, e-RVV, e-TVM of filmmelding. Dat regult u allemaal met 1 formulier.
             </Paragraph>
@@ -148,7 +148,7 @@ function HomePage() {
             <Heading className="ams-mb-s" color="inverse" level={2}>
               Werkzaamheden
             </Heading>
-            <Paragraph className="ams-mb-m" color="inverse" lang="la" size="small">
+            <Paragraph className="ams-mb-m" color="inverse" lang="la">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae cumque deleniti exercitationem
               facere fugiat laudantium libero magnam mollitia nisi, omnis pariatur preferendis.
             </Paragraph>
