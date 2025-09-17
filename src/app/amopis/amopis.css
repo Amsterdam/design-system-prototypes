@@ -4,8 +4,12 @@
 
 .amopis-app-grid {
   display: grid;
-  grid-template-columns: 112px 1fr;
+  grid-template-columns: 1fr;
   min-block-size: 100vh;
+
+  @media (min-width: 72.5rem) {
+    grid-template-columns: 112px 1fr;
+  }
 }
 
 .amopis-main-background {
@@ -21,18 +25,12 @@
 
 .amopis-sidebar {
   background-color: var(--ams-color-interactive);
-  display: flex;
+  display: none;
   flex-direction: column;
   padding-block-start: calc(40px + 3 * var(--ams-page-header-padding-block));
   align-items: center;
-}
 
-@media (max-width: 1087px) {
-  .amopis-sidebar {
-    display: none;
-  }
-
-  .amopis-app-grid {
-    grid-template-columns: 1fr;
+  @media (min-width: 72.5rem) {
+    display: flex;
   }
 }

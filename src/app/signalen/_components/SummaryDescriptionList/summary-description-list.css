@@ -15,11 +15,11 @@
   display: grid;
   row-gap: var(--ams-space-s);
 
-  @media screen and (min-width: 36rem) {
+  @media screen and (min-width: 37.5rem) {
     grid-template-columns: repeat(6, 1fr);
   }
 
-  @media screen and (min-width: 68rem) {
+  @media screen and (min-width: 72.5rem) {
     grid-template-columns: repeat(9, 1fr);
   }
 }
