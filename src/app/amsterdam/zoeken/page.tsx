@@ -12,7 +12,6 @@ import {
   TextInput,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
-import { Fragment } from 'react'
 
 const filterPanel = [
   {
