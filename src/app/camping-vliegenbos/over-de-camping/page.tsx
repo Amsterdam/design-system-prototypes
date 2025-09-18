@@ -44,7 +44,7 @@ export default function OverDeCamping() {
         <Grid.Cell
           span={{ narrow: 4, medium: 5, wide: 7 }}
           start={{ narrow: 1, medium: 2, wide: 3 }}
-          className="ams-mb-l"
+          className="ams-mb-xl"
         >
           <Tabs>
             <Tabs.List>
