@@ -42,9 +42,7 @@ export default function Trekkershutten() {
           <Breadcrumb>
             <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
           </Breadcrumb>
-          <Heading level={1} size="level-2">
-            Trekkershutten
-          </Heading>
+          <Heading level={1}>Trekkershutten</Heading>
           <Paragraph>
             Camping Vliegenbos heeft nu nieuwe, ruimere trekkershutten met vloerverwarming. Je moet 18 jaar of ouder
             zijn om een trekkershut te boeken. Het minimum verblijf is 2 nachten. De trekkershutten staan bij elkaar en
@@ -74,7 +72,7 @@ export default function Trekkershutten() {
                 <Card>
                   <Card.Image alt="" src={card.img.src} />
                   <Card.HeadingGroup tagline="Trekkershut" color="inverse">
-                    <Card.Heading level={2} size="level-4">
+                    <Card.Heading level={2}>
                       <Card.Link href={card.href}>{card.label}</Card.Link>
                     </Card.Heading>
                   </Card.HeadingGroup>

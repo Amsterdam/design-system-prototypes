@@ -137,7 +137,7 @@ export default function Tenten() {
               <Tabs.Button aria-controls="aankomst-en-vertrek">Aankomst en vertrek</Tabs.Button>
             </Tabs.List>
             <Tabs.Panel id="goed-om-te-weten">
-              <Heading level={2} size="level-3" className="ams-mb-xs">
+              <Heading level={2} className="ams-mb-xs">
                 Goed om te weten
               </Heading>
               <UnorderedList>
@@ -155,7 +155,7 @@ export default function Tenten() {
               </UnorderedList>
             </Tabs.Panel>
             <Tabs.Panel id="aankomst-en-vertrek">
-              <Heading level={2} size="level-3" className="ams-mb-xs">
+              <Heading level={2} className="ams-mb-xs">
                 Aankomst en vertrek
               </Heading>
               <UnorderedList>

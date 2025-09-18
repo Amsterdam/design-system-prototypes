@@ -62,9 +62,6 @@ export default function Tenten() {
             Online reserveren kan voor een verblijf tot maximaal 7 nachten. Wil je voor een langere periode reserveren,
             neem dan contact op met de receptie. Bezoekers mogen in totaal maximaal 21 dagen op de camping verblijven.
           </Paragraph>
-          <StandaloneLink color="inverse" href="/camping-vliegenbos/zoek-en-boek">
-            Online reserveren
-          </StandaloneLink>
         </Breakout.Cell>
       </Breakout>
       <Grid paddingTop="large" paddingBottom="x-large" as="section">
@@ -75,7 +72,7 @@ export default function Tenten() {
               <Tabs.Button aria-controls="aankomst-en-vertrek">Aankomst en vertrek</Tabs.Button>
             </Tabs.List>
             <Tabs.Panel id="goed-om-te-weten">
-              <Heading level={2} size="level-3" className="ams-mb-xs">
+              <Heading level={2} className="ams-mb-xs">
                 Goed om te weten
               </Heading>
               <UnorderedList>
@@ -99,7 +96,7 @@ export default function Tenten() {
               </UnorderedList>
             </Tabs.Panel>
             <Tabs.Panel id="aankomst-en-vertrek">
-              <Heading level={2} size="level-3" className="ams-mb-xs">
+              <Heading level={2} className="ams-mb-xs">
                 Aankomst en vertrek
               </Heading>
               <UnorderedList>
@@ -108,9 +105,7 @@ export default function Tenten() {
               </UnorderedList>
             </Tabs.Panel>
           </Tabs>
-          <Heading level={2} size="level-3">
-            Zie ook
-          </Heading>
+          <Heading level={2}>Zie ook</Heading>
           <StandaloneLink target="_blank" href="https://amsterdam.nl/paspoort">
             https://amsterdam.nl/paspoort
           </StandaloneLink>

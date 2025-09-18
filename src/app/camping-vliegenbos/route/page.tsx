@@ -12,9 +12,7 @@ export default function Route() {
         <Breadcrumb>
           <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
         </Breadcrumb>
-        <Heading level={1} size="level-2">
-          Route
-        </Heading>
+        <Heading level={1}>Route</Heading>
         <Paragraph className="ams-mb-s">Je kunt Camping Vliegenbos vinden aan de Meeuwenlaan 138</Paragraph>
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>

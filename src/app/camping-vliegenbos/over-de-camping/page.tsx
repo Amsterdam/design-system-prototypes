@@ -29,9 +29,7 @@ export default function OverDeCamping() {
               <Breadcrumb>
                 <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
               </Breadcrumb>
-              <Heading size="level-2" level={1}>
-                Over camping Vliegenbos
-              </Heading>
+              <Heading level={1}>Over camping Vliegenbos</Heading>
               <Paragraph>
                 Op zoek naar een sfeervolle camping in Amsterdam? Camping Vliegenbos ligt op 15 minuten lopen van de
                 gratis veerpont naar het centrum van Amsterdam. Ook fiets je zo naar de stille polders van Waterland. We
@@ -55,15 +53,13 @@ export default function OverDeCamping() {
               <Tabs.Button aria-controls="Plattegrond">Plattegrond</Tabs.Button>
             </Tabs.List>
             <Tabs.Panel id="Plattegrond">
-              <Heading size="level-5" level={3} className="ams-mb-s">
+              <Heading level={2} className="ams-mb-s">
                 Plattegrond
               </Heading>
               <Image src={mapCampingImage.src} alt="Plattegrond van camping Vliegenbos" />
             </Tabs.Panel>
             <Tabs.Panel id="Openingstijden">
-              <Heading level={3} size="level-5">
-                Openingstijden en inchecken
-              </Heading>
+              <Heading level={2}>Openingstijden en inchecken</Heading>
               <Paragraph>
                 De receptie is open van 08.00 uur tot 22.00 uur. Er is een nachtportier. De ingang voor voertuigen is 's
                 nachts gesloten. Te voet of met de fiets kun je 24 uur per dag het terrein op.
@@ -76,31 +72,25 @@ export default function OverDeCamping() {
               </UnorderedList>
             </Tabs.Panel>
             <Tabs.Panel id="Faciliteiten">
-              <Heading level={3} size="level-5" className="ams-mb-s">
+              <Heading level={2} className="ams-mb-s">
                 Faciliteiten
               </Heading>
               <DescriptionList>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    Sanitair
-                  </Heading>
+                  <Heading level={3}>Sanitair</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   Je hebt geen douchemuntjes nodig. De douches zijn geopend van 06.00 uur - 00.00 uur. Er is ook
                   sanitair voor rolstoelgebruikers. Bij de receptie kun je hiervoor een sleutel vragen.
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    WiFi
-                  </Heading>
+                  <Heading level={3}>WiFi</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   Er is gratis WiFi op het terrein van de camping. Het wachtwoord vraag je bij de receptie.
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    Restaurant
-                  </Heading>
+                  <Heading level={3}>Restaurant</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   Het restaurant is in het hoogseizoen elke dag geopend van 08:00 uur tot 22:00 uur. Tijdens het
@@ -111,26 +101,20 @@ export default function OverDeCamping() {
                   </Link>
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    Wasserette
-                  </Heading>
+                  <Heading level={3}>Wasserette</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   Op onze camping kun je ook de was doen. Muntjes voor de wasserette koop je bij de receptie.
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    Keuken
-                  </Heading>
+                  <Heading level={3}>Keuken</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   De buiten campingkeuken heeft een kookgelegenheid en een gemeenschappelijke koelkast. Bestek, pannen
                   en borden moet je zelf meenemen. De buiten keuken is geopend vanaf maart tot oktober.
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    Fietsen
-                  </Heading>
+                  <Heading level={3}>Fietsen</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   Op de camping kun je fietsen huren van TIP Amsterdam Noord. Je kunt een reservering maken via de
@@ -138,35 +122,27 @@ export default function OverDeCamping() {
                   speciale aanvragen kun je contact opnemen via info@tipamsterdamnoord.nl
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    Bagagedepot
-                  </Heading>
+                  <Heading level={3}>Bagagedepot</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   Op de dag van vertrek kun je jouw bagage tijdelijk kwijt in ons bagagedepot. Vraag ernaar bij de
                   receptie.
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    Oplaadpunt elektrische apparaten
-                  </Heading>
+                  <Heading level={3}>Oplaadpunt elektrische apparaten</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   Kleine elektronische apparaten kun je gratis opladen bij de receptie.
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    Honden
-                  </Heading>
+                  <Heading level={3}>Honden</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   Honden zijn toegestaan in campers of caravans. Wij rekenen per hond €7,50 per nacht. In tenten en
                   trekkershutten zijn honden niet toegestaan.
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading size="level-5" level={3}>
-                    Parkeren
-                  </Heading>
+                  <Heading level={3}>Parkeren</Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   De camping heeft niet veel parkeerplekken en je kunt deze niet reserveren. Als er geen plek is op de
@@ -184,7 +160,7 @@ export default function OverDeCamping() {
       <Spotlight color="azure">
         <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-            <Heading level={2} color="inverse" size="level-3">
+            <Heading level={2} color="inverse">
               Reserveren
             </Heading>
             <Paragraph color="inverse">
@@ -209,7 +185,7 @@ export default function OverDeCamping() {
       </Spotlight>
       <Grid paddingVertical="x-large" as="section">
         <Grid.Cell start={{ narrow: 1, medium: 2, wide: 3 }} span={{ narrow: 4, medium: 5, wide: 7 }}>
-          <Heading level={3} size="level-5" className="ams-mb-s">
+          <Heading level={2} className="ams-mb-s">
             Route naar de camping
           </Heading>
           <DescriptionList className="ams-mb-m">
@@ -243,7 +219,7 @@ export default function OverDeCamping() {
           </Alert>
         </Grid.Cell>
         <Grid.Cell start={{ narrow: 1, medium: 2, wide: 3 }} span={{ narrow: 4, medium: 5, wide: 7 }}>
-          <Heading level={2} size="level-5" className="ams-mb-s">
+          <Heading level={2} className="ams-mb-s">
             Campingregels
           </Heading>
           <Accordion headingLevel={3}>

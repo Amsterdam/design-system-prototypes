@@ -137,9 +137,7 @@ export default function ZoekEnBoek() {
     <>
       <Grid>
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-          <Heading level={1} size="level-2">
-            Zoek en boek
-          </Heading>
+          <Heading level={1}>Zoek en boek</Heading>
           <Paragraph>
             Boek eenvoudig jouw verblijf in het groene hart van Amsterdam Noord. Kies je gewenste data en ontdek direct
             de beschikbare kampeerplekken en accommodaties.
@@ -147,7 +145,7 @@ export default function ZoekEnBoek() {
         </Grid.Cell>
       </Grid>
       <Grid paddingTop="large">
-        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
+        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           {step === 0 && (
             <>
               <FieldSet legend={steps[step]}>

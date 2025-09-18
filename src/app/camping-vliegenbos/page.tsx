@@ -58,9 +58,7 @@ export default function HomePage() {
             <Grid style={{ alignSelf: 'flex-end' }} paddingBottom="large">
               <Grid.Cell span={8}>
                 <div className="vliegenbos-notice">
-                  <Heading level={1} size="level-3">
-                    Welkom op camping Vliegenbos
-                  </Heading>
+                  <Heading level={1}>Welkom op camping Vliegenbos</Heading>
                   <Paragraph>
                     Camping Vliegenbos is in Amsterdam Noord, vlakbij de gratis veerboot naar het centrum van Amsterdam.
                   </Paragraph>
@@ -75,7 +73,7 @@ export default function HomePage() {
               <Grid.Cell span={4} key={`${idx}-card`}>
                 <Card>
                   <Card.Image alt="" src={card.img.src} />
-                  <Card.Heading level={4}>
+                  <Card.Heading level={2}>
                     <Card.Link href={card.href}>{card.label}</Card.Link>
                   </Card.Heading>
                 </Card>
