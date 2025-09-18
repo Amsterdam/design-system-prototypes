@@ -53,7 +53,14 @@ const PageLayout = ({ images, heading, paragraph, items, iframeSrc }: PageLayout
         </Grid.Cell>
       </Grid>
       <Grid paddingBottom="x-large">
-        <Grid.Cell span={6}>
+        <Grid.Cell
+          {...(!iframeSrc
+            ? {
+                span: { narrow: 4, medium: 5, wide: 7 },
+                start: { narrow: 1, medium: 2, wide: 3 },
+              }
+            : { span: 6 })}
+        >
           <Tabs>
             <Tabs.List>
               <Tabs.Button aria-controls="goed-om-te-weten">Goed om te weten</Tabs.Button>
