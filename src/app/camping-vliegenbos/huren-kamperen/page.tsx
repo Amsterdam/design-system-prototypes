@@ -96,7 +96,7 @@ const InnerPage = () => {
   }))
 
   return (
-    <Grid gapVertical="large" paddingBottom="large" as="section">
+    <Grid paddingBottom="x-large" as="section">
       <Grid.Cell span="all">
         <Grid>
           <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
@@ -104,7 +104,7 @@ const InnerPage = () => {
               <Breadcrumb.Link href="/camping-vliegenbos">Home</Breadcrumb.Link>
               <Breadcrumb.Link href="/camping-vliegenbos/zoek-en-boek">Zoek en boek</Breadcrumb.Link>
             </Breadcrumb>
-            <Heading level={1} size="level-2" className="ams-mb-s">
+            <Heading level={1} className="ams-mb-s">
               {data.name.nl}
             </Heading>
             <DescriptionList>
@@ -130,23 +130,20 @@ const InnerPage = () => {
         )}
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-        <Column gap="small" className="ams-mb-l">
-          <UnorderedList>
-            {listItems.map((item, idx) => (
-              <UnorderedList.Item key={`${item}-${idx.toString()}`}>{item}</UnorderedList.Item>
-            ))}
-            {takeALookLink && (
-              <UnorderedList.Item>
-                Klik{' '}
-                <Link target="_blank" href={takeALookLink.at(1)}>
-                  hier
-                </Link>{' '}
-                om een kijkje te nemen in de cabin
-              </UnorderedList.Item>
-            )}
-          </UnorderedList>
-        </Column>
-        <StandaloneLink href="/camping-vliegenbos/reserveren">Reserveren</StandaloneLink>
+        <UnorderedList>
+          {listItems.map((item, idx) => (
+            <UnorderedList.Item key={`${item}-${idx.toString()}`}>{item}</UnorderedList.Item>
+          ))}
+          {takeALookLink && (
+            <UnorderedList.Item>
+              Klik{' '}
+              <Link target="_blank" href={takeALookLink.at(1)}>
+                hier
+              </Link>{' '}
+              om een kijkje te nemen in de cabin
+            </UnorderedList.Item>
+          )}
+        </UnorderedList>
       </Grid.Cell>
     </Grid>
   )

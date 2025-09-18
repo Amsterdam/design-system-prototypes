@@ -36,21 +36,14 @@ const arrivalDeparture = ['Aankomst vanaf 15.00 uur', 'Vertrek tot 11.00 uur']
 export default function CityCabinAmsterdam() {
   return (
     <>
-      <Grid paddingBottom="large" gapVertical="none">
-        <Grid.Cell
-          span={{ narrow: 4, medium: 6, wide: 7 }}
-          start={{ narrow: 1, medium: 2, wide: 3 }}
-          className="ams-mb-m"
-        >
+      <Grid paddingBottom="large">
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Breadcrumb>
             <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
             <Breadcrumb.Link href="/camping-vliegenbos/trekkershutten">Trekkershutten</Breadcrumb.Link>
           </Breadcrumb>
-          <Heading level={1} size="level-2">
-            City Cabin 'Amsterdam'
-          </Heading>
+          <Heading level={1}>City Cabin 'Amsterdam'</Heading>
           <Paragraph>De trekkershut is geïnspireerd op een Zweeds langhuis.</Paragraph>
-          <StandaloneLink href="/camping-vliegenbos/reserveren">Reserveer online</StandaloneLink>
         </Grid.Cell>
         <Grid.Cell span="all" className="ams-mb-l">
           <ImageSlider controls images={reformattedImages} />

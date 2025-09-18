@@ -18,16 +18,14 @@ import tentenPicture from '../_assets/tenten-picture.jpg'
 export default function Tenten() {
   return (
     <>
-      <Grid gapVertical="large" as="section">
+      <Grid as="section">
         <Grid.Cell span="all">
           <Grid>
             <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
               <Breadcrumb>
                 <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
               </Breadcrumb>
-              <Heading level={1} size="level-2">
-                Tenten
-              </Heading>
+              <Heading level={1}>Tenten</Heading>
               <Paragraph>
                 Kamperen dichtbij het centrum van Amsterdam? Kom naar camping Vliegenbos en je hebt het beste van 2
                 werelden. Stad en natuur! De camping is open voor tenten tussen april en oktober.
@@ -36,7 +34,7 @@ export default function Tenten() {
           </Grid>
         </Grid.Cell>
       </Grid>
-      <Breakout paddingVertical="large" className="ams-mb-l" as="section">
+      <Breakout paddingVertical="x-large" as="section">
         <Breakout.Cell colSpan="all" has="spotlight" rowSpan={2} rowStart={2}>
           <Spotlight color="green" />
         </Breakout.Cell>
@@ -64,24 +62,20 @@ export default function Tenten() {
             Online reserveren kan voor een verblijf tot maximaal 7 nachten. Wil je voor een langere periode reserveren,
             neem dan contact op met de receptie. Bezoekers mogen in totaal maximaal 21 dagen op de camping verblijven.
           </Paragraph>
-          <StandaloneLink color="inverse" className="ams-mb-m" href="/camping-vliegenbos/zoek-en-boek">
+          <StandaloneLink color="inverse" href="/camping-vliegenbos/zoek-en-boek">
             Online reserveren
           </StandaloneLink>
         </Breakout.Cell>
       </Breakout>
-      <Grid gapVertical="large" paddingVertical="large" as="section">
-        <Grid.Cell
-          span={{ narrow: 4, medium: 5, wide: 7 }}
-          start={{ narrow: 1, medium: 2, wide: 3 }}
-          className="ams-mb-l"
-        >
+      <Grid paddingTop="large" paddingBottom="x-large" as="section">
+        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Tabs className="ams-mb-m">
             <Tabs.List>
               <Tabs.Button aria-controls="goed-om-te-weten">Goed om te weten</Tabs.Button>
               <Tabs.Button aria-controls="aankomst-en-vertrek">Aankomst en vertrek</Tabs.Button>
             </Tabs.List>
             <Tabs.Panel id="goed-om-te-weten">
-              <Heading level={2} size="level-4" className="ams-mb-s">
+              <Heading level={2} size="level-3" className="ams-mb-xs">
                 Goed om te weten
               </Heading>
               <UnorderedList>
@@ -105,7 +99,7 @@ export default function Tenten() {
               </UnorderedList>
             </Tabs.Panel>
             <Tabs.Panel id="aankomst-en-vertrek">
-              <Heading level={2} size="level-4" className="ams-mb-s">
+              <Heading level={2} size="level-3" className="ams-mb-xs">
                 Aankomst en vertrek
               </Heading>
               <UnorderedList>

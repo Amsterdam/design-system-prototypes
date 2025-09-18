@@ -135,7 +135,7 @@ export default function ZoekEnBoek() {
 
   return (
     <>
-      <Grid paddingBottom="x-large">
+      <Grid>
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
           <Heading level={1} size="level-2">
             Zoek en boek
@@ -146,8 +146,8 @@ export default function ZoekEnBoek() {
           </Paragraph>
         </Grid.Cell>
       </Grid>
-      <Grid>
-        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
+      <Grid paddingTop="large">
+        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           {step === 0 && (
             <>
               <FieldSet legend={steps[step]}>
@@ -330,28 +330,25 @@ export default function ZoekEnBoek() {
       {step === 3 && (
         <Grid>
           {accommodationsData.map((accommodation) => (
-            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 4 }} key={accommodation.id} className="ams-mb-m">
+            <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }} key={accommodation.id} className="ams-mb-m">
               <Card>
                 <Card.Image alt="" src={accommodation.images.at(0).original} />
                 <Card.Heading level={3} size="level-4">
-                  {accommodation.name.nl}
+                  <Card.Link href={`huren-kamperen?id=${accommodation.id}`}> {accommodation.name.nl}</Card.Link>
                 </Card.Heading>
-                <Column gap="small">
-                  <UnorderedList size="small">
-                    {extractListItems(accommodation.description.nl)
-                      .slice(0, 3)
-                      .map((item, idx) => (
-                        <UnorderedList.Item key={`${item}-${idx.toString()}`}>{item}</UnorderedList.Item>
-                      ))}
-                  </UnorderedList>
-                </Column>
-                <StandaloneLink href={`huren-kamperen?id=${accommodation.id}`}>Meer lezen</StandaloneLink>
+                <UnorderedList size="small">
+                  {extractListItems(accommodation.description.nl)
+                    .slice(0, 3)
+                    .map((item, idx) => (
+                      <UnorderedList.Item key={`${item}-${idx.toString()}`}>{item}</UnorderedList.Item>
+                    ))}
+                </UnorderedList>
               </Card>
             </Grid.Cell>
           ))}
         </Grid>
       )}
-      <Grid>
+      <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           {accommodationsData?.length === 0 && step === 3 && (
             <Alert headingLevel={2} heading="Er zijn geen resultaten gevonden" className="ams-mb-s">

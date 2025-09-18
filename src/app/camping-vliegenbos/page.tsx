@@ -47,7 +47,7 @@ const cards = [
 export default function HomePage() {
   return (
     <>
-      <Grid paddingBottom="large" as="section">
+      <Grid paddingBottom="x-large" as="section">
         <Grid.Cell span="all">
           <Overlap>
             <NextImage

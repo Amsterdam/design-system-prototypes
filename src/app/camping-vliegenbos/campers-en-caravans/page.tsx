@@ -20,16 +20,14 @@ import campersAndCaravansPicture from '../_assets/campers-en-caravans.jpg'
 export default function Tenten() {
   return (
     <>
-      <Grid gapVertical="large" as="section">
+      <Grid as="section">
         <Grid.Cell span="all">
           <Grid>
             <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
               <Breadcrumb>
                 <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
               </Breadcrumb>
-              <Heading level={1} size="level-2">
-                Campers en caravans
-              </Heading>
+              <Heading level={1}>Campers en caravans</Heading>
               <Paragraph>
                 Camping Vliegenbos heeft halfverharde plekken voor campers, kampeerauto's, caravans en vouwwagens. Op de
                 camping is ook een servicepunt voor drinkwater, vuilwater en chemisch toilet.
@@ -38,7 +36,7 @@ export default function Tenten() {
           </Grid>
         </Grid.Cell>
       </Grid>
-      <Breakout paddingVertical="large" className="ams-mb-xl" as="section">
+      <Breakout paddingVertical="x-large" as="section">
         <Breakout.Cell colSpan="all" has="spotlight" rowSpan={2} rowStart={2}>
           <Spotlight />
         </Breakout.Cell>
@@ -80,13 +78,9 @@ export default function Tenten() {
           </Alert>
         </Breakout.Cell>
       </Breakout>
-      <Grid as="section" paddingVertical="large">
-        <Grid.Cell
-          span={{ narrow: 4, medium: 5, wide: 7 }}
-          start={{ narrow: 1, medium: 2, wide: 3 }}
-          className="ams-mb-l"
-        >
-          <Heading className="ams-mb-s" level={2}>
+      <Grid paddingTop="large" paddingBottom="x-large" as="section">
+        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
+          <Heading className="ams-mb-xs" level={2}>
             Onze camper- en caravanplekken
           </Heading>
           <Paragraph className="ams-mb-s">
@@ -143,7 +137,7 @@ export default function Tenten() {
               <Tabs.Button aria-controls="aankomst-en-vertrek">Aankomst en vertrek</Tabs.Button>
             </Tabs.List>
             <Tabs.Panel id="goed-om-te-weten">
-              <Heading level={2} size="level-4" className="ams-mb-s">
+              <Heading level={2} size="level-3" className="ams-mb-xs">
                 Goed om te weten
               </Heading>
               <UnorderedList>
@@ -161,7 +155,7 @@ export default function Tenten() {
               </UnorderedList>
             </Tabs.Panel>
             <Tabs.Panel id="aankomst-en-vertrek">
-              <Heading level={2} size="level-4" className="ams-mb-s">
+              <Heading level={2} size="level-3" className="ams-mb-xs">
                 Aankomst en vertrek
               </Heading>
               <UnorderedList>

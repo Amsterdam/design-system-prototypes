@@ -37,12 +37,8 @@ const cards = [
 export default function Trekkershutten() {
   return (
     <>
-      <Grid paddingBottom="large" gapVertical="none">
-        <Grid.Cell
-          span={{ narrow: 4, medium: 6, wide: 8 }}
-          start={{ narrow: 1, medium: 1, wide: 2 }}
-          className="ams-mb-m"
-        >
+      <Grid paddingBottom="x-large">
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
           <Breadcrumb>
             <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
           </Breadcrumb>
@@ -55,33 +51,39 @@ export default function Trekkershutten() {
             zijn daarom ook heel geschikt om te huren als groep.
           </Paragraph>
         </Grid.Cell>
-        <Grid.Cell span="all" className="ams-mb-l">
+        <Grid.Cell span="all">
           <Image src={trekkershuttenImage.src} alt="" />
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Paragraph>
             Als je meerdere hutten tegelijk wil boeken, neem dan contact op met de receptie voor een reservering via{' '}
             <Link href="tel:+3102517800">+31(0)20 251 7800</Link> of{' '}
-            <Link href="mailto:vliegenbos.sdn@amsterdam.nl">vliegenbos.sdn@amsterdam.nl</Link>. Online reserveren kan
-            voor een verblijf tussen 2 en 7 nachten. Wil je voor een kortere of langere periode reserveren, neem dan
-            contact op met de receptie. je kunt in totaal maximaal 21 dagen op de camping verblijven.
+            <Link href="mailto:vliegenbos.sdn@amsterdam.nl">vliegenbos.sdn@amsterdam.nl</Link>. <br />
+            <br />
+            Online reserveren kan voor een verblijf tussen 2 en 7 nachten. Wil je voor een kortere of langere periode
+            reserveren, neem dan contact op met de receptie. je kunt in totaal maximaal 21 dagen op de camping
+            verblijven.
           </Paragraph>
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="large">
-        {cards.map((card) => (
-          <Grid.Cell span={6} key={card.href}>
-            <Card>
-              <Card.Image alt="" src={card.img.src} />
-              <Card.HeadingGroup tagline="Trekkershut" color="inverse">
-                <Card.Heading level={2} size="level-4">
-                  <Card.Link href={card.href}>{card.label}</Card.Link>
-                </Card.Heading>
-              </Card.HeadingGroup>
-              <Paragraph>{card.shortDescription}</Paragraph>
-            </Card>
-          </Grid.Cell>
-        ))}
+      <Grid paddingBottom="x-large">
+        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 10 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
+          <Grid>
+            {cards.map((card) => (
+              <Grid.Cell span={6} key={card.href}>
+                <Card>
+                  <Card.Image alt="" src={card.img.src} />
+                  <Card.HeadingGroup tagline="Trekkershut" color="inverse">
+                    <Card.Heading level={2} size="level-4">
+                      <Card.Link href={card.href}>{card.label}</Card.Link>
+                    </Card.Heading>
+                  </Card.HeadingGroup>
+                  <Paragraph>{card.shortDescription}</Paragraph>
+                </Card>
+              </Grid.Cell>
+            ))}
+          </Grid>
+        </Grid.Cell>
       </Grid>
     </>
   )

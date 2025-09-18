@@ -68,7 +68,7 @@ export default function OverDeCamping() {
                 De receptie is open van 08.00 uur tot 22.00 uur. Er is een nachtportier. De ingang voor voertuigen is 's
                 nachts gesloten. Te voet of met de fiets kun je 24 uur per dag het terrein op.
               </Paragraph>
-              <UnorderedList className="ams-mb-m">
+              <UnorderedList>
                 <UnorderedList.Item>Met een tent kun je op elk moment inchecken.</UnorderedList.Item>
                 <UnorderedList.Item>Campers en caravans kunnen vanaf 13:00 uur inchecken.</UnorderedList.Item>
                 <UnorderedList.Item>Voor de trekhutten kun je vanaf 15:00 uur inchecken.</UnorderedList.Item>
@@ -266,13 +266,16 @@ export default function OverDeCamping() {
               </UnorderedList>
             </Accordion.Section>
             <Accordion.Section label="Annulering & Restitutie">
+              <Paragraph className="ams-mb-s">
+                Ons annulerings- en restitutiebeleid is afhankelijk van de periode tussen het moment van annuleren en de
+                datum van het geplande verblijf. Daarnaast rekenen we €10 administratiekosten per reservering.
+              </Paragraph>
               <UnorderedList>
-                <UnorderedList.Item>
-                  Ons annulerings- en restitutiebeleid is afhankelijk van de periode tussen het moment van annuleren en
-                  de datum van het geplande verblijf. Meer dan 3 maanden: 85% teruggave Tussen 2 en 3 maanden: 50%
-                  teruggave Tussen 1 en 2 maanden: 25% teruggave Binnen 1 maand: 10% teruggave Dag van aankomst: geen
-                  teruggave Daarnaast rekenen we €10 administratiekosten per reservering.
-                </UnorderedList.Item>
+                <UnorderedList.Item>Meer dan 3 maanden: 85% teruggave</UnorderedList.Item>
+                <UnorderedList.Item>Tussen 2 en 3 maanden: 50% teruggave </UnorderedList.Item>
+                <UnorderedList.Item>Tussen 1 en 2 maanden: 25% teruggave</UnorderedList.Item>
+                <UnorderedList.Item>Binnen 1 maand: 10% teruggave</UnorderedList.Item>
+                <UnorderedList.Item>Dag van aankomst: geen teruggave </UnorderedList.Item>
               </UnorderedList>
             </Accordion.Section>
             <Accordion.Section label="Gedragsregels & Faciliteiten">
