@@ -83,7 +83,7 @@ export default function Tenten() {
           <Heading className="ams-mb-xs" level={2}>
             Onze camper- en caravanplekken
           </Heading>
-          <Paragraph className="ams-mb-s">
+          <Paragraph className="ams-mb-m">
             We maken geen onderscheid tussen een camper, caravan of vouwwagen. U mag elke plek kiezen, als uw camper of
             combinatie maar de juiste lengte heeft.
           </Paragraph>

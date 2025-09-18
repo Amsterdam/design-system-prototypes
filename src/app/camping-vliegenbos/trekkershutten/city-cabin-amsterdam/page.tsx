@@ -2,6 +2,7 @@
 
 import {
   Breadcrumb,
+  CallToActionLink,
   Grid,
   Heading,
   ImageSlider,
@@ -43,7 +44,8 @@ export default function CityCabinAmsterdam() {
             <Breadcrumb.Link href="/camping-vliegenbos/trekkershutten">Trekkershutten</Breadcrumb.Link>
           </Breadcrumb>
           <Heading level={1}>City Cabin 'Amsterdam'</Heading>
-          <Paragraph>De trekkershut is geïnspireerd op een Zweeds langhuis.</Paragraph>
+          <Paragraph className="ams-mb-s">De trekkershut is geïnspireerd op een Zweeds langhuis.</Paragraph>
+          <CallToActionLink href="camping-vliegenbos/reserveren">Reserveren</CallToActionLink>
         </Grid.Cell>
         <Grid.Cell span="all" className="ams-mb-l">
           <ImageSlider controls images={reformattedImages} />
