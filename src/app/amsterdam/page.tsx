@@ -83,9 +83,7 @@ function HomePage() {
 
   return (
     <>
-      <Heading level={1} className="ams-visually-hidden">
-        Homepage Gemeente Amsterdam
-      </Heading>
+      <h1 className="ams-visually-hidden">Homepage van de gemeente Amsterdam</h1>
       {isAlertVisible && (
         <Grid paddingTop="large" paddingBottom="2x-large">
           <Grid.Cell span="all">
@@ -115,7 +113,7 @@ function HomePage() {
           </Grid.Cell>
         </Grid>
       </Overlap>
-      <Grid paddingVertical="x-large">
+      <Grid paddingVertical="x-large" gapVertical="large">
         <Grid.Cell span="all">
           <Heading level={2} size="level-1">
             Meest bezocht
@@ -124,7 +122,7 @@ function HomePage() {
         {topTasks.map(({ title, description }) => (
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }} key={title}>
             <Card>
-              <Card.Heading level={3} size="level-4">
+              <Card.Heading level={3}>
                 <Card.Link href="#">{title}</Card.Link>
               </Card.Heading>
               <Paragraph>{description}</Paragraph>
@@ -135,10 +133,10 @@ function HomePage() {
       <Spotlight>
         <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
-            <Heading className="ams-mb-s" color="inverse" level={2}>
+            <Heading className="ams-mb-xs" color="inverse" level={2} size="level-3">
               Ontheffing of vergunning
             </Heading>
-            <Paragraph className="ams-mb-m" color="inverse" size="small">
+            <Paragraph className="ams-mb-m" color="inverse">
               Check welke ontheffing of vergunning u nodig heeft. Bijvoorbeeld een RVV, TVM, objectvergunning,{' '}
               nachtwerkontheffing, e-RVV, e-TVM of filmmelding. Dat regult u allemaal met 1 formulier.
             </Paragraph>
@@ -147,10 +145,10 @@ function HomePage() {
             </StandaloneLink>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 4, wide: 6 }}>
-            <Heading className="ams-mb-s" color="inverse" level={2}>
+            <Heading className="ams-mb-xs" color="inverse" level={2} size="level-3">
               Werkzaamheden
             </Heading>
-            <Paragraph className="ams-mb-m" color="inverse" lang="la" size="small">
+            <Paragraph className="ams-mb-m" color="inverse" lang="la">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores beatae cumque deleniti exercitationem
               facere fugiat laudantium libero magnam mollitia nisi, omnis pariatur preferendis.
             </Paragraph>
@@ -162,13 +160,13 @@ function HomePage() {
       </Spotlight>
       <Grid paddingTop="x-large" paddingBottom="2x-large">
         <Grid.Cell span={3}>
-          <Heading className="ams-mb-xl" level={2} size="level-1">
+          <Heading className="ams-mb-l" level={2} size="level-1">
             Kalender
           </Heading>
           <Column>
             {calenderItems.map(({ date, description, time }) => (
               <Card key={date}>
-                <Card.Heading level={3} size="level-4">
+                <Card.Heading level={3}>
                   <Card.Link href="#">{date}</Card.Link>
                 </Card.Heading>
                 <Paragraph>{description}</Paragraph>
@@ -178,13 +176,13 @@ function HomePage() {
           </Column>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
-          <Heading className="ams-mb-xl" level={2} size="level-1">
+          <Heading className="ams-mb-l" level={2} size="level-1">
             Nieuws
           </Heading>
           <Card>
             <NextImage alt="" className="ams-image ams-card__image" src={stormschadeImage} />
             <Card.HeadingGroup tagline="Nieuws">
-              <Card.Heading level={3} size="level-4">
+              <Card.Heading level={3}>
                 <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
                   <Card.Link>Waar u stormschade kunt melden</Card.Link>
                 </NextLink>
@@ -202,7 +200,7 @@ function HomePage() {
             <Card>
               <NextImage alt="" className="ams-image ams-card__image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">
-                <Card.Heading level={3} size="level-4">
+                <Card.Heading level={3}>
                   <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
                     <Card.Link>{heading}</Card.Link>
                   </NextLink>

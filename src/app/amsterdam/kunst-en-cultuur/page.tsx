@@ -1,9 +1,9 @@
 'use client'
 
-import { Breadcrumb, Column, Grid, Heading, LinkList, PageHeading, Paragraph } from '@amsterdam/design-system-react'
+import { Breadcrumb, Column, Grid, Heading, LinkList, Paragraph } from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
-import NextLink from 'next/link'
 import NextImage from 'next/image'
+import NextLink from 'next/link'
 
 import artAndCultureImage from '../_assets/art-and-culture.jpg'
 
@@ -21,7 +21,7 @@ function KunstEnCultuur() {
       </Grid>
       <Grid paddingBottom="x-large">
         <Grid.Cell span="all">
-          <PageHeading>Kunst en Cultuur</PageHeading>
+          <Heading level={1}>Kunst en Cultuur</Heading>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 8, wide: 4 }}>
           <Paragraph size="large">
@@ -35,7 +35,7 @@ function KunstEnCultuur() {
       </Grid>
       <Grid paddingBottom="x-large">
         <Grid.Cell span={4}>
-          <Heading level={3} className="ams-mb-s">
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Vaak gezocht
           </Heading>
           <LinkList>
@@ -46,7 +46,7 @@ function KunstEnCultuur() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={4} start={{ narrow: 1, medium: 1, wide: 5 }}>
-          <Heading level={2} size="level-3" className="ams-mb-xs">
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Wie Amsterdam zegt, zegt kunst en cultuur
           </Heading>
           <Paragraph className="ams-mb-m">

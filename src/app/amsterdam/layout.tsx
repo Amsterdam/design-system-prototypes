@@ -40,10 +40,10 @@ export default function Amsterdam({ children }) {
           <PageFooter.Spotlight>
             <Grid gapVertical="2x-large" paddingVertical="x-large">
               <Grid.Cell span={3}>
-                <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                   Contact
                 </Heading>
-                <Paragraph className="ams-mb-m" color="inverse" size="small">
+                <Paragraph className="ams-mb-m" color="inverse">
                   Heeft u een vraag en kunt u het antwoord niet vinden op deze site? Neem dan contact met ons op.
                 </Paragraph>
                 <LinkList>
@@ -51,25 +51,24 @@ export default function Amsterdam({ children }) {
                     color="inverse"
                     href="https://formulieren.amsterdam.nl/TriplEforms/DirectRegelen/formulier/nl-NL/evAmsterdam/contactformulier.aspx/?pk_vid=9f948f5fae0c5e90169952648840adc6"
                     icon={MailIcon}
-                    size="small"
                   >
                     Contactformulier
                   </LinkList.Link>
-                  <LinkList.Link color="inverse" href="tel:+3114020" icon={PhoneIcon} size="small">
+                  <LinkList.Link color="inverse" href="tel:+3114020" icon={PhoneIcon}>
                     Bel 14 020
                   </LinkList.Link>
-                  <LinkList.Link color="inverse" href="https://www.amsterdam.nl/contact/" icon={ClockIcon} size="small">
+                  <LinkList.Link color="inverse" href="https://www.amsterdam.nl/contact/" icon={ClockIcon}>
                     Adressen en openingstijden
                   </LinkList.Link>
                 </LinkList>
               </Grid.Cell>
               <Grid.Cell span={3} start={{ narrow: 1, medium: 5, wide: 5 }}>
-                <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                   Volg de gemeente
                 </Heading>
                 <LinkList>
                   {socials.map(({ href, icon, label }) => (
-                    <LinkList.Link color="inverse" href={href} icon={icon} key={label} rel="external" size="small">
+                    <LinkList.Link color="inverse" href={href} icon={icon} key={label} rel="external">
                       {label}
                     </LinkList.Link>
                   ))}
@@ -77,10 +76,10 @@ export default function Amsterdam({ children }) {
               </Grid.Cell>
               <Grid.Cell className="ams-gap-xl" span={3} start={{ narrow: 1, medium: 1, wide: 9 }}>
                 <div>
-                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                     Kalender
                   </Heading>
-                  <Paragraph color="inverse" size="small">
+                  <Paragraph color="inverse">
                     Van buurtactiviteiten tot inspraakavonden. Wat organiseert de gemeente voor u? Kijk op{' '}
                     <Link
                       color="inverse"
@@ -92,10 +91,10 @@ export default function Amsterdam({ children }) {
                   </Paragraph>
                 </div>
                 <div>
-                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-4">
+                  <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                     Uit in Amsterdam
                   </Heading>
-                  <Paragraph color="inverse" size="small">
+                  <Paragraph color="inverse">
                     Benieuwd wat er allemaal te doen is in de stad? Op{' '}
                     <Link color="inverse" href="https://www.iamsterdam.com/">
                       Iamsterdam.com

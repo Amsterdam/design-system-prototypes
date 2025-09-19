@@ -39,17 +39,17 @@ function Signalen({ children }) {
           <Grid gapVertical="2x-large" paddingVertical="x-large">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
               <Column>
-                <Heading color="inverse" level={2} size="level-4">
+                <Heading color="inverse" level={2}>
                   Contact
                 </Heading>
-                <Paragraph color="inverse" size="small">
+                <Paragraph color="inverse">
                   Lukt het niet om een melding te doen? Bel het telefoonnummer{' '}
                   <Link color="inverse" href="tel:+3114020">
                     14 020
                   </Link>
                   .
                 </Paragraph>
-                <Paragraph color="inverse" size="small">
+                <Paragraph color="inverse">
                   Wij zijn bereikbaar van maandag tot en met vrijdag van 08.00 tot 18.00 uur.
                 </Paragraph>
               </Column>

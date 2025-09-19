@@ -68,7 +68,7 @@ function Home() {
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <Field invalid={Boolean(errors.body)}>
             <Label htmlFor="body">Waar gaat het om?</Label>
-            <Paragraph id="bodyDescription" size="small">
+            <Paragraph id="bodyDescription">
               Typ geen persoonsgegevens in deze omschrijving. We vragen dit later in dit formulier aan u.
             </Paragraph>
             {errors.body && <ErrorMessage id="bodyError">{`${errors.body.message}`}</ErrorMessage>}
