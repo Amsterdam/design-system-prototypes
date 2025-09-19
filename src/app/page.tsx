@@ -1,6 +1,6 @@
 'use client'
 
-import { Grid, Heading, LinkList, Page, PageHeading, Paragraph } from '@amsterdam/design-system-react'
+import { Grid, Heading, LinkList, Page, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 export default function Signalen() {
@@ -8,8 +8,8 @@ export default function Signalen() {
     <Page className="ams-theme">
       <Grid paddingVertical="2x-large">
         <Grid.Cell span="all">
-          <PageHeading>Prototypes</PageHeading>
-          <Heading level={2} size="level-4">
+          <Heading level={1}>Prototypes</Heading>
+          <Heading level={2} size="level-3">
             Amsterdam Design System
           </Heading>
         </Grid.Cell>

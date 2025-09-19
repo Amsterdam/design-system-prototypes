@@ -1,6 +1,6 @@
 'use client'
 
-import { Breadcrumb, Column, Grid, Heading, LinkList, PageHeading } from '@amsterdam/design-system-react'
+import { Breadcrumb, Column, Grid, Heading, LinkList } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 
 const linkSections = [
@@ -94,7 +94,7 @@ function Burgerzaken() {
       </Grid>
       <Grid paddingBottom="x-large">
         <Grid.Cell span="all">
-          <PageHeading>Burgerzaken</PageHeading>
+          <Heading level={1}>Burgerzaken</Heading>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
           <Column gap="x-large">

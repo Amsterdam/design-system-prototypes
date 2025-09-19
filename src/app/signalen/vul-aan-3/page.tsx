@@ -68,7 +68,7 @@ function VulAan3() {
             aria-required="true"
             invalid={Boolean(errors.who)}
           >
-            <Paragraph id="whoDescription" size="small" className="ams-mb-s">
+            <Paragraph id="whoDescription" className="ams-mb-s">
               Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?
             </Paragraph>
             {errors.who && <ErrorMessage className="ams-mb-s" id="whoError">{`${errors.who.message}`}</ErrorMessage>}

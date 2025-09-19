@@ -37,7 +37,7 @@ function Question() {
           <Heading level={1}>Contact</Heading>
           <Field>
             <Label htmlFor="body">Wat wilt u aan de gemeente vragen?</Label>
-            <Paragraph id="bodyDescription" size="small">
+            <Paragraph id="bodyDescription">
               Een duidelijke beschrijving van uw vraag helpt ons bij het behandelen. U kunt eventueel nog een bijlage
               toevoegen.
             </Paragraph>
