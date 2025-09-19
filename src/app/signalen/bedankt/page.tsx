@@ -51,7 +51,7 @@ function Thanks() {
             <Heading level={3}>Wat doen we met uw melding?</Heading>
             <Paragraph>Meldingen pakken we binnen 3 werkdagen op.</Paragraph>
 
-            <Heading level={3}>Vragen of meer informatie? </Heading>
+            <Heading level={3}>Vragen of meer informatie?</Heading>
             <Paragraph>
               Neem dan contact met ons op via <Link href="tel:14020">14 020</Link>. Vermeld hierbij alstublieft uw
               meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
