@@ -39,7 +39,7 @@ export default function Tenten() {
           <Spotlight color="green" />
         </Breakout.Cell>
         <Breakout.Cell colSpan="all" has="figure" rowSpan={2} rowStart={1}>
-          <Image alt="" src={tentenPicture.src} />
+          <Image aspectRatio="16:5" alt="" src={tentenPicture.src} />
         </Breakout.Cell>
         <Breakout.Cell
           colSpan={{

@@ -1,10 +1,14 @@
 import {
   Breadcrumb,
   CallToActionLink,
+  Column,
   Grid,
   Heading,
   ImageSlider,
   Paragraph,
+  Row,
+  Spotlight,
+  StandaloneLink,
   Tabs,
   UnorderedList,
 } from '@amsterdam/design-system-react'
@@ -33,25 +37,47 @@ const arrivalDeparture = ['Aankomst vanaf 15.00 uur', 'Vertrek tot 11.00 uur']
 const PageLayout = ({ images, heading, paragraph, items, iframeSrc }: PageLayoutProps) => {
   return (
     <>
-      <Grid paddingBottom="large">
-        <Grid.Cell span={6} className="ams-mb-l">
-          <Breadcrumb className="ams-mb-s">
-            <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
-            <Breadcrumb.Link href="/camping-vliegenbos/trekkershutten">Trekkershutten</Breadcrumb.Link>
-          </Breadcrumb>
-          <ImageSlider controls images={images} />
-        </Grid.Cell>
-        <Grid.Cell span={6}>
-          <Heading level={1}>{heading}</Heading>
-          <Paragraph className="ams-mb-s">{paragraph}</Paragraph>
-          <UnorderedList className="ams-mb-s">
-            {items.map((item, index) => (
-              <UnorderedList.Item key={`${index}-item`}>{item}</UnorderedList.Item>
-            ))}
-          </UnorderedList>
-          <CallToActionLink href="camping-vliegenbos/reserveren">Reserveren</CallToActionLink>
+      <Grid className="ams-mb-l">
+        <Grid.Cell span="all">
+          <Grid className="ams-mb-m">
+            <Grid.Cell span="all">
+              <Breadcrumb className="ams-mb-s">
+                <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
+                <Breadcrumb.Link href="/camping-vliegenbos/trekkershutten">Trekkershutten</Breadcrumb.Link>
+              </Breadcrumb>
+              <Heading level={1}>{heading}</Heading>
+            </Grid.Cell>
+          </Grid>
+          <Grid>
+            <Grid.Cell span={6}>
+              <Paragraph className="ams-mb-s">{paragraph}</Paragraph>
+              <UnorderedList className="ams-mb-m">
+                {items.map((item, index) => (
+                  <UnorderedList.Item key={`${index}-item`}>{item}</UnorderedList.Item>
+                ))}
+              </UnorderedList>
+            </Grid.Cell>
+
+            <Grid.Cell span={6} className="ams-mb-l">
+              <ImageSlider controls images={images} />
+            </Grid.Cell>
+          </Grid>
         </Grid.Cell>
       </Grid>
+      <Spotlight color="azure" className="ams-mb-l">
+        <Grid paddingVertical="x-large">
+          <Grid.Cell span="all">
+            <Column>
+              <Heading color="inverse" level={2}>
+                In de {heading} overnachten?
+              </Heading>
+              <StandaloneLink color="inverse" href="camping-vliegenbos/reserveren">
+                Reserveren
+              </StandaloneLink>
+            </Column>
+          </Grid.Cell>
+        </Grid>
+      </Spotlight>
       <Grid paddingBottom="x-large">
         <Grid.Cell
           {...(!iframeSrc

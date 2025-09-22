@@ -39,7 +39,7 @@ export default function OverDeCamping() {
           </Grid>
         </Grid.Cell>
         <Grid.Cell span="all">
-          <Image src={pictureCampingImage.src} alt="" />
+          <Image aspectRatio="16:5" src={pictureCampingImage.src} alt="" />
         </Grid.Cell>
         <Grid.Cell
           span={{ narrow: 4, medium: 5, wide: 7 }}
@@ -129,7 +129,10 @@ export default function OverDeCamping() {
                   receptie.
                 </DescriptionList.Description>
                 <DescriptionList.Term>
-                  <Heading level={3}>Oplaadpunt elektrische apparaten</Heading>
+                  <Heading level={3}>
+                    Oplaadpunt elektrische
+                    <br /> apparaten
+                  </Heading>
                 </DescriptionList.Term>
                 <DescriptionList.Description>
                   Kleine elektronische apparaten kun je gratis opladen bij de receptie.

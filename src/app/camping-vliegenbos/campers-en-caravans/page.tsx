@@ -41,7 +41,7 @@ export default function Tenten() {
           <Spotlight />
         </Breakout.Cell>
         <Breakout.Cell colSpan="all" has="figure" rowSpan={2} rowStart={1}>
-          <Image alt="" src={campersAndCaravansPicture.src} />
+          <Image aspectRatio="16:5" alt="" src={campersAndCaravansPicture.src} />
         </Breakout.Cell>
         <Breakout.Cell
           colSpan={{
@@ -63,21 +63,25 @@ export default function Tenten() {
           <StandaloneLink color="inverse" className="ams-mb-m" href="/camping-vliegenbos/zoek-en-boek">
             Online reserveren
           </StandaloneLink>
+        </Breakout.Cell>
+      </Breakout>
+      <Grid paddingTop="large">
+        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Alert headingLevel={2} severity="warning" heading="Milieuzone">
             <Paragraph>
               Camping Vliegenbos ligt binnen een milieuzone. Campers op diesel hebben alleen toegang met emissieklasse 5
               of hoger. Heeft je camper een lagere emissieklasse maar wel een SA-registratie, dan kun je voor bezoek aan
               de camping een dagontheffing aanvragen.
-              <StandaloneLink
-                href="https://www.amsterdam.nl/verkeer-vervoer/milieuzone-uitstootvrijezone/campers-kampeerwagens/#h40ee67d8-c362-47f1-9603-c3feaa9883a7"
-                target="_blank"
-              >
-                Meer over de milieuzone en de dagontheffing
-              </StandaloneLink>
             </Paragraph>
+            <StandaloneLink
+              href="https://www.amsterdam.nl/verkeer-vervoer/milieuzone-uitstootvrijezone/campers-kampeerwagens/#h40ee67d8-c362-47f1-9603-c3feaa9883a7"
+              target="_blank"
+            >
+              Meer over de milieuzone en de dagontheffing
+            </StandaloneLink>
           </Alert>
-        </Breakout.Cell>
-      </Breakout>
+        </Grid.Cell>
+      </Grid>
       <Grid paddingTop="large" paddingBottom="x-large" as="section">
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Heading className="ams-mb-xs" level={2}>
@@ -147,12 +151,10 @@ export default function Tenten() {
                 <UnorderedList.Item>
                   Je kunt CEE-adapters lenen bij de receptie. Hiervoor betaal je een borg.
                 </UnorderedList.Item>
-                <UnorderedList.Item>
-                  <StandaloneLink href="https://assets.amsterdam.nl/publish/pages/870842/" target="_blank">
-                    Dagontheffing voor campers en kampeerwagens
-                  </StandaloneLink>
-                </UnorderedList.Item>
               </UnorderedList>
+              <StandaloneLink href="https://assets.amsterdam.nl/publish/pages/870842/" target="_blank">
+                Dagontheffing voor campers en kampeerwagens
+              </StandaloneLink>
             </Tabs.Panel>
             <Tabs.Panel id="aankomst-en-vertrek">
               <Heading level={2} className="ams-mb-xs">

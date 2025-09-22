@@ -50,7 +50,7 @@ export default function Trekkershutten() {
           </Paragraph>
         </Grid.Cell>
         <Grid.Cell span="all">
-          <Image src={trekkershuttenImage.src} alt="" />
+          <Image aspectRatio="16:5" src={trekkershuttenImage.src} alt="" />
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Paragraph>
