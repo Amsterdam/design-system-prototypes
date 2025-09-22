@@ -1,6 +1,6 @@
 'use client'
 
-import { Breadcrumb, Card, Grid, Heading, PageHeading, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Grid, Heading, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
 import clsx from 'clsx'
 import NextLink from 'next/link'
 
@@ -18,7 +18,7 @@ function Subsection({ isEven, title }: SubsectionProps) {
   return (
     <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={isEven ? { narrow: 1, medium: 1, wide: 2 } : undefined}>
       <Card>
-        <Card.Heading level={3} size="level-4">
+        <Card.Heading level={3}>
           <NextLink href={linkUrls[title] ?? '#'} legacyBehavior passHref>
             <Card.Link>{title}</Card.Link>
           </NextLink>
@@ -38,7 +38,7 @@ type SectionProps = {
 
 function Section({ description, linkText, subsections, title }: SectionProps) {
   return (
-    <Grid paddingBottom="2x-large" gapVertical="2x-large">
+    <Grid paddingBottom="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
         <Heading className={clsx({ 'ams-mb-s': description || linkText })} level={2}>
           {title}
@@ -61,14 +61,16 @@ Section.defaultProps = {
 export default function BestuurEnOrganisatie() {
   return (
     <>
-      <Grid paddingBottom="2x-large">
+      <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
             <NextLink href="/amsterdam" legacyBehavior passHref>
               <Breadcrumb.Link>Home</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading className="ams-mb-m">Bestuur en Organisatie</PageHeading>
+          <Heading className="ams-mb-m" level={1}>
+            Bestuur en Organisatie
+          </Heading>
           <Paragraph size="large">
             Aenean lorem elit, commodo eget elit sit amet, auctor venenatis ligula. Phasellus faucibus fringilla
             viverra. Aliquam vestibulum vehicula enim, ac consequat nisl mattis id.{' '}

@@ -1,18 +1,8 @@
 'use client'
 
-import {
-  Breadcrumb,
-  Card,
-  Grid,
-  GridColumnNumber,
-  Heading,
-  PageHeading,
-  Paragraph,
-} from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Grid, GridColumnNumber, Heading, Paragraph } from '@amsterdam/design-system-react'
 import NextImage, { type StaticImageData } from 'next/image'
 import NextLink from 'next/link'
-
-import municipalExecutive from '../../_assets/municipal-executive.jpg'
 import municipalExecutiveDeJager from '../../_assets/municipal-executive-de-jager.jpg'
 import municipalExecutiveGrootWassink from '../../_assets/municipal-executive-groot-wassink.jpg'
 import municipalExecutiveHalsema from '../../_assets/municipal-executive-halsema.jpg'
@@ -25,6 +15,7 @@ import municipalExecutiveTeesink from '../../_assets/municipal-executive-teesink
 import municipalExecutiveVanBuren from '../../_assets/municipal-executive-van-buren.jpg'
 import municipalExecutiveVanDantzig from '../../_assets/municipal-executive-van-dantzig.jpg'
 import municipalExecutiveVanDerHorst from '../../_assets/municipal-executive-van-der-horst.jpg'
+import municipalExecutive from '../../_assets/municipal-executive.jpg'
 
 const persons: Array<PersonProps> = [
   {
@@ -93,7 +84,7 @@ function PersonCardCell({ fullName, image, index, jobTitle }: PersonProps & { in
     >
       <Card>
         <NextImage alt="" className="ams-image ams-card__image" src={image} />
-        <Card.Heading level={3} size="level-4">
+        <Card.Heading level={3}>
           <Card.Link href="#">{fullName}</Card.Link>
         </Card.Heading>
         <Paragraph>{jobTitle ?? 'Wethouder'}</Paragraph>
@@ -119,7 +110,9 @@ export default function CollegeVanBurgemeesterEnWethouders() {
               <Breadcrumb.Link>Bestuur en Organisatie</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading className="ams-mb-m">College van burgemeester en wethouders</PageHeading>
+          <Heading className="ams-mb-m" level={1}>
+            College van burgemeester en wethouders
+          </Heading>
           <Paragraph size="large">Het dagelijks bestuur van onze gemeente uitgebreid in beeld.</Paragraph>
         </Grid.Cell>
       </Grid>

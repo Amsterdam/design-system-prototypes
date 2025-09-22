@@ -91,9 +91,7 @@ function ReviewItem({ label, shortLabel, value }: ReviewItem) {
   return (
     <Row>
       <div style={{ flexBasis: '50%' }}>
-        <Heading level={3} size="level-5">
-          {label}
-        </Heading>
+        <Heading level={3}>{label}</Heading>
         <Paragraph>{value}</Paragraph>
       </div>
       <StandaloneLink href="#">Wijzig {shortLabel}</StandaloneLink>

@@ -1,6 +1,6 @@
 'use client'
 
-import { Breadcrumb, Card, Grid, Heading, LinkList, PageHeading, Paragraph } from '@amsterdam/design-system-react'
+import { Breadcrumb, Card, Grid, Heading, LinkList, Paragraph } from '@amsterdam/design-system-react'
 import { LinkExternalIcon } from '@amsterdam/design-system-react-icons'
 import NextImage from 'next/image'
 import type { StaticImageData } from 'next/image'
@@ -53,9 +53,7 @@ function NewsArticle({ date, description, image, tagline, title }: NewsArticlePr
             </Card.Heading>
           </Card.HeadingGroup>
           <Paragraph>{description}</Paragraph>
-          <Paragraph size="small" style={{ color: '#474747' }}>
-            {date}
-          </Paragraph>
+          <Paragraph size="small">{date}</Paragraph>
         </Card>
       </Grid.Cell>
     </>
@@ -75,7 +73,9 @@ export default function Gemeenteraad() {
               <Breadcrumb.Link>Bestuur en Organisatie</Breadcrumb.Link>
             </NextLink>
           </Breadcrumb>
-          <PageHeading className="ams-mb-m">Gemeenteraad</PageHeading>
+          <Heading className="ams-mb-m" level={1}>
+            Gemeenteraad
+          </Heading>
           <Paragraph size="large">
             De gemeenteraad is het hoogste bestuursorgaan van de stad. De raad bestaat uit 45 volksvertegenwoordigers
             van verschillende politieke groeperingen. De raadsleden worden elke 4 jaar gekozen door Amsterdammers bij de
@@ -86,7 +86,7 @@ export default function Gemeenteraad() {
       <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={cityCouncilImage} />
       <Grid paddingVertical="2x-large" gapVertical="large">
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Raadsinformatie
           </Heading>
           <Paragraph className="ams-mb-s">
@@ -99,7 +99,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 5, wide: 7 }}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Raadsleden en fracties
           </Heading>
           <Paragraph className="ams-mb-s">
@@ -110,7 +110,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Raadscommissies
           </Heading>
           <Paragraph className="ams-mb-s">
@@ -121,7 +121,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 5, wide: 7 }}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Invloed uitoefenen
           </Heading>
           <Paragraph className="ams-mb-s">
@@ -132,7 +132,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Bestuursorganen
           </Heading>
           <LinkList>
@@ -142,7 +142,7 @@ export default function Gemeenteraad() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 5, wide: 7 }}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-xs" level={2} size="level-3">
             Agenda’s en stukken
           </Heading>
           <LinkList>

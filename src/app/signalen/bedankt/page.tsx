@@ -48,23 +48,17 @@ function Thanks() {
               Uw meldnummer is 1977916.
             </Paragraph>
 
-            <Heading level={3} size="level-4">
-              Wat doen we met uw melding?
-            </Heading>
+            <Heading level={3}>Wat doen we met uw melding?</Heading>
             <Paragraph>Meldingen pakken we binnen 3 werkdagen op.</Paragraph>
 
-            <Heading level={3} size="level-4">
-              Vragen of meer informatie?{' '}
-            </Heading>
+            <Heading level={3}>Vragen of meer informatie?</Heading>
             <Paragraph>
               Neem dan contact met ons op via <Link href="tel:14020">14 020</Link>. Vermeld hierbij alstublieft uw
               meldnummer. Meer informatie kunt u eventueel ook vinden op{' '}
               <Link href="https://www.amsterdam.nl/">amsterdam.nl</Link>.
             </Paragraph>
 
-            <Heading level={3} size="level-4">
-              Wilt u nog een andere melding doen?
-            </Heading>
+            <Heading level={3}>Wilt u nog een andere melding doen?</Heading>
             <div>
               <NextLink href="/signalen" legacyBehavior passHref>
                 <Link>Doe een melding</Link>
