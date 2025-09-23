@@ -1,20 +1,6 @@
 'use client'
 
-import {
-  Alert,
-  Breadcrumb,
-  Column,
-  DescriptionList,
-  Grid,
-  Heading,
-  Image,
-  ImageSlider,
-  Link,
-  LinkList,
-  Paragraph,
-  StandaloneLink,
-  UnorderedList,
-} from '@amsterdam/design-system-react'
+import { Alert, Grid, Heading, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
 import { useSearchParams } from 'next/navigation'
 import { Suspense, useEffect, useState } from 'react'
 import { TommyEndpointResponse } from './types'
@@ -106,7 +92,7 @@ const InnerPage = () => {
       images={reformattedImages}
       items={listItems}
       from="search"
-      takeALookLink={takeALookLink.at(1)}
+      takeALookLink={takeALookLink?.at(1)}
     />
   )
 }

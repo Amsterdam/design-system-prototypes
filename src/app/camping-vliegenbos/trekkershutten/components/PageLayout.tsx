@@ -3,6 +3,7 @@ import {
   Column,
   Grid,
   Heading,
+  Image,
   ImageSlider,
   Paragraph,
   Spotlight,
@@ -85,7 +86,7 @@ const PageLayout = ({
               )}
             </Grid.Cell>
             <Grid.Cell span={6} className="ams-mb-l">
-              <ImageSlider controls images={images} />
+              {images.length > 1 ? <ImageSlider controls images={images} /> : <Image alt="" src={images.at(0)?.src} />}
             </Grid.Cell>
           </Grid>
         </Grid.Cell>
@@ -119,7 +120,7 @@ const PageLayout = ({
               <Tabs.Button aria-controls="aankomst-en-vertrek">Aankomst en vertrek</Tabs.Button>
             </Tabs.List>
             <Tabs.Panel id="goed-om-te-weten">
-              <UnorderedList>
+              <UnorderedList className="ams-mb-m">
                 {type === 'hut'
                   ? goodToKnowHut.map((item, index) => (
                       <UnorderedList.Item key={`${index}-goodtoknow-item`}>{item}</UnorderedList.Item>
