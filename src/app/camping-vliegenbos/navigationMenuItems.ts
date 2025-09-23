@@ -1,4 +1,4 @@
-const bigMenuItems = [
+const navigationMenuItems = [
   {
     heading: 'Algemeen',
     items: [
@@ -35,4 +35,4 @@ const bigMenuItems = [
   },
 ]
 
-export default bigMenuItems
+export default navigationMenuItems
