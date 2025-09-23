@@ -37,7 +37,7 @@ const arrivalDeparture = ['Aankomst vanaf 15.00 uur', 'Vertrek tot 11.00 uur']
 const PageLayout = ({ images, heading, paragraph, items, iframeSrc }: PageLayoutProps) => {
   return (
     <>
-      <Grid className="ams-mb-l">
+      <Grid paddingBottom="x-large">
         <Grid.Cell span="all">
           <Grid className="ams-mb-m">
             <Grid.Cell span="all">
@@ -64,7 +64,7 @@ const PageLayout = ({ images, heading, paragraph, items, iframeSrc }: PageLayout
           </Grid>
         </Grid.Cell>
       </Grid>
-      <Spotlight color="azure" className="ams-mb-l">
+      <Spotlight color="azure">
         <Grid paddingVertical="x-large">
           <Grid.Cell span="all">
             <Column>
@@ -78,7 +78,7 @@ const PageLayout = ({ images, heading, paragraph, items, iframeSrc }: PageLayout
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <Grid paddingBottom="x-large">
+      <Grid paddingVertical="x-large">
         <Grid.Cell
           {...(!iframeSrc
             ? {

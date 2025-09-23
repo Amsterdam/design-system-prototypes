@@ -2,6 +2,7 @@
 
 import { Breadcrumb, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import dynamic from 'next/dynamic'
+import formatPath from '../../../formatPath'
 
 const Map = dynamic(() => import('./components/ZoomControls'), { ssr: false })
 
@@ -10,7 +11,7 @@ export default function Route() {
     <Grid paddingBottom="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
         <Breadcrumb>
-          <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
+          <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
         </Breadcrumb>
         <Heading level={1}>Route</Heading>
         <Paragraph className="ams-mb-s">Je kunt Camping Vliegenbos vinden aan de Meeuwenlaan 138</Paragraph>

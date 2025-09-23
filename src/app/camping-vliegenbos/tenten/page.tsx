@@ -14,6 +14,7 @@ import {
 } from '@amsterdam/design-system-react'
 
 import tentenPicture from '../_assets/tenten-picture.jpg'
+import formatPath from '../../../formatPath'
 
 export default function Tenten() {
   return (
@@ -23,7 +24,7 @@ export default function Tenten() {
           <Grid>
             <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
               <Breadcrumb>
-                <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
+                <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
               </Breadcrumb>
               <Heading level={1}>Tenten</Heading>
               <Paragraph>

@@ -18,10 +18,12 @@ import {
   ActionGroup,
   ErrorMessage,
   Alert,
+  Row,
 } from '@amsterdam/design-system-react'
 import { useEffect, useState } from 'react'
 import { Accommodation, TommyEndpointResponse } from './types'
 import { ITommyAvailabilityResult } from './TypesEndpointAvailability'
+import formatPath from '../../../formatPath'
 
 type BookingFormData = {
   amountOfAdults: number
@@ -149,102 +151,107 @@ export default function ZoekEnBoek() {
           {step === 0 && (
             <>
               <FieldSet legend={steps[step]}>
-                <Field className="ams-mb-m">
-                  <Label htmlFor="amountOfAdults">Volwassenen (16-20)</Label>
-                  <Select
-                    defaultValue={formData.amountOfAdults.toString()}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        amountOfAdults: parseInt(e.target.value, 10),
-                      })
-                    }
-                  >
-                    <Select.Option value="1">1</Select.Option>
-                    <Select.Option value="2">2</Select.Option>
-                    <Select.Option value="3">3</Select.Option>
-                    <Select.Option value="4">4</Select.Option>
-                    <Select.Option value="5">5</Select.Option>
-                    <Select.Option value="6">6</Select.Option>
-                    <Select.Option value="7">7</Select.Option>
-                    <Select.Option value="8">8</Select.Option>
-                    <Select.Option value="9">9</Select.Option>
-                    <Select.Option value="10">10</Select.Option>
-                  </Select>
-                </Field>
-
-                <Field className="ams-mb-m">
-                  <Label htmlFor="amountOfYoungAdults">Jong Volwassenen (16-20)</Label>
-                  <Select
-                    defaultValue={formData.amountOfYoungAdults.toString()}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        amountOfYoungAdults: parseInt(e.target.value, 10),
-                      })
-                    }
-                  >
-                    <Select.Option value="0">0</Select.Option>
-                    <Select.Option value="1">1</Select.Option>
-                    <Select.Option value="2">2</Select.Option>
-                    <Select.Option value="3">3</Select.Option>
-                    <Select.Option value="4">4</Select.Option>
-                    <Select.Option value="5">5</Select.Option>
-                    <Select.Option value="6">6</Select.Option>
-                    <Select.Option value="7">7</Select.Option>
-                    <Select.Option value="8">8</Select.Option>
-                    <Select.Option value="9">9</Select.Option>
-                    <Select.Option value="10">10</Select.Option>
-                  </Select>
-                </Field>
-                <Field className="ams-mb-m">
-                  <Label htmlFor="amountOfChildren">Kinderen (4-5)</Label>
-                  <Select
-                    defaultValue={formData.amountOfChildren.toString()}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        amountOfChildren: parseInt(e.target.value, 10),
-                      })
-                    }
-                  >
-                    <Select.Option value="0">0</Select.Option>
-                    <Select.Option value="1">1</Select.Option>
-                    <Select.Option value="2">2</Select.Option>
-                    <Select.Option value="3">3</Select.Option>
-                    <Select.Option value="4">4</Select.Option>
-                    <Select.Option value="5">5</Select.Option>
-                    <Select.Option value="6">6</Select.Option>
-                    <Select.Option value="7">7</Select.Option>
-                    <Select.Option value="8">8</Select.Option>
-                    <Select.Option value="9">9</Select.Option>
-                    <Select.Option value="10">10</Select.Option>
-                  </Select>
-                </Field>
-                <Field className="ams-mb-m">
-                  <Label htmlFor="amountOfBabys">Baby(s) (1-3)</Label>
-                  <Select
-                    defaultValue={formData.amountOfBabys.toString()}
-                    onChange={(e) =>
-                      setFormData({
-                        ...formData,
-                        amountOfBabys: parseInt(e.target.value, 10),
-                      })
-                    }
-                  >
-                    <Select.Option value="0">0</Select.Option>
-                    <Select.Option value="1">1</Select.Option>
-                    <Select.Option value="2">2</Select.Option>
-                    <Select.Option value="3">3</Select.Option>
-                    <Select.Option value="4">4</Select.Option>
-                    <Select.Option value="5">5</Select.Option>
-                    <Select.Option value="6">6</Select.Option>
-                    <Select.Option value="7">7</Select.Option>
-                    <Select.Option value="8">8</Select.Option>
-                    <Select.Option value="9">9</Select.Option>
-                    <Select.Option value="10">10</Select.Option>
-                  </Select>
-                </Field>
+                <Row>
+                  <Column>
+                    <Field>
+                      <Label htmlFor="amountOfAdults">Volwassenen (16-20)</Label>
+                      <Select
+                        defaultValue={formData.amountOfAdults.toString()}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            amountOfAdults: parseInt(e.target.value, 10),
+                          })
+                        }
+                      >
+                        <Select.Option value="1">1</Select.Option>
+                        <Select.Option value="2">2</Select.Option>
+                        <Select.Option value="3">3</Select.Option>
+                        <Select.Option value="4">4</Select.Option>
+                        <Select.Option value="5">5</Select.Option>
+                        <Select.Option value="6">6</Select.Option>
+                        <Select.Option value="7">7</Select.Option>
+                        <Select.Option value="8">8</Select.Option>
+                        <Select.Option value="9">9</Select.Option>
+                        <Select.Option value="10">10</Select.Option>
+                      </Select>
+                    </Field>
+                    <Field>
+                      <Label htmlFor="amountOfYoungAdults">Jong Volwassenen (16-20)</Label>
+                      <Select
+                        defaultValue={formData.amountOfYoungAdults.toString()}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            amountOfYoungAdults: parseInt(e.target.value, 10),
+                          })
+                        }
+                      >
+                        <Select.Option value="0">0</Select.Option>
+                        <Select.Option value="1">1</Select.Option>
+                        <Select.Option value="2">2</Select.Option>
+                        <Select.Option value="3">3</Select.Option>
+                        <Select.Option value="4">4</Select.Option>
+                        <Select.Option value="5">5</Select.Option>
+                        <Select.Option value="6">6</Select.Option>
+                        <Select.Option value="7">7</Select.Option>
+                        <Select.Option value="8">8</Select.Option>
+                        <Select.Option value="9">9</Select.Option>
+                        <Select.Option value="10">10</Select.Option>
+                      </Select>
+                    </Field>
+                  </Column>
+                  <Column>
+                    <Field>
+                      <Label htmlFor="amountOfChildren">Kinderen (4-5)</Label>
+                      <Select
+                        defaultValue={formData.amountOfChildren.toString()}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            amountOfChildren: parseInt(e.target.value, 10),
+                          })
+                        }
+                      >
+                        <Select.Option value="0">0</Select.Option>
+                        <Select.Option value="1">1</Select.Option>
+                        <Select.Option value="2">2</Select.Option>
+                        <Select.Option value="3">3</Select.Option>
+                        <Select.Option value="4">4</Select.Option>
+                        <Select.Option value="5">5</Select.Option>
+                        <Select.Option value="6">6</Select.Option>
+                        <Select.Option value="7">7</Select.Option>
+                        <Select.Option value="8">8</Select.Option>
+                        <Select.Option value="9">9</Select.Option>
+                        <Select.Option value="10">10</Select.Option>
+                      </Select>
+                    </Field>
+                    <Field className="ams-mb-l">
+                      <Label htmlFor="amountOfBabys">Baby(s) (1-3)</Label>
+                      <Select
+                        defaultValue={formData.amountOfBabys.toString()}
+                        onChange={(e) =>
+                          setFormData({
+                            ...formData,
+                            amountOfBabys: parseInt(e.target.value, 10),
+                          })
+                        }
+                      >
+                        <Select.Option value="0">0</Select.Option>
+                        <Select.Option value="1">1</Select.Option>
+                        <Select.Option value="2">2</Select.Option>
+                        <Select.Option value="3">3</Select.Option>
+                        <Select.Option value="4">4</Select.Option>
+                        <Select.Option value="5">5</Select.Option>
+                        <Select.Option value="6">6</Select.Option>
+                        <Select.Option value="7">7</Select.Option>
+                        <Select.Option value="8">8</Select.Option>
+                        <Select.Option value="9">9</Select.Option>
+                        <Select.Option value="10">10</Select.Option>
+                      </Select>
+                    </Field>
+                  </Column>
+                </Row>
               </FieldSet>
             </>
           )}
@@ -332,7 +339,10 @@ export default function ZoekEnBoek() {
               <Card>
                 <Card.Image alt="" src={accommodation.images.at(0).original} />
                 <Card.Heading level={3} size="level-4">
-                  <Card.Link href={`huren-kamperen?id=${accommodation.id}`}> {accommodation.name.nl}</Card.Link>
+                  <Card.Link href={formatPath(`/huren-kamperen?id=${accommodation.id}`)}>
+                    {' '}
+                    {accommodation.name.nl}
+                  </Card.Link>
                 </Card.Heading>
                 <UnorderedList size="small">
                   {extractListItems(accommodation.description.nl)

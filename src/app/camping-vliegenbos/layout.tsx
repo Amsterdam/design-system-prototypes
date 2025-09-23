@@ -14,10 +14,11 @@ import NextLink from 'next/link'
 import bigMenuItems from './bigMenuItems'
 
 import './camping-vliegenbos.css'
+import formatPath from '../../formatPath'
 
 const menuLinks = [
   {
-    href: 'camping-vliegenbos/reserveren',
+    href: formatPath('/camping-vliegenbos/reserveren'),
     label: 'Reserveren / Reservation',
   },
 ]
@@ -46,10 +47,9 @@ export default function CampingVliegenbos({ children }) {
               <Heading level={3} className="ams-mb-s">
                 {column.heading}
               </Heading>
-
               <LinkList>
                 {column.items.map((item, itemIdx) => (
-                  <LinkList.Link href={item.href} key={`${idx}-big-menu-column-item-${itemIdx}`}>
+                  <LinkList.Link href={formatPath(item.href)} key={`${idx}-big-menu-column-item-${itemIdx}`}>
                     {item.label}
                   </LinkList.Link>
                 ))}

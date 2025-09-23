@@ -18,6 +18,7 @@ import {
 
 import pictureCampingImage from '../_assets/picture-camping.jpg'
 import mapCampingImage from '../_assets/map_camping.jpg'
+import formatPath from '../../../formatPath'
 
 export default function OverDeCamping() {
   return (
@@ -27,7 +28,7 @@ export default function OverDeCamping() {
           <Grid>
             <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
               <Breadcrumb>
-                <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
+                <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
               </Breadcrumb>
               <Heading level={1}>Over camping Vliegenbos</Heading>
               <Paragraph>
