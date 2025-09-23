@@ -2,7 +2,7 @@
 
 import { Breadcrumb, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import dynamic from 'next/dynamic'
-import formatPath from '../../../formatPath'
+import formatPath from '../../../utils/formatPath'
 
 const Map = dynamic(() => import('./components/ZoomControls'), { ssr: false })
 

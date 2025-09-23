@@ -10,7 +10,6 @@ import {
   Grid,
   Heading,
   Label,
-  StandaloneLink,
   Paragraph,
   Radio,
   Select,
@@ -23,7 +22,7 @@ import {
 import { useEffect, useState } from 'react'
 import { Accommodation, TommyEndpointResponse } from './types'
 import { ITommyAvailabilityResult } from './TypesEndpointAvailability'
-import formatPath from '../../../formatPath'
+import formatPath from '../../../utils/formatPath'
 
 type BookingFormData = {
   amountOfAdults: number

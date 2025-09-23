@@ -18,30 +18,26 @@ import {
 
 import pictureCampingImage from '../_assets/picture-camping.jpg'
 import mapCampingImage from '../_assets/map_camping.jpg'
-import formatPath from '../../../formatPath'
+import formatPath from '../../../utils/formatPath'
 
 export default function OverDeCamping() {
   return (
     <>
-      <Grid as="section">
-        <Grid.Cell span="all">
-          <Grid>
-            <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-              <Breadcrumb>
-                <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
-              </Breadcrumb>
-              <Heading level={1}>Over camping Vliegenbos</Heading>
-              <Paragraph>
-                Op zoek naar een sfeervolle camping in Amsterdam? Camping Vliegenbos ligt op 15 minuten lopen van de
-                gratis veerpont naar het centrum van Amsterdam. Ook fiets je zo naar de stille polders van Waterland. We
-                hebben plekken voor tenten, campers en caravans. Ook verhuren we trekkershutten.
-              </Paragraph>
-            </Grid.Cell>
-          </Grid>
+      <Grid as="section" paddingBottom="x-large">
+        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }}>
+          <Breadcrumb>
+            <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
+          </Breadcrumb>
+          <Heading level={1}>Over camping Vliegenbos</Heading>
+          <Paragraph>
+            Op zoek naar een sfeervolle camping in Amsterdam? Camping Vliegenbos ligt op 15 minuten lopen van de gratis
+            veerpont naar het centrum van Amsterdam. Ook fiets je zo naar de stille polders van Waterland. We hebben
+            plekken voor tenten, campers en caravans. Ook verhuren we trekkershutten.
+          </Paragraph>
         </Grid.Cell>
-        <Grid.Cell span="all">
-          <Image aspectRatio="16:5" src={pictureCampingImage.src} alt="" />
-        </Grid.Cell>
+      </Grid>
+      <Image aspectRatio="16:5" src={pictureCampingImage.src} alt="" />
+      <Grid paddingTop="x-large">
         <Grid.Cell
           span={{ narrow: 4, medium: 5, wide: 7 }}
           start={{ narrow: 1, medium: 2, wide: 3 }}
@@ -60,7 +56,9 @@ export default function OverDeCamping() {
               <Image src={mapCampingImage.src} alt="Plattegrond van camping Vliegenbos" />
             </Tabs.Panel>
             <Tabs.Panel id="Openingstijden">
-              <Heading level={2}>Openingstijden en inchecken</Heading>
+              <Heading className="ams-mb-s" level={2}>
+                Openingstijden en inchecken
+              </Heading>
               <Paragraph>
                 De receptie is open van 08.00 uur tot 22.00 uur. Er is een nachtportier. De ingang voor voertuigen is 's
                 nachts gesloten. Te voet of met de fiets kun je 24 uur per dag het terrein op.
@@ -164,7 +162,7 @@ export default function OverDeCamping() {
       <Spotlight color="azure">
         <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-            <Heading level={2} color="inverse">
+            <Heading level={2} color="inverse" className="ams-mb-m">
               Reserveren
             </Heading>
             <Paragraph color="inverse">
@@ -172,7 +170,7 @@ export default function OverDeCamping() {
               op de camping blijven. In onderstaande gevallen kun je niet online reserveren en moet je contact opnemen
               met de receptie.
             </Paragraph>
-            <UnorderedList color="inverse" className="ams-mb-s">
+            <UnorderedList color="inverse" className="ams-mb-xl">
               <UnorderedList.Item>Verblijf van 1 nacht in een trekkershut </UnorderedList.Item>
               <UnorderedList.Item>Verblijf langer dan 7 nachten </UnorderedList.Item>
               <UnorderedList.Item>Verblijf met meer dan 4 personen in 1 hut </UnorderedList.Item>

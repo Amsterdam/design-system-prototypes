@@ -11,12 +11,14 @@ import {
   Paragraph,
   Spotlight,
 } from '@amsterdam/design-system-react'
+
 import trekkershuttenImage from '../_assets/trekkershutten-head.jpg'
 import card1 from '../_assets/city-camper-amsterdam.jpg'
 import card2 from '../_assets/city-cabin-noord.jpeg'
 import card3 from '../_assets/city-cabin-vliegenbos.jpg'
 import card4 from '../_assets/city-cabin-mokum.jpeg'
-import formatPath from '../../../formatPath'
+
+import formatPath from '../../../utils/formatPath'
 
 const cards = [
   {
@@ -49,20 +51,16 @@ export default function Trekkershutten() {
   return (
     <>
       <Grid as="section">
-        <Grid.Cell span="all">
-          <Grid>
-            <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-              <Breadcrumb>
-                <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
-              </Breadcrumb>
-              <Heading level={1}>Trekkershutten</Heading>
-              <Paragraph>
-                Camping Vliegenbos heeft nu nieuwe, ruimere trekkershutten met vloerverwarming. Je moet 18 jaar of ouder
-                zijn om een trekkershut te boeken. Het minimum verblijf is 2 nachten. De trekkershutten staan bij elkaar
-                en zijn daarom ook heel geschikt om te huren als groep.
-              </Paragraph>
-            </Grid.Cell>
-          </Grid>
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
+          <Breadcrumb>
+            <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
+          </Breadcrumb>
+          <Heading level={1}>Trekkershutten</Heading>
+          <Paragraph>
+            Camping Vliegenbos heeft nu nieuwe, ruimere trekkershutten met vloerverwarming. Je moet 18 jaar of ouder
+            zijn om een trekkershut te boeken. Het minimum verblijf is 2 nachten. De trekkershutten staan bij elkaar en
+            zijn daarom ook heel geschikt om te huren als groep.
+          </Paragraph>
         </Grid.Cell>
       </Grid>
       <Breakout paddingVertical="x-large" as="section">

@@ -12,6 +12,7 @@ const reformattedImages = images.map((image) => ({
   alt: '',
   src: image.src,
 }))
+
 const items = [
   '2 eenpersoonsbedden en 1 stapelbed inclusief beddengoed',
   'Een ingerichte Kitchenette met minikoelkast',

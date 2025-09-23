@@ -16,25 +16,21 @@ import {
 } from '@amsterdam/design-system-react'
 
 import campersAndCaravansPicture from '../_assets/campers-en-caravans.jpg'
-import formatPath from '../../../formatPath'
+import formatPath from '../../../utils/formatPath'
 
 export default function Tenten() {
   return (
     <>
       <Grid as="section">
-        <Grid.Cell span="all">
-          <Grid>
-            <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-              <Breadcrumb>
-                <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
-              </Breadcrumb>
-              <Heading level={1}>Campers en caravans</Heading>
-              <Paragraph>
-                Camping Vliegenbos heeft halfverharde plekken voor campers, kampeerauto's, caravans en vouwwagens. Op de
-                camping is ook een servicepunt voor drinkwater, vuilwater en chemisch toilet.
-              </Paragraph>
-            </Grid.Cell>
-          </Grid>
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
+          <Breadcrumb>
+            <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
+          </Breadcrumb>
+          <Heading level={1}>Campers en caravans</Heading>
+          <Paragraph>
+            Camping Vliegenbos heeft halfverharde plekken voor campers, kampeerauto's, caravans en vouwwagens. Op de
+            camping is ook een servicepunt voor drinkwater, vuilwater en chemisch toilet.
+          </Paragraph>
         </Grid.Cell>
       </Grid>
       <Breakout paddingVertical="x-large" as="section">
@@ -57,16 +53,16 @@ export default function Tenten() {
           }}
           rowStart={3}
         >
-          <Paragraph color="inverse" className="ams-mb-s">
+          <Paragraph color="inverse" className="ams-mb-l">
             Online reserveren kan voor een verblijf tot maximaal 7 nachten. Wil je voor een langere periode reserveren,
             neem dan contact op met de receptie. Bezoekers mogen in totaal maximaal 21 dagen op de camping verblijven.
           </Paragraph>
           <StandaloneLink color="inverse" className="ams-mb-m" href="/camping-vliegenbos/zoek-en-boek">
-            Online reserveren
+            Plan jouw bezoek online
           </StandaloneLink>
         </Breakout.Cell>
       </Breakout>
-      <Grid paddingTop="large">
+      <Grid paddingTop="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Alert headingLevel={2} severity="warning" heading="Milieuzone">
             <Paragraph>
@@ -83,9 +79,9 @@ export default function Tenten() {
           </Alert>
         </Grid.Cell>
       </Grid>
-      <Grid paddingTop="large" paddingBottom="x-large" as="section">
+      <Grid paddingTop="x-large" paddingBottom="x-large" as="section">
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-          <Heading className="ams-mb-xs" level={2}>
+          <Heading className="ams-mb-l" level={2}>
             Onze camper- en caravanplekken
           </Heading>
           <Paragraph className="ams-mb-m">
@@ -142,10 +138,10 @@ export default function Tenten() {
               <Tabs.Button aria-controls="aankomst-en-vertrek">Aankomst en vertrek</Tabs.Button>
             </Tabs.List>
             <Tabs.Panel id="goed-om-te-weten">
-              <Heading level={2} className="ams-mb-xs">
+              <Heading level={2} className="ams-mb-s">
                 Goed om te weten
               </Heading>
-              <UnorderedList>
+              <UnorderedList className="ams-mb-l">
                 <UnorderedList.Item>
                   Je moet 18 jaar of ouder zijn om een camper- of caravanplek te boeken.
                 </UnorderedList.Item>
@@ -153,12 +149,12 @@ export default function Tenten() {
                   Je kunt CEE-adapters lenen bij de receptie. Hiervoor betaal je een borg.
                 </UnorderedList.Item>
               </UnorderedList>
-              <StandaloneLink href="https://assets.amsterdam.nl/publish/pages/870842/" target="_blank">
+              <StandaloneLink href="#" target="_blank">
                 Dagontheffing voor campers en kampeerwagens
               </StandaloneLink>
             </Tabs.Panel>
             <Tabs.Panel id="aankomst-en-vertrek">
-              <Heading level={2} className="ams-mb-xs">
+              <Heading level={2} className="ams-mb-s">
                 Aankomst en vertrek
               </Heading>
               <UnorderedList>

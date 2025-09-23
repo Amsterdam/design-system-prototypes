@@ -11,7 +11,7 @@ import {
   Tabs,
   UnorderedList,
 } from '@amsterdam/design-system-react'
-import formatPath from '../../../../formatPath'
+import formatPath from '../../../../utils/formatPath'
 
 interface PageLayoutProps {
   images: {

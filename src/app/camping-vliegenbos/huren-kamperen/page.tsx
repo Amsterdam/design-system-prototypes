@@ -4,7 +4,7 @@ import { Alert, Grid, Heading, Paragraph, StandaloneLink } from '@amsterdam/desi
 import { useSearchParams } from 'next/navigation'
 import { Suspense, useEffect, useState } from 'react'
 import { TommyEndpointResponse } from './types'
-import formatPath from '../../../formatPath'
+import formatPath from '../../../utils/formatPath'
 import PageLayout from '../trekkershutten/components/PageLayout'
 
 function extractListItems(htmlString: string) {

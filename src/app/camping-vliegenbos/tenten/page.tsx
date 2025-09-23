@@ -14,25 +14,21 @@ import {
 } from '@amsterdam/design-system-react'
 
 import tentenPicture from '../_assets/tenten-picture.jpg'
-import formatPath from '../../../formatPath'
+import formatPath from '../../../utils/formatPath'
 
 export default function Tenten() {
   return (
     <>
       <Grid as="section">
-        <Grid.Cell span="all">
-          <Grid>
-            <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-              <Breadcrumb>
-                <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
-              </Breadcrumb>
-              <Heading level={1}>Tenten</Heading>
-              <Paragraph>
-                Kamperen dichtbij het centrum van Amsterdam? Kom naar camping Vliegenbos en je hebt het beste van 2
-                werelden. Stad en natuur! De camping is open voor tenten tussen april en oktober.
-              </Paragraph>
-            </Grid.Cell>
-          </Grid>
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
+          <Breadcrumb>
+            <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
+          </Breadcrumb>
+          <Heading level={1}>Tenten</Heading>
+          <Paragraph>
+            Kamperen dichtbij het centrum van Amsterdam? Kom naar camping Vliegenbos en je hebt het beste van 2
+            werelden. Stad en natuur! De camping is open voor tenten tussen april en oktober.
+          </Paragraph>
         </Grid.Cell>
       </Grid>
       <Breakout paddingVertical="x-large" as="section">
@@ -73,7 +69,7 @@ export default function Tenten() {
               <Tabs.Button aria-controls="aankomst-en-vertrek">Aankomst en vertrek</Tabs.Button>
             </Tabs.List>
             <Tabs.Panel id="goed-om-te-weten">
-              <Heading level={2} className="ams-mb-xs">
+              <Heading level={2} className="ams-mb-s">
                 Goed om te weten
               </Heading>
               <UnorderedList>
@@ -97,7 +93,7 @@ export default function Tenten() {
               </UnorderedList>
             </Tabs.Panel>
             <Tabs.Panel id="aankomst-en-vertrek">
-              <Heading level={2} className="ams-mb-xs">
+              <Heading level={2} className="ams-mb-s">
                 Aankomst en vertrek
               </Heading>
               <UnorderedList>
@@ -106,7 +102,9 @@ export default function Tenten() {
               </UnorderedList>
             </Tabs.Panel>
           </Tabs>
-          <Heading level={2}>Zie ook</Heading>
+          <Heading level={2} className="ams-mb-s">
+            Zie ook
+          </Heading>
           <StandaloneLink target="_blank" href="https://amsterdam.nl/paspoort">
             https://amsterdam.nl/paspoort
           </StandaloneLink>
