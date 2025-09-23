@@ -168,9 +168,9 @@ export default function OverDeCamping() {
               Reserveren
             </Heading>
             <Paragraph color="inverse">
-              Online reserveren kan voor een verblijf tot maximaal 7 nachten. Bezoekers mogen in totaal maximaal 21
-              dagen op de camping blijven. In onderstaande gevallen kun je niet online reserveren en moet je contact
-              opnemen met de receptie.
+              Online reserveren kan voor en verblijf tot maximaal 7 nachten. Bezoekers mogen in totaal maximaal 21 dagen
+              op de camping blijven. In onderstaande gevallen kun je niet online reserveren en moet je contact opnemen
+              met de receptie.
             </Paragraph>
             <UnorderedList color="inverse" className="ams-mb-s">
               <UnorderedList.Item>Verblijf van 1 nacht in een trekkershut </UnorderedList.Item>
@@ -192,23 +192,18 @@ export default function OverDeCamping() {
           <Heading level={2} className="ams-mb-s">
             Route naar de camping
           </Heading>
-          <DescriptionList className="ams-mb-m">
-            <DescriptionList.Term>Met openbaar vervoer</DescriptionList.Term>
-            <DescriptionList.Description>
-              <Link href="https://9292.nl/" target="_blank">
-                Reisadvies via 9292.nl
-              </Link>
-            </DescriptionList.Description>
-            <DescriptionList.Term>Met openbaar vervoer</DescriptionList.Term>
-            <DescriptionList.Description>
-              <Link
-                href="https://www.google.com/maps/place/Camping+Vliegenbos+Amsterdam/@52.3905946,4.9260569,17z/data=!3m1!4b1!4m8!3m7!1s0x47c608ff18b49c91:0xef765d703e2583bb!5m2!4m1!1i2!8m2!3d52.3905913!4d4.9282456"
-                target="_blank"
-              >
-                Met auto of camper
-              </Link>
-            </DescriptionList.Description>
-          </DescriptionList>
+          <Paragraph className="ams-mb-m">
+            <Link href="https://9292.nl/" target="_blank">
+              Reisadvies via 9292.nl
+            </Link>
+            <br />
+            <Link
+              href="https://www.google.com/maps/place/Camping+Vliegenbos+Amsterdam/@52.3905946,4.9260569,17z/data=!3m1!4b1!4m8!3m7!1s0x47c608ff18b49c91:0xef765d703e2583bb!5m2!4m1!1i2!8m2!3d52.3905913!4d4.9282456"
+              target="_blank"
+            >
+              Reisadvies met auto of camper via Google Maps
+            </Link>
+          </Paragraph>
           <Alert
             heading="Belangrijke informatie voor dieselcampers"
             headingLevel={2}

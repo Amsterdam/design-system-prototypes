@@ -18,6 +18,8 @@ import {
 import { useSearchParams } from 'next/navigation'
 import { Suspense, useEffect, useState } from 'react'
 import { TommyEndpointResponse } from './types'
+import formatPath from '../../../formatPath'
+import PageLayout from '../trekkershutten/components/PageLayout'
 
 function extractListItems(htmlString: string) {
   return [
@@ -77,13 +79,14 @@ const InnerPage = () => {
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Alert severity="error" heading="De accommodatie is niet gevonden" headingLevel={1}>
             <Paragraph>Er is iets mis gegaan</Paragraph>
-            <StandaloneLink href="/camping-vliegenbos">Terug naar start</StandaloneLink>
+            <StandaloneLink href={formatPath('/camping-vliegenbos')}>Terug naar start</StandaloneLink>
           </Alert>
         </Grid.Cell>
       </Grid>
     )
   }
 
+  // NOTE: This regex is needed to extract the href link, so we can format it in our own Link-component
   const regex = /href="([^"]+)"/i
   const takeALookLink = data.description.nl.match(regex)
 
@@ -96,55 +99,14 @@ const InnerPage = () => {
   }))
 
   return (
-    <Grid paddingBottom="x-large" as="section">
-      <Grid.Cell span="all">
-        <Grid>
-          <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-            <Breadcrumb>
-              <Breadcrumb.Link href="/camping-vliegenbos">Home</Breadcrumb.Link>
-              <Breadcrumb.Link href="/camping-vliegenbos/zoek-en-boek">Zoek en boek</Breadcrumb.Link>
-            </Breadcrumb>
-            <Heading level={1} className="ams-mb-s">
-              {data.name.nl}
-            </Heading>
-            <DescriptionList>
-              <DescriptionList.Term>Minimum aantal personen:</DescriptionList.Term>
-              <DescriptionList.Description>{data.minimumPersons}</DescriptionList.Description>
-              <DescriptionList.Term>Maximaal aantal personen</DescriptionList.Term>
-              <DescriptionList.Description>{data.maximumPersons}</DescriptionList.Description>
-              <DescriptionList.Term>Minimum aantal dagen</DescriptionList.Term>
-              <DescriptionList.Description>{data.minimumDays}</DescriptionList.Description>
-              <DescriptionList.Term>Maximaal aantal dagen</DescriptionList.Term>
-              <DescriptionList.Description>
-                {data.maximumDays === 0 ? 'Niet van toepassing' : data.maximumDays}
-              </DescriptionList.Description>
-            </DescriptionList>
-          </Grid.Cell>
-        </Grid>
-      </Grid.Cell>
-      <Grid.Cell span="all">
-        {reformattedImages && data.images.length > 1 ? (
-          <ImageSlider controls images={reformattedImages} />
-        ) : (
-          <Image src={data.images.at(0).original} alt="" />
-        )}
-      </Grid.Cell>
-      <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
-        <UnorderedList>
-          {listItems.map((item, idx) => (
-            <UnorderedList.Item key={`${item}-${idx.toString()}`}>{item}</UnorderedList.Item>
-          ))}
-          {takeALookLink && (
-            <UnorderedList.Item>
-              Klik{' '}
-              <Link target="_blank" href={takeALookLink.at(1)}>
-                hier
-              </Link>{' '}
-              om een kijkje te nemen in de cabin
-            </UnorderedList.Item>
-          )}
-        </UnorderedList>
-      </Grid.Cell>
-    </Grid>
+    <PageLayout
+      type={data.name.nl.includes('City Cabin') ? 'hut' : 'kamperen'}
+      heading={data.name.nl}
+      paragraph={`Deze unieke ${data.name.nl} staat voor je klaar.`}
+      images={reformattedImages}
+      items={listItems}
+      from="search"
+      takeALookLink={takeALookLink.at(1)}
+    />
   )
 }

@@ -1,17 +1,16 @@
 import {
   Breadcrumb,
-  CallToActionLink,
   Column,
   Grid,
   Heading,
   ImageSlider,
   Paragraph,
-  Row,
   Spotlight,
   StandaloneLink,
   Tabs,
   UnorderedList,
 } from '@amsterdam/design-system-react'
+import formatPath from '../../../../formatPath'
 
 interface PageLayoutProps {
   images: {
@@ -21,10 +20,13 @@ interface PageLayoutProps {
   heading: string
   paragraph: string
   items: string[]
+  from?: 'search' | 'trekkershut'
+  type?: 'hut' | 'kamperen'
+  takeALookLink?: string
   iframeSrc?: string
 }
 
-const goodToKnow = [
+const goodToKnowHut = [
   'De trekkershutten zijn geschikt voor 4 personen. Neem contact op met de receptie als je met 5 personen wil komen',
   'Parkeerplaatsen zijn beperkt en niet te reserveren. We raden aan om niet met de auto te komen, tenzij het niet anders kan. Er is goed openbaar vervoer naar het centrum.',
   'Bij de trekkershut zijn ook schoonmaakspullen. Als je de hut niet schoon achterlaat, rekenen we schoonmaakkosten.',
@@ -32,9 +34,23 @@ const goodToKnow = [
   'Huisdieren zijn niet toegestaan.',
 ]
 
+const goodToKnowKamperen = [
+  'Je moet 18 jaar of ouder zijn om een camper- of caravanplek te boeken.',
+  'Je kunt CEE-adapters lenen bij de receptie. Hiervoor betaal je een borg.',
+]
+
 const arrivalDeparture = ['Aankomst vanaf 15.00 uur', 'Vertrek tot 11.00 uur']
 
-const PageLayout = ({ images, heading, paragraph, items, iframeSrc }: PageLayoutProps) => {
+const PageLayout = ({
+  images,
+  heading,
+  paragraph,
+  items,
+  iframeSrc,
+  takeALookLink,
+  from = 'trekkershut',
+  type = 'hut',
+}: PageLayoutProps) => {
   return (
     <>
       <Grid paddingBottom="x-large">
@@ -42,8 +58,14 @@ const PageLayout = ({ images, heading, paragraph, items, iframeSrc }: PageLayout
           <Grid className="ams-mb-m">
             <Grid.Cell span="all">
               <Breadcrumb className="ams-mb-s">
-                <Breadcrumb.Link href="/camping-vliegenbos/">Home</Breadcrumb.Link>
-                <Breadcrumb.Link href="/camping-vliegenbos/trekkershutten">Trekkershutten</Breadcrumb.Link>
+                <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
+                <Breadcrumb.Link
+                  href={formatPath(
+                    from === 'search' ? '/camping-vliegenbos/zoek-en-boek' : '/camping-vliegenbos/trekkershutten',
+                  )}
+                >
+                  {from === 'search' ? 'Zoek en boek' : 'Trekkershutten'}
+                </Breadcrumb.Link>
               </Breadcrumb>
               <Heading level={1}>{heading}</Heading>
             </Grid.Cell>
@@ -56,22 +78,26 @@ const PageLayout = ({ images, heading, paragraph, items, iframeSrc }: PageLayout
                   <UnorderedList.Item key={`${index}-item`}>{item}</UnorderedList.Item>
                 ))}
               </UnorderedList>
+              {takeALookLink && (
+                <StandaloneLink target="_blank" href={takeALookLink}>
+                  Neem een kijkje
+                </StandaloneLink>
+              )}
             </Grid.Cell>
-
             <Grid.Cell span={6} className="ams-mb-l">
               <ImageSlider controls images={images} />
             </Grid.Cell>
           </Grid>
         </Grid.Cell>
       </Grid>
-      <Spotlight color="azure">
+      <Spotlight color="green">
         <Grid paddingVertical="x-large">
           <Grid.Cell span="all">
             <Column>
               <Heading color="inverse" level={2}>
                 In de {heading} overnachten?
               </Heading>
-              <StandaloneLink color="inverse" href="camping-vliegenbos/reserveren">
+              <StandaloneLink color="inverse" href={formatPath('/camping-vliegenbos/reserveren')}>
                 Reserveren
               </StandaloneLink>
             </Column>
@@ -94,10 +120,19 @@ const PageLayout = ({ images, heading, paragraph, items, iframeSrc }: PageLayout
             </Tabs.List>
             <Tabs.Panel id="goed-om-te-weten">
               <UnorderedList>
-                {goodToKnow.map((item, index) => (
-                  <UnorderedList.Item key={`${index}-goodtoknow-item`}>{item}</UnorderedList.Item>
-                ))}
+                {type === 'hut'
+                  ? goodToKnowHut.map((item, index) => (
+                      <UnorderedList.Item key={`${index}-goodtoknow-item`}>{item}</UnorderedList.Item>
+                    ))
+                  : goodToKnowKamperen.map((item, index) => (
+                      <UnorderedList.Item key={`${index}-goodtoknow-item`}>{item}</UnorderedList.Item>
+                    ))}
               </UnorderedList>
+              {type === 'kamperen' && (
+                <StandaloneLink href="https://assets.amsterdam.nl/publish/pages/870842/">
+                  Dagontheffing voor campers en kampeerwagens
+                </StandaloneLink>
+              )}
             </Tabs.Panel>
             <Tabs.Panel id="aankomst-en-vertrek">
               <UnorderedList>

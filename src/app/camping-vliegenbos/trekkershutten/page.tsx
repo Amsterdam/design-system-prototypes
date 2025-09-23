@@ -21,25 +21,25 @@ import formatPath from '../../../formatPath'
 const cards = [
   {
     label: "City Cabin 'Amsterdam'",
-    href: '/trekkershutten/city-cabin-amsterdam',
+    href: '/camping-vliegenbos/trekkershutten/city-cabin-amsterdam',
     shortDescription: 'De trekkershut is geïnspireerd op een Zweeds langhuis.',
     img: card1,
   },
   {
     label: "City Cabin 'Noord'",
-    href: '/trekkershutten/city-cabin-noord',
+    href: '/camping-vliegenbos/trekkershutten/city-cabin-noord',
     shortDescription: 'Deze unieke blauwe trekkershut staat op stelten.',
     img: card2,
   },
   {
     label: "City Cabin 'Vliegenbos'",
-    href: '/trekkershutten/city-cabin-vliegenbos',
+    href: '/camping-vliegenbos/trekkershutten/city-cabin-vliegenbos',
     shortDescription: 'De trekkershut is gemaakt met gerecycled materiaal.',
     img: card3,
   },
   {
     label: "City Cabin 'Mokum'",
-    href: '/trekkershutten/city-cabin-mokum',
+    href: '/camping-vliegenbos/trekkershutten/city-cabin-mokum',
     shortDescription: 'Deze simpele maar unieke trekkershut is nieuw in 2024!',
     img: card4,
   },
