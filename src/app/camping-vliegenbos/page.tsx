@@ -63,7 +63,7 @@ export default function HomePage() {
           <Grid.Cell span={3} key={`${idx}-home-second-row-card`}>
             <Card>
               <Card.Heading level={2}>
-                <Card.Link href={card.href}>{card.label}</Card.Link>
+                <Card.Link href={formatPath(card.href)}>{card.label}</Card.Link>
               </Card.Heading>
             </Card>
           </Grid.Cell>
