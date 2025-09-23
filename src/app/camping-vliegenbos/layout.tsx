@@ -23,7 +23,7 @@ const menuLinks = [
   },
 ]
 
-export default function CampingVliegenbos({ children }) {
+export default function CampingVliegenbos({ children }: { children: React.ReactNode }) {
   return (
     <Page className="ams-theme">
       <Grid>
