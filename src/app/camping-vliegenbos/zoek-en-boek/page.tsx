@@ -339,7 +339,7 @@ export default function ZoekEnBoek() {
               <Card>
                 <Card.Image alt="" src={accommodation.images.at(0).original} />
                 <Card.Heading level={3} size="level-4">
-                  <Card.Link href={formatPath(`/huren-kamperen?id=${accommodation.id}`)}>
+                  <Card.Link href={formatPath(`/camping-vliegenbos/huren-kamperen?id=${accommodation.id}`)}>
                     {' '}
                     {accommodation.name.nl}
                   </Card.Link>
