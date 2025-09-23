@@ -34,7 +34,7 @@ const cards = [
 export default function HomePage() {
   return (
     <>
-      <Image className="ams-mb-l" alt="" src={pictureCampingImage.src} aspectRatio="16:5" />
+      <Image className="ams-mb-xl" alt="" src={pictureCampingImage.src} aspectRatio="16:5" />
       <Grid paddingBottom="large" as="section">
         <Grid.Cell span="all">
           <Heading level={1} className="ams-mb-s">
@@ -45,7 +45,7 @@ export default function HomePage() {
           </Paragraph>
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="x-large" gapVertical="large" as="section">
+      <Grid paddingBottom="2x-large" gapVertical="large" as="section">
         <Grid.Cell span="all">
           <Heading level={2}>Vind een plek die bij je past</Heading>
         </Grid.Cell>
