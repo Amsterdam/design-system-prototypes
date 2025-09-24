@@ -1,4 +1,4 @@
-const navigationMenuItems = [
+export const navigationMenuItems = [
   {
     heading: 'Algemeen',
     items: [
@@ -34,5 +34,3 @@ const navigationMenuItems = [
     ],
   },
 ]
-
-export default navigationMenuItems

@@ -11,15 +11,21 @@ import {
   Paragraph,
   SkipLink,
 } from '@amsterdam/design-system-react'
-import { CheckMarkIcon, FacebookIcon, InstagramIcon, MailIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
-import navigationMenuItems from './navigationMenuItems'
+import {
+  ChevronForwardIcon,
+  FacebookIcon,
+  InstagramIcon,
+  MailIcon,
+  PhoneIcon,
+} from '@amsterdam/design-system-react-icons'
+import { navigationMenuItems } from './navigationMenuItems'
 
 import formatPath from '../../utils/formatPath'
 
 const menuLinks = [
   {
     href: formatPath('/camping-vliegenbos/reserveren'),
-    label: 'Reserveren / Reservation',
+    label: 'Reserveren',
   },
 ]
 
@@ -28,29 +34,29 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
     <Page className="ams-theme">
       <Grid>
         <Grid.Cell span="all">
-          <SkipLink href="#main">Direct naar inhoud</SkipLink>
+          <SkipLink href="#inhoud">Direct naar inhoud</SkipLink>
         </Grid.Cell>
       </Grid>
       <PageHeader
         brandName="Camping Vliegenbos"
         logoLinkComponent={(props) => <NextLink {...props} href="/camping-vliegenbos" />}
         logoLinkTitle="Naar de homepage van Camping Vliegenbos"
-        menuItems={menuLinks.map((item, idx) => (
-          <PageHeader.MenuLink href={item.href} key={`${idx}-nav-item`}>
-            {item.label}
+        menuItems={menuLinks.map(({ href, label }) => (
+          <PageHeader.MenuLink href={href} key={`${label}-nav-item`}>
+            {label}
           </PageHeader.MenuLink>
         ))}
       >
-        <Grid paddingBottom="large" paddingTop="large">
-          {navigationMenuItems.map((column, idx) => (
-            <Grid.Cell span={3} key={`${idx}-big-menu-column`}>
-              <Heading level={3} className="ams-mb-s">
-                {column.heading}
+        <Grid paddingVertical="large">
+          {navigationMenuItems.map(({ heading, items }) => (
+            <Grid.Cell span={3} key={`${heading}-column-navigation`}>
+              <Heading level={2} size="level-3" className="ams-mb-s">
+                {heading}
               </Heading>
               <LinkList>
-                {column.items.map((item, itemIdx) => (
-                  <LinkList.Link href={formatPath(item.href)} key={`${idx}-big-menu-column-item-${itemIdx}`}>
-                    {item.label}
+                {items.map(({ href, label }) => (
+                  <LinkList.Link href={formatPath(href)} key={`${label}-navigation-item`}>
+                    {label}
                   </LinkList.Link>
                 ))}
               </LinkList>
@@ -58,7 +64,7 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
           ))}
         </Grid>
       </PageHeader>
-      <main id="main">{children}</main>
+      <main id="inhoud">{children}</main>
       <PageFooter>
         <PageFooter.Spotlight>
           <Grid gapVertical="2x-large" paddingVertical="x-large">
@@ -70,12 +76,12 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
               </Paragraph>
             </Grid.Cell>
             <Grid.Cell span={4}>
-              <Heading className="ams-mb-s" color="inverse" level={2}>
+              <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                 Contact
               </Heading>
               <LinkList>
                 <LinkList.Link icon={<PhoneIcon />} color="inverse" href="tel:+31(0)20 251 7800" type="tel">
-                  Telefoon: +31(0)20 251 7800
+                  020 251 7800
                 </LinkList.Link>
                 <LinkList.Link
                   icon={<MailIcon />}
@@ -83,13 +89,13 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
                   href="mailto:vliegenbos.sdn@amsterdam.nl"
                   type="email"
                 >
-                  E-mail: vliegenbos.sdn@amsterdam.nl
+                  vliegenbos.sdn@amsterdam.nl
                 </LinkList.Link>
               </LinkList>
             </Grid.Cell>
             <Grid.Cell span={4}>
-              <Heading className="ams-mb-s" color="inverse" level={2}>
-                Check
+              <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
+                Volg ons
               </Heading>
               <LinkList>
                 <LinkList.Link
@@ -107,7 +113,7 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
                   Facebook
                 </LinkList.Link>
                 <LinkList.Link
-                  icon={<CheckMarkIcon />}
+                  icon={<ChevronForwardIcon />}
                   color="inverse"
                   href="http://www.tripadvisor.nl/Hotel_Review-g188590-d239468-Reviews-Camping_Vliegenbos-Amsterdam_North_Holland_Province.html"
                 >
@@ -117,7 +123,7 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
             </Grid.Cell>
           </Grid>
         </PageFooter.Spotlight>
-        <Heading className="ams-visually-hidden" level={2}>
+        <Heading className="ams-visually-hidden" level={2} size="level-3">
           Over deze website
         </Heading>
         <PageFooter.Menu>
@@ -125,7 +131,7 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
           <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Cookies</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Disclaimer</PageFooter.MenuLink>
-          <PageFooter.MenuLink href="#">Algemene Voorwaarden</PageFooter.MenuLink>
+          <PageFooter.MenuLink href="#">Algemene voorwaarden</PageFooter.MenuLink>
         </PageFooter.Menu>
       </PageFooter>
     </Page>

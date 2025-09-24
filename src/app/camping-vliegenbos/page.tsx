@@ -52,7 +52,7 @@ export default function HomePage() {
         {cards.slice(0, 3).map((card, idx) => (
           <Grid.Cell span={3} key={`${idx}-home-first-row-card`}>
             <Card>
-              <Card.Heading level={2}>
+              <Card.Heading level={3}>
                 <Card.Link href={formatPath(card.href)}>{card.label}</Card.Link>
               </Card.Heading>
             </Card>
@@ -62,7 +62,7 @@ export default function HomePage() {
         {cards.slice(3, 6).map((card, idx) => (
           <Grid.Cell span={3} key={`${idx}-home-second-row-card`}>
             <Card>
-              <Card.Heading level={2}>
+              <Card.Heading level={3}>
                 <Card.Link href={formatPath(card.href)}>{card.label}</Card.Link>
               </Card.Heading>
             </Card>
