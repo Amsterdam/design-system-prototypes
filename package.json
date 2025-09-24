@@ -54,10 +54,7 @@
     "typescript-eslint": "8.44.1"
   },
   "overrides": {
-    "eslint": "9.36.0",
-    "node-plop": {
-      "inquirer": "9.3.5"
-    }
+    "eslint": "9.36.0"
   },
   "browserslist": [
     "defaults and fully supports es6-module",
