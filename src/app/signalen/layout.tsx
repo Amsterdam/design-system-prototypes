@@ -36,7 +36,7 @@ function Signalen({ children }) {
       </main>
       <PageFooter>
         <PageFooter.Spotlight>
-          <Grid gapVertical="2x-large" paddingVertical="x-large">
+          <Grid paddingVertical="x-large">
             <Grid.Cell span={{ narrow: 3, medium: 4, wide: 4 }}>
               <Column>
                 <Heading color="inverse" level={2}>
