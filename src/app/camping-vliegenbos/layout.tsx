@@ -81,10 +81,10 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
                 Contact
               </Heading>
               <LinkList>
-                <LinkList.Link icon={<PhoneIcon />} color="inverse" href="tel:31202517800">
+                <LinkList.Link color="inverse" href="tel:31202517800" icon={<PhoneIcon />}>
                   <span className="sr-only">Telefoon:</span>020 251 7800
                 </LinkList.Link>
-                <LinkList.Link icon={<MailIcon />} color="inverse" href="mailto:vliegenbos.sdn@amsterdam.nl">
+                <LinkList.Link color="inverse" href="mailto:vliegenbos.sdn@amsterdam.nl" icon={<MailIcon />}>
                   <span className="sr-only">E-mail:</span>vliegenbos.sdn@amsterdam.nl
                 </LinkList.Link>
               </LinkList>
