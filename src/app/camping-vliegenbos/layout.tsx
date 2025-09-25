@@ -1,6 +1,5 @@
 'use client'
 
-import NextLink from 'next/link'
 import {
   Grid,
   Heading,
@@ -18,9 +17,10 @@ import {
   MailIcon,
   PhoneIcon,
 } from '@amsterdam/design-system-react-icons'
-import { navigationMenuItems } from './navigationMenuItems'
+import NextLink from 'next/link'
 
 import formatPath from '../../utils/formatPath'
+import { navigationMenuItems } from './navigationMenuItems'
 
 const menuLinks = [
   {
@@ -49,8 +49,8 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
       >
         <Grid paddingVertical="large">
           {navigationMenuItems.map(({ heading, items }) => (
-            <Grid.Cell span={3} key={`${heading}-column-navigation`}>
-              <Heading level={2} size="level-3" className="ams-mb-s">
+            <Grid.Cell key={`${heading}-column-navigation`} span={3}>
+              <Heading className="ams-mb-s" level={2} size="level-3">
                 {heading}
               </Heading>
               <LinkList>
@@ -94,23 +94,23 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
               </Heading>
               <LinkList>
                 <LinkList.Link
-                  icon={<InstagramIcon />}
                   color="inverse"
                   href="https://www.instagram.com/campingvliegenbosamsterdam/"
+                  icon={<InstagramIcon />}
                 >
                   Instagram
                 </LinkList.Link>
                 <LinkList.Link
-                  icon={<FacebookIcon />}
                   color="inverse"
                   href="https://www.facebook.com/CampingVliegenbos/"
+                  icon={<FacebookIcon />}
                 >
                   Facebook
                 </LinkList.Link>
                 <LinkList.Link
-                  icon={<ChevronForwardIcon />}
                   color="inverse"
                   href="http://www.tripadvisor.nl/Hotel_Review-g188590-d239468-Reviews-Camping_Vliegenbos-Amsterdam_North_Holland_Province.html"
+                  icon={<ChevronForwardIcon />}
                 >
                   Tripadvisor
                 </LinkList.Link>

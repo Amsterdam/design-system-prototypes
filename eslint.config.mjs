@@ -57,6 +57,12 @@ const perfectionistCustomSizesGroups = {
 
 export default tseslint.config(
   {
+    files: ['*.mjs'],
+    languageOptions: {
+      parser: '@babel/eslint-parser',
+    },
+  },
+  {
     files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
     ignores: [
       '**/node_modules/',
@@ -67,7 +73,6 @@ export default tseslint.config(
       '**/tmp/',
       '**/.next',
       '**/out',
-      '*.mjs',
     ],
   },
   ...compat.extends(
