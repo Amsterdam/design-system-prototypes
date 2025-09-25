@@ -162,9 +162,9 @@ export default function OverDeCamping() {
               Reserveren
             </Heading>
             <Paragraph className="ams-mb-s" color="inverse">
-              Online reserveren kan voor en verblijf tot maximaal 7 nachten. Bezoekers mogen in totaal maximaal 21 dagen
-              op de camping blijven. In onderstaande gevallen kun je niet online reserveren en moet je contact opnemen
-              met de receptie.
+              Online reserveren kan voor een verblijf tot maximaal 7 nachten. Bezoekers mogen in totaal maximaal 21
+              dagen op de camping blijven. In onderstaande gevallen kun je niet online reserveren en moet je contact
+              opnemen met de receptie.
             </Paragraph>
             <UnorderedList className="ams-mb-m" color="inverse">
               <UnorderedList.Item>Verblijf van 1 nacht in een trekkershut </UnorderedList.Item>
