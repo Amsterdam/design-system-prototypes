@@ -57,7 +57,7 @@ export default function HomePage() {
           <Heading level={2}>Vind een plek die bij je past</Heading>
         </Grid.Cell>
         {cards.map((card) => (
-          <Grid.Cell key={card.href} span={{ narrow: 4, medium: 4, wide: 4 }}>
+          <Grid.Cell key={card.href} span={4}>
             <Card>
               <Card.Heading level={3}>
                 <Card.Link href={formatPath(card.href)}>{card.label}</Card.Link>
