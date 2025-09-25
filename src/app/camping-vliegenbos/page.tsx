@@ -1,32 +1,39 @@
 'use client'
 
-import { Card, Grid, Heading, Image, Paragraph } from '@amsterdam/design-system-react'
+import NextImage from 'next/image'
+import { Card, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import campingVliegenbosPicture from './_assets/camping-vliegenbos-picture.jpg'
 import formatPath from '../../utils/formatPath'
 
 const cards = [
   {
     label: 'Over de camping',
+    description: 'Algemene informatie',
     href: '/camping-vliegenbos/over-de-camping',
   },
   {
     label: 'Zoek en boek',
+    description: 'Bekijk de beschikbaarheid',
     href: '/camping-vliegenbos/zoek-en-boek',
   },
   {
     label: 'Route',
+    description: 'Hoe kom je er?',
     href: '/camping-vliegenbos/route',
   },
   {
     label: 'Tenten',
+    description: 'Kamperen met je eigen tent',
     href: '/camping-vliegenbos/tenten',
   },
   {
     label: 'Campers en caravans',
+    description: 'Kamperen met je camper of caravan',
     href: '/camping-vliegenbos/campers-en-caravans',
   },
   {
     label: 'Trekkershutten',
+    description: 'Overnachten in een trekkershut',
     href: '/camping-vliegenbos/trekkershutten',
   },
 ]
@@ -34,7 +41,7 @@ const cards = [
 export default function HomePage() {
   return (
     <>
-      <Image className="ams-mb-xl" alt="" src={campingVliegenbosPicture.src} aspectRatio="16:5" />
+      <NextImage className="ams-mb-xl ams-image ams-aspect-ratio-16-5" alt="" src={campingVliegenbosPicture} />
       <Grid paddingBottom="large" as="section">
         <Grid.Cell span="all">
           <Heading level={1} className="ams-mb-s">
@@ -49,22 +56,13 @@ export default function HomePage() {
         <Grid.Cell span="all">
           <Heading level={2}>Vind een plek die bij je past</Heading>
         </Grid.Cell>
-        {cards.slice(0, 3).map((card, idx) => (
-          <Grid.Cell span={3} key={`${idx}-home-first-row-card`}>
+        {cards.map((card) => (
+          <Grid.Cell key={card.href} span={{ narrow: 4, medium: 4, wide: 4 }}>
             <Card>
               <Card.Heading level={3}>
                 <Card.Link href={formatPath(card.href)}>{card.label}</Card.Link>
               </Card.Heading>
-            </Card>
-          </Grid.Cell>
-        ))}
-        <br />
-        {cards.slice(3, 6).map((card, idx) => (
-          <Grid.Cell span={3} key={`${idx}-home-second-row-card`}>
-            <Card>
-              <Card.Heading level={3}>
-                <Card.Link href={formatPath(card.href)}>{card.label}</Card.Link>
-              </Card.Heading>
+              <Paragraph>{card.description}</Paragraph>
             </Card>
           </Grid.Cell>
         ))}

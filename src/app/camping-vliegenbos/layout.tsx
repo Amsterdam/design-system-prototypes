@@ -21,6 +21,7 @@ import {
 import { navigationMenuItems } from './navigationMenuItems'
 
 import formatPath from '../../utils/formatPath'
+import './camping-vliegenbos.css'
 
 const menuLinks = [
   {
@@ -42,7 +43,7 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
         logoLinkComponent={(props) => <NextLink {...props} href="/camping-vliegenbos" />}
         logoLinkTitle="Naar de homepage van Camping Vliegenbos"
         menuItems={menuLinks.map(({ href, label }) => (
-          <PageHeader.MenuLink href={href} key={`${label}-nav-item`}>
+          <PageHeader.MenuLink href={href} key={href}>
             {label}
           </PageHeader.MenuLink>
         ))}
@@ -55,7 +56,7 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
               </Heading>
               <LinkList>
                 {items.map(({ href, label }) => (
-                  <LinkList.Link href={formatPath(href)} key={`${label}-navigation-item`}>
+                  <LinkList.Link href={formatPath(href)} key={href}>
                     {label}
                   </LinkList.Link>
                 ))}
@@ -67,9 +68,9 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
       <main id="inhoud">{children}</main>
       <PageFooter>
         <PageFooter.Spotlight>
-          <Grid gapVertical="2x-large" paddingVertical="x-large">
+          <Grid paddingVertical="x-large">
             <Grid.Cell span={4}>
-              <Paragraph className="ams-mb-m" color="inverse">
+              <Paragraph color="inverse">
                 Camping Vliegenbos <br />
                 Meeuwenlaan 138 <br />
                 1022 AM Amsterdam
@@ -80,16 +81,11 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
                 Contact
               </Heading>
               <LinkList>
-                <LinkList.Link icon={<PhoneIcon />} color="inverse" href="tel:+31(0)20 251 7800" type="tel">
-                  020 251 7800
+                <LinkList.Link icon={<PhoneIcon />} color="inverse" href="tel:31202517800">
+                  <span className="sr-only">Telefoon:</span>020 251 7800
                 </LinkList.Link>
-                <LinkList.Link
-                  icon={<MailIcon />}
-                  color="inverse"
-                  href="mailto:vliegenbos.sdn@amsterdam.nl"
-                  type="email"
-                >
-                  vliegenbos.sdn@amsterdam.nl
+                <LinkList.Link icon={<MailIcon />} color="inverse" href="mailto:vliegenbos.sdn@amsterdam.nl">
+                  <span className="sr-only">E-mail:</span>vliegenbos.sdn@amsterdam.nl
                 </LinkList.Link>
               </LinkList>
             </Grid.Cell>
