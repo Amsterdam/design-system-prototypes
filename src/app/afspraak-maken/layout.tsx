@@ -41,7 +41,7 @@ export default function AfspraakMaken({ children }) {
       <main id="main">{children}</main>
       <PageFooter>
         <PageFooter.Spotlight>
-          <Grid gapVertical="2x-large" paddingVertical="x-large">
+          <Grid paddingVertical="x-large">
             <Grid.Cell span="all">
               <Heading className="ams-mb-m" color="inverse" level={2} size="level-3">
                 Vragen over dit formulier

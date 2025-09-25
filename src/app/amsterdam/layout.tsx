@@ -38,7 +38,7 @@ export default function Amsterdam({ children }) {
         {children}
         <PageFooter>
           <PageFooter.Spotlight>
-            <Grid gapVertical="2x-large" paddingVertical="x-large">
+            <Grid paddingVertical="x-large">
               <Grid.Cell span={3}>
                 <Heading className="ams-mb-s" color="inverse" level={2} size="level-3">
                   Contact
