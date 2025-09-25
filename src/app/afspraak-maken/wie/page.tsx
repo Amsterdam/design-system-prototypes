@@ -40,7 +40,7 @@ export default function Wie() {
             <Label htmlFor="family-name">Achternaam</Label>
             <TextInput autoComplete="family-name" id="family-name" size={24} />
           </Field>
-          <FieldSet legend="Geboortedatum" className="ams-mb-l">
+          <FieldSet className="ams-mb-l" legend="Geboortedatum">
             <Row wrap>
               <Field>
                 <Label htmlFor="bday-day">Dag</Label>
@@ -58,7 +58,7 @@ export default function Wie() {
           </FieldSet>
           <Field className="ams-mb-l">
             <Label htmlFor="email">E-mailadres</Label>
-            <TextInput autoComplete="email" autoCorrect="off" spellCheck="false" type="email" id="email" size={24} />
+            <TextInput autoComplete="email" autoCorrect="off" id="email" size={24} spellCheck="false" type="email" />
           </Field>
           <Row className="ams-mb-xl" wrap>
             <Field>
@@ -73,7 +73,7 @@ export default function Wie() {
             </Field>
             <Field>
               <Label htmlFor="phone">Telefoonnummer</Label>
-              <TextInput autoComplete="tel" type="tel" id="phone" size={24} />
+              <TextInput autoComplete="tel" id="phone" size={24} type="tel" />
             </Field>
           </Row>
           <ActionGroup className="ams-mb-m">

@@ -17,32 +17,32 @@ const filterPanel = [
   {
     title: 'Contenttype',
     filters: [
-      { label: 'Nieuws', hits: 10 },
-      { label: 'Regeling', hits: 10 },
-      { label: 'Werkzaamheden', hits: 5 },
+      { hits: 10, label: 'Nieuws' },
+      { hits: 10, label: 'Regeling' },
+      { hits: 5, label: 'Werkzaamheden' },
     ],
   },
   {
     title: 'Groep',
     filters: [
-      { label: 'Bewoners', hits: 10 },
-      { label: 'Bedrijven', hits: 10 },
-      { label: 'Bezoekers', hits: 5 },
+      { hits: 10, label: 'Bewoners' },
+      { hits: 10, label: 'Bedrijven' },
+      { hits: 5, label: 'Bezoekers' },
     ],
   },
   {
     title: 'Soort afval',
     filters: [
-      { label: 'Grofvuil', hits: 6 },
-      { label: 'Tuinafval', hits: 4 },
-      { label: 'Groente-, fruit-, etensresten en tuinafval (gfe/t)', hits: 3 },
-      { label: 'Textiel', hits: 3 },
-      { label: 'Huisvuil', hits: 2 },
-      { label: 'Papier en karton', hits: 2 },
-      { label: 'Glas', hits: 2 },
-      { label: 'Brood', hits: 1 },
-      { label: 'Asbest', hits: 1 },
-      { label: 'KCA (klein chemisch afval)', hits: 1 },
+      { hits: 6, label: 'Grofvuil' },
+      { hits: 4, label: 'Tuinafval' },
+      { hits: 3, label: 'Groente-, fruit-, etensresten en tuinafval (gfe/t)' },
+      { hits: 3, label: 'Textiel' },
+      { hits: 2, label: 'Huisvuil' },
+      { hits: 2, label: 'Papier en karton' },
+      { hits: 2, label: 'Glas' },
+      { hits: 1, label: 'Brood' },
+      { hits: 1, label: 'Asbest' },
+      { hits: 1, label: 'KCA (klein chemisch afval)' },
     ],
   },
 ]
@@ -53,8 +53,8 @@ function Zoeken() {
       <Grid.Cell span={{ narrow: 4, medium: 2, wide: 3 }}>
         <Column>
           {filterPanel.map(({ title, filters }) => (
-            <FieldSet legend={title} key={title}>
-              {filters.map(({ label, hits }) => (
+            <FieldSet key={title} legend={title}>
+              {filters.map(({ hits, label }) => (
                 <Checkbox key={label}>
                   {label} ({hits})
                 </Checkbox>

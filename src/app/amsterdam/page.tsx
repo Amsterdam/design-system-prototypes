@@ -15,10 +15,11 @@ import {
 import NextImage from 'next/image'
 import NextLink from 'next/link'
 import { useState } from 'react'
-import vindenImage from './_assets/vinden.jpg'
+
 import stormschadeImage from './_assets/stormschade.jpg'
-import woonwijkImage from './_assets/woonwijk.jpg'
 import vervoerImage from './_assets/vervoer.jpg'
+import vindenImage from './_assets/vinden.jpg'
+import woonwijkImage from './_assets/woonwijk.jpg'
 import zonnepanelenImage from './_assets/zonnepanelen.jpg'
 
 const topTasks = [
@@ -85,7 +86,7 @@ function HomePage() {
     <>
       <h1 className="ams-visually-hidden">Homepage van de gemeente Amsterdam</h1>
       {isAlertVisible && (
-        <Grid paddingTop="large" paddingBottom="2x-large">
+        <Grid paddingBottom="2x-large" paddingTop="large">
           <Grid.Cell span="all">
             <Alert
               closeable
@@ -105,7 +106,7 @@ function HomePage() {
       <Overlap>
         <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={vindenImage} />
         <Grid style={{ alignSelf: 'center' }}>
-          <Grid.Cell span={{ medium: 6, narrow: 4, wide: 8 }} start={{ medium: 2, narrow: 1, wide: 3 }}>
+          <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
             <SearchField onSubmit={() => {}}>
               <SearchField.Input label="Zoeken" placeholder="Wat kunnen we voor u vinden?" />
               <SearchField.Button />
@@ -113,14 +114,14 @@ function HomePage() {
           </Grid.Cell>
         </Grid>
       </Overlap>
-      <Grid paddingVertical="x-large" gapVertical="large">
+      <Grid gapVertical="large" paddingVertical="x-large">
         <Grid.Cell span="all">
           <Heading level={2} size="level-1">
             Meest bezocht
           </Heading>
         </Grid.Cell>
         {topTasks.map(({ title, description }) => (
-          <Grid.Cell span={{ narrow: 4, medium: 4, wide: 3 }} key={title}>
+          <Grid.Cell key={title} span={{ narrow: 4, medium: 4, wide: 3 }}>
             <Card>
               <Card.Heading level={3}>
                 <Card.Link href="#">{title}</Card.Link>
@@ -158,7 +159,7 @@ function HomePage() {
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <Grid paddingTop="x-large" paddingBottom="2x-large">
+      <Grid paddingBottom="2x-large" paddingTop="x-large">
         <Grid.Cell span={3}>
           <Heading className="ams-mb-l" level={2} size="level-1">
             Kalender
@@ -196,7 +197,7 @@ function HomePage() {
           </Card>
         </Grid.Cell>
         {cards.map(({ heading, image }) => (
-          <Grid.Cell span={4} key={heading}>
+          <Grid.Cell key={heading} span={4}>
             <Card>
               <NextImage alt="" className="ams-image ams-card__image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">

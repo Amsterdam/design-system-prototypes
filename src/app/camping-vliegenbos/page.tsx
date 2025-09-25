@@ -1,50 +1,51 @@
 'use client'
 
-import NextImage from 'next/image'
 import { Card, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
-import campingVliegenbosPicture from './_assets/camping-vliegenbos-picture.jpg'
+import NextImage from 'next/image'
+
 import formatPath from '../../utils/formatPath'
+import campingVliegenbosPicture from './_assets/camping-vliegenbos-picture.jpg'
 
 const cards = [
   {
-    label: 'Over de camping',
     description: 'Algemene informatie',
     href: '/camping-vliegenbos/over-de-camping',
+    label: 'Over de camping',
   },
   {
-    label: 'Zoek en boek',
     description: 'Bekijk de beschikbaarheid',
     href: '/camping-vliegenbos/zoek-en-boek',
+    label: 'Zoek en boek',
   },
   {
-    label: 'Route',
     description: 'Hoe kom je er?',
     href: '/camping-vliegenbos/route',
+    label: 'Route',
   },
   {
-    label: 'Tenten',
     description: 'Kamperen met je eigen tent',
     href: '/camping-vliegenbos/tenten',
+    label: 'Tenten',
   },
   {
-    label: 'Campers en caravans',
     description: 'Kamperen met je camper of caravan',
     href: '/camping-vliegenbos/campers-en-caravans',
+    label: 'Campers en caravans',
   },
   {
-    label: 'Trekkershutten',
     description: 'Overnachten in een trekkershut',
     href: '/camping-vliegenbos/trekkershutten',
+    label: 'Trekkershutten',
   },
 ]
 
 export default function HomePage() {
   return (
     <>
-      <NextImage className="ams-mb-xl ams-image ams-aspect-ratio-16-5" alt="" src={campingVliegenbosPicture} />
-      <Grid paddingBottom="large" as="section">
+      <NextImage alt="" className="ams-mb-xl ams-image ams-aspect-ratio-16-5" src={campingVliegenbosPicture} />
+      <Grid as="section" paddingBottom="large">
         <Grid.Cell span="all">
-          <Heading level={1} className="ams-mb-s">
+          <Heading className="ams-mb-s" level={1}>
             Welkom op camping Vliegenbos
           </Heading>
           <Paragraph>
@@ -52,7 +53,7 @@ export default function HomePage() {
           </Paragraph>
         </Grid.Cell>
       </Grid>
-      <Grid paddingBottom="2x-large" gapVertical="large" as="section">
+      <Grid as="section" gapVertical="large" paddingBottom="2x-large">
         <Grid.Cell span="all">
           <Heading level={2}>Vind een plek die bij je past</Heading>
         </Grid.Cell>

@@ -1,8 +1,9 @@
 'use client'
 
 import { Breadcrumb, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
-import NextLink from 'next/link'
 import NextImage from 'next/image'
+import NextLink from 'next/link'
+
 import fatbikesImage from '../_assets/fatbikes.jpg'
 
 function Nieuws() {
@@ -22,7 +23,7 @@ function Nieuws() {
         <Grid paddingBottom="x-large">
           {/* TODO: this looks off on medium screen widths, should probably be full width */}
           <Grid.Cell span={6}>
-            <Heading level={1} className="ams-mb-s">
+            <Heading className="ams-mb-s" level={1}>
               Maatregelen tegen overlast fatbikes
             </Heading>
             <Paragraph>8 november 2023</Paragraph>
@@ -45,7 +46,7 @@ function Nieuws() {
               Mensen voelen zich steeds onveiliger op het fietspad door de toenemende drukte en snelheidsverschillen.
               Ook stijgt het aantal fietsongelukken al jaren. We moeten daarom nu in actie komen.
             </Paragraph>
-            <Heading level={2} className="ams-mb-xs">
+            <Heading className="ams-mb-xs" level={2}>
               Gevaar
             </Heading>
             <Paragraph className="ams-mb-l">
@@ -54,14 +55,14 @@ function Nieuws() {
               rijden op fatbikes. Ze zijn zich vaak niet bewust van het gevaar dat ze zelf lopen of kunnen veroorzaken.
               En als je fatbike is opgevoerd, ben je zelfs als je een verzekering hebt, niet verzekerd bij een ongeval.
             </Paragraph>
-            <Heading level={2} className="ams-mb-xs">
+            <Heading className="ams-mb-xs" level={2}>
               Handhaven
             </Heading>
             <Paragraph className="ams-mb-l">
               De politie controleert op overtredingen met opgevoerde/illegale e-bikes en fatbikes. Er worden boetes
               uitgedeeld en bij grove overtredingen neemt de politie fatbikes in beslag.
             </Paragraph>
-            <Heading level={2} className="ams-mb-xs">
+            <Heading className="ams-mb-xs" level={2}>
               Voorlichting
             </Heading>
             <Paragraph className="ams-mb-l">
@@ -71,7 +72,7 @@ function Nieuws() {
               leerlingen hebben over illegale en opgevoerde fatbikes en de gevolgen van het hiermee rijden op de
               openbare weg.
             </Paragraph>
-            <Heading level={2} className="ams-mb-xs">
+            <Heading className="ams-mb-xs" level={2}>
               Fietshelm
             </Heading>
             <Paragraph className="ams-mb-l">
@@ -86,7 +87,7 @@ function Nieuws() {
               kinderen en ouderen. Het Rijk werkt aan een nieuw Meerjarenplan Fietsveiligheid met daarin een landelijke
               fietshelm&shy;campagne.
             </Paragraph>
-            <Heading level={2} className="ams-mb-xs">
+            <Heading className="ams-mb-xs" level={2}>
               Andere maatregelen
             </Heading>
             <Paragraph>

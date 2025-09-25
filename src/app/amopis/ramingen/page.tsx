@@ -47,7 +47,7 @@ function Estimation() {
           ))}
         </Tabs>
       </Grid.Cell>
-      <Grid.Cell start={1} span={{ narrow: 4, medium: 2, wide: 2 }}>
+      <Grid.Cell span={{ narrow: 4, medium: 2, wide: 2 }} start={1}>
         <div className="amopis-white-background">
           <LinkList>
             <LinkList.Link href="#">Projectdetails</LinkList.Link>
@@ -87,7 +87,7 @@ function Estimation() {
                     <Table.Cell>2025</Table.Cell>
                     <Table.Cell>25-2</Table.Cell>
                     <Table.Cell>
-                      <Badge label="Voorgesteld" color="azure" />
+                      <Badge color="azure" label="Voorgesteld" />
                     </Table.Cell>
                     <Table.Cell>Marise Ent</Table.Cell>
                     <Table.Cell>
@@ -115,7 +115,7 @@ function Estimation() {
                     <Table.Cell>2026</Table.Cell>
                     <Table.Cell>26-1</Table.Cell>
                     <Table.Cell>
-                      <Badge label="Concept" color="yellow" />
+                      <Badge color="yellow" label="Concept" />
                     </Table.Cell>
                     <Table.Cell>Klaas Helmers</Table.Cell>
                     <Table.Cell>
@@ -146,7 +146,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-6</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="azure" />
+                        <Badge color="azure" label="Voorgesteld" />
                       </Table.Cell>
                       <Table.Cell>Marjolein Boomer</Table.Cell>
                       <Table.Cell>
@@ -160,7 +160,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-5</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="azure" />
+                        <Badge color="azure" label="Voorgesteld" />
                       </Table.Cell>
                       <Table.Cell>Klaas Helmers</Table.Cell>
                       <Table.Cell>
@@ -174,7 +174,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-4</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="azure" />
+                        <Badge color="azure" label="Voorgesteld" />
                       </Table.Cell>
                       <Table.Cell>Marjolein Boomer</Table.Cell>
                       <Table.Cell>
@@ -188,7 +188,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-3</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Voorgesteld" color="azure" />
+                        <Badge color="azure" label="Voorgesteld" />
                       </Table.Cell>
                       <Table.Cell>Marjolein Boomer</Table.Cell>
                       <Table.Cell>
@@ -202,7 +202,7 @@ function Estimation() {
                       <Table.Cell>2024</Table.Cell>
                       <Table.Cell>24-2</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Wijziging aangevraagd" color="magenta" />
+                        <Badge color="magenta" label="Wijziging aangevraagd" />
                       </Table.Cell>
                       <Table.Cell>Marise Ent</Table.Cell>
                       <Table.Cell>
@@ -216,7 +216,7 @@ function Estimation() {
                       <Table.Cell>2025</Table.Cell>
                       <Table.Cell>24-1</Table.Cell>
                       <Table.Cell>
-                        <Badge label="Concept" color="yellow" />
+                        <Badge color="yellow" label="Concept" />
                       </Table.Cell>
                       <Table.Cell>Klaas Helmers</Table.Cell>
                       <Table.Cell>

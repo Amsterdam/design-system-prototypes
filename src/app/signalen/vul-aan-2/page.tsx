@@ -1,17 +1,16 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 'use client'
 
 import { Button, Column, Field, Grid, Heading, Label, Paragraph, TextArea } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
+
+import { docTitle } from '../../../constants'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
-import { docTitle } from '../../../constants'
 
 function VulAan2() {
-  const { register, handleSubmit } = useForm()
+  const { handleSubmit, register } = useForm()
   const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()

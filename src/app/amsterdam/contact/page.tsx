@@ -24,16 +24,16 @@ function Contact() {
         <form className="ams-gap-l" onSubmit={handleSubmit}>
           <Heading level={1}>Contact</Heading>
           <FieldSet legend="Waar gaat uw melding over?">
-            <Radio name="soort" value="vraag" defaultChecked>
+            <Radio defaultChecked name="soort" value="vraag">
               Vraag
             </Radio>
-            <Radio name="soort" value="klacht" disabled>
+            <Radio disabled name="soort" value="klacht">
               Klacht
             </Radio>
-            <Radio name="soort" value="meldingen" disabled>
+            <Radio disabled name="soort" value="meldingen">
               Meldingen openbare ruimte en overlast
             </Radio>
-            <Radio name="soort" value="idee" disabled>
+            <Radio disabled name="soort" value="idee">
               Idee of suggestie
             </Radio>
           </FieldSet>

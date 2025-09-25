@@ -1,7 +1,7 @@
 'use client'
 
-import { useEffect } from 'react'
 import { usePathname, useSearchParams } from 'next/navigation'
+import { useEffect } from 'react'
 
 /**
  * Next doesn't automatically reset the focus to the top of the page on navigation.

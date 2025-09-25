@@ -1,6 +1,5 @@
 'use client'
 
-import { Suspense } from 'react'
 import {
   Column,
   Grid,
@@ -13,8 +12,10 @@ import {
   SkipLink,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
-import { FormProvider } from './FormContext'
+import { Suspense } from 'react'
+
 import { ResetFocusOnNavigation } from './_components/ResetFocusOnNavigation/ResetFocusOnNavigation'
+import { FormProvider } from './FormContext'
 
 function Signalen({ children }) {
   return (

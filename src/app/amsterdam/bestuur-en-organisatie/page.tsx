@@ -10,11 +10,11 @@ type SubsectionProps = {
 }
 
 const linkUrls: Record<string, string> = {
-  Gemeenteraad: '/amsterdam/bestuur-en-organisatie/gemeenteraad',
   'College van burgemeester en wethouders': '/amsterdam/bestuur-en-organisatie/college-van-burgemeester-en-wethouders',
+  Gemeenteraad: '/amsterdam/bestuur-en-organisatie/gemeenteraad',
 }
 
-function Subsection({ isEven, title }: SubsectionProps) {
+function Subsection({ title, isEven }: SubsectionProps) {
   return (
     <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={isEven ? { narrow: 1, medium: 1, wide: 2 } : undefined}>
       <Card>
@@ -36,7 +36,7 @@ type SectionProps = {
   title: string
 }
 
-function Section({ description, linkText, subsections, title }: SectionProps) {
+function Section({ title, description, linkText, subsections }: SectionProps) {
   return (
     <Grid paddingBottom="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
