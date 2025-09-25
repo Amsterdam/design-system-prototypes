@@ -2,7 +2,6 @@
  * @type {import('next').NextConfig}
  */
 
-// eslint-disable-next-line import/extensions
 import { PHASE_DEVELOPMENT_SERVER } from 'next/dist/shared/lib/constants.js'
 
 const nextConfig = (phase) => {
@@ -19,8 +18,8 @@ const nextConfig = (phase) => {
     env: {
       basePath: `/design-system-prototypes${process.env.NEXT_PUBLIC_BASE_PATH}`,
     },
-    output: 'export',
     images: { unoptimized: true },
+    output: 'export',
   }
 }
 

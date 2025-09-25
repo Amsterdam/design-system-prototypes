@@ -1,25 +1,24 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 'use client'
 
 import { Button, Column, FieldSet, Grid, Heading, Paragraph, Radio } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
-import { BackLink } from '../_components/BackLink'
-import { useFormContext } from '../FormContext'
-import { capitalizeFirstLetter } from '../_utils/capitalizeFirstLetter'
+import { useForm } from 'react-hook-form'
+
 import { docTitle } from '../../../constants'
+import { BackLink } from '../_components/BackLink'
+import { capitalizeFirstLetter } from '../_utils/capitalizeFirstLetter'
+import { useFormContext } from '../FormContext'
 
 const optionLabel = (daysBack) => {
   const date = new Date(new Date().setDate(new Date().getDate() - daysBack))
-  return capitalizeFirstLetter(date.toLocaleDateString('nl', { weekday: 'long', day: 'numeric', month: 'long' }))
+  return capitalizeFirstLetter(date.toLocaleDateString('nl', { day: 'numeric', month: 'long', weekday: 'long' }))
 }
 
 const dayOptions = Array.from({ length: 6 }, (_, i) => i + 1)
 
 function VulAan1() {
-  const { register, handleSubmit } = useForm()
+  const { handleSubmit, register } = useForm()
   const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()

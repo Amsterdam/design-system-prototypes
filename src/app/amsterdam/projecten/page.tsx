@@ -1,11 +1,11 @@
 'use client'
 
 import { Breadcrumb, Grid, Heading, LinkList, Paragraph, Spotlight, TextInput } from '@amsterdam/design-system-react'
-import NextLink from 'next/link'
 import NextImage from 'next/image'
+import NextLink from 'next/link'
 
-import constructionWorkImage from '../_assets/construction-work.jpg'
 import constructionWorkMapImage from '../_assets/construction-work-map.jpg'
+import constructionWorkImage from '../_assets/construction-work.jpg'
 
 function Projecten() {
   return (
@@ -21,7 +21,7 @@ function Projecten() {
       </Grid>
       <Grid gapVertical="large" paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-          <Heading level={1} className="ams-mb-m">
+          <Heading className="ams-mb-m" level={1}>
             Bouw- en verkeersprojecten
           </Heading>
           <Paragraph size="large">
@@ -33,7 +33,7 @@ function Projecten() {
       </Grid>
       <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 2, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
-          <Heading level={2} className="ams-mb-s">
+          <Heading className="ams-mb-s" level={2}>
             Projecten per stadsdeel
           </Heading>
           <LinkList>
@@ -45,7 +45,7 @@ function Projecten() {
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 2, medium: 4, wide: 5 }}>
-          <Heading level={2} className="ams-mb-s">
+          <Heading className="ams-mb-s" level={2}>
             Zoek project
           </Heading>
           <TextInput />
@@ -54,7 +54,7 @@ function Projecten() {
       <Spotlight color="yellow">
         <Grid paddingVertical="x-large">
           <Grid.Cell span={3} start={{ narrow: 1, medium: 1, wide: 3 }}>
-            <Heading level={2} className="ams-mb-s">
+            <Heading className="ams-mb-s" level={2}>
               Kaart met bouwprojecten en verkeersprojecten
             </Heading>
             <Paragraph>Ga via de kaart naar meer informatie over het project dat u zoekt.</Paragraph>

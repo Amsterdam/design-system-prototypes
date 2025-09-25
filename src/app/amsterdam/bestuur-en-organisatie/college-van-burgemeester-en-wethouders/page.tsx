@@ -3,6 +3,7 @@
 import { Breadcrumb, Card, Grid, GridColumnNumber, Heading, Paragraph } from '@amsterdam/design-system-react'
 import NextImage, { type StaticImageData } from 'next/image'
 import NextLink from 'next/link'
+
 import municipalExecutiveDeJager from '../../_assets/municipal-executive-de-jager.jpg'
 import municipalExecutiveGrootWassink from '../../_assets/municipal-executive-groot-wassink.jpg'
 import municipalExecutiveHalsema from '../../_assets/municipal-executive-halsema.jpg'
@@ -117,7 +118,7 @@ export default function CollegeVanBurgemeesterEnWethouders() {
         </Grid.Cell>
       </Grid>
       <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={municipalExecutive} />
-      <Grid paddingVertical="2x-large" gapVertical="large">
+      <Grid gapVertical="large" paddingVertical="2x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 12 }} start={{ narrow: 1, medium: 2, wide: 1 }}>
           <Heading className="ams-mb-s" level={2}>
             Burgemeester en wethouders

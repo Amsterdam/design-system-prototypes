@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 'use client'
 
 import {
@@ -14,14 +12,15 @@ import {
   UnorderedList,
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
+
+import { docTitle } from '../../../constants'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
-import { docTitle } from '../../../constants'
 
 function Docs() {
-  const { register, handleSubmit } = useForm()
+  const { handleSubmit, register } = useForm()
   const { updateFormData } = useFormContext()
 
   const router = useRouter()
@@ -66,7 +65,7 @@ function Docs() {
                 <UnorderedList.Item>Een bestand mag maximaal 20 MB groot zijn.</UnorderedList.Item>
               </UnorderedList>
             </div>
-            <FileInput aria-describedby="filesDescription" id="files" accept="image/*,.pdf" {...register('files')} />
+            <FileInput accept="image/*,.pdf" aria-describedby="filesDescription" id="files" {...register('files')} />
           </Field>
           <div>
             <Button type="submit">Volgende vraag</Button>

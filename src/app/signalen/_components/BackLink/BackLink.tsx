@@ -3,10 +3,11 @@
  * Copyright Gemeente Amsterdam
  */
 
+import type { AnchorHTMLAttributes } from 'react'
+
 import { StandaloneLink } from '@amsterdam/design-system-react'
 import { ChevronBackwardIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
-import type { AnchorHTMLAttributes } from 'react'
 
 type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'color'> & {
   href: string

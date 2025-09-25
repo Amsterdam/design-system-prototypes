@@ -1,8 +1,8 @@
 'use client'
 
 import { Breadcrumb, Card, Grid, Heading, Link, LinkList, Paragraph, Spotlight } from '@amsterdam/design-system-react'
-import NextLink from 'next/link'
 import NextImage from 'next/image'
+import NextLink from 'next/link'
 
 import constructionWorkMapImage from '../../_assets/construction-work-map.jpg'
 
@@ -23,7 +23,7 @@ function Project() {
       </Grid>
       <Grid gapVertical="large" paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
-          <Heading level={1} className="ams-mb-m">
+          <Heading className="ams-mb-m" level={1}>
             Bouw- en verkeersprojecten in Noord
           </Heading>
           <Paragraph size="large">
@@ -63,7 +63,7 @@ function Project() {
       <Spotlight>
         <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 3, medium: 4, wide: 5 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-            <Heading color="inverse" level={2} className="ams-mb-s">
+            <Heading className="ams-mb-s" color="inverse" level={2}>
               Werk aan de weg
             </Heading>
             <LinkList>
@@ -82,7 +82,7 @@ function Project() {
             </LinkList>
           </Grid.Cell>
           <Grid.Cell span={{ narrow: 4, medium: 2, wide: 4 }} start={{ narrow: 1, medium: 7, wide: 8 }}>
-            <Heading color="inverse" level={2} className="ams-mb-s">
+            <Heading className="ams-mb-s" color="inverse" level={2}>
               In andere stadsdelen
             </Heading>
             <LinkList>

@@ -1,33 +1,34 @@
 'use client'
 
+import type { StaticImageData } from 'next/image'
+
 import { Breadcrumb, Card, Grid, Heading, LinkList, Paragraph } from '@amsterdam/design-system-react'
 import { LinkExternalIcon } from '@amsterdam/design-system-react-icons'
 import NextImage from 'next/image'
-import type { StaticImageData } from 'next/image'
 import NextLink from 'next/link'
 
-import cityCouncilImage from '../../_assets/city-council.jpg'
 import cityCouncilNews1Image from '../../_assets/city-council-news-1.jpg'
 import cityCouncilNews2Image from '../../_assets/city-council-news-2.jpg'
+import cityCouncilImage from '../../_assets/city-council.jpg'
 
 const newsArticles = [
   {
+    title: 'Berlagebrug een aantal nachten dicht',
     date: '28 mei 2024',
     description:
       'Tussen 3 juni en 21 juli leggen we het tramspoor op de Berlagebrug aan. De brug is ongeveer 12 nachten dicht voor gemotoriseerd verkeer en 3 dagen voor al het verkeer.',
     id: 1,
     image: cityCouncilNews1Image,
     tagline: 'Algemeen, Centrum',
-    title: 'Berlagebrug een aantal nachten dicht',
   },
   {
+    title: 'Het allereerste beroepsbrandweerkorps van Nederland bestaat 150 jaar',
     date: '24 mei 2024',
     description:
       'In de zomer van 1874 werd het allereerste beroepsbrandweerkorps van Nederland opgericht: de huidige Brandweer Amsterdam-Amstelland.',
     id: 2,
     image: cityCouncilNews2Image,
     tagline: 'Achtergrond',
-    title: 'Het allereerste beroepsbrandweerkorps van Nederland bestaat 150 jaar',
   },
 ]
 
@@ -39,7 +40,7 @@ type NewsArticleProps = {
   title: string
 }
 
-function NewsArticle({ date, description, image, tagline, title }: NewsArticleProps) {
+function NewsArticle({ title, date, description, image, tagline }: NewsArticleProps) {
   return (
     <>
       <Grid.Cell span={{ narrow: 4, medium: 3, wide: 4 }} start={{ narrow: 1, medium: 1, wide: 2 }}>
@@ -84,7 +85,7 @@ export default function Gemeenteraad() {
         </Grid.Cell>
       </Grid>
       <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={cityCouncilImage} />
-      <Grid paddingVertical="2x-large" gapVertical="large">
+      <Grid gapVertical="large" paddingVertical="2x-large">
         <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={1}>
           <Heading className="ams-mb-xs" level={2} size="level-3">
             Raadsinformatie

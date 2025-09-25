@@ -1,70 +1,68 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 'use client'
 
-import { Heading, Paragraph, Column, Button, Link, Grid } from '@amsterdam/design-system-react'
-import { useRouter } from 'next/navigation'
-import { useForm } from 'react-hook-form'
+import { Button, Column, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
-import { BackLink } from '../_components/BackLink'
-import { useFormContext } from '../FormContext'
+import { useForm } from 'react-hook-form'
 
+import { docTitle } from '../../../constants'
+import { BackLink } from '../_components/BackLink'
 import '../_components/SummaryDescriptionList/summary-description-list.css'
 import './edit-link.css'
 import { capitalizeFirstLetter } from '../_utils/capitalizeFirstLetter'
-import { docTitle } from '../../../constants'
+import { useFormContext } from '../FormContext'
 
 const questions = [
   {
+    href: '/signalen',
     id: 'body',
     questionText: 'Waar gaat het om?',
-    href: '/signalen',
   },
   {
+    href: '/signalen/vul-aan-1',
     id: 'when',
     questionText: 'Wanneer heeft u de overlast?',
-    href: '/signalen/vul-aan-1',
   },
   {
+    href: '/signalen/vul-aan-1b',
     id: 'whenDay',
     questionText: 'Welke dag was het?',
-    href: '/signalen/vul-aan-1b',
   },
   {
+    href: '/signalen/vul-aan-1c',
     id: 'whenTime',
     questionText: 'Hoe laat was het?',
-    href: '/signalen/vul-aan-1c',
   },
   {
+    href: '/signalen/vul-aan-2',
     id: 'type',
     questionText: 'Welk afval is verkeerd neergezet?',
-    href: '/signalen/vul-aan-2',
   },
   {
+    href: '/signalen/vul-aan-3',
     id: 'who',
     questionText: 'Weet u wie de eigenaar is van het verkeerd geplaatste afval?',
-    href: '/signalen/vul-aan-3',
   },
   {
+    href: '/signalen/contact-1',
     id: 'phone',
     questionText: 'Wat is uw telefoonnummer?',
-    href: '/signalen/contact-1',
   },
   {
+    href: '/signalen/contact-1',
     id: 'mail',
     questionText: 'Wat is uw e-mailadres?',
-    href: '/signalen/contact-1',
   },
   {
+    href: '/signalen/contact-2',
     id: 'permission',
     questionText: 'Mogen we uw melding doorsturen?',
-    href: '/signalen/contact-2',
   },
   {
+    href: '/signalen/documenten',
     id: 'files',
     questionText: 'Heeft u een bestand om toe te voegen?',
-    href: '/signalen/documenten',
   },
 ]
 
@@ -72,10 +70,10 @@ const formatAnswer = (id: string, formData) => {
   switch (id) {
     case 'files':
       return formData?.files && formData?.files['0']?.name
-    case 'permission':
-      return formData?.permission ? 'Ja' : 'Nee'
     case 'mail':
       return formData?.mail
+    case 'permission':
+      return formData?.permission ? 'Ja' : 'Nee'
     default:
       return formData[id] && capitalizeFirstLetter(formData[id])
   }
@@ -84,7 +82,7 @@ const formatAnswer = (id: string, formData) => {
 function Summary() {
   const { formData } = useFormContext()
 
-  const { register, handleSubmit } = useForm()
+  const { handleSubmit, register } = useForm()
 
   const router = useRouter()
   const onSubmit = () => router.push('/signalen/bedankt')
@@ -111,12 +109,12 @@ function Summary() {
           </hgroup>
           <Paragraph>Controleer de onderstaande gegevens.</Paragraph>
           <dl className="ams-summary-description-list ams-gap-m">
-            {questions.map(({ id, questionText, href }) => {
+            {questions.map(({ href, id, questionText }) => {
               // Don't show whenX questions if when is now
               if ((id === 'whenDay' || id === 'whenTime') && formData.when === 'nu') return undefined
 
               return (
-                <div key={id} className="ams-summary-description-list__container">
+                <div className="ams-summary-description-list__container" key={id}>
                   <dt className="ams-summary-description-list__term">{questionText}</dt>
                   <dd className="ams-summary-description-list__description" dir="auto">
                     {formatAnswer(id, formData) || 'Niet ingevuld'}

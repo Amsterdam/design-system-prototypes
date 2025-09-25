@@ -1,10 +1,11 @@
 'use client'
 
-import { Heading, Paragraph, Link, Column, Grid } from '@amsterdam/design-system-react'
+import { Column, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { useEffect } from 'react'
-import { useFormContext } from '../FormContext'
+
 import { docTitle } from '../../../constants'
+import { useFormContext } from '../FormContext'
 
 function Thanks() {
   const { updateFormData } = useFormContext()
@@ -13,14 +14,14 @@ function Thanks() {
     // Reset form data
     updateFormData({
       body: null,
+      mail: null,
+      permission: null,
+      phone: null,
+      type: null,
       when: null,
       whenDay: null,
       whenTime: null,
-      type: null,
       who: null,
-      phone: null,
-      mail: null,
-      permission: null,
     })
   }, [])
 

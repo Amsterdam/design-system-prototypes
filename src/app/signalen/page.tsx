@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 'use client'
 
 import {
@@ -8,34 +6,35 @@ import {
   Column,
   ErrorMessage,
   Field,
-  InvalidFormAlert,
   Grid,
   Heading,
+  InvalidFormAlert,
   Label,
   Paragraph,
   TextArea,
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { useForm, useWatch } from 'react-hook-form'
 import { useEffect } from 'react'
+import { useForm, useWatch } from 'react-hook-form'
+
+import { docTitle } from '../../constants'
 import { formatErrors } from './_utils/formatErrors'
 import { useFormContext } from './FormContext'
-import { docTitle } from '../../constants'
 
 function Home() {
   const { formData, updateFormData } = useFormContext()
 
   const {
     control,
-    register,
-    handleSubmit,
     formState: { errors },
+    handleSubmit,
+    register,
   } = useForm({ shouldFocusError: false })
 
   const body = useWatch({
     control,
-    name: 'body',
     defaultValue: formData.body || '',
+    name: 'body',
   })
 
   const router = useRouter()
@@ -80,11 +79,11 @@ function Home() {
               invalid={Boolean(errors.body)}
               rows={4}
               {...register('body', {
-                required: 'Geef aan waar uw melding over gaat.',
                 maxLength: {
-                  value: 1000,
                   message: 'Beschrijf uw melding in minder dan 1000 tekens.',
+                  value: 1000,
                 },
+                required: 'Geef aan waar uw melding over gaat.',
               })}
             />
             <CharacterCount length={body.length} maxLength={1000} />

@@ -13,6 +13,5 @@ export function FormProvider({ children }) {
     setFormData((prevData) => ({ ...prevData, ...updatedData }))
   }
 
-  // eslint-disable-next-line react/jsx-no-constructed-context-values
   return <FormContext.Provider value={{ formData, updateFormData }}>{children}</FormContext.Provider>
 }

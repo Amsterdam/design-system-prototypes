@@ -2,6 +2,7 @@
 
 import { Grid, Heading, OrderedList, Paragraph } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+
 import './afspraak-maken.css'
 
 export default function Introductie() {
@@ -32,7 +33,7 @@ export default function Introductie() {
             <strong>Bevestiging</strong> – Controleer de gegevens die u heeft ingevuld. Verstuur de aanvraag.
           </OrderedList.Item>
         </OrderedList>
-        <NextLink href="afspraak-maken/waarvoor" className="ams-call-to-action-link">
+        <NextLink className="ams-call-to-action-link" href="afspraak-maken/waarvoor">
           Start het formulier
         </NextLink>
       </Grid.Cell>

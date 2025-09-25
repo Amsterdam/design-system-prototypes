@@ -1,10 +1,12 @@
 'use client'
 
-import { ReactNode } from 'react'
 import { Avatar, Column, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+import { ReactNode } from 'react'
+
 import { Sidebar } from './_components/SideBar/SideBar'
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
+
 import './amopis.css'
 
 function Amopis({ children }: { children: ReactNode }) {
@@ -21,7 +23,7 @@ function Amopis({ children }: { children: ReactNode }) {
               logoLinkTitle="Naar de homepage van Amopis"
               menuItems={<Avatar label="KH" title="Goedemorgen Kees Herder" />}
             />
-            <div id="main" className="amopis-main-background">
+            <div className="amopis-main-background" id="main">
               {children}
             </div>
             <PageFooter>

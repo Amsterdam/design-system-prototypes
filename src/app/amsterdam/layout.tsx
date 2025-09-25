@@ -12,6 +12,7 @@ import {
   XIcon,
 } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
+
 import './amsterdam.css'
 
 const footerLinks = [

@@ -46,7 +46,7 @@ function Project() {
           ))}
         </Tabs>
       </Grid.Cell>
-      <Grid.Cell start={1} span={{ narrow: 4, medium: 2, wide: 2 }}>
+      <Grid.Cell span={{ narrow: 4, medium: 2, wide: 2 }} start={1}>
         <div className="amopis-white-background">
           <LinkList>
             <LinkList.Link href="#">Projectdetails</LinkList.Link>
@@ -79,14 +79,14 @@ function Project() {
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Marise Ent</span>
-                    <MailIcon width={24} fill="#004469" />
+                    <MailIcon fill="#004469" width={24} />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Bestuurlijk Opdrachtgever Stad</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Melanie van der Horst</span>
-                    <MailIcon width={24} fill="#004469" />
+                    <MailIcon fill="#004469" width={24} />
                   </Row>
                 </DescriptionList.Description>
               </DescriptionList>
@@ -100,35 +100,35 @@ function Project() {
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Paul Brouwer</span>
-                    <MailIcon width={24} fill="#004469" />
+                    <MailIcon fill="#004469" width={24} />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Opdrachtnemer</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Erik Bakker</span>
-                    <MailIcon width={24} fill="#004469" />
+                    <MailIcon fill="#004469" width={24} />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Klaas Helmers</span>
-                    <MailIcon width={24} fill="#004469" />
+                    <MailIcon fill="#004469" width={24} />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Marjolein Boomer</span>
-                    <MailIcon width={24} fill="#004469" />
+                    <MailIcon fill="#004469" width={24} />
                   </Row>
                 </DescriptionList.Description>
                 <DescriptionList.Term>Projectbeheerser</DescriptionList.Term>
                 <DescriptionList.Description>
                   <Row style={{ justifyContent: 'space-between' }}>
                     <span>Carina Cairo</span>
-                    <MailIcon width={24} fill="#004469" />
+                    <MailIcon fill="#004469" width={24} />
                   </Row>
                 </DescriptionList.Description>
               </DescriptionList>

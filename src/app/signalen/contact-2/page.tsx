@@ -1,17 +1,16 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 'use client'
 
 import { Button, Checkbox, Column, FieldSet, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
+import { useForm } from 'react-hook-form'
+
+import { docTitle } from '../../../constants'
 import { BackLink } from '../_components/BackLink'
 import { useFormContext } from '../FormContext'
-import { docTitle } from '../../../constants'
 
 function Contact2() {
-  const { register, handleSubmit } = useForm()
+  const { handleSubmit, register } = useForm()
   const { formData, updateFormData } = useFormContext()
 
   const router = useRouter()
@@ -44,8 +43,8 @@ function Contact2() {
         </Column>
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet
-            id="permissionGroup"
             aria-labelledby="permissionGroup permissionDescription"
+            id="permissionGroup"
             legend="Mogen we uw melding doorsturen? (niet verplicht)"
           >
             <Paragraph className="ams-mb-m" id="permissionDescription">

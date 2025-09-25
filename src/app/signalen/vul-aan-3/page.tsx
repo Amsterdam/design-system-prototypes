@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
 'use client'
 
 import {
@@ -7,25 +5,26 @@ import {
   Column,
   ErrorMessage,
   FieldSet,
-  InvalidFormAlert,
   Grid,
   Heading,
+  InvalidFormAlert,
   Paragraph,
   Radio,
 } from '@amsterdam/design-system-react'
 import { useRouter } from 'next/navigation'
-import { useForm } from 'react-hook-form'
 import { useEffect } from 'react'
-import { formatErrors } from '../_utils/formatErrors'
-import { BackLink } from '../_components/BackLink'
-import { useFormContext } from '../FormContext'
+import { useForm } from 'react-hook-form'
+
 import { docTitle } from '../../../constants'
+import { BackLink } from '../_components/BackLink'
+import { formatErrors } from '../_utils/formatErrors'
+import { useFormContext } from '../FormContext'
 
 function VulAan3() {
   const {
-    register,
-    handleSubmit,
     formState: { errors },
+    handleSubmit,
+    register,
   } = useForm({ shouldFocusError: false })
   const { formData, updateFormData } = useFormContext()
 
@@ -62,13 +61,13 @@ function VulAan3() {
         </Column>
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <FieldSet
-            legend="Weet u wie de eigenaar is van het verkeerd geplaatste afval?"
             aria-describedby={`whoDescription${errors.who ? ' whoError' : ''}`}
-            role="radiogroup"
             aria-required="true"
             invalid={Boolean(errors.who)}
+            legend="Weet u wie de eigenaar is van het verkeerd geplaatste afval?"
+            role="radiogroup"
           >
-            <Paragraph id="whoDescription" className="ams-mb-s">
+            <Paragraph className="ams-mb-s" id="whoDescription">
               Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?
             </Paragraph>
             {errors.who && <ErrorMessage className="ams-mb-s" id="whoError">{`${errors.who.message}`}</ErrorMessage>}
