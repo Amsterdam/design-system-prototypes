@@ -57,8 +57,8 @@ export default function OverDeCamping() {
                 Openingstijden en inchecken
               </Heading>
               <Paragraph>
-                De receptie is open van 08.00 uur tot 22.00 uur. Er is een nachtportier. De ingang voor voertuigen is
-                &apos;s nachts gesloten. Te voet of met de fiets kun je 24 uur per dag het terrein op.
+                De receptie is open van 08.00 uur tot 22.00 uur. Er is een nachtportier. De ingang voor voertuigen is ’s
+                nachts gesloten. Te voet of met de fiets kun je 24 uur per dag het terrein op.
               </Paragraph>
               <UnorderedList>
                 <UnorderedList.Item>Met een tent kun je op elk moment inchecken.</UnorderedList.Item>
@@ -255,9 +255,7 @@ export default function OverDeCamping() {
                   Honden zijn alleen toegestaan in campers en caravans en moeten altijd aangelijnd zijn. Honden zijn
                   niet toegestaan in tenten en trekhutten.
                 </UnorderedList.Item>
-                <UnorderedList.Item>
-                  Auto&apos;s moeten op de door de beheerder aangewezen plaats staan.
-                </UnorderedList.Item>
+                <UnorderedList.Item>Auto’s moeten op de door de beheerder aangewezen plaats staan.</UnorderedList.Item>
                 <UnorderedList.Item>
                   Barbecues zijn alleen toegestaan in overleg met de beheerder. Open vuur is niet toegestaan.
                 </UnorderedList.Item>
