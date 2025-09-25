@@ -21,7 +21,6 @@ import {
 import { navigationMenuItems } from './navigationMenuItems'
 
 import formatPath from '../../utils/formatPath'
-import './camping-vliegenbos.css'
 
 const menuLinks = [
   {
@@ -82,10 +81,10 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
               </Heading>
               <LinkList>
                 <LinkList.Link color="inverse" href="tel:31202517800" icon={<PhoneIcon />}>
-                  <span className="sr-only">Telefoon:</span>020 251 7800
+                  <span className="ams-visually-hidden">Telefoon:</span>020 251 7800
                 </LinkList.Link>
                 <LinkList.Link color="inverse" href="mailto:vliegenbos.sdn@amsterdam.nl" icon={<MailIcon />}>
-                  <span className="sr-only">E-mail:</span>vliegenbos.sdn@amsterdam.nl
+                  <span className="ams-visually-hidden">E-mail:</span>vliegenbos.sdn@amsterdam.nl
                 </LinkList.Link>
               </LinkList>
             </Grid.Cell>
