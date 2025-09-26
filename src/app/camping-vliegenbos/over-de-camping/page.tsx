@@ -24,12 +24,14 @@ import mapCampingImage from '../_assets/map_camping.jpg'
 export default function OverDeCamping() {
   return (
     <>
-      <Grid as="section" paddingBottom="x-large">
+      <Grid as="section" paddingBottom="large">
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }}>
-          <Breadcrumb>
+          <Breadcrumb className="ams-mb-m">
             <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
           </Breadcrumb>
-          <Heading level={1}>Over camping Vliegenbos</Heading>
+          <Heading className="ams-mb-s" level={1}>
+            Over camping Vliegenbos
+          </Heading>
           <Paragraph>
             Op zoek naar een sfeervolle camping in Amsterdam? Camping Vliegenbos ligt op 15 minuten lopen van de gratis
             veerpont naar het centrum van Amsterdam. Ook fiets je zo naar de stille polders van Waterland. We hebben
@@ -56,7 +58,7 @@ export default function OverDeCamping() {
               <Heading className="ams-mb-s" level={2}>
                 Openingstijden en inchecken
               </Heading>
-              <Paragraph>
+              <Paragraph className="ams-mb-m">
                 De receptie is open van 08.00 uur tot 22.00 uur. Er is een nachtportier. De ingang voor voertuigen is ’s
                 nachts gesloten. Te voet of met de fiets kun je 24 uur per dag het terrein op.
               </Paragraph>
@@ -158,10 +160,10 @@ export default function OverDeCamping() {
       <Spotlight color="azure">
         <Grid paddingVertical="x-large">
           <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-            <Heading className="ams-mb-m" color="inverse" level={2}>
+            <Heading className="ams-mb-s" color="inverse" level={2}>
               Reserveren
             </Heading>
-            <Paragraph className="ams-mb-s" color="inverse">
+            <Paragraph className="ams-mb-m" color="inverse">
               Online reserveren kan voor een verblijf tot maximaal 7 nachten. Bezoekers mogen in totaal maximaal 21
               dagen op de camping blijven. In onderstaande gevallen kun je niet online reserveren en moet je contact
               opnemen met de receptie.
@@ -175,18 +177,18 @@ export default function OverDeCamping() {
                 Het boeken van meerdere camperplekken, tentplekken of trekkershutten.{' '}
               </UnorderedList.Item>
             </UnorderedList>
-            <StandaloneLink color="inverse" href="https://www.amsterdam.nl/vliegenbos/zoek-boek/" target="_blank">
+            <StandaloneLink color="inverse" href={formatPath('/camping-vliegenbos/reserveren')} target="_blank">
               Boek je verblijf
             </StandaloneLink>
           </Grid.Cell>
         </Grid>
       </Spotlight>
-      <Grid as="section" paddingVertical="x-large">
+      <Grid as="section" paddingBottom="2x-large" paddingTop="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
           <Heading className="ams-mb-s" level={2}>
             Route naar de camping
           </Heading>
-          <LinkList className="ams-mb-m">
+          <LinkList className="ams-mb-xl">
             <LinkList.Link href="https://9292.nl/" target="_blank">
               Reisadvies via 9292.nl
             </LinkList.Link>
@@ -211,7 +213,7 @@ export default function OverDeCamping() {
           </Alert>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
-          <Heading className="ams-mb-s" level={2}>
+          <Heading className="ams-mb-m" level={2}>
             Campingregels
           </Heading>
           <Accordion headingLevel={3}>
@@ -234,7 +236,7 @@ export default function OverDeCamping() {
               </UnorderedList>
             </Accordion.Section>
             <Accordion.Section label="Annulering & Restitutie">
-              <Paragraph className="ams-mb-s">
+              <Paragraph className="ams-mb-m">
                 Ons annulerings- en restitutiebeleid is afhankelijk van de periode tussen het moment van annuleren en de
                 datum van het geplande verblijf. Daarnaast rekenen we €10 administratiekosten per reservering.
               </Paragraph>
