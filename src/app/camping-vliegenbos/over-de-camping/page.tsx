@@ -4,7 +4,6 @@ import {
   Accordion,
   Alert,
   Breadcrumb,
-  DescriptionList,
   Grid,
   Heading,
   Link,
@@ -24,11 +23,15 @@ import mapCampingImage from '../_assets/map_camping.jpg'
 export default function OverDeCamping() {
   return (
     <>
-      <Grid as="section" paddingBottom="large">
-        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }}>
+      <Grid>
+        <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }}>
           <Breadcrumb className="ams-mb-m">
             <Breadcrumb.Link href={formatPath('/camping-vliegenbos')}>Home</Breadcrumb.Link>
           </Breadcrumb>
+        </Grid.Cell>
+      </Grid>
+      <Grid as="section" paddingBottom="x-large">
+        <Grid.Cell span={{ narrow: 4, medium: 5, wide: 7 }}>
           <Heading className="ams-mb-s" level={1}>
             Over camping Vliegenbos
           </Heading>
@@ -73,86 +76,84 @@ export default function OverDeCamping() {
               <Heading className="ams-mb-s" level={2}>
                 Faciliteiten
               </Heading>
-              <DescriptionList>
-                <DescriptionList.Term>
-                  <Heading level={3}>Sanitair</Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  Je hebt geen douchemuntjes nodig. De douches zijn geopend van 06.00 uur - 00.00 uur. Er is ook
-                  sanitair voor rolstoelgebruikers. Bij de receptie kun je hiervoor een sleutel vragen.
-                </DescriptionList.Description>
-                <DescriptionList.Term>
-                  <Heading level={3}>WiFi</Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  Er is gratis WiFi op het terrein van de camping. Het wachtwoord vraag je bij de receptie.
-                </DescriptionList.Description>
-                <DescriptionList.Term>
-                  <Heading level={3}>Restaurant</Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  Het restaurant is in het hoogseizoen elke dag geopend van 08:00 uur tot 22:00 uur. Tijdens het
-                  laagseizoen zijn de openingstijden van 08:00 uur tot 11:00 uur in het weekend.
-                  <StandaloneLink href="https://theroundaboutamste.wixsite.com/mijnsite" target="_blank">
-                    Meer over het restaurant
-                  </StandaloneLink>
-                </DescriptionList.Description>
-                <DescriptionList.Term>
-                  <Heading level={3}>Wasserette</Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  Op onze camping kun je ook de was doen. Muntjes voor de wasserette koop je bij de receptie.
-                </DescriptionList.Description>
-                <DescriptionList.Term>
-                  <Heading level={3}>Keuken</Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  De buiten campingkeuken heeft een kookgelegenheid en een gemeenschappelijke koelkast. Bestek, pannen
-                  en borden moet je zelf meenemen. De buiten keuken is geopend vanaf maart tot oktober.
-                </DescriptionList.Description>
-                <DescriptionList.Term>
-                  <Heading level={3}>Fietsen</Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  Op de camping kun je fietsen huren van TIP Amsterdam Noord. Je kunt een reservering maken via de
-                  website en de ophaal locatie en voorkeuren doorgeven. Voor groepen boven de 15 personen of voor
-                  speciale aanvragen kun je contact opnemen via info@tipamsterdamnoord.nl
-                </DescriptionList.Description>
-                <DescriptionList.Term>
-                  <Heading level={3}>Bagagedepot</Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  Op de dag van vertrek kun je jouw bagage tijdelijk kwijt in ons bagagedepot. Vraag ernaar bij de
-                  receptie.
-                </DescriptionList.Description>
-                <DescriptionList.Term>
-                  <Heading level={3}>
-                    Oplaadpunt elektrische
-                    <br /> apparaten
-                  </Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  Kleine elektronische apparaten kun je gratis opladen bij de receptie.
-                </DescriptionList.Description>
-                <DescriptionList.Term>
-                  <Heading level={3}>Honden</Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  Honden zijn toegestaan in campers of caravans. Wij rekenen per hond €7,50 per nacht. In tenten en
-                  trekkershutten zijn honden niet toegestaan.
-                </DescriptionList.Description>
-                <DescriptionList.Term>
-                  <Heading level={3}>Parkeren</Heading>
-                </DescriptionList.Term>
-                <DescriptionList.Description>
-                  De camping heeft niet veel parkeerplekken en je kunt deze niet reserveren. Als er geen plek is op de
-                  camping, kun je in de buurt betaald parkeren. De prijs voor een parkeerplaats is 10 euro per nacht.
-                  <br />
-                  <StandaloneLink href="https://www.parkeren-amsterdam.com/noord" target="_blank">
-                    Meer over parkeren in Amsterdam Noord
-                  </StandaloneLink>
-                </DescriptionList.Description>
-              </DescriptionList>
+              <Heading className="ams-mb-xs" level={3}>
+                Sanitair
+              </Heading>
+              <Paragraph className="ams-mb-l">
+                Je hebt geen douchemuntjes nodig. De douches zijn geopend van 06.00 uur - 00.00 uur. Er is ook sanitair
+                voor rolstoelebruikers. Bij de receptie kun je hiervoor een sleutel vragen.
+              </Paragraph>
+              <Heading className="ams-mb-xs" level={3}>
+                WiFi
+              </Heading>
+              <Paragraph className="ams-mb-l">
+                Er is gratis WiFi op het terrein van de camping. Het wachtwoord vraag je bij de receptie.
+              </Paragraph>
+              <Heading className="ams-mb-xs" level={3}>
+                Restaurant
+              </Heading>
+              <Paragraph className="ams-mb-m">
+                Het restaurant is in het hoogseizoen elke dag geopend van 08:00 uur tot 22:00 uur. Tijdens het
+                laagseizoen zijn de openingstijden van 08:00 uur tot 11:00 uur in het weekend.
+              </Paragraph>
+              <StandaloneLink
+                className="ams-mb-l"
+                href="https://theroundaboutamste.wixsite.com/mijnsite"
+                target="_blank"
+              >
+                Meer over het restaurant
+              </StandaloneLink>
+              <Heading className="ams-mb-xs" level={3}>
+                Wasserette
+              </Heading>
+              <Paragraph className="ams-mb-l">
+                Op onze camping kun je ook de was doen. Muntjes voor de wasserette koop je bij de receptie.
+              </Paragraph>
+              <Heading className="ams-mb-xs" level={3}>
+                Keuken
+              </Heading>
+              <Paragraph className="ams-mb-l">
+                De buiten campingkeuken heeft een kookgelegenheid en een gemeenschappelijke koelkast. Bestek, pannen en
+                borden moet je zelf meenemen. De buiten keuken is geopend vanaf maart tot oktober.
+              </Paragraph>
+              <Heading className="ams-mb-xs" level={3}>
+                Fietsen
+              </Heading>
+              <Paragraph className="ams-mb-l">
+                Op de camping kun je fietsen huren van TIP Amsterdam Noord. Je kunt een reservering maken via de website
+                en de ophaal locatie en voorkeuren doorgeven. Voor groepen boven de 15 personen of voor speciale
+                aanvragen kun je contact opnemen via info@tipamsterdamnoord.nl
+              </Paragraph>
+              <Heading className="ams-mb-xs" level={3}>
+                Bagagedepot
+              </Heading>
+              <Paragraph className="ams-mb-l">
+                Op de dag van vertrek kun je jouw bagage tijdelijk kwijt in ons bagagedepot. Vraag ernaar bij de
+                receptie.
+              </Paragraph>
+              <Heading className="ams-mb-xs" level={3}>
+                Oplaadpunt elektrische apparaten
+              </Heading>
+              <Paragraph className="ams-mb-l">
+                Kleine elektronische apparaten kun je gratis opladen bij de receptie.
+              </Paragraph>
+              <Heading className="ams-mb-xs" level={3}>
+                Honden
+              </Heading>
+              <Paragraph className="ams-mb-l">
+                Honden zijn toegestaan in campers of caravans. Wij rekenen per hond €7,50 per nacht. In tenten en
+                trekkershutten zijn honden niet toegestaan.
+              </Paragraph>
+              <Heading className="ams-mb-xs" level={3}>
+                Parkeren
+              </Heading>
+              <Paragraph className="ams-mb-m">
+                De camping heeft niet veel parkeerplekken en je kunt deze niet reserveren. Als er geen plek is op de
+                camping, kun je in de buurt betaald parkeren. De prijs voor een parkeerplaats is 10 euro per nacht.
+              </Paragraph>
+              <StandaloneLink href="https://www.parkeren-amsterdam.com/noord" target="_blank">
+                Meer over parkeren in Amsterdam Noord
+              </StandaloneLink>
             </Tabs.Panel>
           </Tabs>
         </Grid.Cell>
@@ -174,7 +175,7 @@ export default function OverDeCamping() {
               <UnorderedList.Item>Verblijf met meer dan 4 personen in 1 hut </UnorderedList.Item>
               <UnorderedList.Item>Reservering voor een groep </UnorderedList.Item>
               <UnorderedList.Item>
-                Het boeken van meerdere camperplekken, tentplekken of trekkershutten.{' '}
+                Het boeken van meerdere camperplekken, tentplekken of trekkershutten.
               </UnorderedList.Item>
             </UnorderedList>
             <StandaloneLink color="inverse" href={formatPath('/camping-vliegenbos/reserveren')} target="_blank">
