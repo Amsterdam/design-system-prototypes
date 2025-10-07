@@ -1,0 +1,58 @@
+.ams-theme {
+  --ams-link-text-decoration-thickness: 0.125rem;
+  --ams-link-text-underline-offset: 0.15625rem;
+  --ams-link-hover-text-decoration-thickness: 0.1875rem;
+  --ams-link-hover-text-underline-offset: 0.09375rem;
+}
+
+.ams-theme--compact {
+  --ams-switch-inline-size: 2.4rem;
+  --ams-switch-thumb-block-size: 1.2rem;
+  --ams-switch-thumb-inline-size: 1.2rem;
+  --ams-select-border-width: var(--ams-border-width-s);
+  --ams-text-input-border-width: var(--ams-border-width-s);
+}
+
+.ams-select {
+  inline-size: initial;
+  max-inline-size: 100%;
+}
+
+.ams-switch {
+  display: flex;
+}
+
+.ams-table td,
+.ams-table th {
+  text-align: center;
+}
+
+.ams-table__row {
+  position: relative;
+}
+
+.ams-table__row:has(a:hover) {
+  background-color: #e4effa;
+}
+
+.ams-table__row a::after {
+  content: "";
+  display: block;
+  inset-block: 0;
+  inset-inline: 0;
+  position: absolute;
+}
+
+.ams-table__row--selected td,
+.ams-table__row--selected th {
+  background-color: #ffe600;
+  border-block-end-color: #c6b200;
+}
+
+.ams-table .ams-table__cell--align-start {
+  text-align: start;
+}
+
+.ams-table__cell--nowrap {
+  white-space: nowrap;
+}
