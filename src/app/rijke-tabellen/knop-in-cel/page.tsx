@@ -4,6 +4,7 @@ import { Breadcrumb, Grid, Heading, IconButton, Row, Table } from '@amsterdam/de
 import { PencilIcon, TrashBinIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import { useState } from 'react'
+
 import { ranking } from '../common'
 
 export default function KnopInCel() {
@@ -18,7 +19,7 @@ export default function KnopInCel() {
             <Breadcrumb.Link>Rijke tabellen</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
-        <Heading level={1} className="ams-mb-xl">
+        <Heading className="ams-mb-xl" level={1}>
           Eredivisie 2024/2025
         </Heading>
         <Table className="ams-mb-m">

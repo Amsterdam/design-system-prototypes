@@ -3,6 +3,7 @@
 import { Breadcrumb, Grid, Heading, Label, Paragraph, Table, TextInput } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { useState } from 'react'
+
 import { ranking, RankingTableBody } from '../common'
 import { RankingTableHeaderRow } from '../common/RankingTableHeaderRow'
 
@@ -18,7 +19,7 @@ export default function FilterenOpTekst() {
             <Breadcrumb.Link>Rijke tabellen</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
-        <Heading level={1} className="ams-mb-xl">
+        <Heading className="ams-mb-xl" level={1}>
           Eredivisie 2024/2025
         </Heading>
         <Table className="ams-mb-m">
@@ -32,7 +33,7 @@ export default function FilterenOpTekst() {
             <Table.Row>
               <Table.Cell />
               <Table.Cell>
-                <Label htmlFor="filter" className="ams-visually-hidden">
+                <Label className="ams-visually-hidden" htmlFor="filter">
                   Filter op
                 </Label>
                 <TextInput

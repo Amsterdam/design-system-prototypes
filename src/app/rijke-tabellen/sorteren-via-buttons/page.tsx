@@ -4,7 +4,9 @@ import { Breadcrumb, Grid, Heading, IconButton, Row, Table } from '@amsterdam/de
 import { ArrowDownIcon, ArrowUpIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 import { useState } from 'react'
+
 import type { SortOrder, Team } from '../common'
+
 import { getSortedRanking, ranking, RankingTableBody } from '../common'
 
 export default function SorterenViaButtons() {
@@ -31,7 +33,7 @@ export default function SorterenViaButtons() {
             <Breadcrumb.Link>Rijke tabellen</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
-        <Heading level={1} className="ams-mb-xl">
+        <Heading className="ams-mb-xl" level={1}>
           Eredivisie 2024/2025
         </Heading>
         <Table>

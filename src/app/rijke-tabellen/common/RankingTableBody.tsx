@@ -1,4 +1,5 @@
 import { Table } from '@amsterdam/design-system-react'
+
 import type { Ranking } from './ranking'
 
 type RankingTableBodyProps = {

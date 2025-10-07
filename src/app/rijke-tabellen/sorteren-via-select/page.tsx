@@ -3,7 +3,9 @@
 import { Breadcrumb, Grid, Heading, Label, Row, Select, Table } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { useState } from 'react'
+
 import type { SortOrder } from '../common'
+
 import { getSortedRanking, ranking, RankingTableBody } from '../common'
 import { RankingTableHeaderRow } from '../common/RankingTableHeaderRow'
 
@@ -28,7 +30,7 @@ export default function SorterenViaSelect() {
             <Breadcrumb.Link>Rijke tabellen</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
-        <Heading level={1} className="ams-mb-xl">
+        <Heading className="ams-mb-xl" level={1}>
           Eredivisie 2024/2025
         </Heading>
         <Row align="end" alignVertical="center" className="ams-mb-m" wrap>

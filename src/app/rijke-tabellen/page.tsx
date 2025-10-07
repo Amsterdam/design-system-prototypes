@@ -2,6 +2,7 @@
 
 import { Grid, Heading, LinkList } from '@amsterdam/design-system-react'
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
+
 import './overrides.css'
 import NextLink from 'next/link'
 
@@ -9,7 +10,7 @@ export default function HomePage() {
   return (
     <Grid paddingBottom="x-large">
       <Grid.Cell span="all">
-        <Heading level={1} className="ams-mb-xl">
+        <Heading className="ams-mb-xl" level={1}>
           Rijke tabellen
         </Heading>
         <LinkList>

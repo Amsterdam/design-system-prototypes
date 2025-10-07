@@ -4,6 +4,7 @@ import { Breadcrumb, Grid, Heading, Label, Pagination, Row, Select, Table } from
 import NextLink from 'next/link'
 import { useSearchParams } from 'next/navigation'
 import { useState } from 'react'
+
 import { ranking, RankingTableBody } from '../common'
 import { RankingTableHeaderRow } from '../common/RankingTableHeaderRow'
 
@@ -26,7 +27,7 @@ export default function Pagineren() {
             <Breadcrumb.Link>Rijke tabellen</Breadcrumb.Link>
           </NextLink>
         </Breadcrumb>
-        <Heading level={1} className="ams-mb-xl">
+        <Heading className="ams-mb-xl" level={1}>
           Eredivisie 2024/2025
         </Heading>
         <Table className="ams-mb-m">
