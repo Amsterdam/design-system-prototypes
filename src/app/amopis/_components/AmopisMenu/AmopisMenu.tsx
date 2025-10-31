@@ -1,4 +1,6 @@
-import { Menu, MenuProps } from '@amsterdam/design-system-react'
+import type { MenuProps } from '@amsterdam/design-system-react'
+
+import { Menu } from '@amsterdam/design-system-react'
 import {
   BarChartIcon,
   DocumentsIcon,
