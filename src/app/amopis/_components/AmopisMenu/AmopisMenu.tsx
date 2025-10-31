@@ -1,10 +1,10 @@
 import { Menu, MenuProps } from '@amsterdam/design-system-react'
 import {
   BarChartIcon,
-  CogwheelIcon,
   DocumentsIcon,
   FolderIcon,
   PieChartIcon,
+  SettingsIcon,
 } from '@amsterdam/design-system-react-icons'
 
 const menuItems = [
@@ -30,7 +30,7 @@ const menuItems = [
   },
   {
     href: '#',
-    icon: <CogwheelIcon />,
+    icon: <SettingsIcon />,
     text: 'Instellingen',
   },
 ]
