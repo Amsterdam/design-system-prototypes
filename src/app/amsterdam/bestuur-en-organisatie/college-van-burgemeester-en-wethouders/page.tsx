@@ -1,7 +1,9 @@
 'use client'
 
+import type { StaticImageData } from 'next/image'
+
 import { Breadcrumb, Card, Grid, GridColumnNumber, Heading, Paragraph } from '@amsterdam/design-system-react'
-import NextImage, { type StaticImageData } from 'next/image'
+import NextImage from 'next/image'
 import NextLink from 'next/link'
 
 import municipalExecutiveDeJager from '../../_assets/municipal-executive-de-jager.jpg'

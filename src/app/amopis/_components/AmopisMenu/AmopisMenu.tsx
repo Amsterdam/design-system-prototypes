@@ -1,10 +1,12 @@
+import type { MenuProps } from '@amsterdam/design-system-react'
+
 import { Menu } from '@amsterdam/design-system-react'
 import {
   BarChartIcon,
-  CogwheelIcon,
   DocumentsIcon,
   FolderIcon,
   PieChartIcon,
+  SettingsIcon,
 } from '@amsterdam/design-system-react-icons'
 
 const menuItems = [
@@ -30,21 +32,23 @@ const menuItems = [
   },
   {
     href: '#',
-    icon: <CogwheelIcon />,
+    icon: <SettingsIcon />,
     text: 'Instellingen',
   },
 ]
 
-export function Sidebar() {
+type AmopisMenuProps = {
+  inWideWindow?: MenuProps['inWideWindow']
+}
+
+export function AmopisMenu({ inWideWindow }: AmopisMenuProps) {
   return (
-    <div className="amopis-sidebar">
-      <Menu>
-        {menuItems.map(({ href, icon, text }) => (
-          <Menu.Link color="inverse" href={href} icon={icon} key={text}>
-            {text}
-          </Menu.Link>
-        ))}
-      </Menu>
-    </div>
+    <Menu inWideWindow={inWideWindow}>
+      {menuItems.map(({ href, icon, text }) => (
+        <Menu.Link href={href} icon={icon} key={text}>
+          {text}
+        </Menu.Link>
+      ))}
+    </Menu>
   )
 }
