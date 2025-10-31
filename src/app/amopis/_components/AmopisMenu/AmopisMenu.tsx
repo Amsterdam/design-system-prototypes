@@ -45,7 +45,7 @@ export function AmopisMenu({ inWideWindow }: AmopisMenuProps) {
   return (
     <Menu inWideWindow={inWideWindow}>
       {menuItems.map(({ href, icon, text }) => (
-        <Menu.Link color="inverse" href={href} icon={icon} key={text}>
+        <Menu.Link href={href} icon={icon} key={text}>
           {text}
         </Menu.Link>
       ))}
