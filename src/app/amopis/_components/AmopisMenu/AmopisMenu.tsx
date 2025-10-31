@@ -1,4 +1,4 @@
-import { Menu } from '@amsterdam/design-system-react'
+import { Menu, MenuProps } from '@amsterdam/design-system-react'
 import {
   BarChartIcon,
   CogwheelIcon,
@@ -35,16 +35,18 @@ const menuItems = [
   },
 ]
 
-export function Sidebar() {
+type AmopisMenuProps = {
+  inWideWindow?: MenuProps['inWideWindow']
+}
+
+export function AmopisMenu({ inWideWindow }: AmopisMenuProps) {
   return (
-    <div className="amopis-sidebar">
-      <Menu>
-        {menuItems.map(({ href, icon, text }) => (
-          <Menu.Link color="inverse" href={href} icon={icon} key={text}>
-            {text}
-          </Menu.Link>
-        ))}
-      </Menu>
-    </div>
+    <Menu inWideWindow={inWideWindow}>
+      {menuItems.map(({ href, icon, text }) => (
+        <Menu.Link color="inverse" href={href} icon={icon} key={text}>
+          {text}
+        </Menu.Link>
+      ))}
+    </Menu>
   )
 }

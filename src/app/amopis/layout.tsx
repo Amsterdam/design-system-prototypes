@@ -4,7 +4,7 @@ import { Avatar, Column, Page, PageFooter, PageHeader, SkipLink } from '@amsterd
 import NextLink from 'next/link'
 import { ReactNode } from 'react'
 
-import { Sidebar } from './_components/SideBar/SideBar'
+import { AmopisMenu } from './_components/AmopisMenu/AmopisMenu'
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
 
 import './amopis.css'
@@ -15,14 +15,19 @@ function Amopis({ children }: { children: ReactNode }) {
       <SkipLink href="#main">Direct naar inhoud</SkipLink>
       <Page className="ams-page--amopis">
         <div className="amopis-app-grid">
-          <Sidebar />
+          <div className="amopis-sidebar">
+            <AmopisMenu inWideWindow />
+          </div>
           <Column gap="none">
             <PageHeader
               brandName="Amopis"
               logoLinkComponent={(props) => <NextLink {...props} href="/amopis" />}
               logoLinkTitle="Naar de homepage van Amopis"
               menuItems={<Avatar label="KH" title="Goedemorgen Kees Herder" />}
-            />
+              noMenuButtonOnWideWindow
+            >
+              <AmopisMenu />
+            </PageHeader>
             <div className="amopis-main-background" id="main">
               {children}
             </div>
