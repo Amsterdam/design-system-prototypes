@@ -6,7 +6,7 @@
   "private": true,
   "engines": {
     "node": "24",
-    "npm": "10"
+    "npm": "11"
   },
   "type": "module",
   "scripts": {
@@ -27,8 +27,6 @@
     "@amsterdam/design-system-react": "2.1.0",
     "@amsterdam/design-system-react-icons": "1.1.1",
     "@amsterdam/design-system-tokens": "2.1.0",
-    "@eslint/eslintrc": "3.3.1",
-    "@eslint/js": "9.39.1",
     "clsx": "2.1.1",
     "next": "15.5.6",
     "react": "19.2.0",
@@ -37,6 +35,8 @@
     "sharp": "0.34.5"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "3.3.1",
+    "@eslint/js": "9.39.1",
     "@next/eslint-plugin-next": "15.5.6",
     "@types/react": "19.2.2",
     "@types/react-dom": "19.2.2",
