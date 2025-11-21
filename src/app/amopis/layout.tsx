@@ -11,7 +11,7 @@ import './amopis.css'
 
 function Amopis({ children }: { children: ReactNode }) {
   return (
-    <div className="ams-theme ams-theme--compact">
+    <div className="ams-theme ams-theme--compact ams-site--amopis">
       <Page withMenu>
         <SkipLink className="ams-page__area--skip-link" href="#inhoud">
           Direct naar inhoud

@@ -7,3 +7,7 @@
   padding-block: var(--ams-space-m);
   padding-inline: var(--ams-space-m);
 }
+
+.ams-site--amopis .ams-tabs__panel {
+  display: none;
+}
