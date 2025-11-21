@@ -1,20 +1,5 @@
-.ams-page.ams-page--amopis {
-  max-inline-size: initial; /* `Page` doesn’t support stretching to the full width of the viewport. */
-}
-
-.amopis-app-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  min-block-size: 100vh;
-
-  @media (min-width: 72.5rem) {
-    grid-template-columns: 112px 1fr;
-  }
-}
-
 .amopis-main-background {
   background-color: #e4effa;
-  flex: auto;
 }
 
 .amopis-white-background {
@@ -23,14 +8,6 @@
   padding-inline: var(--ams-space-m);
 }
 
-.amopis-sidebar {
-  background-color: var(--ams-color-interactive);
+.ams-site--amopis .ams-tabs__panel {
   display: none;
-  flex-direction: column;
-  padding-block-start: calc(40px + 3 * var(--ams-page-header-padding-block));
-  align-items: center;
-
-  @media (min-width: 72.5rem) {
-    display: flex;
-  }
 }

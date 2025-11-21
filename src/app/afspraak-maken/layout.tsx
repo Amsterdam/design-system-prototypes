@@ -9,7 +9,7 @@ export default function AfspraakMaken({ children }) {
     <Page className="ams-theme">
       <Grid>
         <Grid.Cell span="all">
-          <SkipLink href="#main">Direct naar inhoud</SkipLink>
+          <SkipLink href="#inhoud">Direct naar inhoud</SkipLink>
         </Grid.Cell>
       </Grid>
       <PageHeader
@@ -38,7 +38,7 @@ export default function AfspraakMaken({ children }) {
           </PageHeader.GridCellNarrowWindowOnly>
         </Grid>
       </PageHeader>
-      <main id="main">{children}</main>
+      <main id="inhoud">{children}</main>
       <PageFooter>
         <PageFooter.Spotlight>
           <Grid paddingVertical="x-large">
