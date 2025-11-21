@@ -12,7 +12,7 @@ import './amopis.css'
 function Amopis({ children }: { children: ReactNode }) {
   return (
     <div className="ams-theme ams-theme--compact">
-      <SkipLink href="#main">Direct naar inhoud</SkipLink>
+      <SkipLink href="#inhoud">Direct naar inhoud</SkipLink>
       <Page className="ams-page--amopis">
         <div className="amopis-app-grid">
           <div className="amopis-sidebar">
@@ -28,7 +28,7 @@ function Amopis({ children }: { children: ReactNode }) {
             >
               <AmopisMenu />
             </PageHeader>
-            <div className="amopis-main-background" id="main">
+            <div className="amopis-main-background" id="inhoud">
               {children}
             </div>
             <PageFooter>
