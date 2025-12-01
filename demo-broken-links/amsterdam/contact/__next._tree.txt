@@ -1,0 +1,5 @@
+:HL["/design-system-prototypes/demo-broken-links/_next/static/chunks/20d49b5ff5b52f40.css","style"]
+:HL["/design-system-prototypes/demo-broken-links/_next/static/chunks/43f76e0566fb497d.css","style"]
+:HL["/design-system-prototypes/demo-broken-links/_next/static/chunks/55acf3b4d43d2855.css","style"]
+:HC["/",""]
+0:{"buildId":"V1QhIkoyT5JSWdgp0tXby","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"amsterdam","paramType":null,"paramKey":"amsterdam","hasRuntimePrefetch":false,"slots":{"children":{"name":"contact","paramType":null,"paramKey":"contact","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
