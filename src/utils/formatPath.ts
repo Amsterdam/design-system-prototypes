@@ -8,6 +8,10 @@
  */
 
 const formatPath = (path: string) => {
+  if (path === '#') {
+    return path
+  }
+
   return `${process.env.basePath}${path}`
 }
 
