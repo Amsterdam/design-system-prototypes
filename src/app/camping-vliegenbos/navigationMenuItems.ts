@@ -7,11 +7,11 @@ export const navigationMenuItems = [
         label: 'Over de camping',
       },
       {
-        href: '/camping-vliegenbos/zoek-en-boek',
+        href: '#',
         label: 'Zoek en boek',
       },
       {
-        href: '/camping-vliegenbos/route',
+        href: '#',
         label: 'Route',
       },
     ],
@@ -20,15 +20,15 @@ export const navigationMenuItems = [
     heading: 'Accommodaties',
     items: [
       {
-        href: '/camping-vliegenbos/tenten',
+        href: '#',
         label: 'Tenten',
       },
       {
-        href: '/camping-vliegenbos/campers-en-caravans',
+        href: '#',
         label: 'Campers en caravans',
       },
       {
-        href: '/camping-vliegenbos/trekkershutten',
+        href: '#',
         label: 'Trekkershutten',
       },
     ],

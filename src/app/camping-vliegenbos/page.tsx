@@ -14,27 +14,27 @@ const cards = [
   },
   {
     description: 'Bekijk de beschikbaarheid',
-    href: '/camping-vliegenbos/zoek-en-boek',
+    href: '#',
     label: 'Zoek en boek',
   },
   {
     description: 'Hoe kom je er?',
-    href: '/camping-vliegenbos/route',
+    href: '#',
     label: 'Route',
   },
   {
     description: 'Kamperen met je eigen tent',
-    href: '/camping-vliegenbos/tenten',
+    href: '#',
     label: 'Tenten',
   },
   {
     description: 'Kamperen met je camper of caravan',
-    href: '/camping-vliegenbos/campers-en-caravans',
+    href: '#',
     label: 'Campers en caravans',
   },
   {
     description: 'Overnachten in een trekkershut',
-    href: '/camping-vliegenbos/trekkershutten',
+    href: '#',
     label: 'Trekkershutten',
   },
 ]

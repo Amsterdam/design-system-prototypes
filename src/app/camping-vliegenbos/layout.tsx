@@ -24,7 +24,7 @@ import { navigationMenuItems } from './navigationMenuItems'
 
 const menuLinks = [
   {
-    href: formatPath('/camping-vliegenbos/reserveren'),
+    href: '#',
     label: 'Reserveren',
   },
 ]
