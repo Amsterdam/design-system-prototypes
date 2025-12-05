@@ -19,13 +19,17 @@ import { DocumentWithPencilIcon } from '@amsterdam/design-system-react-icons'
 const tabLabels = ['Mijlpalen', 'Planfases', 'Capaciteitsraming', 'Maatregelen en acties']
 
 function Estimation() {
-  return (
-    <Grid paddingVertical="x-large">
+  return [
+    <Grid paddingTop="x-large">
       <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
           <Breadcrumb.Link href="#">Planning</Breadcrumb.Link>
         </Breadcrumb>
+      </Grid.Cell>
+    </Grid>,
+    <Grid as="main" key={2} paddingBottom="x-large">
+      <Grid.Cell span="all">
         <Heading level={2} size="level-1">
           Capaciteitsraming
         </Heading>
@@ -236,8 +240,8 @@ function Estimation() {
           </Column>
         </div>
       </Grid.Cell>
-    </Grid>
-  )
+    </Grid>,
+  ]
 }
 
 export default Estimation
