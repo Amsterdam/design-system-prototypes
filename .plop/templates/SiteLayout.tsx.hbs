@@ -17,14 +17,14 @@ export default function {{pascalCase name}}({ children }) {
     <Page className="ams-theme">
       <Grid>
         <Grid.Cell span="all">
-          <SkipLink href="#main">Direct naar inhoud</SkipLink>
+          <SkipLink href="#inhoud">Direct naar inhoud</SkipLink>
         </Grid.Cell>
       </Grid>
       <PageHeader
         logoLinkComponent={(props) => <NextLink {...props} href="/{{kebabCase name}}" />}
         logoLinkTitle="Naar de homepage van {{titleCase name}}"
       />
-      <main id="main">{children}</main>
+      <main id="inhoud">{children}</main>
       <PageFooter>
         <PageFooter.Spotlight>
           <Grid paddingVertical="x-large">

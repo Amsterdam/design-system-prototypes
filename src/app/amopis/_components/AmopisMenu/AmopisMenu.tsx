@@ -8,6 +8,7 @@ import {
   PieChartIcon,
   SettingsIcon,
 } from '@amsterdam/design-system-react-icons'
+import { HTMLAttributes, PropsWithChildren } from 'react'
 
 const menuItems = [
   {
@@ -39,11 +40,11 @@ const menuItems = [
 
 type AmopisMenuProps = {
   inWideWindow?: MenuProps['inWideWindow']
-}
+} & PropsWithChildren<HTMLAttributes<HTMLElement>>
 
-export function AmopisMenu({ inWideWindow }: AmopisMenuProps) {
+export function AmopisMenu({ inWideWindow, ...restProps }: AmopisMenuProps) {
   return (
-    <Menu inWideWindow={inWideWindow}>
+    <Menu inWideWindow={inWideWindow} {...restProps}>
       {menuItems.map(({ href, icon, text }) => (
         <Menu.Link href={href} icon={icon} key={text}>
           {text}

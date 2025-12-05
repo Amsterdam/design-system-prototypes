@@ -1,5 +1,5 @@
 .ams-mega-menu__columns {
-  column-gap: var(--ams-space-grid-md);
+  column-gap: var(--ams-space-xl);
   column-width: 20rem;
 
   .ams-link-list__link {
