@@ -1,6 +1,6 @@
 'use client'
 
-import { Avatar, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
+import { Avatar, Heading, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
 import { ReactNode } from 'react'
 
@@ -31,6 +31,9 @@ function Amopis({ children }: { children: ReactNode }) {
           {children}
         </div>
         <PageFooter className="ams-page__area--footer">
+          <Heading className="ams-visually-hidden" level={2}>
+            Over deze website
+          </Heading>
           <PageFooter.Menu>
             <NextLink href="/amopis" legacyBehavior passHref>
               <PageFooter.MenuLink>Kerngegevens</PageFooter.MenuLink>

@@ -60,6 +60,9 @@ export default function AfspraakMaken({ children }) {
             </Grid.Cell>
           </Grid>
         </PageFooter.Spotlight>
+        <Heading className="ams-visually-hidden" level={2}>
+          Over deze website
+        </Heading>
         <PageFooter.Menu>
           <NextLink href="/" legacyBehavior passHref>
             <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
