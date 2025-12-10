@@ -27,9 +27,7 @@ function Amopis({ children }: { children: ReactNode }) {
           <AmopisMenu />
         </PageHeader>
         <AmopisMenu className="ams-page__area--menu" inWideWindow />
-        <div className="ams-page__area--body amopis-main-background" id="inhoud">
-          {children}
-        </div>
+        <div className="ams-page__area--body amopis-main-background">{children}</div>
         <PageFooter className="ams-page__area--footer">
           <Heading className="ams-visually-hidden" level={2}>
             Over deze website

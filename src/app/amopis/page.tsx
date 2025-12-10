@@ -27,7 +27,7 @@ function Project() {
         </Breadcrumb>
       </Grid.Cell>
     </Grid>,
-    <Grid as="main" key={2} paddingBottom="x-large">
+    <Grid as="main" id="inhoud" key={2} paddingBottom="x-large">
       <Grid.Cell span="all">
         <Heading level={2} size="level-1">
           Kerngegevens
