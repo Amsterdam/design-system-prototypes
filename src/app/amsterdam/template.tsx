@@ -32,7 +32,7 @@ function Template({ children }) {
     <>
       <Grid>
         <Grid.Cell span="all">
-          <SkipLink href="#main">Direct naar inhoud</SkipLink>
+          <SkipLink href="#inhoud">Direct naar inhoud</SkipLink>
         </Grid.Cell>
       </Grid>
       <PageHeader
@@ -74,7 +74,7 @@ function Template({ children }) {
           </Grid.Cell>
         </Grid>
       </PageHeader>
-      <main id="main">{children}</main>
+      <main id="inhoud">{children}</main>
     </>
   )
 }

@@ -18,13 +18,17 @@ import { DocumentWithPencilIcon, MailIcon } from '@amsterdam/design-system-react
 const tabLabels = ['Overzicht', 'Kerngegevens', 'Projectinformatie', 'Projectgrenzen', 'Projectcodes', 'Autorisaties']
 
 function Project() {
-  return (
-    <Grid paddingVertical="x-large">
+  return [
+    <Grid key={1} paddingTop="x-large">
       <Grid.Cell span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
           <Breadcrumb.Link href="#">Projecten</Breadcrumb.Link>
         </Breadcrumb>
+      </Grid.Cell>
+    </Grid>,
+    <Grid as="main" id="inhoud" key={2} paddingBottom="x-large">
+      <Grid.Cell span="all">
         <Heading level={2} size="level-1">
           Kerngegevens
         </Heading>
@@ -171,8 +175,8 @@ function Project() {
           </Column>
         </div>
       </Grid.Cell>
-    </Grid>
-  )
+    </Grid>,
+  ]
 }
 
 export default Project

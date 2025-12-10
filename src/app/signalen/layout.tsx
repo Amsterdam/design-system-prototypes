@@ -22,14 +22,14 @@ function Signalen({ children }) {
     <Page className="ams-theme">
       <Grid>
         <Grid.Cell span="all">
-          <SkipLink href="#main">Direct naar inhoud</SkipLink>
+          <SkipLink href="#inhoud">Direct naar inhoud</SkipLink>
           <PageHeader
             logoLinkComponent={(props) => <NextLink {...props} href="/signalen" />}
             logoLinkTitle="Naar de homepage van Signalen Amsterdam"
           />
         </Grid.Cell>
       </Grid>
-      <main id="main">
+      <main id="inhoud">
         <FormProvider>{children}</FormProvider>
         <Suspense fallback={null}>
           <ResetFocusOnNavigation />
