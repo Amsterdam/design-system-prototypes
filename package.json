@@ -28,20 +28,20 @@
     "@amsterdam/design-system-react-icons": "1.1.1",
     "@amsterdam/design-system-tokens": "2.2.0",
     "clsx": "2.1.1",
-    "next": "16.0.10",
+    "next": "16.1.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
-    "react-hook-form": "7.68.0",
+    "react-hook-form": "7.69.0",
     "sharp": "0.34.5"
   },
   "devDependencies": {
     "@eslint/eslintrc": "3.3.3",
-    "@eslint/js": "9.39.1",
-    "@next/eslint-plugin-next": "16.0.10",
+    "@eslint/js": "9.39.2",
+    "@next/eslint-plugin-next": "16.1.0",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
-    "eslint": "9.39.1",
-    "eslint-config-next": "16.0.10",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.1.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-jsx-a11y": "6.10.2",
     "eslint-plugin-perfectionist": "4.15.1",
@@ -52,7 +52,7 @@
     "plop": "4.0.4",
     "prettier": "3.7.4",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.49.0"
+    "typescript-eslint": "8.50.0"
   },
   "browserslist": [
     "defaults and fully supports es6-module",
