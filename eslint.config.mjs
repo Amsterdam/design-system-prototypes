@@ -71,7 +71,6 @@ export default [
     ],
   },
   ...tseslint.configs.recommended,
-  eslintPluginPrettierRecommended,
   {
     languageOptions: {
       parser: tsParser,
@@ -140,4 +139,5 @@ export default [
       react: { version: 'detect' },
     },
   },
+  eslintPluginPrettierRecommended,
 ]
