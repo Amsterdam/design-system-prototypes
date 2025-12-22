@@ -15,6 +15,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
     "link": "npm link @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
     "unlink": "npm unlink @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
     "update": "npm-check-updates --upgrade && npm install",

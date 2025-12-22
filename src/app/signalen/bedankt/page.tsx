@@ -7,6 +7,8 @@ import { useEffect } from 'react'
 import { docTitle } from '../../../constants'
 import { useFormContext } from '../FormContext'
 
+const now = Date.now()
+
 function Thanks() {
   const { updateFormData } = useFormContext()
 
@@ -23,7 +25,7 @@ function Thanks() {
       whenTime: null,
       who: null,
     })
-  }, [])
+  })
 
   useEffect(() => {
     document.title = 'Bedankt - Gemeente Amsterdam'
@@ -42,11 +44,11 @@ function Thanks() {
             <Heading level={2}>Bedankt</Heading>
             <Paragraph>
               Bedankt voor uw melding. Wij hebben uw melding ontvangen op{' '}
-              <time dateTime={new Date(Date.now()).toLocaleDateString('nl')}>
-                {new Date(Date.now()).toLocaleDateString('nl', { day: 'numeric', month: 'long', year: 'numeric' })}
+              <time dateTime={new Date(now).toLocaleDateString('nl')}>
+                {new Date(now).toLocaleDateString('nl', { day: 'numeric', month: 'long', year: 'numeric' })}
               </time>{' '}
-              om <time>{new Date(Date.now()).toLocaleTimeString('nl', { hour: 'numeric', minute: 'numeric' })}</time>.
-              Uw meldnummer is 1977916.
+              om <time>{new Date(now).toLocaleTimeString('nl', { hour: 'numeric', minute: 'numeric' })}</time>. Uw
+              meldnummer is 1977916.
             </Paragraph>
 
             <Heading level={3}>Wat doen we met uw melding?</Heading>
