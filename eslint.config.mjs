@@ -55,7 +55,7 @@ const perfectionistCustomSizesGroups = {
   },
 }
 
-export default tseslint.config(
+export default [
   {
     files: ['*.mjs'],
     languageOptions: {
@@ -81,6 +81,7 @@ export default tseslint.config(
     'plugin:react/recommended',
     'plugin:@next/next/recommended',
   ),
+  ...tseslint.configs.recommended,
   {
     languageOptions: {
       parser: tsParser,
@@ -88,7 +89,6 @@ export default tseslint.config(
         ecmaFeatures: { jsx: true },
         project: ['./tsconfig.json'],
       },
-
       sourceType: 'module',
     },
     plugins: {
@@ -150,4 +150,4 @@ export default tseslint.config(
       react: { version: 'detect' },
     },
   },
-)
+]
