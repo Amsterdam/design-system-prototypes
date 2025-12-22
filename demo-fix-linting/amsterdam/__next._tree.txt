@@ -1,0 +1,5 @@
+:HL["/design-system-prototypes/demo-fix-linting/_next/static/chunks/20d49b5ff5b52f40.css","style"]
+:HL["/design-system-prototypes/demo-fix-linting/_next/static/chunks/43f76e0566fb497d.css","style"]
+:HL["/design-system-prototypes/demo-fix-linting/_next/static/chunks/e86e5dbe11e01f9d.css","style"]
+:HC["/",""]
+0:{"buildId":"lKZzN7n2A8LXydvitrvq3","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"amsterdam","paramType":null,"paramKey":"amsterdam","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
