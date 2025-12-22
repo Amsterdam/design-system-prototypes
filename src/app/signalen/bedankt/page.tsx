@@ -24,7 +24,7 @@ function Thanks() {
       whenTime: null,
       who: null,
     })
-  })
+  }, [])
 
   useEffect(() => {
     document.title = 'Bedankt - Gemeente Amsterdam'
