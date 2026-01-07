@@ -7,9 +7,10 @@ import { useEffect } from 'react'
 import { docTitle } from '../../../constants'
 import { useFormContext } from '../FormContext'
 
+const now = Date.now()
+
 function Thanks() {
   const { updateFormData } = useFormContext()
-  const now = Date.now()
 
   useEffect(() => {
     // Reset form data
@@ -24,7 +25,7 @@ function Thanks() {
       whenTime: null,
       who: null,
     })
-  }, [])
+  }, [updateFormData])
 
   useEffect(() => {
     document.title = 'Bedankt - Gemeente Amsterdam'
