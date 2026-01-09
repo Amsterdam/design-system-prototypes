@@ -118,9 +118,6 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
             </Grid.Cell>
           </Grid>
         </PageFooter.Spotlight>
-        <Heading className="ams-visually-hidden" level={2} size="level-3">
-          Over deze website
-        </Heading>
         <PageFooter.Menu>
           <PageFooter.MenuLink href="#">Colofon</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>

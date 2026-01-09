@@ -106,9 +106,6 @@ export default function Amsterdam({ children }) {
               </Grid.Cell>
             </Grid>
           </PageFooter.Spotlight>
-          <Heading className="ams-visually-hidden" level={2}>
-            Over deze website
-          </Heading>
           <PageFooter.Menu>
             {footerLinks.map(({ href, label }) => (
               <NextLink href={href} key={label} legacyBehavior passHref>
