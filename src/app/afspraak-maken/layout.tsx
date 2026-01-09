@@ -25,7 +25,7 @@ export default function AfspraakMaken({ children }) {
         ]}
         noMenuButtonOnWideWindow
       >
-        <Grid paddingBottom="2x-large" paddingTop="large">
+        <Grid>
           <PageHeader.GridCellNarrowWindowOnly span="all">
             <LinkList>
               <LinkList.Link href="https://mijn.amsterdam.nl/" rel="external">
