@@ -17,8 +17,8 @@ function Amopis({ children }: { children: ReactNode }) {
           Direct naar inhoud
         </SkipLink>
         <PageHeader
-          className="ams-page__area--header"
           brandName="Amopis"
+          className="ams-page__area--header"
           logoLinkComponent={(props) => <NextLink {...props} href="/amopis" />}
           logoLinkTitle="Naar de homepage van Amopis"
           menuItems={<Avatar label="KH" title="Goedemorgen Kees Herder" />}

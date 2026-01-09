@@ -38,9 +38,9 @@ const menuItems = [
   },
 ]
 
-type AmopisMenuProps = {
+type AmopisMenuProps = PropsWithChildren<HTMLAttributes<HTMLElement>> & {
   inWideWindow?: MenuProps['inWideWindow']
-} & PropsWithChildren<HTMLAttributes<HTMLElement>>
+}
 
 export function AmopisMenu({ inWideWindow, ...restProps }: AmopisMenuProps) {
   return (
