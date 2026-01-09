@@ -47,7 +47,7 @@ function Contact2() {
             id="permissionGroup"
             legend="Mogen we uw melding doorsturen? (niet verplicht)"
           >
-            <Paragraph className="ams-mb-m" id="permissionDescription">
+            <Paragraph id="permissionDescription">
               Soms kan de gemeente niets doen. Een andere organisatie moet dan aan het werk. Als dat zo is kunnen wij uw
               melding soms doorsturen. Wij sturen uw telefoonnummer of e-mailadres mee. Maar dat doen we alleen als u
               dat goed vindt.

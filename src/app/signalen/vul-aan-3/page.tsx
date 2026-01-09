@@ -67,10 +67,10 @@ function VulAan3() {
             legend="Weet u wie de eigenaar is van het verkeerd geplaatste afval?"
             role="radiogroup"
           >
-            <Paragraph className="ams-mb-s" id="whoDescription">
+            <Paragraph id="whoDescription">
               Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?
             </Paragraph>
-            {errors.who && <ErrorMessage className="ams-mb-s" id="whoError">{`${errors.who.message}`}</ErrorMessage>}
+            {errors.who && <ErrorMessage id="whoError">{`${errors.who.message}`}</ErrorMessage>}
             <Radio
               aria-required="true"
               defaultChecked={formData.who === 'ja'}

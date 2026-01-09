@@ -47,7 +47,7 @@ function VulAan2() {
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <Field>
             <Label htmlFor="type">Welk afval is verkeerd neergezet? (niet verplicht)</Label>
-            <Paragraph className="ams-mb-s" id="typeDescription">
+            <Paragraph id="typeDescription">
               U helpt ons door zoveel mogelijk informatie te geven over het soort afval: huisafval, bedrijfsafval,
               grofvuil of dozen en papier.
             </Paragraph>
