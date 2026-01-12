@@ -23,7 +23,7 @@
     "update:patch": "npm-check-updates --target patch --upgrade && npm install"
   },
   "dependencies": {
-    "@amsterdam/design-system-assets": "1.1.0",
+    "@amsterdam/design-system-assets": "2.0.0",
     "@amsterdam/design-system-css": "2.2.0",
     "@amsterdam/design-system-react": "2.2.0",
     "@amsterdam/design-system-react-icons": "1.1.1",
