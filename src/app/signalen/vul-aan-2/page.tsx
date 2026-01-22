@@ -32,7 +32,7 @@ function VulAan2() {
     <Grid paddingVertical="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <BackLink
-          className="ams-mb-s"
+          className="ams-mb-xl"
           href={formData.when === 'eerder' ? '/signalen/vul-aan-1c' : '/signalen/vul-aan-1'}
         >
           Vorige vraag
