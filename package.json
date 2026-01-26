@@ -42,7 +42,7 @@
     "eslint": "9.39.2",
     "eslint-config-next": "16.1.0",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-perfectionist": "5.0.0",
+    "eslint-plugin-perfectionist": "5.4.0",
     "eslint-plugin-prettier": "5.5.4",
     "npm-check-updates": "19.2.0",
     "plop": "4.0.4",
