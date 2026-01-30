@@ -44,20 +44,28 @@ function Question() {
                 Wij hebben uw gegevens nodig om contact met u te kunnen opnemen.
               </Paragraph>
               <Field>
-                <Label htmlFor="voorletters">Voorletters</Label>
+                <Label htmlFor="voorletters" inFieldSet>
+                  Voorletters
+                </Label>
                 <TextInput id="voorletters" name="voorletters" />
               </Field>
               <Field>
-                <Label htmlFor="achternaam">Achternaam</Label>
+                <Label htmlFor="achternaam" inFieldSet>
+                  Achternaam
+                </Label>
                 <TextInput id="achternaam" name="achternaam" />
               </Field>
               <Field>
-                <Label htmlFor="email">E-mail</Label>
+                <Label htmlFor="email" inFieldSet>
+                  E-mail
+                </Label>
                 <TextInput id="email" name="email" />
               </Field>
               <Row>
                 <Field>
-                  <Label htmlFor="country">Landnummer</Label>
+                  <Label htmlFor="country" inFieldSet>
+                    Landnummer
+                  </Label>
                   <Select name="country">
                     <option value="+31">Nederland +31</option>
                     <option value="+32">België +32</option>
@@ -65,16 +73,22 @@ function Question() {
                   </Select>
                 </Field>
                 <Field>
-                  <Label htmlFor="phone">Telefoonnummer</Label>
+                  <Label htmlFor="phone" inFieldSet>
+                    Telefoonnummer
+                  </Label>
                   <TextInput id="phone" name="phone" />
                 </Field>
               </Row>
               <Field>
-                <Label htmlFor="email">E-mail</Label>
+                <Label htmlFor="email" inFieldSet>
+                  E-mail
+                </Label>
                 <TextInput id="email" name="email" />
               </Field>
               <Field>
-                <Label htmlFor="woonplaats">Woonplaats</Label>
+                <Label htmlFor="woonplaats" inFieldSet>
+                  Woonplaats
+                </Label>
                 <Radio name="woonplaats" value="amsterdam">
                   Amsterdam
                 </Radio>

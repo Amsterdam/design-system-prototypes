@@ -43,15 +43,21 @@ export default function Wie() {
           <FieldSet className="ams-mb-l" legend="Geboortedatum">
             <Row wrap>
               <Field>
-                <Label htmlFor="bday-day">Dag</Label>
+                <Label htmlFor="bday-day" inFieldSet>
+                  Dag
+                </Label>
                 <TextInput autoComplete="bday-day" id="bday-day" size={2} />
               </Field>
               <Field>
-                <Label htmlFor="bday-month">Maand</Label>
+                <Label htmlFor="bday-month" inFieldSet>
+                  Maand
+                </Label>
                 <TextInput autoComplete="bday-month" id="bday-month" size={2} />
               </Field>
               <Field>
-                <Label htmlFor="bday-year">Jaar</Label>
+                <Label htmlFor="bday-year" inFieldSet>
+                  Jaar
+                </Label>
                 <TextInput autoComplete="bday-year" id="bday-year" size={4} />
               </Field>
             </Row>

@@ -32,7 +32,7 @@ function VulAan2() {
     <Grid paddingVertical="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
         <BackLink
-          className="ams-mb-s"
+          className="ams-mb-xl"
           href={formData.when === 'eerder' ? '/signalen/vul-aan-1c' : '/signalen/vul-aan-1'}
         >
           Vorige vraag
@@ -47,7 +47,7 @@ function VulAan2() {
         <form className="ams-gap-l" onSubmit={handleSubmit(onSubmit)}>
           <Field>
             <Label htmlFor="type">Welk afval is verkeerd neergezet? (niet verplicht)</Label>
-            <Paragraph className="ams-mb-s" id="typeDescription">
+            <Paragraph id="typeDescription">
               U helpt ons door zoveel mogelijk informatie te geven over het soort afval: huisafval, bedrijfsafval,
               grofvuil of dozen en papier.
             </Paragraph>

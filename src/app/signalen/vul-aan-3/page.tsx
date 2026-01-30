@@ -48,7 +48,7 @@ function VulAan3() {
   return (
     <Grid paddingVertical="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb-s" href="/signalen/vul-aan-2">
+        <BackLink className="ams-mb-xl" href="/signalen/vul-aan-2">
           Vorige vraag
         </BackLink>
         <Column className="ams-mb-l">
@@ -67,10 +67,10 @@ function VulAan3() {
             legend="Weet u wie de eigenaar is van het verkeerd geplaatste afval?"
             role="radiogroup"
           >
-            <Paragraph className="ams-mb-s" id="whoDescription">
+            <Paragraph id="whoDescription">
               Bijvoorbeeld omdat u dat ziet aan een adressticker of iets anders?
             </Paragraph>
-            {errors.who && <ErrorMessage className="ams-mb-s" id="whoError">{`${errors.who.message}`}</ErrorMessage>}
+            {errors.who && <ErrorMessage id="whoError">{`${errors.who.message}`}</ErrorMessage>}
             <Radio
               aria-required="true"
               defaultChecked={formData.who === 'ja'}

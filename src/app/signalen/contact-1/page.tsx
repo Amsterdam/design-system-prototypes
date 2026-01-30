@@ -50,7 +50,7 @@ function Contact1() {
   return (
     <Grid paddingVertical="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }} start={{ narrow: 1, medium: 2, wide: 2 }}>
-        <BackLink className="ams-mb-s" href="/signalen/vul-aan-3">
+        <BackLink className="ams-mb-xl" href="/signalen/vul-aan-3">
           Vorige vraag
         </BackLink>
         <Column className="ams-mb-l">
@@ -66,7 +66,7 @@ function Contact1() {
             aria-describedby="contactDescription"
             legend="Mogen we u bellen voor vragen? En op de hoogte houden via e-mail?"
           >
-            <Paragraph className="ams-mb-m" id="contactDescription">
+            <Paragraph id="contactDescription">
               Vaak hebben we nog een vraag. Daarmee kunnen we het probleem sneller of beter oplossen. Of we willen iets
               uitleggen. Wij willen u dan graag even bellen. Of anders e-mailen wij u. Wij gebruiken uw telefoonnummer
               en e-mailadres alléén voor deze melding.
