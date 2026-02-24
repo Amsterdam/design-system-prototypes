@@ -32,23 +32,23 @@
     "next": "16.1.6",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-hook-form": "7.71.1",
+    "react-hook-form": "7.71.2",
     "sharp": "0.34.5"
   },
   "devDependencies": {
-    "@types/react": "19.2.10",
+    "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
-    "@typescript-eslint/parser": "8.54.0",
-    "eslint": "9.39.2",
+    "@typescript-eslint/parser": "8.56.1",
+    "eslint": "9.39.3",
     "eslint-config-next": "16.1.6",
     "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-perfectionist": "5.4.0",
+    "eslint-plugin-perfectionist": "5.6.0",
     "eslint-plugin-prettier": "5.5.5",
-    "npm-check-updates": "19.3.2",
+    "npm-check-updates": "19.4.1",
     "plop": "4.0.5",
     "prettier": "3.8.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.54.0"
+    "typescript-eslint": "8.56.1"
   },
   "browserslist": [
     "defaults and fully supports es6-module",
