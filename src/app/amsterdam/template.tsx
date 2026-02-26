@@ -1,6 +1,7 @@
 'use client'
 
 import { Grid, LinkList, PageHeader, SkipLink } from '@amsterdam/design-system-react'
+import { SearchIcon, UserAccountIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
 
 const megaMenuLinks = [
@@ -39,14 +40,16 @@ function Template({ children }) {
         logoLinkComponent={(props) => <NextLink {...props} href="/amsterdam" />}
         logoLinkTitle="Naar de homepage van gemeente Amsterdam"
         menuItems={[
-          <PageHeader.MenuLink href="https://mijn.amsterdam.nl/" key={1} rel="external">
-            Mijn Amsterdam
-          </PageHeader.MenuLink>,
-          <PageHeader.MenuLink href="#" key={2} lang="en">
+          <PageHeader.MenuLink href="#" key={1} lang="en">
             English
           </PageHeader.MenuLink>,
+          <PageHeader.MenuLink fixed href="https://mijn.amsterdam.nl/" icon={UserAccountIcon} key={2} rel="external">
+            Mijn Amsterdam
+          </PageHeader.MenuLink>,
           <NextLink href="/amsterdam/zoeken" key={3} legacyBehavior passHref>
-            <PageHeader.MenuLink fixed>Zoeken</PageHeader.MenuLink>
+            <PageHeader.MenuLink fixed icon={SearchIcon}>
+              Zoeken
+            </PageHeader.MenuLink>
           </NextLink>,
         ]}
       >
