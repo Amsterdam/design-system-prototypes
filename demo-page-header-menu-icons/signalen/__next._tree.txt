@@ -1,0 +1,4 @@
+:HL["/design-system-prototypes/demo-page-header-menu-icons/_next/static/chunks/374aafdf68075f1f.css","style"]
+:HL["/design-system-prototypes/demo-page-header-menu-icons/_next/static/chunks/44133aa12a49b4ce.css","style"]
+:HC["/",""]
+0:{"buildId":"v-0hiaETQeij0FoQAOL3-","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"signalen","paramType":null,"paramKey":"signalen","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
