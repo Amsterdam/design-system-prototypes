@@ -43,7 +43,7 @@ function Template({ children }) {
           <PageHeader.MenuLink href="#" key={1} lang="en">
             English
           </PageHeader.MenuLink>,
-          <PageHeader.MenuLink fixed href="https://mijn.amsterdam.nl/" icon={UserAccountIcon} key={2} rel="external">
+          <PageHeader.MenuLink href="https://mijn.amsterdam.nl/" icon={UserAccountIcon} key={2} rel="external">
             Mijn Amsterdam
           </PageHeader.MenuLink>,
           <NextLink href="/amsterdam/zoeken" key={3} legacyBehavior passHref>
@@ -58,6 +58,9 @@ function Template({ children }) {
             <LinkList>
               <LinkList.Link href="#" lang="en">
                 English
+              </LinkList.Link>
+              <LinkList.Link href="https://mijn.amsterdam.nl/" icon={UserAccountIcon} rel="external">
+                Mijn Amsterdam
               </LinkList.Link>
             </LinkList>
           </PageHeader.GridCellNarrowWindowOnly>
