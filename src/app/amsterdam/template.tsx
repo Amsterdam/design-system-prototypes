@@ -56,9 +56,6 @@ function Template({ children }) {
         <Grid>
           <PageHeader.GridCellNarrowWindowOnly span="all">
             <LinkList>
-              <LinkList.Link href="https://mijn.amsterdam.nl/" rel="external">
-                Mijn Amsterdam
-              </LinkList.Link>
               <LinkList.Link href="#" lang="en">
                 English
               </LinkList.Link>
