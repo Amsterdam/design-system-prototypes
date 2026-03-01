@@ -2,4 +2,4 @@
 :HL["/design-system-prototypes/_next/static/chunks/44133aa12a49b4ce.css","style"]
 :HC["/",""]
 :HL["/design-system-prototypes/_next/static/chunks/912771bb520ba3e3.css","style"]
-0:{"buildId":"NmleIwolM1M5-kS_XG2y1","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"afspraak-maken","paramType":null,"paramKey":"afspraak-maken","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
+0:{"buildId":"FMMgCNhJ4xeFQRLX7X5-L","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"afspraak-maken","paramType":null,"paramKey":"afspraak-maken","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
