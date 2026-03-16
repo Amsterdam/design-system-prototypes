@@ -56,3 +56,8 @@
 .ams-table__cell--nowrap {
   white-space: nowrap;
 }
+
+.ams-link[aria-current="true"] {
+  font-weight: var(--ams-typography-body-text-bold-font-weight);
+  text-decoration: none;
+}

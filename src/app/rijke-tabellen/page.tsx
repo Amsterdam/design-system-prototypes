@@ -15,10 +15,13 @@ export default function HomePage() {
         </Heading>
         <LinkList>
           <NextLink href="/rijke-tabellen/sorteren-via-select" legacyBehavior passHref>
-            <LinkList.Link>Sorteren via Select</LinkList.Link>
+            <LinkList.Link>Sorteren via select</LinkList.Link>
+          </NextLink>
+          <NextLink href="/rijke-tabellen/sorteren-via-links" legacyBehavior passHref>
+            <LinkList.Link>Sorteren via links</LinkList.Link>
           </NextLink>
           <NextLink href="/rijke-tabellen/sorteren-via-buttons" legacyBehavior passHref>
-            <LinkList.Link>Sorteren via Buttons</LinkList.Link>
+            <LinkList.Link>Sorteren via buttons</LinkList.Link>
           </NextLink>
           <NextLink href="/rijke-tabellen/filteren-op-tekst" legacyBehavior passHref>
             <LinkList.Link>Filteren op tekst</LinkList.Link>
