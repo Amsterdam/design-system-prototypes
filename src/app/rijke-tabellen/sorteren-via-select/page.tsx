@@ -33,22 +33,26 @@ export default function SorterenViaSelect() {
         <Heading className="ams-mb-xl" level={1}>
           Eredivisie 2024/2025
         </Heading>
-        <Row align="end" alignVertical="center" className="ams-mb-m" wrap>
-          <Label htmlFor="sortOrder">Sorteren op</Label>
-          <Select id="sortOrder" onChange={(e) => setSortOrder(e.target.value as SortOrder)} value={sortOrder}>
-            {sortOptions.map(({ label, value }) => (
-              <Select.Option key={value} value={value}>
-                {label}
-              </Select.Option>
-            ))}
-          </Select>
+        <Row align="between" alignVertical="center" className="ams-mb-m" wrap>
+          <Heading id="tabel-eindstand" level={2}>
+            Eindstand
+          </Heading>
+          <div>
+            <Label htmlFor="sortOrder">Sorteren op</Label>
+            <Select
+              id="sortOrder"
+              onChange={(e) => setSortOrder(e.target.value as SortOrder)}
+              value={sortOrder}
+            >
+              {sortOptions.map(({ label, value }) => (
+                <Select.Option key={value} value={value}>
+                  {label}
+                </Select.Option>
+              ))}
+            </Select>
+          </div>
         </Row>
-        <Table>
-          <Table.Caption>
-            <Heading className="ams-mb-m" level={2}>
-              Eindstand
-            </Heading>
-          </Table.Caption>
+        <Table aria-labelledby="tabel-eindstand">
           <Table.Header>
             <RankingTableHeaderRow />
           </Table.Header>
