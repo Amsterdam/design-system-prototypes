@@ -9,20 +9,33 @@ type RankingTableBodyProps = {
 export const RankingTableBody = ({ ranking }: RankingTableBodyProps) => (
   <Table.Body>
     {ranking.length ? (
-      ranking.map(({ drawn, goal_difference, goals_against, goals_for, lost, name, played, points, position, won }) => (
-        <Table.Row key={position}>
-          <Table.HeaderCell scope="row">{position}</Table.HeaderCell>
-          <Table.Cell className="ams-table__cell--align-start ams-table__cell--nowrap">{name}</Table.Cell>
-          <Table.Cell>{played}</Table.Cell>
-          <Table.Cell>{won}</Table.Cell>
-          <Table.Cell>{drawn}</Table.Cell>
-          <Table.Cell>{lost}</Table.Cell>
-          <Table.Cell>{points}</Table.Cell>
-          <Table.Cell>{goals_for}</Table.Cell>
-          <Table.Cell>{goals_against}</Table.Cell>
-          <Table.Cell>{goal_difference}</Table.Cell>
-        </Table.Row>
-      ))
+      ranking.map(
+        ({
+          doelpunten_tegen,
+          doelpunten_voor,
+          doelsaldo,
+          gelijk,
+          gespeeld,
+          gewonnen,
+          positie,
+          punten,
+          team,
+          verloren,
+        }) => (
+          <Table.Row key={positie}>
+            <Table.HeaderCell scope="row">{positie}</Table.HeaderCell>
+            <Table.Cell className="ams-table__cell--align-start ams-table__cell--nowrap">{team}</Table.Cell>
+            <Table.Cell>{gespeeld}</Table.Cell>
+            <Table.Cell>{gewonnen}</Table.Cell>
+            <Table.Cell>{gelijk}</Table.Cell>
+            <Table.Cell>{verloren}</Table.Cell>
+            <Table.Cell>{punten}</Table.Cell>
+            <Table.Cell>{doelpunten_voor}</Table.Cell>
+            <Table.Cell>{doelpunten_tegen}</Table.Cell>
+            <Table.Cell>{doelsaldo}</Table.Cell>
+          </Table.Row>
+        ),
+      )
     ) : (
       <Table.Row>
         <Table.Cell colSpan={10}>Geen gegevens</Table.Cell>

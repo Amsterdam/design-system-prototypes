@@ -9,7 +9,7 @@ import { RankingTableHeaderRow } from '../common/RankingTableHeaderRow'
 
 export default function FilterenOpTekst() {
   const [filter, setFilter] = useState<string>('')
-  const filteredRanking = ranking.filter(({ name }) => name.toLowerCase().includes(filter.toLowerCase()))
+  const filteredRanking = ranking.filter(({ team }) => team.toLowerCase().includes(filter.toLowerCase()))
 
   return (
     <Grid paddingBottom="x-large">

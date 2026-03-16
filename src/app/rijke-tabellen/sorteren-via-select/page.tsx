@@ -11,18 +11,18 @@ import { getSortedRanking, ranking, RankingTableBody } from '../common'
 import { RankingTableHeaderRow } from '../common/RankingTableHeaderRow'
 
 const sortOptions: Array<{ label: string; value: SortOrder }> = [
-  { label: 'Positie', value: 'position-asc' },
-  { label: 'Team oplopend', value: 'name-asc' },
-  { label: 'Team aflopend', value: 'name-desc' },
-  { label: 'Gewonnen', value: 'won-desc' },
-  { label: 'Gelijk', value: 'drawn-desc' },
-  { label: 'Verloren', value: 'lost-desc' },
+  { label: 'Positie', value: 'positie-asc' },
+  { label: 'Team oplopend', value: 'team-asc' },
+  { label: 'Team aflopend', value: 'team-desc' },
+  { label: 'Gewonnen', value: 'gewonnen-desc' },
+  { label: 'Gelijk', value: 'gelijk-desc' },
+  { label: 'Verloren', value: 'verloren-desc' },
 ]
 
 function SorterenViaSelectContent() {
   const searchParams = useSearchParams()
   const router = useRouter()
-  const sortOrder = (searchParams.get('sortering') as SortOrder) || 'position-asc'
+  const sortOrder = (searchParams.get('sortering') as SortOrder) || 'positie-asc'
   const sortedRanking = getSortedRanking(ranking, sortOrder)
 
   return (

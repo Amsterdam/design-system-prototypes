@@ -9,7 +9,7 @@ import { ranking } from '../common'
 
 export default function KnopInCel() {
   const [deleted, setDeleted] = useState<number[]>([])
-  const filteredRanking = ranking.filter((team) => !deleted.includes(team.position))
+  const filteredRanking = ranking.filter((team) => !deleted.includes(team.positie))
 
   return (
     <Grid paddingBottom="x-large">
@@ -48,28 +48,39 @@ export default function KnopInCel() {
           <Table.Body>
             {filteredRanking.length ? (
               filteredRanking.map(
-                ({ drawn, goal_difference, goals_against, goals_for, lost, name, played, points, position, won }) => (
-                  <Table.Row key={position}>
-                    <Table.HeaderCell scope="row">{position}</Table.HeaderCell>
-                    <Table.Cell className="ams-table__cell--align-start ams-table__cell--nowrap">{name}</Table.Cell>
+                ({
+                  doelpunten_tegen,
+                  doelpunten_voor,
+                  doelsaldo,
+                  gelijk,
+                  gespeeld,
+                  gewonnen,
+                  positie,
+                  punten,
+                  team,
+                  verloren,
+                }) => (
+                  <Table.Row key={positie}>
+                    <Table.HeaderCell scope="row">{positie}</Table.HeaderCell>
+                    <Table.Cell className="ams-table__cell--align-start ams-table__cell--nowrap">{team}</Table.Cell>
                     <Table.Cell>
                       <Row gap="none">
                         <IconButton label="Bewerken" onClick={() => void 0} svg={PencilIcon} />
                         <IconButton
                           label="Verwijderen"
-                          onClick={() => setDeleted([position, ...deleted])}
+                          onClick={() => setDeleted([positie, ...deleted])}
                           svg={TrashBinIcon}
                         />
                       </Row>
                     </Table.Cell>
-                    <Table.Cell>{played}</Table.Cell>
-                    <Table.Cell>{won}</Table.Cell>
-                    <Table.Cell>{drawn}</Table.Cell>
-                    <Table.Cell>{lost}</Table.Cell>
-                    <Table.Cell>{points}</Table.Cell>
-                    <Table.Cell>{goals_for}</Table.Cell>
-                    <Table.Cell>{goals_against}</Table.Cell>
-                    <Table.Cell>{goal_difference}</Table.Cell>
+                    <Table.Cell>{gespeeld}</Table.Cell>
+                    <Table.Cell>{gewonnen}</Table.Cell>
+                    <Table.Cell>{gelijk}</Table.Cell>
+                    <Table.Cell>{verloren}</Table.Cell>
+                    <Table.Cell>{punten}</Table.Cell>
+                    <Table.Cell>{doelpunten_voor}</Table.Cell>
+                    <Table.Cell>{doelpunten_tegen}</Table.Cell>
+                    <Table.Cell>{doelsaldo}</Table.Cell>
                   </Table.Row>
                 ),
               )

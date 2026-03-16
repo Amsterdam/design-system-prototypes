@@ -10,7 +10,7 @@ import type { SortOrder, Team } from '../common'
 import { getSortedRanking, ranking, RankingTableBody } from '../common'
 
 export default function SorterenViaButtons() {
-  const [sortOrder, setSortOrder] = useState<SortOrder>('position-asc')
+  const [sortOrder, setSortOrder] = useState<SortOrder>('positie-asc')
   const sortedRanking = getSortedRanking(ranking, sortOrder)
 
   const SortableHeader = ({ field, header }: { field: keyof Team; header: string }) => (
@@ -45,34 +45,34 @@ export default function SorterenViaButtons() {
           <Table.Header>
             <Table.Row>
               <Table.HeaderCell scope="col">
-                <SortableHeader field="position" header="Positie" />
+                <SortableHeader field="positie" header="Positie" />
               </Table.HeaderCell>
               <Table.HeaderCell className="ams-table__cell--align-start" scope="col">
-                <SortableHeader field="name" header="Team" />
+                <SortableHeader field="team" header="Team" />
               </Table.HeaderCell>
               <Table.HeaderCell scope="col">
-                <SortableHeader field="played" header="Gespeeld" />
+                <SortableHeader field="gespeeld" header="Gespeeld" />
               </Table.HeaderCell>
               <Table.HeaderCell scope="col">
-                <SortableHeader field="won" header="Gewonnen" />
+                <SortableHeader field="gewonnen" header="Gewonnen" />
               </Table.HeaderCell>
               <Table.HeaderCell scope="col">
-                <SortableHeader field="drawn" header="Gelijk" />
+                <SortableHeader field="gelijk" header="Gelijk" />
               </Table.HeaderCell>
               <Table.HeaderCell scope="col">
-                <SortableHeader field="lost" header="Verloren" />
+                <SortableHeader field="verloren" header="Verloren" />
               </Table.HeaderCell>
               <Table.HeaderCell scope="col">
-                <SortableHeader field="points" header="Punten" />
+                <SortableHeader field="punten" header="Punten" />
               </Table.HeaderCell>
               <Table.HeaderCell scope="col">
-                <SortableHeader field="goals_for" header="Doelpunten voor" />
+                <SortableHeader field="doelpunten_voor" header="Doelpunten voor" />
               </Table.HeaderCell>
               <Table.HeaderCell scope="col">
-                <SortableHeader field="goals_against" header="Doelpunten tegen" />
+                <SortableHeader field="doelpunten_tegen" header="Doelpunten tegen" />
               </Table.HeaderCell>
               <Table.HeaderCell scope="col">
-                <SortableHeader field="goal_difference" header="Doelsaldo" />
+                <SortableHeader field="doelsaldo" header="Doelsaldo" />
               </Table.HeaderCell>
             </Table.Row>
           </Table.Header>
