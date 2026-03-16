@@ -2,7 +2,8 @@
 
 import { Breadcrumb, Grid, Heading, Label, Row, Select, Table } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
-import { useState } from 'react'
+import { useRouter, useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
 
 import type { SortOrder } from '../common'
 
@@ -18,8 +19,10 @@ const sortOptions: Array<{ label: string; value: SortOrder }> = [
   { label: 'Verloren', value: 'lost-desc' },
 ]
 
-export default function SorterenViaSelect() {
-  const [sortOrder, setSortOrder] = useState<SortOrder>('position-asc')
+function SorterenViaSelectContent() {
+  const searchParams = useSearchParams()
+  const router = useRouter()
+  const sortOrder = (searchParams.get('sortering') as SortOrder) || 'position-asc'
   const sortedRanking = getSortedRanking(ranking, sortOrder)
 
   return (
@@ -37,20 +40,26 @@ export default function SorterenViaSelect() {
           <Heading id="tabel-eindstand" level={2}>
             Eindstand
           </Heading>
-          <div>
-            <Label htmlFor="sortOrder">Sorteren op</Label>
-            <Select
-              id="sortOrder"
-              onChange={(e) => setSortOrder(e.target.value as SortOrder)}
-              value={sortOrder}
-            >
-              {sortOptions.map(({ label, value }) => (
-                <Select.Option key={value} value={value}>
-                  {label}
-                </Select.Option>
-              ))}
-            </Select>
-          </div>
+          <form method="get">
+            <Row alignVertical="center" wrap>
+              <Label htmlFor="sortOrder">Sorteren op</Label>
+              <Select
+                id="sortOrder"
+                name="sortering"
+                onChange={(e) => router.push(`?sortering=${e.target.value}`)}
+                value={sortOrder}
+              >
+                {sortOptions.map(({ label, value }) => (
+                  <Select.Option key={value} value={value}>
+                    {label}
+                  </Select.Option>
+                ))}
+              </Select>
+              <button className="ams-visually-hidden" tabIndex={-1} type="submit">
+                Sorteren
+              </button>
+            </Row>
+          </form>
         </Row>
         <Table aria-labelledby="tabel-eindstand">
           <Table.Header>
@@ -60,5 +69,13 @@ export default function SorterenViaSelect() {
         </Table>
       </Grid.Cell>
     </Grid>
+  )
+}
+
+export default function SorterenViaSelect() {
+  return (
+    <Suspense>
+      <SorterenViaSelectContent />
+    </Suspense>
   )
 }
