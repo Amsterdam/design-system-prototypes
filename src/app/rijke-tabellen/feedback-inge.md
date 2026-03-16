@@ -1,0 +1,32 @@
+# Feedback Inge op Rijke Tabellen
+
+- Sorteren via select
+	- Verbeterpunt nu: sorteerfunctie mag naar de titel van de tabel, zodat het nog duidelijker is dat de sorteerfunctie op die tabel slaat.
+	- Reactie op review Aram:
+		- Is het een goed patroon? ja funda doet het ook zo. Is dat een valide reden. Funda krijgt dan ook de sort param in de url.
+		- Sorteren met links; maar als er 10 sorteeropties zijn, dan zijn er erg veel links.
+- Sorteren via buttons
+	- Pijltjes rechts van de kolom titels. Goed gekozen pijltjes, maar omdat ze zoveel op elkaar lijken en er veel kolommen kunnen zijn, is het lastig te onderscheiden op welke kolom precies sorteren actief is.
+	- Verbeterpunt: Er is dus nog een duidelijkere active state nodig voor het pijltje dat is aangeklikt.
+	- Reactie op review Aram:
+		- Mee eens; hit area groter maken door kolomkop+icon klikbaar te maken als 1 link samen. Icon moet dan wel een active state krijgen als is geklikt, en dan de kolomkop dus ook als het samen klikbaar is.
+- Filteren op tekst
+	- Inputveld om mee te zoeken.
+	- Verbeterpunt: Hier mist nog de suggestie dat je daarmee kunt zoeken/filteren binnen die kolom. Een hint-tekst in het veld is denk ik voldoende. Bijvoorbeeld “Zoeken…”
+	- Reactie op review Aram: eens.
+- Pagineren
+	- Verbeterpunt: Ik zou de select links plaatsen en de daadwerkelijke paginering rechts. Andersom dus.
+	- Onderzoekspunt: ”Pagineren per” mag als niet-bold. (Maar snap dat het een label is, en labels zijn bold, maar voelt nu wel heel bold bij deze kleine select).
+	- Reactie op review Aram: tech talk wink jullie expertise
+- Link in cel
+	- Dat het een link is, is duidelijk, en in de applicatie moet wel duidelijk worden/intuitief werken naar welke pagina je dan gaat.
+	- Verbeterpunt: Alt-tekst tonen waar je heen gaat.
+	- Reactie op review Aram: eens.
+- Knop in cel
+	- Icons potlood en prullenbak duidelijk voor bewerken en verwijderen. Normaliter zou ik deze acties verwachten achteraan een rij. Als ze direct rechts van een specifieke kolom staan, verwacht ik/lijkt het alsof je dan alleen die kolom/dat gegeven gaat bewerken. Maar dat is aan de designer van de desbetreffende applicatie.
+	- Verbeterpunt: alt-tekst mist/komt niet in beeld on hover.
+	- Reactie op review Aram: eens.
+
+- TODO:
+	- Verbeterpunten verwerken
+	- Design tickets maken voor sommige verbeterpunten die visueel van aard zijn. Opnemen in het ontwerp van Data Table in Figma.
