@@ -1,0 +1,5 @@
+:HL["/design-system-prototypes/demo-DES-1705-print-view-always-in-narrow-window/_next/static/chunks/60a7b45511b0f1fc.css","style"]
+:HL["/design-system-prototypes/demo-DES-1705-print-view-always-in-narrow-window/_next/static/chunks/cf89ce4149b1c407.css","style"]
+:HL["/design-system-prototypes/demo-DES-1705-print-view-always-in-narrow-window/_next/static/chunks/d80a6cab2e8c563c.css","style"]
+:HC["/",""]
+0:{"buildId":"SCDzT5fnyYAg4Aj2PMtSA","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"amopis","paramType":null,"paramKey":"amopis","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
