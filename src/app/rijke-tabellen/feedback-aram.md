@@ -1,0 +1,25 @@
+# Feedback Aram op Rijke Tabellen
+
+- Sorteren via select
+	- De vraag of dit een goed patroon is
+	- Zo ja, Select in form, knop erachter, evt verbergen, select onChange = form submit
+	- Zo krijg je de sort param wel in de url en kun je de link alleen delen via de url balk (er is geen link)
+- Voorbeeld toevoegen voor sorteren met links ipv Select
+- Sorteren via buttons
+	- Dit zouden geen buttons moeten zijn maar links → Icon Link? Dus vervangen, buttons zijn nooit beter hier
+	- Misschien net zo goed om de hele kolomkop + een icon te linken (hit area groter, wel blauw, op zich duidelijk)
+- Filteren op tekst
+	- Nadenken over plek in tabel: in thead, td of th, misschien samenvoegen met de th van de kolomkop
+- Voorbeeld toevoegen met 1 zoekveld in een form boven de tabel die alle kolommen filtert
+- Pagineren
+	- De select is hier wel het geijkte patroon, dus een form eromheen en submit on change
+	- Zorgen dat pageSize geen lokale state is, maar in de url zit
+- Link in cel
+	- Duidelijker een detailpagina tonen
+	- Uitzoeken of position: relative wel ondersteund wordt op een tr – hier gaan dingen niet goed
+- Button in cel
+	- Delete klopt wel, dat is een button die een form submit – een form om elke button heen
+	- Bewerken kan beter een link zijn naar een pagina waar je de ruimte hebt, met een parameter mode=edit
+- Principe: alles baseren op url parameters
+	- Links waar mogelijk
+	- Anders controls in een form met autosubmit als het kan
