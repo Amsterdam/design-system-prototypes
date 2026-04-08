@@ -1,0 +1,4 @@
+:HL["/design-system-prototypes/demo-DES-1353-rich-tables/_next/static/chunks/0lwk1deapu3o8.css","style"]
+:HL["/design-system-prototypes/demo-DES-1353-rich-tables/_next/static/chunks/0tcfbtd02oe6e.css","style"]
+:HC["/",""]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"afspraak-maken","param":null,"prefetchHints":0,"slots":{"children":{"name":"controleer","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"bFKGHKsaRittx9CgMvdkw"}
