@@ -28,7 +28,7 @@ function Amopis({ children }: { children: ReactNode }) {
         <div className="ams-page__area--body">{children}</div>
         <PageFooter className="ams-page__area--footer">
           <PageFooter.Menu>
-            <NextLink href="/amopis" legacyBehavior passHref>
+            <NextLink href="/amopis/projectdetails/kerngegevens" legacyBehavior passHref>
               <PageFooter.MenuLink>Kerngegevens</PageFooter.MenuLink>
             </NextLink>
             <NextLink href="/amopis/ramingen" legacyBehavior passHref>
