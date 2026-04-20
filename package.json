@@ -47,8 +47,8 @@
     "npm-check-updates": "20.0.0",
     "plop": "4.0.5",
     "prettier": "3.8.1",
-    "typescript": "6.0.3",
-    "typescript-eslint": "8.58.0"
+    "typescript": "6.0.2",
+    "typescript-eslint": "8.59.0"
   },
   "browserslist": [
     "defaults and fully supports es6-module",
