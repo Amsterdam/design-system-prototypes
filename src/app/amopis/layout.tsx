@@ -31,7 +31,7 @@ function Amopis({ children }: { children: ReactNode }) {
             <NextLink href="/amopis/projectdetails/kerngegevens" legacyBehavior passHref>
               <PageFooter.MenuLink>Kerngegevens</PageFooter.MenuLink>
             </NextLink>
-            <NextLink href="/amopis/ramingen" legacyBehavior passHref>
+            <NextLink href="/amopis/planning/capaciteitsraming" legacyBehavior passHref>
               <PageFooter.MenuLink>Ramingen</PageFooter.MenuLink>
             </NextLink>
             <PageFooter.MenuLink href="#">E-mail je vraag of feedback</PageFooter.MenuLink>

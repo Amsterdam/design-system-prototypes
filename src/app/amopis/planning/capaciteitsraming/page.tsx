@@ -9,18 +9,16 @@ import {
   Grid,
   Heading,
   IconButton,
-  LinkList,
   Paragraph,
   Table,
-  Tabs,
 } from '@amsterdam/design-system-react'
 import { DocumentWithPencilIcon } from '@amsterdam/design-system-react-icons'
 
-const tabLabels = ['Mijlpalen', 'Planfases', 'Capaciteitsraming', 'Maatregelen en acties']
+import { ProjectNavigation } from '../../_components/ProjectNavigation/ProjectNavigation'
 
-function Estimation() {
+function Capaciteitsraming() {
   return [
-    <Grid paddingTop="x-large">
+    <Grid key={1} paddingTop="x-large">
       <Grid.Cell appearance="transparent" span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
@@ -28,7 +26,7 @@ function Estimation() {
         </Breadcrumb>
       </Grid.Cell>
     </Grid>,
-    <Grid as="main" key={2} paddingBottom="x-large">
+    <Grid as="main" id="inhoud" key={2} paddingBottom="x-large">
       <Grid.Cell appearance="transparent" span="all">
         <Heading level={2} size="level-1">
           Capaciteitsraming
@@ -37,31 +35,7 @@ function Estimation() {
           Brug 423 opwaardering (Berlagebrug) – ams20192715
         </Heading>
       </Grid.Cell>
-      <Grid.Cell appearance="flush" span={{ narrow: 4, medium: 8, wide: 10 }} start={{ narrow: 1, medium: 1, wide: 3 }}>
-        <Tabs>
-          <Tabs.List>
-            {tabLabels.map((label) => (
-              <Tabs.Button aria-controls={label} key={label}>
-                {label}
-              </Tabs.Button>
-            ))}
-          </Tabs.List>
-          {tabLabels.map((label) => (
-            <Tabs.Panel id={label} key={label} />
-          ))}
-        </Tabs>
-      </Grid.Cell>
-      <Grid.Cell span={{ narrow: 4, medium: 2, wide: 2 }} start={1}>
-        <LinkList>
-          <LinkList.Link href="#">Projectdetails</LinkList.Link>
-          <LinkList.Link href="#">Financiën</LinkList.Link>
-          <LinkList.Link href="#">Projectstructuur</LinkList.Link>
-          <LinkList.Link href="#">Kwaliteit</LinkList.Link>
-          <LinkList.Link href="#">Planning</LinkList.Link>
-          <LinkList.Link href="#">Risico’s</LinkList.Link>
-          <LinkList.Link href="#">Logboek</LinkList.Link>
-        </LinkList>
-      </Grid.Cell>
+      <ProjectNavigation />
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 10 }}>
         <Column>
           <section>
@@ -240,4 +214,4 @@ function Estimation() {
   ]
 }
 
-export default Estimation
+export default Capaciteitsraming
