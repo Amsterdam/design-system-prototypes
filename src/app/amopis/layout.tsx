@@ -7,8 +7,6 @@ import { ReactNode } from 'react'
 import { AmopisMenu } from './_components/AmopisMenu/AmopisMenu'
 import '@amsterdam/design-system-tokens/dist/compact.theme.css'
 
-import './amopis.css'
-
 function Amopis({ children }: { children: ReactNode }) {
   return (
     <div className="ams-theme ams-theme--compact ams-site--amopis">
@@ -27,7 +25,7 @@ function Amopis({ children }: { children: ReactNode }) {
           <AmopisMenu />
         </PageHeader>
         <AmopisMenu className="ams-page__area--menu" inWideWindow />
-        <div className="ams-page__area--body amopis-main-background">{children}</div>
+        <div className="ams-page__area--body">{children}</div>
         <PageFooter className="ams-page__area--footer">
           <PageFooter.Menu>
             <NextLink href="/amopis" legacyBehavior passHref>
