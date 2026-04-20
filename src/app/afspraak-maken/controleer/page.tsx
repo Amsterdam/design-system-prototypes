@@ -109,14 +109,14 @@ export default function Controleer() {
           Controleer de gegevens die u heeft ingevuld. U kunt daarna uw afspraak bevestigen.
         </Paragraph>
         <Accordion className="ams-mb-xl" headingLevel={2}>
-          <Accordion.Section expanded label="Controleer stap 1">
+          <Accordion.Section defaultExpanded label="Controleer stap 1">
             <Column>
               {reviewItems[0].map(({ label, shortLabel, value }) => (
                 <ReviewItem label={label} shortLabel={shortLabel} value={value} />
               ))}
             </Column>
           </Accordion.Section>
-          <Accordion.Section expanded label="Controleer stap 2">
+          <Accordion.Section defaultExpanded label="Controleer stap 2">
             <Column>
               {reviewItems[1].map(({ label, shortLabel, value }) => (
                 <ReviewItem label={label} shortLabel={shortLabel} value={value} />
