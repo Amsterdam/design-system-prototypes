@@ -2,4 +2,4 @@
 :HL["/design-system-prototypes/demo-update-dependencies-2026-04-20/_next/static/chunks/022s6v4y1un4r.css","style"]
 :HL["/design-system-prototypes/demo-update-dependencies-2026-04-20/_next/static/chunks/0w4_d.jybl3r~.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amopis","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"GSzFjfcYBuRm0PU1jXgBj"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amopis","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"P8b4-y6jm_clKsR_2Kpsr"}
