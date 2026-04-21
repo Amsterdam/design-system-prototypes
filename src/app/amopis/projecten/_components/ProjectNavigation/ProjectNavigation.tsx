@@ -23,19 +23,26 @@ export function ProjectNavigation() {
       <Grid.Cell appearance="flush" rowSpan={2} span={{ narrow: 4, medium: 2, wide: 2 }}>
         <TabNavigation accessibleName="Projectnavigatie" orientation="vertical">
           <TabNavigation.List>
-            {menuItems.map(({ disabled, label, slug, subMenuItems: subItems }) => {
+            {menuItems.map(({ disabled, icon, label, slug, subMenuItems: subItems }) => {
               const firstEnabledSubItem = subItems.find((item) => !item.disabled)
               const href = firstEnabledSubItem
                 ? `/amopis/projecten/${slug}/${firstEnabledSubItem.slug}`
                 : `/amopis/projecten/${slug}`
               return disabled ? (
-                <TabNavigation.Link aria-disabled="true" href="#" key={slug} onClick={(e) => e.preventDefault()}>
+                <TabNavigation.Link
+                  aria-disabled="true"
+                  href="#"
+                  icon={icon}
+                  key={slug}
+                  onClick={(e) => e.preventDefault()}
+                >
                   {label}
                 </TabNavigation.Link>
               ) : (
                 <TabNavigation.Link
                   aria-current={currentMainSlug === slug ? 'page' : undefined}
                   href={href}
+                  icon={icon}
                   key={slug}
                   linkComponent={LinkComponent}
                 >
