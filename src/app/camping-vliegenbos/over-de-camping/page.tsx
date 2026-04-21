@@ -218,7 +218,7 @@ export default function OverDeCamping() {
             Campingregels
           </Heading>
           <Accordion headingLevel={3}>
-            <Accordion.Section expanded label="Aankomst, Verblijf & Betaling">
+            <Accordion.Section defaultExpanded label="Aankomst, Verblijf & Betaling">
               <UnorderedList>
                 <UnorderedList.Item>Meld je na aankomst en voor vertrek bij de receptie.</UnorderedList.Item>
                 <UnorderedList.Item>
