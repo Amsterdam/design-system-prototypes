@@ -1,11 +1,12 @@
-type SubMenuItem = {
+type BaseMenuItem = {
+  disabled?: boolean
   label: string
   slug: string
 }
 
-export type MenuItem = {
-  label: string
-  slug: string
+type SubMenuItem = BaseMenuItem
+
+export type MenuItem = BaseMenuItem & {
   subMenuItems: Array<SubMenuItem>
 }
 
@@ -14,27 +15,27 @@ export const menuItems: Array<MenuItem> = [
     label: 'Projectdetails',
     slug: 'projectdetails',
     subMenuItems: [
-      { label: 'Overzicht', slug: 'overzicht' },
+      { disabled: true, label: 'Overzicht', slug: 'overzicht' },
       { label: 'Kerngegevens', slug: 'kerngegevens' },
-      { label: 'Projectinformatie', slug: 'projectinformatie' },
-      { label: 'Projectgrenzen', slug: 'projectgrenzen' },
-      { label: 'Projectcodes', slug: 'projectcodes' },
-      { label: 'Autorisaties', slug: 'autorisaties' },
+      { disabled: true, label: 'Projectinformatie', slug: 'projectinformatie' },
+      { disabled: true, label: 'Projectgrenzen', slug: 'projectgrenzen' },
+      { disabled: true, label: 'Projectcodes', slug: 'projectcodes' },
+      { disabled: true, label: 'Autorisaties', slug: 'autorisaties' },
     ],
   },
-  { label: 'Financiën', slug: 'financien', subMenuItems: [] },
-  { label: 'Projectstructuur', slug: 'projectstructuur', subMenuItems: [] },
-  { label: 'Kwaliteit', slug: 'kwaliteit', subMenuItems: [] },
+  { disabled: true, label: 'Financiën', slug: 'financien', subMenuItems: [] },
+  { disabled: true, label: 'Projectstructuur', slug: 'projectstructuur', subMenuItems: [] },
+  { disabled: true, label: 'Kwaliteit', slug: 'kwaliteit', subMenuItems: [] },
   {
     label: 'Planning',
     slug: 'planning',
     subMenuItems: [
-      { label: 'Mijlpalen', slug: 'mijlpalen' },
-      { label: 'Planfases', slug: 'planfases' },
+      { disabled: true, label: 'Mijlpalen', slug: 'mijlpalen' },
+      { disabled: true, label: 'Planfases', slug: 'planfases' },
       { label: 'Capaciteitsraming', slug: 'capaciteitsraming' },
-      { label: 'Maatregelen en acties', slug: 'maatregelen-en-acties' },
+      { disabled: true, label: 'Maatregelen en acties', slug: 'maatregelen-en-acties' },
     ],
   },
-  { label: 'Risico’s', slug: 'risicos', subMenuItems: [] },
-  { label: 'Logboek', slug: 'logboek', subMenuItems: [] },
+  { disabled: true, label: 'Risico’s', slug: 'risicos', subMenuItems: [] },
+  { disabled: true, label: 'Logboek', slug: 'logboek', subMenuItems: [] },
 ]

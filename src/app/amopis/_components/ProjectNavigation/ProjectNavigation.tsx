@@ -23,8 +23,13 @@ export function ProjectNavigation() {
       <Grid.Cell appearance="flush" rowSpan={2} span={{ narrow: 4, medium: 2, wide: 2 }}>
         <TabNavigation accessibleName="Projectnavigatie" orientation="vertical">
           <TabNavigation.List>
-            {menuItems.map(({ label, slug, subMenuItems: subItems }) => {
-              const href = subItems.length > 0 ? `/amopis/${slug}/${subItems[0].slug}` : `/amopis/${slug}`
+            {menuItems.map(({ disabled, label, slug, subMenuItems: subItems }) => {
+              const firstEnabledSubItem = subItems.find((item) => !item.disabled)
+              const href = disabled
+                ? '#'
+                : firstEnabledSubItem
+                  ? `/amopis/${slug}/${firstEnabledSubItem.slug}`
+                  : `/amopis/${slug}`
               return (
                 <TabNavigation.Link
                   aria-current={currentMainSlug === slug ? 'page' : undefined}
@@ -47,16 +52,19 @@ export function ProjectNavigation() {
         >
           <TabNavigation accessibleName={`Subnavigatie voor ${currentMenu.label}`}>
             <TabNavigation.List>
-              {subMenuItems.map(({ label, slug }) => (
-                <TabNavigation.Link
-                  aria-current={currentSubSlug === slug ? 'page' : undefined}
-                  href={`/amopis/${currentMenu.slug}/${slug}`}
-                  key={slug}
-                  linkComponent={LinkComponent}
-                >
-                  {label}
-                </TabNavigation.Link>
-              ))}
+              {subMenuItems.map(({ disabled, label, slug }) => {
+                const href = disabled ? '#' : `/amopis/${currentMenu.slug}/${slug}`
+                return (
+                  <TabNavigation.Link
+                    aria-current={currentSubSlug === slug ? 'page' : undefined}
+                    href={href}
+                    key={slug}
+                    linkComponent={LinkComponent}
+                  >
+                    {label}
+                  </TabNavigation.Link>
+                )
+              })}
             </TabNavigation.List>
           </TabNavigation>
         </Grid.Cell>
