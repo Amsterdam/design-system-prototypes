@@ -2,4 +2,4 @@
 :HL["/design-system-prototypes/_next/static/chunks/022s6v4y1un4r.css","style"]
 :HL["/design-system-prototypes/_next/static/chunks/0y85ta5cs9i6f.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amsterdam","param":null,"prefetchHints":0,"slots":{"children":{"name":"burgerzaken","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"8gm5qkBCj7SgkCBx0nWef"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amsterdam","param":null,"prefetchHints":0,"slots":{"children":{"name":"burgerzaken","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"CS_jZVwZhBcU1Bv3539E2"}
