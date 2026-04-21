@@ -1,5 +1,5 @@
 import { redirect } from 'next/navigation'
 
 export default function AmopisIndex() {
-  redirect('/amopis/projectdetails/kerngegevens')
+  redirect('/amopis/projecten')
 }

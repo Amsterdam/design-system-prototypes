@@ -1,3 +1,5 @@
+import type { IconProps } from '@amsterdam/design-system-react'
+
 import {
   BarChartIcon,
   DocumentsIcon,
@@ -6,14 +8,22 @@ import {
   SettingsIcon,
 } from '@amsterdam/design-system-react-icons'
 
-export const menuItems = [
+type MenuItem = {
+  activePathPrefix?: string
+  href: string
+  icon: IconProps['svg']
+  text: string
+}
+
+export const menuItems: Array<MenuItem> = [
   {
     href: '#',
     icon: <PieChartIcon />,
     text: 'Dashboard',
   },
   {
-    href: '#',
+    activePathPrefix: '/amopis/project',
+    href: '/amopis/projecten',
     icon: <FolderIcon />,
     text: 'Projecten',
   },
