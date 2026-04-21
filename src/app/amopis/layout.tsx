@@ -28,10 +28,10 @@ function Amopis({ children }: { children: ReactNode }) {
         <div className="ams-page__area--body">{children}</div>
         <PageFooter className="ams-page__area--footer">
           <PageFooter.Menu>
-            <NextLink href="/amopis/projectdetails/kerngegevens" legacyBehavior passHref>
+            <NextLink href="/amopis/projecten/projectdetails/kerngegevens" legacyBehavior passHref>
               <PageFooter.MenuLink>Kerngegevens</PageFooter.MenuLink>
             </NextLink>
-            <NextLink href="/amopis/planning/capaciteitsraming" legacyBehavior passHref>
+            <NextLink href="/amopis/projecten/planning/capaciteitsraming" legacyBehavior passHref>
               <PageFooter.MenuLink>Ramingen</PageFooter.MenuLink>
             </NextLink>
             <PageFooter.MenuLink href="#">E-mail je vraag of feedback</PageFooter.MenuLink>

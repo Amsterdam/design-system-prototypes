@@ -3,12 +3,12 @@
 import type { MenuProps } from '@amsterdam/design-system-react'
 
 import { Menu } from '@amsterdam/design-system-react'
-import { HTMLAttributes, PropsWithChildren } from 'react'
+import { HTMLAttributes } from 'react'
 import { usePathname } from 'next/navigation'
 
 import { menuItems } from './menuItems'
 
-type AmopisMenuProps = PropsWithChildren<HTMLAttributes<HTMLElement>> & {
+type AmopisMenuProps = HTMLAttributes<HTMLElement> & {
   inWideWindow?: MenuProps['inWideWindow']
 }
 

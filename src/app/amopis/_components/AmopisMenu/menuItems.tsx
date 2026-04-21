@@ -22,7 +22,7 @@ export const menuItems: Array<MenuItem> = [
     text: 'Dashboard',
   },
   {
-    activePathPrefix: '/amopis/project',
+    activePathPrefix: '/amopis/projecten',
     href: '/amopis/projecten',
     icon: <FolderIcon />,
     text: 'Projecten',
