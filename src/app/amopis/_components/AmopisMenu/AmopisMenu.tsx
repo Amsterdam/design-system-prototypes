@@ -17,9 +17,9 @@ export function AmopisMenu(props: AmopisMenuProps) {
 
   return (
     <Menu {...props}>
-      {menuItems.map(({ activePathPrefixes, href, icon, text }) => (
+      {menuItems.map(({ activePathPrefix, href, icon, text }) => (
         <Menu.Link
-          aria-current={activePathPrefixes?.some((prefix) => pathname.startsWith(prefix)) ? 'page' : undefined}
+          aria-current={activePathPrefix && pathname.startsWith(activePathPrefix) ? 'page' : undefined}
           href={href}
           icon={icon}
           key={text}

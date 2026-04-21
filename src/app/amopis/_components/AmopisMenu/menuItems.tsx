@@ -9,7 +9,7 @@ import {
 } from '@amsterdam/design-system-react-icons'
 
 type MenuItem = {
-  activePathPrefixes?: string[]
+  activePathPrefix?: string
   href: string
   icon: IconProps['svg']
   text: string
@@ -22,7 +22,7 @@ export const menuItems: Array<MenuItem> = [
     text: 'Dashboard',
   },
   {
-    activePathPrefixes: ['/amopis/projectdetails', '/amopis/planning'],
+    activePathPrefix: '/amopis/projecten',
     href: '/amopis/projecten',
     icon: <FolderIcon />,
     text: 'Projecten',
