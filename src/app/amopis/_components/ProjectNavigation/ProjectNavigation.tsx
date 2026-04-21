@@ -14,7 +14,7 @@ const LinkComponent: ComponentType<AnchorHTMLAttributes<HTMLAnchorElement>> = ({
 
 export function ProjectNavigation() {
   const pathname = usePathname()
-  const [, , currentMainSlug, currentSubSlug] = pathname.split('/')
+  const [, , , currentMainSlug, currentSubSlug] = pathname.split('/')
   const currentMenu = menuItems.find(({ slug }) => slug === currentMainSlug) ?? menuItems[0]
   const subMenuItems = currentMenu.subMenuItems
 
@@ -26,8 +26,8 @@ export function ProjectNavigation() {
             {menuItems.map(({ disabled, label, slug, subMenuItems: subItems }) => {
               const firstEnabledSubItem = subItems.find((item) => !item.disabled)
               const href = firstEnabledSubItem
-                ? `/amopis/${slug}/${firstEnabledSubItem.slug}`
-                : `/amopis/${slug}`
+                ? `/amopis/projecten/${slug}/${firstEnabledSubItem.slug}`
+                : `/amopis/projecten/${slug}`
               return disabled ? (
                 <TabNavigation.Link aria-disabled="true" href="#" key={slug} onClick={(e) => e.preventDefault()}>
                   {label}
@@ -62,7 +62,7 @@ export function ProjectNavigation() {
                 ) : (
                   <TabNavigation.Link
                     aria-current={currentSubSlug === slug ? 'page' : undefined}
-                    href={`/amopis/${currentMenu.slug}/${slug}`}
+                    href={`/amopis/projecten/${currentMenu.slug}/${slug}`}
                     key={slug}
                     linkComponent={LinkComponent}
                   >
