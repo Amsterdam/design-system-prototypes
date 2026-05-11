@@ -48,7 +48,7 @@
     "plop": "4.0.5",
     "prettier": "3.8.3",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.59.2"
+    "typescript-eslint": "8.59.3"
   },
   "browserslist": [
     "defaults and fully supports es6-module",
