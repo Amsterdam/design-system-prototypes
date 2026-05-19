@@ -1,5 +1,0 @@
-:HL["/design-system-prototypes/demo-group-dependabot-actions/_next/static/chunks/0v-ozgy4d0_ew.css","style"]
-:HL["/design-system-prototypes/demo-group-dependabot-actions/_next/static/chunks/02bi9lld20hwj.css","style"]
-:HC["/",""]
-:HL["/design-system-prototypes/demo-group-dependabot-actions/_next/static/chunks/0wq2z3nq4qe_r.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"signalen","param":null,"prefetchHints":0,"slots":{"children":{"name":"samenvatting","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"G3wloVRulUMXYQgJFz9R3"}
