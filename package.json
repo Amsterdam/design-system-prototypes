@@ -32,7 +32,7 @@
     "next": "16.2.6",
     "react": "19.2.6",
     "react-dom": "19.2.6",
-    "react-hook-form": "7.75.0",
+    "react-hook-form": "7.76.0",
     "sharp": "0.34.5"
   },
   "devDependencies": {
