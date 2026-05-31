@@ -1,4 +1,4 @@
 :HL["/design-system-prototypes/_next/static/chunks/0v-ozgy4d0_ew.css","style"]
 :HL["/design-system-prototypes/_next/static/chunks/02bi9lld20hwj.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"camping-vliegenbos","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"l8CEqw9AgxaSok2qCUVbN"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"camping-vliegenbos","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"kLmBOcuPyJ9uO00nKDEe2"}
