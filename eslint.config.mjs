@@ -2,8 +2,9 @@ import tsParser from '@typescript-eslint/parser'
 import next from 'eslint-config-next'
 import nextCoreWebVitals from 'eslint-config-next/core-web-vitals'
 import nextTypescript from 'eslint-config-next/typescript'
+import eslintConfigPrettier from 'eslint-config-prettier'
 import perfectionist from 'eslint-plugin-perfectionist'
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import { defineConfig } from 'eslint/config'
 import tseslint from 'typescript-eslint'
 
 const perfectionistCustomSizesGroups = {
@@ -46,19 +47,8 @@ const perfectionistCustomSizesGroups = {
   },
 }
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default [
-  ...next,
-  ...nextCoreWebVitals,
-  ...nextTypescript,
+export default defineConfig([
   {
-    files: ['*.mjs'],
-    languageOptions: {
-      parser: '@babel/eslint-parser',
-    },
-  },
-  {
-    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
     ignores: [
       '**/node_modules/',
       '**/vendor/',
@@ -68,10 +58,25 @@ export default [
       '**/tmp/',
       '**/.next',
       '**/out',
+      '**/AGENTS.md',
     ],
+
+    name: 'design-system-prototypes/global-ignores',
   },
+  {
+    linterOptions: {
+      reportUnusedDisableDirectives: 'error',
+    },
+
+    name: 'design-system-prototypes/linter-options',
+  },
+  ...next,
+  ...nextCoreWebVitals,
+  ...nextTypescript,
   ...tseslint.configs.recommended,
   {
+    files: ['**/*.{js,jsx,ts,tsx,mjs}'],
+
     languageOptions: {
       parser: tsParser,
       parserOptions: {
@@ -80,6 +85,7 @@ export default [
       },
       sourceType: 'module',
     },
+    name: 'design-system-prototypes/typescript-react',
     plugins: {
       perfectionist,
     },
@@ -139,5 +145,8 @@ export default [
       react: { version: 'detect' },
     },
   },
-  eslintPluginPrettierRecommended,
-]
+  {
+    name: 'design-system-prototypes/prettier',
+    ...eslintConfigPrettier,
+  },
+])
