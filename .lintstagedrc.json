@@ -1,5 +1,4 @@
 {
-  "package.json": "prettier --check",
-  "*.{md,js,json,jsx,ts,tsx}": ["eslint --no-error-on-unmatched-pattern", "prettier --check"],
-  "*.{css,scss}": ["prettier --check"]
+  "*.{js,jsx,ts,tsx,mjs}": ["eslint --no-error-on-unmatched-pattern", "prettier --check"],
+  "*.{md,json,css,scss}": ["prettier --check"]
 }
