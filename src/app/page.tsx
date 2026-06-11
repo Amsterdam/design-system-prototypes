@@ -31,13 +31,13 @@ export default function Signalen() {
                 <br />
                 cd design-system-prototypes
                 <br />
-                npm install
+                pnpm install
                 <br />
-                npm run add site &apos;Site name&apos;
+                pnpm run add site &apos;Site name&apos;
                 <br />
-                npm run add page &apos;Site name&apos; &apos;Page name&apos;
+                pnpm run add page &apos;Site name&apos; &apos;Page name&apos;
                 <br />
-                npm run dev
+                pnpm run dev
               </code>
             </Paragraph>
           </details>

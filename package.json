@@ -5,9 +5,10 @@
   "name": "design-system-prototypes",
   "private": true,
   "engines": {
-    "node": "24",
-    "npm": "11"
+    "node": "^24",
+    "pnpm": "^11"
   },
+  "packageManager": "pnpm@11.1.3",
   "type": "module",
   "scripts": {
     "add": "plop",
@@ -18,9 +19,9 @@
     "unlink": "pnpm add @amsterdam/design-system-assets@2.3.0 @amsterdam/design-system-css@4.1.0 @amsterdam/design-system-react@4.1.0 @amsterdam/design-system-react-icons@2.0.0 @amsterdam/design-system-tokens@4.0.1 && pnpm install",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "update": "npm-check-updates --upgrade && npm install",
-    "update:minor": "npm-check-updates --target minor --upgrade && npm install",
-    "update:patch": "npm-check-updates --target patch --upgrade && npm install"
+    "update": "npm-check-updates --upgrade && pnpm install",
+    "update:minor": "npm-check-updates --target minor --upgrade && pnpm install",
+    "update:patch": "npm-check-updates --target patch --upgrade && pnpm install"
   },
   "dependencies": {
     "@amsterdam/design-system-assets": "2.3.0",
