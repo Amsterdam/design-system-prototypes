@@ -17,6 +17,7 @@
     "start": "next start",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
+    "prepare": "husky",
     "update": "npm-check-updates --upgrade && pnpm install",
     "update:minor": "npm-check-updates --target minor --upgrade && pnpm install",
     "update:patch": "npm-check-updates --target patch --upgrade && pnpm install"
@@ -42,7 +43,8 @@
     "eslint-config-next": "16.2.6",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-perfectionist": "5.9.0",
-    "eslint-plugin-prettier": "5.5.6",
+    "husky": "9.1.7",
+    "lint-staged": "17.0.7",
     "npm-check-updates": "22.2.1",
     "plop": "4.0.5",
     "prettier": "3.8.3",
