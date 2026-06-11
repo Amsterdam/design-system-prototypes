@@ -2,4 +2,4 @@
 2:I[22378,["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/11q-3mtsn6em~.js","/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/00dwf3xlex0q5.js"],"default"]
 3:I[99582,["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/11q-3mtsn6em~.js","/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/00dwf3xlex0q5.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"G1iZckpMzP1rXLdo1MA1H"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"G0cZfPOJbqWc2dYSMH7_X"}
