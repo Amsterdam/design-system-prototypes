@@ -103,7 +103,7 @@ function HomePage() {
         </Grid>
       )}
       <Overlap>
-        <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" src={vindenImage} />
+        <NextImage alt="" className="ams-image ams-aspect-ratio-16-5" loading="eager" src={vindenImage} />
         <Grid style={{ alignSelf: 'center' }}>
           <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
             <SearchField onSubmit={() => {}}>

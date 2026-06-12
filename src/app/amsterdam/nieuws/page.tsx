@@ -34,7 +34,7 @@ function Nieuws() {
             </Paragraph>
           </Grid.Cell>
           <Grid.Cell span={6}>
-            <NextImage alt="" className="ams-image" src={fatbikesImage} />
+            <NextImage alt="" className="ams-image" loading="eager" src={fatbikesImage} />
           </Grid.Cell>
         </Grid>
         <Grid paddingBottom="x-large">
