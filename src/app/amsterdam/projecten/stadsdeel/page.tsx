@@ -12,7 +12,7 @@ function Project() {
         <Grid.Cell span="all">
           <Breadcrumb>
             <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
-            <Breadcrumb.Link href="/amsterdam/projecten">Home</Breadcrumb.Link>
+            <Breadcrumb.Link href="/amsterdam/projecten">Bouw- en verkeersprojecten</Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
