@@ -2,4 +2,4 @@
 :HL["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/07gptp-dcz14a.css","style"]
 :HL["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/2zasmmk9u6dfs.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amsterdam","param":null,"prefetchHints":0,"slots":{"children":{"name":"kunst-en-cultuur","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"vRFx_i2kll_ljdlq2s2jX"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amsterdam","param":null,"prefetchHints":0,"slots":{"children":{"name":"kunst-en-cultuur","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"2vHv5x-mqfgVfyjljiYtq"}
