@@ -15,6 +15,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "link": "pnpm link @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
+    "unlink": "pnpm unlink @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
     "prepare": "husky",
