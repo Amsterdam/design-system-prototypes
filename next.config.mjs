@@ -7,7 +7,7 @@ import { PHASE_DEVELOPMENT_SERVER } from 'next/dist/shared/lib/constants.js'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
-// Start of AI assisted solution to get linked ADS packages working during development without needing to run `pnpm run link` in the design-system workspace.
+// Start of AI assisted solution to get linked ADS packages working during development with `pnpm run link` and pnpm on v11.
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url)))
 
@@ -24,20 +24,15 @@ const hasLinkedAdsPackages = Object.entries(pkg.dependencies ?? {}).some(
 // package's own `workspace:*` dependencies from the design-system workspace.
 const monorepoRoot = resolve(__dirname, '..')
 
-const linkConfig = hasLinkedAdsPackages
-  ? {
-      outputFileTracingRoot: monorepoRoot,
-      turbopack: {
-        root: monorepoRoot,
-      },
-    }
-  : {}
+// Dev only: widen Turbopack's root when linked packages live outside this project.
+// Packages are always unlinked before `pnpm run build`, so no build equivalent needed.
+const devLinkConfig = hasLinkedAdsPackages ? { turbopack: { root: monorepoRoot } } : {}
 // End of AI assisted solution.
 
 const nextConfig = (phase) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
     return {
-      ...linkConfig,
+      ...devLinkConfig,
       env: {
         basePath: '',
       },
@@ -45,7 +40,6 @@ const nextConfig = (phase) => {
   }
 
   return {
-    ...linkConfig,
     basePath: `/design-system-prototypes${process.env.NEXT_PUBLIC_BASE_PATH}`,
     env: {
       basePath: `/design-system-prototypes${process.env.NEXT_PUBLIC_BASE_PATH}`,
