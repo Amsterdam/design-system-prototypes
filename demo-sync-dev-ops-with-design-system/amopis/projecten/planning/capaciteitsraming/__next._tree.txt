@@ -1,5 +1,5 @@
-:HL["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/0v-ozgy4d0_ew.css","style"]
-:HL["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/02bi9lld20hwj.css","style"]
-:HL["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/0xrgtp24t0yjr.css","style"]
+:HL["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/3qpjgp91pjs_-.css","style"]
+:HL["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/07gptp-dcz14a.css","style"]
+:HL["/design-system-prototypes/demo-sync-dev-ops-with-design-system/_next/static/chunks/2xmqfikky2j81.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amopis","param":null,"prefetchHints":0,"slots":{"children":{"name":"projecten","param":null,"prefetchHints":0,"slots":{"children":{"name":"planning","param":null,"prefetchHints":0,"slots":{"children":{"name":"capaciteitsraming","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}}}},"staleTime":300,"buildId":"ZWtbL3gHgkjg0OlEH4xaX"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amopis","param":null,"prefetchHints":0,"slots":{"children":{"name":"projecten","param":null,"prefetchHints":0,"slots":{"children":{"name":"planning","param":null,"prefetchHints":0,"slots":{"children":{"name":"capaciteitsraming","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}}}},"staleTime":300,"buildId":"vRFx_i2kll_ljdlq2s2jX"}
