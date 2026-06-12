@@ -2,7 +2,6 @@
 
 import { Breadcrumb, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
 import NextImage from 'next/image'
-import NextLink from 'next/link'
 
 import fatbikesImage from '../_assets/fatbikes.jpg'
 
@@ -12,9 +11,7 @@ function Nieuws() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <Breadcrumb.Link>Home</Breadcrumb.Link>
-            </NextLink>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
             <Breadcrumb.Link href="#">Nieuws</Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>

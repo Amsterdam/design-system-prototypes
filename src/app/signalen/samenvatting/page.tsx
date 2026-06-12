@@ -1,7 +1,6 @@
 'use client'
 
 import { Button, Column, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
-import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
@@ -120,12 +119,10 @@ function Summary() {
                     {formatAnswer(id, formData) || 'Niet ingevuld'}
                   </dd>
                   <dd className="ams-summary-description-list__link">
-                    <NextLink href={href} legacyBehavior passHref>
-                      <Link className="ams-edit-link">
-                        Wijzig
-                        <span className="ams-visually-hidden"> vraag: {questionText}</span>
-                      </Link>
-                    </NextLink>
+                    <Link className="ams-edit-link" href={href}>
+                      Wijzig
+                      <span className="ams-visually-hidden"> vraag: {questionText}</span>
+                    </Link>
                   </dd>
                 </div>
               )

@@ -13,7 +13,6 @@ import {
   StandaloneLink,
 } from '@amsterdam/design-system-react'
 import NextImage from 'next/image'
-import NextLink from 'next/link'
 import { useState } from 'react'
 
 import stormschadeImage from './_assets/stormschade.jpg'
@@ -184,9 +183,7 @@ function HomePage() {
             <NextImage alt="" className="ams-image ams-card__image" src={stormschadeImage} />
             <Card.HeadingGroup tagline="Nieuws">
               <Card.Heading level={3}>
-                <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
-                  <Card.Link>Waar u stormschade kunt melden</Card.Link>
-                </NextLink>
+                <Card.Link href="/amsterdam/nieuws">Waar u stormschade kunt melden</Card.Link>
               </Card.Heading>
             </Card.HeadingGroup>
             <Paragraph>
@@ -202,9 +199,7 @@ function HomePage() {
               <NextImage alt="" className="ams-image ams-card__image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">
                 <Card.Heading level={3}>
-                  <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
-                    <Card.Link>{heading}</Card.Link>
-                  </NextLink>
+                  <Card.Link href="/amsterdam/nieuws">{heading}</Card.Link>
                 </Card.Heading>
               </Card.HeadingGroup>
             </Card>

@@ -3,8 +3,8 @@
 import type { MenuProps } from '@amsterdam/design-system-react'
 
 import { Menu } from '@amsterdam/design-system-react'
-import { HTMLAttributes } from 'react'
 import { usePathname } from 'next/navigation'
+import { HTMLAttributes } from 'react'
 
 import { menuItems } from './menuItems'
 

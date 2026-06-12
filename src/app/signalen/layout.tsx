@@ -61,9 +61,7 @@ function Signalen({ children }) {
           <PageFooter.MenuLink href="#">Over deze site</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Toegankelijkheid</PageFooter.MenuLink>
-          <NextLink href="/" legacyBehavior passHref>
-            <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
-          </NextLink>
+          <PageFooter.MenuLink href="/">Prototypes</PageFooter.MenuLink>
         </PageFooter.Menu>
       </PageFooter>
     </Page>

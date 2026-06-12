@@ -11,8 +11,6 @@ import {
   Paragraph,
   TextInput,
 } from '@amsterdam/design-system-react'
-import NextLink from 'next/link'
-
 const filterPanel = [
   {
     title: 'Contenttype',
@@ -65,9 +63,7 @@ function Zoeken() {
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
         <Breadcrumb>
-          <NextLink href="/amsterdam" legacyBehavior passHref>
-            <Breadcrumb.Link>Home</Breadcrumb.Link>
-          </NextLink>
+          <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           <Breadcrumb.Link href="#">Zoekresultaten</Breadcrumb.Link>
         </Breadcrumb>
         <Column className="ams-mb-xl">

@@ -3,7 +3,6 @@
 import { Breadcrumb, Column, Grid, Heading, LinkList, Paragraph } from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 import NextImage from 'next/image'
-import NextLink from 'next/link'
 
 import artAndCultureImage from '../_assets/art-and-culture.jpg'
 
@@ -13,9 +12,7 @@ function KunstEnCultuur() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <Breadcrumb.Link>Home</Breadcrumb.Link>
-            </NextLink>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>

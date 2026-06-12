@@ -2,7 +2,6 @@
 
 import { Breadcrumb, Card, Grid, Heading, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
 import clsx from 'clsx'
-import NextLink from 'next/link'
 
 type SubsectionProps = {
   isEven: boolean
@@ -19,9 +18,7 @@ function Subsection({ title, isEven }: SubsectionProps) {
     <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={isEven ? { narrow: 1, medium: 1, wide: 2 } : undefined}>
       <Card>
         <Card.Heading level={3}>
-          <NextLink href={linkUrls[title] ?? '#'} legacyBehavior passHref>
-            <Card.Link>{title}</Card.Link>
-          </NextLink>
+          <Card.Link href={linkUrls[title] ?? '#'}>{title}</Card.Link>
         </Card.Heading>
         <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore.</Paragraph>
       </Card>
@@ -64,9 +61,7 @@ export default function BestuurEnOrganisatie() {
       <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <Breadcrumb.Link>Home</Breadcrumb.Link>
-            </NextLink>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           </Breadcrumb>
           <Heading className="ams-mb-m" level={1}>
             Bestuur en Organisatie

@@ -1,7 +1,6 @@
 'use client'
 
 import { Breadcrumb, Button, FieldSet, Grid, Heading, Link, Paragraph, Radio } from '@amsterdam/design-system-react'
-import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
 import { FormEvent } from 'react'
 
@@ -17,9 +16,7 @@ function Contact() {
     <Grid paddingBottom="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
-          <NextLink href="/amsterdam" legacyBehavior passHref>
-            <Breadcrumb.Link>Home</Breadcrumb.Link>
-          </NextLink>
+          <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
         </Breadcrumb>
         <form className="ams-gap-l" onSubmit={handleSubmit}>
           <Heading level={1}>Contact</Heading>

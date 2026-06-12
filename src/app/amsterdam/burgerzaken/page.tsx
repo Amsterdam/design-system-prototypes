@@ -1,7 +1,6 @@
 'use client'
 
 import { Breadcrumb, Column, Grid, Heading, LinkList } from '@amsterdam/design-system-react'
-import NextLink from 'next/link'
 
 const linkSections = [
   [
@@ -86,9 +85,7 @@ function Burgerzaken() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <Breadcrumb.Link>Home</Breadcrumb.Link>
-            </NextLink>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>

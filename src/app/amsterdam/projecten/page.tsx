@@ -2,7 +2,6 @@
 
 import { Breadcrumb, Grid, Heading, LinkList, Paragraph, Spotlight, TextInput } from '@amsterdam/design-system-react'
 import NextImage from 'next/image'
-import NextLink from 'next/link'
 
 import constructionWorkMapImage from '../_assets/construction-work-map.jpg'
 import constructionWorkImage from '../_assets/construction-work.jpg'
@@ -13,9 +12,7 @@ function Projecten() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <Breadcrumb.Link>Home</Breadcrumb.Link>
-            </NextLink>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
@@ -38,9 +35,9 @@ function Projecten() {
           </Heading>
           <LinkList>
             {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
-              <NextLink href="/amsterdam/projecten/stadsdeel" key={district} legacyBehavior passHref>
-                <LinkList.Link key={district}>{district}</LinkList.Link>
-              </NextLink>
+              <LinkList.Link href="/amsterdam/projecten/stadsdeel" key={district}>
+                {district}
+              </LinkList.Link>
             ))}
           </LinkList>
         </Grid.Cell>

@@ -1,7 +1,6 @@
 'use client'
 
 import { Grid, Heading, LinkList, Page, Paragraph } from '@amsterdam/design-system-react'
-import NextLink from 'next/link'
 
 export default function Signalen() {
   return (
@@ -15,22 +14,12 @@ export default function Signalen() {
         </Grid.Cell>
         <Grid.Cell span="all">
           <LinkList>
-            <NextLink href="/afspraak-maken" legacyBehavior passHref>
-              <LinkList.Link>Afspraak maken</LinkList.Link>
-            </NextLink>
-            <NextLink href="/amopis" legacyBehavior passHref>
-              <LinkList.Link>Amopis</LinkList.Link>
-            </NextLink>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <LinkList.Link>Amsterdam</LinkList.Link>
-            </NextLink>
-            <NextLink href="/signalen" legacyBehavior passHref>
-              <LinkList.Link>Signalen</LinkList.Link>
-            </NextLink>
+            <LinkList.Link href="/afspraak-maken">Afspraak maken</LinkList.Link>
+            <LinkList.Link href="/amopis">Amopis</LinkList.Link>
+            <LinkList.Link href="/amsterdam">Amsterdam</LinkList.Link>
+            <LinkList.Link href="/signalen">Signalen</LinkList.Link>
             {/* Append route import here */}
-            <NextLink href="/camping-vliegenbos" legacyBehavior passHref>
-              <LinkList.Link>Camping Vliegenbos</LinkList.Link>
-            </NextLink>
+            <LinkList.Link href="/camping-vliegenbos">Camping Vliegenbos</LinkList.Link>
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span="all">

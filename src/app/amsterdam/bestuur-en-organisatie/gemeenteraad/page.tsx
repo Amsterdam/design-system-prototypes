@@ -5,7 +5,6 @@ import type { StaticImageData } from 'next/image'
 import { Breadcrumb, Card, Grid, Heading, LinkList, Paragraph } from '@amsterdam/design-system-react'
 import { LinkExternalIcon } from '@amsterdam/design-system-react-icons'
 import NextImage from 'next/image'
-import NextLink from 'next/link'
 
 import cityCouncilNews1Image from '../../_assets/city-council-news-1.jpg'
 import cityCouncilNews2Image from '../../_assets/city-council-news-2.jpg'
@@ -67,12 +66,8 @@ export default function Gemeenteraad() {
       <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <Breadcrumb.Link>Home</Breadcrumb.Link>
-            </NextLink>
-            <NextLink href="/amsterdam/bestuur-en-organisatie" legacyBehavior passHref>
-              <Breadcrumb.Link>Bestuur en Organisatie</Breadcrumb.Link>
-            </NextLink>
+            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
+            <Breadcrumb.Link href="/amsterdam/bestuur-en-organisatie">Bestuur en Organisatie</Breadcrumb.Link>
           </Breadcrumb>
           <Heading className="ams-mb-m" level={1}>
             Gemeenteraad

@@ -13,7 +13,6 @@ import {
 } from '@amsterdam/design-system-react'
 import { ChevronBackwardIcon, ChevronForwardIcon } from '@amsterdam/design-system-react-icons'
 import Form from 'next/form'
-import NextLink from 'next/link'
 
 const waarvoorOptions = [
   'Paspoort',
@@ -45,9 +44,9 @@ export default function Waarvoor() {
             </Select>
           </Field>
           <ActionGroup className="ams-mb-m">
-            <NextLink href="/afspraak-maken" legacyBehavior passHref>
-              <StandaloneLink icon={ChevronBackwardIcon}>Terug naar de inleiding</StandaloneLink>
-            </NextLink>
+            <StandaloneLink href="/afspraak-maken" icon={ChevronBackwardIcon}>
+              Terug naar de inleiding
+            </StandaloneLink>
             <Button icon={ChevronForwardIcon} type="submit" variant="primary">
               Volgende vraag
             </Button>
