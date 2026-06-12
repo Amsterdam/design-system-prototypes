@@ -10,5 +10,6 @@ dist-ssr
 *.local
 
 .next
+.serve
 out
 next-env.d.ts
