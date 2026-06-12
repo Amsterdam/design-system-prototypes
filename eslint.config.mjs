@@ -4,7 +4,6 @@ import nextCoreWebVitals from 'eslint-config-next/core-web-vitals'
 import nextTypescript from 'eslint-config-next/typescript'
 import perfectionist from 'eslint-plugin-perfectionist'
 import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
-import tseslint from 'typescript-eslint'
 
 const perfectionistCustomSizesGroups = {
   customGroups: [
@@ -70,7 +69,6 @@ export default [
       '**/out',
     ],
   },
-  ...tseslint.configs.recommended,
   {
     languageOptions: {
       parser: tsParser,
