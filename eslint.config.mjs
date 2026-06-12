@@ -5,7 +5,6 @@ import nextTypescript from 'eslint-config-next/typescript'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import perfectionist from 'eslint-plugin-perfectionist'
 import { defineConfig } from 'eslint/config'
-import tseslint from 'typescript-eslint'
 
 const perfectionistCustomSizesGroups = {
   customGroups: [
@@ -73,7 +72,6 @@ export default defineConfig([
   ...next,
   ...nextCoreWebVitals,
   ...nextTypescript,
-  ...tseslint.configs.recommended,
   {
     files: ['**/*.{js,jsx,ts,tsx,mjs}'],
 
