@@ -1,1 +1,0 @@
-(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,21876,e=>{"use strict";var t=e.i(54681),o=e.i(91614);e.s(["default",0,function(){let e=(0,t.useRouter)();return(0,o.useEffect)(()=>{e.replace("/amopis/projecten/projectdetails/kerngegevens")},[e]),null}])}]);
