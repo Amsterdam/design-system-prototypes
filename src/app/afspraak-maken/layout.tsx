@@ -3,6 +3,7 @@
 import { Grid, Heading, LinkList, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import { DocumentIcon, MailIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
+import formatPath from '../../utils/formatPath'
 
 export default function AfspraakMaken({ children }) {
   return (
@@ -61,7 +62,7 @@ export default function AfspraakMaken({ children }) {
           </Grid>
         </PageFooter.Spotlight>
         <PageFooter.Menu>
-          <PageFooter.MenuLink href="/">Prototypes</PageFooter.MenuLink>
+          <PageFooter.MenuLink href={formatPath('/')}>Prototypes</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Over deze site</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Toegankelijkheid</PageFooter.MenuLink>

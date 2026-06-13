@@ -1,5 +1,6 @@
 'use client'
 
+import formatPath from '../../../../../utils/formatPath'
 import {
   Breadcrumb,
   Column,
@@ -22,7 +23,7 @@ function Kerngegevens() {
       <Grid.Cell appearance="transparent" span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
-          <Breadcrumb.Link href="/amopis/projecten">Projecten</Breadcrumb.Link>
+          <Breadcrumb.Link href={formatPath('/amopis/projecten')}>Projecten</Breadcrumb.Link>
         </Breadcrumb>
       </Grid.Cell>
     </Grid>,

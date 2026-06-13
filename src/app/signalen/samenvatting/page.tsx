@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 
 import { docTitle } from '../../../constants'
+import formatPath from '../../../utils/formatPath'
 import { BackLink } from '../_components/BackLink'
 import '../_components/SummaryDescriptionList/summary-description-list.css'
 import './edit-link.css'
@@ -14,52 +15,52 @@ import { useFormContext } from '../FormContext'
 
 const questions = [
   {
-    href: '/signalen',
+    href: formatPath('/signalen'),
     id: 'body',
     questionText: 'Waar gaat het om?',
   },
   {
-    href: '/signalen/vul-aan-1',
+    href: formatPath('/signalen/vul-aan-1'),
     id: 'when',
     questionText: 'Wanneer heeft u de overlast?',
   },
   {
-    href: '/signalen/vul-aan-1b',
+    href: formatPath('/signalen/vul-aan-1b'),
     id: 'whenDay',
     questionText: 'Welke dag was het?',
   },
   {
-    href: '/signalen/vul-aan-1c',
+    href: formatPath('/signalen/vul-aan-1c'),
     id: 'whenTime',
     questionText: 'Hoe laat was het?',
   },
   {
-    href: '/signalen/vul-aan-2',
+    href: formatPath('/signalen/vul-aan-2'),
     id: 'type',
     questionText: 'Welk afval is verkeerd neergezet?',
   },
   {
-    href: '/signalen/vul-aan-3',
+    href: formatPath('/signalen/vul-aan-3'),
     id: 'who',
     questionText: 'Weet u wie de eigenaar is van het verkeerd geplaatste afval?',
   },
   {
-    href: '/signalen/contact-1',
+    href: formatPath('/signalen/contact-1'),
     id: 'phone',
     questionText: 'Wat is uw telefoonnummer?',
   },
   {
-    href: '/signalen/contact-1',
+    href: formatPath('/signalen/contact-1'),
     id: 'mail',
     questionText: 'Wat is uw e-mailadres?',
   },
   {
-    href: '/signalen/contact-2',
+    href: formatPath('/signalen/contact-2'),
     id: 'permission',
     questionText: 'Mogen we uw melding doorsturen?',
   },
   {
-    href: '/signalen/documenten',
+    href: formatPath('/signalen/documenten'),
     id: 'files',
     questionText: 'Heeft u een bestand om toe te voegen?',
   },

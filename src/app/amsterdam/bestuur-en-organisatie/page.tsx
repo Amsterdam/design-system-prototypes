@@ -1,6 +1,7 @@
 'use client'
 
 import { Breadcrumb, Card, Grid, Heading, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
+import formatPath from '../../../utils/formatPath'
 import clsx from 'clsx'
 
 type SubsectionProps = {
@@ -9,8 +10,8 @@ type SubsectionProps = {
 }
 
 const linkUrls: Record<string, string> = {
-  'College van burgemeester en wethouders': '/amsterdam/bestuur-en-organisatie/college-van-burgemeester-en-wethouders',
-  Gemeenteraad: '/amsterdam/bestuur-en-organisatie/gemeenteraad',
+  'College van burgemeester en wethouders': formatPath('/amsterdam/bestuur-en-organisatie/college-van-burgemeester-en-wethouders'),
+  Gemeenteraad: formatPath('/amsterdam/bestuur-en-organisatie/gemeenteraad'),
 }
 
 function Subsection({ title, isEven }: SubsectionProps) {
@@ -61,7 +62,7 @@ export default function BestuurEnOrganisatie() {
       <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
-            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
+            <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
           </Breadcrumb>
           <Heading className="ams-mb-m" level={1}>
             Bestuur en Organisatie

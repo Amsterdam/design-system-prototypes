@@ -3,6 +3,7 @@
 import type { StaticImageData } from 'next/image'
 
 import { Breadcrumb, Card, Grid, GridColumnNumber, Heading, Paragraph } from '@amsterdam/design-system-react'
+import formatPath from '../../../../utils/formatPath'
 import NextImage from 'next/image'
 
 import municipalExecutiveDeJager from '../../_assets/municipal-executive-de-jager.jpg'
@@ -105,8 +106,8 @@ export default function CollegeVanBurgemeesterEnWethouders() {
       <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
-            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
-            <Breadcrumb.Link href="/amsterdam/bestuur-en-organisatie">Bestuur en Organisatie</Breadcrumb.Link>
+            <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
+            <Breadcrumb.Link href={formatPath('/amsterdam/bestuur-en-organisatie')}>Bestuur en Organisatie</Breadcrumb.Link>
           </Breadcrumb>
           <Heading className="ams-mb-m" level={1}>
             College van burgemeester en wethouders

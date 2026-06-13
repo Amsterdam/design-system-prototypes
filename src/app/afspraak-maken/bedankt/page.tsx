@@ -1,6 +1,7 @@
 'use client'
 
 import { Grid, Heading, Link, Paragraph, StandaloneLink, UnorderedList } from '@amsterdam/design-system-react'
+import formatPath from '../../../utils/formatPath'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 
 export default function Bedankt() {
@@ -25,7 +26,7 @@ export default function Bedankt() {
             Download overzicht afspraak PDF, 1MB
           </StandaloneLink>
         </div>
-        <StandaloneLink href="/afspraak-maken">Sluit het formulier</StandaloneLink>
+        <StandaloneLink href={formatPath('/afspraak-maken')}>Sluit het formulier</StandaloneLink>
       </Grid.Cell>
     </Grid>
   )

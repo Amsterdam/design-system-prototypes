@@ -12,6 +12,8 @@ import {
   XIcon,
 } from '@amsterdam/design-system-react-icons'
 
+import formatPath from '../../utils/formatPath'
+
 import './amsterdam.css'
 
 const footerLinks = [
@@ -111,7 +113,7 @@ export default function Amsterdam({ children }) {
                 {label}
               </PageFooter.MenuLink>
             ))}
-            <PageFooter.MenuLink href="/">Prototypes</PageFooter.MenuLink>
+            <PageFooter.MenuLink href={formatPath('/')}>Prototypes</PageFooter.MenuLink>
           </PageFooter.Menu>
         </PageFooter>
       </Page>

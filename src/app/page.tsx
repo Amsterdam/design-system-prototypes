@@ -1,6 +1,7 @@
 'use client'
 
 import { Grid, Heading, LinkList, Page, Paragraph } from '@amsterdam/design-system-react'
+import formatPath from '../utils/formatPath'
 
 export default function Signalen() {
   return (
@@ -14,12 +15,12 @@ export default function Signalen() {
         </Grid.Cell>
         <Grid.Cell span="all">
           <LinkList>
-            <LinkList.Link href="/afspraak-maken">Afspraak maken</LinkList.Link>
-            <LinkList.Link href="/amopis">Amopis</LinkList.Link>
-            <LinkList.Link href="/amsterdam">Amsterdam</LinkList.Link>
-            <LinkList.Link href="/signalen">Signalen</LinkList.Link>
+            <LinkList.Link href={formatPath('/afspraak-maken')}>Afspraak maken</LinkList.Link>
+            <LinkList.Link href={formatPath('/amopis')}>Amopis</LinkList.Link>
+            <LinkList.Link href={formatPath('/amsterdam')}>Amsterdam</LinkList.Link>
+            <LinkList.Link href={formatPath('/signalen')}>Signalen</LinkList.Link>
             {/* Append route import here */}
-            <LinkList.Link href="/camping-vliegenbos">Camping Vliegenbos</LinkList.Link>
+            <LinkList.Link href={formatPath('/camping-vliegenbos')}>Camping Vliegenbos</LinkList.Link>
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span="all">

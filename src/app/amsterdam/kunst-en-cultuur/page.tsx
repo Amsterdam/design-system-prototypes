@@ -1,6 +1,7 @@
 'use client'
 
 import { Breadcrumb, Column, Grid, Heading, LinkList, Paragraph } from '@amsterdam/design-system-react'
+import formatPath from '../../../utils/formatPath'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
 import NextImage from 'next/image'
 
@@ -12,7 +13,7 @@ function KunstEnCultuur() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
+            <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>

@@ -2,6 +2,7 @@
 
 import { Avatar, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+import formatPath from '../../utils/formatPath'
 import { ReactNode } from 'react'
 
 import { AmopisMenu } from './_components/AmopisMenu/AmopisMenu'
@@ -28,12 +29,12 @@ function Amopis({ children }: { children: ReactNode }) {
         <div className="ams-page__area--body">{children}</div>
         <PageFooter className="ams-page__area--footer">
           <PageFooter.Menu>
-            <PageFooter.MenuLink href="/amopis/projecten/projectdetails/kerngegevens">Kerngegevens</PageFooter.MenuLink>
-            <PageFooter.MenuLink href="/amopis/projecten/planning/capaciteitsraming">Ramingen</PageFooter.MenuLink>
+            <PageFooter.MenuLink href={formatPath('/amopis/projecten/projectdetails/kerngegevens')}>Kerngegevens</PageFooter.MenuLink>
+            <PageFooter.MenuLink href={formatPath('/amopis/projecten/planning/capaciteitsraming')}>Ramingen</PageFooter.MenuLink>
             <PageFooter.MenuLink href="#">E-mail je vraag of feedback</PageFooter.MenuLink>
             <PageFooter.MenuLink href="#">Bekijk veelgestelde vragen</PageFooter.MenuLink>
             <PageFooter.MenuLink href="#">Bekijk releasebeschrijving</PageFooter.MenuLink>
-            <PageFooter.MenuLink href="/">Prototypes</PageFooter.MenuLink>
+            <PageFooter.MenuLink href={formatPath('/')}>Prototypes</PageFooter.MenuLink>
           </PageFooter.Menu>
         </PageFooter>
       </Page>

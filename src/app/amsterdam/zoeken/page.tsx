@@ -1,5 +1,6 @@
 'use client'
 
+import formatPath from '../../../utils/formatPath'
 import {
   Breadcrumb,
   Card,
@@ -63,7 +64,7 @@ function Zoeken() {
       </Grid.Cell>
       <Grid.Cell span={{ narrow: 4, medium: 5, wide: 8 }} start={{ narrow: 1, medium: 4, wide: 5 }}>
         <Breadcrumb>
-          <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
+          <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
           <Breadcrumb.Link href="#">Zoekresultaten</Breadcrumb.Link>
         </Breadcrumb>
         <Column className="ams-mb-xl">

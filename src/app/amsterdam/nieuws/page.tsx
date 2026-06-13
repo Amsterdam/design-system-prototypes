@@ -1,6 +1,7 @@
 'use client'
 
 import { Breadcrumb, Grid, Heading, Paragraph } from '@amsterdam/design-system-react'
+import formatPath from '../../../utils/formatPath'
 import NextImage from 'next/image'
 
 import fatbikesImage from '../_assets/fatbikes.jpg'
@@ -11,7 +12,7 @@ function Nieuws() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <Breadcrumb.Link href="/amsterdam">Home</Breadcrumb.Link>
+            <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
             <Breadcrumb.Link href="#">Nieuws</Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>

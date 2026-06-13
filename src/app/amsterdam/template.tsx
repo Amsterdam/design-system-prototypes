@@ -2,6 +2,7 @@
 
 import { Grid, LinkList, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
+import formatPath from '../../utils/formatPath'
 
 const megaMenuLinks = [
   { href: '#', label: 'Afval' },
@@ -45,7 +46,7 @@ function Template({ children }) {
           <PageHeader.MenuLink href="#" key={2} lang="en">
             English
           </PageHeader.MenuLink>,
-          <PageHeader.MenuLink fixed href="/amsterdam/zoeken" key={3}>
+          <PageHeader.MenuLink fixed href={formatPath('/amsterdam/zoeken')} key={3}>
             Zoeken
           </PageHeader.MenuLink>,
         ]}
@@ -65,7 +66,7 @@ function Template({ children }) {
             <div className="ams-mega-menu__columns">
               <LinkList>
                 {megaMenuLinks.map(({ href, label }) => (
-                  <LinkList.Link href={href} key={label}>
+                  <LinkList.Link href={formatPath(href)} key={label}>
                     {label}
                   </LinkList.Link>
                 ))}

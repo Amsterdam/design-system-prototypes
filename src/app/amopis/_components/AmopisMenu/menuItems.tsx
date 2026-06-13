@@ -1,4 +1,5 @@
 import type { IconProps } from '@amsterdam/design-system-react'
+import formatPath from '../../../../utils/formatPath'
 
 import {
   BarChartIcon,
@@ -22,8 +23,8 @@ export const menuItems: Array<MenuItem> = [
     text: 'Dashboard',
   },
   {
-    activePathPrefix: '/amopis/projecten',
-    href: '/amopis/projecten',
+    activePathPrefix: formatPath('/amopis/projecten'),
+    href: formatPath('/amopis/projecten'),
     icon: <FolderIcon />,
     text: 'Projecten',
   },
