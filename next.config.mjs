@@ -24,7 +24,7 @@ const hasLinkedAdsPackages = Object.entries(pkg.dependencies ?? {}).some(
 const monorepoRoot = resolve(__dirname, '..')
 
 // Dev only: widen Turbopack's root when linked packages live outside this project.
-// Packages are always unlinked before `pnpm run build`, so no build equivalent needed.
+// For a production build/export, make sure your dependencies are unlinked (i.e. no `link:` entries) before building.
 const devLinkConfig = hasLinkedAdsPackages ? { turbopack: { root: monorepoRoot } } : {}
 
 const nextConfig = (phase) => {
