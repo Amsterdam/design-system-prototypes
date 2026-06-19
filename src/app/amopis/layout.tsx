@@ -5,7 +5,7 @@ import NextLink from 'next/link'
 import { ReactNode } from 'react'
 
 import { AmopisMenu } from './_components/AmopisMenu/AmopisMenu'
-import '@amsterdam/design-system-tokens/dist/compact.theme.css'
+import '@amsterdam/design-system-tokens/dist/compact.css'
 
 function Amopis({ children }: { children: ReactNode }) {
   return (
@@ -28,18 +28,18 @@ function Amopis({ children }: { children: ReactNode }) {
         <div className="ams-page__area--body">{children}</div>
         <PageFooter className="ams-page__area--footer">
           <PageFooter.Menu>
-            <NextLink href="/amopis/projecten/projectdetails/kerngegevens" legacyBehavior passHref>
-              <PageFooter.MenuLink>Kerngegevens</PageFooter.MenuLink>
-            </NextLink>
-            <NextLink href="/amopis/projecten/planning/capaciteitsraming" legacyBehavior passHref>
-              <PageFooter.MenuLink>Ramingen</PageFooter.MenuLink>
-            </NextLink>
+            <PageFooter.MenuLink href="/amopis/projecten/projectdetails/kerngegevens" linkComponent={NextLink}>
+              Kerngegevens
+            </PageFooter.MenuLink>
+            <PageFooter.MenuLink href="/amopis/projecten/planning/capaciteitsraming" linkComponent={NextLink}>
+              Ramingen
+            </PageFooter.MenuLink>
             <PageFooter.MenuLink href="#">E-mail je vraag of feedback</PageFooter.MenuLink>
             <PageFooter.MenuLink href="#">Bekijk veelgestelde vragen</PageFooter.MenuLink>
             <PageFooter.MenuLink href="#">Bekijk releasebeschrijving</PageFooter.MenuLink>
-            <NextLink href="/" legacyBehavior passHref>
-              <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
-            </NextLink>
+            <PageFooter.MenuLink href="/" linkComponent={NextLink}>
+              Prototypes
+            </PageFooter.MenuLink>
           </PageFooter.Menu>
         </PageFooter>
       </Page>

@@ -61,9 +61,9 @@ export default function AfspraakMaken({ children }) {
           </Grid>
         </PageFooter.Spotlight>
         <PageFooter.Menu>
-          <NextLink href="/" legacyBehavior passHref>
-            <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
-          </NextLink>
+          <PageFooter.MenuLink href="/" linkComponent={NextLink}>
+            Prototypes
+          </PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Over deze site</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Toegankelijkheid</PageFooter.MenuLink>

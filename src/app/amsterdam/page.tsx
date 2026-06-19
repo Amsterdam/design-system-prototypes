@@ -184,9 +184,9 @@ function HomePage() {
             <NextImage alt="" className="ams-image ams-card__image" src={stormschadeImage} />
             <Card.HeadingGroup tagline="Nieuws">
               <Card.Heading level={3}>
-                <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
-                  <Card.Link>Waar u stormschade kunt melden</Card.Link>
-                </NextLink>
+                <Card.Link href="/amsterdam/nieuws" linkComponent={NextLink}>
+                  Waar u stormschade kunt melden
+                </Card.Link>
               </Card.Heading>
             </Card.HeadingGroup>
             <Paragraph>
@@ -202,9 +202,9 @@ function HomePage() {
               <NextImage alt="" className="ams-image ams-card__image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">
                 <Card.Heading level={3}>
-                  <NextLink href="/amsterdam/nieuws" legacyBehavior passHref>
-                    <Card.Link>{heading}</Card.Link>
-                  </NextLink>
+                  <Card.Link href="/amsterdam/nieuws" linkComponent={NextLink}>
+                    {heading}
+                  </Card.Link>
                 </Card.Heading>
               </Card.HeadingGroup>
             </Card>
