@@ -7,7 +7,6 @@ import { PHASE_DEVELOPMENT_SERVER } from 'next/dist/shared/lib/constants.js'
 import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
-// Start of AI assisted solution to get linked ADS packages working during development with `pnpm run link` and pnpm on v11.
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url)))
 
@@ -27,7 +26,6 @@ const monorepoRoot = resolve(__dirname, '..')
 // Dev only: widen Turbopack's root when linked packages live outside this project.
 // Packages are always unlinked before `pnpm run build`, so no build equivalent needed.
 const devLinkConfig = hasLinkedAdsPackages ? { turbopack: { root: monorepoRoot } } : {}
-// End of AI assisted solution.
 
 const nextConfig = (phase) => {
   if (phase === PHASE_DEVELOPMENT_SERVER) {
