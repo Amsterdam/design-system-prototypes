@@ -8,7 +8,7 @@ import { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
-const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url)))
+const pkg = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf8'))
 
 // Detect ADS packages linked locally via `pnpm run link` (link: protocol).
 // When active, we widen the module-resolution root so the linked packages,
