@@ -41,7 +41,7 @@ pnpm run unlink
 
 This restores all ADS dependencies to their pinned registry versions and reinstalls.
 
-> `pnpm run build` always calls `unlink` first, so production builds never use local package references.
+> Before creating a production build, run `pnpm run unlink` to ensure no local `link:` dependencies are used.
 
 ## Serving the static build locally
 
