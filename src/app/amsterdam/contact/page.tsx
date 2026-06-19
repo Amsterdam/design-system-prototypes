@@ -1,14 +1,15 @@
 'use client'
 
 import { Breadcrumb, Button, FieldSet, Grid, Heading, Link, Paragraph, Radio } from '@amsterdam/design-system-react'
-import formatPath from '../../../utils/formatPath'
 import { useRouter } from 'next/navigation'
-import { ChangeEvent } from 'react'
+import { SubmitEvent } from 'react'
+
+import formatPath from '../../../utils/formatPath'
 
 function Contact() {
   const router = useRouter()
 
-  const handleSubmit = (e: ChangeEvent) => {
+  const handleSubmit = (e: SubmitEvent) => {
     e.preventDefault()
     router.push('/amsterdam/contact/vraag')
   }

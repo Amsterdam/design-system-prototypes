@@ -9,7 +9,7 @@ import campingVliegenbosPicture from './_assets/camping-vliegenbos-picture.jpg'
 const cards = [
   {
     description: 'Algemene informatie',
-    href: formatPath('/camping-vliegenbos/over-de-camping'),
+    href: 'camping-vliegenbos/over-de-camping',
     label: 'Over de camping',
   },
   {

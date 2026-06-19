@@ -1,11 +1,9 @@
-import formatPath from '../../utils/formatPath'
-
 export const navigationMenuItems = [
   {
     heading: 'Algemeen',
     items: [
       {
-        href: formatPath('/camping-vliegenbos/over-de-camping'),
+        href: '/camping-vliegenbos/over-de-camping',
         label: 'Over de camping',
       },
       {
