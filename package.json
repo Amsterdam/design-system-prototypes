@@ -17,7 +17,7 @@
     "clean:build-output": "rimraf .next .serve next-env.d.ts out",
     "clean:git-ignored": "git clean -d -X -f",
     "clean:git-optimize": "git gc --prune=now && git remote prune origin",
-    "clean:git": "pnpm run clean:git-ignored & pnpm run clean:git-optimize",
+    "clean:git": "pnpm run clean:git-ignored && pnpm run clean:git-optimize",
     "start": "rm -rf .serve && mkdir .serve && ln -s ../out .serve/design-system-prototypes && serve -S -c ../serve.json .serve",
     "link": "pnpm add @amsterdam/design-system-assets@link:../design-system/packages-proprietary/assets @amsterdam/design-system-css@link:../design-system/packages/css @amsterdam/design-system-react@link:../design-system/packages/react @amsterdam/design-system-react-icons@link:../design-system/packages-proprietary/react-icons @amsterdam/design-system-tokens@link:../design-system/packages-proprietary/tokens && pnpm install",
     "unlink": "pnpm add @amsterdam/design-system-assets@2.3.0 @amsterdam/design-system-css@4.1.0 @amsterdam/design-system-react@4.1.0 @amsterdam/design-system-react-icons@2.0.0 @amsterdam/design-system-tokens@4.0.1 && pnpm install",
