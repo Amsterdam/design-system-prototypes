@@ -1,8 +1,8 @@
 'use client'
 
 import { Breadcrumb, Grid, Heading, LinkList, Paragraph, Spotlight, TextInput } from '@amsterdam/design-system-react'
-import formatPath from '../../../utils/formatPath'
 import NextImage from 'next/image'
+import NextLink from 'next/link'
 
 import constructionWorkMapImage from '../_assets/construction-work-map.jpg'
 import constructionWorkImage from '../_assets/construction-work.jpg'
@@ -13,7 +13,9 @@ function Projecten() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
+            <Breadcrumb.Link href="/amsterdam" linkComponent={NextLink}>
+              Home
+            </Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
@@ -36,7 +38,7 @@ function Projecten() {
           </Heading>
           <LinkList>
             {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
-              <LinkList.Link href={formatPath('/amsterdam/projecten/stadsdeel')} key={district}>
+              <LinkList.Link href="/amsterdam/projecten/stadsdeel" key={district} linkComponent={NextLink}>
                 {district}
               </LinkList.Link>
             ))}

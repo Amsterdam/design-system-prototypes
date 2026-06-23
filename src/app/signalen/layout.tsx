@@ -12,7 +12,6 @@ import {
   SkipLink,
 } from '@amsterdam/design-system-react'
 import NextLink from 'next/link'
-import formatPath from '../../utils/formatPath'
 import { Suspense } from 'react'
 
 import { ResetFocusOnNavigation } from './_components/ResetFocusOnNavigation/ResetFocusOnNavigation'
@@ -25,7 +24,8 @@ function Signalen({ children }) {
         <Grid.Cell span="all">
           <SkipLink href="#inhoud">Direct naar inhoud</SkipLink>
           <PageHeader
-            logoLinkComponent={(props) => <NextLink {...props} href="/signalen" />}
+            logoLink="/signalen"
+            logoLinkComponent={NextLink}
             logoLinkTitle="Naar de homepage van Signalen Amsterdam"
           />
         </Grid.Cell>
@@ -62,7 +62,9 @@ function Signalen({ children }) {
           <PageFooter.MenuLink href="#">Over deze site</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Toegankelijkheid</PageFooter.MenuLink>
-          <PageFooter.MenuLink href={formatPath('/')}>Prototypes</PageFooter.MenuLink>
+          <PageFooter.MenuLink href="/" linkComponent={NextLink}>
+            Prototypes
+          </PageFooter.MenuLink>
         </PageFooter.Menu>
       </PageFooter>
     </Page>

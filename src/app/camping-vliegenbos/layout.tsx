@@ -39,7 +39,8 @@ export default function CampingVliegenbos({ children }: { children: React.ReactN
       </Grid>
       <PageHeader
         brandName="Camping Vliegenbos"
-        logoLinkComponent={(props) => <NextLink {...props} href="/camping-vliegenbos" />}
+        logoLink="/camping-vliegenbos"
+        logoLinkComponent={NextLink}
         logoLinkTitle="Naar de homepage van Camping Vliegenbos"
         menuItems={menuLinks.map(({ href, label }) => (
           <PageHeader.MenuLink href={href} key={href}>

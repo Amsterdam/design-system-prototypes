@@ -1,8 +1,8 @@
 'use client'
 
 import { Breadcrumb, Card, Grid, Heading, Paragraph, StandaloneLink } from '@amsterdam/design-system-react'
-import formatPath from '../../../utils/formatPath'
 import clsx from 'clsx'
+import NextLink from 'next/link'
 
 type SubsectionProps = {
   isEven: boolean
@@ -10,8 +10,8 @@ type SubsectionProps = {
 }
 
 const linkUrls: Record<string, string> = {
-  'College van burgemeester en wethouders': formatPath('/amsterdam/bestuur-en-organisatie/college-van-burgemeester-en-wethouders'),
-  Gemeenteraad: formatPath('/amsterdam/bestuur-en-organisatie/gemeenteraad'),
+  'College van burgemeester en wethouders': '/amsterdam/bestuur-en-organisatie/college-van-burgemeester-en-wethouders',
+  Gemeenteraad: '/amsterdam/bestuur-en-organisatie/gemeenteraad',
 }
 
 function Subsection({ title, isEven }: SubsectionProps) {
@@ -19,7 +19,9 @@ function Subsection({ title, isEven }: SubsectionProps) {
     <Grid.Cell span={{ narrow: 4, medium: 4, wide: 5 }} start={isEven ? { narrow: 1, medium: 1, wide: 2 } : undefined}>
       <Card>
         <Card.Heading level={3}>
-          <Card.Link href={linkUrls[title] ?? '#'}>{title}</Card.Link>
+          <Card.Link href={linkUrls[title] ?? '#'} linkComponent={NextLink}>
+            {title}
+          </Card.Link>
         </Card.Heading>
         <Paragraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore.</Paragraph>
       </Card>
@@ -62,7 +64,9 @@ export default function BestuurEnOrganisatie() {
       <Grid paddingBottom="x-large">
         <Grid.Cell span={{ narrow: 4, medium: 6, wide: 7 }}>
           <Breadcrumb>
-            <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
+            <Breadcrumb.Link href="/amsterdam" linkComponent={NextLink}>
+              Home
+            </Breadcrumb.Link>
           </Breadcrumb>
           <Heading className="ams-mb-m" level={1}>
             Bestuur en Organisatie

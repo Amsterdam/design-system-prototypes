@@ -1,5 +1,4 @@
 import type { IconProps } from '@amsterdam/design-system-react'
-import formatPath from '../../../../utils/formatPath'
 
 import {
   BarChartIcon,
@@ -8,6 +7,8 @@ import {
   PieChartIcon,
   SettingsIcon,
 } from '@amsterdam/design-system-react-icons'
+
+import formatPath from '../../../../utils/formatPath'
 
 type MenuItem = {
   activePathPrefix?: string

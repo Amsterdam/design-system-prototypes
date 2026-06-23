@@ -1,7 +1,7 @@
 'use client'
 
 import { Breadcrumb, Column, Grid, Heading, LinkList } from '@amsterdam/design-system-react'
-import formatPath from '../../../utils/formatPath'
+import NextLink from 'next/link'
 
 const linkSections = [
   [
@@ -86,7 +86,9 @@ function Burgerzaken() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
+            <Breadcrumb.Link href="/amsterdam" linkComponent={NextLink}>
+              Home
+            </Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>

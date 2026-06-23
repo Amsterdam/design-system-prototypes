@@ -21,7 +21,8 @@ export default function {{pascalCase name}}({ children }) {
         </Grid.Cell>
       </Grid>
       <PageHeader
-        logoLinkComponent={(props) => <NextLink {...props} href="/{{kebabCase name}}" />}
+        logoLink="/{{kebabCase name}}"
+        logoLinkComponent={NextLink}
         logoLinkTitle="Naar de homepage van {{titleCase name}}"
       />
       <main id="inhoud">{children}</main>
@@ -53,9 +54,9 @@ export default function {{pascalCase name}}({ children }) {
           Over deze website
         </Heading>
         <PageFooter.Menu>
-          <NextLink href="/" legacyBehavior passHref>
-            <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
-          </NextLink>
+          <PageFooter.MenuLink href="/" linkComponent={NextLink}>
+            Prototypes
+          </PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Over deze site</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Toegankelijkheid</PageFooter.MenuLink>

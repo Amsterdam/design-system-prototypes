@@ -16,15 +16,14 @@ import {
   Select,
   TextInput,
 } from '@amsterdam/design-system-react'
+import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
-import { SubmitEvent } from 'react'
-
-import formatPath from '../../../../utils/formatPath'
+import { FormEvent } from 'react'
 
 function Question() {
   const router = useRouter()
 
-  const handleSubmit = (e: SubmitEvent) => {
+  const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
     router.push('/amsterdam/contact/bedankt')
   }
@@ -33,7 +32,9 @@ function Question() {
     <Grid paddingBottom="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
-          <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
+          <Breadcrumb.Link href="/amsterdam" linkComponent={NextLink}>
+            Home
+          </Breadcrumb.Link>
         </Breadcrumb>
         <form className="ams-gap-l" onSubmit={handleSubmit}>
           <Heading level={1}>Contact</Heading>

@@ -1,12 +1,12 @@
 'use client'
 
 import { Button, Column, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
+import NextLink from 'next/link'
 import { useRouter } from 'next/navigation'
 import { useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 
 import { docTitle } from '../../../constants'
-import formatPath from '../../../utils/formatPath'
 import { BackLink } from '../_components/BackLink'
 import '../_components/SummaryDescriptionList/summary-description-list.css'
 import './edit-link.css'
@@ -15,52 +15,52 @@ import { useFormContext } from '../FormContext'
 
 const questions = [
   {
-    href: formatPath('/signalen'),
+    href: '/signalen',
     id: 'body',
     questionText: 'Waar gaat het om?',
   },
   {
-    href: formatPath('/signalen/vul-aan-1'),
+    href: '/signalen/vul-aan-1',
     id: 'when',
     questionText: 'Wanneer heeft u de overlast?',
   },
   {
-    href: formatPath('/signalen/vul-aan-1b'),
+    href: '/signalen/vul-aan-1b',
     id: 'whenDay',
     questionText: 'Welke dag was het?',
   },
   {
-    href: formatPath('/signalen/vul-aan-1c'),
+    href: '/signalen/vul-aan-1c',
     id: 'whenTime',
     questionText: 'Hoe laat was het?',
   },
   {
-    href: formatPath('/signalen/vul-aan-2'),
+    href: '/signalen/vul-aan-2',
     id: 'type',
     questionText: 'Welk afval is verkeerd neergezet?',
   },
   {
-    href: formatPath('/signalen/vul-aan-3'),
+    href: '/signalen/vul-aan-3',
     id: 'who',
     questionText: 'Weet u wie de eigenaar is van het verkeerd geplaatste afval?',
   },
   {
-    href: formatPath('/signalen/contact-1'),
+    href: '/signalen/contact-1',
     id: 'phone',
     questionText: 'Wat is uw telefoonnummer?',
   },
   {
-    href: formatPath('/signalen/contact-1'),
+    href: '/signalen/contact-1',
     id: 'mail',
     questionText: 'Wat is uw e-mailadres?',
   },
   {
-    href: formatPath('/signalen/contact-2'),
+    href: '/signalen/contact-2',
     id: 'permission',
     questionText: 'Mogen we uw melding doorsturen?',
   },
   {
-    href: formatPath('/signalen/documenten'),
+    href: '/signalen/documenten',
     id: 'files',
     questionText: 'Heeft u een bestand om toe te voegen?',
   },
@@ -120,7 +120,7 @@ function Summary() {
                     {formatAnswer(id, formData) || 'Niet ingevuld'}
                   </dd>
                   <dd className="ams-summary-description-list__link">
-                    <Link className="ams-edit-link" href={href}>
+                    <Link className="ams-edit-link" href={href} linkComponent={NextLink}>
                       Wijzig
                       <span className="ams-visually-hidden"> vraag: {questionText}</span>
                     </Link>

@@ -1,8 +1,9 @@
 'use client'
 
 import { Grid, Heading, Link, Paragraph, StandaloneLink, UnorderedList } from '@amsterdam/design-system-react'
-import formatPath from '../../../utils/formatPath'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
+
+import formatPath from '../../../utils/formatPath'
 
 export default function Bedankt() {
   return (

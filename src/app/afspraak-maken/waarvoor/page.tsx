@@ -12,8 +12,8 @@ import {
   StandaloneLink,
 } from '@amsterdam/design-system-react'
 import { ChevronBackwardIcon, ChevronForwardIcon } from '@amsterdam/design-system-react-icons'
-import formatPath from '../../../utils/formatPath'
 import Form from 'next/form'
+import NextLink from 'next/link'
 
 const waarvoorOptions = [
   'Paspoort',
@@ -45,7 +45,7 @@ export default function Waarvoor() {
             </Select>
           </Field>
           <ActionGroup className="ams-mb-m">
-            <StandaloneLink href={formatPath('/afspraak-maken')} icon={ChevronBackwardIcon}>
+            <StandaloneLink href="/afspraak-maken" icon={ChevronBackwardIcon} linkComponent={NextLink}>
               Terug naar de inleiding
             </StandaloneLink>
             <Button icon={ChevronForwardIcon} type="submit" variant="primary">

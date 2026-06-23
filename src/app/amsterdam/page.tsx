@@ -13,7 +13,7 @@ import {
   StandaloneLink,
 } from '@amsterdam/design-system-react'
 import NextImage from 'next/image'
-import formatPath from '../../utils/formatPath'
+import NextLink from 'next/link'
 import { useState } from 'react'
 
 import stormschadeImage from './_assets/stormschade.jpg'
@@ -184,7 +184,9 @@ function HomePage() {
             <NextImage alt="" className="ams-image ams-card__image" src={stormschadeImage} />
             <Card.HeadingGroup tagline="Nieuws">
               <Card.Heading level={3}>
-                <Card.Link href={formatPath('/amsterdam/nieuws')}>Waar u stormschade kunt melden</Card.Link>
+                <Card.Link href="/amsterdam/nieuws" linkComponent={NextLink}>
+                  Waar u stormschade kunt melden
+                </Card.Link>
               </Card.Heading>
             </Card.HeadingGroup>
             <Paragraph>
@@ -200,7 +202,9 @@ function HomePage() {
               <NextImage alt="" className="ams-image ams-card__image" src={image} />
               <Card.HeadingGroup tagline="Nieuws">
                 <Card.Heading level={3}>
-                  <Card.Link href={formatPath('/amsterdam/nieuws')}>{heading}</Card.Link>
+                  <Card.Link href="/amsterdam/nieuws" linkComponent={NextLink}>
+                    {heading}
+                  </Card.Link>
                 </Card.Heading>
               </Card.HeadingGroup>
             </Card>

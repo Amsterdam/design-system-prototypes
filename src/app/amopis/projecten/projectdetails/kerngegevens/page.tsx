@@ -1,6 +1,5 @@
 'use client'
 
-import formatPath from '../../../../../utils/formatPath'
 import {
   Breadcrumb,
   Column,
@@ -15,6 +14,7 @@ import {
 } from '@amsterdam/design-system-react'
 import { DocumentWithPencilIcon, MailIcon } from '@amsterdam/design-system-react-icons'
 
+import formatPath from '../../../../../utils/formatPath'
 import { ProjectNavigation } from '../../_components/ProjectNavigation/ProjectNavigation'
 
 function Kerngegevens() {

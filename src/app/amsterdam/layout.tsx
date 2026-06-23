@@ -11,8 +11,7 @@ import {
   PhoneIcon,
   XIcon,
 } from '@amsterdam/design-system-react-icons'
-
-import formatPath from '../../utils/formatPath'
+import NextLink from 'next/link'
 
 import './amsterdam.css'
 
@@ -109,11 +108,13 @@ export default function Amsterdam({ children }) {
           </PageFooter.Spotlight>
           <PageFooter.Menu>
             {footerLinks.map(({ href, label }) => (
-              <PageFooter.MenuLink href={href} key={label}>
+              <PageFooter.MenuLink href={href} key={label} linkComponent={NextLink}>
                 {label}
               </PageFooter.MenuLink>
             ))}
-            <PageFooter.MenuLink href={formatPath('/')}>Prototypes</PageFooter.MenuLink>
+            <PageFooter.MenuLink href="/" linkComponent={NextLink}>
+              Prototypes
+            </PageFooter.MenuLink>
           </PageFooter.Menu>
         </PageFooter>
       </Page>

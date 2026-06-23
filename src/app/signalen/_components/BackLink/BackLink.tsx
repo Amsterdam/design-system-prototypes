@@ -7,12 +7,12 @@ import type { AnchorHTMLAttributes } from 'react'
 
 import { StandaloneLink } from '@amsterdam/design-system-react'
 import { ChevronBackwardIcon } from '@amsterdam/design-system-react-icons'
-import formatPath from '../../../../utils/formatPath'
+import NextLink from 'next/link'
 
 type Props = Omit<AnchorHTMLAttributes<HTMLAnchorElement>, 'color'> & {
   href: string
 }
 
 export const BackLink = ({ href, ...restProps }: Props) => (
-  <StandaloneLink {...restProps} href={formatPath(href)} icon={ChevronBackwardIcon} />
+  <StandaloneLink {...restProps} href={href} icon={ChevronBackwardIcon} linkComponent={NextLink} />
 )

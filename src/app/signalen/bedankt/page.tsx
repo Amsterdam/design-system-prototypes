@@ -1,7 +1,7 @@
 'use client'
 
 import { Column, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
-import formatPath from '../../../utils/formatPath'
+import NextLink from 'next/link'
 import { useEffect } from 'react'
 
 import { docTitle } from '../../../constants'
@@ -63,7 +63,9 @@ function Thanks() {
 
             <Heading level={3}>Wilt u nog een andere melding doen?</Heading>
             <div>
-              <Link href={formatPath('/signalen')}>Doe een melding</Link>
+              <Link href="/signalen" linkComponent={NextLink}>
+                Doe een melding
+              </Link>
             </div>
           </Column>
         </Column>

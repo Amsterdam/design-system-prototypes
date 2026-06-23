@@ -1,14 +1,16 @@
 'use client'
 
 import { Breadcrumb, Column, Grid, Heading, Link, Paragraph } from '@amsterdam/design-system-react'
-import formatPath from '../../../../utils/formatPath'
+import NextLink from 'next/link'
 
 function Bedankt() {
   return (
     <Grid paddingBottom="x-large">
       <Grid.Cell span={{ narrow: 4, medium: 6, wide: 8 }} start={{ narrow: 1, medium: 2, wide: 3 }}>
         <Breadcrumb>
-          <Breadcrumb.Link href={formatPath('/amsterdam')}>Home</Breadcrumb.Link>
+          <Breadcrumb.Link href="/amsterdam" linkComponent={NextLink}>
+            Home
+          </Breadcrumb.Link>
         </Breadcrumb>
         <Column className="ams-mb-l">
           <Heading level={1}>Bedankt!</Heading>
@@ -21,7 +23,9 @@ function Bedankt() {
             U hoort binnen 3 werkdagen wat we met uw melding hebben gedaan. Dringende meldingen pakken wij zo snel
             mogelijk op.
           </Paragraph>
-          <Link href={formatPath('/amsterdam')}>Ga terug naar de homepage.</Link>
+          <Link href="/amsterdam" linkComponent={NextLink}>
+            Ga terug naar de homepage.
+          </Link>
         </Column>
       </Grid.Cell>
     </Grid>
