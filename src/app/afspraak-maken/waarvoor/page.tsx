@@ -45,9 +45,9 @@ export default function Waarvoor() {
             </Select>
           </Field>
           <ActionGroup className="ams-mb-m">
-            <NextLink href="/afspraak-maken" legacyBehavior passHref>
-              <StandaloneLink icon={ChevronBackwardIcon}>Terug naar de inleiding</StandaloneLink>
-            </NextLink>
+            <StandaloneLink href="/afspraak-maken" icon={ChevronBackwardIcon} linkComponent={NextLink}>
+              Terug naar de inleiding
+            </StandaloneLink>
             <Button icon={ChevronForwardIcon} type="submit" variant="primary">
               Volgende vraag
             </Button>

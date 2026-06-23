@@ -24,7 +24,8 @@ function Signalen({ children }) {
         <Grid.Cell span="all">
           <SkipLink href="#inhoud">Direct naar inhoud</SkipLink>
           <PageHeader
-            logoLinkComponent={(props) => <NextLink {...props} href="/signalen" />}
+            logoLink="/signalen"
+            logoLinkComponent={NextLink}
             logoLinkTitle="Naar de homepage van Signalen Amsterdam"
           />
         </Grid.Cell>
@@ -61,9 +62,9 @@ function Signalen({ children }) {
           <PageFooter.MenuLink href="#">Over deze site</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Toegankelijkheid</PageFooter.MenuLink>
-          <NextLink href="/" legacyBehavior passHref>
-            <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
-          </NextLink>
+          <PageFooter.MenuLink href="/" linkComponent={NextLink}>
+            Prototypes
+          </PageFooter.MenuLink>
         </PageFooter.Menu>
       </PageFooter>
     </Page>

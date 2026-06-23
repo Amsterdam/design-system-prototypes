@@ -36,7 +36,8 @@ function Template({ children }) {
         </Grid.Cell>
       </Grid>
       <PageHeader
-        logoLinkComponent={(props) => <NextLink {...props} href="/amsterdam" />}
+        logoLink="/amsterdam"
+        logoLinkComponent={NextLink}
         logoLinkTitle="Naar de homepage van gemeente Amsterdam"
         menuItems={[
           <PageHeader.MenuLink href="https://mijn.amsterdam.nl/" key={1} rel="external">
@@ -45,9 +46,9 @@ function Template({ children }) {
           <PageHeader.MenuLink href="#" key={2} lang="en">
             English
           </PageHeader.MenuLink>,
-          <NextLink href="/amsterdam/zoeken" key={3} legacyBehavior passHref>
-            <PageHeader.MenuLink fixed>Zoeken</PageHeader.MenuLink>
-          </NextLink>,
+          <PageHeader.MenuLink fixed href="/amsterdam/zoeken" key={3} linkComponent={NextLink}>
+            Zoeken
+          </PageHeader.MenuLink>,
         ]}
       >
         <Grid>
@@ -65,9 +66,9 @@ function Template({ children }) {
             <div className="ams-mega-menu__columns">
               <LinkList>
                 {megaMenuLinks.map(({ href, label }) => (
-                  <NextLink href={href} key={label} legacyBehavior passHref>
-                    <LinkList.Link>{label}</LinkList.Link>
-                  </NextLink>
+                  <LinkList.Link href={href} key={label} linkComponent={NextLink}>
+                    {label}
+                  </LinkList.Link>
                 ))}
               </LinkList>
             </div>

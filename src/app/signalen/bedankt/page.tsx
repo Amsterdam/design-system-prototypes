@@ -63,9 +63,9 @@ function Thanks() {
 
             <Heading level={3}>Wilt u nog een andere melding doen?</Heading>
             <div>
-              <NextLink href="/signalen" legacyBehavior passHref>
-                <Link>Doe een melding</Link>
-              </NextLink>
+              <Link href="/signalen" linkComponent={NextLink}>
+                Doe een melding
+              </Link>
             </div>
           </Column>
         </Column>
