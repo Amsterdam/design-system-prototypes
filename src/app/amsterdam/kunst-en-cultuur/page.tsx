@@ -30,7 +30,7 @@ function KunstEnCultuur() {
           </Paragraph>
         </Grid.Cell>
         <Grid.Cell span={{ narrow: 4, medium: 8, wide: 8 }}>
-          <NextImage alt="" className="ams-image" src={artAndCultureImage} />
+          <NextImage alt="" className="ams-image" loading="eager" src={artAndCultureImage} />
         </Grid.Cell>
       </Grid>
       <Grid paddingBottom="x-large">
