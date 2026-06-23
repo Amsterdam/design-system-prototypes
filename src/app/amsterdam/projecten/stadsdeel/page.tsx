@@ -16,7 +16,7 @@ function Project() {
               Home
             </Breadcrumb.Link>
             <Breadcrumb.Link href="/amsterdam/projecten" linkComponent={NextLink}>
-              Home
+              Bouw- en verkeersprojecten
             </Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
