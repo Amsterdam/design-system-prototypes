@@ -2,6 +2,7 @@
 
 import { Grid, Heading, Link, Paragraph, StandaloneLink, UnorderedList } from '@amsterdam/design-system-react'
 import { DownloadIcon } from '@amsterdam/design-system-react-icons'
+import NextLink from 'next/link'
 
 export default function Bedankt() {
   return (
@@ -25,7 +26,9 @@ export default function Bedankt() {
             Download overzicht afspraak PDF, 1MB
           </StandaloneLink>
         </div>
-        <StandaloneLink href="/afspraak-maken">Sluit het formulier</StandaloneLink>
+        <StandaloneLink href="/afspraak-maken" linkComponent={NextLink}>
+          Sluit het formulier
+        </StandaloneLink>
       </Grid.Cell>
     </Grid>
   )

@@ -13,6 +13,7 @@ import {
   Row,
 } from '@amsterdam/design-system-react'
 import { DocumentWithPencilIcon, MailIcon } from '@amsterdam/design-system-react-icons'
+import NextLink from 'next/link'
 
 import { ProjectNavigation } from '../../_components/ProjectNavigation/ProjectNavigation'
 
@@ -22,7 +23,9 @@ function Kerngegevens() {
       <Grid.Cell appearance="transparent" span="all">
         <Breadcrumb>
           <Breadcrumb.Link href="#">Dashboard</Breadcrumb.Link>
-          <Breadcrumb.Link href="/amopis/projecten">Projecten</Breadcrumb.Link>
+          <Breadcrumb.Link href="/amopis/projecten" linkComponent={NextLink}>
+            Projecten
+          </Breadcrumb.Link>
         </Breadcrumb>
       </Grid.Cell>
     </Grid>,
