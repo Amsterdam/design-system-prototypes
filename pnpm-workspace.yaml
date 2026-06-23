@@ -1,0 +1,10 @@
+packages:
+  - '.'
+allowBuilds:
+  sharp: true
+  unrs-resolver: true
+# Amsterdam's own packages are trusted, so exempt them from the
+# minimumReleaseAge supply-chain policy (otherwise freshly published
+# ADS releases block `pnpm ci` in CI for ~24h after publish).
+minimumReleaseAgeExclude:
+  - '@amsterdam/*'

@@ -5,22 +5,28 @@
   "name": "design-system-prototypes",
   "private": true,
   "engines": {
-    "node": "24",
-    "npm": "11"
+    "node": "^24",
+    "pnpm": "^11"
   },
+  "packageManager": "pnpm@11.1.3",
   "type": "module",
   "scripts": {
     "add": "plop",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "clean:build-output": "rimraf .next .serve next-env.d.ts out",
+    "clean:git-ignored": "git clean -d -X -f",
+    "clean:git-optimize": "git gc --prune=now && git remote prune origin",
+    "clean:git": "pnpm run clean:git-ignored && pnpm run clean:git-optimize",
+    "start": "rimraf .serve && mkdirp .serve && node -e \"require('fs').symlinkSync(require('path').resolve('out'),'.serve/design-system-prototypes','junction')\" && serve -S -c ../serve.json .serve",
+    "link": "pnpm add @amsterdam/design-system-assets@link:../design-system/packages-proprietary/assets @amsterdam/design-system-css@link:../design-system/packages/css @amsterdam/design-system-react@link:../design-system/packages/react @amsterdam/design-system-react-icons@link:../design-system/packages-proprietary/react-icons @amsterdam/design-system-tokens@link:../design-system/packages-proprietary/tokens",
+    "unlink": "pnpm add @amsterdam/design-system-assets@2 @amsterdam/design-system-css@4 @amsterdam/design-system-react@4 @amsterdam/design-system-react-icons@2 @amsterdam/design-system-tokens@4",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
-    "link": "npm link @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
-    "unlink": "npm unlink @amsterdam/design-system-assets @amsterdam/design-system-css @amsterdam/design-system-react @amsterdam/design-system-react-icons @amsterdam/design-system-tokens",
-    "update": "npm-check-updates --upgrade && npm install",
-    "update:minor": "npm-check-updates --target minor --upgrade && npm install",
-    "update:patch": "npm-check-updates --target patch --upgrade && npm install"
+    "prepare": "husky",
+    "update": "npm-check-updates --upgrade && pnpm install",
+    "update:minor": "npm-check-updates --target minor --upgrade && pnpm install",
+    "update:patch": "npm-check-updates --target patch --upgrade && pnpm install"
   },
   "dependencies": {
     "@amsterdam/design-system-assets": "2.4.0",
@@ -43,12 +49,15 @@
     "eslint-config-next": "16.2.9",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-perfectionist": "5.9.1",
-    "eslint-plugin-prettier": "5.5.6",
+    "husky": "9.1.7",
+    "lint-staged": "17.0.7",
+    "mkdirp": "^3.0.1",
     "npm-check-updates": "22.2.3",
     "plop": "4.0.5",
     "prettier": "3.8.4",
-    "typescript": "6.0.3",
-    "typescript-eslint": "8.61.1"
+    "rimraf": "^6.1.3",
+    "serve": "14.2.6",
+    "typescript": "6.0.3"
   },
   "browserslist": [
     "defaults and fully supports es6-module",
