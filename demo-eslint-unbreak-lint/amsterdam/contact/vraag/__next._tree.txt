@@ -1,5 +1,0 @@
-:HL["/design-system-prototypes/demo-eslint-unbreak-lint/_next/static/chunks/1xjbqnbqtdvlq.css","style"]
-:HL["/design-system-prototypes/demo-eslint-unbreak-lint/_next/static/chunks/1bye9uj0nee0e.css","style"]
-:HL["/design-system-prototypes/demo-eslint-unbreak-lint/_next/static/chunks/2zasmmk9u6dfs.css","style"]
-:HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amsterdam","param":null,"prefetchHints":0,"slots":{"children":{"name":"contact","param":null,"prefetchHints":0,"slots":{"children":{"name":"vraag","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"jxKWIsWY06qo94YgjYdy8"}
