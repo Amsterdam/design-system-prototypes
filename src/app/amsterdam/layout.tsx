@@ -108,13 +108,13 @@ export default function Amsterdam({ children }) {
           </PageFooter.Spotlight>
           <PageFooter.Menu>
             {footerLinks.map(({ href, label }) => (
-              <NextLink href={href} key={label} legacyBehavior passHref>
-                <PageFooter.MenuLink>{label}</PageFooter.MenuLink>
-              </NextLink>
+              <PageFooter.MenuLink href={href} key={label} linkComponent={NextLink}>
+                {label}
+              </PageFooter.MenuLink>
             ))}
-            <NextLink href="/" legacyBehavior passHref>
-              <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
-            </NextLink>
+            <PageFooter.MenuLink href="/" linkComponent={NextLink}>
+              Prototypes
+            </PageFooter.MenuLink>
           </PageFooter.Menu>
         </PageFooter>
       </Page>

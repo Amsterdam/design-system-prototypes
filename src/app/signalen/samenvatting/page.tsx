@@ -120,12 +120,10 @@ function Summary() {
                     {formatAnswer(id, formData) || 'Niet ingevuld'}
                   </dd>
                   <dd className="ams-summary-description-list__link">
-                    <NextLink href={href} legacyBehavior passHref>
-                      <Link className="ams-edit-link">
-                        Wijzig
-                        <span className="ams-visually-hidden"> vraag: {questionText}</span>
-                      </Link>
-                    </NextLink>
+                    <Link className="ams-edit-link" href={href} linkComponent={NextLink}>
+                      Wijzig
+                      <span className="ams-visually-hidden"> vraag: {questionText}</span>
+                    </Link>
                   </dd>
                 </div>
               )

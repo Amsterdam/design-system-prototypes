@@ -15,22 +15,22 @@ export default function Signalen() {
         </Grid.Cell>
         <Grid.Cell span="all">
           <LinkList>
-            <NextLink href="/afspraak-maken" legacyBehavior passHref>
-              <LinkList.Link>Afspraak maken</LinkList.Link>
-            </NextLink>
-            <NextLink href="/amopis" legacyBehavior passHref>
-              <LinkList.Link>Amopis</LinkList.Link>
-            </NextLink>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <LinkList.Link>Amsterdam</LinkList.Link>
-            </NextLink>
-            <NextLink href="/signalen" legacyBehavior passHref>
-              <LinkList.Link>Signalen</LinkList.Link>
-            </NextLink>
+            <LinkList.Link href="/afspraak-maken" linkComponent={NextLink}>
+              Afspraak maken
+            </LinkList.Link>
+            <LinkList.Link href="/amopis" linkComponent={NextLink}>
+              Amopis
+            </LinkList.Link>
+            <LinkList.Link href="/amsterdam" linkComponent={NextLink}>
+              Amsterdam
+            </LinkList.Link>
+            <LinkList.Link href="/signalen" linkComponent={NextLink}>
+              Signalen
+            </LinkList.Link>
             {/* Append route import here */}
-            <NextLink href="/camping-vliegenbos" legacyBehavior passHref>
-              <LinkList.Link>Camping Vliegenbos</LinkList.Link>
-            </NextLink>
+            <LinkList.Link href="/camping-vliegenbos" linkComponent={NextLink}>
+              Camping Vliegenbos
+            </LinkList.Link>
           </LinkList>
         </Grid.Cell>
         <Grid.Cell span="all">

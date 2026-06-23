@@ -12,12 +12,12 @@ function Project() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <Breadcrumb.Link>Home</Breadcrumb.Link>
-            </NextLink>
-            <NextLink href="/amsterdam/projecten" legacyBehavior passHref>
-              <Breadcrumb.Link>Home</Breadcrumb.Link>
-            </NextLink>
+            <Breadcrumb.Link href="/amsterdam" linkComponent={NextLink}>
+              Home
+            </Breadcrumb.Link>
+            <Breadcrumb.Link href="/amsterdam/projecten" linkComponent={NextLink}>
+              Bouw- en verkeersprojecten
+            </Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
@@ -87,11 +87,14 @@ function Project() {
             </Heading>
             <LinkList>
               {['Centrum', 'Nieuw-West', 'Noord', 'Oost', 'Weesp', 'West', 'Zuid', 'Zuidoost'].map((district) => (
-                <NextLink href="/amsterdam/projecten/stadsdeel" key={district} legacyBehavior passHref>
-                  <LinkList.Link color="inverse" key={district}>
-                    {district}
-                  </LinkList.Link>
-                </NextLink>
+                <LinkList.Link
+                  color="inverse"
+                  href="/amsterdam/projecten/stadsdeel"
+                  key={district}
+                  linkComponent={NextLink}
+                >
+                  {district}
+                </LinkList.Link>
               ))}
             </LinkList>
           </Grid.Cell>

@@ -13,7 +13,8 @@ export default function AfspraakMaken({ children }) {
         </Grid.Cell>
       </Grid>
       <PageHeader
-        logoLinkComponent={(props) => <NextLink {...props} href="/afspraak-maken" />}
+        logoLink="/afspraak-maken"
+        logoLinkComponent={NextLink}
         logoLinkTitle="Naar de homepage van Afspraak maken"
         menuItems={[
           <PageHeader.MenuLink href="#" key={1} lang="en">
@@ -61,9 +62,9 @@ export default function AfspraakMaken({ children }) {
           </Grid>
         </PageFooter.Spotlight>
         <PageFooter.Menu>
-          <NextLink href="/" legacyBehavior passHref>
-            <PageFooter.MenuLink>Prototypes</PageFooter.MenuLink>
-          </NextLink>
+          <PageFooter.MenuLink href="/" linkComponent={NextLink}>
+            Prototypes
+          </PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Over deze site</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Privacy</PageFooter.MenuLink>
           <PageFooter.MenuLink href="#">Toegankelijkheid</PageFooter.MenuLink>

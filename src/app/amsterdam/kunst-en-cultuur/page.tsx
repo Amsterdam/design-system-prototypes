@@ -13,9 +13,9 @@ function KunstEnCultuur() {
       <Grid>
         <Grid.Cell span="all">
           <Breadcrumb>
-            <NextLink href="/amsterdam" legacyBehavior passHref>
-              <Breadcrumb.Link>Home</Breadcrumb.Link>
-            </NextLink>
+            <Breadcrumb.Link href="/amsterdam" linkComponent={NextLink}>
+              Home
+            </Breadcrumb.Link>
           </Breadcrumb>
         </Grid.Cell>
       </Grid>
