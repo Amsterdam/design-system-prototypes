@@ -3,6 +3,7 @@
 import type { MenuProps } from '@amsterdam/design-system-react'
 
 import { Menu } from '@amsterdam/design-system-react'
+import NextLink from 'next/link'
 import { usePathname } from 'next/navigation'
 import { HTMLAttributes } from 'react'
 
@@ -23,6 +24,7 @@ export function AmopisMenu(props: AmopisMenuProps) {
           href={href}
           icon={icon}
           key={text}
+          linkComponent={NextLink}
         >
           {text}
         </Menu.Link>
