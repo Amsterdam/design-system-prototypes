@@ -1,5 +1,0 @@
-:HL["/design-system-prototypes/demo-update-dependencies/_next/static/chunks/1xjbqnbqtdvlq.css","style"]
-:HL["/design-system-prototypes/demo-update-dependencies/_next/static/chunks/1bye9uj0nee0e.css","style"]
-:HL["/design-system-prototypes/demo-update-dependencies/_next/static/chunks/1iu-rzxtj1obh.css","style"]
-:HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amopis","param":null,"prefetchHints":0,"slots":{"children":{"name":"projecten","param":null,"prefetchHints":0,"slots":{"children":{"name":"projectdetails","param":null,"prefetchHints":0,"slots":{"children":{"name":"kerngegevens","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}}}},"staleTime":300,"buildId":"Jf7XWNjoMAmVSfvkeuNkc"}
