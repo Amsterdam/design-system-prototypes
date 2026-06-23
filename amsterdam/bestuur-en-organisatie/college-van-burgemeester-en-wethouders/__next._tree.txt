@@ -1,5 +1,5 @@
-:HL["/design-system-prototypes/_next/static/chunks/3qpjgp91pjs_-.css","style"]
-:HL["/design-system-prototypes/_next/static/chunks/07gptp-dcz14a.css","style"]
+:HL["/design-system-prototypes/_next/static/chunks/1xjbqnbqtdvlq.css","style"]
+:HL["/design-system-prototypes/_next/static/chunks/1bye9uj0nee0e.css","style"]
 :HL["/design-system-prototypes/_next/static/chunks/2zasmmk9u6dfs.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amsterdam","param":null,"prefetchHints":0,"slots":{"children":{"name":"bestuur-en-organisatie","param":null,"prefetchHints":0,"slots":{"children":{"name":"college-van-burgemeester-en-wethouders","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"w4zSkQ9Q52UI9959-Y3nH"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amsterdam","param":null,"prefetchHints":0,"slots":{"children":{"name":"bestuur-en-organisatie","param":null,"prefetchHints":0,"slots":{"children":{"name":"college-van-burgemeester-en-wethouders","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"koKHA5DcK1VDgD16-vMqA"}
