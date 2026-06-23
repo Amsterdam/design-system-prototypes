@@ -1,0 +1,5 @@
+:HL["/design-system-prototypes/demo-agents-md/_next/static/chunks/1xjbqnbqtdvlq.css","style"]
+:HL["/design-system-prototypes/demo-agents-md/_next/static/chunks/1bye9uj0nee0e.css","style"]
+:HC["/",""]
+:HL["/design-system-prototypes/demo-agents-md/_next/static/chunks/2u8y4svotg3ug.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"signalen","param":null,"prefetchHints":0,"slots":{"children":{"name":"samenvatting","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"l2_-8BmGE-pBHvyyIAteM"}
