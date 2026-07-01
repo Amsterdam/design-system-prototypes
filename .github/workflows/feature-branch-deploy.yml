@@ -16,6 +16,7 @@ jobs:
   build-and-deploy:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
       - name: Create branch name without text before first forward slash
