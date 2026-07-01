@@ -16,10 +16,11 @@ jobs:
     if: ${{ github.actor != 'dependabot[bot]' }}
     steps:
       - name: Create branch name without text before first forward slash
+        env:
+          RAW_BRANCH_NAME: ${{ github.head_ref || github.ref_name }}
         run: |
-          RAW_BRANCH_NAME=${{ github.head_ref || github.ref_name }}
-          BRANCH_NAME=$(echo $RAW_BRANCH_NAME | sed 's/[^/]*\///')
-          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+          BRANCH_NAME=$(echo "$RAW_BRANCH_NAME" | sed 's/[^/]*\///')
+          echo "BRANCH_NAME=$BRANCH_NAME" >> "$GITHUB_ENV"
 
       - name: Check out branch to access .nvmrc
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
@@ -37,7 +38,7 @@ jobs:
         run: |
           git config --global user.name GitHub Action
           git config --global user.email github-action@users.noreply.github.com
-          git rm -rf demo-${{ env.BRANCH_NAME }}
+          git rm -rf "demo-$BRANCH_NAME"
           git add .
           git commit --allow-empty -m "Remove feature branch folder"
           git push
