@@ -7,9 +7,11 @@ overrides:
 allowBuilds:
   sharp: true
   unrs-resolver: true
-# Amsterdam's own packages are trusted, so exempt them from the
-# minimumReleaseAge supply-chain policy (otherwise freshly published
-# ADS releases block `pnpm ci` in CI for ~24h after publish).
+# Exempt packages from the minimumReleaseAge supply-chain policy, which
+# otherwise blocks `pnpm ci` in CI for ~24h after a version is published.
+# '@amsterdam/*' are our own, trusted packages. The '@typescript-eslint/*'
+# 8.64.0 entries are pinned toolchain versions that were freshly published
+# when bumped, and are exempted so a new release doesn't stall CI.
 minimumReleaseAgeExclude:
   - '@amsterdam/*'
   - '@typescript-eslint/parser@8.64.0'
