@@ -3,8 +3,21 @@
 import { Grid, Heading, LinkList, Page, PageFooter, PageHeader, SkipLink } from '@amsterdam/design-system-react'
 import { DocumentIcon, MailIcon, PhoneIcon } from '@amsterdam/design-system-react-icons'
 import NextLink from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useState } from 'react'
 
 export default function AfspraakMaken({ children }) {
+  const pathname = usePathname()
+  const [menuOpen, setMenuOpen] = useState(false)
+  const [previousPathname, setPreviousPathname] = useState(pathname)
+
+  // The Page Header stays mounted across navigations in this layout,
+  // so close the collapsible menu whenever the route changes.
+  if (pathname !== previousPathname) {
+    setPreviousPathname(pathname)
+    setMenuOpen(false)
+  }
+
   return (
     <Page className="ams-theme">
       <Grid>
@@ -25,6 +38,8 @@ export default function AfspraakMaken({ children }) {
           </PageHeader.MenuLink>,
         ]}
         noMenuButtonOnWideWindow
+        onOpenChange={setMenuOpen}
+        open={menuOpen}
       >
         <Grid>
           <PageHeader.GridCellNarrowWindowOnly span="all">
