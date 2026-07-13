@@ -8,7 +8,7 @@
     "node": "^24",
     "pnpm": "^11"
   },
-  "packageManager": "pnpm@11.12.0",
+  "packageManager": "pnpm@11.9.0",
   "type": "module",
   "scripts": {
     "add": "plop",
