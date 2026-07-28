@@ -23,8 +23,21 @@ updates:
     cooldown:
       default-days: 1 # Wait for one day after release before updating a dependency
     groups:
+      # Our packages depend on each other through peer dependencies,
+      # so they need to be updated together in a single pull request.
+      # Majors are included for that reason: they often move as a set.
+      amsterdam-design-system:
+        applies-to: "version-updates"
+        patterns:
+          - "@amsterdam/design-system-*"
+        update-types:
+          - "major"
+          - "minor"
+          - "patch"
       patch-and-minor-dependencies:
         applies-to: "version-updates"
+        exclude-patterns:
+          - "@amsterdam/design-system-*"
         update-types:
           - "patch"
           - "minor"
