@@ -3,4 +3,4 @@
 :HL["/design-system-prototypes/_next/static/chunks/294vogk4cvfph.css","style"]
 :HL["/design-system-prototypes/_next/static/chunks/2zasmmk9u6dfs.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amsterdam","param":null,"prefetchHints":0,"slots":{"children":{"name":"contact","param":null,"prefetchHints":0,"slots":{"children":{"name":"gegevens","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"voyG1D4LnvgEjvn3f1S6n"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"amsterdam","param":null,"prefetchHints":0,"slots":{"children":{"name":"contact","param":null,"prefetchHints":0,"slots":{"children":{"name":"gegevens","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}}}},"staleTime":300,"buildId":"WFl-fsyCFprvA5JfU99Av"}
