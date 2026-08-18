@@ -5,7 +5,7 @@
   "name": "design-system-prototypes",
   "private": true,
   "engines": {
-    "node": "^24",
+    "node": "^24.15.0",
     "pnpm": "^11"
   },
   "packageManager": "pnpm@11.17.0",
