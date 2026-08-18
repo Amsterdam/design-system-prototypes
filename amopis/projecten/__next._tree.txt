@@ -3,4 +3,4 @@
 :HL["/design-system-prototypes/_next/static/chunks/294vogk4cvfph.css","style"]
 :HL["/design-system-prototypes/_next/static/chunks/3dezpqy6t6i2n.css","style"]
 :HC["/",""]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"amopis","param":null,"prefetchHints":4192,"slots":{"children":{"name":"projecten","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"k7LtS-6IjHMD_6-KCZNRZ"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"amopis","param":null,"prefetchHints":4192,"slots":{"children":{"name":"projecten","param":null,"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"cxzdZCVNyTairGNsjvIm6"}
