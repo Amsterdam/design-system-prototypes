@@ -8,7 +8,7 @@
     "node": "^24.15.0",
     "pnpm": "^11"
   },
-  "packageManager": "pnpm@11.17.0",
+  "packageManager": "pnpm@12.4.2",
   "type": "module",
   "scripts": {
     "add": "plop",
@@ -23,6 +23,8 @@
     "unlink": "pnpm add @amsterdam/design-system-assets@2 @amsterdam/design-system-css@4 @amsterdam/design-system-react@4 @amsterdam/design-system-react-icons@2 @amsterdam/design-system-tokens@4",
     "lint": "eslint .",
     "lint-fix": "eslint . --fix",
+    "format": "prettier . --write",
+    "format-check": "prettier . --check",
     "prepare": "husky",
     "update": "npm-check-updates --upgrade && pnpm install",
     "update:minor": "npm-check-updates --target minor --upgrade && pnpm install",
