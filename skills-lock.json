@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "skills": {
+    "amsterdam-design-system": {
+      "source": "amsterdam/amsterdam-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/amsterdam-design-system/SKILL.md",
+      "computedHash": "178a7a9d435259f2bd47f425fb07e2268486cc96b82c5be817d75116c7605542"
+    },
+    "amsterdam-stijl": {
+      "source": "amsterdam/amsterdam-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/amsterdam-stijl/SKILL.md",
+      "computedHash": "b1f7397195f87aecb089b936cddff6b7036375ff178503c60a60d0c675057268"
+    },
+    "developers-amsterdam": {
+      "source": "amsterdam/amsterdam-agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/developers-amsterdam/SKILL.md",
+      "computedHash": "52c000f797cdf1fe46dd69d4a72f448a5298a6b7a577df91c7b5b19efa763276"
+    }
+  }
+}

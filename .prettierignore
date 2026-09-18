@@ -1,9 +1,9 @@
 # Ignore 3rd party files
+.agents/
 node_modules/
 vendor/
 
 # Ignore generated files
-.angular/
 build/
 coverage/
 dist/

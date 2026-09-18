@@ -49,15 +49,16 @@ const perfectionistCustomSizesGroups = {
 export default defineConfig([
   {
     ignores: [
-      '**/node_modules/',
-      '**/vendor/',
+      '**/.agents',
+      '**/.next',
+      '**/AGENTS.md',
       '**/build/',
       '**/coverage/',
       '**/dist/',
-      '**/tmp/',
-      '**/.next',
+      '**/node_modules/',
       '**/out',
-      '**/AGENTS.md',
+      '**/tmp/',
+      '**/vendor/',
     ],
 
     name: 'design-system-prototypes/global-ignores',
