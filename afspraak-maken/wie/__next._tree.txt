@@ -1,8 +1,8 @@
-:HL["/design-system-prototypes/_next/static/chunks/0ofu5wnxl94y_.css","style"]
-:HL["/design-system-prototypes/_next/static/chunks/3je6-r0oxtzpt.css","style"]
+:HL["/design-system-prototypes/_next/static/chunks/3l775zv94fhlt.css","style"]
+:HL["/design-system-prototypes/_next/static/chunks/3pxte745m48g_.css","style"]
 :HL["/design-system-prototypes/_next/static/chunks/294vogk4cvfph.css","style"]
 :HC["/",""]
 3:[["children",{"s":"__PAGE__","h":160}]]
 2:[["children",{"s":"wie","h":96,"c":"$Q3"}]]
 1:[["children",{"s":"afspraak-maken","h":96,"c":"$Q2"}]]
-0:{"b":"Faq5p7B-GkNFrFtHSHM2o","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
+0:{"b":"iy46Ha3tRDwpib3Iwaaeo","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
